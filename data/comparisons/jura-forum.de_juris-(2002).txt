@@ -1,0 +1,310 @@
++----------------+-------------------------------------------------------------------------------+--------------------------------------------------+
+| Intersection   | jura-forum.de                                                                 | juris-(2002)                                     |
++================+===============================================================================+==================================================+
+| BKR            | AE                                                                            | AG                                               |
+| DNotZ          | AGS                                                                           | AK-Beiträge                                      |
+| DPJZ           | AP                                                                            | ARSP                                             |
+| DStR           | ASR                                                                           | AW-Prax                                          |
+| EWS            | AbfallR                                                                       | AbfallPrax                                       |
+| EuR            | ArbR                                                                          | AcP                                              |
+| EuZW           | AuR                                                                           | AfP                                              |
+| FF             | Baurecht                                                                      | AfkKR                                            |
+| FPR            | Betriebs-Berater                                                              | AgrarR                                           |
+| FamRZ          | Breithaupt                                                                    | ArchVR                                           |
+| GRUR           | Computer und Recht                                                            | Archiv für Kriminologie                          |
+| GRUR Int       | Der Verkehrsanwalt                                                            | Archiv für Sozialgeschichte                      |
+| JOR            | Die Aktiengesellschaft                                                        | ArchsozArb                                       |
+| JuS            | ECFR                                                                          | ArztR                                            |
+| K&R            | ERCL                                                                          | Asylpraxis                                       |
+| KJ             | EuZA                                                                          | AöR                                              |
+| KritV          | EurUP                                                                         | BArbBl                                           |
+| LKV            | FGPrax                                                                        | BBK                                              |
+| LMuR           | Fachanwalt Arbeitsrecht                                                       | BBS                                              |
+| MMR            | FamFR                                                                         | BBauBl                                           |
+| NVwZ           | FoVo                                                                          | BFH-PR                                           |
+| NZBau          | GRUR-RR                                                                       | BG                                               |
+| NZG            | GUR-Prax                                                                      | BKK                                              |
+| NZM            | GWR                                                                           | BR Ärztebl                                       |
+| NZS            | IIC                                                                           | BRAGOreport                                      |
+| RdA            | IR                                                                            | BRAK-Mitt                                        |
+| RdJB           | Immobilien- & Baurecht                                                        | BStBl I                                          |
+| RuP            | JETL                                                                          | BStBl II                                         |
+| SpuRt          | JIBL                                                                          | BWNotZ                                           |
+| VuR            | JMS                                                                           | Bank                                             |
+| ZAP            | JURA                                                                          | Banken und Versicherungen                        |
+| ZAR            | JW                                                                            | Banz                                             |
+| ZGR            | JuristenZeitung                                                               | BauR                                             |
+| ZHR            | KHR                                                                           | Beilage zur Zeitschrift Transportrecht           |
+| ZInsO          | KJB                                                                           | Blutalkohol                                      |
+| ZLR            | KammerForum                                                                   | Bulletin Bundesregierung                         |
+| ZRP            | KommJur                                                                       | Bundesgesundhbl                                  |
+| ZUM            | MPR                                                                           | BÄN                                              |
+| ZUR            | MedR                                                                          | Bühnengen                                        |
+| ZVglRWiss      | Monatsschrift für Deutsches Recht                                             | CR                                               |
+| ZWE            | Myops                                                                         | CRi                                              |
+| ZfBR           | N&R                                                                           | Congres International                            |
+| info also      | NJ                                                                            | D-spezial                                        |
+|                | NJW-RR                                                                        | DAR                                              |
+|                | NK                                                                            | DAngVers                                         |
+|                | NStZ-RR                                                                       | DBKZ                                             |
+|                | NVwZ-RR                                                                       | DGVZ                                             |
+|                | NZA-RR                                                                        | DMW                                              |
+|                | NZI                                                                           | DNV                                              |
+|                | NZV                                                                           | DRV                                              |
+|                | Nomos Rechtsprechungsübersicht                                                | DRiZ                                             |
+|                | NordÖR                                                                        | DSR                                              |
+|                | RAK                                                                           | DStZ                                             |
+|                | RIW                                                                           | DVBl                                             |
+|                | RZ                                                                            | DVP                                              |
+|                | STUD                                                                          | DWW                                              |
+|                | SVR                                                                           | DZB                                              |
+|                | SchiedsVZ                                                                     | DeuStBT                                          |
+|                | SpV                                                                           | Deutsche Bahn                                    |
+|                | StRR                                                                          | Deutscher                                        |
+|                | StZ                                                                           | Deutscher Dokumentartag                          |
+|                | SteuK                                                                         | Deutscher Juristentag                            |
+|                | StoffR                                                                        | Deutscher Krankenhaustag                         |
+|                | StraFo                                                                        | Deutscher Verkehrsgerichtstag                    |
+|                | Strafverteidiger                                                              | Deutschland Archiv                               |
+|                | VRÜ                                                                           | Die Beiträge                                     |
+|                | Versicherungsrecht                                                            | Die Friedens-Warte                               |
+|                | Wertpapier-Mitteilungen                                                       | Die Kanzlei                                      |
+|                | WiRO                                                                          | Die Leistungen                                   |
+|                | ZA                                                                            | DÄ                                               |
+|                | ZEV                                                                           | DÖV                                              |
+|                | ZEuP                                                                          | EEK                                              |
+|                | ZMGR                                                                          | EFG                                              |
+|                | ZNotP                                                                         | ET                                               |
+|                | ZSE                                                                           | EWiR                                             |
+|                | ZStW                                                                          | ErbBstg                                          |
+|                | Zeitschrift des Deutschen Juristinnenbundes                                   | ErgoMed                                          |
+|                | Zeitschrift für Hochschulrecht, Hochschulmanagement und Hochschulpolitik      | ErsK                                             |
+|                | Zeitschrift für Landes- und Kommunalrecht Hessen I Rheinland-Pfalz I Saarland | EuGRZ                                            |
+|                | Zeitschrift für Miet- und Raumrecht                                           | EuroAS                                           |
+|                | iStR                                                                          | Europäisches Transportrecht                      |
+|                | r+s                                                                           | EzA                                              |
+|                | wrp                                                                           | EzBAT                                            |
+|                | zfs                                                                           | FA                                               |
+|                |                                                                               | FA-Spezial                                       |
+|                |                                                                               | FLF                                              |
+|                |                                                                               | FR                                               |
+|                |                                                                               | FWW                                              |
+|                |                                                                               | FiWi                                             |
+|                |                                                                               | FoR                                              |
+|                |                                                                               | Frau im Beruf                                    |
+|                |                                                                               | FuR                                              |
+|                |                                                                               | G+G                                              |
+|                |                                                                               | GA                                               |
+|                |                                                                               | GStB                                             |
+|                |                                                                               | GWF/Recht und Steuern                            |
+|                |                                                                               | GdS-Magazin                                      |
+|                |                                                                               | Gesellschaft und Politik                         |
+|                |                                                                               | GewArch                                          |
+|                |                                                                               | Gewissen und Freiheit                            |
+|                |                                                                               | GmbH-Rdsch                                       |
+|                |                                                                               | GmbH-StB                                         |
+|                |                                                                               | GmbH-Stpr                                        |
+|                |                                                                               | GodStFachtg                                      |
+|                |                                                                               | GuT                                              |
+|                |                                                                               | HFR                                              |
+|                |                                                                               | HM                                               |
+|                |                                                                               | HSGZ                                             |
+|                |                                                                               | HVGBG RdSchr                                     |
+|                |                                                                               | Harzburger Steuerprotokoll                       |
+|                |                                                                               | IAB                                              |
+|                |                                                                               | IBM Nachr                                        |
+|                |                                                                               | IBR                                              |
+|                |                                                                               | ID                                               |
+|                |                                                                               | IFLA                                             |
+|                |                                                                               | IHR                                              |
+|                |                                                                               | IStR                                             |
+|                |                                                                               | IWB                                              |
+|                |                                                                               | IdW￾Fachtagung                                   |
+|                |                                                                               | IdW￾Steuerfachtagung                             |
+|                |                                                                               | Immissionsschutz                                 |
+|                |                                                                               | Inf HStT                                         |
+|                |                                                                               | InfAuslR                                         |
+|                |                                                                               | Information StW                                  |
+|                |                                                                               | Internat Lab Rev                                 |
+|                |                                                                               | Internationale Gesellschaft...                   |
+|                |                                                                               | Internationale...                                |
+|                |                                                                               | Internationaler Kongreß für...                   |
+|                |                                                                               | Ius Commune                                      |
+|                |                                                                               | JA                                               |
+|                |                                                                               | JR                                               |
+|                |                                                                               | JZ                                               |
+|                |                                                                               | JbArbR                                           |
+|                |                                                                               | JbFfS                                            |
+|                |                                                                               | JbFfSt                                           |
+|                |                                                                               | JbPost                                           |
+|                |                                                                               | JbRSoz                                           |
+|                |                                                                               | JbSoziologie                                     |
+|                |                                                                               | JbchristlSozwiss                                 |
+|                |                                                                               | Jur-PC                                           |
+|                |                                                                               | Jura                                             |
+|                |                                                                               | Juristen-Jahrbuch                                |
+|                |                                                                               | JÖR                                              |
+|                |                                                                               | KFR                                              |
+|                |                                                                               | KHuR                                             |
+|                |                                                                               | KKZ                                              |
+|                |                                                                               | KVuSR                                            |
+|                |                                                                               | Kind-Prax                                        |
+|                |                                                                               | Kompass                                          |
+|                |                                                                               | KrV                                              |
+|                |                                                                               | Kreditwesen                                      |
+|                |                                                                               | KriegsblindenJb                                  |
+|                |                                                                               | Kriminalistik                                    |
+|                |                                                                               | Kriminologisches Journal                         |
+|                |                                                                               | KÖSDI                                            |
+|                |                                                                               | LAGE                                             |
+|                |                                                                               | LSW                                              |
+|                |                                                                               | Leasing aktuell                                  |
+|                |                                                                               | Leviathan                                        |
+|                |                                                                               | MB NRW                                           |
+|                |                                                                               | MDR                                              |
+|                |                                                                               | MIP                                              |
+|                |                                                                               | MarkenR                                          |
+|                |                                                                               | Markenartikel                                    |
+|                |                                                                               | Mitbestimmung                                    |
+|                |                                                                               | MittLVA Württ                                    |
+|                |                                                                               | MittSozAuf BE                                    |
+|                |                                                                               | Moderne Unfallverhütung                          |
+|                |                                                                               | MschrKrim                                        |
+|                |                                                                               | NDV                                              |
+|                |                                                                               | NJW                                              |
+|                |                                                                               | NL-BzAR                                          |
+|                |                                                                               | NStZ                                             |
+|                |                                                                               | NWB                                              |
+|                |                                                                               | NWVBl                                            |
+|                |                                                                               | NZA                                              |
+|                |                                                                               | NZWehrr                                          |
+|                |                                                                               | NachrLVA HE                                      |
+|                |                                                                               | Nbl LVA Ba                                       |
+|                |                                                                               | NdsVBl                                           |
+|                |                                                                               | NfD                                              |
+|                |                                                                               | NuR                                              |
+|                |                                                                               | OLG-NL                                           |
+|                |                                                                               | PUSt                                             |
+|                |                                                                               | Parl                                             |
+|                |                                                                               | PersV                                            |
+|                |                                                                               | PsychR                                           |
+|                |                                                                               | RBD                                              |
+|                |                                                                               | RDV                                              |
+|                |                                                                               | RIW/AWD                                          |
+|                |                                                                               | ROW                                              |
+|                |                                                                               | RPG                                              |
+|                |                                                                               | RTkom                                            |
+|                |                                                                               | RWP                                              |
+|                |                                                                               | RabelsZ                                          |
+|                |                                                                               | RdE                                              |
+|                |                                                                               | RdL                                              |
+|                |                                                                               | Recht u Politik                                  |
+|                |                                                                               | Rehabilitation                                   |
+|                |                                                                               | Revue IVSS                                       |
+|                |                                                                               | SKrV                                             |
+|                |                                                                               | SZS                                              |
+|                |                                                                               | SdL                                              |
+|                |                                                                               | Sgb                                              |
+|                |                                                                               | Sicher Arbeiten                                  |
+|                |                                                                               | SozArb                                           |
+|                |                                                                               | SozSich                                          |
+|                |                                                                               | SozSich Öst                                      |
+|                |                                                                               | SozVers                                          |
+|                |                                                                               | SozWelt                                          |
+|                |                                                                               | Sozialer Fortschritt                             |
+|                |                                                                               | Soziales Europa                                  |
+|                |                                                                               | Sozialrechtstage                                 |
+|                |                                                                               | SozversGeg                                       |
+|                |                                                                               | StAnz HE                                         |
+|                |                                                                               | StB                                              |
+|                |                                                                               | StBp                                             |
+|                |                                                                               | Stbg                                             |
+|                |                                                                               | SuP                                              |
+|                |                                                                               | UFITA                                            |
+|                |                                                                               | UPR                                              |
+|                |                                                                               | UStB                                             |
+|                |                                                                               | UVR                                              |
+|                |                                                                               | Unfallchirurg                                    |
+|                |                                                                               | Unfallmedizinische...                            |
+|                |                                                                               | VA                                               |
+|                |                                                                               | VBlBW                                            |
+|                |                                                                               | VD                                               |
+|                |                                                                               | VDR Mitvers                                      |
+|                |                                                                               | VDR RdSchr                                       |
+|                |                                                                               | VIZ                                              |
+|                |                                                                               | VR                                               |
+|                |                                                                               | VSSR                                             |
+|                |                                                                               | VW                                               |
+|                |                                                                               | VerBAV                                           |
+|                |                                                                               | VerkMitt                                         |
+|                |                                                                               | VersRAl                                          |
+|                |                                                                               | Versicherungsmedizin                             |
+|                |                                                                               | VersorgVerw                                      |
+|                |                                                                               | VersorgW                                         |
+|                |                                                                               | Verw                                             |
+|                |                                                                               | VerwArch                                         |
+|                |                                                                               | Verwaltungsorganisation                          |
+|                |                                                                               | Vorgänge                                         |
+|                |                                                                               | WE                                               |
+|                |                                                                               | WM IV                                            |
+|                |                                                                               | WRP                                              |
+|                |                                                                               | WSI-Mitteilungen                                 |
+|                |                                                                               | WiB                                              |
+|                |                                                                               | WiSta                                            |
+|                |                                                                               | WiVerw                                           |
+|                |                                                                               | Wirtsch NH                                       |
+|                |                                                                               | Wohnungseigentümer                               |
+|                |                                                                               | Wpg                                              |
+|                |                                                                               | WuB                                              |
+|                |                                                                               | WuM                                              |
+|                |                                                                               | WuW                                              |
+|                |                                                                               | WzS                                              |
+|                |                                                                               | ZAS Öst                                          |
+|                |                                                                               | ZBB                                              |
+|                |                                                                               | ZBR                                              |
+|                |                                                                               | ZBVR                                             |
+|                |                                                                               | ZERB                                             |
+|                |                                                                               | ZIAS                                             |
+|                |                                                                               | ZM                                               |
+|                |                                                                               | ZMV                                              |
+|                |                                                                               | ZSR                                              |
+|                |                                                                               | ZSchR                                            |
+|                |                                                                               | ZTR                                              |
+|                |                                                                               | ZVS                                              |
+|                |                                                                               | ZWS                                              |
+|                |                                                                               | ZZP                                              |
+|                |                                                                               | Zarbwiss                                         |
+|                |                                                                               | ZaöRV                                            |
+|                |                                                                               | ZblArbeitsmed                                    |
+|                |                                                                               | Zeitschr fd ges Strafrechtsw                     |
+|                |                                                                               | ZfA                                              |
+|                |                                                                               | ZfB                                              |
+|                |                                                                               | ZfBB                                             |
+|                |                                                                               | ZfF                                              |
+|                |                                                                               | ZfJ                                              |
+|                |                                                                               | ZfRSoz                                           |
+|                |                                                                               | ZfRV                                             |
+|                |                                                                               | ZfS                                              |
+|                |                                                                               | ZfSH/SGB                                         |
+|                |                                                                               | ZfSch                                            |
+|                |                                                                               | ZfStrVo                                          |
+|                |                                                                               | ZfZ                                              |
+|                |                                                                               | ab 1976: Unfallheilkunde, ab 1985: Unfallchirurg |
+|                |                                                                               | ab 1983: Zeitschrift für Wirtschaftsrecht        |
+|                |                                                                               | ab 1985: VDR￾Info                                |
+|                |                                                                               | ab 1990 Stadt und Gemeinde                       |
+|                |                                                                               | ab 1990 neuer Titel: Die Wohnungswirtschaft      |
+|                |                                                                               | atw                                              |
+|                |                                                                               | cahiers                                          |
+|                |                                                                               | davor : VDR Information                          |
+|                |                                                                               | davor Gemeinnütziges Wohnungswesen               |
+|                |                                                                               | davor: Städte￾und Gemeindebund                   |
+|                |                                                                               | informaciones                                    |
+|                |                                                                               | klinikarzt                                       |
+|                |                                                                               | nach 1990: Rechtsmedizin                         |
+|                |                                                                               | notar                                            |
+|                |                                                                               | online                                           |
+|                |                                                                               | recht                                            |
+|                |                                                                               | rv                                               |
+|                |                                                                               | transpR                                          |
++----------------+-------------------------------------------------------------------------------+--------------------------------------------------+

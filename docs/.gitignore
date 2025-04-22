@@ -1,0 +1,14 @@
+*_files
+*.html
+*.quarto_ipynb
+*.tex
+*.aux
+*.log
+*.pdf
+*.toc
+*.docx
+*.typ
+tmp
+.jupyter_cache
+__pycache__
+/.quarto/

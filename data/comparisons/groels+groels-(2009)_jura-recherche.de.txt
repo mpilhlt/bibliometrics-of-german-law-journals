@@ -1,0 +1,216 @@
++----------------+------------------------+---------------------+
+| Intersection   | groels+groels-(2009)   | jura-recherche.de   |
++================+========================+=====================+
+| AG             | DOV                    | AL                  |
+| AVR            | DStR                   | AP                  |
+| AcP            | DVBI                   | AR                  |
+| AuR            | Staat                  | AfP                 |
+| AöR            | StraFo                 | AiB                 |
+| BB             | Verw                   | ArbRB               |
+| CR             | ZFA                    | BC                  |
+| DB             | ZRG                    | BFHE                |
+| EuGRZ          | ZaoRV                  | BKK                 |
+| EuR            | ZeuP                   | BKR                 |
+| EuZW           | wistra                 | BLJ                 |
+| FamRZ          |                        | BRuR                |
+| GA             |                        | BVerfGE             |
+| GmbHR          |                        | BauR                |
+| JA             |                        | BayVBl              |
+| JR             |                        | Becklink            |
+| JURA           |                        | CB                  |
+| JZ             |                        | CCZ                 |
+| JuS            |                        | COVuR               |
+| KJ             |                        | CRi                 |
+| KritV          |                        | CuA                 |
+| MDR            |                        | DANA                |
+| NJW            |                        | DAR                 |
+| NStZ           |                        | DJZ                 |
+| NVwZ           |                        | DK                  |
+| NZA            |                        | DNotZ               |
+| NZG            |                        | DS                  |
+| NZS            |                        | DSB                 |
+| RabelsZ        |                        | DSRITB              |
+| RdA            |                        | DStZ                |
+| StV            |                        | DV                  |
+| VerwArch       |                        | DVBl                |
+| WM             |                        | DZWir               |
+| ZEuP           |                        | DivRuW              |
+| ZGR            |                        | DuD                 |
+| ZHR            |                        | DÖD                 |
+| ZIP            |                        | DÖV                 |
+| ZIS            |                        | E-Justice           |
+| ZRP            |                        | EDPL                |
+| ZStW           |                        | EF-Z                |
+| ZZP            |                        | EFG                 |
+|                |                        | ERCL                |
+|                |                        | EWIR                |
+|                |                        | EWS                 |
+|                |                        | EnWZ                |
+|                |                        | ErbR                |
+|                |                        | EuZA                |
+|                |                        | EurUP               |
+|                |                        | FA                  |
+|                |                        | FK                  |
+|                |                        | FMP                 |
+|                |                        | FR                  |
+|                |                        | Freilaw             |
+|                |                        | FuR                 |
+|                |                        | GPR                 |
+|                |                        | GRUR                |
+|                |                        | GRUR Int.           |
+|                |                        | GRUR-Prax           |
+|                |                        | GRUR-RR             |
+|                |                        | GVRZ                |
+|                |                        | GWR                 |
+|                |                        | GYIL                |
+|                |                        | GesR                |
+|                |                        | GoJIL               |
+|                |                        | GreifRecht          |
+|                |                        | GuP                 |
+|                |                        | HFR                 |
+|                |                        | HJIL                |
+|                |                        | HRN                 |
+|                |                        | HRRS                |
+|                |                        | I+E                 |
+|                |                        | IHR                 |
+|                |                        | IPRB                |
+|                |                        | IPRax               |
+|                |                        | ITRB                |
+|                |                        | IWB                 |
+|                |                        | InTeR               |
+|                |                        | InfAuslR            |
+|                |                        | JAmt                |
+|                |                        | JB                  |
+|                |                        | JBB                 |
+|                |                        | JIPITEC             |
+|                |                        | JLL                 |
+|                |                        | JSE                 |
+|                |                        | JuWiss              |
+|                |                        | JurPC               |
+|                |                        | JusExtra            |
+|                |                        | JöR                 |
+|                |                        | K&R                 |
+|                |                        | KSzW                |
+|                |                        | Kirche und Recht    |
+|                |                        | KrimJ               |
+|                |                        | KuR                 |
+|                |                        | L&L                 |
+|                |                        | LKV                 |
+|                |                        | LMK                 |
+|                |                        | MIP                 |
+|                |                        | MKS                 |
+|                |                        | MMR                 |
+|                |                        | MPR                 |
+|                |                        | MPYUNL              |
+|                |                        | MRB                 |
+|                |                        | MRM                 |
+|                |                        | Marburg Law Review  |
+|                |                        | MedR                |
+|                |                        | MittBayNot          |
+|                |                        | MittDtPatA          |
+|                |                        | N&R                 |
+|                |                        | NDV                 |
+|                |                        | NJ                  |
+|                |                        | NJOZ                |
+|                |                        | NJW-RR              |
+|                |                        | NK                  |
+|                |                        | NStZ-RR             |
+|                |                        | NVwZ-Extra          |
+|                |                        | NVwZ-RR             |
+|                |                        | NWB                 |
+|                |                        | NZBau               |
+|                |                        | NZFam               |
+|                |                        | NZI                 |
+|                |                        | NZM                 |
+|                |                        | NZV                 |
+|                |                        | NZWiSt              |
+|                |                        | NordÖR              |
+|                |                        | NuR                 |
+|                |                        | OER                 |
+|                |                        | OdW                 |
+|                |                        | PR                  |
+|                |                        | PersV               |
+|                |                        | PharmR              |
+|                |                        | PinG                |
+|                |                        | Polizei             |
+|                |                        | RAW                 |
+|                |                        | RDV                 |
+|                |                        | REE                 |
+|                |                        | RGSt                |
+|                |                        | RIW                 |
+|                |                        | RRa                 |
+|                |                        | RW                  |
+|                |                        | RdE                 |
+|                |                        | RdZ                 |
+|                |                        | Res                 |
+|                |                        | Rg                  |
+|                |                        | RiA                 |
+|                |                        | RuP                 |
+|                |                        | RuZ                 |
+|                |                        | RÜ                  |
+|                |                        | RÜ2                 |
+|                |                        | SGb                 |
+|                |                        | Savigny             |
+|                |                        | SchiedsVZ           |
+|                |                        | SchlHA              |
+|                |                        | SoSi                |
+|                |                        | StB                 |
+|                |                        | StBp                |
+|                |                        | StRR                |
+|                |                        | Str                 |
+|                |                        | Stu                 |
+|                |                        | StuW                |
+|                |                        | UFITA               |
+|                |                        | UPR                 |
+|                |                        | VW                  |
+|                |                        | VersR               |
+|                |                        | VuR                 |
+|                |                        | WPg                 |
+|                |                        | WRP                 |
+|                |                        | WissR               |
+|                |                        | Wistra              |
+|                |                        | WuB                 |
+|                |                        | WuM                 |
+|                |                        | WuW                 |
+|                |                        | ZAP                 |
+|                |                        | ZCG                 |
+|                |                        | ZChinR              |
+|                |                        | ZD                  |
+|                |                        | ZD-A                |
+|                |                        | ZDRW                |
+|                |                        | ZERL                |
+|                |                        | ZESAR               |
+|                |                        | ZEV                 |
+|                |                        | ZErb                |
+|                |                        | ZEuS                |
+|                |                        | ZGE                 |
+|                |                        | ZGRE                |
+|                |                        | ZInsO               |
+|                |                        | ZJS                 |
+|                |                        | ZLVR                |
+|                |                        | ZMR                 |
+|                |                        | ZMV                 |
+|                |                        | ZNER                |
+|                |                        | ZParl               |
+|                |                        | ZRFC                |
+|                |                        | ZUM                 |
+|                |                        | ZUR                 |
+|                |                        | ZVertriebsR         |
+|                |                        | ZVglRWiss           |
+|                |                        | ZWH                 |
+|                |                        | ZWeR                |
+|                |                        | ZevKr               |
+|                |                        | ZfA                 |
+|                |                        | ZfBR                |
+|                |                        | ZfMER               |
+|                |                        | ZfU                 |
+|                |                        | ZgS                 |
+|                |                        | gsz                 |
+|                |                        | info also           |
+|                |                        | iurratio            |
+|                |                        | jM                  |
+|                |                        | markenr             |
+|                |                        | myops               |
+|                |                        | r+s                 |
+|                |                        | zfm                 |
++----------------+------------------------+---------------------+

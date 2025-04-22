@@ -1,0 +1,6 @@
+#! /bin/bash
+
+set -e
+
+quarto render docs/paper.qmd --to html --output-dir ../docs
+python scripts/patch-img-size.py docs/paper.html

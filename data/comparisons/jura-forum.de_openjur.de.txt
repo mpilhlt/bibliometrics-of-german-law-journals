@@ -1,0 +1,115 @@
++----------------+-------------------------------------------------------------------------------+------------------------+
+| Intersection   | jura-forum.de                                                                 | openjur.de             |
++================+===============================================================================+========================+
+| AP             | AE                                                                            | A&R                    |
+| BKR            | AGS                                                                           | AG                     |
+| DNotZ          | ASR                                                                           | ARP                    |
+| DStR           | AbfallR                                                                       | AcP                    |
+| EuZA           | ArbR                                                                          | AnwBl                  |
+| EuZW           | AuR                                                                           | Archiv für Presserecht |
+| FGPrax         | Baurecht                                                                      | AöR                    |
+| FPR            | Betriebs-Berater                                                              | BAnz                   |
+| FamRZ          | Breithaupt                                                                    | BB                     |
+| GRUR           | Computer und Recht                                                            | BC                     |
+| GRUR Int       | DPJZ                                                                          | BFH/NV                 |
+| GRUR-RR        | Der Verkehrsanwalt                                                            | BFHE                   |
+| GWR            | Die Aktiengesellschaft                                                        | BGHSt                  |
+| IIC            | ECFR                                                                          | BGHZ                   |
+| IR             | ERCL                                                                          | BPatGE                 |
+| JOR            | EWS                                                                           | BSGE                   |
+| JURA           | EuR                                                                           | BVerfGE                |
+| JW             | EurUP                                                                         | BVerfGK                |
+| JuS            | FF                                                                            | BVerwGE                |
+| K&R            | Fachanwalt Arbeitsrecht                                                       | BeckRS                 |
+| KJ             | FamFR                                                                         | CCZ                    |
+| KJB            | FoVo                                                                          | COVuR                  |
+| LMuR           | GUR-Prax                                                                      | CR                     |
+| MMR            | Immobilien- & Baurecht                                                        | CuA                    |
+| MPR            | JETL                                                                          | DAR                    |
+| MedR           | JIBL                                                                          | DB                     |
+| NJW-RR         | JMS                                                                           | DGVZ                   |
+| NStZ-RR        | JuristenZeitung                                                               | DJZ                    |
+| NVwZ           | KHR                                                                           | DRV                    |
+| NVwZ-RR        | KammerForum                                                                   | DRiZ                   |
+| NZA-RR         | KommJur                                                                       | DSB                    |
+| NZBau          | KritV                                                                         | DSWR                   |
+| NZG            | LKV                                                                           | DWW                    |
+| NZI            | Monatsschrift für Deutsches Recht                                             | DuD                    |
+| NZM            | Myops                                                                         | DÖD                    |
+| NZS            | N&R                                                                           | DÖV                    |
+| NZV            | NJ                                                                            | EFG                    |
+| NordÖR         | NK                                                                            | EWeRK                  |
+| RIW            | Nomos Rechtsprechungsübersicht                                                | EWiR                   |
+| RdA            | RAK                                                                           | EnWZ                   |
+| SchiedsVZ      | RZ                                                                            | Entscheidungen des BFH |
+| SpuRt          | RdJB                                                                          | ErbR                   |
+| StRR           | RuP                                                                           | ErbbauZ                |
+| StraFo         | STUD                                                                          | EuCLR                  |
+| VRÜ            | SVR                                                                           | EuCML                  |
+| WiRO           | SpV                                                                           | FA                     |
+| ZAP            | StZ                                                                           | GA                     |
+| ZEV            | SteuK                                                                         | GRUR-Prax              |
+| ZEuP           | StoffR                                                                        | GSZ                    |
+| ZInsO          | Strafverteidiger                                                              | GewArch                |
+| ZLR            | Versicherungsrecht                                                            | GuP                    |
+| ZNotP          | VuR                                                                           | HRRS                   |
+| ZRP            | Wertpapier-Mitteilungen                                                       | IBR                    |
+| ZUM            | ZA                                                                            | IILR                   |
+| ZUR            | ZAR                                                                           | InsVZ                  |
+| ZWE            | ZGR                                                                           | InstGE                 |
+| ZfBR           | ZHR                                                                           | JA                     |
+| iStR           | ZMGR                                                                          | JR                     |
+| r+s            | ZSE                                                                           | JZ                     |
+| zfs            | ZStW                                                                          | JurPC                  |
+|                | ZVglRWiss                                                                     | L&L                    |
+|                | Zeitschrift des Deutschen Juristinnenbundes                                   | LRE                    |
+|                | Zeitschrift für Hochschulrecht, Hochschulmanagement und Hochschulpolitik      | LTO                    |
+|                | Zeitschrift für Landes- und Kommunalrecht Hessen I Rheinland-Pfalz I Saarland | MDR                    |
+|                | Zeitschrift für Miet- und Raumrecht                                           | MIR                    |
+|                | info also                                                                     | NJOZ                   |
+|                | wrp                                                                           | NJW                    |
+|                |                                                                               | NStZ                   |
+|                |                                                                               | NWVBl                  |
+|                |                                                                               | NZA                    |
+|                |                                                                               | NZFam                  |
+|                |                                                                               | NZKart                 |
+|                |                                                                               | NZWiSt                 |
+|                |                                                                               | PharmR                 |
+|                |                                                                               | PinG                   |
+|                |                                                                               | RDV                    |
+|                |                                                                               | RGSt                   |
+|                |                                                                               | RGZ                    |
+|                |                                                                               | RPfleger               |
+|                |                                                                               | RdTW                   |
+|                |                                                                               | RphZ                   |
+|                |                                                                               | RÜ                     |
+|                |                                                                               | StV                    |
+|                |                                                                               | VIA                    |
+|                |                                                                               | VR                     |
+|                |                                                                               | VRS                    |
+|                |                                                                               | VersR                  |
+|                |                                                                               | WM                     |
+|                |                                                                               | WRP                    |
+|                |                                                                               | WuM                    |
+|                |                                                                               | ZBB                    |
+|                |                                                                               | ZD                     |
+|                |                                                                               | ZIP                    |
+|                |                                                                               | ZIS                    |
+|                |                                                                               | ZJS                    |
+|                |                                                                               | ZMR                    |
+|                |                                                                               | ZUM-RD                 |
+|                |                                                                               | ZVI                    |
+|                |                                                                               | ZVertriebsR            |
+|                |                                                                               | ZWeR                   |
+|                |                                                                               | ZZP                    |
+|                |                                                                               | ZaöRV                  |
+|                |                                                                               | ZfPW                   |
+|                |                                                                               | ZfiR                   |
+|                |                                                                               | bauR                   |
+|                |                                                                               | djbZ                   |
+|                |                                                                               | medstra                |
+|                |                                                                               | notar                  |
+|                |                                                                               | npoR                   |
+|                |                                                                               | openjur                |
+|                |                                                                               | öAT                    |
++----------------+-------------------------------------------------------------------------------+------------------------+

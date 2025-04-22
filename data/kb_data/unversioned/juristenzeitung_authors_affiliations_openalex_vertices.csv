@@ -1,0 +1,1983 @@
+id,label,type
+1,Hinrich Rüping,author
+2,Stefan Greiner,author
+3,Thomas Gschwend,author
+4,Markus C. Kerber,author
+5,Christoph Becker,author
+6,Cordt-Magnus van Geuns-Rosch,author
+7,Jochen A. Werner,author
+8,Klaus Ulrich Schmolke,author
+9,Christian Hensel,author
+10,Fabian Heide,author
+11,Anne Christin Wietfeld,author
+12,Marcus Lutter,author
+13,Andrea Hagemeier,author
+14,Claudio Franzius,author
+15,Andreas Bücker,author
+16,Mario Martini,author
+17,Felix Berner,author
+18,Marc-Philippe Weller,author
+19,Dietrich Murswiek,author
+20,Liv Jaeckel,author
+21,Ivo Bach,author
+22,Michael Rolfsen,author
+23,Thomas Weigend,author
+24,Michael Dudek,author
+25,Matthias Wallimann,author
+26,Daniela Demko,author
+27,Daniel Effer-Uhe,author
+28,Angelika Günzel,author
+29,Herbert Roth,author
+30,Christoph Schönberger,author
+31,Kyriakos N. Kotsoglou,author
+32,Susanne Schwarz,author
+33,Jean Mohamed,author
+34,Jörn Jacobs,author
+35,Carl-Friedrich Stuckenberg,author
+36,Matthias Fervers,author
+37,Frauke Brosius-Gersdorf,author
+38,Gunnar Hindrichs,author
+39,E. Wegner,author
+40,Andreas Ringshandl,author
+41,Bernd Ruethers,author
+42,Gregor Hilger,author
+43,Volker Rieble,author
+44,Mattias Lehmann,author
+45,Stephan Barton,author
+46,Matthias Ruffert,author
+47,Angela Schwerdtfeger,author
+48,Stefan Haack,author
+49,Hans-Jürgen Ahrens,author
+50,Frank Peters,author
+51,Dieter Medicus,author
+52,Kyrill-Alexander Schwarz,author
+53,Peter Oestmann,author
+54,Leonie Steinl,author
+55,Louisa Brennecke,author
+56,Moritz Brinkmann,author
+57,Astrid Wallrabenstein,author
+58,Katharina Hilbig-Lugani,author
+59,Wolfgang Grunsky,author
+60,Martin Becker,author
+61,Ekkehard Hofmann,author
+62,Christoph Engel,author
+63,Johannes Buchheim,author
+64,Bernhard Großfeld,author
+65,Ulrich Eisenberg,author
+66,Wolfgang Hau,author
+67,Kurt Siehr,author
+68,Georg Bitter,author
+69,Matthias Kilian,author
+70,Holger Ehlers,author
+71,Fabian Michl,author
+72,Jürgen Helle,author
+73,Christoph Enders,author
+74,Christian Kukuczka,author
+75,Frederik von Harbou,author
+76,Ulrich Jan Schröder,author
+77,Dian Schefold,author
+78,Thomas M. J. Möllers,author
+79,Andreas Röth,author
+80,Jens Kleinschmidt,author
+81,Markus Würdinger,author
+82,Kristian Kühl,author
+83,Barbara Dauner-Lieb,author
+84,Daniel Klocke,author
+85,Johannes Belling,author
+86,Moritz Maier,author
+87,Franz Schnauder,author
+88,Dagmar Coester-Waltjen,author
+89,Claude Witz,author
+90,Gerrit Forst,author
+91,Burkhard Heß,author
+92,Dirk Müllmann,author
+93,Ulrich Segna,author
+94,Mimiam Dross,author
+95,Reinhard Bork,author
+96,Christian Ernst,author
+97,Nikolaus Marsch,author
+98,Björn Schiffbauer,author
+99,Steffen Augsberg,author
+100,Carl-Christian Dressel,author
+101,Christian Fahl,author
+102,Johannes Wertenbruch,author
+103,Klaus Tiedtke,author
+104,Ssoufian Bouchouaf,author
+105,Winfried Kluth,author
+106,Katharina von Schlieffen,author
+107,Herbert Zech,author
+108,Peter Schlechtriem,author
+109,Max Gärtner,author
+110,Gregor Thüsing,author
+111,Nils Schaks,author
+112,Lola Petersen,author
+113,Jonathan Friedrichs,author
+114,Maximilian Becker,author
+115,Klaus Tonner,author
+116,Jermaine Washington,author
+117,Joachim von Bargen,author
+118,Knut Werner Lange,author
+119,Leonhard Hübner,author
+120,Gerhard Hohloch,author
+121,Diederich Eckardt,author
+122,Gerson Trüg,author
+123,Paul Kirchhof,author
+124,Jan D. Lüttringhaus,author
+125,Joachim Wieland,author
+126,Hans-Detlef Horn,author
+127,Anna-Julia Egger,author
+128,Matthias Dankemeyer,author
+129,Ralph Christensen,author
+130,Gottfried Schiemann,author
+131,Jürgen Rath,author
+132,Eike Kassebaum,author
+133,S. S. Meyer,author
+134,Ingo Rau,author
+135,Jan-Marcel Drossel,author
+136,Josef Franz Lindner,author
+137,Matthias Siegmann,author
+138,Martin Häublein,author
+139,Christoph Engel,author
+140,Jens Adolphsen,author
+141,Gerhard Haney,author
+142,Eva Kocher,author
+143,Anne Schneider,author
+144,Herbert Wiedemann,author
+145,Sebastian Leuschner,author
+146,Ulrich Palm,author
+147,Maren Vogel,author
+148,Ulrike Picker,author
+149,Ingolf Pernice,author
+150,Clara Günzl,author
+151,Nadja Josefin Rünzel,author
+152,Christine Morgenstern,author
+153,Sophie Ludewigs,author
+154,Elke Gurlit,author
+155,Andreas Möhlenkamp,author
+156,Carina Dorneck,author
+157,Thomas Hillenkamp,author
+158,Robert Bommel,author
+159,Stanley L. Paulson,author
+160,Claus Ahrens,author
+161,Hans-Martin Müller-Laube,author
+162,Edda E. Pauli,author
+163,Martin Heckel,author
+164,Lennart Fleckenstein,author
+165,Ina Plettenberg,author
+166,Florian Bode,author
+167,Tilman Bezzenberger,author
+168,Georg Lienbacher,author
+169,Kevin Franzke,author
+170,Uwe Volkmann,author
+171,Niklas Bunnenberg,author
+172,Tobias André,author
+173,Hans Kudlich,author
+174,Adrian Schmidt Recla,author
+175,Marie Fritzer,author
+176,Michael Lysander Fremuth,author
+177,Rüdiger Krause,author
+178,Tilman Rauhut,author
+179,Stefan Treichel,author
+180,Katrin Gierhake,author
+181,Paul R. Wolf,author
+182,Jörg Manfred Mössner,author
+183,Marten Breuer,author
+184,C. Schnabel,author
+185,Patrick C. Leyens,author
+186,Timo Fest,author
+187,Jörg H. Sommer,author
+188,Michael Walter,author
+189,Sven Siebrecht,author
+190,Daniel Sailer,author
+191,Gerald Spindler,author
+192,Martin Zwickel,author
+193,Christoph Krenn,author
+194,Andreas Fuchs,author
+195,Christian Becker,author
+196,Thomas Oppermann,author
+197,Jan Schaefer,author
+198,Arnd Uhle,author
+199,Frank Zimmermann,author
+200,Thomas Grosse-Wilde,author
+201,Elena Barnert,author
+202,Jakob Fortunat Stagl,author
+203,Hans Ulrich Paeffgen,author
+204,Bernd Heinrich,author
+205,Karsten Altenhain,author
+206,Eibe Riedel,author
+207,Dietmar Willoweit,author
+208,Peter Udsching,author
+209,Stefan Leible,author
+210,Hans-Joachim Cremer,author
+211,Patrick Ostendorf,author
+212,Simón Maturana,author
+213,Karl‐Jürgen Bieback,author
+214,Johannes Köndgen,author
+215,Sebastian Dworschak,author
+216,Bernd-Dieter Meier,author
+217,Thomas Riehm,author
+218,Ariane Berger,author
+219,Paula Rhein-Fischer,author
+220,Guy Beaucamp,author
+221,Fabian Stam,author
+222,Hans Jörg Sandkühler,author
+223,Florian Möslein,author
+224,Jan Singbartl,author
+225,Hinnerk Wißmann,author
+226,Lars Klöhn,author
+227,Gunda Dreyer,author
+228,Jens Koch,author
+229,Rolf Gröschner,author
+230,Hans Meyer,author
+231,Harald Koch,author
+232,Marc Reiß,author
+233,Lars Berster,author
+234,Johannes Klamet,author
+235,E Heun,author
+236,Hans-Joachim Musielak,author
+237,Andreas Kulick,author
+238,Hannah Stoffer,author
+239,Elena Geck,author
+240,Frank Saliger,author
+241,Andreas Ruster,author
+242,Danny Busch,author
+243,Friedhelm Hase,author
+244,Germar Enders,author
+245,Matthias Klatt,author
+246,Roman Kaiser,author
+247,Tamina Preuß,author
+248,Martin Heger,author
+249,Amir Makee Mosa,author
+250,Said Pirmurat,author
+251,Frank Neubacher,author
+252,Erich Samson,author
+253,Karsten Schmidt,author
+254,Stephan Szalai,author
+255,Raphael Koch,author
+256,Stefan Witschen,author
+257,Nils Weinberg,author
+258,Till Valentin Meickmann,author
+259,Jürgen Helle,author
+260,Alexander Sajnovits,author
+261,Roland Broemel,author
+262,Julian Krüper,author
+263,Boris Schinkels,author
+264,Johanna Bierlein,author
+265,Jan Hoffmann,author
+266,Charlotte Vollenberg,author
+267,Nina Nestler,author
+268,Magdalena Kubiak,author
+269,Kirsten Schmalenbach,author
+270,Ralph A. Backhaus,author
+271,Michael Nietsch,author
+272,Sabine Gleß,author
+273,Hans Joachim Schneider,author
+274,Thorsten Kingreen,author
+275,Hans Heinrich Rupp,author
+276,Nils Jansen,author
+277,Gesa Franke,author
+278,Kay H. Schumann,author
+279,Thomas Kirste,author
+280,Tobias Voigt,author
+281,Dominik Schwab,author
+282,Karl Riesenhuber,author
+283,Robert Alexy,author
+284,Philipp Georgy,author
+285,Ansgar Ohly,author
+286,Bardo Fassbender,author
+287,Wolfgang B. Schünemann,author
+288,Dirk Olzen,author
+289,Jan C. Joerden,author
+290,Helena Carolina Schroeder,author
+291,Erik Gawel,author
+292,Jürgen Kohler,author
+293,Joachim Lege,author
+294,Peter Collin,author
+295,Paul Krell,author
+296,Thomas Trück,author
+297,Tobias A. Fuchs,author
+298,Gerald Mäsch,author
+299,Nora Wienfort,author
+300,Clara Beise,author
+301,Rike Sinder,author
+302,Johann Justus Vasel,author
+303,Dagmar Kaiser,author
+304,Wolf-Rüdiger Schenke,author
+305,Stefan Huber,author
+306,Rolf Stober,author
+307,Detlef Leenen,author
+308,Charlotte Harms,author
+309,Christian Bickenbach,author
+310,Hans Vest,author
+311,Shu-Perng Hwang,author
+312,Rolf Wank,author
+313,Barbara Grunewald,author
+314,Till Zimmermann,author
+315,Jochen Taupitz,author
+316,Peter Jung,author
+317,Sven Söllner,author
+318,Dominic Merk,author
+319,Timo Rademacher,author
+320,Stefan Baufeld,author
+321,Jan Lieder,author
+322,Luís Greco,author
+323,Christian Fuchs,author
+324,Thomas Rönnau,author
+325,Matthias Bäcker,author
+326,Moritz Renner,author
+327,Stefanie Bock,author
+328,Jens-Peter Schneider,author
+329,Jan von Hein,author
+330,Karoline Maria Linzbach,author
+331,Christian Berger,author
+332,Rupprecht Podszun,author
+333,Robert Leicht,author
+334,Hans Heinrich Rupp,author
+335,Angela Metzmacher,author
+336,Klaus Bitterich,author
+337,Tim Wihl,author
+338,Bernhard Schlink,author
+339,Thomas Duve,author
+340,Marcus Bsaisou,author
+341,Wolf-Dietrich Walker,author
+342,Johannes Gansmeier,author
+343,Steffen Schlinker,author
+344,Dres. h. c. ErnstA. Kramer,author
+345,Martin Gebauer,author
+346,Arndt Teichmann,author
+347,Martin Will,author
+348,Hanno Kube,author
+349,Lisa Pfaffinger,author
+350,Michael Pawlik,author
+351,Manfred Baldus,author
+352,Moritz Vormbaum,author
+353,Markus Ludwigs,author
+354,Armin Steinbach,author
+355,Stephan Hobe,author
+356,Tim W. Dornis,author
+357,Diethelm Klesczewski,author
+358,Maximilian Wallerath,author
+359,Pascale Cancik,author
+360,Clemens Latzel,author
+361,Mathias Habersack,author
+362,Jennifer Koch,author
+363,Miguel Teixeira de Sousa,author
+364,Johanna Hey,author
+365,Gerhard Wagner,author
+366,Holger Fleischer,author
+367,Volker Römermann,author
+368,Betsy Byrd,author
+369,Isabelle Ley,author
+370,Jürgen Basedow,author
+371,Stephan Rixen,author
+372,Karl-Ludwig Kunz,author
+373,Jochen Hoffmann,author
+374,Frank Stolmann,author
+375,Christoph Moes,author
+376,Katja Gelinsky,author
+377,Rainer Tietzsch,author
+378,Winfried Hassemer,author
+379,Tonio Walter,author
+380,Ulrich Karpen,author
+381,Dieter Gosewinkel,author
+382,Dennis Reschke,author
+383,Frank Hoffmeister,author
+384,Steffen Detterbeck,author
+385,Thomas Hinz,author
+386,Samy G. Sharaf,author
+387,Liane Wörner,author
+388,Georg Steinberg,author
+389,Armin von Bogdandy,author
+390,Oliver Remien,author
+391,Arnold Lehmann-Richter,author
+392,Dominik Brodowski,author
+393,Ulrich Haltern,author
+394,Ralph Christensen,author
+395,Felix Hammer,author
+396,Jörg Philipp Terhechte,author
+397,Kai Cornelius,author
+398,Wolfgang Ernst,author
+399,Bettina Weißer,author
+400,Michael Heese,author
+401,Johanna Wolff,author
+402,Meike Peters,author
+403,Christoph Ohler,author
+404,Benjamin G. Engst,author
+405,Stephan Vielmeier,author
+406,Jan Henrik Klement,author
+407,Oliver Lepsius,author
+408,Sebastian Sternberg,author
+409,Filippo Ranieri,author
+410,Franz Reimer,author
+411,Anuscheh Farahat,author
+412,Charlotte Schmitt-Leonardy,author
+413,Greta Göbel,author
+414,Lutz Eidam,author
+415,Jörg Fritzsche,author
+416,Johannes Rottmann,author
+417,Frank Meyer,author
+418,Catherine Haguenau-Moizard,author
+419,Michael Gutfried,author
+420,Walter Bayer,author
+421,M. Roßbach,author
+422,Mehrdad Payandeh,author
+423,Henrike von Scheliha,author
+424,Johanna Cormann,author
+425,Anika Burkhardt,author
+426,Gerson Trüg,author
+427,Gerhard Walter,author
+428,Kilian Wegner,author
+429,Marco Wagner,author
+430,Jule Martenson,author
+431,Kai Purnhagen,author
+432,Bernd Rüthers,author
+433,Yvonne Wilms,author
+434,Eckart Gottschalk,author
+435,Johannes Stürner,author
+436,Johanna Erler,author
+437,Henning Tappe,author
+438,Andreas Høyer,author
+439,Christoph Thole,author
+440,Michael Grünberger,author
+441,Rüdiger Zuck,author
+442,Jan Wilhelm,author
+443,Mathias Hong,author
+444,Hartmut Oetker,author
+445,Cosima Möller,author
+446,Ines Härtel,author
+447,Wolfgang Weiß,author
+448,Ann-Kristin Mayrhofer,author
+449,Christian Gomille,author
+450,C. A. Johnson,author
+451,Stefan Huster,author
+452,Günter Frankenberg,author
+453,Ludwig Grämlich,author
+454,Hans‐W. Micklitz,author
+455,Ulrich Fastenrath,author
+456,Benno Zabel,author
+457,Sophie-Charlotte Lenski,author
+458,Thomas Raiser,author
+459,Ann-Marie Kaulbach,author
+460,Felix M. Wilke,author
+461,Georg Sandberger,author
+462,Jens Kersten,author
+463,Horst Eidenmüller,author
+464,Hermann Plagemann,author
+465,Otto Depenheuer,author
+466,Rechtsanwalt Felix Busse,author
+467,Giesela Rühl,author
+468,Reinhard Richardi,author
+469,Katharina von Koppenfels-Spies,author
+470,Andreas Fischer-Lescano,author
+471,Ulrich Noack,author
+472,U. Becker,author
+473,Klaus Adomeit,author
+474,Dörte Poelzig,author
+475,Jörg Habetha,author
+476,Jens Prütting,author
+477,James Bews,author
+478,Christian Ernst,author
+479,Hans Friedrich Zacher,author
+480,Martin Heger,author
+481,Sören Lichtenthäler,author
+482,Wolfgang Graf Vitzthum,author
+483,Paul Kirchhof,author
+484,Robert Uerpmann-Wittzack,author
+485,Manfred Maiwald,author
+486,Heike Lesch,author
+487,Ulrich Ehricke,author
+488,Dinah Huerkamp,author
+489,Klaus F. Röhl,author
+490,Martín Morlok,author
+491,Klaus Rogall,author
+492,Andreas Glaser,author
+493,Elmar Mand,author
+494,Adam Sagan,author
+495,Tobias Ponßen,author
+496,Markus Winkler,author
+497,Joachim Zekoll,author
+498,Michael Fuchs,author
+499,Hendrik van Laak,author
+500,Philipp Reimer,author
+501,Frank Bauer,author
+502,Berit Völzmann,author
+503,Gunnar Folke Schuppert,author
+504,Sebastian Omlor,author
+505,Johanna Croon-Gestefeld,author
+506,Axel Tschentscher,author
+507,Peter Popp,author
+508,Roger Masterman,author
+509,Georg Küpper,author
+510,Christopher Schoenfleisch,author
+511,Marco Hößlein,author
+512,Anatol Dutta,author
+513,Bernhard W. Wegener,author
+514,Gernot Sydow,author
+515,Björn Laukemann,author
+516,Gabriele Britz,author
+517,Ulrich Weber,author
+518,Jan Oster,author
+519,Peter Hilpold,author
+520,Peter Unruh,author
+521,Klaus Sieveking,author
+522,Dagmar Felix,author
+523,Stefan Korioth,author
+524,Koenraad Lenaerts,author
+525,Michael Kubiciel,author
+526,Trutz M. Harder,author
+527,Peter Unruh,author
+528,Thilo Marauhn,author
+529,Mario Stanke,author
+530,Georg Neureither,author
+531,Christoph Barthe,author
+532,Armin Engländer,author
+533,Stefanie Hromek,author
+534,Jürgen Kühling,author
+535,Martin Asholt,author
+536,O.-L. Forel,author
+537,Angie Genenger,author
+538,Klaus Kröger,author
+539,Stephan Balthasar,author
+540,Anna-Lena Hollo,author
+541,Andreas F. Lehner,author
+542,Axel Beater,author
+543,Marion Albers,author
+544,Bettina Heiderhoff,author
+545,Hanbyul Jung,author
+546,Joachim Vogel,author
+547,Jochen Hoffmann,author
+548,Dietmar von der Pfordten,author
+549,Alexander Bruns,author
+550,Thomas Groß,author
+551,Sandro Wiggerich,author
+552,Christian Traulsen,author
+553,Gebhard M. Rehm,author
+554,Judith Froese,author
+555,Martin Schmidt-Kessel,author
+556,Gabriele Britz,author
+557,Maria Bröcker,author
+558,Nils Pelzer,author
+559,Horst-Peter Götting,author
+560,Matthias Pendl,author
+561,Moritz Vormbaum,author
+562,Peter-Christian Müller-Graff,author
+563,Dieter Birk,author
+564,Johannes Eichenhofer,author
+565,Stefan Korch,author
+566,Friedrich-Christian Schroeder,author
+567,Nina Dethloff,author
+568,Detlev W. Belling,author
+569,Andreas von Arnauld,author
+570,Maja Caroline Lehmann,author
+571,Jörg Scheinfeld,author
+572,Philipp Bender,author
+573,David Markworth,author
+574,Christine Godt,author
+575,Sabine Swoboda,author
+576,Roland Bornemann,author
+577,Werner Heun,author
+578,Juliane Kokott,author
+579,Hartmut Bauer,author
+580,Christian Nierhauve,author
+581,Stefan Thomas,author
+582,Reinmar Wolff,author
+583,Christian Peter Hille,author
+584,Claus Roxin,author
+585,Björn Harich,author
+586,Bernd Mertens,author
+587,Gerd Roellecke,author
+588,Jeremy Stevens,author
+589,Christoph Möllers,author
+590,Marlene Schmidt,author
+591,Hans-Georg Bollweg,author
+592,Wilfried Erbguth,author
+593,S. Martens,author
+594,Florian Loyal,author
+595,Hans-Joachim Priester,author
+596,Christoph Wendelstein,author
+597,Thomas Dreier,author
+598,Dominik Rennert,author
+599,Michael Haimerl,author
+600,Hannes Unberath,author
+601,Peter W. Heermann,author
+602,David Kästle-Lamparter,author
+603,Markus Kaltenborn,author
+604,Scarlett Jansen,author
+605,Sebastian J. Golla,author
+606,Frank Meyer,author
+607,Malte-Christian Gruber,author
+608,Thomas Raff,author
+609,Inge Scherer,author
+610,Robert Freitag,author
+611,Pia Lange,author
+612,Monika Frommel,author
+613,Karlheinz Muscheler,author
+614,Stephan Dorn,author
+615,Hans Joachim Hirsch,author
+616,Claus Luttermann,author
+617,Eva Inés Obergfell,author
+618,Matthias Friehe,author
+619,Franz-Christoph Zeitler,author
+620,Utz Schliesky,author
+621,Henning Radtke,author
+622,Clemens Bogedain,author
+623,Eric S. Armbrecht,author
+624,Michael Klöepfer,author
+625,Daniel-Erasmus Khan,author
+626,Christian Brand,author
+627,Tanja Niedernhuber,author
+628,Michael Stolleis,author
+629,Harm Peter Westermann,author
+630,Claudia Bittner,author
+631,Torsten Kindt,author
+632,Ferdinand Weber,author
+633,Karl Christian Vedder,author
+634,Georg Caspers,author
+635,Hanns Prütting,author
+636,Angie Schneider,author
+637,Christopher Selke,author
+638,Dan Bastian Trapp,author
+639,Martin Henßler,author
+640,Dan Wielsch,author
+641,Ralf Peter Anders,author
+642,Peter Krebs,author
+643,Gerhard Wagner,author
+644,Dominik König,author
+645,Georg Nolte,author
+646,Kai Ambos,author
+647,Michael Heese,author
+648,Stefan Storr,author
+649,Ulrich Sieber,author
+650,Boris Burghardt,author
+651,Katharina Leusch,author
+652,Matthias Rossi,author
+653,Hans Alexy,author
+654,Christoph Lachner,author
+655,Hermann-Wilfried Bayer,author
+656,Marinus J. Stehmeier,author
+657,Sebastian Omlor,author
+658,Thomas Hoeren,author
+659,Carsten Herresthal,author
+660,Klaas Hendrik Eller,author
+661,Wolfgang Kaiser,author
+662,Ingo Saenger,author
+663,Sebastian A.E. Martens,author
+664,Alica Mohnert,author
+665,Marcus Jurij Vogt,author
+666,Mario Martini,author
+667,Susanna Roßbach,author
+668,Christoph Grabenwarter,author
+669,Igor Sorge,author
+670,Frank Schorkopf,author
+671,Ingeborg Puppe,author
+672,Thomas Jaeger,author
+673,Oliver Raabe,author
+674,Lara Hausknecht,author
+675,Hauke Brettel,author
+676,Jan Schürnbrand,author
+677,Markus Abraham,author
+678,Benjamin Raue,author
+679,Jörg Benedict,author
+680,Kent D. Lerch,author
+681,Ralph Ingelfinger,author
+682,Gerhard Dannecker,author
+683,Vanessa Grifo,author
+684,Klaus-Peter Jünemann,author
+685,Michael Müller,author
+686,Gerhard Fezer,author
+687,M. Scheer,author
+688,Michael Brockmann,author
+689,Ulrike Babusiaux,author
+690,J. Rottmann,author
+691,Michael Heese,author
+692,Mathias Rohe,author
+693,Walter Grasnick,author
+694,Jürgen Kohler,author
+695,Noah Drautzburg,author
+696,Abteilung Zivilrecht,author
+697,F. Lange,author
+698,Christian Matt,author
+699,Carsten Kusche,author
+700,Bernd J. Hartmann,author
+701,Ulrich Stein,author
+702,G Biermann,author
+703,Jochen von Bernstorff,author
+704,Jan Stoppel,author
+705,Helmut Philipp Aust,author
+706,Achim Janssen,author
+707,Jonas C. Schulz,author
+708,Korbinian Schrom,author
+709,Kathrin Kroll-Ludwigs,author
+710,Sebastian Fischer,author
+711,Oliver L. Knöfel,author
+712,C Anger,author
+713,Astrid Stadler,author
+714,Jens Puschke,author
+715,Arnd Koch,author
+716,Gregor Bachmann,author
+717,Roland Klattenhoff,author
+718,Wolfgang Marotzke,author
+719,Carsten Schäfer,author
+720,Phillip Hellwege,author
+721,Florian Bien,author
+722,Ulrich Haas,author
+723,Foroud Shirvani,author
+724,Thorsten Siegel,author
+725,Kerstin Seewald,author
+726,Wolfgang Frisch,author
+727,Mohamad El-Ghazi,author
+728,Anna Flor,author
+729,Michael Beurskens,author
+730,Christian G. Huber,author
+731,Matthias Lehmann,author
+732,Eva-Maria Kieninger,author
+733,Inge Kroppenberg,author
+734,Christoph Görisch,author
+735,Heiko Sauer,author
+736,Christoph Schärtl,author
+737,Wolfgang winkelbauer,author
+738,Götz Frank,author
+739,Johannes Heyers,author
+740,Christian Gomille,author
+741,Joachim Goebel,author
+742,Michael Rodi,author
+743,Alexander von Brünneck,author
+744,Karl-Nikolaus Peifer,author
+745,Winfried Boecken,author
+746,Christoph Luther,author
+747,Gloria Berghäuser,author
+748,Arne Nordmeyer,author
+749,Franz C. Mayer,author
+750,Kai Hofmann,author
+751,Robert Frau,author
+752,Alexander Schäfer,author
+753,Günter Reiner,author
+754,Ferdinand Kirchhof,author
+755,H.C. Fritz Rittner,author
+756,Dennis Seifarth,author
+757,Peter Georg Picht,author
+758,Richard Rachlitz,author
+759,Hiram Kümper,author
+760,Norbert Wimmer,author
+761,Markus Heintzen,author
+762,Stefan Machura,author
+763,Ronny Hauck,author
+764,Harald Meyer,author
+765,Jochen Glöckner,author
+766,Daniel Wolff,author
+767,Anna Bizer,author
+768,Wolfgang Ernst,author
+769,Hans Michael Heinig,author
+770,Klaus Tipke,author
+771,Clemens Latzel,author
+772,Alisa Rank,author
+773,Josef Wittmann,author
+774,Alexander Roßnagel,author
+775,Gunnar Duttge,author
+776,Bernhard Hardtung,author
+777,Stephan Wernicke,author
+778,Stephan Harbarth,author
+779,Constantin Blanke-Roeser,author
+780,Cornelia Manger-Nestler,author
+781,Martin Zimmermann,author
+782,Mustafa Temmuz Oğlakcıoğlu,author
+783,Christopher Kämper,author
+784,Stefan J. Geibel,author
+785,Christian Walter,author
+786,Oliver Klein,author
+787,Florian Jeßberger,author
+788,Annabelle Meier,author
+789,Katharina Hilbig,author
+790,Ulrich Eisenberg,author
+791,Peter Götz v. Olenhusen,author
+792,Meinhard Schröder,author
+793,Louisa Specht,author
+794,Peter Hocke,author
+795,Markus Gehrlein,author
+796,Hans Peter Bull,author
+797,Christian Heinze,author
+798,Indra Spiecker gen. Döhmann,author
+799,Peter W. Tettinger,author
+800,Kurt Faßbender,author
+801,Josef Isensee,author
+802,Tim Drygala,author
+803,Henning Rosenau,author
+804,Damian Schmidt,author
+805,Jörg Schöpper,author
+806,Martin Heckel,author
+807,Florian Eichel,author
+808,Gerald Spindler,author
+809,Christoph Althammer,author
+810,Pauline Grotz,author
+811,Bernhard Linnartz,author
+812,Jan Schapp,author
+813,Sven Jürgensen,author
+814,Wolfgang Durner,author
+815,Jürgen Lorse,author
+816,Ehebald,author
+817,Alexander Scheuch,author
+818,Christoph Zehetgruber,author
+819,Stefan Talmon,author
+820,Stefan Drechsler,author
+821,Jörn Axel Kämmerer,author
+822,Jens Bülte,author
+823,Stephan Lorenz,author
+824,Heiner Alwart,author
+825,Renate Schaub,author
+826,Joachim Münch,author
+827,Bertram Lomfeld,author
+828,Heike Krieger,author
+829,Sven Simon,author
+830,Heinrich Lang,author
+831,Marina Wellenhofer,author
+832,Markus Lieberknecht,author
+833,Rüdiger Wilhelmi,author
+834,Heike Schmitz,author
+835,Peter Rawert,author
+836,Tom Wolk,author
+837,Astrid Strack,author
+838,Henning Rosenau,author
+839,Georg Freund,author
+840,Thomas Lobinger,author
+841,Caspar Behme,author
+842,Michael Schwarz,author
+843,Lutz Eidam,author
+844,Jürgen Basedow,author
+845,Indra Spiecker genannt Döhmann,author
+846,Ansgar Ohly,author
+847,Michael Anderheiden,author
+848,Andreas Kerkemeyer,author
+849,Katharina Reus,author
+850,Dominik Arndt,author
+851,Marco Brand,author
+852,Markus Krajewski,author
+853,Patrick Nölscher,author
+854,Christian Krane,author
+855,Norbert Ullrich,author
+856,Carsten Jungmann,author
+857,Florian Rödl,author
+858,Katja Langenbucher,author
+859,Sudabeh Kamanabrou,author
+860,Heribert Hirte,author
+861,Katharina Kaesling,author
+862,Michael Coester,author
+863,Thorsten Ingo Schmidt,author
+864,Helmuth Schulze‐Fielitz,author
+865,Christoph Palzer,author
+866,Norbert Hoerster,author
+867,Franz Jürgen Säcker,author
+868,Philipp Lamprecht,author
+869,Willy Spannowsky,author
+870,Wolfgang Hoffmann-Riem,author
+871,Robert Esser,author
+872,Karsten Herzmann,author
+873,Florian Sander,author
+874,Alexander Silke,author
+875,Daniel Zimmer,author
+876,Renate Schaub,author
+877,José Martínez,author
+878,Philipp Overkamp,author
+879,Stephan Walter,author
+880,Detlev Fischer,author
+881,Andreas J. Baumert,author
+882,Maximilian J. Alter,author
+883,Bettina Gausing,author
+884,Reinhard Singer,author
+885,Lars Hummel,author
+886,Pola Marie Brünger,author
+887,Michael Goldhammer,author
+888,Wolfgang Wurmnest,author
+889,Wolfgang Mitsch,author
+890,Anne Peters,author
+891,Pirmin Herz,author
+892,Michael Blomeyer,author
+893,Stephan Meder,author
+894,Peter Derleder,author
+895,Hendrik Heesen,author
+896,Tino Frieling,author
+897,Jens Puschke,author
+898,Florian Huerkamp,author
+899,Melanie Stracke,author
+900,Johanna Hey,author
+901,Michael Heese,author
+902,Christina Kamm,author
+903,Jochen Mohr,author
+904,Marco Bieri,author
+905,Alexander Morell,author
+906,Anke Müller-Jacobsen,author
+907,Andreas W. Hofmann,author
+908,Corinna Sicko,author
+909,Jens Petersen,author
+910,Dieter Grimm,author
+911,Eduard Picker,author
+912,Peter Hemeling,author
+913,Christoph Kirsch,author
+914,Bernd Kannowski,author
+915,Clemens Höpfner,author
+916,Daniela Schmitt,author
+917,Christian Waldhoff,author
+918,Walter Grasnick,author
+919,Eckart Klein,author
+920,Claus Wilhelm Canaris,author
+921,Gerd Morgenthaler,author
+922,Martin Kment,author
+923,Ewald Wiederin,author
+924,Gerhard Dilcher,author
+925,Henning Lorenz,author
+926,Klaus-Dieter Drüen,author
+927,Andreas Spickhoff,author
+928,Michael Fischer,author
+929,Matthias Becker,author
+930,Josef Ruthig,author
+931,Benjamin Lahusen,author
+932,Jan Thiessen,author
+933,Ulrike Müßig,author
+934,Klaus Lüderssen,author
+935,Leo Schapiro,author
+936,Max-Emanuel Geis,author
+937,Christina Globke,author
+938,Heinrich Amadeus,author
+939,Jean‐Pierre Wolf,author
+940,Robert R. Lange,author
+941,Victor Habrich,author
+942,M. v. Niederhöffer,author
+943,Martin Engel,author
+944,Johanna Reichel,author
+945,Anna Katharina Mangold,author
+946,Judit Neumann,author
+947,Matthias Rüping,author
+948,Julian von Lucius,author
+949,Wilhelm Dütz,author
+950,Stephan Madaus,author
+951,Tobias Kulhanek,author
+952,Sönke Gerhold,author
+953,Axel Halfmeier,author
+954,Reinhard Damm,author
+955,Clara Folger,author
+956,Jens Kersten,author
+957,M. Auer,author
+958,J. Meier,author
+959,Gertrude Lübbe-Wolff,author
+960,Anne Bercher,author
+961,Heinz Müller-Dietz,author
+962,Hermann Butzer,author
+963,Günter Hirsch,author
+964,Gerd Geilen,author
+965,Martin Wesch,author
+966,Susanne Hohloch,author
+967,Volker Haas,author
+968,M.K. de Wolf,author
+969,Ulrich Foerste,author
+970,Matthias Lippold,author
+971,Hans-Peter Haferkamp,author
+972,Eberhard Schwark,author
+973,Frank Rosenkranz,author
+974,Florian Jeßberger,author
+975,David Roth-Isigkeit,author
+976,Christoph Krönkeund,author
+977,Jan Thiessen,author
+978,Barbara Remmert,author
+979,Robert Walter,author
+980,Sophie Straßer,author
+981,Eberhard Wagner,author
+982,William Woodruff,author
+983,Mattias Wendel,author
+984,Christina Mildebrath,author
+985,Hans-Heiner Kühne,author
+986,Foroud Shirvani,author
+987,Daniela K Schlüter,author
+988,Daniel Damler,author
+989,Hubert Rottleuthner,author
+990,Tobias Singelnstein,author
+991,Kurt Seelmann,author
+992,Katja Hüttner,author
+993,Philipp Scholz,author
+994,Martin Bialluch,author
+995,Nicolas Sander,author
+996,Florian Wagner–von Papp,author
+997,Andreas Sattler,author
+998,Daniel Thym,author
+999,Christoph Herrmann,author
+1000,Alexander Bechtel,author
+1001,Ralph Christensen,author
+1002,Gerrit Hornung,author
+1003,Klaus Rennert,author
+1004,Jürgen Köhler,author
+1005,Christian Alexander,author
+1006,Felix Ekardt,author
+1007,Martin Bullinger,author
+1008,Matthias Ruffert,author
+1009,Matthias Veicht,author
+1010,Karsten Gaede,author
+1011,Rainer Beckmann,author
+1012,Nikolaus Graf Vitzthum,author
+1013,Maximilian Zimmer,author
+1014,Udo Di Fabio,author
+1015,Alexander Benecke,author
+1016,Christoph Sobotta,author
+1017,Joachim Lege,author
+1018,Hans-Joachim Schött,author
+1019,Alexander Someκ,author
+1020,David Kuch,author
+1021,Aziz Epik,author
+1022,Frank Zieschang,author
+1023,Dirk Andreas Zetzsche,author
+1024,Konstantin Chatziathanasiou,author
+1025,Daniel Scholz,author
+1026,Dietrich Murswiek,author
+1027,Brigitte Haar,author
+1028,Marco Birkholz,author
+1029,Markus Stoffels,author
+1030,Peter Schlosser,author
+1031,Wolfgang Lüke,author
+1032,Christoph Jansen,author
+1033,Adrian Jung,author
+1034,Constanze Janda,author
+1035,Christoph Link,author
+1036,Hans Kudlich,author
+1037,Christian Förster,author
+1038,Hein Kötz,author
+1039,Christoph Althammer,author
+1040,Peter McColgan,author
+1041,Johannes Rux,author
+1042,Abteilung Justiz,author
+1043,Alexander Thiele,author
+1044,Jürgen Schwabe,author
+1045,Dieter Simon,author
+1046,Dieter Lorenz,author
+1047,Everhardt Franßen,author
+1048,Martin Menne,author
+1049,Sonja Stenzel,author
+1050,Titus Walek,author
+1051,Claus Dieter Classen,author
+1052,Rainer Zaczyk,author
+1053,Thomas Paul,author
+1054,Christoph Grabenwarter,author
+1055,Lea Katharina Kumkar,author
+1056,Gabriele Kett-Straub,author
+1057,Philipp Maximilian Holle,author
+1058,Heike Stintzing,author
+1059,Joachim von Bargen,author
+1060,Christoph G. Paulus,author
+1061,Raimund Waltermann,author
+1062,Lorenz Kähler,author
+1063,Barbara Rox,author
+1064,Peter Kindler,author
+1065,Andreas Piekenbrock,author
+1066,Martin Franzén,author
+1067,Helmut Goerlich,author
+1068,Thomas Starke,author
+1069,Astrid Stadler,author
+1070,Hans Friedhelm Gaul,author
+1071,Christian Seiler,author
+1072,Frank Schuster,author
+1073,Christian Hillgruber,author
+1074,Michael Denga,author
+1075,Herbert Küpper,author
+1076,Roman Seer,author
+1077,Mehrdad Payandeh,author
+1078,Jana Smela,author
+1079,Stephan Pötters,author
+1080,Mareike Preisner,author
+1081,H. Koch,author
+1082,Tobias Tröger,author
+1083,Holger Greve,author
+1084,Frauke Rostalski,author
+1085,Christine Osterloh-Konrad,author
+1086,René Börner,author
+1087,Josef Alkatout,author
+1088,Michael Köhler,author
+1089,Jörn Ipsen,author
+1090,Markus Pöcker,author
+1091,Philipp S. Fischinger,author
+1092,Christine Windbichler,author
+1093,Stephan Stübinger,author
+1094,Urs Kindhäuser,author
+1095,Christoph Goos,author
+1096,Heike Jung,author
+1097,Christian Thiemann,author
+1098,Georg Mitsching,author
+1099,Marco Mansdörfer,author
+1100,Burkhard Jähnke,author
+1101,Alexander Peukert,author
+1102,Christian Kersting,author
+1103,Matthias Goldmann,author
+1104,Andreas Funke,author
+1105,Martin Schwab,author
+1106,Karl–Heinz Ladeur,author
+1107,Enrico Peuker,author
+1108,Günther Teubner,author
+1109,Lydia Wolff,author
+1110,Horst Dreier,author
+1111,Torsten Noak,author
+1112,Barbara Völzmann-Stickelbrock,author
+1113,Corinna Coupette,author
+1114,Diana L. Marquardt,author
+1115,Rike Sinder,author
+1116,Jacob Joussen,author
+1117,Gralf-Peter Calliess,author
+1118,Martin Böse,author
+1119,Kristian J. Puhle,author
+1120,Eike von Hippel,author
+1121,Heinz-Peter Mansel,author
+1122,Amr Sarhan,author
+1123,Bernd Scholl,author
+1124,Wolfgang Wohlers,author
+1125,Frank Fechner,author
+1126,Walter G. Paefgen,author
+1127,Norbert Groß,author
+1128,Jochen Vetter,author
+1129,Peter Häberle,author
+1130,Christoph Brüning,author
+1131,Caroline Meller-Hannich,author
+1132,Patrick Hilbert,author
+1133,Matthias Katzenstein,author
+1134,Werner Heun,author
+1135,Alexander Bruns,author
+1136,Christoph U. Schmid,author
+1137,Christoph Bravidor,author
+1138,Volker Beuthien,author
+1139,Wolfgang Schenk,author
+1140,Matthias Jestaedt,author
+1141,Manuel Klar,author
+1142,Andreas Ruch,author
+1143,Dorothee Einsele,author
+1144,Jörg Kinzig,author
+1145,Jörg Frederik Ferreau,author
+1146,Patrick Hell,author
+1147,Lothar Michael,author
+1148,Uwe Volkmann,author
+1149,Ulrich Fastenrath,author
+1150,Laura Schneiderbauer,author
+1151,Ansgar Kalle,author
+1152,Félix Herzog,author
+1153,Andreas Thier,author
+1154,Franziska Schneider,author
+1155,Nikolaus Bosch,author
+1156,Ulrich Häde,author
+1157,Wolfgang Fleck,author
+1158,Ekkehard Becker-Eberhard,author
+1159,Sebastian Olk,author
+1160,Matthias Rossi,author
+1161,Nina Dürre,author
+1162,Anja Wenzel,author
+1163,Ralf Brinktrine,author
+1164,Stephan R. Göthel,author
+1165,Benjamin Roger,author
+1166,Susanne Hähnchen,author
+1167,Felix Busse,author
+1168,Klaus Tiedemann,author
+1169,Bernd Grzeszick,author
+1170,Dirk Ehlers,author
+1171,Hasso Hofmann,author
+1172,Dorothee Einsele,author
+1173,Eva Maria Bredler,author
+1174,Ulfrid Neumann,author
+1175,Benjamin Raue,author
+1176,Volker Rieble,author
+1177,Ralf Poscher,author
+1178,Andreas Engert,author
+1179,Moritz Hartmann,author
+1180,Daniela Winkler,author
+1181,Andreas Bergmann,author
+1182,Matthias Klöpfer,author
+1183,Benjamin Straßburger,author
+1184,Reinhart Merkel,author
+1185,Martin E. Schwab,author
+1186,Walter Gropp,author
+1187,Jakob Gleim,author
+1188,Gregor Albers,author
+1189,A Peter,author
+1190,Helge Dedek,author
+1191,Claudio Franzius,author
+1192,Christian Willers,author
+1193,Thomas Kleinlein,author
+1194,Hélène Berlincourt-Heinecke,author
+1195,Sophie Schönberger,author
+1196,J Gerlach,author
+1197,Philipp Lassahn,author
+1198,Anne Peters,author
+1199,Konrad Lachmayer,author
+1200,Clemens Höpfner,author
+1201,Frauke Wedemann,author
+1202,Friedhelm Hufen,author
+1203,Theresa Paul,author
+1204,Anne-Christin Mittwoch,author
+1205,Hilmar Krüger,author
+1206,Olaf Sosnitza,author
+1207,Johanna Küpper,author
+1208,David Julius Kästle,author
+1209,Alexander Jüchser,author
+1210,Meinrad Dreher,author
+1211,Carsten Herresthal,author
+1212,Martin Löhnig,author
+1213,Leonard Wolckenhaar,author
+1214,Maximilian Haedicke,author
+1215,Malgorzata Minecka,author
+1216,Arndt Teichmann,author
+1217,Andreas Sattler,author
+1218,Matthías Herdegen,author
+1219,Jelena von Achenbach,author
+1220,Gerhard Dannemann,author
+1221,Andreas Haratsch,author
+1222,Rolf Stümer,author
+1223,Eva Schulev-Steindl,author
+1224,Lena Heuner,author
+1225,Reinhard Zimmermann,author
+1226,Ekkehard Schumann,author
+1227,Dagmar Kaiser,author
+1228,Jan-Erik Schirmer,author
+1229,Anke Eggert,author
+1230,Peter J. Weber,author
+1231,Klaus Tiedemann,author
+1232,Christoph Dannecker,author
+1233,M. Karlheinz Stierle,author
+1234,Peter O. Mülbert,author
+1235,Thomas Finkenauer,author
+1236,Lars Leuschner,author
+1237,Jan-Frederick Göhsl,author
+1238,Mark Stemmler,author
+1239,Claudia Mayer,author
+1240,Anna von Notz,author
+1241,Stefan Pinelli,author
+1242,Barbara Grunewald,author
+1243,Dietmar Baetge,author
+1244,Lucas Hartmann,author
+1245,Grischa Merkel,author
+1246,Sigrid Lorz,author
+1247,Patrick Bruns,author
+1248,Jörn Reinhardt,author
+1249,Christoph Enders,author
+1250,Antje Schümann,author
+1251,Suzan Denise Hüttemann,author
+1252,Markus Eisenbarth,author
+1253,Axel Beater,author
+1254,Ken Eckstein,author
+1255,Anne Sanders,author
+1256,Daniela Tröppner,author
+1257,Eike Michael Frenzel,author
+1258,Malte Stieper,author
+1259,Georgios Gounalakis,author
+1260,Kay Waechter,author
+1261,Katharina Ebner,author
+1262,Tobias Herbst,author
+1263,Philipp Gutsche,author
+1264,Madeleine Tolani,author
+1265,Bernd Holznagel,author
+1266,Peter von Wilmowsky,author
+1267,Chris Thomale,author
+1268,Kathleen Wolter,author
+1269,Dieter Leipold,author
+1270,Heinrich Amadeus Wolff,author
+1271,Gerhard Robbers,author
+1272,Emanuel V. Towfigh,author
+1273,Eberhard Eichenhofer,author
+1274,Nicolas Potsch,author
+1275,Tobias Gumpp,author
+1276,Julia Caroline Scherpe,author
+1277,Winfried Brugger,author
+1278,Christian von Bar,author
+1279,Frank Zschieschack,author
+1280,Anja Amend-Traut,author
+1281,Abbo Junker,author
+1282,Joachim Bohnert,author
+1283,Erik Kraatz,author
+1284,Maxie Bethge,author
+1285,Sebastian Kubis,author
+1286,Christoph Sorge,author
+1287,Nicolas von zur Mühlen,author
+1288,Georgios Zagouras,author
+1289,Jürgen Bast,author
+1290,Herbert Woopen,author
+1291,Spiros Simitis,author
+1292,Irene Sternberg-Lieben,author
+1293,Martin Schermaier,author
+1294,Martin Hochhuth,author
+1295,Franz Ruland,author
+1296,Alexander Baur,author
+1297,Andrea Kießling,author
+1298,Jo Eric Khushal Murkens,author
+1299,Jens-Hinrich Binder,author
+1300,Michael Beurskens,author
+1301,Klaus Ritgen,author
+1302,Brian Valerius,author
+1303,Thilo Ramm,author
+1304,Jörg Eisele,author
+1305,Philipp Greguhn,author
+1306,Angelika Nußberger,author
+1307,Holger F. Hofmann,author
+1308,Jannis Lennartz,author
+1309,Wolfgang Kilian,author
+1310,Veith Mehde,author
+1311,Petra Buck-Heeb,author
+1312,Alexander Stöhr,author
+1313,Stefan Greiner,author
+1314,Peter Kalmbach,author
+1315,Bettina Rentsch,author
+1316,Karl-E. Hain,author
+1317,Hendrik Wolters,author
+1318,Moritz Begemeier,author
+1319,Bernhard Jakl,author
+1320,Horst Eidenmüller,author
+1321,Christian Katzenmeier,author
+1322,Heike Schweitzer,author
+1323,Fritz Ossenbühl,author
+1324,Christian Marxsen,author
+1325,Karl M. Meessen,author
+1326,Bernd Oppermann,author
+1327,Jörn Ipsen,author
+1328,Lara Schäfer,author
+1329,Eric Hilgendorf,author
+1330,Matthias Rampp,author
+1331,Johannes Ungerer,author
+1332,Edward Schramm,author
+1333,Dieter Deiseroth,author
+1334,Andreas Engels,author
+1335,Gernot Steinhilper,author
+1336,Johannes W. Flume,author
+1337,Till Zimmermann,author
+1338,Uwe Scheffler,author
+1339,Wilhelm-Albrecht Achilles,author
+1340,Sabine Seidenschwann,author
+1341,Haimo Schack,author
+1342,Arne Pilniok,author
+1343,Florian Jacoby,author
+1344,Paul Maruff,author
+1345,Max Foerster,author
+1346,Jacques Ziller,author
+1347,Werner Beulke,author
+1348,Jörg Ennuschat,author
+1349,Georgia Stefanopoulou,author
+1350,Alexander Proelß,author
+1351,Reinhard Mehring,author
+1352,Stephan Ast,author
+1353,Hans Herbert von Arnim,author
+1354,Wilfried Küper,author
+1355,Frank Fechner,author
+1356,Georg-Berndt Oschatz,author
+1357,Hans-Patrick Schroeder,author
+1358,Thomas Hohendorf,author
+1359,Tobias Richter,author
+1360,Sabrina J. Hainer,author
+1361,Klaus Bartels,author
+1362,Ulrich Falk,author
+1363,Elena Dubovitskaya,author
+1364,Christoph Weber,author
+1365,Andreas Hänlein,author
+1366,Reimund Schmidt de Caluwe,author
+1367,Leonid Guggenberger,author
+1368,Klaus Laubenthal,author
+1369,Martin Paul Waßmer,author
+1370,Florian Faust,author
+1371,Thomas Wischmeyer,author
+1372,Peter Rackow,author
+1373,Christoph Kern,author
+1374,Verena Klappstein,author
+1375,Hans Christian Röhl,author
+1376,Horst Risse,author
+1377,David Jahn,author
+1378,Janwillem van de Loo,author
+1379,Stefanie Schmahl,author
+1380,Olaf Meyer,author
+1381,Johann Braun,author
+1382,Nora Markard,author
+1383,Helmut Satzger,author
+1384,Philip Schopen,author
+1385,Manfred Herbert,author
+1386,Rafael Harnos,author
+1387,Jens Werner,author
+1388,Paul Tobias Schrader,author
+1389,Anna K. Bernzen,author
+1390,Rainer Maria Kiesow,author
+1391,Franz-Joseph Peine,author
+1392,Jan C. Schuhr,author
+1393,Volkmar Götz,author
+1394,Claus Kref,author
+1395,Martin Lipp,author
+1396,Klaus Schurig,author
+1397,Béla Knof,author
+1398,Markus Ogorek,author
+1399,Christoph Gusy,author
+1400,Matthias Jahn,author
+1401,Anna Schimke,author
+1402,Roman F. Adam,author
+1403,Matthias Knauff,author
+1404,Thomas Gutmann,author
+1405,Philipp Schmieder,author
+1406,Andreas Glöckner,author
+1407,Friedrich E. Schnapp,author
+1408,Philipp Scholz,author
+1409,Anna Helena Albrecht,author
+1410,Fritz Sturm,author
+1411,Gunnar Franck,author
+1412,Johan Schrader,author
+1413,Kay Nehm,author
+1414,Hasso Hofmann,author
+1415,W. Zenker,author
+1416,Winrich Langer,author
+1417,Anja Schiemann,author
+1418,Christian Armbrüster,author
+1419,Stephan M. Wagner,author
+1420,Detlev Sternberg-Lieben,author
+1421,Arno Scherzberg,author
+1422,Anette Grünewald,author
+1423,Martin Heinrich,author
+1424,Werner Offenloch,author
+1425,Ingo Kraft,author
+1426,Andreas Zimmermann,author
+1427,Caroline Wittig,author
+1428,Nina Martin,author
+1429,Friedrich Pukelsheim,author
+1430,Goetz Kempelmann,author
+1431,Horst Dreier,author
+1432,Claudia Schubert,author
+1433,David Rüger,author
+1434,Antje von Ungern-Sternberg,author
+1435,Erhard Denninger,author
+1436,Sebastian Mock,author
+1437,Stefan Grundmann,author
+1438,Christoph Brömmelmeyer,author
+1439,Steffen Hindelang,author
+1440,Fabian Klinck,author
+1441,Matthias Wächter,author
+1442,Walter Leisner,author
+1443,Christian Kalbitz,author
+1444,Jan Zopfs,author
+1445,Stephanie Schiedermair,author
+1446,Marina Tamm,author
+1447,Kay Hailbronner,author
+1448,Pascal Schumacher,author
+1449,Andreas Peilert,author
+1450,Maximilian Gerhold,author
+1451,Horst Schlehofer,author
+1452,Ulrich Büdenbender,author
+1453,Christian Thiemann,author
+1454,Susanne Lilian Gössl,author
+1455,Christian Deckenbrock,author
+1456,Christian Walter,author
+1457,Helmut Lecheler,author
+1458,Ralf Schnieders,author
+1459,Silke Altenkirch,author
+1460,Gert Brüggemeier,author
+1461,Abbo Junker,author
+1462,Christoph Degenhart,author
+1463,Andreas Voßkuhle,author
+1464,Thomas Ackermann,author
+1465,Stefan Kadelbach,author
+1466,Stephan Pötters,author
+1467,Jannik Funnemann,author
+1468,Roman Wolf,author
+1469,Küpper Herbert,author
+1470,Mascha Hesse,author
+1471,Carsten Meinert,author
+1472,Johannes C. Reichert,author
+1473,Jessica S. Kruger,author
+1474,Christian Calliess,author
+1475,Silvia Deuring,author
+1476,Simon Behr,author
+1477,Seemann,author
+1478,Anna-Bettina Kaiser,author
+1479,Johannes Kaspar,author
+1480,Ludwig Reißmann,author
+1481,Wilfried Erbguth,author
+1482,Jürgen Helle,author
+1483,Florian Jotzo,author
+1484,Thomas von Danwitz,author
+1485,Marc Leonhard,author
+1486,Sabine Seidenschwann,author
+1487,Ralf Seinecke,author
+1488,Heiko Schmidt,author
+1489,Alexandra Weber,author
+1490,Götz Schulze,author
+1491,Tristan Barczak,author
+1492,Heinz Georg Bamberger,author
+1493,Roland Schmitz,author
+1494,Paul Schrader,author
+1495,Kristina Cyglakow,author
+1496,Christoph Safferling,author
+1497,Georg Alexander Haas,author
+1498,Milan Kuhli,author
+1499,Christian Schubel,author
+1500,Volker Lipp,author
+1501,Andreas Heinemann,author
+1502,Jelena Von Achenbach,author
+1503,Christian Geminn,author
+1504,Bettina Noltenius,author
+1505,Monika Böhm,author
+1506,Susanne Lepsius,author
+1507,Tobias Fröschle,author
+1508,Björnstjern Baade,author
+1509,Bastian Zahn,author
+1510,Kai Schadtle,author
+1511,Fynn Wenglarczyk,author
+1512,Patrick R. Hoffmann,author
+1513,Inge Kroppenberg,author
+1514,Johannes Unterreitmeier,author
+1515,Sina Fontana,author
+1516,Michael Martinek,author
+1517,Tristan Radtke,author
+1518,Wolf-Georg Ringe,author
+1519,Michael Kotulla,author
+1520,Evelyn Woitge,author
+1521,Florian Meinel,author
+1522,Martin Bürgi,author
+1523,Ino Augsberg,author
+1524,Joachim von Bargen,author
+1525,Jürgen Stamm,author
+1526,Tim Florstedt,author
+1527,Johannes Wasmult,author
+1528,Patricia Wiater,author
+1529,Jörg Neuner,author
+1530,Jannik Rienhoff,author
+1531,Florian Schärdel,author
+1532,Carsten Bäcker,author
+1533,Luca Kochendörfer,author
+1534,Gregor Stahl,author
+1535,Jakob Nolte,author
+1536,Benjamin Kram,author
+1537,Gerhard Werle,author
+1538,Sabine Schlacke,author
+1539,Ben Beck,author
+1540,Peter M. Huber,author
+1541,Peter Badura,author
+1542,Kristina Hillermann,author
+1543,Andreas Piekenbrock,author
+1544,Ralf Kölbel,author
+1545,Sebastian Krebber,author
+1546,Anton S. Zimmermann,author
+1547,Thomas Böckenförde,author
+1548,Harald Eberhard,author
+1549,Holm Putzke,author
+1550,Florian Knauer,author
+1551,Rolf Sethe,author
+1552,Wolfgang Lesting,author
+1553,Jens Peter Meincke,author
+1554,Simon Kempny,author
+1555,Sebastian Müller Franken,author
+1556,Lutz Haertlein,author
+1557,Frederick Rieländer,author
+1558,Otto Depenheuer,author
+1559,Eberhard Schilken,author
+1560,Robert Magnus,author
+1561,Christian Neumeier,author
+1562,Hubertus Gersdorf,author
+1563,Otto Lagodny,author
+1564,Sören Segger-Piening,author
+1565,Wolfram Höfling,author
+1566,Oliver Suchy,author
+1567,Matthias Schüll,author
+1568,Thomas Groß,author
+1569,Ulrich G. Schroeter,author
+1570,Hans-Dieter Spengler,author
+1571,Philipp Wittmann,author
+1572,M Korte,author
+1573,Nils Jansen,author
+1574,Volker M. Haug,author
+1575,Martin Sternberg,author
+1576,Patrick Ostendorf,author
+1577,Albert Ingold,author
+1578,Volker Lipp,author
+1579,Daniel Pfäffli,author
+1580,Walter Frenz,author
+1581,Axel Metzger,author
+1582,Lorna Woods,author
+1583,W. Gregory Voss,author
+1584,Kristin Boosfeld,author
+1585,Christian Baldus,author
+1586,Christian Schröder,author
+1587,Rolf D. Herzberg,author
+1588,Felix Steffek,author
+1589,Reiner Schmidt,author
+1590,Philipp Renninger,author
+1591,Johannes Gerberding,author
+1592,Stephanie Sittmann-Haury,author
+1593,Christoph Ohler,author
+1594,Alexander Höllerbach,author
+1595,Stefan Frederic Thönissen,author
+1596,Dana Burchardt,author
+1597,Uwe Blaurock,author
+1598,Andreas Roth,author
+1599,Ulrich Battis,author
+1600,Ralf Müller-Terpitz,author
+1601,Gregor Albers,author
+1602,Mareike Schmidt,author
+1603,Jörn Heinemann,author
+1604,Christian Rolfs,author
+1605,Erol Pohlreich,author
+1606,Hermann Pünder,author
+1607,Lorenz Leitmeier,author
+1608,Boris P. Paal,author
+1609,Jan-Niklas Schönemann,author
+1610,Lars Kutzner,author
+1611,Adrian Schmidt-Recla,author
+1612,Hanjo Hamann,author
+1613,Sebastian Graf von Kielmansegg,author
+1614,Wolfgang Kahl,author
+1615,Alexander Schall,author
+1616,Roland Derksen,author
+1617,Christian Starck,author
+1618,Peter Mankowski,author
+1619,Sabrina Schönrock,author
+1620,Hannes Henke,author
+1621,Christoph Teichmann,author
+1622,Péter Techet,author
+1623,Rupert Stettner,author
+1624,Andreas Hetzenecker,author
+1625,Philipp Schmitt,author
+1626,Franziska Huber,author
+1627,Michael Droege,author
+1628,Claire Feldhusen,author
+1629,Albrecht Weber,author
+1630,Ninon Colneric,author
+1631,Sebastian Bretthauer,author
+1632,Hans Christoph Grigoleit,author
+1633,kai Engelbrecht,author
+1634,Joachim Münch,author
+1635,Michael Heghmanns,author
+1636,Christopher Rennig,author
+1637,Marina Preiß,author
+1638,Hannes Rösler,author
+1639,Klaus-Peter Schroeder,author
+1640,Franz Streng,author
+1641,Dan Wielsch,author
+1642,Ingke Goeckenjan,author
+1643,Christoph Müller,author
+1644,Felix Ruppert,author
+1645,Felix Andreas Kiefner,author
+1646,Christoph Burchard,author
+1647,Markus Kenntner,author
+1648,David Bruch,author
+1649,Eva Frenz,author
+1650,Karl Stöger,author
+1651,Sven Vetter,author
+1652,Philipp M. Reuß,author
+1653,Klaus Ferdinand Gärditz,author
+1654,Frank Skamel,author
+1655,Stefan Muckel,author
+1656,Kai-Oliver Knops,author
+1657,T. Rauscher,author
+1658,Roman F. Kehrberger,author
+1659,Georg Maier-Reimer,author
+1660,Anja Timmermann,author
+1661,Joseph Isensee,author
+1662,Reinhard Greger,author
+1663,Horst Heinrich Jakobs,author
+1664,Tobias Linke,author
+1665,Jasper Wentz,author
+1666,Helmut Köhler,author
+1667,Joachim Hruschka,author
+1668,Martin Fielenbach,author
+1669,Johannes Saurer,author
+1670,Rike Sinder,author
+1671,Karin Nehlsen-von Stryk,author
+1672,Werner F. Ebke,author
+1673,Christiane Wendehorst,author
+1674,Reinhard Merkel,author
+1675,Till Mengler,author
+1676,René Börner,author
+1677,Roman Guski,author
+1678,Andreas Deutsch,author
+1679,Werner Schroeder,author
+1680,Karl-Eberhard Hain,author
+1681,Dirk Looschelders,author
+1682,Christian Zieglmeier,author
+1683,Felix Maultzsch,author
+1684,Timo Junker,author
+1685,Martin Eifert,author
+1686,Oliver Mörsdorf,author
+1687,Matthias Pechstein,author
+1688,Peter Allgayer,author
+1689,Matthias Wießner,author
+1690,Jennifer Antomo,author
+1691,Rainer Wernsmann,author
+1692,Heinz Holzhauer,author
+1693,Daniel Ulber,author
+1694,Jan–R. Sieckmann,author
+1695,Matthias Jahn,author
+1696,Günther Wiese,author
+1697,Ulrich Vosgerau,author
+1698,Michael Hettinger,author
+1699,Sebastian Kolbe,author
+1700,Mathieu Wagner,author
+1701,Dinah Wielpütz,author
+1702,Florian Meinel,author
+1703,Elisa Hoven,author
+1704,Stefan Vogenauer,author
+1705,Udo Reifner,author
+1706,Wilfried Berg,author
+1707,Andrea Diehl,author
+1708,Peter Salje,author
+1709,Horst Konzen,author
+1710,Matthias Leistner,author
+1711,Susanne Augenhofer,author
+1712,Anna Katharina Klasen,author
+1713,Johannes Masing,author
+1714,Michael F. Müller,author
+1715,Kilian Bälz,author
+1716,Stephan Meyer,author
+1717,Eckart Klein,author
+1718,Gerhard Werle,author
+1719,Wolfram Höfling,author
+1720,Tobias Mast,author
+1721,Hubert Meyer,author
+1722,Claus Kreß,author
+1723,Andreas M. Fleckner,author
+1724,Christian Wilhelm,author
+1725,Ferdinand Wollenschläger,author
+1726,Volker Lipp,author
+1727,Nina Schrott,author
+1728,Beate Gsell,author
+1729,Robert Magnus,author
+1730,Alexander Baur,author
+1731,Sven Hetmank,author
+1732,Martin Nettesheim,author
+1733,Hans-Heinrich Trute,author
+1734,Michael Stürner,author
+1735,Mario Bachmann,author
+1736,Dieter Medicus,author
+1737,Wernhard Möschel,author
+1738,Hannes Wais,author
+1739,Tade Matthias Spranger,author
+1740,Maximilian Lenk,author
+1741,Julia Geneuss,author
+1742,Gerhard Seher,author
+1743,Heike Jung,author
+1744,Dorothea Magnus,author
+1745,Holger Pils,author
+1746,Markus Hawickenbrauck,author
+1747,Christian Maierhöfer,author
+1748,Tobias Reinbacher,author
+1749,Susanne Heinemeyer,author
+1750,Jannik Otto,author
+1751,Fritz Rittner,author
+1752,Raphael Rauch,author
+1753,Karl-E Hain,author
+1754,Stefanie Jung,author
+1755,Christian Jäger,author
+1756,Victoria Seeliger,author
+1757,Rolf Wagner,author
+1758,Stefan Brink,author
+1759,Jochen Mohr,author
+1760,Markus Kotzur,author
+1761,Eberhard Schmidt-Aßmann,author
+1762,Anne Röthel,author
+1763,Thomas Kienle,author
+1764,Alexander Blankenagel,author
+1765,Jan Schröder,author
+1766,Johannes Caspar,author
+1767,Hermann Reichold,author
+1768,Joachim Renzikowski,author
+1769,Matthias Weller,author
+1770,Tatjana Hörnle,author
+1771,Sascha Sebastian,author
+1772,Nina Benz,author
+1773,Andreas Stegbauer,author
+1774,Anika Klafki,author
+1775,Julian Philipp Rapp,author
+1776,Barbara Veit,author
+1777,Hans Martin Schellhase,author
+1778,Verena Frick,author
+1779,Hans Achenbach,author
+1780,Thomas Vesting,author
+1781,Alexander Hellgardt,author
+1782,Frederik Jaeger,author
+1783,Oliver Dörr,author
+1784,Wolfgang Spellbrink,author
+1785,Johann Braun,author
+1786,Mark A. Zöller,author
+1787,Anna Leisner-Egensperger,author
+1788,Stefan Klingbeil,author
+1789,Benjamin Rusteberg,author
+1790,Hans-Martin Pawlowski,author
+1791,Rolf Stürner,author
+1792,Hanno Merkt,author
+1793,Ulrich Preis,author
+1794,Kyrill-A. Schwarz,author
+1795,Christoph Bezemek,author
+1796,Björn Jesse,author
+1797,Christian Hattenhauer,author
+1798,Thomas Vormbaum,author
+1799,Thomas Henze,author
+1800,Rainer Wahl,author
+1801,Ronald Schmid,author
+1802,Tonio Walter,author
+1803,Till Patrik Holterhus,author
+1804,Constantin Knauer,author
+1805,Yannic Hübner,author
+1806,Stephan Meder,author
+1807,Kim Philip Linoh,author
+1808,Frank Peters,author
+1809,Peter Bydlinski,author
+1810,Christian Bumke,author
+1811,Katharina Uffmann,author
+1812,Alexander Tischbirek,author
+1813,Jens Gal,author
+1814,Stephan Kirste,author
+1815,Maximilian Waßmuth,author
+1816,Moritz Kalb,author
+1817,Thomas A. H. Schöck,author
+1818,Maximilian Fuchs,author
+1819,Johannes Cziupka,author
+1820,Jakob Hohnerlein,author
+1821,Wolfgang Böck,author
+1822,Heike Krischok,author
+1823,Detlef Liebs,author
+1824,Friederike Frizen,author
+1825,Constantin Willems,author
+1826,Monika Böhm,author
+1827,Kristina Schönfeldt,author
+1828,John Heidemann,author
+1829,Matthias Schaut,author
+1830,Thomas A. Heiß,author
+1831,Thomas Regenfus,author
+1832,Matthias Jacobs,author
+1833,Gunther Kühne,author
+1834,Philip Wimalasena,author
+1835,Sascha Ziemann,author
+1836,Barbara Rox,author
+1837,Julian Krüper,author
+1838,Uwe H. Schneider,author
+1839,Katharina Gräfin von Schlieffen,author
+1840,Bernhard Ulrici,author
+1841,Christian Bär,author
+1842,Felix Bischof,author
+1843,Gerhard Wagner,author
+1844,Anne E. Sanders,author
+1845,Thomas Würtenberger,author
+1846,Uwe Kischel,author
+1847,Sebastian Steuer,author
+1848,Joachim Rückert,author
+1849,Hans‐Georg Dederer,author
+1850,Gerhard Otte,author
+1851,Rainer Hüttemann,author
+1852,Helmut Frister,author
+1853,Ismo Dunderberg,author
+1854,Cara Röhner,author
+1855,Yuanshi Bu,author
+1856,Angelo Golia,author
+1857,Roya Sangi,author
+1858,Dimitrios Linardatos,author
+1859,Martin Fries,author
+1860,Andrea Edenharter,author
+1861,Simon Apel,author
+1862,Christian Hillgruber,author
+1863,Michael Kahlo,author
+1864,Torsten Verrel,author
+1865,Alexandra M.J. Möhring,author
+1866,Michael Fehling,author
+1867,Moritz Hennemann,author
+1868,Moritz Pöschke,author
+1869,Dennis Bock,author
+1870,Dirk Selle,author
+1871,Hans-Heiner Kühne,author
+1872,Franz Hofmann,author
+1873,Christoph Krönke,author
+1874,Lars Brocker,author
+1875,Reinhard Bork,author
+1876,Inge Hanewinkel,author
+1877,Heike Jung,author
+1878,Hannes Wais,author
+1879,Caroline Messner,author
+1880,Alina-Jasmin Momtazi,author
+1881,Heiner Alwart,author
+1882,Daniel Thym,author
+1883,Péter Techet,author
+1884,Guy Beaucamp,author
+1885,Heike Jung,author
+1886,Christian van Endern,author
+1887,Charlott Resske,author
+1888,Maxi Weibel,author
+1889,Renate Penßel,author
+1890,Anja Schmidt,author
+1891,Nils Jansen,author
+1892,Luis Jakobi,author
+1893,Guy Beaucamp,author
+1894,Moritz Litterst,author
+1895,Boas Kümper,author
+1896,Thomas Groß,author
+1897,Robert Alexy,author
+1898,Susanne Baer,author
+1899,Lorenz Reichert,author
+1900,Hanjo Hamann,author
+1901,Paul Lorenz,author
+1902,Anne Sanders,author
+1903,Beate Gsell,author
+1904,Jan Schröder,author
+1905,Victor Limberger,author
+1906,Jonas Botta,author
+1907,Jana Bethke,author
+1908,Malte Stieper,author
+1909,Raphael Koch,author
+1910,Ulrike Müßig,author
+1911,Mathias Honer,author
+1912,Luisa Zimmer,author
+1913,Abbo Junker,author
+1914,Constantin Breß,author
+1915,Jan-Luca Helbig,author
+1916,Philipp Wehrmann,author
+1917,Julia Wiederrich,author
+1918,Leandro Dias,author
+1919,Lucila Tuñón,author
+1920,Moritz Renner,author
+1921,Chantal Bittner,author
+1922,Felix Büning,author
+1923,Annika Häutle,author
+1924,Julian Glas,author
+1925,Jürgen Kohler,author
+1926,Christiaan Wittebol,author
+1927,Heike Jung,author
+1928,Matthias Jahn,author
+1929,Tim Potthast,author
+1930,NA,author
+1931,NA,author
+1932,NA,author
+1933,NA,author
+1934,NA,author
+1935,Hanna Göken,author
+1936,Nikita Rolsing,author
+1937,Lorenz Kähler,author
+1938,Fabian Stam,author
+1939,Stephan Meder,author
+1940,Martin Kment,author
+1941,Laurin I. Rudloff,author
+1942,Norbert Gross,author
+1943,Nils Schaks,author
+1944,Markus Ogorek,author
+1945,Martin Morlok,author
+1946,Paul Hüther,author
+1947,Bernd Mertens,author
+1948,Florian Bode,author
+1949,Antonia Steinweg,author
+1950,Martin Heger,author
+1951,Kubilay Yalçın,author
+1952,Lars Klöhn,author
+1953,Abbo Junker,author
+1954,Jens Gal,author
+1955,Paul Galyga,author
+1956,Lukas Hecht,author
+1957,Jochen Rauber,author
+1958,Kevin Franzke,author
+1959,Jürgen Kohler,author
+1960,Haimo Schack,author
+1961,Frank Meyer,author
+1962,Julian Stolz,author
+1963,Joachim Wolf,author
+1964,Anna-Maria Gräfin,author
+1965,Von Lösch,author
+1966,Markus Ogorek,author
+1967,Dian Schefold,author
+1968,Gernot Sydow,author
+1,Max Planck Society,institution
+8,Max Planck Institute for Comparative and International Private Law,institution
+13,Max Planck Institute for Comparative Public Law and International Law,institution
+2,University of Fribourg,institution
+7,Max Planck Institute for Legal History and Legal Theory,institution
+12,Max Planck Institute for Research on Collective Goods,institution
+4,British Institute of International and Comparative Law,institution
+14,EBS University of Business and Law,institution
+6,Center for International Environmental Law,institution
+11,"Max Planck Institute for the Study of Crime, Security and Law",institution
+9,Max Planck Institute for Innovation and Competition,institution
+3,University of Luxembourg,institution
+10,Max Planck Institute for Tax Law and Public Finance,institution
+5,University of Pavia,institution

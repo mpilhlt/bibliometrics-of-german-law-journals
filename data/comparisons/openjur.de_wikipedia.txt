@@ -1,0 +1,119 @@
++----------------+------------------------+---------------------------+
+| Intersection   | openjur.de             | wikipedia                 |
++================+========================+===========================+
+| AG             | A&R                    | AR                        |
+| AcP            | AP                     | ARSP                      |
+| AöR            | ARP                    | AVR                       |
+| BB             | AnwBl                  | AfkKR                     |
+| BFHE           | Archiv für Presserecht | AiB                       |
+| CR             | BAnz                   | ArchKrim                  |
+| DAR            | BC                     | BLJ                       |
+| DB             | BFH/NV                 | BayVBl                    |
+| DNotZ          | BGHSt                  | BtPrax                    |
+| DRiZ           | BGHZ                   | CuR                       |
+| DSB            | BKR                    | DANA                      |
+| DuD            | BPatGE                 | DVBl, DVBl.               |
+| DÖV            | BSGE                   | EWS                       |
+| EFG            | BVerfGE                | EurUP                     |
+| FamRZ          | BVerfGK                | FoR                       |
+| GRUR           | BVerwGE                | FuR                       |
+| JA             | BeckRS                 | GVRZ                      |
+| JR             | CCZ                    | GYIL                      |
+| JZ             | COVuR                  | GesR                      |
+| JuS            | CuA                    | Grundeigentum             |
+| JurPC          | DGVZ                   | HRN                       |
+| K&R            | DJZ                    | I+E                       |
+| KJ             | DRV                    | IPrax, IPRax              |
+| MDR            | DSWR                   | ITRB                      |
+| MMR            | DStR                   | InfAuslR, IAR             |
+| NJW            | DWW                    | JAmt                      |
+| NStZ           | DÖD                    | JIPITEC                   |
+| NStZ-RR        | EWeRK                  | JSE                       |
+| NVwZ           | EWiR                   | JurBüro, JB               |
+| NZA            | EnWZ                   | JöR                       |
+| NZBau          | Entscheidungen des BFH | KSzW                      |
+| NZG            | ErbR                   | KUR                       |
+| NZM            | ErbbauZ                | KrimJ                     |
+| NZS            | EuCLR                  | KritV                     |
+| NZV            | EuCML                  | LKV                       |
+| NZWiSt         | EuZA                   | LMK                       |
+| NordÖR         | EuZW                   | MPYUNL                    |
+| RDV            | FA                     | MRM                       |
+| RIW            | FGPrax                 | Marburg Law Review        |
+| RdA            | FPR                    | MedSach                   |
+| WM             | GA                     | MschrKrim, MKS            |
+| WuM            | GRUR Int               | N&R                       |
+| ZBB            | GRUR-Prax              | NDV                       |
+| ZD             | GRUR-RR                | NJ                        |
+| ZEuP           | GSZ                    | NK                        |
+| ZIP            | GWR                    | NWB                       |
+| ZInsO          | GewArch                | NZWehrr                   |
+| ZJS            | GuP                    | NuR                       |
+| ZLR            | HRRS                   | OER                       |
+| ZMR            | IBR                    | Polizei                   |
+| ZRP            | IIC                    | R&P                       |
+| ZUM            | IILR                   | REE                       |
+| ZUR            | IR                     | RabelsZ                   |
+| ZZP            | InsVZ                  | RdFin                     |
+| ZaöRV          | InstGE                 | Res                       |
+| ZfBR           | JOR                    | RuP                       |
+|                | JURA                   | SGb                       |
+|                | JW                     | STAAT, Staat, DS          |
+|                | KJB                    | StAZ                      |
+|                | L&L                    | StoffR                    |
+|                | LMuR                   | Stu                       |
+|                | LRE                    | UPR                       |
+|                | LTO                    | VBlBW                     |
+|                | MIR                    | VERW, Verwaltung, DV      |
+|                | MPR                    | VR, vr                    |
+|                | MedR                   | VerkA                     |
+|                | NJOZ                   | WRP, wrp                  |
+|                | NJW-RR                 | WissR                     |
+|                | NVwZ-RR                | WuW                       |
+|                | NWVBl                  | ZAR                       |
+|                | NZA-RR                 | ZBR                       |
+|                | NZFam                  | ZEuS                      |
+|                | NZI                    | ZFW                       |
+|                | NZKart                 | ZG                        |
+|                | PharmR                 | ZGR                       |
+|                | PinG                   | ZHR                       |
+|                | RGSt                   | ZKJ                       |
+|                | RGZ                    | ZLVR                      |
+|                | RPfleger               | ZLW                       |
+|                | RdTW                   | ZParl                     |
+|                | RphZ                   | ZStW, ZStrW               |
+|                | RÜ                     | ZVR                       |
+|                | SchiedsVZ              | ZevKR, ZevKr              |
+|                | SpuRt                  | ZfA, ZFA                  |
+|                | StRR                   | ZfB                       |
+|                | StV                    | ZfF                       |
+|                | StraFo                 | ZfL                       |
+|                | VIA                    | ZfRsoz, Zs. f. Rechtssoz. |
+|                | VR                     | ZfU                       |
+|                | VRS                    | info also                 |
+|                | VRÜ                    | wistra, Wistra            |
+|                | VersR                  |                           |
+|                | WRP                    |                           |
+|                | WiRO                   |                           |
+|                | ZAP                    |                           |
+|                | ZEV                    |                           |
+|                | ZIS                    |                           |
+|                | ZNotP                  |                           |
+|                | ZUM-RD                 |                           |
+|                | ZVI                    |                           |
+|                | ZVertriebsR            |                           |
+|                | ZWE                    |                           |
+|                | ZWeR                   |                           |
+|                | ZfPW                   |                           |
+|                | ZfiR                   |                           |
+|                | bauR                   |                           |
+|                | djbZ                   |                           |
+|                | iStR                   |                           |
+|                | medstra                |                           |
+|                | notar                  |                           |
+|                | npoR                   |                           |
+|                | openjur                |                           |
+|                | r+s                    |                           |
+|                | zfs                    |                           |
+|                | öAT                    |                           |
++----------------+------------------------+---------------------------+

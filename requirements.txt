@@ -1,0 +1,17 @@
+python-dotenv
+pandas
+pandasql
+tabulate 
+tqdm
+requests
+ipywidgets
+matplotlib
+numpy
+lxml
+regex
+jupyter
+jupyter-cache
+venny4py
+bs4
+wordcloud
+jupysql

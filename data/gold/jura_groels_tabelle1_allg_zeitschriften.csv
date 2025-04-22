@@ -1,0 +1,19 @@
+"rang","zeitschrift","abk","punkte_absolut","qualitaet_gewichtet","summe_bewertungen","wos_title_manuell","scp_title_manuell","scopus_source_id","openalex_source_id","issn_manuell","bemerkungen","is_in_cossref"
+15,Rabels Zeitschrift für ausländisches und internationales Privatrecht,RabelsZ,28.3,0.60,10,-,-,-,"S4306525250,S108365452","0033-7250,1868-7059",WoS: Emerging Sources,true
+17,Zeitschrift der Savigny-Stiftung fur Rechtsgeschichte,ZRG,26.7,0.57,8,-,"Zeitschrift der Savigny-Stiftung fur Rechtsgeschichte, Germanistische Abteilung|Zeitschrift der Savigny-Stiftung fur Rechtsgeschichte, Romanistische Abteilung|Zeitschrift der Savigny-Stiftung fur Rechtsgeschichte, Kanonistische Abteilung","18498,16100154738,18501","S4210238088,S4210177729,S4210173692","0323-4142,0323-4045,0323-4096,2304-4896,2304-4861,2304-4934","3 Zeitschriften für verschiedene Abteilungen, WoS: Emerging Sources",true
+3,Archiv für die civilistische Praxis,AcP,266.8,5.68,84,-,-,-,S82779185,"0003-8997,1868-7113",,true
+8,Der Staat,Staat,48.2,1.03,18,-,-,-,S204358660,"1865-5203,0038-884X",,true
+11,Zeitschrift für Zivilprozess,ZZP,32.5,0.69,10,-,-,-,S4210176706,"0342-3468,2366-2077",,true
+12,Kritische Justiz,KJ,30.8,0.66,9,-,-,-,S4210207308,"0023-4834,2942-3295",,true
+4,Archiv des öffentlichen Rechts,AöR,125,2.66,42,-,-,-,S78787406,"0003-8911,1868-6796",,true
+9,Monatsschrift für Deutsches Recht,MDR,34.6,0.74,15,-,-,-,"S4210169614,S4306520172","0340-1812,2194-4202",,true
+1,JuristenZeitung,JZ,469.9,10.00,164,-,-,-,S157638965,"0022-6882,1868-7067",,true
+6,Juristische Ausbildung,JURA,72.3,1.54,36,-,-,-,"S4210240061,S100217200","0170-1452,1612-7021",,true
+7,Juristische Rundschau,JR,52.7,1.12,23,-,-,-,S25774322,"0022-6920,1612-7064",,true
+18,DER BETRIEB,DB,22.4,0.48,8,-,-,-,S4306507733,"0005-9935",,false
+13,Zeitschrift für europäisches Privatrecht,ZeuP,30.7,0.65,9,-,-,-,"S4306535585,S4306535866","0943-3929",,false
+14,Zeitschrift für Rechtspolitik,ZRP,30.1,0.64,14,-,-,-,S4306535636,"0514-6496",,false
+5,Juristische Schulung,JuS,117.2,2.49,61,-,-,-,"S4306516541,S4306517198","0022-6939",,false
+10,Juristische Arbeitsblätter,JA,32.8,0.70,16,-,-,-,-,"0022-6904",,false
+2,Neue juristische Wochenschrift,NJW,345,7.34,134,-,-,-,"S4306520736,S4363605508","0341-1915,0341-1907",,false
+16,Kritische Vierteljahresschrift für Gesetzgebung und Rechtswissenschaft,KritV,26.8,0.57,13,-,-,-,S4210234159,"0179-2830,2364-6071,2193-7869",,false

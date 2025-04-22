@@ -1,0 +1,2025 @@
+"institution_id","raw_author_name","author_id","cleaned_author_name","cleaned_institution_name","min_pubyear","max_pubyear","publ_cnt","example_id"
+,Hinrich Rüping,A5000004275,Hinrich Rüping,,2010,2010,2,W88642755
+,Stefan Greiner,A5000034926,Stefan Greiner,,2020,2020,1,W3014497707
+,Thomas Gschwend,A5000084056,Thomas Gschwend,,2017,2017,1,W2750792014
+,Markus C. Kerber,A5000089623,Markus C. Kerber,,2015,2023,2,W4368247733
+,Christoph Becker,A5000160503,Christoph Becker,,2015,2015,1,W2762566505
+,Cordt-Magnus van Geuns-Rosch,A5000199532,Cordt-Magnus van Geuns-Rosch,,2019,2019,1,W2955676370
+,Jochen Alfred Werner,A5000215779,Jochen A. Werner,,2013,2013,1,W2056560883
+,Klaus Ulrich Schmolke,A5000258203,Klaus Ulrich Schmolke,,2008,2015,2,W2323427906
+,Christian Hensel,A5000259762,Christian Hensel,,2008,2008,1,W4231761140
+,Fabian Heide,A5000260435,Fabian Heide,,2019,2019,1,W4234059820
+,Anne Christin Wietfeld,A5000313839,Anne Christin Wietfeld,,2020,2020,1,W3026357075
+,Marcus Lutter,A5000406086,Marcus Lutter,,2006,2007,3,W4241212315
+,Andrea Hagemeier,A5000518455,Andrea Hagemeier,,2010,2010,1,W1966683820
+,Claudio Franzius,A5000578088,Claudio Franzius,,2014,2014,1,W2079326100
+,Andreas Bücker,A5000694030,Andreas Bücker,,2008,2008,1,W2076132787
+,Mario Martini,A5000748936,Mario Martini,,2012,2012,1,W2093901205
+,Felix Berner,A5000776150,Felix Berner,,2021,2021,1,W3217010979
+,Marc-Philippe Weller,A5000932949,Marc-Philippe Weller,,2008,2023,12,W4368247786
+,Dietrich Murswiek,A5000991389,Dietrich Murswiek,,2010,2010,1,W2032518722
+,Liv Jaeckel,A5001015064,Liv Jaeckel,,2011,2011,1,W495856
+,Ivo Bach,A5001019434,Ivo Bach,,2012,2021,2,W4251030174
+,Michael Rolfsen,A5001054993,Michael Rolfsen,,2009,2009,1,W4248949717
+,Thomas Weigend,A5001070905,Thomas Weigend,,2009,2021,4,W3167151286
+,Michael Dudek,A5001123161,Michael Dudek,,2020,2020,1,W4244763989
+,Matthias Wallimann,A5001160913,Matthias Wallimann,,2016,2016,1,W2339952033
+,Daniela Demko,A5001167517,Daniela Demko,,2011,2011,1,W2001579807
+,Daniel Effer-Uhe,A5001167722,Daniel Effer-Uhe,,2023,2023,1,W4387303733
+,Daniel Oliver Effer-Uhe,A5001167722,Daniel Effer-Uhe,,2016,2016,1,W2509306550
+,Angelika Günzel,A5001292202,Angelika Günzel,,2007,2007,1,W1992554095
+,Herbert Roth,A5001329010,Herbert Roth,,2006,2023,36,W4352992984
+,Christoph Schönberger,A5001455343,Christoph Schönberger,,2007,2018,8,W878722814
+,Kyriakos N. Kotsoglou,A5001465745,Kyriakos N. Kotsoglou,,2013,2017,4,W2599304540
+,Susanne Schwarz,A5001466458,Susanne Schwarz,,2007,2007,1,W4230761760
+,Jean Mohamed,A5001486408,Jean Mohamed,,2019,2019,1,W2964834845
+,Jörn Jacobs,A5001527041,Jörn Jacobs,,2007,2007,1,W4246050982
+,Carl-Friedrich Stuckenberg,A5001549468,Carl-Friedrich Stuckenberg,,2006,2015,4,W2915620459
+,Matthias Fervers,A5001560972,Matthias Fervers,,2019,2019,1,W2946098251
+,Frauke Brosius-Gersdorf,A5001732424,Frauke Brosius-Gersdorf,,2007,2007,1,W2069940065
+,Gunnar Hindrichs,A5001774136,Gunnar Hindrichs,,2008,2008,1,W1972981624
+,Eduard Wegner,A5001858173,E. Wegner,,2020,2020,1,W3027080224
+,Andreas Ringshandl,A5001868957,Andreas Ringshandl,,2018,2018,1,W4253327172
+,Bernd Ruethers,A5001910095,Bernd Ruethers,,2010,2011,2,W825255761
+,Gregor Hilger,A5001966247,Gregor Hilger,,2023,2024,2,W4390725106
+,Volker Rieble,A5001979242,Volker Rieble,,2007,2011,3,W4241474157
+,M. Lehmann,A5002006476,Mattias Lehmann,,2017,2017,1,W2602859517
+,Stephan Barton,A5002013563,Stephan Barton,,2010,2010,1,W4238375881
+,Matthias Ruffert,A5002090419,Matthias Ruffert,,2007,2007,1,W4206965442
+,Angela Schwerdtfeger,A5002142214,Angela Schwerdtfeger,,2022,2022,1,W4285229806
+,Stefan Haack,A5002184270,Stefan Haack,,2012,2017,2,W2786144179
+,Hans-Jürgen Ahrens,A5002204956,Hans-Jürgen Ahrens,,2009,2009,1,W2000001462
+,Frank Peters,A5002233835,Frank Peters,,2012,2012,1,W2047861643
+,Dieter Medicus,A5002239555,Dieter Medicus,,2006,2011,3,W4251911859
+,Kyrill-Alexander Schwarz,A5002260691,Kyrill-Alexander Schwarz,,2010,2010,1,W2331166099
+,Peter Oestmann,A5002283347,Peter Oestmann,,2012,2022,4,W4285303642
+,Leonie Steinl,A5002322728,Leonie Steinl,,2018,2022,2,W4285307638
+,Louisa Brennecke,A5002393551,Louisa Brennecke,,2014,2014,1,W2016546980
+,Moritz Brinkmann,A5002427612,Moritz Brinkmann,,2018,2018,1,W2790586535
+,Astrid Wallrabenstein,A5002461008,Astrid Wallrabenstein,,2012,2016,2,W2915201259
+,Katharina Hilbig-Lugani,A5002467744,Katharina Hilbig-Lugani,,2013,2013,1,W2042363781
+,Wolfgang Grunsky,A5002473225,Wolfgang Grunsky,,2007,2007,1,W4233881537
+,Martin Becker,A5002576392,Martin Becker,,2019,2019,1,W2916750266
+,Ekkehard Hofmann,A5002701357,Ekkehard Hofmann,,2012,2012,2,W4251888176
+,Christoph Engel,A5002719242,Christoph Engel,,2006,2008,4,W4234713098
+,Johannes Buchheim,A5002728028,Johannes Buchheim,,2017,2022,4,W4312505293
+,Bernhard Großfeld,A5002735987,Bernhard Großfeld,,2007,2010,3,W2154267341
+,Ulrich Eisenberg,A5002740209,Ulrich Eisenberg,,2010,2010,1,W4252708788
+,Wolfgang Hau,A5002844607,Wolfgang Hau,,2008,2012,4,W2093162810
+,Wolfgang Jakob Hau,A5002844607,Wolfgang Hau,,2012,2012,1,W4241669175
+,Kurt Siehr,A5002851677,Kurt Siehr,,2007,2007,1,W2047791281
+,Georg Bitter,A5002955984,Georg Bitter,,2007,2015,3,W4254554756
+,Matthias Kilian,A5002984566,Matthias Kilian,,2006,2016,2,W2523645409
+,h.c. Dirk Ehlers,A5002994480,Holger Ehlers,,2017,2017,1,W2568222431
+,Fabian Michl,A5003040578,Fabian Michl,,2013,2021,4,W3132523206
+,Jürgen Helle,A5003062847,Jürgen Helle,,2007,2010,2,W2081549371
+,Christoph Enders,A5003086153,Christoph Enders,,2006,2023,7,W84977682
+,Christian Kukuczka,A5003154225,Christian Kukuczka,,2018,2018,1,W2885565101
+,Frederik von Harbou,A5003178435,Frederik von Harbou,,2020,2020,1,W3014819469
+,Ulrich Jan Schröder,A5003179152,Ulrich Jan Schröder,,2010,2016,7,W4250998180
+,Dian Schefold,A5003183796,Dian Schefold,,2012,2018,2,W2810128883
+,Thomas M. J. Möllers,A5003190047,Thomas M. J. Möllers,,2008,2017,7,W2735672961
+,Thomas M.J. Möllers,A5003190047,Thomas M. J. Möllers,,2006,2019,10,W4255959141
+,Thomas Möllers,A5003190047,Thomas M. J. Möllers,,2008,2008,1,W1981663508
+,Andreas Roth,A5003253962,Andreas Röth,,2015,2015,1,W4250035564
+,Jens Kleinschmidt,A5003296175,Jens Kleinschmidt,,2007,2011,3,W4251457860
+,Markus Würdinger,A5003328685,Markus Würdinger,,2006,2023,6,W4368247797
+,Kristian Kühl,A5003373110,Kristian Kühl,,2007,2014,9,W4255065195
+,Barbara Dauner-Lieb,A5003576031,Barbara Dauner-Lieb,,2024,2024,1,W4394938055
+,Daniel Matthias Klocke,A5003579917,Daniel Klocke,,2018,2018,1,W2889569608
+,Johannes Belling,A5003593911,Johannes Belling,,2010,2010,1,W56205254
+,Moritz Maier,A5003735556,Moritz Maier,,2017,2017,1,W2681075128
+,Franz Schnauder,A5003760715,Franz Schnauder,,2006,2021,7,W3153346458
+,Dagmar Coester-Waltjen,A5003783872,Dagmar Coester-Waltjen,,2010,2018,4,W4250438012
+,Claude Witz,A5003799805,Claude Witz,,2017,2017,1,W2686974359
+,Gerrit Forst,A5003829168,Gerrit Forst,,2013,2013,1,W1986215618
+,Burkhard Hess,A5003851944,Burkhard Heß,,2006,2015,6,W4231462728
+,Dirk Müllmann,A5003852531,Dirk Müllmann,,2024,2024,1,W4394925247
+,Ulrich Segna,A5003860848,Ulrich Segna,,2014,2018,2,W2916826634
+,Mimiam Dross,A5003875655,Mimiam Dross,,2012,2012,1,W2040865524
+,Reinhard Bork,A5003901325,Reinhard Bork,,2009,2009,1,W1981119348
+,Christian Ernst,A5003919873,Christian Ernst,,2017,2017,1,W2771845956
+,Nikolaus Marsch,A5003963076,Nikolaus Marsch,,2021,2023,2,W4384787754
+,Björn Schiffbauer,A5003969656,Björn Schiffbauer,,2015,2023,3,W4386394134
+,Steffen Augsberg,A5004052543,Steffen Augsberg,,2010,2022,3,W4312505293
+,Carl-Christian Dressel,A5004107370,Carl-Christian Dressel,,2017,2017,1,W2632717434
+,Christian Fahl,A5004162412,Christian Fahl,,2009,2022,4,W4255471121
+,Johannes Wertenbruch,A5004174846,Johannes Wertenbruch,,2006,2023,3,W4384786949
+,Klaus Tiedtke,A5004209483,Klaus Tiedtke,,2006,2008,3,W2916467083
+,Ssoufian Bouchouaf,A5004222093,Ssoufian Bouchouaf,,2007,2007,1,W4241673371
+,Winfried Kluth,A5004233023,Winfried Kluth,,2010,2018,2,W4238776192
+,Katharina von Schlieffen,A5004302513,Katharina von Schlieffen,,2020,2020,1,W3004795878
+,Herbert Zech,A5004308330,Herbert Zech,,2008,2016,4,W4243631495
+,Peter Schlechtriem,A5004311684,Peter Schlechtriem,,2006,2006,1,W2039387815
+,Max Gärtner,A5004344201,Max Gärtner,,2019,2019,1,W2946432337
+,Gregor Thüsing,A5004383118,Gregor Thüsing,,2006,2006,1,W4244035750
+,Nils Schaks,A5004455594,Nils Schaks,,2017,2023,2,W4362569814
+,Lola Petersen,A5004457751,Lola Petersen,,2017,2017,1,W4251285669
+,Jonathan Friedrichs,A5004463843,Jonathan Friedrichs,,2022,2022,1,W4312636591
+,Maximilian Becker,A5004575733,Maximilian Becker,,2009,2017,3,W2764091660
+,Klaus Tonner,A5004658926,Klaus Tonner,,2006,2016,4,W2547426216
+,Jermaine Washington,A5004666233,Jermaine Washington,,2019,2019,1,W2990938470
+,Joachim von Bargen,A5004666986,Joachim von Bargen,,2013,2013,1,W1983147783
+,Knut Werner Lange,A5004680054,Knut Werner Lange,,2009,2018,4,W4239739058
+,Leonhard Hübner,A5004691395,Leonhard Hübner,,2017,2017,1,W2608521501
+,Gerhard Hohloch,A5004756961,Gerhard Hohloch,,2008,2008,1,W1996627142
+,Diederich Eckardt,A5004934863,Diederich Eckardt,,2009,2009,1,W2008590627
+,Gerson Trüg,A5004939855,Gerson Trüg,,2007,2008,2,W2024350944
+,Paul Kirchhof,A5004957323,Paul Kirchhof,,2017,2017,1,W2716089199
+I149899117,Jan D. Lüttringhaus,A5004977195,Jan D. Lüttringhaus,Max Planck Society,2018,2018,1,W2904241515
+I4210112296,Jan D. Lüttringhaus,A5004977195,Jan D. Lüttringhaus,Max Planck Institute for Comparative and International Private Law,2018,2018,1,W2904241515
+,Joachim Wieland,A5004988686,Joachim Wieland,,2006,2012,2,W3122790503
+,Hans-Detlef Horn,A5004996129,Hans-Detlef Horn,,2006,2006,1,W4239178463
+,"Hans-Detlef Horn,",A5004996129,Hans-Detlef Horn,,2007,2007,1,W4241790702
+,Anna-Julia Egger,A5005003613,Anna-Julia Egger,,2023,2023,1,W4366432124
+,Matthias Dankemeyer,A5005098674,Matthias Dankemeyer,,2015,2015,1,W2315363270
+,Ralph Christensen,A5005128731,Ralph Christensen,,2007,2007,1,W2081751077
+,Gottfried Schiemann,A5005195141,Gottfried Schiemann,,2009,2021,5,W4255815852
+,Jürgen Rath,A5005201363,Jürgen Rath,,2006,2006,1,W4247354988
+,Eike Kassebaum,A5005287326,Eike Kassebaum,,2015,2015,1,W2397845421
+,Stephan Meyer,A5005289807,S. S. Meyer,,2012,2012,1,W2042794933
+,Ingo Rau,A5005353443,Ingo Rau,,2006,2006,1,W1979618515
+,Jan-Marcel Drossel,A5005378871,Jan-Marcel Drossel,,2014,2018,2,W4254558333
+,Josef Franz Lindner,A5005449564,Josef Franz Lindner,,2006,2022,10,W4312697979
+,Matthias Siegmann,A5005482678,Matthias Siegmann,,2017,2017,1,W2700127042
+,Martin Häublein,A5005507556,Martin Häublein,,2016,2023,5,W4318612575
+,Christoph Engel,A5005665024,Christoph Engel,,2006,2022,2,W4285142250
+,Jens Adolphsen,A5005687689,Jens Adolphsen,,2014,2024,3,W4391851995
+,Gerhard Haney,A5005692318,Gerhard Haney,,2007,2007,1,W2016723380
+,Eva Kocher,A5005853497,Eva Kocher,,2018,2018,1,W2890619853
+,Anne Schneider,A5005937157,Anne Schneider,,2018,2018,1,W2903295580
+,Herbert Wiedemann,A5005958141,Herbert Wiedemann,,2013,2013,1,W1976882218
+,Sebastian Leuschner,A5006067702,Sebastian Leuschner,,2015,2015,1,W2917538628
+,Ulrich Palm,A5006080694,Ulrich Palm,,2012,2012,1,W2040235232
+,Maren Vogel,A5006083379,Maren Vogel,,2023,2023,1,W4352993322
+,Ulrike Picker,A5006167336,Ulrike Picker,,2018,2018,1,W4247511287
+,Ingolf Pernice,A5006183974,Ingolf Pernice,,2015,2015,1,W2917215338
+,Clara Günzl,A5006213751,Clara Günzl,,2019,2022,2,W4312762716
+,Nadja Josefin Rünzel,A5006329540,Nadja Josefin Rünzel,,2018,2018,1,W4250961147
+,Christine Morgenstern,A5006339907,Christine Morgenstern,,2017,2017,1,W2771932499
+,Sophie Ludewigs,A5006382871,Sophie Ludewigs,,2022,2022,1,W4291779344
+,Elke Gurlit,A5006421496,Elke Gurlit,,2012,2012,1,W1996904280
+,Andreas Möhlenkamp,A5006522266,Andreas Möhlenkamp,,2015,2015,1,W2327941174
+,Carina Dorneck,A5006583766,Carina Dorneck,,2016,2017,2,W2765328601
+,Thomas Hillenkamp,A5006680389,Thomas Hillenkamp,,2020,2020,2,W3096564575
+,Robert Bommel,A5006767288,Robert Bommel,,2018,2018,1,W2801487748
+,Stanley L. Paulson,A5006789867,Stanley L. Paulson,,2006,2018,8,W2902154660
+,Claus Ahrens,A5006883513,Claus Ahrens,,2006,2009,2,W4248833646
+,Hans-Martin Müller-Laube,A5007092959,Hans-Martin Müller-Laube,,2007,2007,1,W1978845518
+,Edda E. Pauli,A5007097225,Edda E. Pauli,,2017,2017,1,W2598102340
+,Martin Heckel,A5007118441,Martin Heckel,,2017,2021,2,W3158187227
+,Lennart Fleckenstein,A5007120562,Lennart Fleckenstein,,2020,2020,1,W3096006929
+,Ina Plettenberg,A5007142522,Ina Plettenberg,,2016,2016,1,W4242265460
+,Florian Bode,A5007185637,Florian Bode,,2021,2021,1,W3156704818
+,Tilman Bezzenberger,A5007244653,Tilman Bezzenberger,,2007,2007,1,W4251916543
+,Georg Lienbacher,A5007282698,Georg Lienbacher,,2009,2009,1,W2326603629
+,Kevin Franzke,A5007304528,Kevin Franzke,,2022,2022,1,W4312530109
+,Uwe Volkmann,A5007331061,Uwe Volkmann,,2011,2020,3,W4210394381
+,Niklas Bunnenberg,A5007369138,Niklas Bunnenberg,,2020,2020,1,W3106958605
+,Tobias André,A5007381284,Tobias André,,2011,2011,1,W1972080352
+,Hans Kudlich,A5007451271,Hans Kudlich,,2009,2009,1,W2005264369
+,Adrian Schmidt Recla,A5007491723,Adrian Schmidt Recla,,2010,2010,1,W204612869
+,Marie Fritzer,A5007500434,Marie Fritzer,,2016,2016,1,W2336120901
+,Michael Lysander Fremuth,A5007566774,Michael Lysander Fremuth,,2018,2018,1,W2782942014
+,Rüdiger Krause,A5007668892,Rüdiger Krause,,2017,2017,1,W4250401176
+,Tilman Rauhut,A5007701225,Tilman Rauhut,,2007,2007,1,W2021458404
+,Stefan Treichel,A5007724263,Stefan Treichel,,2020,2020,1,W4237422360
+,Katrin Gierhake,A5007773234,Katrin Gierhake,,2013,2013,1,W2007612848
+,Wolf Paul,A5007774439,Paul R. Wolf,,2010,2010,1,W1978505076
+,Jörg Manfred Mössner,A5007843215,Jörg Manfred Mössner,,2008,2008,1,W1970059070
+,Marten Breuer,A5007891397,Marten Breuer,,2013,2013,1,W779913593
+,Christoph Schnabel,A5007893234,C. Schnabel,,2009,2009,1,W2035761815
+,Patrick C. Leyens,A5007895928,Patrick C. Leyens,,2007,2011,3,W4231972604
+,Timo Fest,A5008055985,Timo Fest,,2013,2014,2,W4252870342
+,Jörg H. Sommer,A5008069169,Jörg H. Sommer,,2007,2007,1,W2091159260
+,Michael Walter,A5008194188,Michael Walter,,2009,2009,1,W1980203337
+,Sven Siebrecht,A5008198443,Sven Siebrecht,,2023,2023,1,W4366432763
+,Daniel Sailer,A5008228343,Daniel Sailer,,2011,2011,1,W1972080352
+,Gerald Spindler,A5008267405,Gerald Spindler,,2006,2013,2,W4214939888
+,Martin Zwickel,A5008286660,Martin Zwickel,,2019,2019,1,W2954727635
+I149899117,Christoph Krenn,A5008316356,Christoph Krenn,Max Planck Society,2014,2014,1,W2051413530
+I4210141359,Christoph Krenn,A5008316356,Christoph Krenn,Max Planck Institute for Comparative Public Law and International Law,2014,2014,1,W2051413530
+,Andreas Fuchs,A5008359187,Andreas Fuchs,,2014,2014,1,W2011237404
+,Christian Becker,A5008388312,Christian Becker,,2016,2016,1,W2515677457
+,Thomas Oppermann,A5008468396,Thomas Oppermann,,2008,2013,6,W4231680664
+,Jan Schaefer,A5008637838,Jan Schaefer,,2008,2008,1,W2004081768
+,Arnd Uhle,A5008666992,Arnd Uhle,,2006,2020,7,W3048520035
+,Frank Zimmermann,A5008684805,Frank Zimmermann,,2011,2015,3,W4251920115
+,Thomas Grosse-Wilde,A5008801807,Thomas Grosse-Wilde,,2019,2019,1,W2936225651
+,Elena Barnert,A5008804736,Elena Barnert,,2012,2012,1,W2024204964
+,Jakob Fortunat Stagl,A5008879380,Jakob Fortunat Stagl,,2016,2018,2,W2892165142
+,Hans Ulrich Paeffgen,A5008880547,Hans Ulrich Paeffgen,,2011,2011,1,W2020387762
+,Bernd Heinrich,A5008922508,Bernd Heinrich,,2010,2016,2,W4244245009
+,Karsten Altenhain,A5008930465,Karsten Altenhain,,2010,2020,3,W4248728708
+,Eibe Riedel,A5008981526,Eibe Riedel,,2006,2006,1,W1989550182
+,Dietmar Willoweit,A5009039552,Dietmar Willoweit,,2010,2016,3,W2401218913
+,Peter Udsching,A5009047305,Peter Udsching,,2013,2018,2,W4237163779
+,Stefan Leible,A5009092460,Stefan Leible,,2010,2010,1,W2034300475
+,Hans-Joachim Cremer,A5009244734,Hans-Joachim Cremer,,2007,2007,1,W2021505203
+,Patrick Ostendorf,A5009245388,Patrick Ostendorf,,2023,2024,3,W4393954514
+,Simón Maturana,A5009251148,Simón Maturana,,2023,2023,1,W4386716927
+,Karl-Jürgen Bieback,A5009307339,Karl‐Jürgen Bieback,,2012,2012,1,W4256341414
+,Johannes Köndgen,A5009423147,Johannes Köndgen,,2010,2022,3,W4312249230
+,Sebastian Dworschak,A5009494489,Sebastian Dworschak,,2012,2012,1,W2061540891
+,Bernd-Dieter Meier,A5009528491,Bernd-Dieter Meier,,2006,2015,5,W4243729145
+,Thomas Riehm,A5009674412,Thomas Riehm,,2006,2016,4,W4254536997
+,Ariane Berger,A5009763889,Ariane Berger,,2014,2014,1,W4232871945
+,Paula Rhein-Fischer,A5009765673,Paula Rhein-Fischer,,2022,2022,1,W4297820547
+,Guy Beaucamp,A5009863161,Guy Beaucamp,,2012,2016,2,W2537436333
+,Fabian Stam,A5009910804,Fabian Stam,,2018,2018,2,W4230653689
+,Hans Jörg Sandkühler,A5009914996,Hans Jörg Sandkühler,,2016,2016,1,W2336113258
+,Florian Möslein,A5010006112,Florian Möslein,,2010,2022,5,W4312265888
+,Jan Singbartl,A5010026917,Jan Singbartl,,2011,2011,1,W2006590044
+,Hinnerk Wißmann,A5010083639,Hinnerk Wißmann,,2020,2020,1,W4237554094
+,Lars Klöhn,A5010085643,Lars Klöhn,,2010,2010,1,W4245961172
+,Gunda Dreyer,A5010102533,Gunda Dreyer,,2007,2007,1,W2054988088
+,Jens Koch,A5010126138,Jens Koch,,2006,2020,2,W4235817368
+,Rolf Gröschner,A5010139894,Rolf Gröschner,,2009,2018,6,W2892159047
+,Hans Meyer,A5010237266,Hans Meyer,,2011,2012,3,W4250525789
+,Harald Koch,A5010374911,Harald Koch,,2014,2014,1,W1982907286
+,Marc Reiß,A5010445443,Marc Reiß,,2011,2011,1,W1976838869
+,Lars Berster,A5010516400,Lars Berster,,2016,2016,1,W4239894457
+,Johannes Klamet,A5010557521,Johannes Klamet,,2019,2019,1,W2955711332
+,erner Heun,A5010601338,E Heun,,2006,2006,1,W2000374480
+,Hans-Joachim Musielak,A5010611097,Hans-Joachim Musielak,,2014,2014,1,W2063720790
+,Andreas Kulick,A5010646193,Andreas Kulick,,2016,2020,2,W3010035844
+,Hannah Stoffer,A5010699128,Hannah Stoffer,,2013,2013,1,W2280655625
+,Elena Geck,A5010765908,Elena Geck,,2012,2012,1,W2042307132
+,Frank Saliger,A5010771864,Frank Saliger,,2006,2022,5,W4294224183
+,Andreas Ruster,A5010791267,Andreas Ruster,,2021,2021,1,W3213310494
+,Danny Busch,A5010802680,Danny Busch,,2023,2023,1,W4384787461
+,Friedhelm Hase,A5010815703,Friedhelm Hase,,2020,2020,2,W3109936204
+,Germar Enders,A5010870360,Germar Enders,,2006,2006,1,W4233424015
+,Matthias Klatt,A5010901798,Matthias Klatt,,2007,2007,1,W4240781095
+,Roman Kaiser,A5010956613,Roman Kaiser,,2017,2017,1,W4238149772
+,Tamina Preuß,A5010962568,Tamina Preuß,,2023,2023,1,W4320015488
+,Martin Heger,A5011069989,Martin Heger,,2010,2022,2,W4210300532
+,Amir Makee Mosa,A5011150082,Amir Makee Mosa,,2011,2011,1,W2326762075
+,Said Pirmurat,A5011226780,Said Pirmurat,,2007,2007,1,W1975665669
+,Frank Neubacher,A5011319184,Frank Neubacher,,2007,2007,1,W1975397278
+,Erich Samson,A5011334300,Erich Samson,,2009,2009,1,W2313548234
+,Karsten Schmidt,A5011354281,Karsten Schmidt,,2008,2021,11,W4251243090
+,Stephan Szalai,A5011385957,Stephan Szalai,,2018,2018,1,W2805635714
+,Raphael Koch,A5011521711,Raphael Koch,,2010,2019,8,W4250652378
+,Stefan Witschen,A5011646148,Stefan Witschen,,2018,2018,1,W2890502705
+,Nils Weinberg,A5011653825,Nils Weinberg,,2021,2021,1,W3212596854
+,Till Valentin Meickmann,A5011686821,Till Valentin Meickmann,,2023,2023,1,W4386394076
+,Jürgen Helle,A5011734172,Jürgen Helle,,2008,2008,1,W2004342725
+,Alexander Sajnovits,A5011757869,Alexander Sajnovits,,2014,2014,1,W2051297273
+,Roland Broemel,A5011802783,Roland Broemel,,2014,2014,1,W1968185878
+,Julian Krüper,A5011846855,Julian Krüper,,2019,2019,1,W2938170666
+,Boris Schinkels,A5011869456,Boris Schinkels,,2008,2011,4,W4252653000
+,Johanna Bierlein,A5011950018,Johanna Bierlein,,2022,2022,1,W4291498092
+,Jan Felix Hoffmann,A5011975885,Jan Hoffmann,,2011,2023,5,W4377002473
+,Charlotte Vollenberg,A5012068226,Charlotte Vollenberg,,2019,2019,1,W2936053392
+,Nina Nestler,A5012333588,Nina Nestler,,2009,2009,1,W1969203006
+,Magdalena Kubiak,A5012353407,Magdalena Kubiak,,2013,2013,1,W1980661794
+,Kirsten Schmalenbach,A5012375336,Kirsten Schmalenbach,,2006,2019,5,W4251769777
+,Ralph Backhaus,A5012395328,Ralph A. Backhaus,,2015,2015,1,W2397845421
+,Michael Nietsch,A5012502973,Michael Nietsch,,2014,2014,1,W2059238430
+,Sabine Gless,A5012557810,Sabine Gleß,,2021,2021,1,W3167151286
+,Hans Joachim Schneider,A5012600806,Hans Joachim Schneider,,2007,2012,2,W4241106427
+,Thorsten Kingreen,A5012632384,Thorsten Kingreen,,2006,2023,13,W4386389490
+,Hans Heinrich Rupp,A5012656082,Hans Heinrich Rupp,,2006,2006,1,W2047548070
+,Nils Jansen,A5012669709,Nils Jansen,,2012,2022,4,W4312561956
+,Gesa Franke,A5012670993,Gesa Franke,,2014,2014,1,W4240924121
+,Kay H. Schumann,A5012715330,Kay H. Schumann,,2007,2007,1,W1998470990
+,Thomas Kemper,A5012782091,Thomas Kirste,,2020,2023,3,W4368247745
+,Tobias Voigt,A5012808338,Tobias Voigt,,2014,2014,1,W4246704686
+,Dominik Schwab,A5012824525,Dominik Schwab,,2020,2020,1,W3048520035
+,Karl Riesenhuber,A5012921215,Karl Riesenhuber,,2006,2011,2,W4236737559
+,Robert Alexy,A5012924350,Robert Alexy,,2017,2017,1,W2748762055
+,Philipp Georgy,A5012992907,Philipp Georgy,,2009,2009,1,W2063174019
+,Ansgar Ohly,A5013012090,Ansgar Ohly,,2009,2019,3,W4255468481
+,Bardo Fassbender,A5013160320,Bardo Fassbender,,2016,2016,1,W2317029312
+,Wolfgang B. Schünemann,A5013183561,Wolfgang B. Schünemann,,2009,2010,2,W2048455528
+,Dirk Olzen,A5013381912,Dirk Olzen,,2007,2013,3,W4236568622
+,Jan C. Joerden,A5013450981,Jan C. Joerden,,2018,2018,1,W2791991158
+,H. C. Friedrich-Christian Schroeder,A5013654630,Helena Carolina Schroeder,,2006,2006,1,W2085140215
+,Erik Gawel,A5013746712,Erik Gawel,,2016,2016,1,W2547426216
+,Jürgen Kohler,A5013779788,Jürgen Kohler,,2007,2018,4,W2918143725
+,Joachim Lege,A5013851623,Joachim Lege,,2017,2018,2,W2801529509
+,Peter Collin,A5013870015,Peter Collin,,2011,2011,1,W2095081155
+,Paul Krell,A5013876652,Paul Krell,,2019,2019,1,W4240025943
+,Thomas Trück,A5013893809,Thomas Trück,,2010,2013,2,W2024533541
+,Tobias Fuchs,A5013911322,Tobias A. Fuchs,,2009,2009,1,W4238441449
+,Gerald Mäsch,A5014021081,Gerald Mäsch,,2006,2021,6,W4250555205
+,Nora Wienfort,A5014132199,Nora Wienfort,,2023,2023,1,W4362569868
+,Clara Beise,A5014137325,Clara Beise,,2023,2023,1,W4320923806
+,Rike Sinder,A5014156866,Rike Sinder,,2016,2017,2,W2766902895
+,Johann Justus Vasel,A5014223648,Johann Justus Vasel,,2023,2023,1,W4368247762
+,Dagmar Kaiser,A5014235096,Dagmar Kaiser,,2011,2016,2,W4250731866
+,Wolf-Rüdiger Schenke,A5014238842,Wolf-Rüdiger Schenke,,2006,2015,6,W4241442493
+,Stefan Huber,A5014288232,Stefan Huber,,2010,2010,1,W1981872442
+,Rolf Stober,A5014342251,Rolf Stober,,2007,2007,1,W4236562697
+,Detlef Leenen,A5014589140,Detlef Leenen,,2018,2018,1,W2791590855
+,Charlotte Harms,A5014680232,Charlotte Harms,,2015,2015,1,W2764245337
+,Christian Bickenbach,A5014713302,Christian Bickenbach,,2020,2020,1,W3006994433
+,Hans Vest,A5014944302,Hans Vest,,2019,2019,1,W2917966842
+,Shu-Perng Hwang,A5015041979,Shu-Perng Hwang,,2022,2022,1,W4312356202
+,Rolf Wank,A5015052884,Rolf Wank,,2013,2013,1,W1976882218
+,Barbara Grunewald,A5015166371,Barbara Grunewald,,2008,2015,2,W4206248352
+,Till Zimmermann,A5015179001,Till Zimmermann,,2014,2015,2,W2916196515
+,Jochen Taupitz,A5015207292,Jochen Taupitz,,2007,2007,1,W2015853254
+,Peter Jung,A5015245862,Peter Jung,,2013,2013,1,W2082378994
+,Sven Söllner,A5015281471,Sven Söllner,,2006,2006,1,W1989550182
+,Dominic Merk,A5015296523,Dominic Merk,,2020,2020,1,W3107793105
+,Timo Rademacher,A5015367209,Timo Rademacher,,2016,2019,2,W2958139780
+,Stefan Baufeld,A5015394610,Stefan Baufeld,,2007,2007,1,W2048254770
+,Jan Lieder,A5015550630,Jan Lieder,,2015,2015,1,W2406007077
+,Luís Greco,A5015577004,Luís Greco,,2016,2019,2,W4248389544
+,Christian Otmar Fuchs,A5015643346,Christian Fuchs,,2013,2013,1,W2042826655
+,Thomas Rönnau,A5015659955,Thomas Rönnau,,2007,2018,6,W4253761295
+,Matthias Bäcker,A5015755343,Matthias Bäcker,,2016,2016,1,W2466811278
+,Moritz Renner,A5015759350,Moritz Renner,,2013,2023,3,W4366424674
+,Stefanie Bock,A5015763769,Stefanie Bock,,2008,2015,3,W2917907323
+I154338468,Jens-Peter Schneider,A5015773296,Jens-Peter Schneider,University of Fribourg,2015,2015,1,W2017327064
+,Jan von Hein,A5015782100,Jan von Hein,,2008,2016,5,W4250789390
+,Karoline Maria Linzbach,A5015874191,Karoline Maria Linzbach,,2021,2022,2,W4285141585
+,Christian Berger,A5015885229,Christian Berger,,2017,2017,1,W2722069678
+,Rupprecht Podszun,A5015895204,Rupprecht Podszun,,2017,2017,1,W4254480137
+,Robert Leicht,A5015909373,Robert Leicht,,2006,2006,1,W1977249018
+,Hans Heinrich Rupp,A5015966119,Hans Heinrich Rupp,,2006,2008,2,W2024404042
+,Angela Metzmacher,A5016063873,Angela Metzmacher,,2011,2011,1,W4236568622
+,Klaus Bitterich,A5016073612,Klaus Bitterich,,2009,2012,2,W4251360639
+,Tim Wihl,A5016090634,Tim Wihl,,2013,2013,1,W1973954671
+,Bernhard Schlink,A5016104452,Bernhard Schlink,,2007,2013,2,W2078065289
+I149899117,Thomas Duve,A5016180289,Thomas Duve,Max Planck Society,2020,2020,1,W3048757621
+I4210095813,Thomas Duve,A5016180289,Thomas Duve,Max Planck Institute for Legal History and Legal Theory,2020,2020,1,W3048757621
+,Thomas Duve,A5016180289,Thomas Duve,,2015,2015,1,W2317251756
+,Marcus Bsaisou,A5016212525,Marcus Bsaisou,,2014,2014,1,W1968151950
+,Wolf-Dietrich Walker,A5016220400,Wolf-Dietrich Walker,,2010,2011,4,W4239000751
+,Johannes Gansmeier,A5016226826,Johannes Gansmeier,,2022,2022,1,W4315834800
+,Steffen Schlinker,A5016314518,Steffen Schlinker,,2016,2016,1,W2488362928
+,Dres. h. c. ErnstA. Kramer,A5016389483,Dres. h. c. ErnstA. Kramer,,2017,2017,1,W2569053053
+,Martin Gebauer,A5016406180,Martin Gebauer,,2011,2024,2,W4393954411
+,Arndt Teichmann,A5016409282,Arndt Teichmann,,2016,2020,2,W3032967526
+,Martin Will,A5016411806,Martin Will,,2019,2022,2,W4210622144
+,Hanno Kube,A5016429930,Hanno Kube,,2007,2016,4,W4254652579
+,Lisa Pfaffinger,A5016431452,Lisa Pfaffinger,,2013,2013,1,W2023052591
+,Michael Pawlik,A5016557206,Michael Pawlik,,2007,2020,4,W4237455364
+,Manfred Baldus,A5016639523,Manfred Baldus,,2008,2008,1,W2044676331
+,Moritz Vormbaum,A5016656655,Moritz Vormbaum,,2015,2022,3,W4285148179
+,Markus Ludwigs,A5016784467,Markus Ludwigs,,2008,2021,4,W4233444896
+I149899117,Armin Steinbach,A5016874095,Armin Steinbach,Max Planck Society,2016,2017,2,W2735809885
+I4210136328,Armin Steinbach,A5016874095,Armin Steinbach,Max Planck Institute for Research on Collective Goods,2016,2017,2,W2735809885
+,Armin Steinbach,A5016874095,Armin Steinbach,,2013,2019,2,W2992118252
+,Stephan Hobe,A5016916767,Stephan Hobe,,2013,2013,1,W1966709990
+I22912315,Tim Willy Peter Dornis,A5016993082,Tim W. Dornis,British Institute of International and Comparative Law,2018,2018,1,W2800740221
+I90697900,Tim W. Dornis,A5016993082,Tim W. Dornis,EBS University of Business and Law,2017,2017,1,W3196464719
+,Tim W. Dornis,A5016993082,Tim W. Dornis,,2018,2018,2,W2799614833
+,Diethelm Klesczewski,A5017020929,Diethelm Klesczewski,,2010,2015,3,W4255936008
+,Maximilian Wallerath,A5017031538,Maximilian Wallerath,,2008,2022,2,W4312701601
+,Pascale Cancik,A5017040841,Pascale Cancik,,2021,2021,1,W3158082736
+,Clemens Latzel,A5017060920,Clemens Latzel,,2021,2023,2,W4384787952
+,Mathias Habersack,A5017117401,Mathias Habersack,,2006,2015,8,W4256497112
+,Jennifer Koch,A5017196348,Jennifer Koch,,2022,2022,1,W4294225124
+,Miguel Teixeira de Sousa,A5017198039,Miguel Teixeira de Sousa,,2013,2013,1,W4238881276
+,Johanna Hey,A5017201964,Johanna Hey,,2006,2014,2,W2321119532
+,Gerhard Wagner,A5017227881,Gerhard Wagner,,2006,2006,1,W2064948899
+,Holger Fleischer,A5017277882,Holger Fleischer,,2008,2024,6,W4391354407
+,Volker Römermann,A5017342263,Volker Römermann,,2006,2006,1,W2615736269
+,B. Sharon Byrd,A5017392358,Betsy Byrd,,2007,2007,1,W1967886951
+,Isabelle Ley,A5017395035,Isabelle Ley,,2010,2010,1,W2006529277
+I149899117,Jürgen Basedow,A5017400830,Jürgen Basedow,Max Planck Society,2016,2016,1,W2335111362
+I4210112296,Jürgen Basedow,A5017400830,Jürgen Basedow,Max Planck Institute for Comparative and International Private Law,2016,2016,1,W2335111362
+,Jürgen Basedow,A5017400830,Jürgen Basedow,,2018,2018,1,W2783912144
+,Stephan Rixen,A5017427769,Stephan Rixen,,2006,2019,10,W3128405045
+,Karl-Ludwig Kunz,A5017441226,Karl-Ludwig Kunz,,2018,2018,1,W2916320776
+,Jochen Hoffmann,A5017523407,Jochen Hoffmann,,2008,2022,3,W4291498092
+,Frank Stolmann,A5017527074,Frank Stolmann,,2007,2007,1,W2007339947
+,Christoph Moes,A5017677807,Christoph Moes,,2017,2020,2,W3033866869
+,Katja Gelinsky,A5017687956,Katja Gelinsky,,2021,2021,1,W3172366675
+,Rainer Tietzsch,A5017770876,Rainer Tietzsch,,2024,2024,1,W4393954467
+,Winfried Hassemer,A5017797975,Winfried Hassemer,,2008,2008,1,W2071254996
+,Tonio Walter,A5017818055,Tonio Walter,,2012,2023,6,W4323025025
+,Ulrich Karpen,A5017865707,Ulrich Karpen,,2006,2009,4,W2512952644
+,Dieter Gosewinkel,A5017891041,Dieter Gosewinkel,,2019,2019,1,W2955558400
+,Dennis Reschke,A5017938059,Dennis Reschke,,2011,2011,1,W2040454325
+,Frank Hoffmeister,A5017942700,Frank Hoffmeister,,2006,2006,1,W1982585442
+,Steffen Detterbeck,A5017972003,Steffen Detterbeck,,2019,2019,1,W2953836494
+,Thomas Hinz,A5018085687,Thomas Hinz,,2016,2016,1,W2523168933
+,Samy G. Sharaf,A5018142704,Samy G. Sharaf,,2023,2023,1,W4389443081
+,Liane Wörner,A5018233338,Liane Wörner,,2012,2012,1,W2003196881
+,Georg Steinberg,A5018281576,Georg Steinberg,,2006,2017,10,W4238692059
+I149899117,Armin von Bogdandy,A5018340277,Armin von Bogdandy,Max Planck Society,2011,2014,2,W2051413530
+I4210141359,Armin von Bogdandy,A5018340277,Armin von Bogdandy,Max Planck Institute for Comparative Public Law and International Law,2011,2014,2,W2051413530
+,Armin von Bogdandy,A5018340277,Armin von Bogdandy,,2017,2024,3,W4391854301
+,Oliver Remien,A5018433900,Oliver Remien,,2019,2019,1,W2915640170
+,Arnold Lehmann-Richter,A5018443219,Arnold Lehmann-Richter,,2023,2023,1,W4318612575
+,Dominik Brodowski,A5018499957,Dominik Brodowski,,2013,2017,3,W4250425157
+,Ulrich Haltern,A5018544578,Ulrich Haltern,,2007,2007,3,W2079940804
+,Ralph Christensen,A5018579308,Ralph Christensen,,2010,2013,3,W4248472244
+,Felix Hammer,A5018594777,Felix Hammer,,2019,2019,1,W2948490277
+I2800048442,Jörg Philipp Terhechte,A5018805039,Jörg Philipp Terhechte,Center for International Environmental Law,2019,2019,1,W2916742132
+,Jörg Philipp Terhechte,A5018805039,Jörg Philipp Terhechte,,2020,2022,2,W4312850931
+,Kai Cornelius,A5018843262,Kai Cornelius,,2007,2015,2,W4248089804
+,Wolfgang Ernst,A5018855277,Wolfgang Ernst,,2012,2014,2,W2063553136
+,Bettina Weißer,A5018878135,Bettina Weißer,,2008,2016,2,W3147080071
+,Michael Heese,A5018939636,Michael Heese,,2020,2020,1,W3007295619
+,Johanna Wolff,A5018949893,Johanna Wolff,,2012,2012,1,W2033789041
+,Meike Peters,A5019120828,Meike Peters,,2007,2007,1,W4241431802
+,Christoph Ohler,A5019145066,Christoph Ohler,,2006,2008,2,W4205309751
+,Benjamin G. Engst,A5019200088,Benjamin G. Engst,,2017,2017,1,W2750792014
+,Stephan Vielmeier,A5019205592,Stephan Vielmeier,,2011,2011,1,W4241474157
+,Jan Henrik Klement,A5019309106,Jan Henrik Klement,,2008,2017,4,W4230046356
+,Oliver Lepsius,A5019339610,Oliver Lepsius,,2008,2021,14,W4245869136
+,Sebastian Sternberg,A5019385786,Sebastian Sternberg,,2017,2017,1,W2750792014
+,Filippo Ranieri,A5019486371,Filippo Ranieri,,2017,2019,2,W2974793522
+,Franz Reimer,A5019668679,Franz Reimer,,2008,2008,1,W2081669278
+I149899117,Anuscheh Farahat,A5019704023,Anuscheh Farahat,Max Planck Society,2017,2017,1,W2769476462
+I4210141359,Anuscheh Farahat,A5019704023,Anuscheh Farahat,Max Planck Institute for Comparative Public Law and International Law,2017,2017,1,W2769476462
+,Anuscheh Farahat,A5019704023,Anuscheh Farahat,,2020,2020,1,W3036180817
+,Charlotte Schmitt-Leonardy,A5019747285,Charlotte Schmitt-Leonardy,,2016,2022,3,W4205126159
+,Greta Göbel,A5019778490,Greta Göbel,,2023,2023,1,W4368247786
+,Lutz Eidam,A5019779275,Lutz Eidam,,2012,2014,2,W2916468310
+,Jörg Fritzsche,A5019811605,Jörg Fritzsche,,2010,2014,3,W4246532572
+,Johannes Rottmann,A5019835130,Johannes Rottmann,,2018,2018,1,W2789713985
+,Frank Meyer,A5019964982,Frank Meyer,,2016,2023,3,W4362569789
+,Catherine Haguenau-Moizard,A5019983084,Catherine Haguenau-Moizard,,2016,2016,1,W2485764428
+,Michael Gutfried,A5019990943,Michael Gutfried,,2008,2008,1,W1998274777
+,Walter Bayer,A5019993386,Walter Bayer,,2019,2019,1,W4248557296
+,Matthias Roßbach,A5019997741,M. Roßbach,,2014,2014,1,W2052061173
+,Mehrdad Payandeh,A5020053366,Mehrdad Payandeh,,2012,2018,3,W2916272072
+,Henrike von Scheliha,A5020076129,Henrike von Scheliha,,2023,2023,1,W4384789425
+,Johanna Cormann,A5020121131,Johanna Cormann,,2020,2020,1,W3002288770
+,Anika Burkhardt,A5020128434,Anika Burkhardt,,2011,2011,1,W133573864
+,Gerson Trüg,A5020141540,Gerson Trüg,,2016,2016,1,W2479717968
+,Gerhard Walter,A5020151381,Gerhard Walter,,2007,2007,1,W2055850515
+,Kilian Wegner,A5020190641,Kilian Wegner,,2014,2014,1,W4253761295
+,Marco Wagner,A5020207561,Marco Wagner,,2008,2008,1,W1985086785
+,Jule Martenson,A5020213944,Jule Martenson,,2016,2016,1,W2515677457
+,Kai Peter Purnhagen,A5020318153,Kai Purnhagen,,2011,2011,1,W2059024236
+,Bernd Rüthers,A5020569206,Bernd Rüthers,,2006,2020,15,W76977438
+,Yvonne Wilms,A5020575378,Yvonne Wilms,,2018,2018,1,W2903668760
+,Eckart Gottschalk,A5020678843,Eckart Gottschalk,,2007,2007,1,W4238976988
+,Johannes Stürner,A5020783410,Johannes Stürner,,2016,2023,2,W4366432563
+,Johanna Erler,A5020827002,Johanna Erler,,2015,2015,1,W2332457020
+,Henning Tappe,A5020957321,Henning Tappe,,2016,2016,1,W2915699949
+,Andreas Hoyer,A5020960304,Andreas Høyer,,2011,2011,1,W2326762075
+,Christoph Thole,A5021174679,Christoph Thole,,2010,2016,6,W4238770478
+,Michael Grünberger,A5021262538,Michael Grünberger,,2006,2018,6,W4247594520
+,Rüdiger Zuck,A5021308073,Rüdiger Zuck,,2006,2008,5,W4252780567
+,Jan Wilhelm,A5021366831,Jan Wilhelm,,2013,2023,7,W4362569921
+,Mathias Hong,A5021385900,Mathias Hong,,2012,2012,1,W1984224500
+,Hartmut Oetker,A5021386263,Hartmut Oetker,,2015,2016,2,W4240819171
+,Cosima Möller,A5021417000,Cosima Möller,,2017,2019,2,W2983143082
+,Ines Härtel,A5021435457,Ines Härtel,,2007,2008,3,W4243364042
+,Wolfgang Weiss,A5021476799,Wolfgang Weiß,,2014,2014,1,W2106982606
+,Ann-Kristin Mayrhofer,A5021491638,Ann-Kristin Mayrhofer,,2022,2022,1,W4315834801
+,Christian Gomille,A5021520497,Christian Gomille,,2013,2017,3,W2600326837
+,Christian Johnson,A5021544381,C. A. Johnson,,2018,2018,1,W2903668760
+,Stefan Huster,A5021549248,Stefan Huster,,2006,2015,6,W4243133279
+,Günter Frankenberg,A5021556755,Günter Frankenberg,,2008,2008,1,W2030404076
+,Ludwig Gramlich,A5021562228,Ludwig Grämlich,,2016,2018,2,W2903003992
+,Hans-W. Micklitz,A5021655388,Hans‐W. Micklitz,,2008,2008,1,W4232802661
+,Ulrich Fastenrath,A5021694897,Ulrich Fastenrath,,2008,2012,2,W4254721683
+,Benno Zabel,A5021778858,Benno Zabel,,2011,2021,3,W4248062039
+,Sophie-Charlotte Lenski,A5021943501,Sophie-Charlotte Lenski,,2012,2014,2,W2917023988
+,Thomas Raiser,A5021967836,Thomas Raiser,,2008,2008,1,W2019353330
+,Ann-Marie Kaulbach,A5022077659,Ann-Marie Kaulbach,,2022,2022,1,W4312953228
+,Felix M. Wilke,A5022079351,Felix M. Wilke,,2012,2012,1,W1976334365
+,Georg Sandberger,A5022138585,Georg Sandberger,,2019,2019,1,W2955438993
+,Jens Kersten,A5022142706,Jens Kersten,,2015,2015,1,W2332002261
+,Horst Eidenmüller,A5022169012,Horst Eidenmüller,,2008,2012,4,W4237260853
+,Hermann Plagemann,A5022172779,Hermann Plagemann,,2024,2024,1,W4393954467
+,Otto Depenheuer,A5022226176,Otto Depenheuer,,2007,2007,1,W2007939174
+,Rechtsanwalt Felix Busse,A5022286833,Rechtsanwalt Felix Busse,,2011,2011,1,W4255890843
+,Giesela Rühl,A5022345689,Giesela Rühl,,2017,2023,6,W4323025063
+,Reinhard Richardi,A5022416318,Reinhard Richardi,,2011,2011,1,W1975244408
+,Katharina von Koppenfels-Spies,A5022520284,Katharina von Koppenfels-Spies,,2008,2022,3,W4312475417
+,Andreas Fischer-Lescano,A5022588809,Andreas Fischer-Lescano,,2008,2018,4,W2918085146
+,Ulrich Noack,A5022678551,Ulrich Noack,,2016,2018,2,W2892307645
+,Ulrich Becker,A5022678642,U. Becker,,2008,2022,3,W4294225052
+,Klaus Adomeit,A5022687621,Klaus Adomeit,,2006,2009,4,W2065996489
+,Dörte Poelzig,A5022771518,Dörte Poelzig,,2007,2022,4,W4312393074
+,Jörg Habetha,A5022833206,Jörg Habetha,,2007,2007,1,W1990442724
+,Jens Prütting,A5022848886,Jens Prütting,,2014,2022,3,W4312728675
+,James Bews,A5022850786,James Bews,,2015,2015,1,W2320041367
+,Christian Ernst,A5022892121,Christian Ernst,,2023,2023,1,W4366432885
+,Hans F. Zacher,A5022899827,Hans Friedrich Zacher,,2006,2006,1,W2059210359
+,Martin Heger,A5022970598,Martin Heger,,2006,2014,7,W4250631106
+,Sören Lichtenthäler,A5023040981,Sören Lichtenthäler,,2023,2023,1,W4384787341
+,Wolfgang Graf Vitzthum,A5023058017,Wolfgang Graf Vitzthum,,2008,2017,2,W2761020448
+,Paul Kirchhof,A5023067310,Paul Kirchhof,,2015,2015,1,W2312372462
+,Robert Uerpmann-Wittzack,A5023083902,Robert Uerpmann-Wittzack,,2008,2008,1,W2004910067
+,Manfred Maiwald,A5023088160,Manfred Maiwald,,2016,2016,1,W2336269054
+,Heike Lesch,A5023107562,Heike Lesch,,2011,2011,1,W2327705092
+,Ulrich Ehricke,A5023152644,Ulrich Ehricke,,2007,2009,2,W4255719817
+,Dinah Huerkamp,A5023173318,Dinah Huerkamp,,2013,2013,1,W4246998481
+,Klaus F. Röhl,A5023226358,Klaus F. Röhl,,2013,2022,2,W4296014301
+,Martin Morlok,A5023286134,Martín Morlok,,2011,2019,5,W4240704627
+,Klaus Rogall,A5023312400,Klaus Rogall,,2008,2015,3,W4244201905
+,Andreas Glaser,A5023346670,Andreas Glaser,,2009,2009,1,W4234046123
+,Elmar J. Mand,A5023379491,Elmar Mand,,2010,2010,1,W1996944985
+,Adam Sagan,A5023395754,Adam Sagan,,2016,2016,1,W2396235969
+,Tobias Ponßen,A5023414232,Tobias Ponßen,,2019,2019,1,W2966468385
+,Markus Winkler,A5023429731,Markus Winkler,,2006,2024,19,W4392205399
+,Joachim Zekoll,A5023449599,Joachim Zekoll,,2017,2017,1,W2772371446
+,Michael Fuchs,A5023582232,Michael Fuchs,,2018,2018,1,W2810971165
+,Hendrik van Laak,A5023597944,Hendrik van Laak,,2006,2006,1,W4254650707
+,Philipp Reimer,A5023676506,Philipp Reimer,,2012,2017,8,W4253435406
+,Frank Bauer,A5023685509,Frank Bauer,,2010,2010,1,W2037984212
+,Berit Völzmann,A5023790357,Berit Völzmann,,2019,2019,1,W2954065842
+,Gunnar Folke Schuppert,A5023840032,Gunnar Folke Schuppert,,2017,2017,1,W2567925860
+,Sebastian Omlor,A5023840845,Sebastian Omlor,,2008,2023,4,W4388132274
+,Johanna Croon-Gestefeld,A5023861641,Johanna Croon-Gestefeld,,2019,2023,2,W4380485691
+,Axel Tschentscher,A5023917358,Axel Tschentscher,,2007,2007,1,W2089474449
+,Peter Popp,A5023993559,Peter Popp,,2006,2006,1,W2079135908
+,Roger Masterman,A5024014332,Roger Masterman,,2012,2012,1,W2031390876
+,Georg Küpper,A5024023513,Georg Küpper,,2016,2016,1,W4239188166
+,Christopher Schoenfleisch,A5024031471,Christopher Schoenfleisch,,2012,2015,3,W4237948222
+,Marco Hößlein,A5024106000,Marco Hößlein,,2007,2007,1,W2104713133
+,Anatol Dutta,A5024115402,Anatol Dutta,,2016,2023,3,W4383294940
+,Bernhard W. Wegener,A5024276810,Bernhard W. Wegener,,2016,2016,1,W2518974269
+,Gernot Sydow,A5024301152,Gernot Sydow,,2009,2022,7,W4285218030
+,Björn Laukemann,A5024372331,Björn Laukemann,,2006,2009,2,W4231462728
+,Gabriele Britz,A5024459851,Gabriele Britz,,2023,2023,1,W4384787380
+,Ulrich Weber,A5024479918,Ulrich Weber,,2009,2009,1,W2059964495
+,Jan Oster,A5024561997,Jan Oster,,2021,2021,1,W3129245086
+,Peter Hilpold,A5024589518,Peter Hilpold,,2013,2020,2,W4244396488
+,Peter Unruh,A5024608052,Peter Unruh,,2006,2006,1,W2005263060
+,Klaus Sieveking,A5024663329,Klaus Sieveking,,2010,2010,1,W155096928
+,Dagmar Felix,A5024784817,Dagmar Felix,,2018,2018,1,W4231687811
+,Stefan Korioth,A5024936594,Stefan Korioth,,2009,2024,4,W4391491364
+,Koenraad Lenaerts,A5024940796,Koenraad Lenaerts,,2017,2017,1,W2605668569
+,Michael Kubiciel,A5024997955,Michael Kubiciel,,2009,2024,13,W4392205415
+,Trutz M. Harder,A5025015316,Trutz M. Harder,,2019,2019,1,W2955711332
+,Peter Unruh,A5025031204,Peter Unruh,,2006,2006,1,W1996736036
+,Thilo Marauhn,A5025040159,Thilo Marauhn,,2013,2013,1,W1966709990
+,Felix Becker,A5025051195,Mario Stanke,,2010,2010,1,W2072990968
+,Georg Neureither,A5025160948,Georg Neureither,,2013,2013,1,W2073547875
+,Christoph Barthe,A5025172342,Christoph Barthe,,2013,2013,1,W1973518588
+,Armin Engländer,A5025183637,Armin Engländer,,2007,2023,11,W4352993401
+,Stefanie Hromek,A5025193439,Stefanie Hromek,,2015,2015,1,W2335588644
+,Jürgen Kühling,A5025281454,Jürgen Kühling,,2008,2023,9,W4388661010
+,Martin Asholt,A5025317071,Martin Asholt,,2020,2021,2,W4232706200
+,O.-L. Forel,A5025350635,O.-L. Forel,,2023,2023,1,W3023630713
+,Angie Genenger,A5025381883,Angie Genenger,,2008,2008,1,W2022806658
+,Klaus Kröger,A5025453757,Klaus Kröger,,2007,2007,2,W2054494869
+,Stephan Balthasar,A5025532721,Stephan Balthasar,,2007,2007,1,W4237624049
+,Anna-Lena Hollo,A5025539544,Anna-Lena Hollo,,2021,2021,1,W3122985695
+,Andreas Lehner,A5025543394,Andreas F. Lehner,,2007,2007,1,W4239033479
+,Axel Beater,A5025620678,Axel Beater,,2006,2006,1,W2031319878
+,Marion Albers,A5025644737,Marion Albers,,2008,2008,1,W1977164621
+,Bettina Heiderhoff,A5025645078,Bettina Heiderhoff,,2006,2021,4,W4253400829
+,H.C. Heike Jung,A5025875391,Hanbyul Jung,,2017,2017,1,W2613313640
+,Joachim Vogel,A5025898110,Joachim Vogel,,2006,2013,8,W4246427973
+,Jochen Hoffmann,A5025953267,Jochen Hoffmann,,2021,2021,1,W3160133795
+,Dietmar von der Pfordten,A5025955898,Dietmar von der Pfordten,,2006,2010,3,W4255158056
+,Alexander Bruns,A5025999645,Alexander Bruns,,2007,2023,7,W4362569875
+,Thomas Groß,A5026061564,Thomas Groß,,2012,2021,4,W3201169986
+,Sandro Wiggerich,A5026075516,Sandro Wiggerich,,2012,2012,1,W2043660541
+,Christian Traulsen,A5026082942,Christian Traulsen,,2013,2013,2,W4211203567
+,Gebhard M. Rehm,A5026119774,Gebhard M. Rehm,,2007,2007,1,W4254981007
+,Judith Froese,A5026200948,Judith Froese,,2015,2018,5,W4234079267
+,Martin Schmidt-Kessel,A5026220706,Martin Schmidt-Kessel,,2010,2010,1,W82467260
+,Gabriele Britz,A5026236779,Gabriele Britz,,2007,2014,4,W4241673371
+,Maria Bröcker,A5026258029,Maria Bröcker,,2021,2021,1,W3123989272
+,Nils Pelzer,A5026280527,Nils Pelzer,,2016,2016,1,W2339804218
+,Horst-Peter Götting,A5026429276,Horst-Peter Götting,,2016,2016,1,W4232431063
+,Matthias Pendl,A5026453860,Matthias Pendl,,2019,2019,1,W4233815045
+,Moritz Vormbaum,A5026473333,Moritz Vormbaum,,2017,2020,2,W4210392486
+,Peter-Christian Müller-Graff,A5026494722,Peter-Christian Müller-Graff,,2007,2007,1,W1965676559
+,Dieter Birk,A5026631931,Dieter Birk,,2007,2007,1,W4244712641
+,Johannes Eichenhofer,A5026667831,Johannes Eichenhofer,,2023,2023,1,W4389252176
+,Stefan Korch,A5026757392,Stefan Korch,,2019,2019,1,W2945872784
+,Friedrich-Christian Schroeder,A5027005631,Friedrich-Christian Schroeder,,2007,2019,17,W613304469
+,Nina Dethloff,A5027015408,Nina Dethloff,,2009,2019,4,W4241824703
+,Detlev W. Belling,A5027018871,Detlev W. Belling,,2010,2014,2,W56205254
+,Andreas von Arnauld,A5027114315,Andreas von Arnauld,,2013,2013,1,W2018394198
+,Maja Caroline Lehmann,A5027128880,Maja Caroline Lehmann,,2012,2012,1,W1991791584
+,Jörg Scheinfeld,A5027158337,Jörg Scheinfeld,,2018,2018,1,W2790948809
+,Philipp Bender,A5027164541,Philipp Bender,,2014,2014,1,W1989104663
+,David Markworth,A5027170187,David Markworth,,2018,2019,2,W4229547553
+,Christine Godt,A5027171205,Christine Godt,,2016,2016,1,W4235216151
+,Sabine Swoboda,A5027187773,Sabine Swoboda,,2009,2009,1,W2026879690
+,Roland Bornemann,A5027189016,Roland Bornemann,,2022,2022,1,W4213326973
+,Werner Heun,A5027223980,Werner Heun,,2012,2014,2,W2088324764
+,Juliane Kokott,A5027309650,Juliane Kokott,,2006,2006,1,W2034402915
+,Hartmut Bauer,A5027381701,Hartmut Bauer,,2014,2014,1,W2017763763
+,Christian Nierhauve,A5027421410,Christian Nierhauve,,2017,2017,1,W2763049878
+,Stefan Thomas,A5027430791,Stefan Thomas,,2011,2011,1,W2051260202
+,Reinmar Wolff,A5027462711,Reinmar Wolff,,2007,2008,2,W4243750003
+,Christian Peter Hille,A5027511201,Christian Peter Hille,,2016,2017,2,W2600271606
+,Claus Roxin,A5027530347,Claus Roxin,,2007,2009,2,W2048676814
+,Björn Harich,A5027537657,Björn Harich,,2011,2011,1,W4244414783
+,Björn M. Harich,A5027537657,Björn Harich,,2011,2011,1,W2004585071
+,Bernd Mertens,A5027703075,Bernd Mertens,,2013,2013,1,W1975046159
+,Gerd Roellecke,A5027725687,Gerd Roellecke,,2006,2011,2,W2013732576
+,Jeremy Stevens,A5027788699,Jeremy Stevens,,2022,2022,1,W4285188527
+,Christoph Möllers,A5027848947,Christoph Möllers,,2008,2023,12,W4386527865
+,Marlene Schmidt,A5028056497,Marlene Schmidt,,2007,2007,1,W2074854551
+,Hans-Georg Bollweg,A5028105778,Hans-Georg Bollweg,,2014,2014,1,W2032445975
+,Wilfried Erbguth,A5028324619,Wilfried Erbguth,,2006,2006,1,W2003089426
+,Sebastian Martens,A5028372805,S. Martens,,2006,2006,1,W2054585961
+,Florian Loyal,A5028389661,Florian Loyal,,2012,2014,2,W4250626746
+,Hans-Joachim Priester,A5028431962,Hans-Joachim Priester,,2009,2009,1,W1976157284
+,Christoph Wendelstein,A5028444339,Christoph Wendelstein,,2014,2021,4,W823683865
+,Thomas Dreier,A5028487967,Thomas Dreier,,2019,2019,1,W4234420591
+,Dominik Rennert,A5028509956,Dominik Rennert,,2023,2023,1,W4366431695
+,Michael Haimerl,A5028516114,Michael Haimerl,,2010,2010,1,W2040393547
+,Hannes Unberath,A5028525329,Hannes Unberath,,2008,2010,3,W4238068769
+,Peter W. Heermann,A5028528024,Peter W. Heermann,,2006,2015,4,W4244370522
+,David Kästle-Lamparter,A5028531206,David Kästle-Lamparter,,2016,2016,1,W2535884794
+,Markus Kaltenborn,A5028549540,Markus Kaltenborn,,2017,2017,1,W4251874103
+,Scarlett Jansen,A5028590921,Scarlett Jansen,,2019,2019,1,W2954609230
+I149899117,Sebastian J. Golla,A5028643317,Sebastian J. Golla,Max Planck Society,2014,2014,1,W1981506784
+I4210134943,Sebastian J. Golla,A5028643317,Sebastian J. Golla,"Max Planck Institute for the Study of Crime, Security and Law",2014,2014,1,W1981506784
+,Sebastian Golla,A5028643317,Sebastian J. Golla,,2021,2021,1,W3205339783
+,Frank Meyer,A5028662508,Frank Meyer,,2015,2015,1,W2891181965
+,Malte-Christian Gruber,A5028749625,Malte-Christian Gruber,,2023,2023,1,W4377002463
+,Thomas Raff,A5028768864,Thomas Raff,,2022,2023,2,W4388660958
+,Inge Scherer,A5028775662,Inge Scherer,,2007,2007,1,W1966732543
+,Robert Freitag,A5028791030,Robert Freitag,,2020,2022,2,W4242812036
+,Pia Lange,A5028881347,Pia Lange,,2019,2019,1,W2954627932
+,Monika Frommel,A5028993215,Monika Frommel,,2013,2019,4,W4246809268
+,Karlheinz Muscheler,A5029007311,Karlheinz Muscheler,,2006,2024,5,W4394938073
+,Stephan Dorn,A5029009561,Stephan Dorn,,2010,2010,1,W2074732980
+,Hans Joachim Hirsch,A5029036364,Hans Joachim Hirsch,,2007,2007,1,W2083461232
+,Claus Luttermann,A5029078501,Claus Luttermann,,2009,2017,7,W2613256880
+,Eva Inés Obergfell,A5029109683,Eva Inés Obergfell,,2006,2006,1,W4243844835
+,Matthias Friehe,A5029171731,Matthias Friehe,,2014,2014,1,W4240218375
+,Franz-Christoph Zeitler,A5029264784,Franz-Christoph Zeitler,,2022,2022,1,W4206019647
+,Utz Schliesky,A5029326004,Utz Schliesky,,2015,2015,1,W2917202264
+,Henning Radtke,A5029343097,Henning Radtke,,2019,2019,1,W2945885636
+,Clemens Bogedain,A5029350920,Clemens Bogedain,,2020,2020,1,W4205833750
+,Eric Armbrecht,A5029354069,Eric S. Armbrecht,,2020,2020,1,W3091652649
+,Michael Kloepfer,A5029385259,Michael Klöepfer,,2009,2013,4,W4253125603
+,Daniel-Erasmus Khan,A5029466493,Daniel-Erasmus Khan,,2009,2009,1,W2043869110
+,Christian Brand,A5029555193,Christian Brand,,2011,2011,1,W2040454325
+,Tanja Niedernhuber,A5029614766,Tanja Niedernhuber,,2022,2022,1,W4312946378
+I149899117,Michael Stolleis,A5029655813,Michael Stolleis,Max Planck Society,2013,2013,1,W1993546342
+I4210095813,Michael Stolleis,A5029655813,Michael Stolleis,Max Planck Institute for Legal History and Legal Theory,2013,2013,1,W1993546342
+,Michael Stolleis,A5029655813,Michael Stolleis,,2006,2017,7,W4233325279
+,Harm Peter Westermann,A5029664000,Harm Peter Westermann,,2017,2017,1,W4237712670
+,Claudia Bittner,A5029679192,Claudia Bittner,,2013,2013,1,W2087189527
+,Torsten Kindt,A5029687617,Torsten Kindt,,2023,2023,1,W4366424674
+,Ferdinand Weber,A5029723548,Ferdinand Weber,,2019,2022,2,W4221097913
+,Karl Christian Vedder,A5029784627,Karl Christian Vedder,,2008,2008,1,W2076422419
+,Georg Caspers,A5029806609,Georg Caspers,,2021,2021,1,W3206811386
+,Hanns Prütting,A5029864637,Hanns Prütting,,2008,2008,1,W2032761793
+,Angie Schneider,A5029866596,Angie Schneider,,2013,2013,1,W4237008482
+,Christopher Selke,A5029878752,Christopher Selke,,2023,2023,1,W4380434534
+,Dan Bastian Trapp,A5029953760,Dan Bastian Trapp,,2011,2013,3,W4253617383
+,Martin Henssler,A5030030677,Martin Henßler,,2006,2021,4,W4254650707
+,Dan Wielsch,A5030198263,Dan Wielsch,,2009,2009,1,W2034729645
+,Ralf Peter Anders,A5030207416,Ralf Peter Anders,,2012,2022,3,W4232042085
+,Peter Krebs,A5030208289,Peter Krebs,,2009,2017,2,W2746273271
+,Gerhard Wagner,A5030321799,Gerhard Wagner,,2007,2021,5,W3134598633
+,Dominik König,A5030432097,Dominik König,,2015,2015,1,W2324730619
+,Georg Nolte,A5030527614,Georg Nolte,,2013,2013,1,W1966709990
+,Kai Ambos,A5030613608,Kai Ambos,,2007,2023,11,W4323024954
+,Michael Heese,A5030706738,Michael Heese,,2016,2022,6,W4291498080
+,Stefan Storr,A5030877184,Stefan Storr,,2006,2006,1,W2062058759
+I149899117,Ulrich Sieber,A5030910725,Ulrich Sieber,Max Planck Society,2009,2009,1,W1970738947
+I4210134943,Ulrich Sieber,A5030910725,Ulrich Sieber,"Max Planck Institute for the Study of Crime, Security and Law",2009,2009,1,W1970738947
+,Boris Burghardt,A5030911708,Boris Burghardt,,2016,2022,3,W4285307638
+,Katharina Leusch,A5030933998,Katharina Leusch,,2022,2022,1,W4296009453
+,Matthias Rossi,A5030984792,Matthias Rossi,,2010,2016,2,W4229841779
+,Hans Alexy,A5031026397,Hans Alexy,,2020,2020,1,W3033147547
+,Christoph Lachner,A5031150378,Christoph Lachner,,2019,2019,1,W2982322524
+,Hermann-Wilfried Bayer,A5031153530,Hermann-Wilfried Bayer,,2006,2006,1,W4214752398
+,Marinus J. Stehmeier,A5031348465,Marinus J. Stehmeier,,2014,2014,1,W2042008240
+,Sebastian Omlor,A5031363288,Sebastian Omlor,,2022,2022,1,W4285125843
+,Thomas Hoeren,A5031457756,Thomas Hoeren,,2020,2020,2,W4242361558
+,Carsten Herresthal,A5031524958,Carsten Herresthal,,2006,2017,2,W4239736186
+,Klaas Hendrik Eller,A5031532681,Klaas Hendrik Eller,,2014,2014,1,W1991831285
+,Wolfgang Kaiser,A5031539828,Wolfgang Kaiser,,2011,2011,1,W2068524015
+,Ingo Saenger,A5031602470,Ingo Saenger,,2010,2010,1,W2025001911
+,Sebastian A.E. Martens,A5031671131,Sebastian A.E. Martens,,2011,2018,3,W4255081946
+,Alica Mohnert,A5031744127,Alica Mohnert,,2019,2019,1,W2982322668
+,Marcus Jurij Vogt,A5031958882,Marcus Jurij Vogt,,2010,2010,1,W2035844488
+,Mario Martini,A5031972332,Mario Martini,,2017,2019,2,W2918363491
+,Susanna Roßbach,A5031979760,Susanna Roßbach,,2023,2023,1,W4386389418
+,Christoph Grabenwarter,A5031983995,Christoph Grabenwarter,,2006,2017,2,W4229716086
+,Igor Sorge,A5031998638,Igor Sorge,,2009,2009,1,W2052331519
+,Frank Schorkopf,A5032006789,Frank Schorkopf,,2008,2024,7,W4393954492
+,Ingeborg Puppe,A5032086402,Ingeborg Puppe,,2011,2023,5,W4366432924
+I4210129449,Thomas Jaeger,A5032220570,Thomas Jaeger,Max Planck Institute for Innovation and Competition,2013,2013,1,W2008142530
+,Oliver Raabe,A5032301512,Oliver Raabe,,2011,2011,1,W2046670344
+,Lara Hausknecht,A5032328982,Lara Hausknecht,,2023,2024,2,W4390725106
+,Hauke Brettel,A5032358102,Hauke Brettel,,2015,2015,1,W2406465678
+,Jan Schürnbrand,A5032470149,Jan Schürnbrand,,2007,2015,3,W2792055653
+,Markus Abraham,A5032496477,Markus Abraham,,2015,2015,1,W2916196515
+,Benjamin Raue,A5032561261,Benjamin Raue,,2013,2013,1,W2007822946
+,Jörg Benedict,A5032626056,Jörg Benedict,,2011,2017,4,W2608352278
+,Kent D. Lerch,A5032677088,Kent D. Lerch,,2007,2007,1,W2081751077
+,Ralph Ingelfinger,A5032688002,Ralph Ingelfinger,,2006,2006,1,W2029114269
+,Gerhard Dannecker,A5032696927,Gerhard Dannecker,,2007,2018,4,W89197190
+,Vanessa Grifo,A5032700641,Vanessa Grifo,,2021,2021,1,W3201442443
+,Klaus-Peter Jünemann,A5032716659,Klaus-Peter Jünemann,,2013,2013,1,W1999807567
+,Michael W. Müller,A5032748797,Michael Müller,,2020,2023,2,W4315486472
+,Gerhard Fezer,A5032840206,Gerhard Fezer,,2006,2008,5,W4245641450
+,Mathias Scheer,A5032929949,M. Scheer,,2022,2022,1,W4206483416
+,Michael Brockmann,A5032973243,Michael Brockmann,,2015,2015,1,W4230656875
+,Ulrike Babusiaux,A5033034214,Ulrike Babusiaux,,2021,2021,1,W3174799761
+,Johannes Rottmann,A5033063936,J. Rottmann,,2021,2021,1,W3118476631
+,Michael Heese,A5033087859,Michael Heese,,2012,2012,1,W2068373867
+,Mathias Rohe,A5033090826,Mathias Rohe,,2007,2018,3,W2887404174
+,Walter Grasnick,A5033142645,Walter Grasnick,,2010,2015,2,W2916939010
+,Jürgen Kohler,A5033182030,Jürgen Kohler,,2006,2014,2,W2061361091
+,Noah Drautzburg,A5033183885,Noah Drautzburg,,2022,2024,3,W4394925227
+,Abteilung Zivilrecht,A5033222984,Abteilung Zivilrecht,,2011,2011,1,W2011826391
+,Felix Lange,A5033242186,F. Lange,,2022,2022,1,W4320152649
+,Christian Matt,A5033255115,Christian Matt,,2022,2022,1,W4285193152
+,Carsten Kusche,A5033330169,Carsten Kusche,,2020,2021,3,W3129936953
+,Bernd J. Hartmann,A5033339929,Bernd J. Hartmann,,2015,2017,3,W4239036290
+,Ulrich Stein,A5033357246,Ulrich Stein,,2010,2010,1,W2061669231
+,Gerd Biermann,A5033374667,G Biermann,,2023,2023,1,W3000965360
+,Jochen von Bernstorff,A5033402421,Jochen von Bernstorff,,2012,2013,2,W2046494393
+,Jan Stoppel,A5033456326,Jan Stoppel,,2007,2007,1,W2013455541
+,Helmut Philipp Aust,A5033468203,Helmut Philipp Aust,,2018,2020,2,W3011636731
+,Achim Janssen,A5033489223,Achim Janssen,,2019,2023,2,W4368247886
+,Jonas C. Schulz,A5033591709,Jonas C. Schulz,,2022,2024,2,W4391354472
+,Korbinian Schrom,A5033751177,Korbinian Schrom,,2022,2022,1,W4206483416
+,Kathrin Kroll-Ludwigs,A5033768527,Kathrin Kroll-Ludwigs,,2009,2011,2,W4247875523
+,Sebastian Fischer,A5033789712,Sebastian Fischer,,2010,2010,1,W2075859992
+,Oliver L. Knöfel,A5033904561,Oliver L. Knöfel,,2022,2022,1,W4225654614
+,Christian Anger,A5033931114,C Anger,,2015,2015,1,W2916434075
+,Astrid Stadler,A5034120055,Astrid Stadler,,2007,2023,15,W4388660929
+,Jens Puschke,A5034127778,Jens Puschke,,2006,2006,1,W4205687249
+,Arnd Koch,A5034132938,Arnd Koch,,2007,2009,2,W1976867261
+,Gregor Bachmann,A5034212403,Gregor Bachmann,,2008,2012,2,W4240462696
+,Roland Klattenhoff,A5034234016,Roland Klattenhoff,,2006,2006,1,W2046878657
+,Wolfgang Marotzke,A5034287870,Wolfgang Marotzke,,2008,2015,5,W4254678096
+,Carsten Schäfer,A5034325292,Carsten Schäfer,,2006,2006,1,W4214581289
+,Phillip Hellwege,A5034364757,Phillip Hellwege,,2015,2015,1,W2916850999
+,Florian Bien,A5034372966,Florian Bien,,2009,2022,2,W4294224606
+,Ulrich Haas,A5034467662,Ulrich Haas,,2014,2014,1,W2032625984
+,Foroud Shirvani,A5034516400,Foroud Shirvani,,2014,2021,2,W3127146481
+,Thorsten Siegel,A5034581433,Thorsten Siegel,,2022,2022,2,W4312968774
+,Kerstin Seewald,A5034669028,Kerstin Seewald,,2017,2017,1,W2623858502
+,Wolfgang Frisch,A5034708066,Wolfgang Frisch,,2022,2022,1,W4312612007
+,Mohamad El-Ghazi,A5034799251,Mohamad El-Ghazi,,2012,2014,2,W4230802676
+,Anna Flor,A5034860828,Anna Flor,,2015,2015,1,W2917538628
+,Michael Beurskens,A5034880163,Michael Beurskens,,2017,2017,1,W2600932446
+,Christian Huber,A5034928694,Christian G. Huber,,2007,2008,2,W4235443670
+,Matthias Lehmann,A5034973574,Matthias Lehmann,,2007,2023,5,W4384787461
+,Eva-Maria Kieninger,A5034984800,Eva-Maria Kieninger,,2012,2021,2,W3211544113
+,Inge Kroppenberg,A5035051179,Inge Kroppenberg,,2010,2014,4,W4256059383
+,Christoph Görisch,A5035186960,Christoph Görisch,,2015,2015,1,W2762956614
+,Heiko Sauer,A5035231803,Heiko Sauer,,2011,2023,5,W4352993807
+,Christoph Schärtl,A5035262457,Christoph Schärtl,,2013,2013,1,W1968589271
+,Wolfgang winkelbauer,A5035304039,Wolfgang winkelbauer,,2010,2010,1,W2040016006
+,Götz Frank,A5035337777,Götz Frank,,2009,2009,1,W4244890534
+,Johannes Heyers,A5035342861,Johannes Heyers,,2012,2012,1,W2047167394
+,Christian Gomille,A5035373087,Christian Gomille,,2012,2018,2,W2885398217
+,Joachim Goebel,A5035415889,Joachim Goebel,,2014,2014,1,W2032625984
+,Michael Rodi,A5035435213,Michael Rodi,,2009,2015,2,W4205484462
+,Alexander v. Brünneck,A5035437031,Alexander von Brünneck,,2009,2009,1,W1990780539
+,Karl-Nikolaus Peifer,A5035504146,Karl-Nikolaus Peifer,,2012,2022,3,W4285112584
+,Winfried Boecken,A5035555283,Winfried Boecken,,2006,2006,1,W2046878657
+,Christoph Luther,A5035574399,Christoph Luther,,2014,2014,1,W2025994063
+,Gloria Berghäuser,A5035594148,Gloria Berghäuser,,2018,2018,1,W2892209759
+,Arne Nordmeyer,A5035597244,Arne Nordmeyer,,2010,2010,1,W2041930036
+,Franz C. Mayer,A5035645003,Franz C. Mayer,,2007,2020,5,W54774594
+,Franz Mayer,A5035645003,Franz C. Mayer,,2006,2006,1,W1982585442
+,Kai Hofmann,A5035669114,Kai Hofmann,,2013,2013,1,W1965143385
+,Robert Frau,A5035787599,Robert Frau,,2014,2014,1,W4238024821
+,Alexander Schäfer,A5035841117,Alexander Schäfer,,2017,2017,1,W2602894259
+,Günter Reiner,A5035894436,Günter Reiner,,2020,2020,1,W4205833750
+,Ferdinand Kirchhof,A5035921017,Ferdinand Kirchhof,,2018,2018,1,W2902063788
+,H.C. Fritz Rittner,A5035953822,H.C. Fritz Rittner,,2007,2007,1,W2045507204
+,Dennis Seifarth,A5035996674,Dennis Seifarth,,2007,2007,1,W2089131350
+,Peter Georg Picht,A5036030207,Peter Georg Picht,,2017,2017,1,W2751070984
+,Richard Rachlitz,A5036113936,Richard Rachlitz,,2022,2022,1,W4315834800
+,Boas Kümper,A5036179455,Hiram Kümper,,2015,2017,2,W4252336091
+,Norbert Wimmer,A5036215310,Norbert Wimmer,,2010,2010,1,W40313314
+,Markus Heintzen,A5036299752,Markus Heintzen,,2016,2016,1,W2548931275
+,Stefan Machura,A5036443966,Stefan Machura,,2013,2013,1,W2036136720
+,Ronny Hauck,A5036582296,Ronny Hauck,,2016,2016,1,W2595033870
+,Hans Meyer,A5036633620,Harald Meyer,,2011,2016,2,W2513122568
+,Jochen Glöckner,A5036657731,Jochen Glöckner,,2007,2020,3,W3002947446
+,Daniel Wolff,A5036689502,Daniel Wolff,,2014,2016,2,W2523601071
+,Anna Bizer,A5036689855,Anna Bizer,,2018,2018,1,W2809080624
+,Wolfgang Ernst,A5036745791,Wolfgang Ernst,,2012,2014,3,W4248279224
+,Hans Michael Heinig,A5036923966,Hans Michael Heinig,,2007,2020,5,W4237554094
+,Klaus Tipke,A5037037474,Klaus Tipke,,2009,2009,1,W1974749215
+,Clemens Latzel,A5037168877,Clemens Latzel,,2014,2014,1,W2079188806
+,Alisa Rank,A5037191743,Alisa Rank,,2019,2019,1,W2980798851
+,Josef Wittmann,A5037200597,Josef Wittmann,,2023,2023,1,W4386499771
+,Alexander Roßnagel,A5037282407,Alexander Roßnagel,,2015,2015,1,W2917951522
+,Gunnar Duttge,A5037386956,Gunnar Duttge,,2006,2023,14,W4323024955
+,Bernhard Hardtung,A5037389707,Bernhard Hardtung,,2008,2008,1,W4245607335
+,Stephan Wernicke,A5037442455,Stephan Wernicke,,2006,2006,1,W1982585442
+,Stephan Harbarth,A5037469107,Stephan Harbarth,,2022,2022,1,W4213207957
+,Constantin Blanke-Roeser,A5037507047,Constantin Blanke-Roeser,,2023,2023,2,W4386499773
+,Cornelia Manger-Nestler,A5037593443,Cornelia Manger-Nestler,,2024,2024,1,W4393954485
+,Martin Zimmermann,A5037725633,Martin Zimmermann,,2014,2014,1,W2011237404
+,Mustafa Temmuz Oğlakcıoğlu,A5037791523,Mustafa Temmuz Oğlakcıoğlu,,2015,2015,1,W2917742822
+,Christopher Kämper,A5037899098,Christopher Kämper,,2018,2018,1,W4250961147
+,Stefan J. Geibel,A5038008306,Stefan J. Geibel,,2007,2013,2,W2086245713
+,Christian Walter,A5038026404,Christian Walter,,2015,2015,1,W2915208153
+,Oliver Klein,A5038032799,Oliver Klein,,2018,2018,1,W2790894846
+,Florian Jeßberger,A5038153836,Florian Jeßberger,,2022,2022,1,W4221073245
+,Annabelle Meier,A5038200889,Annabelle Meier,,2023,2023,1,W4315486672
+,Katharina Hilbig,A5038289082,Katharina Hilbig,,2008,2008,1,W4229517203
+,Ulrich Eisenberg,A5038303560,Ulrich Eisenberg,,2006,2011,2,W4205687249
+,Peter Götz v. Olenhusen,A5038333277,Peter Götz v. Olenhusen,,2015,2015,1,W2763748944
+,Meinhard Schröder,A5038403540,Meinhard Schröder,,2019,2021,2,W4234533640
+,Louisa Specht,A5038418877,Louisa Specht,,2017,2017,1,W2747466591
+,Peter Hocke,A5038436133,Peter Hocke,,2006,2006,1,W4246427973
+,Markus Gehrlein,A5038467462,Markus Gehrlein,,2006,2008,2,W4237881952
+,Hans Peter Bull,A5038548188,Hans Peter Bull,,2017,2017,1,W2752464043
+,Christian A. Heinze,A5038636768,Christian Heinze,,2011,2011,1,W1994725109
+,Christian Heinze,A5038636768,Christian Heinze,,2023,2023,1,W4383294940
+,Indra Spiecker gen. Döhmann,A5038683189,Indra Spiecker gen. Döhmann,,2014,2024,4,W4394925247
+,Peter W. Tettinger,A5038723001,Peter W. Tettinger,,2006,2006,1,W1984597488
+,Kurt Faßbender,A5038747410,Kurt Faßbender,,2006,2006,1,W2096460404
+,Josef Isensee,A5038871101,Josef Isensee,,2013,2015,2,W2891758389
+,Tim Drygala,A5038872086,Tim Drygala,,2006,2006,1,W2086285193
+,Henning Rosenau,A5038942469,Henning Rosenau,,2007,2007,1,W4241431802
+,Damian Schmidt,A5038956581,Damian Schmidt,,2019,2022,2,W4285221796
+,Jörg Schöpper,A5038990715,Jörg Schöpper,,2016,2016,1,W2411173873
+,Martin Heckel,A5039028047,Martin Heckel,,2012,2012,1,W2064988404
+,Florian Eichel,A5039058676,Florian Eichel,,2011,2022,3,W4285193152
+,Gerald Spindler,A5039175769,Gerald Spindler,,2006,2023,9,W4386717009
+,Christoph Althammer,A5039177530,Christoph Althammer,,2006,2008,2,W4206739733
+,Pauline Grotz,A5039226909,Pauline Grotz,,2015,2015,1,W2918164088
+,Bernhard Linnartz,A5039245737,Bernhard Linnartz,,2016,2016,1,W2411173873
+,Jan Schapp,A5039280502,Jan Schapp,,2006,2006,1,W1980016700
+,Sven Jürgensen,A5039291262,Sven Jürgensen,,2018,2018,1,W2885137341
+,Wolfgang Durner,A5039314862,Wolfgang Durner,,2015,2015,1,W2332981798
+,Jürgen Lorse,A5039340621,Jürgen Lorse,,2018,2018,1,W2890099126
+,Ehebald,A5039353267,Ehebald,,2023,2023,1,W3008057544
+,Alexander Scheuch,A5039379298,Alexander Scheuch,,2018,2024,2,W4394925373
+,Christoph Zehetgruber,A5039428047,Christoph Zehetgruber,,2020,2020,1,W3016963397
+,Stefan Talmon,A5039482465,Stefan Talmon,,2013,2020,4,W3096248894
+,Stefan Drechsler,A5039500134,Stefan Drechsler,,2023,2023,1,W4352992992
+,Jörn Axel Kämmerer,A5039518785,Jörn Axel Kämmerer,,2006,2006,1,W4237820330
+,Jens Bülte,A5039520097,Jens Bülte,,2010,2015,3,W2915818419
+,Stephan Lorenz,A5039595469,Stephan Lorenz,,2013,2024,4,W4392779357
+,Heiner Alwart,A5039598734,Heiner Alwart,,2006,2022,4,W4315834756
+,Renate Schaub,A5039640047,Renate Schaub,,2011,2017,2,W2606918046
+,Joachim Münch,A5039652649,Joachim Münch,,2009,2013,2,W4211009124
+,Bertram Lomfeld,A5039658733,Bertram Lomfeld,,2019,2019,1,W4253760383
+,Heike Krieger,A5039782932,Heike Krieger,,2022,2022,1,W4312913829
+,Sven Simon,A5039812689,Sven Simon,,2017,2017,1,W2686174783
+,Heinrich Lang,A5039877065,Heinrich Lang,,2022,2022,1,W4226145372
+,Marina Wellenhofer,A5039928862,Marina Wellenhofer,,2009,2024,4,W4390749674
+,Markus Lieberknecht,A5039997862,Markus Lieberknecht,,2019,2019,1,W2936886198
+,Rüdiger Wilhelmi,A5040000254,Rüdiger Wilhelmi,,2009,2014,2,W3028263716
+,Heike Schmitz,A5040100401,Heike Schmitz,,2011,2011,1,W2327705092
+,Peter Rawert,A5040112541,Peter Rawert,,2019,2019,1,W2945318298
+,Tom Wolk,A5040192371,Tom Wolk,,2022,2022,1,W4312728675
+,Astrid Strack,A5040217457,Astrid Strack,,2010,2010,1,W2061701363
+,Henning Rosenau,A5040235448,Henning Rosenau,,2013,2013,2,W2059490024
+,Georg Freund,A5040261884,Georg Freund,,2009,2020,5,W4244805101
+,Thomas Lobinger,A5040279142,Thomas Lobinger,,2006,2023,6,W4386394020
+,Caspar Behme,A5040523372,Caspar Behme,,2021,2021,1,W3156637375
+,Michael Schwarz,A5040574964,Michael Schwarz,,2019,2019,1,W4233634643
+,Lutz Eidam,A5040608292,Lutz Eidam,,2009,2023,2,W4352991947
+,Jürgen Basedow,A5040643583,Jürgen Basedow,,2019,2019,1,W2915640170
+,Indra Spiecker genannt Döhmann,A5040689519,Indra Spiecker genannt Döhmann,,2011,2011,1,W2023358510
+,Ansgar Ohly,A5040713496,Ansgar Ohly,,2006,2022,3,W4213114165
+,Michael Anderheiden,A5040713949,Michael Anderheiden,,2008,2008,1,W2011839853
+,Andreas Kerkemeyer,A5040771922,Andreas Kerkemeyer,,2023,2023,1,W4387755973
+,Katharina Reus,A5040783795,Katharina Reus,,2010,2010,1,W1996566744
+,Dominik Arndt,A5040800861,Dominik Arndt,,2009,2009,1,W2088000993
+,Marco Brand,A5040805900,Marco Brand,,2012,2013,2,W2082531944
+,Markus Krajewski,A5040806949,Markus Krajewski,,2010,2010,2,W4253751342
+,Patrick Nölscher,A5040849038,Patrick Nölscher,,2023,2023,1,W4386499770
+,Christian Krane,A5040849890,Christian Krane,,2006,2006,1,W4240895072
+,Norbert Ullrich,A5040879686,Norbert Ullrich,,2014,2016,2,W2915374530
+,Carsten Jungmann,A5041154496,Carsten Jungmann,,2009,2009,1,W2092508435
+,Florian Rödl,A5041207497,Florian Rödl,,2016,2016,1,W4249939409
+,Katja Langenbucher,A5041215595,Katja Langenbucher,,2011,2023,3,W4389443152
+,Sudabeh Kamanabrou,A5041266715,Sudabeh Kamanabrou,,2018,2018,1,W4246044911
+,Heribert Hirte,A5041298886,Heribert Hirte,,2013,2013,1,W4246779073
+,Katharina Kaesling,A5041338015,Katharina Kaesling,,2019,2019,1,W2955756986
+,Michael Coester,A5041347054,Michael Coester,,2008,2008,1,W4206389528
+,Thorsten Ingo Schmidt,A5041542104,Thorsten Ingo Schmidt,,2020,2021,2,W4237100747
+,Helmuth Schulze-Fielitz,A5041768752,Helmuth Schulze‐Fielitz,,2007,2018,3,W4210451492
+,Christoph Palzer,A5041804843,Christoph Palzer,,2013,2013,1,W4214590363
+,Norbert Hoerster,A5041916422,Norbert Hoerster,,2008,2009,3,W4248641358
+,Franz Jürgen Säcker,A5041920991,Franz Jürgen Säcker,,2006,2010,3,W45963448
+,Philipp Lamprecht,A5042042525,Philipp Lamprecht,,2013,2013,1,W2082378994
+,Willy Spannowsky,A5042096320,Willy Spannowsky,,2006,2006,1,W2317912323
+,Wolfgang Hoffmann-Riem,A5042099192,Wolfgang Hoffmann-Riem,,2007,2014,4,W4250967659
+,Robert Esser,A5042236445,Robert Esser,,2010,2010,1,W2075859992
+,Karsten Herzmann,A5042314080,Karsten Herzmann,,2011,2011,1,W2070760390
+,Florian Sander,A5042316320,Florian Sander,,2018,2022,2,W4312586834
+,Alexander Silke,A5042411128,Alexander Silke,,2019,2019,1,W2971823643
+,Daniel Zimmer,A5042425906,Daniel Zimmer,,2008,2022,6,W4296010602
+,Renate Schaub,A5042530928,Renate Schaub,,2007,2007,1,W2032365954
+,José Martinez,A5042543128,José Martínez,,2007,2007,1,W2083218821
+,Philipp Overkamp,A5042691025,Philipp Overkamp,,2023,2023,1,W4384789425
+,Stephan Walter,A5042761059,Stephan Walter,,2018,2018,1,W2806410369
+,Detlev Fischer,A5042778087,Detlev Fischer,,2010,2010,1,W2028587505
+,Andreas J. Baumert,A5042901186,Andreas J. Baumert,,2017,2021,2,W3133729379
+,Maximilian J. Alter,A5042935695,Maximilian J. Alter,,2015,2017,2,W2608780235
+,Bettina Gausing,A5042982823,Bettina Gausing,,2023,2023,1,W4387316950
+,Reinhard Singer,A5042996264,Reinhard Singer,,2007,2021,2,W4235167346
+,Lars Hummel,A5043094237,Lars Hummel,,2012,2012,1,W2092024284
+,Pola Marie Brünger,A5043107320,Pola Marie Brünger,,2022,2022,1,W4312624319
+,Michael Goldhammer,A5043217442,Michael Goldhammer,,2016,2016,2,W4253442460
+,Wolfgang Wurmnest,A5043255293,Wolfgang Wurmnest,,2010,2010,1,W4243895898
+,Wolfgang Mitsch,A5043263600,Wolfgang Mitsch,,2008,2023,4,W4352993822
+,Anne Peters,A5043413628,Anne Peters,,2010,2010,1,W1965415968
+,Pirmin Herz,A5043434757,Pirmin Herz,,2017,2017,1,W2612675133
+,Michael Blomeyer,A5043517398,Michael Blomeyer,,2010,2010,1,W2048455528
+,Stephan Meder,A5043576213,Stephan Meder,,2006,2016,6,W2558168690
+,Peter Derleder,A5043625769,Peter Derleder,,2007,2015,3,W4243029625
+,Hendrik Heesen,A5043630337,Hendrik Heesen,,2022,2022,1,W4205779744
+,Tino Frieling,A5043652101,Tino Frieling,,2017,2017,1,W4237733894
+,Jens Puschke,A5043708386,Jens Puschke,,2017,2017,1,W2763642154
+,Florian Huerkamp,A5043800282,Florian Huerkamp,,2011,2013,2,W4246998481
+,Melanie Stracke,A5043848952,Melanie Stracke,,2011,2011,1,W4248621910
+,Johanna Hey,A5043902431,Johanna Hey,,2007,2007,1,W2014110224
+,Michael Heese,A5043904668,Michael Heese,,2016,2019,2,W2953849001
+,Christina Kamm,A5043924519,Christina Kamm,,2018,2018,1,W2889928304
+,Jochen Mohr,A5043942408,Jochen Mohr,,2011,2019,2,W2935717124
+,Manuel Bieri,A5043960783,Marco Bieri,,2022,2022,1,W4285193152
+I149899117,Alexander Morell,A5044043542,Alexander Morell,Max Planck Society,2019,2019,1,W2971962449
+I4210136328,Alexander Morell,A5044043542,Alexander Morell,Max Planck Institute for Research on Collective Goods,2019,2019,1,W2971962449
+,Alexander Morell,A5044043542,Alexander Morell,,2014,2014,1,W4252387053
+,Anke Müller-Jacobsen,A5044053366,Anke Müller-Jacobsen,,2018,2018,1,W2916361732
+,Andreas W. Hofmann,A5044061323,Andreas W. Hofmann,,2014,2014,1,W1976948196
+,Corinna Sicko,A5044092368,Corinna Sicko,,2013,2013,1,W2050701359
+,Jens Petersen,A5044194049,Jens Petersen,,2010,2010,1,W4233418770
+,Dieter Grimm,A5044221668,Dieter Grimm,,2009,2018,2,W2092294622
+,Eduard Picker,A5044276678,Eduard Picker,,2008,2023,5,W4362569921
+,Peter Hemeling,A5044351475,Peter Hemeling,,2018,2018,1,W2916174966
+,Christoph Kirsch,A5044364762,Christoph Kirsch,,2011,2011,2,W4252646305
+,Bernd Kannowski,A5044409092,Bernd Kannowski,,2012,2024,4,W4392205454
+,Clemens Höpfner,A5044508472,Clemens Höpfner,,2009,2023,4,W825255761
+,Daniela Schmitt,A5044560746,Daniela Schmitt,,2024,2024,1,W4394925227
+,Christian Waldhoff,A5044606467,Christian Waldhoff,,2008,2024,8,W4391490191
+,Walter Grasnick,A5044612556,Walter Grasnick,,2007,2007,1,W2062893277
+,Eckart Klein,A5044635575,Eckart Klein,,2006,2006,1,W2010004985
+,Claus Wilhelm Canaris,A5044638954,Claus Wilhelm Canaris,,2011,2011,1,W2087474924
+,Gerd Morgenthaler,A5044715061,Gerd Morgenthaler,,2010,2011,2,W4248621910
+,Martin Kment,A5044716174,Martin Kment,,2010,2010,2,W2033418142
+,Ewald Wiederin,A5044853901,Ewald Wiederin,,2019,2019,1,W2915890704
+,Gerhard Dilcher,A5044871047,Gerhard Dilcher,,2007,2007,1,W1984483596
+,Henning Lorenz,A5044871850,Henning Lorenz,,2017,2017,2,W2765328601
+,Klaus-Dieter Drüen,A5044974674,Klaus-Dieter Drüen,,2010,2010,1,W4243158851
+,Andreas Spickhoff,A5044977132,Andreas Spickhoff,,2008,2022,12,W4255254552
+,Michael Fischer,A5045018128,Michael Fischer,,2007,2007,1,W2009454169
+,Matthias Becker,A5045027342,Matthias Becker,,2023,2023,1,W4320924050
+,Josef Ruthig,A5045069019,Josef Ruthig,,2011,2011,1,W1968015096
+,Benjamin Lahusen,A5045203302,Benjamin Lahusen,,2015,2015,1,W2917169010
+,Jan Thiessen,A5045310266,Jan Thiessen,,2018,2019,2,W2972298267
+,Ulrike Müßig,A5045372636,Ulrike Müßig,,2006,2015,4,W4248692563
+,Klaus Lüderssen,A5045382041,Klaus Lüderssen,,2006,2015,2,W4230288653
+,Leo Schapiro,A5045502917,Leo Schapiro,,2013,2013,1,W1974180596
+,Max-Emanuel Geis,A5045508997,Max-Emanuel Geis,,2016,2016,1,W2917072796
+,Christina Globke,A5045623016,Christina Globke,,2012,2012,1,W4237027296
+,Heinrich Amadeus,A5045732555,Heinrich Amadeus,,2011,2011,1,W4256243866
+,Joachim Wolf,A5045747392,Jean‐Pierre Wolf,,2013,2013,1,W2032071714
+,Robert Lange,A5045760369,Robert R. Lange,,2006,2006,1,W84977682
+,Victor Habrich,A5045816079,Victor Habrich,,2019,2019,1,W2982304077
+,M. v. Niederhöffer,A5045843274,M. v. Niederhöffer,,2023,2023,1,W3009106620
+,Martin Engel,A5045863890,Martin Engel,,2010,2014,2,W2074828047
+,Johanna Reichel,A5045868182,Johanna Reichel,,2018,2018,1,W2902458893
+,Anna Katharina Mangold,A5045913814,Anna Katharina Mangold,,2023,2023,1,W4386389418
+,Judit Neumann,A5045921366,Judit Neumann,,2013,2013,1,W4237163779
+,Matthias Rüping,A5045948726,Matthias Rüping,,2012,2012,1,W2029333375
+,Julian von Lucius,A5045976306,Julian von Lucius,,2011,2011,1,W2092759061
+,Wilhelm Dütz,A5046161276,Wilhelm Dütz,,2009,2009,1,W2313827057
+,Stephan Madaus,A5046163403,Stephan Madaus,,2006,2016,2,W4236499556
+,Tobias Kulhanek,A5046167534,Tobias Kulhanek,,2022,2022,1,W4206197990
+,Sönke Gerhold,A5046294652,Sönke Gerhold,,2015,2015,1,W2334512878
+,Axel Halfmeier,A5046299801,Axel Halfmeier,,2012,2022,2,W4285061670
+,Reinhard Damm,A5046314469,Reinhard Damm,,2009,2009,1,W2032389297
+,Clara Folger,A5046330876,Clara Folger,,2023,2023,1,W4368247832
+,Jens Kersten,A5046349685,Jens Kersten,,2007,2016,5,W2763991813
+I149899117,Marietta Auer,A5046353996,M. Auer,Max Planck Society,2015,2015,1,W2315080677
+I4210095813,Marietta Auer,A5046353996,M. Auer,Max Planck Institute for Legal History and Legal Theory,2015,2015,1,W2315080677
+,Marietta Auer,A5046353996,M. Auer,,2020,2023,3,W4323024990
+,Johannes Meier,A5046390826,J. Meier,,2023,2023,1,W4384785841
+,Gertrude Lübbe-Wolff,A5046415942,Gertrude Lübbe-Wolff,,2022,2022,1,W4205740232
+,Anne Bercher,A5046642101,Anne Bercher,,2010,2010,1,W2074828047
+,Heinz Müller-Dietz,A5046699597,Heinz Müller-Dietz,,2011,2012,2,W2917344491
+,Hermann Butzer,A5046857215,Hermann Butzer,,2008,2017,2,W4234286326
+,Günter Hirsch,A5047074083,Günter Hirsch,,2007,2008,2,W4250779604
+,Gerd Geilen,A5047118183,Gerd Geilen,,2006,2006,1,W25039058
+,Martin Wesch,A5047123700,Martin Wesch,,2006,2006,1,W2518588697
+,Susanne Hohloch,A5047181379,Susanne Hohloch,,2008,2008,1,W1996627142
+,Volker Haas,A5047181692,Volker Haas,,2013,2016,2,W2503222504
+,Maik Wolf,A5047211310,M.K. de Wolf,,2011,2011,1,W2060960043
+,Ulrich Foerste,A5047236370,Ulrich Foerste,,2008,2023,3,W4383269152
+,Matthias Lippold,A5047284041,Matthias Lippold,,2020,2023,3,W4386499770
+,Hans-Peter Haferkamp,A5047315161,Hans-Peter Haferkamp,,2021,2021,1,W3210213045
+,Eberhard Schwark,A5047358969,Eberhard Schwark,,2009,2009,1,W4238131071
+,Frank Rosenkranz,A5047378411,Frank Rosenkranz,,2007,2020,2,W4232024916
+,Florian Jessberger,A5047428978,Florian Jeßberger,,2009,2009,1,W2123122289
+,David Roth-Isigkeit,A5047512312,David Roth-Isigkeit,,2020,2020,1,W3010684428
+,Christoph Krönkeund,A5047569873,Christoph Krönkeund,,2016,2016,1,W2523601071
+,Jan Thiessen,A5047571993,Jan Thiessen,,2015,2021,3,W4249069179
+,Barbara Remmert,A5047585065,Barbara Remmert,,2010,2010,1,W4230319164
+,Robert Walter,A5047672423,Robert Walter,,2009,2009,1,W1970286540
+,Sophie Straßer,A5047675506,Sophie Straßer,,2019,2019,1,W2918081549
+,Eberhard Wagner,A5047700138,Eberhard Wagner,,2022,2022,1,W4312747908
+,William A. Woodruff,A5047859087,William Woodruff,,2008,2008,1,W2076132787
+,Mattias Wendel,A5047874953,Mattias Wendel,,2016,2020,2,W3006867355
+,Christina Mildebrath,A5047929726,Christina Mildebrath,,2009,2009,1,W2088000993
+,Hans-Heiner Kühne,A5048026639,Hans-Heiner Kühne,,2006,2015,3,W4210884333
+,Foroud Shirvani,A5048044715,Foroud Shirvani,,2010,2022,2,W4291779343
+,Daniela Schlüter,A5048052870,Daniela K Schlüter,,2009,2009,1,W4253303349
+,Daniel Damler,A5048058508,Daniel Damler,,2017,2017,1,W2597546822
+,Hubert Rottleuthner,A5048095467,Hubert Rottleuthner,,2016,2023,2,W4315486388
+,Tobias Singelnstein,A5048139766,Tobias Singelnstein,,2012,2012,1,W1973101112
+,Kurt Seelmann,A5048141116,Kurt Seelmann,,2014,2014,1,W1998057012
+,Katja Hüttner,A5048215845,Katja Hüttner,,2008,2008,1,W4232802661
+,Philipp Scholz,A5048272502,Philipp Scholz,,2018,2018,1,W2800472075
+,Martin Bialluch,A5048276332,Martin Bialluch,,2021,2021,1,W3167611732
+,Nicolas Sander,A5048389490,Nicolas Sander,,2023,2023,1,W4386499765
+,Florian Wagner-von Papp,A5048408098,Florian Wagner–von Papp,,2006,2006,1,W4255935163
+,Andreas Sattler,A5048433670,Andreas Sattler,,2017,2017,1,W2775776600
+,Daniel Thym,A5048534331,Daniel Thym,,2011,2022,8,W854062680
+,Christoph Herrmann,A5048548441,Christoph Herrmann,,2018,2019,2,W4233618675
+,Alexander Bechtel,A5048611302,Alexander Bechtel,,2020,2020,1,W3033880275
+,Ralph Christensen,A5048616715,Ralph Christensen,,2009,2013,4,W2066866207
+,Gerrit Hornung,A5048621892,Gerrit Hornung,,2013,2013,1,W1965143385
+,Klaus Rennert,A5048682876,Klaus Rennert,,2009,2015,3,W2916066212
+,Jürgen Kohler,A5048747870,Jürgen Köhler,,2013,2013,1,W1996470878
+,Christian Alexander,A5048768759,Christian Alexander,,2006,2006,1,W1984454604
+,Felix Ekardt,A5048781197,Felix Ekardt,,2007,2007,1,W2335719235
+,Martin Bullinger,A5048901315,Martin Bullinger,,2006,2006,1,W2082071463
+,Matthias Ruffert,A5048916076,Matthias Ruffert,,2006,2022,9,W4285229806
+,Matthias Veicht,A5048985086,Matthias Veicht,,2020,2020,1,W3107793105
+,Karsten Gaede,A5048997678,Karsten Gaede,,2008,2008,1,W4255010990
+,Rainer Beckmann,A5049005775,Rainer Beckmann,,2018,2023,2,W4388144183
+,Nikolaus Graf Vitzthum,A5049005899,Nikolaus Graf Vitzthum,,2009,2009,1,W1986755627
+,Maximilian Zimmer,A5049057758,Maximilian Zimmer,,2009,2014,5,W4249535387
+,Udo Di Fabio,A5049165661,Udo Di Fabio,,2007,2007,1,W2065357834
+,Alexander Benecke,A5049178483,Alexander Benecke,,2015,2015,1,W2915445883
+,Christoph Sobotta,A5049591889,Christoph Sobotta,,2006,2006,1,W2034402915
+,Joachim Lege,A5049594625,Joachim Lege,,2006,2021,7,W4256104235
+,Hans-Joachim Schött,A5049847071,Hans-Joachim Schött,,2013,2013,1,W2318254689
+,Alexander Somek,A5049847390,Alexander Someκ,,2016,2022,4,W4285253468
+,David Kuch,A5049853504,David Kuch,,2017,2018,2,W4232331484
+,Aziz Epik,A5049889099,Aziz Epik,,2018,2018,1,W4232480670
+,Frank Zieschang,A5049965199,Frank Zieschang,,2022,2022,1,W4205755585
+I186903577,Dirk Andreas Zetzsche,A5049980841,Dirk Andreas Zetzsche,University of Luxembourg,2017,2017,1,W2602859517
+I149899117,Konstantin Chatziathanasiou,A5050008635,Konstantin Chatziathanasiou,Max Planck Society,2019,2019,1,W2924630698
+I4210136328,Konstantin Chatziathanasiou,A5050008635,Konstantin Chatziathanasiou,Max Planck Institute for Research on Collective Goods,2019,2019,1,W2924630698
+,Konstantin Chatziathanasiou,A5050008635,Konstantin Chatziathanasiou,,2024,2024,1,W4394925253
+,Daniel Scholz,A5050034758,Daniel Scholz,,2011,2011,1,W4251174216
+,Dietrich Murswiek,A5050048425,Dietrich Murswiek,,2010,2018,3,W2915241271
+,Brigitte Haar,A5050063646,Brigitte Haar,,2008,2008,1,W2012951803
+,Marco Birkholz,A5050073902,Marco Birkholz,,2019,2019,1,W2982322524
+,Markus Stoffels,A5050111131,Markus Stoffels,,2024,2024,1,W4393954427
+,Peter Schlosser,A5050199331,Peter Schlosser,,2007,2007,1,W4255725387
+,Wolfgang Lüke,A5050289981,Wolfgang Lüke,,2009,2009,1,W2055609126
+,Christoph Jansen,A5050306217,Christoph Jansen,,2024,2024,1,W4391354401
+,Adrian Jung,A5050319954,Adrian Jung,,2007,2007,1,W2020512728
+,Constanze Janda,A5050349847,Constanze Janda,,2012,2022,3,W4313029439
+,Christoph Link,A5050369426,Christoph Link,,2006,2009,2,W2508294264
+,Hans Kudlich,A5050399709,Hans Kudlich,,2014,2022,3,W4294225124
+,Christian Förster,A5050501384,Christian Förster,,2009,2009,1,W4254997000
+,Hein Kötz,A5050551500,Hein Kötz,,2018,2018,1,W4252293313
+,Christoph Althammer,A5050614746,Christoph Althammer,,2007,2021,4,W3154979255
+,Peter McColgan,A5050634458,Peter McColgan,,2018,2018,1,W2905211031
+,Johannes Rux,A5050674740,Johannes Rux,,2007,2007,3,W2313643331
+,Abteilung Justiz,A5050750742,Abteilung Justiz,,2006,2006,1,W2320017797
+,Alexander Thiele,A5050754541,Alexander Thiele,,2012,2018,4,W2791705150
+,Jürgen Schwabe,A5050786174,Jürgen Schwabe,,2007,2007,2,W4214654415
+,Dieter Simon,A5050825981,Dieter Simon,,2011,2011,1,W1979664032
+,Dieter Lorenz,A5050830684,Dieter Lorenz,,2009,2011,2,W2091292134
+,Everhardt Franßen,A5050887087,Everhardt Franßen,,2006,2006,1,W2166699931
+,Martin Menne,A5050909923,Martin Menne,,2017,2017,1,W2607480977
+,Sonja Stenzel,A5050913483,Sonja Stenzel,,2006,2006,1,W1997336222
+,Titus Walek,A5050928496,Titus Walek,,2012,2012,1,W2064013337
+,Claus Dieter Classen,A5050947518,Claus Dieter Classen,,2006,2023,18,W4318612323
+,Rainer Zaczyk,A5051016587,Rainer Zaczyk,,2008,2012,2,W2091687701
+,Thomas Paul,A5051021391,Thomas Paul,,2008,2008,2,W2984002183
+,Christoph Grabenwarter,A5051029582,Christoph Grabenwarter,,2010,2010,1,W72141813
+,Lea Katharina Kumkar,A5051156207,Lea Katharina Kumkar,,2020,2020,1,W3010684428
+,Gabriele Kett-Straub,A5051208582,Gabriele Kett-Straub,,2013,2018,2,W4246782201
+,Philipp Maximilian Holle,A5051286538,Philipp Maximilian Holle,,2020,2020,1,W4235817368
+,Heike Stintzing,A5051322168,Heike Stintzing,,2009,2009,1,W4244890534
+,Joachim von Bargen,A5051342414,Joachim von Bargen,,2015,2015,1,W2916558606
+,Christoph G. Paulus,A5051349148,Christoph G. Paulus,,2009,2021,4,W4234030072
+,Raimund Waltermann,A5051372091,Raimund Waltermann,,2012,2012,1,W1986519405
+,Lorenz Kähler,A5051491027,Lorenz Kähler,,2007,2007,1,W1999860435
+,Barbara Rox,A5051496482,Barbara Rox,,2012,2012,1,W4236155832
+,Peter Kindler,A5051556565,Peter Kindler,,2006,2012,4,W4236354047
+,Andreas Piekenbrock,A5051648601,Andreas Piekenbrock,,2006,2023,5,W4383269145
+,Martin Franzen,A5051679546,Martin Franzén,,2007,2019,2,W4232016006
+,Helmut Goerlich,A5051686005,Helmut Goerlich,,2006,2020,6,W3010507227
+,Thomas Starke,A5051711609,Thomas Starke,,2007,2007,1,W4239025712
+,Astrid Stadler,A5051858729,Astrid Stadler,,2020,2020,1,W3014791554
+,Hans Friedhelm Gaul,A5051943257,Hans Friedhelm Gaul,,2013,2018,3,W2901057584
+,Christian Seiler,A5052058613,Christian Seiler,,2009,2021,6,W3202622390
+,Frank Peter Schuster,A5052186101,Frank Schuster,,2015,2015,1,W2335392167
+,Christian Hillgruber,A5052186566,Christian Hillgruber,,2012,2021,5,W4210964614
+,Michael Denga,A5052295419,Michael Denga,,2021,2021,1,W3134701971
+,Herbert Küpper,A5052388532,Herbert Küpper,,2010,2010,1,W2329128278
+,Roman Seer,A5052401402,Roman Seer,,2019,2019,1,W4255226740
+,Mehrdad Payandeh,A5052574894,Mehrdad Payandeh,,2019,2019,1,W2917894495
+,Jana Smela,A5052614411,Jana Smela,,2019,2019,1,W2982304077
+,Stephan Pötters,A5052638734,Stephan Pötters,,2012,2012,1,W2066866207
+,Mareike Preisner,A5052660706,Mareike Preisner,,2013,2013,1,W2083252044
+,Harald Koch,A5052673079,H. Koch,,2011,2011,1,W2025917756
+,Tobias Tröger,A5052730767,Tobias Tröger,,2010,2016,4,W4247289483
+,Holger Greve,A5052794172,Holger Greve,,2011,2011,1,W2325035666
+,Frauke Rostalski,A5052801886,Frauke Rostalski,,2015,2024,7,W4391854329
+I149899117,Christine Osterloh-Konrad,A5052888987,Christine Osterloh-Konrad,Max Planck Society,2006,2006,1,W2088736916
+I4210129449,Christine Osterloh-Konrad,A5052888987,Christine Osterloh-Konrad,Max Planck Institute for Innovation and Competition,2006,2006,1,W2088736916
+,Christine Osterloh-Konrad,A5052888987,Christine Osterloh-Konrad,,2014,2014,1,W786811325
+,René Börner,A5052901852,René Börner,,2015,2015,1,W2917982851
+,Josef Alkatout,A5052904777,Josef Alkatout,,2011,2011,1,W1963823330
+,Michael Köhler,A5052996164,Michael Köhler,,2013,2013,1,W2013788380
+,Jörn Ipsen,A5053030750,Jörn Ipsen,,2006,2017,2,W2762009182
+,Markus Pöcker,A5053210152,Markus Pöcker,,2006,2006,1,W2041979012
+,Philipp S. Fischinger,A5053231425,Philipp S. Fischinger,,2012,2012,1,W2086383158
+,Christine Windbichler,A5053276605,Christine Windbichler,,2008,2008,1,W2329870556
+,Stephan Stübinger,A5053311036,Stephan Stübinger,,2008,2008,1,W4247087362
+,Urs Kindhäuser,A5053444923,Urs Kindhäuser,,2011,2011,1,W2056646153
+,Christoph Goos,A5053491680,Christoph Goos,,2009,2009,1,W4254554756
+,Heike Jung,A5053555287,Heike Jung,,2010,2021,3,W3211066757
+,Christian Thiemann,A5053795021,Christian Thiemann,,2015,2015,1,W2763568630
+,Georg Mitsching,A5053865984,Georg Mitsching,,2020,2020,1,W3090193710
+,Marco Mansdörfer,A5053875888,Marco Mansdörfer,,2009,2009,1,W4250326417
+,Burkhard Jähnke,A5053878179,Burkhard Jähnke,,2021,2021,1,W3118935439
+,Alexander Peukert,A5053928981,Alexander Peukert,,2016,2023,2,W4362569918
+,Christian Kersting,A5054005071,Christian Kersting,,2008,2018,5,W4237070090
+,Matthias Goldmann,A5054040158,Matthias Goldmann,,2010,2010,1,W4249162399
+,Andreas Funke,A5054052873,Andreas Funke,,2011,2017,3,W2623297176
+,Martin Schwab,A5054072599,Martin Schwab,,2006,2015,2,W2335588644
+,Karl-Heinz Ladeur,A5054072745,Karl–Heinz Ladeur,,2007,2022,7,W4313044342
+,Enrico Peuker,A5054174169,Enrico Peuker,,2007,2014,4,W2322608537
+,Gunther Teubner,A5054209395,Günther Teubner,,2015,2020,2,W3016771376
+,Lydia Wolff,A5054389278,Lydia Wolff,,2022,2022,1,W4205779744
+,Horst Dreier,A5054408926,Horst Dreier,,2007,2011,3,W2917295233
+,Torsten Noak,A5054424614,Torsten Noak,,2021,2021,1,W4230962572
+,Barbara Völzmann-Stickelbrock,A5054429656,Barbara Völzmann-Stickelbrock,,2008,2008,1,W2331032351
+,Corinna Coupette,A5054439389,Corinna Coupette,,2018,2018,2,W4250766963
+,Diana Marquardt,A5054450098,Diana L. Marquardt,,2008,2008,1,W2039078231
+,Rike Sinder,A5054718150,Rike Sinder,,2017,2017,1,W2568735870
+,Jacob Joussen,A5054726368,Jacob Joussen,,2010,2010,1,W2059622507
+,Gralf-Peter Calliess,A5054777680,Gralf-Peter Calliess,,2012,2012,1,W1999715463
+,Martin Böse,A5054808063,Martin Böse,,2015,2022,5,W4313133294
+,Kristian J. Puhle,A5054831405,Kristian J. Puhle,,2012,2012,1,W2020862698
+,Eike von Hippel,A5054833609,Eike von Hippel,,2006,2006,2,W2516406110
+,Heinz-Peter Mansel,A5054910298,Heinz-Peter Mansel,,2014,2016,2,W2521039976
+,Amr Sarhan,A5054949832,Amr Sarhan,,2008,2008,1,W2018483451
+,Bernd Scholl,A5054991232,Bernd Scholl,,2016,2016,1,W2396235969
+,Wolfgang Wohlers,A5054996170,Wolfgang Wohlers,,2014,2021,3,W3126358780
+,Frank Fechner,A5055035441,Frank Fechner,,2012,2014,2,W2072586632
+,Walter G. Paefgen,A5055063601,Walter G. Paefgen,,2007,2007,1,W4235671034
+,Norbert Gross,A5055133436,Norbert Groß,,2010,2013,4,W2088006645
+,Jochen Vetter,A5055135869,Jochen Vetter,,2013,2019,2,W4256624352
+,Peter Häberle,A5055181078,Peter Häberle,,2007,2021,3,W3132346965
+,Christoph Brüning,A5055202421,Christoph Brüning,,2009,2020,4,W3094724854
+,Caroline Meller-Hannich,A5055211909,Caroline Meller-Hannich,,2015,2018,3,W4233221830
+,Patrick Hilbert,A5055213183,Patrick Hilbert,,2013,2013,1,W2022388979
+,Matthias Katzenstein,A5055263041,Matthias Katzenstein,,2008,2010,2,W4250203010
+,Werner Heun,A5055357757,Werner Heun,,2006,2017,7,W2601812723
+,Alexander Bruns,A5055382981,Alexander Bruns,,2011,2011,1,W2000748454
+,Christoph U. Schmid,A5055398208,Christoph U. Schmid,,2020,2020,1,W3035787276
+,Christoph Bravidor,A5055410772,Christoph Bravidor,,2011,2011,1,W1990658617
+,Volker Beuthien,A5055451032,Volker Beuthien,,2011,2011,1,W55383895
+,Wolfgang Schenk,A5055453079,Wolfgang Schenk,,2020,2020,1,W3005049533
+,Matthias Jestaedt,A5055521244,Matthias Jestaedt,,2006,2022,16,W4285155718
+,Manuel Klar,A5055527298,Manuel Klar,,2012,2012,1,W4206735941
+,Andreas Ruch,A5055629993,Andreas Ruch,,2015,2015,1,W2400679545
+,Dorothee Einsele,A5055743057,Dorothee Einsele,,2008,2019,3,W4210942698
+,Jörg Kinzig,A5055747105,Jörg Kinzig,,2007,2011,3,W4255703317
+,Jörg Frederik Ferreau,A5055795021,Jörg Frederik Ferreau,,2018,2022,2,W4285263236
+I149899117,Patrick Hell,A5055822021,Patrick Hell,Max Planck Society,2017,2019,2,W3008147228
+I4210134321,Patrick Hell,A5055822021,Patrick Hell,Max Planck Institute for Tax Law and Public Finance,2017,2019,2,W3008147228
+,Lothar Michael,A5056002098,Lothar Michael,,2006,2015,8,W4253348623
+,Uwe Volkmann,A5056024019,Uwe Volkmann,,2006,2020,3,W4237554094
+,Ulrich Fastenrath,A5056144919,Ulrich Fastenrath,,2018,2018,1,W2806942480
+,Laura Schneiderbauer,A5056213127,Laura Schneiderbauer,,2024,2024,1,W4391354472
+,Ansgar Kalle,A5056218118,Ansgar Kalle,,2018,2022,3,W4285239393
+,Felix Herzog,A5056245699,Félix Herzog,,2016,2016,1,W2915598048
+,Andreas Thier,A5056306940,Andreas Thier,,2015,2015,1,W2317251756
+,Franziska Schneider,A5056518653,Franziska Schneider,,2023,2023,1,W4388660925
+,Nikolaus Bosch,A5056581836,Nikolaus Bosch,,2009,2009,1,W2071352749
+,Ulrich Häde,A5056615317,Ulrich Häde,,2006,2011,3,W4230110872
+,Wolfgang Fleck,A5056672880,Wolfgang Fleck,,2012,2012,1,W1980374798
+,Ekkehard Becker-Eberhard,A5056676812,Ekkehard Becker-Eberhard,,2014,2014,1,W4256188568
+,Sebastian Olk,A5056683007,Sebastian Olk,,2006,2006,1,W4250843499
+,Matthias Rossi,A5056795793,Matthias Rossi,,2007,2011,2,W4210930903
+,Nina Dürre,A5056821651,Nina Dürre,,2006,2006,1,W4243729145
+,Anja Wenzel,A5056865482,Anja Wenzel,,2016,2016,1,W2489484993
+,Ralf Brinktrine,A5056874213,Ralf Brinktrine,,2007,2017,3,W4253569155
+,Stephan R. Göthel,A5056971380,Stephan R. Göthel,,2006,2006,1,W2011901423
+,Benjamin Roger,A5056976167,Benjamin Roger,,2016,2016,1,W2563424034
+,Susanne Hähnchen,A5056977932,Susanne Hähnchen,,2015,2018,2,W2801487748
+,Felix Busse,A5056982875,Felix Busse,,2011,2011,1,W4247232512
+,Klaus Tiedemann,A5057014752,Klaus Tiedemann,,2012,2016,2,W4210692761
+,Bernd Grzeszick,A5057027193,Bernd Grzeszick,,2006,2021,4,W4246280480
+,Dirk Ehlers,A5057053918,Dirk Ehlers,,2008,2019,8,W4251174216
+,Hasso Hofmann,A5057068086,Hasso Hofmann,,2014,2019,2,W2921168356
+,Dorothee Einsele,A5057151491,Dorothee Einsele,,2006,2014,4,W4249217857
+,Eva Maria Bredler,A5057176852,Eva Maria Bredler,,2021,2021,1,W3199554736
+,Ulfrid Neumann,A5057189512,Ulfrid Neumann,,2017,2022,2,W4206380687
+,Benjamin Raue,A5057264398,Benjamin Raue,,2018,2022,2,W4285225160
+,Volker Rieble,A5057277915,Volker Rieble,,2008,2009,2,W2046576051
+,Ralf Poscher,A5057350532,Ralf Poscher,,2009,2022,3,W4313070802
+,Andreas Engert,A5057387418,Andreas Engert,,2007,2007,1,W4234219091
+,Moritz Hartmann,A5057440780,Moritz Hartmann,,2017,2017,1,W2605668569
+,Daniela Winkler,A5057445189,Daniela Winkler,,2016,2016,1,W2514000175
+,Andreas Bergmann,A5057540179,Andreas Bergmann,,2023,2023,1,W4384787891
+,Matthias Klöpfer,A5057622930,Matthias Klöpfer,,2014,2017,2,W823683865
+,Benjamin Straßburger,A5057638305,Benjamin Straßburger,,2015,2015,1,W2327787616
+,Reinhart Merkel,A5057779273,Reinhart Merkel,,2007,2007,1,W2002756444
+,Martin Schwab,A5057817479,Martin E. Schwab,,2006,2019,3,W4245945412
+,Walter Gropp,A5057823544,Walter Gropp,,2011,2011,1,W2041331250
+,Jakob Gleim,A5057831295,Jakob Gleim,,2019,2019,1,W2982239481
+,Gregor Albers,A5057860075,Gregor Albers,,2018,2020,2,W3048947699
+,Alexander F. Peter,A5057919500,A Peter,,2011,2011,1,W1975101968
+,Helge Dedek,A5057929554,Helge Dedek,,2009,2009,1,W2035599486
+,Claudio Franzius,A5057980195,Claudio Franzius,,2016,2019,2,W2954468706
+,Christian Willers,A5058055406,Christian Willers,,2010,2010,1,W2041248294
+,Thomas Kleinlein,A5058123940,Thomas Kleinlein,,2017,2017,1,W2915865913
+,Hélène Berlincourt-Heinecke,A5058188457,Hélène Berlincourt-Heinecke,,2015,2015,1,W2916434075
+,Sophie Schönberger,A5058227191,Sophie Schönberger,,2018,2018,1,W2939657335
+,Jürgen von Gerlach,A5058304093,J Gerlach,,2007,2007,2,W4245700386
+,Philipp Lassahn,A5058329181,Philipp Lassahn,,2014,2014,1,W2076136570
+I149899117,Anne Peters,A5058344403,Anne Peters,Max Planck Society,2016,2016,1,W2312857491
+I4210141359,Anne Peters,A5058344403,Anne Peters,Max Planck Institute for Comparative Public Law and International Law,2016,2016,1,W2312857491
+,Konrad Lachmayer,A5058446313,Konrad Lachmayer,,2007,2007,1,W4239033479
+,Clemens Höpfner,A5058524067,Clemens Höpfner,,2017,2017,1,W2568903010
+,Frauke Wedemann,A5058539419,Frauke Wedemann,,2022,2022,1,W4312476249
+,Friedhelm Hufen,A5058657560,Friedhelm Hufen,,2006,2006,1,W2074447622
+,Theresa Paul,A5058685727,Theresa Paul,,2018,2018,1,W2794102063
+,Anne-Christin Mittwoch,A5058744027,Anne-Christin Mittwoch,,2023,2023,1,W4368247750
+,Hilmar Krüger,A5058750630,Hilmar Krüger,,2009,2009,1,W1964502067
+,Olaf Sosnitza,A5058796946,Olaf Sosnitza,,2008,2008,1,W1980742138
+,Johanna Küpper,A5058848739,Johanna Küpper,,2012,2012,1,W4230078196
+,David Julius Kästle,A5058865873,David Julius Kästle,,2010,2010,1,W2003217811
+,Alexander Jüchser,A5058914183,Alexander Jüchser,,2007,2007,1,W4232024916
+,Meinrad Dreher,A5058962907,Meinrad Dreher,,2011,2014,2,W2062064839
+,Carsten Herresthal,A5058996286,Carsten Herresthal,,2006,2011,2,W4210768732
+,Martin Löhnig,A5059039906,Martin Löhnig,,2016,2016,1,W4242265460
+,Leonard Wolckenhaar,A5059069892,Leonard Wolckenhaar,,2019,2019,1,W2988931926
+,Maximilian Haedicke,A5059076684,Maximilian Haedicke,,2006,2010,3,W4253755618
+,Malgorzata Minecka,A5059086221,Malgorzata Minecka,,2010,2010,1,W2064900116
+,Arndt Teichmann,A5059105938,Arndt Teichmann,,2006,2019,6,W4255170362
+,Andreas Sattler,A5059213786,Andreas Sattler,,2018,2018,1,W2890751729
+,Matthias Herdegen,A5059221771,Matthías Herdegen,,2009,2009,1,W1987731023
+,Jelena von Achenbach,A5059258431,Jelena von Achenbach,,2015,2023,4,W4352993307
+,Gerhard Dannemann,A5059281478,Gerhard Dannemann,,2013,2013,1,W1998024730
+,Andreas Haratsch,A5059356645,Andreas Haratsch,,2006,2008,2,W4245708407
+,Rolf Stümer,A5059432530,Rolf Stümer,,2010,2010,1,W28483985
+,Eva Schulev-Steindl,A5059444774,Eva Schulev-Steindl,,2008,2008,1,W2013811831
+,Lena Heuner,A5059464014,Lena Heuner,,2012,2012,1,W4230078196
+I4210112296,Reinhard Zimmermann,A5059482807,Reinhard Zimmermann,Max Planck Institute for Comparative and International Private Law,2020,2020,1,W4247196333
+,Reinhard Zimmermann,A5059482807,Reinhard Zimmermann,,2006,2023,21,W4387316938
+,Ekkehard Schumann,A5059506096,Ekkehard Schumann,,2013,2021,4,W4254052918
+,Dagmar Kaiser,A5059571034,Dagmar Kaiser,,2013,2013,1,W1974329107
+,Jan-Erik Schirmer,A5059637149,Jan-Erik Schirmer,,2016,2023,4,W4320923880
+,Anke Eggert,A5059650139,Anke Eggert,,2008,2008,1,W1966686821
+,Peter Weber,A5059689949,Peter J. Weber,,2018,2018,1,W2901209031
+,Klaus Tiedemann,A5059784074,Klaus Tiedemann,,2012,2018,5,W4237265025
+,Christoph Dannecker,A5059847733,Christoph Dannecker,,2010,2013,2,W89197190
+,Martin Stierle,A5059922990,M. Karlheinz Stierle,,2021,2021,1,W3124572270
+,Peter O. Mülbert,A5059932882,Peter O. Mülbert,,2009,2010,2,W4253765760
+,Thomas Finkenauer,A5059933050,Thomas Finkenauer,,2006,2022,5,W4230751560
+,Lars Leuschner,A5059935051,Lars Leuschner,,2009,2010,2,W4253765760
+,Jan-Frederick Göhsl,A5060010323,Jan-Frederick Göhsl,,2021,2021,1,W3118476631
+,Maria Stemmler,A5060028984,Mark Stemmler,,2015,2015,1,W2917538628
+,Claudia Mayer,A5060130564,Claudia Mayer,,2013,2017,2,W4251480210
+,Anna von Notz,A5060152837,Anna von Notz,,2017,2018,2,W4241045981
+,Stefan Pinelli,A5060155039,Stefan Pinelli,,2020,2020,1,W4242361558
+,Barbara Grunewald,A5060193787,Barbara Grunewald,,2006,2023,4,W4389442917
+,Dietmar Baetge,A5060211566,Dietmar Baetge,,2009,2009,1,W2079954671
+,Lucas Hartmann,A5060260503,Lucas Hartmann,,2020,2022,2,W4291826187
+,Grischa Merkel,A5060277159,Grischa Merkel,,2013,2013,1,W1984065693
+,Sigrid Lorz,A5060319964,Sigrid Lorz,,2022,2022,1,W4213108244
+,Patrick Bruns,A5060394659,Patrick Bruns,,2009,2010,2,W4254111851
+,Jörn Reinhardt,A5060441924,Jörn Reinhardt,,2012,2012,2,W4250690342
+,Christoph Enders,A5060591563,Christoph Enders,,2016,2016,1,W2538794275
+,Antje Schumann,A5060651163,Antje Schümann,,2008,2012,2,W4230991639
+,Suzan Denise Hüttemann,A5060652019,Suzan Denise Hüttemann,,2023,2023,1,W4388660998
+,Markus Eisenbarth,A5060735731,Markus Eisenbarth,,2011,2011,1,W2023358510
+,Axel Beater,A5060747658,Axel Beater,,2013,2020,4,W4253478785
+,Ken Eckstein,A5060795965,Ken Eckstein,,2012,2016,2,W4241492901
+,Anne Sanders,A5060798993,Anne Sanders,,2012,2012,1,W4206650844
+,Daniela Tröppner,A5060811362,Daniela Tröppner,,2017,2017,1,W4251874103
+,Eike Michael Frenzel,A5060819550,Eike Michael Frenzel,,2010,2010,1,W453907550
+,Malte Stieper,A5060851660,Malte Stieper,,2012,2023,5,W4362569852
+,Georgios Gounalakis,A5060851677,Georgios Gounalakis,,2008,2009,2,W2078513905
+,Kay Waechter,A5060933664,Kay Waechter,,2006,2016,6,W2953826107
+,Katharina Ebner,A5060962903,Katharina Ebner,,2014,2014,1,W1974836639
+,Tobias Herbst,A5061086777,Tobias Herbst,,2008,2017,4,W2917835985
+,Philipp Gutsche,A5061155535,Philipp Gutsche,,2017,2017,1,W2594179390
+,Madeleine Tolani,A5061248213,Madeleine Tolani,,2013,2018,2,W2892127894
+,Bernd Holznagel,A5061268319,Bernd Holznagel,,2011,2021,3,W3137030884
+,Peter von Wilmowsky,A5061355224,Peter von Wilmowsky,,2013,2013,1,W4244782498
+,Chris Thomale,A5061419677,Chris Thomale,,2012,2018,6,W4254355443
+,Kathleen Maja Wolter,A5061434953,Kathleen Wolter,,2012,2012,1,W2043803203
+,Dieter Leipold,A5061455271,Dieter Leipold,,2010,2010,1,W2071715475
+,Heinrich Amadeus Wolff,A5061466012,Heinrich Amadeus Wolff,,2006,2014,4,W4237124274
+,Gerhard Robbers,A5061540147,Gerhard Robbers,,2011,2011,1,W1994832711
+I149899117,Emanuel Vahid Towfigh,A5061620054,Emanuel V. Towfigh,Max Planck Society,2010,2010,1,W2091349876
+I4210136328,Emanuel Vahid Towfigh,A5061620054,Emanuel V. Towfigh,Max Planck Institute for Research on Collective Goods,2010,2010,1,W2091349876
+,Emanuel V. Towfigh,A5061620054,Emanuel V. Towfigh,,2023,2023,1,W4388144144
+,Eberhard Eichenhofer,A5061630059,Eberhard Eichenhofer,,2006,2007,3,W2093740800
+,Nicolas Potsch,A5061682821,Nicolas Potsch,,2006,2006,1,W2064948899
+,Tobias Gumpp,A5061770594,Tobias Gumpp,,2022,2022,1,W4312237692
+,Julia Caroline Scherpe,A5061783602,Julia Caroline Scherpe,,2014,2014,1,W2042631838
+,Winfried Brugger,A5062070973,Winfried Brugger,,2006,2009,8,W4230577476
+,Christian von Bar,A5062089919,Christian von Bar,,2015,2015,1,W2764160389
+,Frank Zschieschack,A5062117005,Frank Zschieschack,,2006,2006,1,W1979618515
+,Anja Amend-Traut,A5062177684,Anja Amend-Traut,,2017,2017,1,W2760991911
+,Abbo Junker,A5062211838,Abbo Junker,,2008,2008,2,W4242501625
+,Joachim Bohnert,A5062262362,Joachim Bohnert,,2011,2011,1,W2038748682
+,Erik Kraatz,A5062378206,Erik Kraatz,,2015,2015,1,W2332635784
+,Maxie Bethge,A5062386037,Maxie Bethge,,2009,2009,1,W2000799218
+,Sebastian Kubis,A5062393803,Sebastian Kubis,,2022,2022,1,W4291826454
+,Christoph Sorge,A5062413463,Christoph Sorge,,2011,2011,1,W2040412575
+I149899117,Nicolas von zur Mühlen,A5062416949,Nicolas von zur Mühlen,Max Planck Society,2014,2014,1,W1981506784
+I4210134943,Nicolas von zur Mühlen,A5062416949,Nicolas von zur Mühlen,"Max Planck Institute for the Study of Crime, Security and Law",2014,2014,1,W1981506784
+,Georgios Zagouras,A5062463823,Georgios Zagouras,,2008,2008,1,W2047936652
+,Jürgen Bast,A5062484802,Jürgen Bast,,2024,2024,1,W4391854301
+,Herbert Woopen,A5062528828,Herbert Woopen,,2021,2021,1,W3172426837
+,Spiros Simitis,A5062529004,Spiros Simitis,,2008,2008,1,W2012527084
+,Irene Sternberg-Lieben,A5062553590,Irene Sternberg-Lieben,,2018,2018,1,W2783452689
+,Martin Josef Schermaier,A5062599014,Martin Schermaier,,2006,2018,4,W4255495976
+,Martin Schermaier,A5062599014,Martin Schermaier,,2020,2021,2,W4206480920
+,Martin Hochhuth,A5062637548,Martin Hochhuth,,2009,2009,1,W1988476506
+,Franz Ruland,A5062674020,Franz Ruland,,2008,2008,1,W2048364826
+,Alexander Baur,A5062718297,Alexander Baur,,2011,2011,1,W133573864
+,Andrea Kießling,A5062808906,Andrea Kießling,,2022,2022,2,W4297820582
+,Jo Eric Khushal Murkens,A5062951236,Jo Eric Khushal Murkens,,2012,2012,1,W2031390876
+,Jens-Hinrich Binder,A5062967528,Jens-Hinrich Binder,,2015,2015,1,W2329036759
+,Michael Beurskens,A5063025471,Michael Beurskens,,2018,2018,1,W2789713985
+,Klaus Ritgen,A5063074786,Klaus Ritgen,,2007,2007,1,W2323783154
+,Brian Valerius,A5063097680,Brian Valerius,,2008,2017,2,W2602789405
+,Thilo Ramm,A5063098195,Thilo Ramm,,2010,2010,1,W1572346307
+,Jörg Eisele,A5063117499,Jörg Eisele,,2008,2021,5,W814516661
+,Philipp Greguhn,A5063129492,Philipp Greguhn,,2020,2020,1,W4236938078
+,Angelika Nußberger,A5063140962,Angelika Nußberger,,2006,2021,6,W3206939307
+I186903577,Herwig Hofmann,A5063245104,Holger F. Hofmann,University of Luxembourg,2015,2015,1,W2017327064
+,Jannis Lennartz,A5063263982,Jannis Lennartz,,2016,2024,3,W4390778024
+,Wolfgang Kilian,A5063285488,Wolfgang Kilian,,2014,2014,1,W1982907286
+,Veith Mehde,A5063310836,Veith Mehde,,2020,2020,1,W3089976029
+,Petra Buck-Heeb,A5063318556,Petra Buck-Heeb,,2017,2024,2,W4393954416
+,Alexander Stöhr,A5063339879,Alexander Stöhr,,2020,2020,1,W3095384225
+,Stefan Greiner,A5063347529,Stefan Greiner,,2018,2022,2,W4285239393
+,Peter Lutz Kalmbach,A5063350715,Peter Kalmbach,,2015,2015,1,W2916311374
+,Bettina Rentsch,A5063402465,Bettina Rentsch,,2015,2021,3,W3201442443
+,Karl-E. Hain,A5063462477,Karl-E. Hain,,2007,2008,2,W1992042472
+,Hendrik Wolters,A5063495192,Hendrik Wolters,,2020,2020,1,W4241728981
+,Moritz Begemeier,A5063520617,Moritz Begemeier,,2016,2018,2,W2807413069
+,Bernhard Jakl,A5063555966,Bernhard Jakl,,2011,2011,1,W4250762505
+,Horst Eidenmüller,A5063768777,Horst Eidenmüller,,2007,2015,2,W2916267236
+,Christian Katzenmeier,A5063897068,Christian Katzenmeier,,2006,2018,7,W4246704686
+,Heike Schweitzer,A5063928138,Heike Schweitzer,,2022,2022,1,W4206168025
+,Fritz Ossenbühl,A5063951244,Fritz Ossenbühl,,2006,2006,2,W4242101630
+I149899117,Christian Marxsen,A5063954314,Christian Marxsen,Max Planck Society,2017,2017,1,W2621915312
+I4210141359,Christian Marxsen,A5063954314,Christian Marxsen,Max Planck Institute for Comparative Public Law and International Law,2017,2017,1,W2621915312
+,Karl M. Meessen,A5064002217,Karl M. Meessen,,2009,2009,1,W4229984522
+,Bernd Oppermann,A5064061854,Bernd Oppermann,,2007,2007,1,W1966808809
+,Jörn Ipsen,A5064062840,Jörn Ipsen,,2014,2014,2,W4244622307
+,Lara Schäfer,A5064094579,Lara Schäfer,,2022,2022,1,W4296010602
+,Eric Hilgendorf,A5064136783,Eric Hilgendorf,,2006,2024,21,W4392742128
+,Matthias Rampp,A5064142453,Matthias Rampp,,2018,2018,1,W2903668760
+,Johannes Ungerer,A5064213743,Johannes Ungerer,,2022,2022,1,W4285145660
+,Edward Schramm,A5064235740,Edward Schramm,,2012,2022,5,W4285189345
+,Dieter Deiseroth,A5064313629,Dieter Deiseroth,,2007,2007,1,W2027522000
+,Andreas Engels,A5064314891,Andreas Engels,,2008,2008,1,W2018812676
+,Gernot Steinhilper,A5064349599,Gernot Steinhilper,,2006,2006,1,W1997506756
+,Johannes W. Flume,A5064415332,Johannes W. Flume,,2013,2013,1,W4249578215
+,Till Zimmermann,A5064573819,Till Zimmermann,,2024,2024,1,W4392742326
+,Uwe Scheffler,A5064601092,Uwe Scheffler,,2008,2008,1,W2017381904
+,Wilhelm-Albrecht Achilles,A5064678849,Wilhelm-Albrecht Achilles,,2018,2018,1,W2898556247
+,Sabine Seidenschwann,A5064756008,Sabine Seidenschwann,,2014,2014,1,W2031884179
+,Haimo Schack,A5064761183,Haimo Schack,,2006,2022,13,W4285171497
+,Arne Pilniok,A5064768674,Arne Pilniok,,2017,2022,3,W4320152701
+,Florian Jacoby,A5064847941,Florian Jacoby,,2008,2021,3,W4238700464
+,Paul Vogel,A5064879007,Paul Maruff,,2022,2022,1,W4226250357
+,Max Foerster,A5064968099,Max Foerster,,2012,2013,3,W4242997172
+I25217355,Jacques Ziller,A5064975630,Jacques Ziller,University of Pavia,2015,2015,1,W2017327064
+,Werner Beulke,A5064993093,Werner Beulke,,2013,2021,2,W3153533229
+,Jörg Ennuschat,A5065071827,Jörg Ennuschat,,2008,2008,1,W2034488637
+,Georgia Stefanopoulou,A5065128772,Georgia Stefanopoulou,,2011,2022,2,W4296010506
+,Alexander Proelss,A5065137012,Alexander Proelß,,2011,2011,1,W2141680884
+,Alexander Proelß,A5065137012,Alexander Proelß,,2009,2009,1,W4247808634
+,Reinhard Mehring,A5065162235,Reinhard Mehring,,2011,2022,7,W4291498098
+,Stephan Ast,A5065186982,Stephan Ast,,2013,2013,1,W2329614403
+,Hans Herbert von Arnim,A5065229426,Hans Herbert von Arnim,,2009,2012,3,W4249657108
+,Wilfried Küper,A5065253115,Wilfried Küper,,2006,2019,8,W4244871795
+,Frank Fechner,A5065421284,Frank Fechner,,2011,2011,1,W2026101360
+,Georg-Berndt Oschatz,A5065434924,Georg-Berndt Oschatz,,2009,2009,1,W2046241247
+,Hans-Patrick Schroeder,A5065466714,Hans-Patrick Schroeder,,2007,2007,1,W1966808809
+,Thomas Hohendorf,A5065466927,Thomas Hohendorf,,2017,2017,1,W2918000130
+,Tobias Richter,A5065512666,Tobias Richter,,2007,2007,1,W4241673371
+,Sabrina J. Hainer,A5065562855,Sabrina J. Hainer,,2012,2012,1,W2045065005
+,Klaus Bartels,A5065608721,Klaus Bartels,,2009,2014,3,W2073641889
+,Ulrich Falk,A5065677497,Ulrich Falk,,2011,2011,1,W2094633220
+,Elena Dubovitskaya,A5065750310,Elena Dubovitskaya,,2012,2012,1,W2021366416
+,Christoph Weber,A5065790260,Christoph Weber,,2006,2006,1,W4244952514
+,Andreas Hänlein,A5065830893,Andreas Hänlein,,2018,2018,1,W2811460228
+,Reimund Schmidt de Caluwe,A5065843075,Reimund Schmidt de Caluwe,,2013,2013,1,W2053790896
+,Leonid Guggenberger,A5065895370,Leonid Guggenberger,,2022,2022,1,W4225939843
+,Klaus Laubenthal,A5065938857,Klaus Laubenthal,,2009,2016,3,W2409678021
+,Martin Paul Waßmer,A5066139988,Martin Paul Waßmer,,2020,2020,1,W4254772674
+,Florian Faust,A5066142326,Florian Faust,,2006,2021,9,W4256006008
+,Thomas Wischmeyer,A5066179802,Thomas Wischmeyer,,2015,2023,2,W4320923805
+,Peter Rackow,A5066196797,Peter Rackow,,2021,2023,2,W4323024954
+,Christoph A. Kern,A5066229916,Christoph Kern,,2009,2012,2,W2094215870
+,Verena Klappstein,A5066230535,Verena Klappstein,,2019,2019,1,W2982322668
+,Hans Christian Röhl,A5066464587,Hans Christian Röhl,,2006,2016,2,W2523168933
+,Horst Risse,A5066495379,Horst Risse,,2018,2018,1,W2793041592
+,David Jahn,A5066592692,David Jahn,,2011,2011,2,W4252646305
+,Janwillem van de Loo,A5066672902,Janwillem van de Loo,,2017,2017,1,W2751279821
+,Stefanie Schmahl,A5066714757,Stefanie Schmahl,,2014,2022,4,W4226316011
+,Olaf Meyer,A5066760211,Olaf Meyer,,2006,2006,1,W2070020199
+,Johann Braun,A5066899703,Johann Braun,,2008,2022,6,W4220892098
+,Nora Markard,A5066908240,Nora Markard,,2017,2021,3,W3199554736
+,Helmut Satzger,A5066966677,Helmut Satzger,,2012,2015,2,W2317560426
+,Philip Schopen,A5066975482,Philip Schopen,,2023,2023,1,W4387755922
+,Manfred Herbert,A5067021232,Manfred Herbert,,2011,2011,1,W2006630727
+,Rafael Harnos,A5067099384,Rafael Harnos,,2017,2017,1,W2623590184
+,Jens Werner,A5067125554,Jens Werner,,2008,2008,1,W4251472404
+,Paul Tobias Schrader,A5067160068,Paul Tobias Schrader,,2013,2013,1,W2042363781
+,Anna K. Bernzen,A5067304859,Anna K. Bernzen,,2022,2022,1,W4205748182
+,Rainer Maria Kiesow,A5067313872,Rainer Maria Kiesow,,2010,2010,1,W1975710114
+,Franz-Joseph Peine,A5067343556,Franz-Joseph Peine,,2006,2007,2,W4239025712
+,Jan C. Schuhr,A5067367389,Jan C. Schuhr,,2008,2015,4,W2406465678
+,Volkmar Götz,A5067447751,Volkmar Götz,,2009,2012,2,W2056305458
+,Claus Kref,A5067482118,Claus Kref,,2006,2010,2,W1990417964
+,Martin Lipp,A5067529822,Martin Lipp,,2006,2006,1,W4239787458
+,Klaus Schurig,A5067562492,Klaus Schurig,,2006,2006,1,W4255554235
+,Béla Knof,A5067580545,Béla Knof,,2011,2013,2,W4246779073
+,Markus Ogorek,A5067616528,Markus Ogorek,,2019,2023,3,W4320015427
+,Christoph Gusy,A5067676971,Christoph Gusy,,2006,2022,12,W64119746
+,Matthias Jahn,A5067691832,Matthias Jahn,,2006,2016,6,W4250677135
+,Anna Schimke,A5067715025,Anna Schimke,,2012,2018,2,W2040204009
+,Roman F. Adam,A5067760674,Roman F. Adam,,2010,2012,2,W1970586812
+,Matthias Knauff,A5067851663,Matthias Knauff,,2007,2007,1,W4210451492
+,Thomas Gutmann,A5067893535,Thomas Gutmann,,2013,2013,1,W2052153705
+,Philipp Schmieder,A5068073712,Philipp Schmieder,,2009,2009,1,W1973805281
+I149899117,Andreas Glöckner,A5068080000,Andreas Glöckner,Max Planck Society,2010,2010,1,W2091349876
+I4210136328,Andreas Glöckner,A5068080000,Andreas Glöckner,Max Planck Institute for Research on Collective Goods,2010,2010,1,W2091349876
+,Friedrich E. Schnapp,A5068181422,Friedrich E. Schnapp,,2009,2011,5,W2060776617
+,Philipp Scholz,A5068264267,Philipp Scholz,,2020,2020,1,W3010104467
+,Anna Helena Albrecht,A5068291827,Anna Helena Albrecht,,2015,2015,1,W4232826279
+,Fritz Sturm,A5068354354,Fritz Sturm,,2007,2013,6,W70058780
+,Gunnar Franck,A5068357493,Gunnar Franck,,2023,2023,1,W4315486427
+,Johan Schrader,A5068396809,Johan Schrader,,2016,2016,1,W2336550583
+,Kay Nehm,A5068407597,Kay Nehm,,2018,2018,1,W2800468785
+,Hasso Hofmann,A5068432981,Hasso Hofmann,,2009,2018,2,W2889611547
+,Wolfgang Zenker,A5068438749,W. Zenker,,2007,2007,1,W2025238385
+,Winrich Langer,A5068521488,Winrich Langer,,2017,2017,1,W2605575622
+,Anja Schiemann,A5068569728,Anja Schiemann,,2014,2016,2,W2916145233
+,Christian Armbrüster,A5068596740,Christian Armbrüster,,2007,2021,11,W4255428346
+,Stephan Wagner,A5068668597,Stephan M. Wagner,,2007,2007,1,W2070555700
+,Detlev Sternberg-Lieben,A5068713333,Detlev Sternberg-Lieben,,2013,2018,2,W4232631421
+,Arno Scherzberg,A5068870521,Arno Scherzberg,,2017,2017,1,W2607900622
+,Anette Grünewald,A5068897708,Anette Grünewald,,2010,2024,7,W4391354400
+,Martin Heinrich,A5068912095,Martin Heinrich,,2007,2007,1,W4239865264
+,Werner Offenloch,A5069164988,Werner Offenloch,,2011,2011,1,W4255224872
+,Ingo Kraft,A5069206091,Ingo Kraft,,2019,2019,1,W2954654451
+,Andreas Zimmermann,A5069391952,Andreas Zimmermann,,2022,2022,1,W4221084939
+,Caroline Wittig,A5069463909,Caroline Wittig,,2017,2017,1,W2750792014
+,Nina Martin,A5069585273,Nina Martin,,2018,2018,1,W2806410369
+,Friedrich Pukelsheim,A5069715012,Friedrich Pukelsheim,,2010,2011,2,W4210930903
+,Goetz Kempelmann,A5069723630,Goetz Kempelmann,,2018,2018,1,W2800472075
+,Horst Dreier,A5069805857,Horst Dreier,,2008,2008,1,W4256249463
+,Claudia Schubert,A5069865401,Claudia Schubert,,2014,2022,2,W4291498074
+,David Rüger,A5069932060,David Rüger,,2008,2008,1,W2010870889
+,Antje von Ungern-Sternberg,A5069967766,Antje von Ungern-Sternberg,,2019,2019,1,W2954261484
+,Erhard Denninger,A5070065065,Erhard Denninger,,2010,2010,1,W953374158
+,Sebastian Mock,A5070139585,Sebastian Mock,,2013,2020,4,W4246779073
+,Stefan Grundmann,A5070239225,Stefan Grundmann,,2013,2013,3,W2092138568
+,Christoph Brömmelmeyer,A5070240863,Christoph Brömmelmeyer,,2006,2006,1,W2016253712
+,Steffen Hindelang,A5070249034,Steffen Hindelang,,2009,2009,1,W2074450406
+,Fabian Klinck,A5070357454,Fabian Klinck,,2018,2018,1,W2799690996
+,Matthias Wachter,A5070400670,Matthias Wächter,,2019,2024,3,W4391854294
+,Walter Georg Leisner,A5070439868,Walter Leisner,,2006,2008,2,W2089681987
+,Walter Leisner,A5070439868,Walter Leisner,,2006,2006,1,W1987316749
+,Christian Kalbitz,A5070441443,Christian Kalbitz,,2017,2017,1,W2608352278
+,Jan Zopfs,A5070458220,Jan Zopfs,,2007,2007,1,W2323207592
+,Stephanie Schiedermair,A5070505758,Stephanie Schiedermair,,2007,2009,2,W4239572203
+,Marina Tamm,A5070641538,Marina Tamm,,2006,2009,2,W4245578712
+,Kay Hailbronner,A5070658940,Kay Hailbronner,,2007,2016,6,W4232443615
+,Pascal Schumacher,A5070825984,Pascal Schumacher,,2011,2011,1,W2024499003
+,Andreas Peilert,A5070845948,Andreas Peilert,,2018,2018,1,W1980096331
+,Maximilian Gerhold,A5070899634,Maximilian Gerhold,,2023,2023,1,W4362569884
+,Horst Schlehofer,A5071028782,Horst Schlehofer,,2018,2018,1,W2790948809
+,Ulrich Büdenbender,A5071050452,Ulrich Büdenbender,,2012,2012,1,W2042646085
+,Christian Thiemann,A5071054209,Christian Thiemann,,2012,2012,1,W4245728325
+,Susanne Lilian Gössl,A5071173003,Susanne Lilian Gössl,,2018,2022,2,W4285120264
+,Christian Deckenbrock,A5071177993,Christian Deckenbrock,,2017,2017,1,W4230554885
+,Christian Walter,A5071278156,Christian Walter,,2022,2022,1,W4285148526
+,Helmut Lecheler,A5071307423,Helmut Lecheler,,2009,2009,1,W2062490418
+,Ralf Schnieders,A5071361401,Ralf Schnieders,,2023,2024,2,W4391354419
+,Silke Altenkirch,A5071393062,Silke Altenkirch,,2009,2009,1,W1966780687
+,Gert Brüggemeier,A5071410175,Gert Brüggemeier,,2009,2018,2,W2793418249
+,Abbo Junker,A5071469617,Abbo Junker,,2021,2022,2,W4205921271
+,Christoph Degenhart,A5071491033,Christoph Degenhart,,2008,2010,2,W4236952274
+,Andreas Voßkuhle,A5071545155,Andreas Voßkuhle,,2009,2024,4,W4391491572
+,Thomas Ackermann,A5071571840,Thomas Ackermann,,2008,2021,3,W3135724351
+,Stefan Kadelbach,A5071613724,Stefan Kadelbach,,2023,2023,1,W4386389364
+,Stephan Pötters,A5071621517,Stephan Pötters,,2011,2011,1,W2029829750
+,Jannik Funnemann,A5071739719,Jannik Funnemann,,2019,2019,1,W2985820671
+,Roman Wolf,A5071772384,Roman Wolf,,2017,2017,1,W2917134397
+,Herbert Küpper,A5071814381,Küpper Herbert,,2009,2009,1,W1997274941
+,Mascha Hesse,A5071835756,Mascha Hesse,,2017,2017,1,W2753552006
+,Carsten Meinert,A5071888824,Carsten Meinert,,2023,2023,1,W4386716971
+,Johannes Reichert,A5071926544,Johannes C. Reichert,,2016,2016,1,W2342394605
+,Jessica Krüger,A5072000896,Jessica S. Kruger,,2023,2023,1,W4315486252
+,Christian Calliess,A5072138343,Christian Calliess,,2006,2015,8,W4237948222
+,Silvia Deuring,A5072145964,Silvia Deuring,,2019,2019,1,W2972081300
+,Simon Behr,A5072175319,Simon Behr,,2018,2018,1,W2886529176
+,Seemann,A5072250037,Seemann,,2023,2023,1,W3004278108
+,Anna-Bettina Kaiser,A5072288978,Anna-Bettina Kaiser,,2009,2009,1,W1967409676
+,Johannes Kaspar,A5072322291,Johannes Kaspar,,2007,2022,4,W4313133021
+,Ludwig Reißmann,A5072367508,Ludwig Reißmann,,2019,2019,1,W2980724908
+,Wilfried Erbguth,A5072578272,Wilfried Erbguth,,2007,2011,2,W2007339947
+,Jürgen Helle,A5072585094,Jürgen Helle,,2008,2008,1,W2069478276
+,Florian Jotzo,A5072594506,Florian Jotzo,,2013,2018,3,W4251249084
+,Thomas von Danwitz,A5072595112,Thomas von Danwitz,,2006,2007,2,W1978779841
+,Marc Leonhard,A5072658510,Marc Leonhard,,2013,2013,1,W2066664528
+,Sabine Seidenschwann,A5072670715,Sabine Seidenschwann,,2012,2012,1,W2033300222
+,Ralf Seinecke,A5072724788,Ralf Seinecke,,2010,2010,1,W2088856500
+,Hubert Schmidt,A5072727866,Heiko Schmidt,,2012,2012,1,W1986286761
+,Alexandra K. Weber,A5072837016,Alexandra Weber,,2012,2012,1,W4213444103
+,Götz Schulze,A5072839861,Götz Schulze,,2015,2016,4,W2947463486
+,Tristan Barczak,A5072853192,Tristan Barczak,,2022,2022,1,W4313130178
+,Heinz Georg Bamberger,A5072875857,Heinz Georg Bamberger,,2018,2018,1,W2900843139
+,Roland Schmitz,A5073071988,Roland Schmitz,,2020,2020,1,W4244433951
+,Paul T. Schrader,A5073088586,Paul Schrader,,2011,2011,1,W2006590044
+,Kristina Cyglakow,A5073247032,Kristina Cyglakow,,2018,2018,1,W2903741786
+,Christoph Safferling,A5073324170,Christoph Safferling,,2010,2017,4,W4239265723
+,Georg Alexander Haas,A5073428998,Georg Alexander Haas,,2017,2017,1,W2772371446
+,Milan Kuhli,A5073437620,Milan Kuhli,,2019,2019,1,W4237704272
+,Christian Schubel,A5073443956,Christian Schubel,,2012,2022,3,W4312872495
+,Volker Lipp,A5073542886,Volker Lipp,,2006,2006,1,W2022851602
+,Andreas Heinemann,A5073567373,Andreas Heinemann,,2011,2022,2,W4312686478
+,Jelena Von Achenbach,A5073574476,Jelena Von Achenbach,,2017,2017,1,W4246277875
+,Christian Geminn,A5073628157,Christian Geminn,,2015,2015,1,W2917951522
+,Bettina Noltenius,A5073650337,Bettina Noltenius,,2014,2014,1,W1997310562
+,Monika Böhm,A5073684485,Monika Böhm,,2008,2008,1,W1999492520
+I149899117,Susanne Lepsius,A5073693717,Susanne Lepsius,Max Planck Society,2006,2006,1,W1972394877
+I4210095813,Susanne Lepsius,A5073693717,Susanne Lepsius,Max Planck Institute for Legal History and Legal Theory,2006,2006,1,W1972394877
+,Tobias Fröschle,A5073746888,Tobias Fröschle,,2011,2011,1,W4251039055
+,Björnstjern Baade,A5073773271,Björnstjern Baade,,2021,2023,2,W4323025047
+,Bastian Zahn,A5073798357,Bastian Zahn,,2014,2014,1,W1991831285
+,Kai Schadtle,A5073878096,Kai Schadtle,,2016,2016,1,W2514000175
+,Fynn Wenglarczyk,A5073887427,Fynn Wenglarczyk,,2022,2022,1,W4205126159
+,Patrick R. Hoffmann,A5073906262,Patrick R. Hoffmann,,2018,2018,1,W2889928304
+,Inge Kroppenberg,A5073942978,Inge Kroppenberg,,2006,2012,4,W2087194542
+,Johannes Unterreitmeier,A5073964438,Johannes Unterreitmeier,,2009,2022,3,W4312697979
+,Sina Fontana,A5074013765,Sina Fontana,,2019,2019,1,W2919779874
+,Michael Martinek,A5074058331,Michael Martinek,,2008,2016,5,W4240908353
+,Tristan Radtke,A5074061953,Tristan Radtke,,2022,2022,1,W4225939843
+,Georg Ringe,A5074194196,Wolf-Georg Ringe,,2016,2016,1,W2892374003
+,Michael Kotulla,A5074239722,Michael Kotulla,,2009,2009,1,W4248949717
+,Evelyn Woitge,A5074269277,Evelyn Woitge,,2010,2010,1,W2917961703
+,Florian Meinel,A5074348364,Florian Meinel,,2007,2007,1,W2005529311
+,Martin Burgi,A5074461221,Martin Bürgi,,2006,2010,3,W4230995079
+,Ino Augsberg,A5074499147,Ino Augsberg,,2007,2017,7,W2612398750
+,Joachim von Bargen,A5074521875,Joachim von Bargen,,2017,2017,1,W2737111335
+,Jürgen Stamm,A5074542792,Jürgen Stamm,,2012,2022,4,W4312743797
+,Tim Florstedt,A5074578076,Tim Florstedt,,2019,2022,2,W4226337246
+,Johannes Wasmult,A5074600362,Johannes Wasmult,,2010,2010,1,W124659004
+,Patricia Wiater,A5074621761,Patricia Wiater,,2022,2022,1,W4297820501
+,Jörg Neuner,A5074702841,Jörg Neuner,,2016,2021,3,W3166098089
+,Jannik Rienhoff,A5074716687,Jannik Rienhoff,,2017,2017,1,W2763642154
+,Florian Schärdel,A5074799502,Florian Schärdel,,2009,2009,1,W1974787856
+,Carsten Bäcker,A5074803817,Carsten Bäcker,,2012,2016,2,W2333313116
+,Luca Kochendörfer,A5074812024,Luca Kochendörfer,,2022,2022,1,W4315834800
+,Gregor Stahl,A5074857834,Gregor Stahl,,2022,2022,1,W4220710084
+,Jakob Nolte,A5074889303,Jakob Nolte,,2008,2008,1,W1963890842
+,Benjamin Kram,A5074897577,Benjamin Kram,,2014,2014,1,W2071623822
+,Gerhard Werle,A5074906878,Gerhard Werle,,2015,2021,4,W4235263063
+,Sabine Schlacke,A5074954510,Sabine Schlacke,,2016,2016,1,W2547426216
+,Benjamin Beck,A5074963018,Ben Beck,,2015,2015,1,W2324730619
+,Peter M. Huber,A5074991150,Peter M. Huber,,2022,2022,1,W4206509590
+,Peter Badura,A5075007539,Peter Badura,,2006,2009,4,W2054875837
+,Kristina Hillermann,A5075013978,Kristina Hillermann,,2007,2007,1,W2045185557
+,Andreas Piekenbrock,A5075115510,Andreas Piekenbrock,,2018,2022,2,W4210371390
+,Ralf Kölbel,A5075225871,Ralf Kölbel,,2007,2018,4,W4231986184
+,Sebastian Krebber,A5075237261,Sebastian Krebber,,2008,2013,3,W4254626523
+,Anton S. Zimmermann,A5075250288,Anton S. Zimmermann,,2017,2017,1,W2768657028
+,Thomas Böckenförde,A5075357451,Thomas Böckenförde,,2008,2008,1,W2903313924
+,Harald Eberhard,A5075396619,Harald Eberhard,,2007,2007,1,W4239033479
+,Holm Putzke,A5075424521,Holm Putzke,,2008,2018,3,W2790948809
+,Florian Knauer,A5075447794,Florian Knauer,,2013,2013,1,W2035231245
+,Rolf Sethe,A5075544038,Rolf Sethe,,2008,2008,1,W2020253336
+,Wolfgang Lesting,A5075577948,Wolfgang Lesting,,2021,2021,1,W3168176238
+,Jens Peter Meincke,A5075671472,Jens Peter Meincke,,2006,2013,3,W2077412046
+,Simon Kempny,A5075691533,Simon Kempny,,2015,2018,2,W4245383654
+,Sebastian Müller Franken,A5075692161,Sebastian Müller Franken,,2012,2012,1,W90239730
+,Lutz Haertlein,A5075777041,Lutz Haertlein,,2007,2007,1,W1999625681
+,Frederick Rieländer,A5075907512,Frederick Rieländer,,2016,2023,3,W4387755908
+,Otto Depenheuer,A5075941695,Otto Depenheuer,,2012,2012,1,W2027108825
+,Eberhard Schilken,A5075990908,Eberhard Schilken,,2007,2007,1,W2007804096
+,Robert Magnus,A5076047188,Robert Magnus,,2016,2019,2,W2953672410
+,Christian Neumeier,A5076237128,Christian Neumeier,,2022,2022,1,W4220777073
+,Hubertus Gersdorf,A5076247376,Hubertus Gersdorf,,2008,2008,1,W2313651581
+,Otto Lagodny,A5076286209,Otto Lagodny,,2015,2015,1,W4244139297
+,Sören Segger-Piening,A5076331732,Sören Segger-Piening,,2020,2023,2,W4386716894
+,Wolfram Höfling,A5076359675,Wolfram Höfling,,2007,2019,2,W2965228759
+,Oliver Suchy,A5076383881,Oliver Suchy,,2012,2012,1,W2008805301
+,Matthias Schüll,A5076401036,Matthias Schüll,,2015,2015,1,W2321065721
+,Thomas Groß,A5076404440,Thomas Groß,,2019,2019,1,W2954679654
+,Ulrich G. Schroeter,A5076415474,Ulrich G. Schroeter,,2010,2017,2,W2736806003
+,Hans-Dieter Spengler,A5076492844,Hans-Dieter Spengler,,2011,2011,1,W2333855499
+,Philipp Wittmann,A5076525489,Philipp Wittmann,,2014,2014,1,W2093506048
+,M Korte,A5076528391,M Korte,,2010,2010,1,W1990417964
+,Nils Jansen,A5076529339,Nils Jansen,,2006,2009,4,W2064117972
+,Volker M. Haug,A5076569516,Volker M. Haug,,2011,2011,1,W2013017540
+,Martin Sternberg,A5076677350,Martin Sternberg,,2024,2024,1,W4394925253
+,Patrick Ostendorf,A5076762188,Patrick Ostendorf,,2013,2013,1,W1966339984
+,Albert Ingold,A5076769867,Albert Ingold,,2012,2012,1,W2066372921
+,Volker Lipp,A5076776506,Volker Lipp,,2016,2016,1,W2336550583
+,Daniel Pfäffli,A5076781890,Daniel Pfäffli,,2022,2022,1,W4285193152
+,Walter Frenz,A5076837884,Walter Frenz,,2007,2009,2,W4238320670
+,Axel Metzger,A5077039745,Axel Metzger,,2008,2019,3,W37247251
+,Lorna Woods,A5077096227,Lorna Woods,,2021,2021,1,W3137030884
+,Wiebke Voß,A5077138075,W. Gregory Voss,,2020,2020,1,W3012362295
+,Kristin Boosfeld,A5077159943,Kristin Boosfeld,,2016,2016,1,W2463722644
+,Christian Baldus,A5077171460,Christian Baldus,,2016,2023,3,W4388660958
+,Christian Schröder,A5077218078,Christian Schröder,,2018,2018,1,W4232834879
+,Rolf D. Herzberg,A5077229504,Rolf D. Herzberg,,2018,2018,1,W2790444805
+,Rolf Dietrich Herzberg,A5077229504,Rolf D. Herzberg,,2007,2023,5,W4377002495
+,Felix Steffek,A5077301528,Felix Steffek,,2009,2009,1,W1992865487
+,Reiner Schmidt,A5077353221,Reiner Schmidt,,2006,2022,3,W4296010608
+,Philipp Renninger,A5077377504,Philipp Renninger,,2022,2022,1,W4285173456
+,Johannes Gerberding,A5077402431,Johannes Gerberding,,2012,2012,1,W2027436218
+,Stephanie Sittmann-Haury,A5077414077,Stephanie Sittmann-Haury,,2014,2014,1,W4247632393
+,Christoph Ohler,A5077445231,Christoph Ohler,,2006,2023,7,W4323024989
+,Alexander Hollerbach,A5077688548,Alexander Höllerbach,,2014,2020,3,W4231656659
+,Stefan Frederic Thönissen,A5077762692,Stefan Frederic Thönissen,,2022,2022,1,W4285253525
+,Dana Burchardt,A5077811271,Dana Burchardt,,2023,2023,1,W4377002431
+,Uwe Blaurock,A5077860175,Uwe Blaurock,,2006,2012,2,W2013137681
+,Andreas Roth,A5077924061,Andreas Roth,,2009,2009,1,W2018848574
+,Ulrich Battis,A5077969972,Ulrich Battis,,2007,2007,1,W4240556964
+,Ralf Müller-Terpitz,A5077989130,Ralf Müller-Terpitz,,2006,2020,2,W3109826365
+,Gregor Albers,A5078006730,Gregor Albers,,2015,2024,4,W4393954471
+,Mareike Schmidt,A5078029302,Mareike Schmidt,,2013,2013,1,W4240412260
+,Jörn Heinemann,A5078175187,Jörn Heinemann,,2016,2016,1,W2507979036
+,Christian Rolfs,A5078195124,Christian Rolfs,,2009,2017,4,W4253303349
+,Erol Pohlreich,A5078222422,Erol Pohlreich,,2011,2018,2,W2794175567
+,Hermann Pünder,A5078279909,Hermann Pünder,,2015,2023,2,W4366432115
+,Lorenz Leitmeier,A5078294183,Lorenz Leitmeier,,2023,2023,1,W4380485482
+,Boris P. Paal,A5078332630,Boris P. Paal,,2006,2022,7,W4285213159
+,Jan-Niklas Schönemann,A5078357905,Jan-Niklas Schönemann,,2020,2020,1,W3002288770
+,Lars Kutzner,A5078403904,Lars Kutzner,,2006,2006,1,W2070277382
+,Adrian Schmidt-Recla,A5078406243,Adrian Schmidt-Recla,,2008,2008,1,W2088834386
+I149899117,Hanjo Hamann,A5078427699,Hanjo Hamann,Max Planck Society,2013,2018,2,W2790934501
+I4210136328,Hanjo Hamann,A5078427699,Hanjo Hamann,Max Planck Institute for Research on Collective Goods,2013,2018,2,W2790934501
+,Hanjo Hamann,A5078427699,Hanjo Hamann,,2014,2023,7,W4320923779
+,Sebastian Graf von Kielmansegg,A5078448919,Sebastian Graf von Kielmansegg,,2014,2014,1,W1966041708
+,Wolfgang Kahl,A5078455045,Wolfgang Kahl,,2006,2016,13,W4252280261
+,Alexander Schall,A5078506263,Alexander Schall,,2007,2021,7,W4244596850
+,Roland Derksen,A5078518086,Roland Derksen,,2022,2022,1,W4315834772
+,Christian Starck,A5078526483,Christian Starck,,2006,2021,26,W4248901624
+,Peter Mankowski,A5078554171,Peter Mankowski,,2008,2019,14,W4256158665
+,Sabrina Schönrock,A5078626130,Sabrina Schönrock,,2008,2008,1,W1963890842
+,Hannes Henke,A5078633994,Hannes Henke,,2022,2023,2,W4362569852
+,Christoph Teichmann,A5078647167,Christoph Teichmann,,2012,2012,1,W2083570773
+,Péter Techet,A5078660391,Péter Techet,,2021,2021,1,W3215784948
+,Rupert Stettner,A5078675378,Rupert Stettner,,2013,2013,1,W2071902597
+,Andreas Hetzenecker,A5078736360,Andreas Hetzenecker,,2006,2006,1,W2026618356
+,Philipp Schmitt,A5078739110,Philipp Schmitt,,2019,2019,1,W2988931926
+,Franziska Huber,A5078763374,Franziska Huber,,2018,2018,1,W2890966315
+,Michael Droege,A5078783261,Michael Droege,,2023,2023,1,W4386499787
+,Claire Feldhusen,A5078820449,Claire Feldhusen,,2016,2016,1,W4251507083
+,Albrecht Weber,A5079031380,Albrecht Weber,,2010,2010,1,W1965711623
+,Ninon Colneric,A5079050645,Ninon Colneric,,2023,2023,1,W4386717001
+,Sebastian Bretthauer,A5079067526,Sebastian Bretthauer,,2020,2020,1,W4210555939
+,Hans Christoph Grigoleit,A5079181301,Hans Christoph Grigoleit,,2006,2008,2,W1990149598
+,kai Engelbrecht,A5079198510,kai Engelbrecht,,2010,2010,1,W2289504328
+,Joachim Münch,A5079200515,Joachim Münch,,2013,2013,1,W2072604664
+,Michael Heghmanns,A5079221623,Michael Heghmanns,,2014,2014,1,W4245935415
+,Christopher Rennig,A5079333962,Christopher Rennig,,2023,2023,1,W4320923806
+,Marina Preiß,A5079473352,Marina Preiß,,2022,2022,1,W4210347836
+I149899117,Hannes Rösler,A5079572338,Hannes Rösler,Max Planck Society,2009,2009,1,W2038591844
+I4210112296,Hannes Rösler,A5079572338,Hannes Rösler,Max Planck Institute for Comparative and International Private Law,2009,2009,1,W2038591844
+,Hannes Rösler,A5079572338,Hannes Rösler,,2006,2007,2,W4230123215
+,Klaus-Peter Schroeder,A5079658879,Klaus-Peter Schroeder,,2014,2014,1,W1971187742
+,Franz Streng,A5079779706,Franz Streng,,2007,2017,6,W4241912265
+,Dan Wielsch,A5079865576,Dan Wielsch,,2008,2020,2,W3004457148
+,Ingke Goeckenjan,A5079883463,Ingke Goeckenjan,,2013,2013,1,W2021540364
+,Christoph Müller,A5079972031,Christoph Müller,,2007,2007,1,W2027522000
+,Felix Ruppert,A5079998372,Felix Ruppert,,2021,2021,1,W4242651209
+,Felix Andreas Kiefner,A5080002506,Felix Andreas Kiefner,,2021,2021,1,W4205587310
+,Christoph Burchard,A5080029982,Christoph Burchard,,2007,2007,1,W4243919441
+,Markus Kenntner,A5080065435,Markus Kenntner,,2008,2008,1,W1980647796
+,David Bruch,A5080089019,David Bruch,,2011,2011,2,W4231061899
+,Eva Frenz,A5080112146,Eva Frenz,,2020,2020,1,W4241728981
+,Karl Stöger,A5080190256,Karl Stöger,,2007,2007,1,W4239033479
+,Sven Vetter,A5080212903,Sven Vetter,,2019,2019,1,W2936053392
+,Philipp M. Reuß,A5080337028,Philipp M. Reuß,,2020,2020,1,W3109195246
+,Klaus Ferdinand Gärditz,A5080419284,Klaus Ferdinand Gärditz,,2007,2024,22,W4391354402
+,Frank Skamel,A5080560498,Frank Skamel,,2006,2006,1,W2073311470
+,Stefan Muckel,A5080605936,Stefan Muckel,,2006,2006,1,W1978823988
+,Kai-Oliver Knops,A5080668462,Kai-Oliver Knops,,2018,2021,2,W3136987919
+,Thomas Rauscher,A5080769390,T. Rauscher,,2006,2013,4,W4255459863
+,Roman F. Kehrberger,A5080856724,Roman F. Kehrberger,,2020,2020,1,W4236562608
+,Georg Maier-Reimer,A5080978180,Georg Maier-Reimer,,2012,2012,1,W2320041290
+,Anja Timmermann,A5080980199,Anja Timmermann,,2018,2018,1,W2916463239
+,Joseph Isensee,A5081023810,Joseph Isensee,,2009,2010,3,W2061330769
+,Reinhard Greger,A5081063927,Reinhard Greger,,2010,2022,4,W4297820517
+,Horst Heinrich Jakobs,A5081137859,Horst Heinrich Jakobs,,2006,2012,4,W2089256177
+,Tobias Linke,A5081151823,Tobias Linke,,2016,2016,1,W2557729832
+,Jasper Wentz,A5081167429,Jasper Wentz,,2019,2019,1,W2955239393
+,Helmut Köhler,A5081203529,Helmut Köhler,,2010,2010,1,W1972923614
+,Joachim Hruschka,A5081338836,Joachim Hruschka,,2007,2007,1,W1967886951
+,Martin Fielenbach,A5081345967,Martin Fielenbach,,2016,2016,1,W4251452105
+,Johannes Saurer,A5081369764,Johannes Saurer,,2007,2015,3,W2334134830
+,Rike Sinder,A5081385209,Rike Sinder,,2021,2021,1,W3214594699
+,Karin Nehlsen-von Stryk,A5081386546,Karin Nehlsen-von Stryk,,2007,2007,1,W1996323063
+,Werner F. Ebke,A5081511257,Werner F. Ebke,,2024,2024,1,W4390741494
+,Christiane Wendehorst,A5081561741,Christiane Wendehorst,,2021,2021,1,W3207888124
+,Reinhard Merkel,A5081825807,Reinhard Merkel,,2012,2018,2,W2790948809
+,Till Mengler,A5081845690,Till Mengler,,2019,2019,1,W4241831090
+,René Börner,A5081881721,René Börner,,2018,2018,2,W2890810673
+,Roman Guski,A5081892525,Roman Guski,,2020,2020,1,W3004889050
+,Andreas Deutsch,A5081906909,Andreas Deutsch,,2022,2022,1,W4315834741
+,Werner Schroeder,A5081937701,Werner Schroeder,,2011,2011,1,W4241872419
+,Karl-Eberhard Hain,A5082107091,Karl-Eberhard Hain,,2016,2022,3,W4312256690
+,Dirk Looschelders,A5082161789,Dirk Looschelders,,2012,2022,3,W4312237364
+,Christian Zieglmeier,A5082175696,Christian Zieglmeier,,2007,2007,1,W4246100217
+,Felix Maultzsch,A5082228942,Felix Maultzsch,,2010,2023,10,W4362569873
+,Timo Junker,A5082380694,Timo Junker,,2022,2022,1,W4213230440
+,Martin Eifert,A5082414724,Martin Eifert,,2023,2023,1,W4362569868
+,Oliver Mörsdorf,A5082454481,Oliver Mörsdorf,,2010,2023,7,W4380434486
+,Matthias Pechstein,A5082582065,Matthias Pechstein,,2010,2010,1,W63739338
+,Peter Allgayer,A5082785953,Peter Allgayer,,2023,2023,1,W4388144187
+,Matthias Wießner,A5082905531,Matthias Wießner,,2010,2010,1,W2013386967
+,Jennifer Antomo,A5082922419,Jennifer Antomo,,2015,2015,1,W4237138452
+,Rainer Wernsmann,A5082941889,Rainer Wernsmann,,2014,2017,2,W4240727483
+,Heinz Holzhauer,A5082962806,Heinz Holzhauer,,2009,2021,2,W3124929112
+,Daniel Ulber,A5083092910,Daniel Ulber,,2013,2013,1,W4230656257
+,Jan-R. Sieckmann,A5083140160,Jan–R. Sieckmann,,2009,2009,1,W2056991705
+,Matthias Jahn,A5083271909,Matthias Jahn,,2010,2022,3,W4205126159
+,Günther Wiese,A5083277091,Günther Wiese,,2011,2011,1,W2061399354
+,Ulrich Vosgerau,A5083299033,Ulrich Vosgerau,,2011,2011,1,W2049234821
+,Michael Hettinger,A5083334481,Michael Hettinger,,2006,2021,8,W4252216037
+,Sebastian Kolbe,A5083359387,Sebastian Kolbe,,2009,2013,2,W2024121559
+,Mathieu Wagner,A5083386525,Mathieu Wagner,,2022,2022,1,W4313029439
+,Dinah Wielpütz,A5083680780,Dinah Wielpütz,,2011,2011,1,W207670692
+,Florian Meinel,A5083701122,Florian Meinel,,2014,2014,1,W2071623822
+,Elisa Hoven,A5083757362,Elisa Hoven,,2016,2022,6,W4285223585
+,Stefan Vogenauer,A5083838057,Stefan Vogenauer,,2006,2024,2,W4392778963
+,Udo Reifner,A5083886512,Udo Reifner,,2021,2021,1,W4250377289
+,Wilfried Berg,A5083989004,Wilfried Berg,,2006,2008,4,W4233790353
+,Andrea Diehl,A5083998173,Andrea Diehl,,2011,2011,1,W2070760390
+,Peter Salje,A5084019633,Peter Salje,,2013,2013,1,W4251176691
+,Horst Konzen,A5084061418,Horst Konzen,,2010,2010,2,W2064251003
+,Matthias Leistner,A5084142413,Matthias Leistner,,2009,2014,3,W4236841873
+,Susanne Augenhofer,A5084161790,Susanne Augenhofer,,2007,2007,1,W4249487981
+,Anna Katharina Klasen,A5084290827,Anna Katharina Klasen,,2017,2017,1,W2748736742
+,Johannes Masing,A5084361215,Johannes Masing,,2011,2022,4,W4210562888
+,Michael Florian Müller,A5084438380,Michael F. Müller,,2016,2016,1,W2559622656
+,Kilian Bälz,A5084468622,Kilian Bälz,,2006,2006,1,W2041391349
+,Stephan Meyer,A5084547752,Stephan Meyer,,2017,2017,1,W2613295063
+,Eckart Klein,A5084553807,Eckart Klein,,2009,2009,1,W2001779898
+,Gerhard Werle,A5084619007,Gerhard Werle,,2012,2017,2,W2569505323
+,Wolfram Höfling,A5084621859,Wolfram Höfling,,2006,2021,4,W4229529118
+,Tobias Mast,A5084622071,Tobias Mast,,2021,2023,2,W4362569836
+,Hubert Meyer,A5084788882,Hubert Meyer,,2019,2019,1,W2945677670
+,Claus Kreß,A5084859844,Claus Kreß,,2011,2016,5,W4236131015
+,Andreas M. Fleckner,A5084868596,Andreas M. Fleckner,,2018,2018,2,W4250766963
+,Christian Wilhelm,A5084896915,Christian Wilhelm,,2022,2022,1,W4312237692
+,Ferdinand Wollenschläger,A5084956923,Ferdinand Wollenschläger,,2018,2018,1,W2898345825
+,Volker Lipp,A5085066293,Volker Lipp,,2012,2012,1,W4238163247
+,Nina Schrott,A5085102682,Nina Schrott,,2022,2022,1,W4220688801
+,Beate Gsell,A5085103735,Beate Gsell,,2008,2023,11,W4388660929
+,Robert Magnus,A5085140420,Robert Magnus,,2017,2017,1,W2765862128
+,Alexander Baur,A5085147181,Alexander Baur,,2017,2019,2,W4243827918
+,Sven Hetmank,A5085265723,Sven Hetmank,,2014,2014,1,W2068246033
+,Martin Nettesheim,A5085289038,Martin Nettesheim,,2008,2022,11,W4285176376
+,Hans-Heinrich Trute,A5085334010,Hans-Heinrich Trute,,2018,2018,1,W2792440899
+,Michael Stürner,A5085570366,Michael Stürner,,2011,2023,8,W4366432563
+,Mario Bachmann,A5085616488,Mario Bachmann,,2019,2019,1,W2964921415
+,Dieter Medicus,A5085624877,Dieter Medicus,,2007,2007,1,W1972419370
+,Wernhard Möschel,A5085652455,Wernhard Möschel,,2006,2009,5,W4234401460
+,Hannes Wais,A5085705963,Hannes Wais,,2016,2022,2,W4226332724
+,Tade Matthias Spranger,A5085777560,Tade Matthias Spranger,,2009,2010,2,W987101600
+,Maximilian Lenk,A5085796336,Maximilian Lenk,,2022,2024,2,W4394925853
+,Julia Geneuss,A5085862274,Julia Geneuss,,2015,2015,1,W2915539009
+,Gerhard Seher,A5085890511,Gerhard Seher,,2007,2010,2,W4240646907
+,Heike Jung,A5086013759,Heike Jung,,2009,2022,13,W4210342161
+,Dorothea Magnus,A5086039319,Dorothea Magnus,,2017,2017,1,W2915625781
+,Holger Pils,A5086073540,Holger Pils,,2013,2013,1,W2027377159
+,Markus Hawickenbrauck,A5086081974,Markus Hawickenbrauck,,2019,2019,1,W2916062255
+,Christian Maierhöfer,A5086128362,Christian Maierhöfer,,2007,2007,1,W4239182548
+,Tobias Reinbacher,A5086128761,Tobias Reinbacher,,2020,2020,1,W3032996631
+,Susanne Heinemeyer,A5086162303,Susanne Heinemeyer,,2017,2017,1,W2763797284
+,Jannik Otto,A5086198155,Jannik Otto,,2018,2018,1,W2806512575
+,Fritz Rittner,A5086239063,Fritz Rittner,,2007,2011,5,W4255890841
+,Raphael Rauch,A5086245507,Raphael Rauch,,2014,2014,1,W1974836639
+,Karl-E Hain,A5086415676,Karl-E Hain,,2011,2011,1,W2027045603
+,Stefanie Jung,A5086447842,Stefanie Jung,,2020,2024,2,W4392205391
+,Christian Jäger,A5086531860,Christian Jäger,,2014,2015,2,W4249497382
+,Victoria Seeliger,A5086622621,Victoria Seeliger,,2018,2018,1,W2890966315
+,Rolf Wagner,A5086640568,Rolf Wagner,,2014,2014,1,W2032445975
+,Stefan Brink,A5086694135,Stefan Brink,,2011,2011,1,W4256243866
+,Jochen Mohr,A5086712105,Jochen Mohr,,2009,2018,4,W45963448
+,Markus Kotzur,A5086726825,Markus Kotzur,,2006,2021,8,W4239411404
+,Eberhard Schmidt-Aßmann,A5086785178,Eberhard Schmidt-Aßmann,,2010,2010,1,W2102749839
+,Anne Röthel,A5086803437,Anne Röthel,,2007,2018,8,W4254981586
+,Thomas Kienle,A5086843097,Thomas Kienle,,2019,2019,1,W2918363491
+,Alexander Blankenagel,A5086878882,Alexander Blankenagel,,2015,2022,3,W4248915185
+,Jan Schröder,A5086938314,Jan Schröder,,2014,2022,4,W4312916724
+,Johannes Caspar,A5086949844,Johannes Caspar,,2011,2016,2,W4250106145
+,Hermann Reichold,A5086995397,Hermann Reichold,,2006,2014,8,W4246966915
+,Joachim Renzikowski,A5087027250,Joachim Renzikowski,,2013,2021,2,W4239039445
+,Matthias Weller,A5087045650,Matthias Weller,,2011,2011,1,W4243979438
+I149899117,Tatjana Hörnle,A5087123529,Tatjana Hörnle,Max Planck Society,2020,2020,2,W3107700202
+I4210134943,Tatjana Hörnle,A5087123529,Tatjana Hörnle,"Max Planck Institute for the Study of Crime, Security and Law",2020,2020,2,W3107700202
+,Tatjana Hörnle,A5087123529,Tatjana Hörnle,,2006,2019,8,W2949323701
+,Sascha Sebastian,A5087187819,Sascha Sebastian,,2017,2017,1,W2764166603
+,Nina Benz,A5087188135,Nina Benz,,2017,2017,1,W2917134397
+,Andreas Stegbauer,A5087196995,Andreas Stegbauer,,2009,2009,1,W4236651302
+,Anika Klafki,A5087230628,Anika Klafki,,2018,2018,1,W2809633074
+,Julian Philipp Rapp,A5087234363,Julian Philipp Rapp,,2020,2020,1,W3011699168
+,Barbara Veit,A5087236481,Barbara Veit,,2007,2023,3,W4315487126
+,Hans Martin Schellhase,A5087332792,Hans Martin Schellhase,,2009,2012,3,W2071410480
+,Verena Frick,A5087384225,Verena Frick,,2017,2017,1,W2676693087
+,Hans Achenbach,A5087414201,Hans Achenbach,,2011,2011,1,W2314011453
+,Thomas Vesting,A5087560197,Thomas Vesting,,2013,2020,2,W4210728432
+,Alexander Hellgardt,A5087612708,Alexander Hellgardt,,2018,2018,1,W2916972474
+,Frederik Jaeger,A5087695255,Frederik Jaeger,,2023,2023,1,W4352993322
+,Oliver Dörr,A5087702033,Oliver Dörr,,2006,2018,3,W4243922963
+,Wolfgang Spellbrink,A5087802403,Wolfgang Spellbrink,,2007,2023,2,W4386499803
+,Johann Braun,A5087886177,Johann Braun,,2011,2016,2,W2401343428
+,Mark Alexander Zöller,A5087979784,Mark A. Zöller,,2007,2007,1,W1973721897
+,Mark A. Zöller,A5087979784,Mark A. Zöller,,2010,2010,1,W4234847945
+,Anna Leisner-Egensperger,A5088022429,Anna Leisner-Egensperger,,2021,2021,1,W3202847858
+,Stefan Klingbeil,A5088023254,Stefan Klingbeil,,2016,2020,3,W3004767433
+,Benjamin Rusteberg,A5088059514,Benjamin Rusteberg,,2015,2015,1,W2917038807
+,Hans-Martin Pawlowski,A5088072079,Hans-Martin Pawlowski,,2007,2007,1,W4237091144
+,Rolf Stürner,A5088198736,Rolf Stürner,,2006,2022,7,W4294224457
+,Hanno Merkt,A5088233418,Hanno Merkt,,2006,2022,2,W4291498135
+,Ulrich Preis,A5088237377,Ulrich Preis,,2013,2013,1,W4230656257
+,Kyrill-A. Schwarz,A5088247998,Kyrill-A. Schwarz,,2006,2016,6,W2515851140
+,Christoph Bezemek,A5088266530,Christoph Bezemek,,2015,2015,1,W2335580303
+,Björn Jesse,A5088286138,Björn Jesse,,2008,2008,1,W2064883657
+,Christian Hattenhauer,A5088441459,Christian Hattenhauer,,2008,2008,1,W1999479141
+,Thomas Vormbaum,A5088627474,Thomas Vormbaum,,2008,2018,6,W4254114303
+,Thomas Henze,A5088660055,Thomas Henze,,2006,2006,1,W2034402915
+,Rainer Wahl,A5088737070,Rainer Wahl,,2013,2013,1,W1985329426
+,Ronald Schmid,A5088915785,Ronald Schmid,,2008,2008,1,W2046125876
+,Tonio Walter,A5088935675,Tonio Walter,,2006,2019,2,W2954880576
+,Till Patrik Holterhus,A5088983758,Till Patrik Holterhus,,2023,2023,1,W4366432763
+,Constantin Knauer,A5089043876,Constantin Knauer,,2022,2022,1,W4210453012
+,Yannic Hübner,A5089079011,Yannic Hübner,,2018,2018,1,W2794102063
+,Stephan Meder,A5089097592,Stephan Meder,,2019,2019,1,W2961938998
+,Kim Philip Linoh,A5089128730,Kim Philip Linoh,,2013,2016,2,W2558341545
+,Frank Peters,A5089208293,Frank Peters,,2006,2006,2,W4242445778
+,Peter Bydlinski,A5089284245,Peter Bydlinski,,2008,2009,2,W4234067247
+,Christian Bumke,A5089306753,Christian Bumke,,2014,2014,1,W2053699071
+,Katharina Uffmann,A5089338721,Katharina Uffmann,,2016,2018,2,W2890088311
+,Alexander Tischbirek,A5089400914,Alexander Tischbirek,,2013,2018,2,W2807030529
+,Jens Gal,A5089446882,Jens Gal,,2021,2021,1,W3161200230
+,Stephan Kirste,A5089530466,Stephan Kirste,,2011,2011,1,W1979145155
+,Maximilian Waßmuth,A5089565741,Maximilian Waßmuth,,2017,2017,1,W2681513613
+,Moritz Kalb,A5089628750,Moritz Kalb,,2017,2017,1,W2735094064
+,Thomas A. H. Schöck,A5089651478,Thomas A. H. Schöck,,2021,2021,1,W3173100534
+,Maximilian Fuchs,A5089679111,Maximilian Fuchs,,2006,2015,3,W4256535388
+,Johannes Cziupka,A5089706662,Johannes Cziupka,,2009,2009,1,W4238068769
+,Jakob Hohnerlein,A5089809607,Jakob Hohnerlein,,2023,2023,2,W4387303709
+,Wolfgang Bock,A5089882794,Wolfgang Böck,,2012,2012,1,W1986695405
+,Heike Krischok,A5089890962,Heike Krischok,,2014,2014,1,W1989950337
+,Detlef Liebs,A5089891388,Detlef Liebs,,2015,2015,1,W2316809657
+,Friederike Frizen,A5089963916,Friederike Frizen,,2010,2010,1,W2031830154
+,Constantin Willems,A5089969071,Constantin Willems,,2013,2013,1,W1988878399
+,Monika Böhm,A5089969747,Monika Böhm,,2022,2022,1,W4294224408
+,Kristina Schönfeldt,A5090010799,Kristina Schönfeldt,,2018,2018,1,W2915514655
+,John Heidemann,A5090014731,John Heidemann,,2019,2019,1,W2985820671
+,Matthias Schaut,A5090051318,Matthias Schaut,,2021,2021,1,W3118476631
+,Thomas A. Heiß,A5090051694,Thomas A. Heiß,,2015,2015,1,W4254899003
+,Thomas Regenfus,A5090124231,Thomas Regenfus,,2016,2021,3,W3209504131
+,Matthias Jacobs,A5090129768,Matthias Jacobs,,2017,2019,2,W4237733894
+,Gunther Kühne,A5090165792,Gunther Kühne,,2006,2018,6,W4205617831
+,Philip Wimalasena,A5090211170,Philip Wimalasena,,2012,2012,1,W1965036148
+,Sascha Ziemann,A5090280029,Sascha Ziemann,,2014,2014,1,W2071065319
+,Barbara Rox,A5090305070,Barbara Rox,,2012,2012,1,W4244916089
+,Julian Krüper,A5090326032,Julian Krüper,,2010,2013,2,W2055731236
+,Uwe H. Schneider,A5090404986,Uwe H. Schneider,,2013,2013,1,W2027377159
+,Katharina Gräfin von Schlieffen,A5090431091,Katharina Gräfin von Schlieffen,,2011,2018,2,W2784305580
+,Bernhard Ulrici,A5090447097,Bernhard Ulrici,,2016,2019,4,W4235422366
+,Christian von Bar,A5090452738,Christian Bär,,2014,2014,1,W2016443181
+,Felix Bischof,A5090481240,Felix Bischof,,2020,2020,1,W4241728981
+,Gerhard Wagner,A5090569228,Gerhard Wagner,,2009,2023,8,W4320923850
+,Anne Sanders,A5090640181,Anne E. Sanders,,2022,2022,1,W4312265888
+,Thomas Würtenberger,A5090688396,Thomas Würtenberger,,2008,2008,1,W2025113179
+,Uwe Kischel,A5090702536,Uwe Kischel,,2008,2017,2,W4245133956
+,Sebastian Steuer,A5090718714,Sebastian Steuer,,2023,2023,1,W4387755847
+,Joachim Rückert,A5090733883,Joachim Rückert,,2010,2023,7,W4386716845
+,Hans-Georg Dederer,A5090739633,Hans‐Georg Dederer,,2012,2022,3,W4210347836
+,Gerhard Otte,A5090799560,Gerhard Otte,,2021,2021,1,W4233398729
+,Rainer Hüttemann,A5090893268,Rainer Hüttemann,,2017,2023,2,W4386716971
+,Helmut Frister,A5090935362,Helmut Frister,,2010,2012,2,W1991791584
+,Ismo Dunderberg,A5091178975,Ismo Dunderberg,,2018,2018,1,W4252164222
+,Cara Röhner,A5091229937,Cara Röhner,,2022,2022,1,W4312953583
+,Yuanshi Bu,A5091233083,Yuanshi Bu,,2010,2022,3,W4226064903
+,Angelo Jr. Golia,A5091252438,Angelo Golia,,2023,2023,1,W4384788043
+,Roya Sangi,A5091316426,Roya Sangi,,2022,2022,1,W4220777073
+,Dimitrios Linardatos,A5091318673,Dimitrios Linardatos,,2020,2020,1,W3107775225
+,Martin Fries,A5091329174,Martin Fries,,2016,2022,2,W4226149531
+,Andrea Edenharter,A5091344858,Andrea Edenharter,,2018,2018,2,W4234763074
+,Simon Apel,A5091346920,Simon Apel,,2010,2010,1,W2013386967
+,Christian Hillgruber,A5091383931,Christian Hillgruber,,2006,2024,17,W4393954489
+,Michael Kahlo,A5091432585,Michael Kahlo,,2012,2012,1,W1979643614
+,Torsten Verrel,A5091490078,Torsten Verrel,,2018,2022,2,W4312530109
+,Alexandra M.J. Möhring,A5091493735,Alexandra M.J. Möhring,,2008,2008,1,W1981663508
+,Michael Fehling,A5091581998,Michael Fehling,,2010,2016,2,W2418934130
+,Moritz Hennemann,A5091693157,Moritz Hennemann,,2012,2017,3,W4253085754
+,Moritz Pöschke,A5091720662,Moritz Pöschke,,2010,2021,2,W4238289929
+,Dennis Bock,A5091764876,Dennis Bock,,2016,2016,1,W4240995305
+,Dirk von Selle,A5091800566,Dirk Selle,,2008,2008,1,W1983584968
+,Hans-Heiner Kühne,A5091833503,Hans-Heiner Kühne,,2007,2010,2,W4250895034
+,Franz Hofmann,A5091874127,Franz Hofmann,,2016,2018,3,W2891546495
+,Christoph Krönke,A5091875626,Christoph Krönke,,2017,2021,2,W3157087649
+,Lars Brocker,A5091899285,Lars Brocker,,2011,2011,1,W2073224245
+,Reinhard Bork,A5091907775,Reinhard Bork,,2006,2006,1,W4240613079
+,Inge Hanewinkel,A5091940620,Inge Hanewinkel,,2023,2023,1,W4387303752
+,Heike Jung,A5091968987,Heike Jung,,2023,2023,1,W4377002421
+,Hannes Wais,A5091968991,Hannes Wais,,2023,2023,1,W4377002427
+,Caroline Messner,A5091969002,Caroline Messner,,2023,2023,1,W4377002469
+,Alina-Jasmin Momtazi,A5092150865,Alina-Jasmin Momtazi,,2023,2023,1,W4380434486
+,Heiner Alwart,A5092150881,Heiner Alwart,,2023,2023,1,W4380434533
+,Daniel Thym,A5092157036,Daniel Thym,,2023,2023,1,W4380519751
+,Péter Techet,A5092297346,Péter Techet,,2022,2022,1,W4285115866
+,Guy Beaucamp,A5092298537,Guy Beaucamp,,2022,2022,1,W4285128078
+,Heike Jung,A5092300032,Heike Jung,,2022,2022,1,W4285143119
+,Christian van Endern,A5092301576,Christian van Endern,,2022,2022,1,W4285158153
+,Charlott Resske,A5092302271,Charlott Resske,,2022,2022,1,W4285165153
+,Maxi Weibel,A5092302272,Maxi Weibel,,2022,2022,1,W4285165153
+,Renate Penßel,A5092315725,Renate Penßel,,2022,2022,1,W4285303954
+,Anja Schmidt,A5092316106,Anja Schmidt,,2022,2022,1,W4285307638
+,Nils Jansen,A5092407559,Nils Jansen,,2023,2023,1,W4383268672
+,Luis Jakobi,A5092407607,Luis Jakobi,,2023,2023,1,W4383268778
+,Guy Beaucamp,A5092407608,Guy Beaucamp,,2023,2023,1,W4383268779
+,Moritz Litterst,A5092407609,Moritz Litterst,,2023,2023,1,W4383268784
+,Boas Kümper,A5092407626,Boas Kümper,,2023,2023,1,W4383268822
+,Thomas Groß,A5092407643,Thomas Groß,,2023,2023,1,W4383269053
+,Robert Alexy,A5092408629,Robert Alexy,,2023,2023,1,W4383294950
+,Susanne Baer,A5092498222,Susanne Baer,,2023,2023,1,W4384787683
+,Lorenz Reichert,A5092498302,Lorenz Reichert,,2023,2023,1,W4384787952
+,Hanjo Hamann,A5092733808,Hanjo Hamann,,2023,2023,1,W4386389348
+,Paul Lorenz,A5092733809,Paul Lorenz,,2023,2023,1,W4386389364
+,Anne Sanders,A5092743675,Anne Sanders,,2022,2022,1,W4285120264
+,Beate Gsell,A5092744268,Beate Gsell,,2022,2022,1,W4285142139
+,Jan Schröder,A5092745223,Jan Schröder,,2022,2022,1,W4285177497
+,Victor Limberger,A5092745476,Victor Limberger,,2022,2022,1,W4285188527
+,Jonas Botta,A5092745789,Jonas Botta,,2022,2022,1,W4285199184
+,Jana Bethke,A5092746033,Jana Bethke,,2022,2022,1,W4285210340
+,Malte Stieper,A5092746706,Malte Stieper,,2022,2022,1,W4285235942
+,Raphael Koch,A5092767410,Raphael Koch,,2023,2023,1,W4386499765
+,Ulrike Müßig,A5092767411,Ulrike Müßig,,2023,2023,1,W4386499766
+,Mathias Honer,A5092767419,Mathias Honer,,2023,2023,1,W4386499776
+,Luisa Zimmer,A5092772116,Luisa Zimmer,,2023,2023,1,W4386527865
+,Abbo Junker,A5092822070,Abbo Junker,,2023,2023,1,W4386394143
+,Constantin Breß,A5092829855,Constantin Breß,,2023,2023,1,W4389226862
+,Jan-Luca Helbig,A5092859719,Jan-Luca Helbig,,2023,2023,1,W4386696273
+,Philipp Wehrmann,A5092864809,Philipp Wehrmann,,2023,2023,1,W4386716825
+,Julia Wiederrich,A5092864810,Julia Wiederrich,,2023,2023,1,W4386716825
+,Leandro Dias,A5092864823,Leandro Dias,,2023,2023,1,W4386716875
+,Lucila Tuñón,A5092864824,Lucila Tuñón,,2023,2023,1,W4386716875
+,Moritz Renner,A5092864829,Moritz Renner,,2023,2023,1,W4386716898
+,Chantal Bittner,A5092864838,Chantal Bittner,,2023,2023,1,W4386716927
+,Felix Büning,A5092864871,Felix Büning,,2023,2023,1,W4386717009
+,Annika Häutle,A5092993457,Annika Häutle,,2023,2023,1,W4387303755
+,Julian Glas,A5092993458,Julian Glas,,2023,2023,1,W4387303755
+,Jürgen Kohler,A5092993473,Jürgen Kohler,,2023,2023,1,W4387303780
+,Christiaan Wittebol,A5092997023,Christiaan Wittebol,,2023,2023,1,W4387316950
+,Heike Jung,A5093084730,Heike Jung,,2023,2023,1,W4387740408
+,Matthias Jahn,A5093088955,Matthias Jahn,,2023,2023,1,W4387755892
+,Tim Potthast,A5093088962,Tim Potthast,,2023,2023,1,W4387755922
+,Kilian Wegner,A5093159842,,,2023,2023,1,W4388132246
+,Joachim Münch,A5093159843,,,2023,2023,1,W4388132249
+,Jan Zepf,A5093162565,,,2023,2023,1,W4388144144
+,Moritz Renner,A5093162567,,,2023,2023,1,W4388144153
+,Eva Herzog,A5093162582,,,2023,2023,1,W4388144204
+,Hanna Göken,A5093259569,Hanna Göken,,2023,2023,1,W4388660989
+,Nikita Rolsing,A5093337377,Nikita Rolsing,,2024,2024,1,W4392205391
+,Lorenz Kähler,A5093395168,Lorenz Kähler,,2023,2023,1,W4389226908
+,Fabian Stam,A5093395170,Fabian Stam,,2023,2023,1,W4389226919
+,Stephan Meder,A5093400688,Stephan Meder,,2023,2023,1,W4389252047
+,Martin Kment,A5093400692,Martin Kment,,2023,2023,1,W4389252069
+,Laurin I. Rudloff,A5093440127,Laurin I. Rudloff,,2023,2023,1,W4389443046
+,Norbert Gross,A5093440147,Norbert Gross,,2023,2023,1,W4389443154
+,Nils Schaks,A5093440152,Nils Schaks,,2023,2023,1,W4389443163
+,Markus Ogorek,A5093440153,Markus Ogorek,,2023,2023,1,W4389443167
+,Martin Morlok,A5093440154,Martin Morlok,,2023,2023,1,W4389443168
+,Paul Hüther,A5093821341,Paul Hüther,,2024,2024,1,W4391354416
+,Bernd Mertens,A5093821343,Bernd Mertens,,2024,2024,1,W4391354429
+,Florian Bode,A5093821351,Florian Bode,,2024,2024,1,W4391354472
+,Antonia Steinweg,A5093821352,Antonia Steinweg,,2024,2024,1,W4391354472
+,Martin Heger,A5093851420,Martin Heger,,2024,2024,1,W4391489049
+,Kubilay Yalçın,A5093851584,Kubilay Yalçın,,2024,2024,1,W4391490191
+,Lars Klöhn,A5093851661,Lars Klöhn,,2024,2024,1,W4391490703
+,Abbo Junker,A5093935907,Abbo Junker,,2024,2024,1,W4391852135
+,Jens Gal,A5094014695,Jens Gal,,2024,2024,1,W4392205397
+,Paul Galyga,A5094014703,Paul Galyga,,2024,2024,1,W4392205414
+,Lukas Hecht,A5094014704,Lukas Hecht,,2024,2024,1,W4392205414
+,Jochen Rauber,A5094014723,Jochen Rauber,,2024,2024,1,W4392205477
+,Kevin Franzke,A5094014725,Kevin Franzke,,2024,2024,1,W4392205502
+,Jürgen Kohler,A5094135896,Jürgen Kohler,,2024,2024,1,W4392742288
+,Haimo Schack,A5094135897,Haimo Schack,,2024,2024,1,W4392742297
+,Frank Meyer,A5094135903,Frank Meyer,,2024,2024,1,W4392742315
+,Julian Stolz,A5094135907,Julian Stolz,,2024,2024,1,W4392742326
+,Joachim Wolf,A5094144702,Joachim Wolf,,2024,2024,1,W4392777312
+I4210112296,Anna-Maria Gräfin,A5095479588,Anna-Maria Gräfin,Max Planck Institute for Comparative and International Private Law,2020,2020,1,W4247196333
+I4210112296,Von Lösch,A5095479589,Von Lösch,Max Planck Institute for Comparative and International Private Law,2020,2020,1,W4247196333
+,Markus Ogorek,A5095658208,Markus Ogorek,,2024,2024,1,W4393954443
+,Dian Schefold,A5095658210,Dian Schefold,,2024,2024,1,W4393954467
+,Gernot Sydow,A5095774644,Gernot Sydow,,2024,2024,1,W4394938027

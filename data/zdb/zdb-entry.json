@@ -1,0 +1,1056 @@
+{
+    "@context": "http://lobid.org/resources/context.jsonld",
+    "almaMmsId": "990054183900206441",
+    "issn": [
+        "0340692X",
+        "0340692X"
+    ],
+    "oclcNumber": [
+        "1367291467"
+    ],
+    "zdbId": "6463-4",
+    "dnbId": "010087257",
+    "deprecatedUri": "http://lobid.org/resources/HT002209571#!",
+    "hbzId": "HT002209571",
+    "title": "Süddeutsche Juristen-Zeitung",
+    "publication": [
+        {
+            "startDate": "1946",
+            "endDate": "1950",
+            "type": [
+                "PublicationEvent"
+            ],
+            "location": [
+                "Heidelberg"
+            ],
+            "publishedBy": [
+                "Schneider"
+            ],
+            "publicationHistory": "1.1946,Apr. - 5.1950",
+            "frequency": [
+                {
+                    "id": "http://marc21rdf.info/terms/continuingfre#m",
+                    "label": "monatlich"
+                }
+            ]
+        }
+    ],
+    "describedBy": {
+        "id": "http://lobid.org/resources/990054183900206441",
+        "label": "Webseite der hbz-Ressource 990054183900206441",
+        "type": [
+            "BibliographicDescription"
+        ],
+        "inDataset": {
+            "id": "http://lobid.org/resources/dataset#!",
+            "label": "lobid-resources – Der hbz-Verbundkatalog als Linked Open Data"
+        },
+        "resultOf": {
+            "type": [
+                "CreateAction"
+            ],
+            "endTime": "2023-12-02T12:06:59",
+            "instrument": {
+                "id": "https://github.com/hbz/lobid-resources",
+                "type": [
+                    "SoftwareApplication"
+                ],
+                "label": "Software lobid-resources"
+            },
+            "object": {
+                "id": "https://lobid.org/marcxml/990054183900206441",
+                "dateCreated": "2021-04-05",
+                "dateModified": "2023-08-10",
+                "type": [
+                    "DataFeedItem"
+                ],
+                "label": "hbz-Ressource 990054183900206441 im Exportformat MARC21 XML",
+                "inDataset": {
+                    "id": "https://datahub.io/dataset/hbz_unioncatalog",
+                    "label": "hbz_unioncatalog"
+                },
+                "sourceOrganization": {
+                    "id": "http://lobid.org/organisations/DE-600#!",
+                    "label": "Zeitschriftendatenbank (ZDB)"
+                },
+                "provider": {
+                    "id": "http://lobid.org/organisations/DE-101#!",
+                    "label": "Deutsche Nationalbibliothek"
+                },
+                "modifiedBy": [
+                    {
+                        "id": "http://lobid.org/organisations/DE-Luen4#!",
+                        "label": "Leuphana Universität Lüneburg, Medien- und Informationszentrum, Universitätsbibliothek"
+                    }
+                ]
+            }
+        },
+        "license": [
+            {
+                "id": "http://creativecommons.org/publicdomain/zero/1.0",
+                "label": "Creative Commons-Lizenz CC0 1.0 Universal"
+            }
+        ]
+    },
+    "sameAs": [
+        {
+            "id": "http://worldcat.org/oclc/1367291467",
+            "label": "OCLC Ressource"
+        },
+        {
+            "id": "http://ld.zdb-services.de/resource/6463-4",
+            "label": "ZDB-Ressource"
+        },
+        {
+            "id": "https://d-nb.info/010087257",
+            "label": "DNB-Ressource"
+        }
+    ],
+    "secondaryForm": [
+        {
+            "id": "http://lobid.org/resources/ZDB-2075778-5#!",
+            "label": "Elektronische Reproduktion"
+        }
+    ],
+    "related": [
+        {
+            "id": "http://lobid.org/resources/ZDB-2682194-1#!",
+            "note": [
+                "Online-Ausg."
+            ],
+            "label": "Süddeutsche Juristen-Zeitung"
+        }
+    ],
+    "inCollection": [
+        {
+            "id": "http://lobid.org/organisations/DE-655#!",
+            "label": "hbz - Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen, Netzwerkzone",
+            "type": [
+                "Collection"
+            ]
+        },
+        {
+            "id": "http://lobid.org/resources/HT014846970#!",
+            "label": "Zeitschriftendatenbank (ZDB)",
+            "type": [
+                "Collection"
+            ]
+        }
+    ],
+    "successor": [
+        {
+            "label": "Juristenzeitung",
+            "id": "http://lobid.org/resources/ZDB-3202-5#!",
+            "note": [
+                "Forts.:"
+            ]
+        }
+    ],
+    "language": [
+        {
+            "id": "http://id.loc.gov/vocabulary/iso639-2/ger",
+            "label": "Deutsch"
+        }
+    ],
+    "natureOfContent": [
+        {
+            "label": "Zeitschrift",
+            "id": "https://d-nb.info/gnd/4067488-5"
+        }
+    ],
+    "subject": [
+        {
+            "notation": "p 2",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "IFZ-Systematik",
+                "id": "http://bartoc.org/en/node/1245"
+            }
+        },
+        {
+            "notation": "600",
+            "type": [
+                "Concept"
+            ],
+            "id": "https://w3id.org/lobid/rpb2#n600",
+            "label": "Recht, öffentliche Verwaltung",
+            "source": {
+                "id": "https://w3id.org/lobid/rpb2",
+                "label": "LBZ-Notationen"
+            }
+        },
+        {
+            "notation": "PA 1000",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "RVK (Regensburger Verbundklassifikation)",
+                "id": "https://d-nb.info/gnd/4449787-8"
+            }
+        },
+        {
+            "notation": "340",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "DDC-Sachgruppen der ZDB"
+            },
+            "label": "Recht"
+        },
+        {
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "Dewey-Dezimalklassifikation",
+                "id": "https://d-nb.info/gnd/4149423-4"
+            },
+            "label": "Recht",
+            "notation": "340",
+            "version": "sdnb"
+        },
+        {
+            "type": [
+                "ComplexSubject"
+            ],
+            "label": "Deutschland (Bundesrepublik) | Recht | Rechtswissenschaft | Zeitschrift",
+            "componentList": [
+                {
+                    "type": [
+                        "PlaceOrGeographicName"
+                    ],
+                    "label": "Deutschland (Bundesrepublik)",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4011889-7",
+                    "gndIdentifier": "4011889-7",
+                    "altLabel": [
+                        "Alemanha (Deutschland, Bundesrepublik)",
+                        "Alemania (Deutschland, Bundesrepublik)",
+                        "Allemagne (Deutschland, Bundesrepublik)",
+                        "Almanija (Deutschland, Bundesrepublik)",
+                        "Almāniyā (Deutschland, Bundesrepublik)",
+                        "Bondsrepubliek Duitsland (Deutschland, Bundesrepublik)",
+                        "BRD",
+                        "BRD (1949-1990)",
+                        "Bundesrepublik Deutschland (1949-1990)",
+                        "Deutschland (1949-1990, Bundesrepublik)",
+                        "Deutschland (1949-1990) / Bundesrepublik",
+                        "Federal Republic of Germany (Deutschland, Bundesrepublik)",
+                        "Förbundsrepubliken Tyskland (Deutschland, Bundesrepublik)",
+                        "Förbundsrepublikken Tyskland (Deutschland, Bundesrepublik)",
+                        "FRG",
+                        "Germany (Deutschland, Bundesrepublik)",
+                        "Németországi Szövetségi Kőztársaság (Deutschland, Bundesrepublik)",
+                        "Niemiecka Republika Federalna Niemiecka Republika Federalna",
+                        "NRF",
+                        "Repubblica Federale di Germania (Deutschland, Bundesrepublik)",
+                        "Republic of Germany (Deutschland, Bundesrepublik)",
+                        "República Federal da Alemanha (Deutschland, Bundesrepublik)",
+                        "República Federal de Alemania (Deutschland, Bundesrepublik)",
+                        "Republik Federasi Djerman (Deutschland, Bundesrepublik)",
+                        "Republika Federalna Niemiec (Deutschland, Bundesrepublik)",
+                        "République Fédérale d'Allemagne (Deutschland, Bundesrepublik)",
+                        "RFN",
+                        "Saksan Liittotasavalta (Deutschland, Bundesrepublik)",
+                        "Westdeutschland (Bundesrepublik, 1949-1990)"
+                    ]
+                },
+                {
+                    "type": [
+                        "SubjectHeading"
+                    ],
+                    "label": "Recht",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4048737-4",
+                    "gndIdentifier": "4048737-4"
+                },
+                {
+                    "type": [
+                        "SubjectHeading"
+                    ],
+                    "label": "Rechtswissenschaft",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4076570-2",
+                    "gndIdentifier": "4076570-2"
+                },
+                {
+                    "label": "Zeitschrift"
+                }
+            ]
+        },
+        {
+            "type": [
+                "ComplexSubject"
+            ],
+            "label": "Deutsches Sprachgebiet | Recht | Rechtswissenschaft | Zeitschrift",
+            "componentList": [
+                {
+                    "type": [
+                        "PlaceOrGeographicName"
+                    ],
+                    "label": "Deutsches Sprachgebiet",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4070370-8",
+                    "gndIdentifier": "4070370-8",
+                    "altLabel": [
+                        "Deutschsprachige Länder",
+                        "Deutschsprachiger Raum",
+                        "Deutschsprachiges Gebiet",
+                        "Deutscher Sprachraum"
+                    ]
+                },
+                {
+                    "type": [
+                        "SubjectHeading"
+                    ],
+                    "label": "Recht",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4048737-4",
+                    "gndIdentifier": "4048737-4"
+                },
+                {
+                    "type": [
+                        "SubjectHeading"
+                    ],
+                    "label": "Rechtswissenschaft",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4076570-2",
+                    "gndIdentifier": "4076570-2"
+                },
+                {
+                    "label": "Zeitschrift"
+                }
+            ]
+        }
+    ],
+    "subjectslabels": [
+        "Deutschland (Bundesrepublik)",
+        "Recht",
+        "Rechtswissenschaft",
+        "Zeitschrift",
+        "Deutsches Sprachgebiet"
+    ],
+    "hasItem": [
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.s920",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-61:23348761170006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.s920",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-61:23348761250006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.s920",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-61:23348761240006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.s920",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-61:23348761190006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.s920",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-61:23348761180006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "BR001",
+            "currentLocation": "kA",
+            "callNumber": "Be 71",
+            "heldBy": {
+                "isil": "DE-Bm3",
+                "id": "http://lobid.org/organisations/DE-Bm3#!",
+                "label": "Bibliothek des Ruhrgebiets"
+            },
+            "id": "http://lobid.org/items/990054183900206441:DE-Bm3:2218918900007508#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "F0001",
+            "currentLocation": "03",
+            "callNumber": "ZZQ/JUZ",
+            "heldBy": {
+                "isil": "DE-708",
+                "id": "http://lobid.org/organisations/DE-708#!",
+                "label": "Universitätsbibliothek der Fernuniversität"
+            },
+            "seeAlso": [
+                "https://fub-hagen.digibib.net/search/katalog/record/(DE-600)6463-4"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-708:2285128110006464#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "T0006",
+            "currentLocation": "kA",
+            "callNumber": "V 2457u",
+            "heldBy": {
+                "isil": "DE-Tr2",
+                "id": "http://lobid.org/organisations/DE-Tr2#!",
+                "label": "Bibliothek des Bischöflichen Priesterseminars Trier"
+            },
+            "seeAlso": [
+                "https://katalog.dombibliothek-koeln.de/F/?local_base=ptr01&find_code=IDN&request=0340692X&func=find-b"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-Tr2:2229724300007817#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "R3032",
+            "currentLocation": "ZSZBL",
+            "callNumber": "ZBL Z 161",
+            "heldBy": {
+                "isil": "DE-386",
+                "id": "http://lobid.org/organisations/DE-386#!",
+                "label": "Universitätsbibliothek der RPTU in Kaiserslautern"
+            },
+            "seeAlso": [
+                "https://hbz-rptu.primo.exlibrisgroup.com/permalink/49HBZ_RTU/11q51gp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-386:2284716280007476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "R0003",
+            "currentLocation": "kA",
+            "callNumber": "Per. 1849",
+            "heldBy": {
+                "isil": "DE-107",
+                "id": "http://lobid.org/organisations/DE-107#!",
+                "label": "Landesbibliothekszentrum Rheinland-Pfalz / Pfälzische Landesbibliothek"
+            },
+            "seeAlso": [
+                "https://lbz-rlp.digibib.net/search/katalog/record/(DE-600)6463-4"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-107:2291548120007506#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "R0001",
+            "currentLocation": "kA",
+            "callNumber": "ZA 2210",
+            "heldBy": {
+                "isil": "DE-929",
+                "id": "http://lobid.org/organisations/DE-929#!",
+                "label": "Landesbibliothekszentrum Rheinland-Pfalz / Rheinische Landesbibliothek"
+            },
+            "seeAlso": [
+                "https://lbz-rlp.digibib.net/search/katalog/record/(DE-600)6463-4"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-929:2291548140007506#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "T0011",
+            "currentLocation": "MAGZS",
+            "callNumber": "z3016",
+            "heldBy": {
+                "isil": "DE-385",
+                "id": "http://lobid.org/organisations/DE-385#!",
+                "label": "Universitätsbibliothek Trier"
+            },
+            "seeAlso": [
+                "https://tricat.uni-trier.de/permalink/49HBZ_UBT/1hikhph/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-385:22301761770006470#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "B102",
+            "currentLocation": "B102-Zeit",
+            "callNumber": "Zs 118",
+            "heldBy": {
+                "isil": "DE-Bo102",
+                "id": "http://lobid.org/organisations/DE-Bo102#!",
+                "label": "Bundesministerium für Arbeit und Soziales, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-Bo102:22197295720006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "JS",
+            "currentLocation": "JS-Frei",
+            "callNumber": "A d 16",
+            "heldBy": {
+                "isil": "DE-5-187",
+                "id": "http://lobid.org/organisations/DE-5-187#!",
+                "label": "Universität Bonn, Institut für Strafrecht, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-5-187:22197295730006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "JI",
+            "currentLocation": "JI-Mag",
+            "callNumber": "Bf-2",
+            "heldBy": {
+                "isil": "DE-5-142",
+                "id": "http://lobid.org/organisations/DE-5-142#!",
+                "label": "Universität Bonn, Institut für Internationales Privatrecht und Rechtsvergleichung, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-5-142:22197295740006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "0",
+            "currentLocation": "0-Mag",
+            "callNumber": "Z 4' 48/40",
+            "heldBy": {
+                "isil": "DE-5",
+                "id": "http://lobid.org/organisations/DE-5#!",
+                "label": "Universitäts- und Landesbibliothek Bonn"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-5:22197295700006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "JZ",
+            "currentLocation": "JZ-Frei",
+            "callNumber": "Ae 18",
+            "heldBy": {
+                "isil": "DE-5-190",
+                "id": "http://lobid.org/organisations/DE-5-190#!",
+                "label": "Universität Bonn, Institut für Deutsches und Internationales Zivilprozeßrecht sowie Konfliktmanagement, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-5-190:22197295710006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "JJ",
+            "currentLocation": "JJ-Frei",
+            "callNumber": "Ac 107/3",
+            "heldBy": {
+                "isil": "DE-5-34",
+                "id": "http://lobid.org/organisations/DE-5-34#!",
+                "label": "Universität Bonn, Juristisches Seminar, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-5-34:22197295760006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "JD",
+            "currentLocation": "JD-Frei",
+            "callNumber": "Einzelsign.",
+            "heldBy": {
+                "isil": "DE-5-95",
+                "id": "http://lobid.org/organisations/DE-5-95#!",
+                "label": "Universität Bonn, Institut für deutsche und rheinische Rechtsgeschichte, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-5-95:22197295750006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "UB_BI",
+            "currentLocation": "11_Zs",
+            "callNumber": "11 KA000 S9J9",
+            "heldBy": {
+                "isil": "DE-361",
+                "id": "http://lobid.org/organisations/DE-361#!",
+                "label": "Universitätsbibliothek Bielefeld"
+            },
+            "seeAlso": [
+                "https://katalogplus.ub.uni-bielefeld.de/Search/Results?type=NZsatz&lookfor=6463-4"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-361:22270847480006442#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "ZRS",
+            "currentLocation": "ZRS_Z",
+            "callNumber": "7/S/3",
+            "heldBy": {
+                "isil": "DE-294-39",
+                "id": "http://lobid.org/organisations/DE-294-39#!",
+                "label": "Ruhr-Universität Bochum, Zentrales Rechtswissenschaftliches Seminar, Bibliothek"
+            },
+            "seeAlso": [
+                "https://hbz-ubo.primo.exlibrisgroup.com/permalink/49HBZ_UBO/mnkbqv/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-294-39:22104123630006471#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "UB",
+            "currentLocation": "UB_Z",
+            "callNumber": "ZRC 14",
+            "heldBy": {
+                "isil": "DE-294",
+                "id": "http://lobid.org/organisations/DE-294#!",
+                "label": "Ruhr-Universität Bochum, Universitätsbibliothek"
+            },
+            "seeAlso": [
+                "https://hbz-ubo.primo.exlibrisgroup.com/permalink/49HBZ_UBO/mnkbqv/alma990054183900206441"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-294:22104123620006471#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "E0001",
+            "currentLocation": "E06",
+            "callNumber": "52 Z 30",
+            "heldBy": {
+                "isil": "DE-465",
+                "id": "http://lobid.org/organisations/DE-465#!",
+                "label": "Universitätsbibliothek Duisburg-Essen"
+            },
+            "seeAlso": [
+                "https://primo.uni-due.de/discovery/search?query=any,contains,990054183900206441&tab=Everything&search_scope=MyInst_and_CI_custom&vid=49HBZ_UDE:UDE&offset=0"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-465:22421865990006446#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-217",
+            "currentLocation": "38-217-ZS",
+            "callNumber": "C 3",
+            "heldBy": {
+                "isil": "DE-38-217",
+                "id": "http://lobid.org/organisations/DE-38-217#!",
+                "label": "Lehrstuhl für Bürgerliches Recht, Deutsches und Internationales Handels-, Wirtschafts- und Bankrecht, Internationales Privatrecht und Rechtsvergleichung, Institut für Bankwirtschaft und Bankrecht, Abt. Bankrecht, Center for Transnational Law (CENTRAL), Gemeinsame Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-217:22267371130006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-209",
+            "currentLocation": "38-209-ZS",
+            "callNumber": "99001",
+            "heldBy": {
+                "isil": "DE-38-209",
+                "id": "http://lobid.org/organisations/DE-38-209#!",
+                "label": "Institut für Kirchenrecht und rheinische Kirchenrechtsgeschichte, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-209:22267371140006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-208",
+            "currentLocation": "38-208-ZS",
+            "callNumber": "IPR Z 116",
+            "heldBy": {
+                "isil": "DE-38-208",
+                "id": "http://lobid.org/organisations/DE-38-208#!",
+                "label": "Gemeinschaftsbibliothek Internationales Recht"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-208:22267371090006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-221",
+            "currentLocation": "38-221-ZS",
+            "callNumber": "Zb  6",
+            "heldBy": {
+                "isil": "DE-38-221",
+                "id": "http://lobid.org/organisations/DE-38-221#!",
+                "label": "Institut für Verfahrensrecht und Insolvenzrecht, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-221:22267371100006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-203",
+            "currentLocation": "38-203-ZS",
+            "callNumber": "Na 5",
+            "heldBy": {
+                "isil": "DE-38-203",
+                "id": "http://lobid.org/organisations/DE-38-203#!",
+                "label": "Forschungsinstitut für Deutsches und Europäisches Sozialrecht, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-203:22267371170006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-201",
+            "currentLocation": "38-201-ZS",
+            "callNumber": "RC b 46",
+            "heldBy": {
+                "isil": "DE-38-201",
+                "id": "http://lobid.org/organisations/DE-38-201#!",
+                "label": "Fachbibliothek Rechtswissenschaft, Rechtswissenschaftliches Seminar"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-201:22267371180006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-216",
+            "currentLocation": "38-216-ZS",
+            "callNumber": "Z I SJZ",
+            "heldBy": {
+                "isil": "DE-38-216",
+                "id": "http://lobid.org/organisations/DE-38-216#!",
+                "label": "Institut für Neuere Privatrechtsgeschichte, Deutsche und Rheinische Rechtsgeschichte, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-216:22267371080006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-204",
+            "currentLocation": "38-204-ZS",
+            "callNumber": "Signatur bitte vor Ort erfragen",
+            "heldBy": {
+                "isil": "DE-38-204",
+                "id": "http://lobid.org/organisations/DE-38-204#!",
+                "label": "Institut für Arbeits- und Wirtschaftsrecht, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-204:22267371120006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-222",
+            "currentLocation": "38-222-ZS",
+            "callNumber": "A VII 2",
+            "heldBy": {
+                "isil": "DE-38-222",
+                "id": "http://lobid.org/organisations/DE-38-222#!",
+                "label": "Institut für Medienrecht und Kommunikationsrecht, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-222:22267371150006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-205",
+            "currentLocation": "38-205-ZS",
+            "callNumber": "A 28/1",
+            "heldBy": {
+                "isil": "DE-38-205",
+                "id": "http://lobid.org/organisations/DE-38-205#!",
+                "label": "Institut für Strafrecht und Strafprozessrecht, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38-205:22267371160006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38",
+            "currentLocation": "38-ZS",
+            "callNumber": "Fa539",
+            "heldBy": {
+                "isil": "DE-38",
+                "id": "http://lobid.org/organisations/DE-38#!",
+                "label": "Universitäts- und Stadtbibliothek Köln, Hauptabteilung"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054183900206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-38:22267371110006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "RWS1",
+            "currentLocation": "RWS1_ZS",
+            "callNumber": "Allg XVI B 58",
+            "heldBy": {
+                "isil": "DE-6-016",
+                "id": "http://lobid.org/organisations/DE-6-016#!",
+                "label": "Universität Münster, Rechtswissenschaftliches Seminar, Bibliothek"
+            },
+            "seeAlso": [
+                "https://hbz-ulbms.primo.exlibrisgroup.com/discovery/search?query=any,contains,990054183900206441&tab=Everything&search_scope=MyInst_and_CI&vid=49HBZ_ULM:VU2&offset=0"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-6-016:22528497650006449#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "ITM",
+            "currentLocation": "ITM_ZS",
+            "callNumber": "ITM I 4",
+            "heldBy": {
+                "isil": "DE-6-326",
+                "id": "http://lobid.org/organisations/DE-6-326#!",
+                "label": "Universität Münster, Institut für Informations-, Telekommunikations- und Medienrecht (ITM), Bibliothek"
+            },
+            "seeAlso": [
+                "https://hbz-ulbms.primo.exlibrisgroup.com/discovery/search?query=any,contains,990054183900206441&tab=Everything&search_scope=MyInst_and_CI&vid=49HBZ_ULM:VU2&offset=0"
+            ],
+            "id": "http://lobid.org/items/990054183900206441:DE-6-326:22528497660006449#!"
+        }
+    ],
+    "medium": [
+        {
+            "label": "Print",
+            "id": "http://rdaregistry.info/termList/RDAproductionMethod/1010"
+        }
+    ],
+    "bibliographicLevel": {
+        "label": "Serial",
+        "id": "https://www.loc.gov/marc/bibliographic/bdleader.html#Serial"
+    },
+    "type": [
+        "BibliographicResource",
+        "Periodical"
+    ],
+    "responsibilityStatement": [
+        "Hrsg. Karl Geiler [u.a.]"
+    ],
+    "id": "http://lobid.org/resources/990054183900206441#!"
+}

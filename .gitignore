@@ -1,0 +1,6 @@
+.env
+.venv
+*.pyc
+journals.jsonl
+/.quarto/
+.DS_Store

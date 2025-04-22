@@ -1,0 +1,133 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+##  eva_pubyear_comparison.csv
+
+```{r}
+library(readr)
+library(dplyr)
+library(tidyr)
+
+# Rename column to target values
+data <- read_csv("data/eva_pubyear_comparison.csv") |>
+  rename(
+    publisher = num_articles_publisher,
+    openalex = num_articles_openalex
+  )
+
+# Pivot data into wider format
+wider_data <- data |>
+  select(-diff) |>
+  pivot_longer(
+    cols = c(publisher, openalex),
+    names_to = "source",
+    values_to = "value"
+  )
+
+write_csv(wider_data, "data/eva_pubyear_comparison_pivoted.csv")
+```
+
+##  jura_groels_alle_zeitschriften.csv
+```{r}
+library(readr)
+library(dplyr)
+library(tidyr)
+
+data <- read_csv("data/jura_groels_alle_zeitschriften.csv") |>
+  select(-zeitschrift, -in_wos_emerging_sources_index)
+
+# Pivot data into wider format
+wider_data <- data |>
+  mutate(across(.cols = c("issn_list", "wos_source_title", "wos_issn", "scopus_source_id", "scp_issn", "openalex_source_id", "openalex_issn", "crossref_issn"),
+                .fns = function(x) ifelse(is.na(x), 0, 1))) |>
+  pivot_longer(
+    cols = c("issn_list", "wos_source_title", "wos_issn", "scopus_source_id", "scp_issn", "openalex_source_id", "openalex_issn", "crossref_issn"),
+    names_to = "source",
+    values_to = "value"
+  )
+
+write_csv(wider_data, "data/jura_groels_alle_zeitschriften_pivoted.csv")
+```
+
+##  juristenzeitung_authors_affiliations_openalex.csv
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(tidyr)
+
+# "institution_id","raw_author_name","author_id","cleaned_author_name","cleaned_institution_name","min_pubyear","max_pubyear","publ_cnt","example_id"
+
+data <- read_csv("data/juristenzeitung_authors_affiliations_openalex.csv") |>
+  select(author_id, cleaned_author_name, institution_id, cleaned_institution_name) |>
+  group_by(author_id)  |>
+  filter(!is.na(institution_id) | row_number() == min(row_number()))  |>
+  slice(1)
+
+```
+
+
+```{r}
+library(dplyr)
+library(readr)
+
+impact_factor_df <- read_csv("data/eva_journal_impact_factors.csv") |>
+  group_by(abk) |>
+  summarize(journal_impact_factor_avg = mean(journal_impact_factor, na.rm = TRUE))
+
+general_journals_df <- read_csv("data/jura_groels_tabelle1_allg_zeitschriften.csv") |> select(abk, qualitaet_gewichtet)
+specialized_journals_df <- bind_rows(read_csv("data/jura_groels_tabelle2_fachspez_zeitschriften.csv") |> select(abk, qualitaet_gewichtet))
+
+
+```
+
+
+
+```{r}
+library(dplyr)
+library(readr)
+
+df <- read_csv("data/juristenzeitung_authors_affiliations_openalex.csv", 
+  locale = locale(encoding = "UTF-8")) |>
+  mutate(author_id = as.numeric(factor(author_id)),
+         institution_id = as.numeric(factor(institution_id)))
+
+vertices_authors <- df |>
+  select(id = author_id, label = cleaned_author_name) |>
+  filter(!is.na(id)) |>
+  mutate(type = "author") |>
+  distinct()
+
+vertices_institutions <- df |>
+  select(id = institution_id, label = cleaned_institution_name) |>
+  filter(!is.na(id)) |>
+  mutate(type = "institution") |>
+  distinct()
+
+vertices <- bind_rows(vertices_authors, vertices_institutions)
+
+# Assemble the nodes information in the target format
+nodes_info <- paste("*nodes\nId;Label;Type", 
+                    paste(vertices$id, vertices$label, vertices$type, sep = ";", collapse = "\n"), sep = "\n")
+
+edges <- df |> 
+  filter(!is.na(author_id) & !is.na(institution_id)) |>
+  select(from = author_id, to = institution_id) 
+
+# Assemble the edges information in the target format
+edges_info <- paste("*edges\nId;Id", 
+                    paste(edges$from, edges$to, sep = ";", collapse = "\n"), sep = "\n")
+
+# Concatenate nodes and edges information
+graph_info <- paste(nodes_info, edges_info, sep = "\n\n")
+
+# save data to file
+writeLines(graph_info, "data/juristenzeitung_authors_affiliations_openalex_network.csv", 
+  useBytes = TRUE)
+
+
+
+```

@@ -1,0 +1,52 @@
+"zeitschrift","abk","in_wos","in_wos_emerging_sources_index","in_scp","in_openalex","in_crossref","min_pubyear_in_openalex","max_pubyear_in_openalex","num_articles_in_openalex","sum_citations_for_all_articles_in_openalex"
+Archiv des öffentlichen Rechts,AöR,false,false,false,true,true,2000,2023,922,707
+Archiv für die civilistische Praxis,AcP,false,false,false,true,true,2003,2023,740,473
+DER BETRIEB,DB,false,false,false,false,false,,,0,
+Der Staat,Staat,false,false,false,true,true,2002,2023,467,1226
+JuristenZeitung,JZ,false,false,false,true,true,2006,2023,5720,2631
+Juristische Arbeitsblätter,JA,false,false,false,false,false,,,0,
+Juristische Ausbildung,JURA,false,false,false,true,true,2009,2023,3767,337
+Juristische Rundschau,JR,false,false,false,true,true,1925,2023,12909,7718
+Juristische Schulung,JuS,false,false,false,true,false,,,0,
+Kritische Justiz,KJ,false,false,false,true,true,1968,2023,2596,3766
+Kritische Vierteljahresschrift für Gesetzgebung und Rechtswissenschaft,KritV,false,false,false,true,true,2003,2023,585,424
+Monatsschrift für Deutsches Recht,MdR,false,false,false,true,true,1979,2023,10341,118
+Neue juristische Wochenschrift,NJW,false,false,false,true,false,,,0,
+Rabels Zeitschrift für ausländisches und internationales Privatrecht,RabelsZ,false,true,false,true,true,2001,2023,1405,1530
+Zeitschrift der Savigny-Stiftung für Rechtsgeschichte,ZRG,false,true,true,true,true,1861,2023,24676,12289
+Arbeit und Recht,AuR,false,false,false,false,false,,,0,
+Zeitschrift für Rechtspolitik,ZRP,false,false,false,true,false,1971,2021,588,29
+Zeitschrift für Zivilprozess,ZZP,false,false,false,true,true,1996,2019,483,39
+Zeitschrift für europäisches Privatrecht,ZEuP,false,false,false,false,false,,,0,
+Archiv des Volkerrechts,AVR,false,false,false,true,true,1992,2023,603,748
+Betriebs-Berater,BB,false,false,false,true,false,1971,2020,78,12
+Computer und Recht,CR,false,false,false,true,true,1985,2023,3693,864
+Der Strafverteidiger,StV,false,false,false,true,true,2015,2019,514,62
+Deutsches Steuerrecht,DStR,false,false,false,false,false,,,0,
+Deutsches Verwaltungsblatt,DVBI,false,false,false,true,true,1955,2021,1653,220
+Die Aktiengesellschaft,AG,false,false,false,true,true,2008,2023,4005,137
+Die öffentliche Verwaltung,DOV,false,false,false,false,false,,,0,
+Die Verwaltung,Verw,false,false,true,true,true,2008,2023,388,296
+Europäische Grundrechtezeitschrift,EuGRZ,false,false,false,false,false,,,0,
+Europäische Zeitschrift für Wirtschaftsrecht,EuZW,false,false,false,false,false,,,0,
+Europarecht,EuR,false,false,false,true,true,2004,2023,1103,1171
+GmbH-Rundschau,GmbHR,false,false,false,true,false,1983,2018,16,0
+Goltdammers Archiv für  Strafrecht,GA,false,false,false,false,false,,,0,
+Neue Zeitschrift for Sozialrecht,NZS,false,false,false,false,false,,,0,
+Neue Zeitschrift für Arbeitsrecht,NZA,false,false,false,false,false,,,0,
+Neue Zeitschrift für Gesellschaftsrecht,NZG,false,false,false,true,false,2008,2014,4,1
+Neue Zeitschrift für Strafrecht,NStZ,false,false,false,true,false,1981,2019,38,4
+Neue Zeitschrift für Verwaltungsrecht,NVwZ,false,false,false,false,false,,,0,
+Recht der Arbeit,RdA,false,false,false,true,false,,,0,
+Strafverteidigerforum,StraFo,false,false,false,false,false,,,0,
+Verwaltungsarchiv,VerwArch,false,false,false,true,true,1974,2018,149,37
+Zeitschrift für  Arbeitsrecht,ZFA,false,false,false,true,true,2016,2023,315,9
+Zeitschrift für ausländisches öffentliches Recht und Völkerrecht,ZaöRV,false,false,true,true,true,2021,2023,164,150
+Zeitschrift für das gesamte Familienrecht,FamRZ,false,false,false,false,false,,,0,
+Zeitschrift für das gesamte Handels- und Wirtschaftsrecht,ZHR,false,false,false,false,false,,,0,
+Zeitschrift für die gesamte Strafrechtswissenschaft,ZStW,false,false,false,true,true,1881,2023,4550,2511
+Zeitschrift für Gesellschaftsrecht (Zeitschrift für Unternehmens- und Gesellschaftsrecht),ZGR,false,false,false,true,true,1972,2023,1725,1250
+Zeitschrift für Strafrechtsdogmatik,ZIS,false,false,false,false,false,,,0,
+Zeitschrift für Wirtschaftsrecht,ZIP,false,false,false,false,false,,,0,
+Zeitschrift für Wirtschafts- und Bankrecht,WM,false,false,false,false,false,,,0,
+Zeitschrift für Wirtschafts- und Steuerstrafrecht,Wistra,false,false,false,false,false,,,0,

@@ -1,0 +1,831 @@
+{
+    "@context": "http://lobid.org/resources/context.jsonld",
+    "almaMmsId": "990054593530206441",
+    "issn": [
+        "09401555"
+    ],
+    "oclcNumber": [
+        "645514796"
+    ],
+    "zdbId": "1076350-8",
+    "dnbId": "016073649",
+    "deprecatedUri": "http://lobid.org/resources/HT006297195#!",
+    "hbzId": "HT006297195",
+    "title": "Deutsche Zeitschrift für Wirtschaftsrecht",
+    "alternativeTitle": [
+        "DZWir",
+        "DWiR ( Zusatz früher )"
+    ],
+    "otherTitleInformation": [
+        "DZWir"
+    ],
+    "publication": [
+        {
+            "startDate": "1991",
+            "endDate": "1998",
+            "type": [
+                "PublicationEvent"
+            ],
+            "location": [
+                "Berlin"
+            ],
+            "publishedBy": [
+                "<<de>> Gruyter"
+            ],
+            "publicationHistory": "1.1991,Juni - 8.1998",
+            "frequency": [
+                {
+                    "id": "http://marc21rdf.info/terms/continuingfre#m",
+                    "label": "monatlich"
+                }
+            ],
+            "note": [
+                "Ersch. monatl."
+            ]
+        }
+    ],
+    "describedBy": {
+        "id": "http://lobid.org/resources/990054593530206441",
+        "label": "Webseite der hbz-Ressource 990054593530206441",
+        "type": [
+            "BibliographicDescription"
+        ],
+        "inDataset": {
+            "id": "http://lobid.org/resources/dataset#!",
+            "label": "lobid-resources – Der hbz-Verbundkatalog als Linked Open Data"
+        },
+        "resultOf": {
+            "type": [
+                "CreateAction"
+            ],
+            "endTime": "2023-12-02T12:08:15",
+            "instrument": {
+                "id": "https://github.com/hbz/lobid-resources",
+                "type": [
+                    "SoftwareApplication"
+                ],
+                "label": "Software lobid-resources"
+            },
+            "object": {
+                "id": "https://lobid.org/marcxml/990054593530206441",
+                "dateCreated": "2021-04-05",
+                "dateModified": "2023-08-20",
+                "type": [
+                    "DataFeedItem"
+                ],
+                "label": "hbz-Ressource 990054593530206441 im Exportformat MARC21 XML",
+                "inDataset": {
+                    "id": "https://datahub.io/dataset/hbz_unioncatalog",
+                    "label": "hbz_unioncatalog"
+                },
+                "sourceOrganization": {
+                    "id": "http://lobid.org/organisations/DE-600#!",
+                    "label": "Zeitschriftendatenbank (ZDB)"
+                },
+                "provider": {
+                    "id": "http://lobid.org/organisations/DE-101#!",
+                    "label": "Deutsche Nationalbibliothek"
+                },
+                "modifiedBy": [
+                    {
+                        "id": "http://lobid.org/organisations/DE-101#!",
+                        "label": "Deutsche Nationalbibliothek"
+                    }
+                ]
+            }
+        },
+        "license": [
+            {
+                "id": "http://creativecommons.org/publicdomain/zero/1.0",
+                "label": "Creative Commons-Lizenz CC0 1.0 Universal"
+            }
+        ]
+    },
+    "sameAs": [
+        {
+            "id": "http://worldcat.org/oclc/645514796",
+            "label": "OCLC Ressource"
+        },
+        {
+            "id": "http://ld.zdb-services.de/resource/1076350-8",
+            "label": "ZDB-Ressource"
+        },
+        {
+            "id": "https://d-nb.info/016073649",
+            "label": "DNB-Ressource"
+        }
+    ],
+    "related": [
+        {
+            "id": "http://lobid.org/resources/ZDB-2524832-7#!",
+            "note": [
+                "Online-Ausg."
+            ],
+            "label": "Deutsche Zeitschrift für Wirtschaftsrecht"
+        }
+    ],
+    "inCollection": [
+        {
+            "id": "http://lobid.org/organisations/DE-655#!",
+            "label": "hbz - Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen, Netzwerkzone",
+            "type": [
+                "Collection"
+            ]
+        },
+        {
+            "id": "http://lobid.org/resources/HT014846970#!",
+            "label": "Zeitschriftendatenbank (ZDB)",
+            "type": [
+                "Collection"
+            ]
+        }
+    ],
+    "predecessor": [
+        {
+            "label": "Wirtschaftsrecht",
+            "id": "http://lobid.org/resources/ZDB-511554-1#!",
+            "note": [
+                "Darin aufgeg."
+            ]
+        }
+    ],
+    "successor": [
+        {
+            "label": "Deutsche Zeitschrift für Wirtschafts- und Insolvenzrecht",
+            "id": "http://lobid.org/resources/ZDB-1461592-7#!",
+            "note": [
+                "Forts.:"
+            ]
+        }
+    ],
+    "language": [
+        {
+            "id": "http://id.loc.gov/vocabulary/iso639-2/ger",
+            "label": "Deutsch"
+        }
+    ],
+    "note": [
+        "Repr.: Bad Feilnbach : Schmidt Periodicals"
+    ],
+    "natureOfContent": [
+        {
+            "label": "Zeitschrift",
+            "id": "https://d-nb.info/gnd/4067488-5"
+        }
+    ],
+    "subject": [
+        {
+            "notation": "7.10a",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "sswd",
+                "id": "sswd"
+            }
+        },
+        {
+            "notation": "PE 100",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "RVK (Regensburger Verbundklassifikation)",
+                "id": "https://d-nb.info/gnd/4449787-8"
+            }
+        },
+        {
+            "notation": "340",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "Sachgruppen der DNB",
+                "id": "https://bartoc.org/en/node/20049"
+            },
+            "label": "Recht"
+        },
+        {
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "Dewey-Dezimalklassifikation",
+                "id": "https://d-nb.info/gnd/4149423-4"
+            },
+            "label": "Recht",
+            "notation": "340",
+            "version": "sdnb"
+        },
+        {
+            "notation": "330",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "Sachgruppen der DNB",
+                "id": "https://bartoc.org/en/node/20049"
+            },
+            "label": "Wirtschaft"
+        },
+        {
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "Dewey-Dezimalklassifikation",
+                "id": "https://d-nb.info/gnd/4149423-4"
+            },
+            "label": "Wirtschaft",
+            "notation": "330",
+            "version": "sdnb"
+        },
+        {
+            "notation": "650",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "Sachgruppen der DNB",
+                "id": "https://bartoc.org/en/node/20049"
+            },
+            "label": "Management"
+        },
+        {
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "Dewey-Dezimalklassifikation",
+                "id": "https://d-nb.info/gnd/4149423-4"
+            },
+            "label": "Management und unterstützende Tätigkeiten",
+            "notation": "650",
+            "version": "sdnb"
+        },
+        {
+            "notation": "340",
+            "type": [
+                "Concept"
+            ],
+            "source": {
+                "label": "DDC-Sachgruppen der ZDB"
+            },
+            "label": "Recht"
+        },
+        {
+            "type": [
+                "ComplexSubject"
+            ],
+            "label": "Deutschland | Wirtschaftsrecht | Zeitschrift",
+            "componentList": [
+                {
+                    "type": [
+                        "PlaceOrGeographicName"
+                    ],
+                    "label": "Deutschland",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4011882-4",
+                    "gndIdentifier": "4011882-4",
+                    "altLabel": [
+                        "Deutsche Länder",
+                        "Germany (Deutschland)",
+                        "Heiliges Römisches Reich",
+                        "Rheinbund",
+                        "Deutscher Bund",
+                        "Norddeutscher Bund",
+                        "Deutsches Reich",
+                        "Deutschland (Gebiet unter Alliierter Besatzung)",
+                        "Deutschland (Bundesrepublik, 1990-)",
+                        "BRD (1990-)",
+                        "Federal Republic of Germany (Deutschland)",
+                        "Republic of Germany (Deutschland)",
+                        "Allemagne (Deutschland)",
+                        "Ǧumhūrīyat Almāniyā al-Ittiḥādīya",
+                        "Bundesrepublik Deutschland (1990-)",
+                        "BRD",
+                        "Niemcy",
+                        "République Fédérale d'Allemagne (Deutschland)",
+                        "Repubblica Federale di Germania (Deutschland)",
+                        "Germanija",
+                        "Federativnaja Respublika Germanija",
+                        "FRG",
+                        "Deyizhi-Lianbang-Gongheguo"
+                    ]
+                },
+                {
+                    "type": [
+                        "SubjectHeading"
+                    ],
+                    "label": "Wirtschaftsrecht",
+                    "source": {
+                        "label": "Gemeinsame Normdatei (GND)",
+                        "id": "https://d-nb.info/gnd/7749153-1"
+                    },
+                    "id": "https://d-nb.info/gnd/4066510-0",
+                    "gndIdentifier": "4066510-0"
+                },
+                {
+                    "label": "Zeitschrift"
+                }
+            ]
+        }
+    ],
+    "subjectslabels": [
+        "Deutschland",
+        "Wirtschaftsrecht",
+        "Zeitschrift"
+    ],
+    "hasItem": [
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533770006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533780006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533840006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533810006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533800006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533830006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533820006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysicalObject"
+            ],
+            "callNumber": "jurz.d610",
+            "currentLibrary": "X0081",
+            "currentLocation": "81P",
+            "heldBy": {
+                "isil": "DE-61",
+                "id": "http://lobid.org/organisations/DE-61#!",
+                "label": "Universitäts- und Landesbibliothek Düsseldorf"
+            },
+            "seeAlso": [
+                "https://katalog.ulb.hhu.de/Search/Results?lookfor=id_marc_001_txt:990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-61:23343533790006443#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "EFS",
+            "currentLocation": "EFS_Zeit",
+            "callNumber": "ZWI 84",
+            "heldBy": {
+                "isil": "DE-Dm13",
+                "id": "http://lobid.org/organisations/DE-Dm13#!",
+                "label": "Fachhochschule Dortmund, Hochschulbibliothek"
+            },
+            "seeAlso": [
+                "https://hbz-fdo.primo.exlibrisgroup.com/permalink/49HBZ_FDO/k375rg/alma990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-Dm13:2242838890006451#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "F0001",
+            "currentLocation": "03",
+            "callNumber": "ZZQ/DZWR",
+            "heldBy": {
+                "isil": "DE-708",
+                "id": "http://lobid.org/organisations/DE-708#!",
+                "label": "Universitätsbibliothek der Fernuniversität"
+            },
+            "seeAlso": [
+                "https://fub-hagen.digibib.net/search/katalog/record/(DE-600)1076350-8"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-708:2286239340006464#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "T0011",
+            "currentLocation": "60",
+            "callNumber": "z12052",
+            "heldBy": {
+                "isil": "DE-385",
+                "id": "http://lobid.org/organisations/DE-385#!",
+                "label": "Universitätsbibliothek Trier"
+            },
+            "seeAlso": [
+                "https://tricat.uni-trier.de/permalink/49HBZ_UBT/1hikhph/alma990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-385:22271722430006470#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "JH",
+            "currentLocation": "JH-Frei",
+            "callNumber": "Sb 28",
+            "heldBy": {
+                "isil": "DE-5-35",
+                "id": "http://lobid.org/organisations/DE-5-35#!",
+                "label": "Universität Bonn, Institut für Handels- und Wirtschaftsrecht, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-5-35:22284020960006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "B102",
+            "currentLocation": "B102-Zeit",
+            "callNumber": "Zs 1701",
+            "heldBy": {
+                "isil": "DE-Bo102",
+                "id": "http://lobid.org/organisations/DE-Bo102#!",
+                "label": "Bundesministerium für Arbeit und Soziales, Bibliothek"
+            },
+            "seeAlso": [
+                "https://bonnus.ulb.uni-bonn.de/permalink/49HBZ_ULB/idtnkp/alma990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-Bo102:22284020970006467#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "UB_BI",
+            "currentLocation": "11_Zs",
+            "callNumber": "11 KN000 D4Z4W",
+            "heldBy": {
+                "isil": "DE-361",
+                "id": "http://lobid.org/organisations/DE-361#!",
+                "label": "Universitätsbibliothek Bielefeld"
+            },
+            "seeAlso": [
+                "https://katalogplus.ub.uni-bielefeld.de/Search/Results?type=NZsatz&lookfor=1076350-8"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-361:22250033350006442#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "ZRS",
+            "currentLocation": "ZRS_Z",
+            "callNumber": "94/Z/5",
+            "heldBy": {
+                "isil": "DE-294-39",
+                "id": "http://lobid.org/organisations/DE-294-39#!",
+                "label": "Ruhr-Universität Bochum, Zentrales Rechtswissenschaftliches Seminar, Bibliothek"
+            },
+            "seeAlso": [
+                "https://hbz-ubo.primo.exlibrisgroup.com/permalink/49HBZ_UBO/mnkbqv/alma990054593530206441"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-294-39:22100996650006471#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-212",
+            "currentLocation": "38-212-ZS",
+            "callNumber": "Z 9",
+            "heldBy": {
+                "isil": "DE-38-212",
+                "id": "http://lobid.org/organisations/DE-38-212#!",
+                "label": "Institut für Luft- und Weltraumrecht und Cyberrecht, Lehrstuhl für Völkerrecht, Europarecht, Europäisches und Internationales Wirtschaftsrecht, Gemeinsame Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054593530206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-38-212:22210424670006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-212",
+            "currentLocation": "38-212-ZS",
+            "callNumber": "Z 9",
+            "heldBy": {
+                "isil": "DE-38-212",
+                "id": "http://lobid.org/organisations/DE-38-212#!",
+                "label": "Institut für Luft- und Weltraumrecht und Cyberrecht, Lehrstuhl für Völkerrecht, Europarecht, Europäisches und Internationales Wirtschaftsrecht, Gemeinsame Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054593530206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-38-212:22210424580006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-208",
+            "currentLocation": "38-208-ZS",
+            "callNumber": "EUR Z 85",
+            "heldBy": {
+                "isil": "DE-38-208",
+                "id": "http://lobid.org/organisations/DE-38-208#!",
+                "label": "Gemeinschaftsbibliothek Internationales Recht"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054593530206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-38-208:22210424590006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-217",
+            "currentLocation": "38-217-ZS",
+            "callNumber": "C 27",
+            "heldBy": {
+                "isil": "DE-38-217",
+                "id": "http://lobid.org/organisations/DE-38-217#!",
+                "label": "Lehrstuhl für Bürgerliches Recht, Deutsches und Internationales Handels-, Wirtschafts- und Bankrecht, Internationales Privatrecht und Rechtsvergleichung, Institut für Bankwirtschaft und Bankrecht, Abt. Bankrecht, Center for Transnational Law (CENTRAL), Gemeinsame Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054593530206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-38-217:22210424600006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-201",
+            "currentLocation": "38-201-ZS",
+            "callNumber": "RC b 148",
+            "heldBy": {
+                "isil": "DE-38-201",
+                "id": "http://lobid.org/organisations/DE-38-201#!",
+                "label": "Fachbibliothek Rechtswissenschaft, Rechtswissenschaftliches Seminar"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054593530206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-38-201:22210424630006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38-219",
+            "currentLocation": "38-219-ZS",
+            "callNumber": "Signatur bitte vor Ort erfragen",
+            "heldBy": {
+                "isil": "DE-38-219",
+                "id": "http://lobid.org/organisations/DE-38-219#!",
+                "label": "Akademie für europäischen Menschenrechtsschutz, Bibliothek"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054593530206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-38-219:22210424610006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "38",
+            "currentLocation": "38-ZS",
+            "callNumber": "XF501",
+            "heldBy": {
+                "isil": "DE-38",
+                "id": "http://lobid.org/organisations/DE-38#!",
+                "label": "Universitäts- und Stadtbibliothek Köln, Hauptabteilung"
+            },
+            "seeAlso": [
+                "https://katalog.ub.uni-koeln.de/portal/search.html?num=20&page=1&l=de&srt=year_desc&tab=books&hbzid=990054593530206441&fdb=uni"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-38:22210424620006476#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "RWS1",
+            "currentLocation": "RWS1_ZS",
+            "callNumber": "HR I L 34",
+            "heldBy": {
+                "isil": "DE-6-016",
+                "id": "http://lobid.org/organisations/DE-6-016#!",
+                "label": "Universität Münster, Rechtswissenschaftliches Seminar, Bibliothek"
+            },
+            "seeAlso": [
+                "https://hbz-ulbms.primo.exlibrisgroup.com/discovery/search?query=any,contains,990054593530206441&tab=Everything&search_scope=MyInst_and_CI&vid=49HBZ_ULM:VU2&offset=0"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-6-016:22518039050006449#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "PhysikalischerTitel"
+            ],
+            "currentLibrary": "RE",
+            "currentLocation": "36",
+            "callNumber": "52Z4",
+            "heldBy": {
+                "isil": "DE-1010",
+                "id": "http://lobid.org/organisations/DE-1010#!",
+                "label": "Westfälische Hochschule Gelsenkirchen Bocholt Recklinghausen, Hochschulbibliothek"
+            },
+            "seeAlso": [
+                "https://w-hs.digibib.net/search/katalog/record/(DE-600)1076350-8"
+            ],
+            "id": "http://lobid.org/items/990054593530206441:DE-1010:2214808550006456#!"
+        },
+        {
+            "label": "lobid Bestandsressource",
+            "type": [
+                "Item",
+                "NurTitel"
+            ],
+            "seeAlso": [
+                "https://kai.fh-swf.de/permalink/49HBZ_FSW/ou32r9/alma990054593530206441"
+            ],
+            "heldBy": {
+                "isil": "DE-Hag4",
+                "id": "http://lobid.org/organisations/DE-Hag4#!",
+                "label": "Fachhochschule Südwestfalen, Fachbibliothek Hagen, Zentralbibliothek"
+            },
+            "id": "http://lobid.org/items/990054593530206441:DE-Hag4:990003502940106461#!"
+        }
+    ],
+    "medium": [
+        {
+            "label": "Print",
+            "id": "http://rdaregistry.info/termList/RDAproductionMethod/1010"
+        }
+    ],
+    "bibliographicLevel": {
+        "label": "Serial",
+        "id": "https://www.loc.gov/marc/bibliographic/bdleader.html#Serial"
+    },
+    "type": [
+        "BibliographicResource",
+        "Periodical"
+    ],
+    "id": "http://lobid.org/resources/990054593530206441#!"
+}
