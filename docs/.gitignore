@@ -1,5 +1,3 @@
-*_files
-*.html
 *.quarto_ipynb
 *.tex
 *.aux

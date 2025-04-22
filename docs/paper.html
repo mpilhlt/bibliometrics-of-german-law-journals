@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christian Boulanger">
+<meta name="author" content="Daniel Fejzo">
+<meta name="author" content="Christine Rimmert">
+<meta name="dcterms.date" content="2025-02-19">
+
+<title>Measuring Bibliometric Coverage of German Law Journals</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="paper_files/libs/clipboard/clipboard.min.js"></script>
+<script src="paper_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="paper_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="paper_files/libs/quarto-html/popper.min.js"></script>
+<script src="paper_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="paper_files/libs/quarto-html/anchor.min.js"></script>
+<link href="paper_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="paper_files/libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="paper_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="paper_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="paper_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question">1. Research question</a></li>
+  <li><a href="#previous-and-related-work" id="toc-previous-and-related-work" class="nav-link" data-scroll-target="#previous-and-related-work">2. Previous and related work</a></li>
+  <li><a href="#constructing-a-gold-standard-list-of-german-law-journals" id="toc-constructing-a-gold-standard-list-of-german-law-journals" class="nav-link" data-scroll-target="#constructing-a-gold-standard-list-of-german-law-journals">3. Constructing a gold standard list of German law journals</a>
+  <ul class="collapse">
+  <li><a href="#data-based-selection" id="toc-data-based-selection" class="nav-link" data-scroll-target="#data-based-selection">Data-based selection</a></li>
+  <li><a href="#constructing-a-gold-standard-based-on-domain-expertise" id="toc-constructing-a-gold-standard-based-on-domain-expertise" class="nav-link" data-scroll-target="#constructing-a-gold-standard-based-on-domain-expertise">Constructing a gold standard based on domain expertise</a></li>
+  </ul></li>
+  <li><a href="#coverage-on-item-and-metadata-level-and-quality-of-metadata" id="toc-coverage-on-item-and-metadata-level-and-quality-of-metadata" class="nav-link" data-scroll-target="#coverage-on-item-and-metadata-level-and-quality-of-metadata">4. Coverage on item and metadata level and quality of metadata</a>
+  <ul class="collapse">
+  <li><a href="#item-level-coverage" id="toc-item-level-coverage" class="nav-link" data-scroll-target="#item-level-coverage">4.1 Item level coverage</a></li>
+  <li><a href="#metadata-coverage-and-quality" id="toc-metadata-coverage-and-quality" class="nav-link" data-scroll-target="#metadata-coverage-and-quality">4.2 Metadata coverage and quality</a></li>
+  <li><a href="#classification-in-openalex" id="toc-classification-in-openalex" class="nav-link" data-scroll-target="#classification-in-openalex">4.3 Classification in Openalex</a></li>
+  <li><a href="#the-futility-of-ranking-with-openalex" id="toc-the-futility-of-ranking-with-openalex" class="nav-link" data-scroll-target="#the-futility-of-ranking-with-openalex">4.4 The futility of ranking with OpenAlex</a></li>
+  </ul></li>
+  <li><a href="#conclusion-and-future-work" id="toc-conclusion-and-future-work" class="nav-link" data-scroll-target="#conclusion-and-future-work">5. Conclusion and future work</a></li>
+  <li><a href="#references-1" id="toc-references-1" class="nav-link" data-scroll-target="#references-1">7. References</a></li>
+  
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="paper.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="..\paper.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Measuring Bibliometric Coverage of German Law Journals</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Christian Boulanger <a href="mailto:boulanger@lhlt.mpg.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0001-6928-3246" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.lhlt.mpg.de/">
+            Max Planck Institute for Legal History and Legal Theory
+            </a>
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Daniel Fejzo <a href="mailto:fejzo@lhlt.mpg.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.lhlt.mpg.de/">
+            Max Planck Institute for Legal History and Legal Theory
+            </a>
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Christine Rimmert <a href="mailto:Christine.Rimmert@fiz-Karlsruhe.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0001-2972-2061" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.fiz-karlsruhe.de">
+            FIZ Karlsruhe – Leibniz-Institut für Informationsinfrastruktur
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 19, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    Bibliometric analyses are uncommon in German legal scholarship, often attributed to disciplinary skepticism. However, this paper posits that a more fundamental reason is the lack of adequate data coverage in standard bibliometric databases. We systematically investigate the representation of the German law journal landscape in Web of Science (WoS), Scopus, and OpenAlex. To achieve this, we first establish a gold standard list of 52 representative German law journals based on a 2009 expert survey. We then measure the coverage of these journals within the target databases and assess the quality of the available metadata, focusing particularly on OpenAlex due to its superior initial coverage. Our findings confirm the initial hypothesis: coverage in WoS and Scopus is minimal. While OpenAlex includes a larger proportion of the gold standard journals (32/52) and shows reasonable item-level completeness for a subset checked against publisher data, its metadata quality presents significant limitations. Crucially, affiliation data is sparse, and citation data is almost entirely absent, precluding meaningful citation analysis, impact assessment, or reliable institutional evaluation. We conclude that while coverage is improving, particularly through open platforms like OpenAlex, the current state of bibliometric data, especially the lack of citation information, severely restricts the application of standard bibliometric methods to German legal scholarship. We discuss potential reasons for this gap and suggest focusing on enhancing open data repositories and exploring new methods to generate currently unavailable citation data.
+  </div>
+</div>
+
+
+</header>
+
+
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">1. Research question</h2>
+<p>Bibliometric and scientometric analyses are common in many fields of research, being used for research assessment, i.e.&nbsp;the measurement of scholarly productivity and impact of institutions, journals, or individual scholars, or, alternatively, for science mapping, the empirical analysis of knowledge production in a particular field of scholarship <span class="citation" data-cites="vanRaan_2019"><a href="#ref-vanRaan_2019" role="doc-biblioref">[1]</a></span>. However, this has not been the case for the field of German legal scholarship. One empirical indication of this state of affairs is that, when searching in the full texts of German law journal articles available on JSTOR for the expression “bibliometr*”, there are exactly two hits.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The reason for this could be attributed to the fact that lawyers treat bibliometric analyses with skepticism. As the 2012 Report on the State of German Legal Scholarship and Education states: „Bibliometric methods are not sufficiently capable of measuring research performance in legal scholarship.“ <span class="citation" data-cites="germancouncilofscienceandhumanities2012"><a href="#ref-germancouncilofscienceandhumanities2012" role="doc-biblioref">[2, p. 54]</a></span>. However, our suspicion is that this situation is equally, if not more so, due to the fact that unlike in other fields of science, there just isn’t enough data available on which bibliometric analyses could be based upon.</p>
+<p>The purpose of this paper is to empirically test this proposition. It systematically investigates how the German landscape of law journals is represented in the databases used for bibliometric analyses, in particular the Web of Science, Scopus, and OpenAlex.</p>
+<p>This research question is subdivided in three sub-questions, which are discussed in separate parts of this paper after shortly surveying previous work. The <em>first question</em> asks what exactly we are looking for: what set of publications represents the German law journal landscape? Here, were are not aiming at completeness, but rather at a a sample that is sufficiently large (but not too large) and representative enough to make our observations valid. Based on a previous study that surveyed German law professors to construct a ranking of law journals <span class="citation" data-cites="gröls2009"><a href="#ref-gröls2009" role="doc-biblioref">[3]</a></span>, we propose a “gold standard” list of German law journals. Once the sample has been established, the <em>second question</em> how much data exists for this sample in our target databases. The <em>third question</em> is about data quality: it is not enough to observe the pure quantity of records found for our sample - we also have to investigate how complete and accurate this data is, and what questions can be answered based on it, and which cannot.</p>
+<p>Not surprisingly, we conclude that is that the data bears out the initial hypothesis. While the bibliometric coverage of knowledge production in the German legal domain is getting better in recent years, mainly because of the appearance of new players in the market, it is generally still very limited. As most German law journal do not fit the selection criteria of the commercial vendors, the more open offerings such as OpenAlex are the only viable candidate. However, the available metadata is found wanting. In particular, we observe a general lack of citation data. The conclusion sketches some reasons for why this is so and proposes ways forward.</p>
+<p>This paper is a interdisciplinary collaboration between two domain specialists (Boulanger, Fejzo) and a bibliometrician (Rimmert), and thus tries to combine different epistemic interests: on one hand, in those questions that require the data we are looking for, and on the other, the questions that the data poses itself. We document all queries and the code we used to produce the tables and graphs in the following sections in our GitHub repository.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+<section id="previous-and-related-work" class="level2">
+<h2 class="anchored" data-anchor-id="previous-and-related-work">2. Previous and related work</h2>
+<p>As far as we can see, this is the first study of this kind. Earlier research had put its interest more in the way legal texts cite other legal material, such as the characteristics of references to legal provisions in judgments <span class="citation" data-cites="wagner-döbler1993"><a href="#ref-wagner-döbler1993" role="doc-biblioref">[4]</a></span> or the networks that can constructed from references between legal texts <span class="citation" data-cites="coupette2019"><a href="#ref-coupette2019" role="doc-biblioref">[5]</a></span>. For reasons that we will return to in the conclusion, the bibliometric analysis of legal scholarship itself has never become a subject of scholarly attention. In contrast, when looking outside the German legal domain, there have been numerous studies using bibliometric methods to analyze knowledge production of various disciplines, such as, for example of Digital Humanities <span class="citation" data-cites="tang2017"><a href="#ref-tang2017" role="doc-biblioref">[6]</a></span> or Scientometrics itself <span class="citation" data-cites="liu2023"><a href="#ref-liu2023" role="doc-biblioref">[7]</a></span>.</p>
+<p>However, we have not been able to identify other studies - although they might exist - which measure the quality of the bibliometric data <em>on</em> a discipline, since, as we will see, this exercise requires data outside the traditional databases - some “gold standard” - against which they can be compared. In most cases, the data quality of databases such as the Web of Science or Scopus is simply assumed - a trust that might not be warranted, in particular in scientific fields where the coverage of these databases is sketchy. This has been empirically shown for the Social Sciences and Humanities (SSH) <span class="citation" data-cites="hicks1999 gläser2019"><a href="#ref-hicks1999" role="doc-biblioref">[8]</a>, <a href="#ref-gläser2019" role="doc-biblioref">[9]</a></span>.</p>
+<p>In addition, such studies point out that in the fields in SSH, a large part of the research is published as monographs or parts thereof. These publications are even less present in databases which focus on journals, the main form of scientific communication in the natural sciences <span class="citation" data-cites="hammarfelt2016"><a href="#ref-hammarfelt2016" role="doc-biblioref">[10]</a></span>. This is also true for German legal scholarship. However, this plays no role for the analyses in this paper, as our explicit focus is on law journals.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+</section>
+<section id="constructing-a-gold-standard-list-of-german-law-journals" class="level2">
+<h2 class="anchored" data-anchor-id="constructing-a-gold-standard-list-of-german-law-journals">3. Constructing a gold standard list of German law journals</h2>
+<p>The first task in measuring the coverage of German law journals in bibliographic databases is to determine which of the journals to look for, i.e.&nbsp;to create a list of journals that represent the category “German law journals”. In this endeavour, we do not aim for completeness. For the purpose of this study, it will suffice to have a sample which is sufficiently large to be representative of the field. At the same time, the selection must be small enough, so it is possible to check and enrich the dataset with additional metadata (for example, a persistent identifier such as the ISSN) with a reasonable amount of effort. This will allow us to define a list of journals for which, at a minimum, data has to exist in sufficient quality in order to make statements about knowledge production in German legal scholarship. This does not mean that journals that are not on the list are not important for the discipline. In fact, as it will become clear, our selection methodology forces us to omit any journal founded after 2009. We also make no statement on the difference of quality of those journals that make it on the list compared to those which do not. We are not interested in finding or providing a metric similar to the “journal impact factor” of German law journals. We are only interested in the quality of bibliometric data on a representative and relevant list of those journals.</p>
+<p>There are generally two ways in which such a list could be assembled. One approach requires no prior knowledge of the field and promises an “objective” way of generating a list. This <em>data-based</em> approach relies on the presence of databases which have sufficiently good metadata categories. It seems not unreasonable to assume that, given a database of journals which has labels for the subject matter “law” and the language attribute “German”, one would be able derive a list of German law journals. This would include all journals with German language content, i.e., include journals from Germany, Austria, Switzerland and other legal publications in German. This list could then be filtered further down to journals that cover the Federal Republic of Germany or any other country or combinations of countries. However, as we will discuss below, even if this would work, such an approach will always have at least two problems: a) an additional metric would be needed that would allow to limit this list to the really relevant and representative journals and, even more important, b) the list might be affected by a selection bias in the data from which it was derived. We will therefore argue that we need an alternative approach which is <em>based on domain expert knowledge</em> and which might be more reliable for our purposes.</p>
+<section id="data-based-selection" class="level3">
+<h3 class="anchored" data-anchor-id="data-based-selection">Data-based selection</h3>
+<p>In the following, we will test, first, the German journal database (Zeitschriftendatenbank), and afterwards the bibliometric databases Web of Science, Scopus and OpenAlex as a source for deriving our list.</p>
+<section id="the-zeitschriftendatenbank" class="level4">
+<h4 class="anchored" data-anchor-id="the-zeitschriftendatenbank">The “Zeitschriftendatenbank”</h4>
+<p>The go-to database for metadata on German journals is the Zeitschriftendatenbank (ZDB, https://zdb.de). Its entries can be searched for the Dewey Decimal Category (DDC) 340 for “Law” and the language label for German.</p>
+<p>In order to test this approach, we ran a query using these parameters, using the <a href="https://lobid.org">lobid.org</a> linked-data gateway to the ZDB, resulting in a list of 7406 journals. Many of these journals are historic and do not matter for our analysis. Limiting the time period to after 1945, we still count 1692 journals. <a href="#fig-zdb" class="quarto-xref">Figure&nbsp;1</a> shows a plot of the number of journals being actively published in any given year between 1945 and 2023. However, many of them represent publications that would not qualify as “law journals”, for example, local administrative gazettes or other official publications.</p>
+<div id="cell-fig-zdb" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-zdb" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-zdb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-zdb-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-zdb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Number of active serial publications classified as DDC 340 (‘law’) and language ‘German’ in the ZDB, per year, via lobid.org
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To narrow down this list further would require to find ways to decide, based on metadata, a), which journals are relevant for Germany, and b) which of those are “law journals”, i.e.&nbsp;contain legal scholarship rather than just administrative or legislative communications. As the lack of a suitable metadata category meant that we would have had to to identify and test proxy variables–a rather complex matter–, we did not pursue this approach further.</p>
+</section>
+<section id="bibliometric-databases-web-of-science-scopus-openalex" class="level4">
+<h4 class="anchored" data-anchor-id="bibliometric-databases-web-of-science-scopus-openalex">Bibliometric Databases: Web of Science, Scopus, OpenAlex</h4>
+<p>Instead, the next experiment was to probe the bibliometric databases themselves to see whether, based on the available metadata, we could generate a methodologically controlled list of journals. In theory, this could yield a better selection than what we retrieved from the ZDB, since the bibliometric databases aim to focus on research and are less likely to contain non-scholarly communications. The reason for this selection of these three databases (and the exclusion of others, such as Lens, Semantic Scholar or dimension.ai) is that they are available in a normalized schema, at the Kompetenznetzwerk Bibliometrie <span class="citation" data-cites="schmidtEtAl2024"><a href="#ref-schmidtEtAl2024" role="doc-biblioref">[11]</a></span>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>In order to achieve our goal of creating a list of German law articles, we have to define queries to execute on each data source. In terms of classification each source uses a different system: WoS and Scopus use journal-level classifications, assigned to the item in the XML files, whereas OpenAlex provides an item-specific classification.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Language is item-specific in all three databases.</p>
+<p>We wanted to find journals which have article items that belong to the “law” category in the respective classification system, and of which the majority of articles are flagged as being in German. The selection criteria we chose was that a journal would be considered part of our sample if at least 10 articles had a subject category: Law <strong>and</strong> if at least 10% were classified as “Law” and “German”. We chose to have both restrictions here because there are some exceptional cases of journals with a very low number of articles, which points to gaps or errors in the data. We therefore did not want to include these exceptional cases where a very few German law articles would already fulfil the quota.</p>
+<p>Using these criteria, we probed the <strong>Web of Science Core Collection</strong> (we did not have access to WoS’ Emerging Sources Citation Index). We found 250 journals which contained articles classified as ‘Law’.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> However, as <a href="#tbl-wos-ger-law" class="quarto-xref">Table&nbsp;1</a> shows, only two of those met the threshold of 10%.</p>
+<div class="cell" data-execution_count="3">
+<div id="tbl-wos-ger-law" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="3">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wos-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Articles in WoS Core Collection categorized “German” and “Law”
+</figcaption>
+<div aria-describedby="tbl-wos-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Journal</th>
+<th data-quarto-table-cell-role="th">Number of Articles</th>
+<th data-quarto-table-cell-role="th">Number of German Law Articles</th>
+<th data-quarto-table-cell-role="th">Share of German Law Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>kriminologisches journal</td>
+<td>79</td>
+<td>74</td>
+<td>0.94</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>tijdschrift voor rechtsgeschiedenis-revue d hi...</td>
+<td>279</td>
+<td>44</td>
+<td>0.16</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>In <strong>Scopus</strong>, running a query with the above parameters produces a list of 23 journals.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> The results show a disproportionate frequency of journals with a social science focus (criminology, criminal psychology, sociology of law) or legal history (<a href="#tbl-scp-ger-law" class="quarto-xref">Table&nbsp;2</a>).<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> This is not surprising, since journals that publish research on law which uses social scientific methods, such as criminology, tend to gravitate towards an international audience and thus would also try to be included in bibliometric services such as Scopus, although this does not explain why they are not in the Web of Science. However, this set of journal does seem to correspond with the methodological focus of German jurisprudence, which focuses on doctrinal legal research <span class="citation" data-cites="germancouncilofscienceandhumanities2012"><a href="#ref-germancouncilofscienceandhumanities2012" role="doc-biblioref">[2]</a>,p 8</span>.</p>
+<div class="cell" data-execution_count="4">
+<div id="tbl-scp-ger-law" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="4">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-scp-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Articles in Scopus categorized “German” and “Law”, sorted by relative frequency
+</figcaption>
+<div aria-describedby="tbl-scp-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Journal</th>
+<th data-quarto-table-cell-role="th">Number of Articles</th>
+<th data-quarto-table-cell-role="th">Number of German Law Articles</th>
+<th data-quarto-table-cell-role="th">Share of German Law Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Kriminalistik</td>
+<td>2601</td>
+<td>2599</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Verwaltung</td>
+<td>115</td>
+<td>114</td>
+<td>0.99</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Osterreichisches Archiv fur Recht und Religion</td>
+<td>168</td>
+<td>166</td>
+<td>0.99</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Forensische Psychiatrie, Psychologie, Kriminol...</td>
+<td>523</td>
+<td>513</td>
+<td>0.98</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
+<td>398</td>
+<td>373</td>
+<td>0.94</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Kriminologisches Journal</td>
+<td>207</td>
+<td>184</td>
+<td>0.89</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Monatsschrift fur Kriminologie und Strafrechts...</td>
+<td>323</td>
+<td>284</td>
+<td>0.88</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Deutsche Lebensmittel-Rundschau</td>
+<td>1739</td>
+<td>1478</td>
+<td>0.85</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
+<td>603</td>
+<td>500</td>
+<td>0.83</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
+<td>120</td>
+<td>93</td>
+<td>0.78</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>Recht und Psychiatrie</td>
+<td>369</td>
+<td>284</td>
+<td>0.77</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>Zeitschrift fur Rechtssoziologie</td>
+<td>89</td>
+<td>63</td>
+<td>0.71</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>Kriminologie</td>
+<td>94</td>
+<td>66</td>
+<td>0.70</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>Jusletter IT</td>
+<td>708</td>
+<td>446</td>
+<td>0.63</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>Archiv fur Rechts- und Sozialphilosophie</td>
+<td>273</td>
+<td>159</td>
+<td>0.58</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>Rechtsgeschichte</td>
+<td>309</td>
+<td>174</td>
+<td>0.56</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>Zeitschrift fur Europarechtliche Studien</td>
+<td>107</td>
+<td>51</td>
+<td>0.48</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>Zeitschrift fur Auslandisches Offentliches Rec...</td>
+<td>143</td>
+<td>49</td>
+<td>0.34</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>Legal History Review,Tijdschrift voor Rechtsge...</td>
+<td>265</td>
+<td>68</td>
+<td>0.26</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>Journal on European History of Law</td>
+<td>283</td>
+<td>74</td>
+<td>0.26</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>Annales de la Faculte de Droit d'Istanbul</td>
+<td>74</td>
+<td>11</td>
+<td>0.15</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21</td>
+<td>Credit and Capital Markets</td>
+<td>164</td>
+<td>18</td>
+<td>0.11</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">22</td>
+<td>Journal of Juristic Papyrology</td>
+<td>180</td>
+<td>18</td>
+<td>0.10</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p><strong>OpenAlex</strong> is one of the new non-commercial competitors to the WoS and Scopus. In contrast to the very restricted inclusion criteria of those databases,<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> the successor to “Microsoft Academic Graph” has a much more liberal approach to what to index. This is immediately visible in the result of our query, which returns 323 individual journals.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> When checked from the perspective of a domain specialist, the list seems to include quite a number of journals that seem relevant, although the top-20 list (ranked by the share of German law articles) contains both relevant journals as well as some that are very specialized (<a href="#tbl-openalex-ger-law" class="quarto-xref">Table&nbsp;3</a>).</p>
+<div class="cell" data-execution_count="5">
+<div id="tbl-openalex-ger-law" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="5">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-openalex-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Articles in OpenAlex categorized “German” and “Law”, sorted by relative frequency, top 20
+</figcaption>
+<div aria-describedby="tbl-openalex-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Journal</th>
+<th data-quarto-table-cell-role="th">Number of Articles</th>
+<th data-quarto-table-cell-role="th">Number of German Law Articles</th>
+<th data-quarto-table-cell-role="th">Share of German Law Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Zeitschrift für Beihilfenrecht</td>
+<td>253</td>
+<td>191</td>
+<td>0.75</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Computer Und Recht: Forum für die Praxis des R...</td>
+<td>2332</td>
+<td>1664</td>
+<td>0.71</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Europaische grundrechte zeitschrift</td>
+<td>334</td>
+<td>236</td>
+<td>0.71</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Zeitschrift für Informationsrecht</td>
+<td>1963</td>
+<td>1403</td>
+<td>0.71</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Jura - Juristische Ausbildung</td>
+<td>24</td>
+<td>17</td>
+<td>0.71</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Datenschutz und Datensicherheit</td>
+<td>20</td>
+<td>14</td>
+<td>0.70</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Jus: Juristische Schulung</td>
+<td>1487</td>
+<td>1030</td>
+<td>0.69</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Europaisches wirtschafts und steuerrecht</td>
+<td>382</td>
+<td>260</td>
+<td>0.68</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Schweizerisches Zentralblatt für Staats- und V...</td>
+<td>102</td>
+<td>69</td>
+<td>0.68</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Österreichische Zeitschrift für Kartellrecht</td>
+<td>502</td>
+<td>337</td>
+<td>0.67</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>Jahrbuch Eigentum und Urheberrecht in der Demo...</td>
+<td>21</td>
+<td>14</td>
+<td>0.67</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>ZG : Zeitschrift für Gesetzgebung</td>
+<td>377</td>
+<td>254</td>
+<td>0.67</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>WUW : Wirtschaft und wettbewerb = Concurrence ...</td>
+<td>767</td>
+<td>517</td>
+<td>0.67</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>Zeitschrift für Zivilprozess</td>
+<td>483</td>
+<td>325</td>
+<td>0.67</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>Göttinger Rechtszeitschrift</td>
+<td>167</td>
+<td>109</td>
+<td>0.65</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>Zeitschrift der Verwaltungsgerichtsbarkeit</td>
+<td>1683</td>
+<td>1074</td>
+<td>0.64</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>STRASSENVERKEHRSRECHT</td>
+<td>113</td>
+<td>72</td>
+<td>0.64</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>Europaische zeitschrift für wirtschatsrecht, EUZW</td>
+<td>863</td>
+<td>555</td>
+<td>0.64</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>Europarecht</td>
+<td>1246</td>
+<td>786</td>
+<td>0.63</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>Frankfurt Law Review</td>
+<td>16</td>
+<td>10</td>
+<td>0.63</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>In sum, based on the number of results and a intuition backed by domain knowledge, OpenAlex seems to provide a more promising dataset for our purposes. However, the how can we know we are not missing important journals which, for random reasons, have not been indexed in OpenAlex? And even if we knew that all relevant journals were present, we would not know how to create our sample because OpenAlex does not provide a reliable way of determining which journals out of the 300+ journals found are “relevant”.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+</section>
+</section>
+<section id="constructing-a-gold-standard-based-on-domain-expertise" class="level3">
+<h3 class="anchored" data-anchor-id="constructing-a-gold-standard-based-on-domain-expertise">Constructing a gold standard based on domain expertise</h3>
+<p>The alternative approach is not to start with the available data, but with the knowledge of domain experts. In this case, we need to know how legal scholars or other people with a similar knowledge of the domain (such as law librarians) would construct the set of journals that we are looking for. In contrast to the previous approach, this involves an element of human judgment. However, this seems to be adequate since such a list is not a “fact” comparable to a mathematical set. It is therefore not decisive for our purposes that such a list might be incomplete or that different people might have different opinions about what should be on that list, as long as we have a viable list that represents the “least common denominator” of expert opinions.</p>
+<p>In other words, for our purposes we need a “gold standard” list against which the results of our queries can be compared. The nature of a gold standard in evaluation research is that we do not have “ground truth” in the sense of empirically verifiable observations, but a yard stick, or “good enough” data <span class="citation" data-cites="versi1992"><a href="#ref-versi1992" role="doc-biblioref">[12]</a></span>.</p>
+<section id="curated-lists-of-law-journals-available-online" class="level4">
+<h4 class="anchored" data-anchor-id="curated-lists-of-law-journals-available-online">Curated lists of law journals available online</h4>
+<p>The internet offers a number of lists of German law journals. They are curated in the sense as they have been assembled by (usually unnamed) domain experts of varying credentials for pedagogical or other reasons. For the purpose of this article, we scraped the contents of the following lists and converted them into CSV data:<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
+<ul>
+<li>“Karlsruher Juristische Bibliographie, Verzeichnis der für Periodika verwendeten Abkürzungen”: a list of journals curated by the publisher Beck<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>, with 561 entries;</li>
+<li>juris: Verzeichnis der ausgewerteten juristischen Periodika (Aufsätze): This is the list of journals ingested by the commercial legal information platform “Juris” for their database on law journal articles. The Bayrische Staatsbibliothek has a PDF from 2002<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> which we used to extract a list of 383 entries;</li>
+<li>OpenJur - Juristische Fachzeitschriften: openJur<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> is a database for german jurisdiction and legislation operated by openJur gGmbH, a non-profit organization under german law. It provides a list of German law journals with 173 entries;</li>
+<li>Jura Recherche: The internet page <a href="https://jura-recherche.de" class="uri">https://jura-recherche.de</a> provides a research interface for law students. Its list has 252 entries.</li>
+</ul>
+<p>There are many other lists that could be used. The point is here that, counter-intuitively, the examples surveyed here already vary widely in the selection of journals that they contain. This is demonstrated by drawing a 4-set Venn diagrams based on matching the journal abbreviations of the journals in the lists (<a href="#fig-intersection-online-lists" class="quarto-xref">Figure&nbsp;2</a>).</p>
+<div id="cell-fig-intersection-online-lists" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-intersection-online-lists" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intersection-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-intersection-online-lists-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intersection-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Intersection (by abbreviation) of online journal lists
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The lists share a relatively small number of abbreviations (43). The number of found co-occurrences could probably be increased somewhat by matching the entries of the list with unique identifiers such as the ISSN, which would eliminate incorrect matching, but probably not much.</p>
+<p>In any case, we did not pursue this approach further. While lists like the ones identified above are interesting data sources themselves, they do not provide a solid basis for our analysis, at least not in a straightforward way. On one hand, the intersection of all lists is hinges on accidental factors since we have no way of knowing what the selection criteria for any of the above lists are. On the other hand, a union of all lists could help avoid selection biases. However, it would have a size that would to large to be useful (&gt;900), and, as in our previous experiments, there would be no clear selection criteria by which to filter the list down to a more manageable size.</p>
+<p>Another option is to check open data sources such as Wikipedia and Wikidata to see if they provide structured metadata. In fact, Wikipedia has a category called “Juristische Fachzeitschrift (Deutschland)” (Journal specialized on legal matters (Germany)<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a>, which assembles all Wikipedia pages that self-categorize as a law journal.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>. When exporting the category,<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>, the result set contains 286 entries. As this data contains Wikidata QIDs, ISSN matching can be done automatically, which results in a list of 147 journals having an ISSN.</p>
+<p>When comparing this list with the KJB and juris lists by abbreviation (<a href="#fig-intersection-wikipedia" class="quarto-xref">Figure&nbsp;3</a>), we again find a relatively small intersection (68 abbreviations) that cannot be caused solely by data errors.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></p>
+<div id="cell-fig-intersection-wikipedia" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-intersection-wikipedia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intersection-wikipedia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-intersection-wikipedia-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intersection-wikipedia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Intersection (by abbreviation) between KJB, juris and Wikipedia entries
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Be that as it may, for our purposes, this list has similar problems as the previous ones: as this list hinges on the accidental fact whether an entry exists on a journal or not, and relies on the self-categorization, its representativeness cannot be guaranteed. And as before, the data itself does not provide any way of ranking the results to give us the most relevant titles.</p>
+</section>
+<section id="expert-ranking-grölsgröls-2009" class="level4">
+<h4 class="anchored" data-anchor-id="expert-ranking-grölsgröls-2009">Expert Ranking: Gröls/Gröls (2009)</h4>
+<p>Instead, for generating our gold standard, we relied on a 2009 study by Marcel and Tanja Gröls <span class="citation" data-cites="gröls2009"><a href="#ref-gröls2009" role="doc-biblioref">[3]</a></span>, who ranked law journals on the basis of a survey among law professors. Even though the study is more than 15 years old and has - as far as we can see - not yet been updated in later studies, it is still a useful source of data for our purposes, as we will explain below.</p>
+<p>As the authors point out, previous attempts at ranking German law journals through empirical means remained scarce (497). Therefore, the authors decided on a methodological setup derived from similar studies in economics and business administration (489). In short, their study consists of different rankings of German law journals generated by surveying the individual assessment of German law scholars. First, 1500 email addresses of German law professors, both current and former, as well as research associates were identified by reviewing the web pages of 45 German universities and academic institutions. Next, these individuals were contacted via email and asked to fill out the survey. 248 responses were received, marking a 16,5% response rate (490).</p>
+<p>The survey asked its participants to name their area of expertise, rank five journals of that area they perceived to be of the highest quality, and additionally, to name and rank five journals that are more general in scope and not bound to a specific subdiscipline, again according to perceived quality (490). Journals over a certain counting threshold were then assigned scores based on their place in the participant’s ranking as well as the participant’s academic status (professors were weighted stronger than research associates) and an ‘expert factor’ determined by the individuals amount of publications over the last three years, thus creating two different kinds of rankings: one for journals considered general in nature and several others according to specific subdisciplines (491-492).</p>
+<p>As this distinction is irrelevant to our purposes, we aggregated the different rankings into one list of 52 journals, thereby constituting our gold standard (<a href="#tbl-gold-standard" class="quarto-xref">Table&nbsp;4</a>).</p>
+<div class="cell" data-execution_count="8">
+<div id="tbl-gold-standard" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="8">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gold-standard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: List of 52 most important Law Journals, as ranked by Gröls/Gröls (2009)
+</figcaption>
+<div aria-describedby="tbl-gold-standard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="8">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Abbreviation</th>
+<th data-quarto-table-cell-role="th">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>AG</td>
+<td>Die Aktiengesellschaft</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>VerwArch</td>
+<td>Verwaltungsarchiv</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>EuR</td>
+<td>Europarecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>ZGR</td>
+<td>Zeitschrift für Gesellschaftsrecht (Zeitschrif...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>AVR</td>
+<td>Archiv des Volkerrechts</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>ZFA</td>
+<td>Zeitschrift für Arbeitsrecht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>MDR</td>
+<td>Monatsschrift für Deutsches Recht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>KJ</td>
+<td>Kritische Justiz</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>JZ</td>
+<td>JuristenZeitung</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>BB</td>
+<td>Betriebs-Berater</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>ZIP</td>
+<td>Zeitschrift für Wirtschaftsrecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>EuGRZ</td>
+<td>Europäische Grundrechtezeitschrift</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>AuR</td>
+<td>Arbeit und Recht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>ZHR</td>
+<td>Zeitschrift für das gesamte Handels- und Wirts...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>FamRZ</td>
+<td>Zeitschrift für das gesamte Familienrecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>NStZ</td>
+<td>Neue Zeitschrift für Strafrecht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>wistra</td>
+<td>Zeitschrift für Wirtschafts- und Steuerstrafrecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>DStR</td>
+<td>Deutsches Steuerrecht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>JA</td>
+<td>Juristische Arbeitsblätter</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>DB</td>
+<td>DER BETRIEB</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>NJW</td>
+<td>Neue juristische Wochenschrift</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21</td>
+<td>JuS</td>
+<td>Juristische Schulung</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">22</td>
+<td>GmbHR</td>
+<td>GmbH-Rundschau</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">23</td>
+<td>StV</td>
+<td>Der Strafverteidiger</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">24</td>
+<td>JURA</td>
+<td>Juristische Ausbildung</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">25</td>
+<td>AöR</td>
+<td>Archiv des öffentlichen Rechts</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">26</td>
+<td>ZRG</td>
+<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">27</td>
+<td>KritV</td>
+<td>Kritische Vierteljahresschrift für Gesetzgebun...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">28</td>
+<td>EuZW</td>
+<td>Europäische Zeitschrift für Wirtschaftsrecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">29</td>
+<td>ZeuP</td>
+<td>Zeitschrift für europäisches Privatrecht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">30</td>
+<td>RdA</td>
+<td>Recht der Arbeit</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">31</td>
+<td>StraFo</td>
+<td>Strafverteidigerforum</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">32</td>
+<td>ZEuP</td>
+<td>Zeitschrift für europäisches Privatrecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">33</td>
+<td>NVwZ</td>
+<td>Neue Zeitschrift für Verwaltungsrecht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">34</td>
+<td>DVBI</td>
+<td>Deutsches Verwaltungsblatt</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">35</td>
+<td>ZStW</td>
+<td>Zeitschrift für die gesamte Strafrechtswissens...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">36</td>
+<td>ZaoRV</td>
+<td>Zeitschrift für ausländisches offentliches Re...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">37</td>
+<td>CR</td>
+<td>Computer und Recht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">38</td>
+<td>Verw</td>
+<td>Die Verwaltung</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">39</td>
+<td>ZRP</td>
+<td>Zeitschrift für Rechtspolitik</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">40</td>
+<td>AcP</td>
+<td>Archiv für die civilistische Praxis</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">41</td>
+<td>Staat</td>
+<td>Der Staat</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">42</td>
+<td>ZZP</td>
+<td>Zeitschrift für Zivilprozess</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">43</td>
+<td>JR</td>
+<td>Juristische Rundschau</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">44</td>
+<td>RabelsZ</td>
+<td>Rabels Zeitschrift für ausländisches und inter...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">45</td>
+<td>GA</td>
+<td>Goltdammers Archiv für Strafrecht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">46</td>
+<td>WM</td>
+<td>Zeitschrift für Wirtschafts- und Bankrecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">47</td>
+<td>NZG</td>
+<td>Neue Zeitschrift für Gesellschaftsrecht</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">48</td>
+<td>NZS</td>
+<td>Neue Zeitschrift for Sozialrecht</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">49</td>
+<td>DOV</td>
+<td>Die öffentliche Verwaltung</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">50</td>
+<td>ZIS</td>
+<td>Zeitschrift für Strafrechtsdogmatik</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">51</td>
+<td>NZA</td>
+<td>Neue Zeitschrift für Arbeitsrecht</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>As stated earlier, one possible objection against using the study by Gröls &amp; Gröls for our gold standard is its age. Specifically, there could be the risk of missing relevant journals established after 2009 or not accounting for the fact that more recent rankings would vastly diverge from one fifteen years ago. In fact, for domain experts it seems an obvious problem that journals as e.g.&nbsp;Rechtswissenschaft (est. 2010) or <em>Recht und Zugang</em> (est. 2020), are necessarily not included in our gold standard set and thus are not part of our study.</p>
+<p>However, we believe that the utility of using Gröls/Gröls data outweighs those objections for two reasons. First, similar to the situation described by Gröls/Gröls in 2009, there is simply not much alternative research to be found that would be more recent and at least equally suited for a gold standard. In other words, having the risk of incomplete data is more favorable than no data at all. Second, we assume the market for German law journals to be a fairly static one, thus deeming it highly likely that a more recent ranking would more or less include the same publications as fifteen years ago, with the exception of the above mentioned journals.</p>
+</section>
+<section id="coverage-of-gold-standard-journals-in-other-sources" class="level4">
+<h4 class="anchored" data-anchor-id="coverage-of-gold-standard-journals-in-other-sources">Coverage of gold standard journals in other sources</h4>
+<p>How is the gold standard list derived from the study of Gröls/Gröls (2009) reflected in the other data sources we have surveyed so far?</p>
+<section id="bibliometric-databases" class="level5">
+<h5 class="anchored" data-anchor-id="bibliometric-databases">Bibliometric Databases</h5>
+<p>If we compare the gold standard with the lists we created with a simple<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> search in the databases Web of Science, Scopus and OpenAlex (<a href="#tbl-gold-standard-coverage" class="quarto-xref">Table&nbsp;5</a>), we can make the following observations:</p>
+<ul>
+<li>None of the 2 journals we found in the Web of Science is in the Gröls/Gröls gold standard.</li>
+<li>Among the 23 journals we found in Scopus, 5 are contained in the gold standard.</li>
+<li>In Openalex we found 323 journals, 32 of which are contained in the gold standard. The remaining 20 are not contained in OpenAlex at all, which means no other search criteria would have found them.</li>
+</ul>
+<div class="cell" data-execution_count="9">
+<div id="tbl-gold-standard-coverage" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="9">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gold-standard-coverage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Coverage of gold standard Journals in the bibliometric databases
+</figcaption>
+<div aria-describedby="tbl-gold-standard-coverage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Database</th>
+<th data-quarto-table-cell-role="th">Gold standard journals</th>
+<th data-quarto-table-cell-role="th">Recall</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>wos</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>scp</td>
+<td>5</td>
+<td>0.1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>openalex</td>
+<td>32</td>
+<td>0.6</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Expressed in a more formal metrics, the <em>recall</em> of our gold standard against the trivial search<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a> is 0 for WoS, 0.1 for Scopus and 0.6 for OpenAlex. We cannot really compute a <em>precision</em> here, which would require some sort way of determining journal relevance. Our search returned journals having the feature “law” and “German”, but with no indication of their quality or impact. In contrast, our gold standard is based on their perceived ‘relevance’ among the population of legal scholars in the survey. In standard bibliometric analysis, the ‘impact factor’ would be derived by measuring the number of references to articles in that journal (citation count). As we show below, this is not really possible because of the lack of reliable citation data. However, at this point of the analysis, we do not take that information into account.</p>
+<p>To find out whether the metadata of the 323 journals in OpenAlex enabled some other form of ranking that would allow to compare the OpenAlex list with our gold standard list, we used the following, very simple metrics of each journal in the OpenAlex list: <em>the number of articles</em> of indexed, the total <em>number of citations</em> of all articles, and the average <em>number of citations per paper</em>. We then compared the order of the journals ranked by these metrics with that of the gold standard, with mixed results. On one hand, the top 5 on our gold standard rank among the top ten in the number of articles, however, others are placed at the bottom. Some citation based methods provide high ranks for many, but not all gold standard journals. Thus, these simple metrics show a stark difference between conceivable ranking methods in OpenAlex and our gold standard ranking.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
+<p>Next, we measured how well the gold standard journals is covered in the bibliometric databases. This question is a somewhat different from the previous as the comparison does not depend on any selection based on metadata in those databases. While the first approach is concerned with the equivalence of common features (“law” , “German”), the second addresses the coverage of these recognized sources within the databases in question. Unsurprisingly, the results confirm our finding that OpenAlex is the only bibliometric database that is worth exploring further. <a href="#fig-gold-standard-coverage-visual" class="quarto-xref">Figure&nbsp;4</a> shows the coverage of our gold standard in the Web of Science, Scopus, OpenAlex and CrossRef<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a> that visually makes this clear.</p>
+<div id="cell-fig-gold-standard-coverage-visual" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display">
+<div id="fig-gold-standard-coverage-visual" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gold-standard-coverage-visual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-gold-standard-coverage-visual-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gold-standard-coverage-visual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Coverage of the gold standard in bibliometric databases
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="internet-lists" class="level5">
+<h5 class="anchored" data-anchor-id="internet-lists">Internet lists</h5>
+<p>For completeness, we also checked how well the gold standard aligned with the online lists: Matching again on the journal abbreviations (with all the associated problems) we can see the overlaps of the gold standard with those sources in <a href="#fig-inclusion-gold-standard-online-lists" class="quarto-xref">Figure&nbsp;5</a>:</p>
+<div id="cell-fig-inclusion-gold-standard-online-lists" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<div id="fig-inclusion-gold-standard-online-lists" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inclusion-gold-standard-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-inclusion-gold-standard-online-lists-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inclusion-gold-standard-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Intersections between the gold standard and online lists
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>While one would have expected close to 100% inclusion of our gold dataset in the various lists, this is not the case. The results vary from 61% (openjur.de) to 82% (jura-recherche.de).</p>
+</section>
+</section>
+</section>
+</section>
+<section id="coverage-on-item-and-metadata-level-and-quality-of-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="coverage-on-item-and-metadata-level-and-quality-of-metadata">4. Coverage on item and metadata level and quality of metadata</h2>
+<p>As stated above, only one of the three bibliometric databases taken into account seems to cover a sufficient amount of journals considered ‘relevant’ from experts in the field. For this reason, we concentrate on OpenAlex in the following.</p>
+<p>Up to this point, our analysis was restricted to the coverage on journal level, where we found that most of the journals from our gold standard set are covered by OpenAlex. For bibliometric analyses, this coverage on journal level is not sufficient. In addition to the pure existence of the journal in the database, the coverage quality is decisive, which is only given if a) all articles of the journal exist in the database (coverage on article level), and b) metadata of articles should be available (coverage on metadata level) in a sufficient quality.</p>
+<p>As our journal gold standard set does not help in these respect, a further - item based - gold standard is needed. For this, we contacted a number of publishers of journals in the journal gold standard and asked for their original data. Three publishers provided data, for a total of seven journals:</p>
+<ul>
+<li><strong>Mohr Siebeck</strong>: JuristenZeitung; Archiv fur die civilistische Praxis; Rabels Zeitschrift für ausländisches und internationales Recht; Archiv des öffentlichen Rechts</li>
+<li><strong>Duncker &amp; Humblot</strong>: Der Staat</li>
+<li><strong>Nomos</strong>: Kritische Justiz; Kritische Vierteljahresschrift</li>
+</ul>
+<p>A subset of the available data, limited to publications up to and including the year 2023, was selected for the purpose of evaluating the coverage and metadata quality of the dataset at both the article and metadata levels. Due to incomplete data availability, in particular for older publication years, only the years for which data was available were included in the comparisons.</p>
+<section id="item-level-coverage" class="level3">
+<h3 class="anchored" data-anchor-id="item-level-coverage">4.1 Item level coverage</h3>
+<section id="a.-number-of-articles-per-journal-all-years" class="level4">
+<h4 class="anchored" data-anchor-id="a.-number-of-articles-per-journal-all-years">a. Number of articles per journal (all years)</h4>
+<p>In a first step we take a look at item level coverage and simply compared the number of publications in OpenAlex with the number of publications in the publisher data. This looks quite promising: numbers are nearly equal (<a href="#fig-compare-publisherdata-openalex-work-count" class="quarto-xref">Figure&nbsp;6</a>).</p>
+<div id="cell-fig-compare-publisherdata-openalex-work-count" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display">
+<div id="fig-compare-publisherdata-openalex-work-count" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-compare-publisherdata-openalex-work-count-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-compare-publisherdata-openalex-work-count-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-compare-publisherdata-openalex-work-count-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Comparison of article count between publisher data and OpenAlex
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="b.-checking-article-completeness-via-doi-matching" class="level4">
+<h4 class="anchored" data-anchor-id="b.-checking-article-completeness-via-doi-matching">b. Checking article completeness via DOI matching</h4>
+<p>Simply having almost equal quantities of articles in either set isn’t adequate. It is necessary to ensure that the identical elements exist in both. If this isn’t done, some items may be absent in one set and others in another, leading to an equal article count but differing sets. Thus, as a subsequent step, we correlated the articles from OpenAlex against those from publisher data, utilizing the DOI available in both sources. <a href="#tbl-compare-publisherdata-openalex-doi" class="quarto-xref">Table&nbsp;6</a> shows the number of DOIs which are only found in OpenAlex when categorized by journal with the earliest and the most recent year of missing DOIs. When compared to the overall quantity of articles, these numbers are negligible, which means that in terms of the DOI coverage, the data quality in OpenAlex seems good.</p>
+<div class="cell" data-execution_count="13">
+<div id="tbl-compare-publisherdata-openalex-doi" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="13">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-compare-publisherdata-openalex-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: Comparison of dois between publisher data and OpenAlex
+</figcaption>
+<div aria-describedby="tbl-compare-publisherdata-openalex-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="13">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Journal</th>
+<th data-quarto-table-cell-role="th">Missing DOIs</th>
+<th data-quarto-table-cell-role="th">Min year</th>
+<th data-quarto-table-cell-role="th">Max Year</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>AcP</td>
+<td>16</td>
+<td>1976</td>
+<td>2018</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>AöR</td>
+<td>2</td>
+<td>1993</td>
+<td>2008</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>JZ</td>
+<td>65</td>
+<td>1997</td>
+<td>2021</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>KJ</td>
+<td>13</td>
+<td>2018</td>
+<td>2023</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>KritV</td>
+<td>10</td>
+<td>2023</td>
+<td>2023</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>RabelsZ</td>
+<td>12</td>
+<td>1977</td>
+<td>2023</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Staat</td>
+<td>4</td>
+<td>1977</td>
+<td>2023</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Several factors contributed to the observed mismatch between the publisher data and OpenAlex. Not only did the publisher data lack coverage for certain years, but also some newer publications were only present in OpenAlex, highlighting a potential limitation of the publisher data. A closer examination of the discrepancies revealed several distinct cases, including:</p>
+<ul>
+<li><p>Temporal discrepancies, where publications were recorded with different publication years in the two datasets (e.g., 2024 in the publisher data vs.&nbsp;2023 in OpenAlex), leading to publications being excluded from our analysis because of the exclusions mentioned above.</p></li>
+<li><p>Duplicate DOIs in OpenAlex, which appeared to correspond to the same publication, but were not present in the publisher data. This was observed in cases where a single publication had multiple DOIs, such as self-archived versions, corrections, or where one DOIs had been assigned to a whole for a whole journal section (i.e.&nbsp;“book reviews”) rather than the individual components of a the section (i.e., the individual reviews).</p></li>
+</ul>
+<p>Conversely, a total of 67 DOIs were found to be missing in OpenAlex, as presented in <a href="#tbl-openalex-missing-dois" class="quarto-xref">Table&nbsp;7</a>. Notably, the number of missing articles was relatively low. However, a closer examination revealed a striking pattern: the majority of missing articles (58 out of 67) were from the publication year 2022. This suggests a potential issue with the timing of data updates in OpenAlex. Specifically, we observed instances where a DOI or item was present in a more recent OpenAlex snapshot, but was missing from an earlier snapshot. For example, the DOI ‘10.1628/acp-2022-0013’ was not present in the August 2024 snapshot, but was included in the November 2024 snapshot. This highlights the importance of considering the timing of data updates when analyzing bibliometric data.</p>
+<div class="cell" data-execution_count="14">
+<div id="tbl-openalex-missing-dois" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="14">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-openalex-missing-dois-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7: Number of DOIs missing in OpenAlex
+</figcaption>
+<div aria-describedby="tbl-openalex-missing-dois-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="14">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Journal</th>
+<th data-quarto-table-cell-role="th">Missing DOIs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>AcP</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>AöR</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>JZ</td>
+<td>44</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>KJ</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>KritV</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>RabelsZ</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="c.-publication-years-coverage" class="level4">
+<h4 class="anchored" data-anchor-id="c.-publication-years-coverage">c.&nbsp;Publication years coverage</h4>
+<p>As a last analysis concerning article coverage we tried to check how the journal coverage compared to the whole lifetime of a journal. <a href="#fig-oa-zdb-coverage-comparison" class="quarto-xref">Figure&nbsp;7</a> plots the period of the first and last occurrence of OpenAlex data against the period between from the first and last publication year of the journal as stored in the ZDB. Both lines cannot be taken at face value as for simplicity, we have not plotted gaps in publication years or coverage; the graph also does not visualize how much data exists for a journal in a particular year. However, <a href="#fig-oa-zdb-coverage-comparison" class="quarto-xref">Figure&nbsp;7</a> shows very well that only in very few cases, the data in OpenAlex covers the whole lifetime of a journal, and even where there is coverage, it shouldn’t be assumed to be complete.</p>
+<div id="cell-fig-oa-zdb-coverage-comparison" class="cell" data-execution_count="15">
+<div class="cell-output cell-output-display">
+<div id="fig-oa-zdb-coverage-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-oa-zdb-coverage-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-oa-zdb-coverage-comparison-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oa-zdb-coverage-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Coverage of gold standard journals in OpenAlex compared to actual publication periods (simplified).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="metadata-coverage-and-quality" class="level3">
+<h3 class="anchored" data-anchor-id="metadata-coverage-and-quality">4.2 Metadata coverage and quality</h3>
+<p>Article meta data is essential for bibliometric analyses. Time series require valid publication years, analyses of countries or institutions are dependent on good affiliation data, and the construction of a meaningful citation network is impossible without sufficient citation data, i.e.&nbsp;a complete list of the references cited by a publication. In our analysis, we concentrated on four metadata entities which are relevant for bibliometric analyses: publication years, authors, institutions, and citations.</p>
+<section id="a.-publication-years" class="level4">
+<h4 class="anchored" data-anchor-id="a.-publication-years">a. Publication years</h4>
+<p>To assess coverage, we first simply check for the presence of a publication year in the OpenAlex data in our dataset. All article items have a publication year. When matching publications by DOI, we found some differences in publication years between OpenAlex and publisher data, as seen in <a href="#tbl-cmp-pubyears-oa-publisher" class="quarto-xref">Table&nbsp;8</a>. There, a difference of -5 and a number of articles of 12 means that for 12 articles the publication year in OpenAlex is 5 years earlier than the publication year in the publisher data. A difference of 0 means equal publication years in both sources, which is the desired result.</p>
+<div class="cell" data-execution_count="16">
+<div id="tbl-cmp-pubyears-oa-publisher" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="16">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cmp-pubyears-oa-publisher-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;8: Frequency of differences between publication years in OpenAlex and publisher data
+</figcaption>
+<div aria-describedby="tbl-cmp-pubyears-oa-publisher-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="16">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Journal</th>
+<th data-quarto-table-cell-role="th">Difference</th>
+<th data-quarto-table-cell-role="th">Number of Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>AcP</td>
+<td>0</td>
+<td>729</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>AöR</td>
+<td>0</td>
+<td>920</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>JZ</td>
+<td>-5</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>JZ</td>
+<td>0</td>
+<td>5650</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>KJ</td>
+<td>0</td>
+<td>2538</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>KJ</td>
+<td>1</td>
+<td>33</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>KritV</td>
+<td>0</td>
+<td>400</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>KritV</td>
+<td>1</td>
+<td>180</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>RabelsZ</td>
+<td>-16</td>
+<td>21</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>RabelsZ</td>
+<td>-4</td>
+<td>22</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>RabelsZ</td>
+<td>-1</td>
+<td>43</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>RabelsZ</td>
+<td>0</td>
+<td>1300</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>Staat</td>
+<td>0</td>
+<td>464</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>As shown in Table <a href="#tbl-cmp-pubyears-oa-publisher" class="quarto-xref">Table&nbsp;8</a>, journals JZ, KJ, KritV, and RabelsZ exhibit discrepancies in publication years, whereas most other cases do not. For JZ and RabelsZ, these differences are rare and typically result from print versions being digitized later. In contrast, KritV shows a distinct pattern, with OpenAlex often reporting a publication year one year later than the publisher data. This phenomenon was previously observed for KritV’s last issue across multiple years.</p>
+<p>In sum, the publication year metadata in OpenAlex seems to be usable for bibliometric analyses.</p>
+</section>
+<section id="b.-author-count" class="level4">
+<h4 class="anchored" data-anchor-id="b.-author-count">b. Author count</h4>
+<p>We then examined the number of authors for all articles in OpenAlex in journals in the gold standard, compared to those in the publisher data. Only 69% of the OA articles (3319 in total) have at least one author, which means that the coverage of author metadata is far from complete. In the publisher data we also have items without authors (3021 in total), but usually this is restricted to items such as the ‘Inhaltsverzeichnis’ (table of content), ‘Redaktionelle Notiz’ (editorial), ‘Anzeigen’ (advertising). It is to expected that such item types do not have authors, although the fact that they have been classified as ‘article’ in the publisher data as well as OpenAlex data raises some doubts. Equally, the practice of giving the review section one single DOI has to be criticized from a bibliometric perspective, regardless of whether publishers add the authors of the review articles or not. This practice should be given up in favor of registering each book review with its own DOI and separate author.</p>
+<p>The differences in the number of authors of the publications in OpenAlex vs in the publisher data gives a first impression about the correctness of this data. <a href="#fig-cmp-numauthors-oa-publisher" class="quarto-xref">Figure&nbsp;8</a> shows how many articles with a specific difference in author numbers occur (where a positive difference means more authors in OpenAlex than publisher data while a negative difference means authors missing in OpenAlex). The x-axis corresponds to the difference, the y-axis the number of articles with this difference. So the ideal case would be all the journals having one only value at x=0, showing for all their articles there is an equal number of authors in OpenAlex and the publisher data. As <a href="#fig-cmp-numauthors-oa-publisher" class="quarto-xref">Figure&nbsp;8</a> shows, we do reach this ideal case but for most cases the number of authors is equal, differences appear only in rare cases (low y values for x values &lt;&gt; 0).</p>
+<p>Concerning the rest, different cases show up: for the JZ and KJ we have a quite high amount of publications with a small difference (1), while for the KJ and KritV we have very few cases with differences but these differences can be quite high (author count difference of more than 20).</p>
+<div id="cell-fig-cmp-numauthors-oa-publisher" class="cell" data-execution_count="17">
+<div class="cell-output cell-output-display">
+<div id="fig-cmp-numauthors-oa-publisher" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cmp-numauthors-oa-publisher-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-cmp-numauthors-oa-publisher-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cmp-numauthors-oa-publisher-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Frequency of differences between the number of authors on the publisher data and OpenAlex
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Among the cases where the numbered differed, a closer look showed that, for example,</p>
+<ul>
+<li><p>in publications with more than one author, authors were missing in OpenAlex as well as in CrossRef;</p></li>
+<li><p>the entry contained author duplicates in OpenAlex and in CrossRef;</p></li>
+<li><p>Courts, e.g.&nbsp;‘Sozialgericht X’ are mentioned as additional author in one source but not in the other; or</p></li>
+<li><p>stark differences could be observed for items with titles such as ‘Autor/inn/en’, ‘Titelei/Inhaltsverzeichnis’, ‘Buchbesprechungen’.</p></li>
+</ul>
+</section>
+<section id="c.-institutionaffiliations" class="level4">
+<h4 class="anchored" data-anchor-id="c.-institutionaffiliations">c.&nbsp;Institution/Affiliations</h4>
+<p>For author affiliations, the publisher data did not provide affiliation information, making it impossible to compare OpenAlex data with publisher data in this regard. Thus we limited our analysis to statistical analyses on the OpenAlex data itself, focusing on articles from journals in the gold standard set.</p>
+<p>OpenAlex offers two types of affiliation data: the original raw affiliation string, as it appears on the publication, and an institutional ID assigned through OpenAlex’s own disambiguation process. Additionally, OpenAlex provides an institution hierarchy, which could be leveraged for further analysis. However, the fact that only 4% of the publications have at least one `institution_id` assigned (6% when excluding publications without authors). And even for these few entries, the affiliation data is most probably incomplete as only one affiliation entry is present. Interestingly, most of the affiliations available are from an institution of the Max Planck society. There are a few cases in which a raw affiliation string exists, but no `institution_id` could be assigned by the disambiguation procedure.<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> This situation precludes any bibliometric analysis based on affiliation data, effectively rendering evaluations at the institutional level, including comparisons and rankings of institutions, impossible.</p>
+</section>
+<section id="d.-references-and-citations" class="level4">
+<h4 class="anchored" data-anchor-id="d.-references-and-citations">d.&nbsp;References and citations</h4>
+<p>For references and citations, we face a similar limitation as before: the publisher data does not provide this information, preventing a comparison with the gold standard. Consequently, we can only examine statistical trends within the OpenAlex data itself.</p>
+<section id="references" class="level5">
+<h5 class="anchored" data-anchor-id="references">References</h5>
+<p>References are the bibliographic data on the literature cited in a publication. Unfortunately, we observe that only 2.72% of all articles item in OpenAlex that belong to journals in our gold standard set contain data that indicates that they have (at least one) reference. As it is very unlikely that all other articles do not have references at all, the coverage of reference data seems to be extremely low.</p>
+<p><a href="#fig-openalex-refs" class="quarto-xref">Figure&nbsp;9</a> shows the huge differences between journals:</p>
+<div id="cell-fig-openalex-refs" class="cell" data-execution_count="19">
+<div class="cell-output cell-output-display">
+<div id="fig-openalex-refs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-openalex-refs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-openalex-refs-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-openalex-refs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Share of articles with at least one reference per journal in the gold standard set
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>We also had a look at the reference situation with respect to the publication years to see if more actual publications do have a better coverage of references but this is not the case. <a href="#tbl-oa-references-statistics" class="quarto-xref">Table&nbsp;9</a> shows that 5,097 distinct articles appear as a reference in at least one article of our gold standard set, of which 41.55% are in the gold standard set of journals; 43.24% of them are publications in journals we found by trivial search (German, law) in OpenAlex. However, it must be kept in mind that these figures do not mean much because the reference data is simply to scarce for any kind of robust interpretation.</p>
+<div class="cell" data-execution_count="20">
+<div id="tbl-oa-references-statistics" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="20">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oa-references-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9: Statistics on OpenAlex reference data in the gold standard
+</figcaption>
+<div aria-describedby="tbl-oa-references-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="20">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Query</th>
+<th data-quarto-table-cell-role="th">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Percentage of OpenAlex article items in gold s...</td>
+<td>2.72</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Distinct publications cited</td>
+<td>5097.00</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Cited publications in gold standard</td>
+<td>41.50</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Cited publications in law/German search</td>
+<td>43.20</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>It is also interesting to ask about the types of publications that would be cited in the gold standard set. Journals top the list, followed by ‘book series’ and ‘e-book platforms’ in second and third place. While articles in journals and books in book series are to be expected, publications in e-book platforms are not a typical citation target for German law journals. Instead, we see an artefact created by publications that cite e-books having citation metadata, while others that do not cite these digital publications have no metadata.</p>
+<div class="cell" data-execution_count="21">
+<div id="tbl-oa-references-type" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="21">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oa-references-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10: Types of cited references in the gold standard set
+</figcaption>
+<div aria-describedby="tbl-oa-references-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="21">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Type</th>
+<th data-quarto-table-cell-role="th">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>journal</td>
+<td>4147</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>book series</td>
+<td>501</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>ebook platform</td>
+<td>166</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>conference</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>repository</td>
+<td>14</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>other</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="citation-data-in-openalex" class="level5">
+<h5 class="anchored" data-anchor-id="citation-data-in-openalex">Citation data in OpenAlex</h5>
+<p>In bibliometrics, citations (so the set of articles that cite a particular publication) are even of more interest than the reference lists themselves. As argued above, we do not have sufficient reference data and cannot derived any kind of conclusions that correspond to the reality of scholarly legal knowledge production. However, it is still interesting to analyze the citation data that does exist. Thus, we queried the OpenAlex data for article items that cite an article from the set of journals in the gold standard, i.e.&nbsp;they contain this article in their reference list. <a href="#tbl-oa-citation-statistics" class="quarto-xref">Table&nbsp;11</a> shows some general statistics on citations of our gold standard set of journals in OpenAlex.</p>
+<div class="cell" data-execution_count="22">
+<div id="tbl-oa-citation-statistics" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="22">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oa-citation-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;11: Statistics on OpenAlex reference data in the gold standard
+</figcaption>
+<div aria-describedby="tbl-oa-citation-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="22">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Query</th>
+<th data-quarto-table-cell-role="th">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Share of publications cited</td>
+<td>18.15</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Citing OA items in the gold standard</td>
+<td>6.09</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Citing OA items in the trivial search</td>
+<td>7.20</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>About 18% of the articles in the gold standard set have at least one citation in OpenAlex. This is a higher percentage than that of gold standard articles having at least one reference, which was below 3 percent. However, as is very unlikely that all the other articles were not cited at all, the coverage of the gold standard can be determined to be very poor in terms of citations.</p>
+<p><a href="#fig-openalex-citations" class="quarto-xref">Figure&nbsp;10</a> displays the absolute differences in citation counts between the journals, without accounting for the varying total number of articles per journal, which would be necessary for a normalized comparison.</p>
+<div id="cell-fig-openalex-citations" class="cell" data-execution_count="23">
+<div class="cell-output cell-output-display">
+<div id="fig-openalex-citations" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-openalex-citations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-openalex-citations-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-openalex-citations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Share of articles with at least one citation per journal in the gold standard set
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Only slightly over 6 percent of citing articles are from gold standard journals, and the share is just one percent higher when looking for articles published in journals found by searching articles categorized “Law” and “German”. In our data, most of the references to articles in our gold standard come from outside the field. This is highly counter-intuitive. We know from experience that most citations in law journals come from other law journals. However, the observation can be easily explained by the lack of reference data in German legal scholarship demonstrated above. In contrast, interdisciplinary scholarship that cites our gold standard journals has a much better coverage in OpenAlex.</p>
+</section>
+<section id="scopus-footprint" class="level5">
+<h5 class="anchored" data-anchor-id="scopus-footprint">Scopus Footprint</h5>
+<p>As argued above, OpenAlex does not tell us much about citations pointing to articles in our gold standard. Although Scopus was not a good source of <strong>article</strong> data in our domain, the database does have a feature that we can use to find some more citations. The Scopus article data contains a column with the full text of the reference, from which we can extract a journal name, even if there is no structured journal name field for this reference. As an experiment, we used the Juristenzeitung (JZ) and searched for its occurrence in the Scopus reference fulltext using regular expressions. While such citations must be considered unrepresentative and random, they are part of all “really existing” citations and can be considered as a lower bound.</p>
+<p><a href="#fig-jz-reference-fulltext-comparison" class="quarto-xref">Figure&nbsp;11</a> shows a comparison between OpenAlex and Scopus in terms of citations to the “Juristenzeitung”.</p>
+<div id="cell-fig-jz-reference-fulltext-comparison" class="cell" data-execution_count="24">
+<div class="cell-output cell-output-display">
+<div id="fig-jz-reference-fulltext-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-jz-reference-fulltext-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-jz-reference-fulltext-comparison-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-jz-reference-fulltext-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Comparison of citation data for the JZ in OpenAlex and Scopus reference full text
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>As noted, a lower bound for the number of citations to JZ’s articles is established by the number of references mentioning JZ in the full-text reference string in Scopus. The chart indicates instances where the number of OpenAlex citations falls short of this lower bound by a grey background, whereas a green background denotes cases where OpenAlex citations exceed the lower bound. Notably, the analysis suggests that OpenAlex’s coverage of JZ’s citations improves significantly from around 2010/2013 onwards. In contrast, for earlier years, despite a relatively low number of Scopus references mentioning JZ, OpenAlex citations fail to reach the established lower bound.</p>
+</section>
+</section>
+</section>
+<section id="classification-in-openalex" class="level3">
+<h3 class="anchored" data-anchor-id="classification-in-openalex">4.3 Classification in Openalex</h3>
+<p>OpenAlex provides a hierarchical classification (domain, field, subfield, topic)<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a>. For our simple search (“Law”, “German”), we used the subfield level (with value ‘law’). The fact that all journals from the gold standard were contained in the result list seems to suggest that the classification matches our expectations.</p>
+<p>To further investigate the classification scheme, we focused on the level below subfields, namely topics. For articles from journals in our gold standard set, we would expect to see subfields of law represented. Using an open classification algorithm,<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> OpenAlex assigns multiple topics to each article, along with a likelihood score. The works object in OpenAlex contains a keyword attribute, which is populated with up to 5 keywords derived from the topics, taking into account a threshold for likelihood. In order to get a first glance of the topics used, we generated a word cloud of these keywords. The resulting cloud contains sensible and relevant topics for our set.</p>
+<div id="cell-fig-wordcloud-oa-topics" class="cell" data-execution_count="25">
+<div class="cell-output cell-output-display">
+<div id="fig-wordcloud-oa-topics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wordcloud-oa-topics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-wordcloud-oa-topics-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wordcloud-oa-topics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Example JZ: Comparison of citations
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>However, without a more thorough analysis, we cannot say whether the keywords actually fit the content of the articles. This would require a new gold standard on the article level and a reliable way of comparing human-curated (German) keywords with the ones generated by OpenAlex.</p>
+</section>
+<section id="the-futility-of-ranking-with-openalex" class="level3">
+<h3 class="anchored" data-anchor-id="the-futility-of-ranking-with-openalex">4.4 The futility of ranking with OpenAlex</h3>
+<p>The last metric we want to have a look at is a ranking of journals based on the available data in our gold standard. If we assume that the expert assessment is the best data we have, what can we draw on in OpenAlex that it could be compared to? The typical metric that is used in the traditional bibliometric databases is the Journal Impact Factor (JIF)<span class="citation" data-cites="garfield1999"><a href="#ref-garfield1999" role="doc-biblioref">[13]</a></span>, which despite being heavily criticized <span class="citation" data-cites="archambault2009"><a href="#ref-archambault2009" role="doc-biblioref">[14]</a></span>, is still widely used. Calculating the JIF for the gold standard journals in OpenAlex is problematic since we are lacking data for many years. Also the question is for what year to compare it - since the gold standard is from 2009, it would make sense to compare the JIF only for 2009. However, given that a) as we have argued before, the German legal landscape is very static and b) there is very little data to rely on, it made sense to calculate the JIF over all available data. Our aim is not an exact comparison but rather meant to give a sense of how much the OpenAlex ranking differs from the gold standard one.</p>
+<p>We compared the Gröls/Gröls ranking with the JIF-based ranking from OpenAlex separatedly for the generalist journals (<a href="#fig-comp-groels-jif-general" class="quarto-xref">Figure&nbsp;13</a>) and the specialized ones (<a href="#fig-comp-groels-jif-specialized" class="quarto-xref">Figure&nbsp;14</a>). Looking at the results, the rankings differ considerably.</p>
+<div id="cell-fig-comp-groels-jif-general" class="cell" data-execution_count="26">
+<div class="cell-output cell-output-display">
+<div id="fig-comp-groels-jif-general" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-comp-groels-jif-general-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-comp-groels-jif-general-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-comp-groels-jif-general-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: Comparison of Gröls/Gröls ranking with OpenAlex JIF for generalist journals
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-comp-groels-jif-specialized" class="cell" data-execution_count="27">
+<div class="cell-output cell-output-display">
+<div id="fig-comp-groels-jif-specialized" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-comp-groels-jif-specialized-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-comp-groels-jif-specialized-output-1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-comp-groels-jif-specialized-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14: Comparison of Gröls/Gröls ranking with OpenAlex JIF for specialized journals
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>A complete alignment in ranking would have all journals be on the red diagonal line; the closer the dots are placed towards the diagonal, the more the rankings would resemble each other. However, as the figures show, there is large variation in the rankings. For the generalist journals, expert assessment and OpenAlex JIF most closely aligns only for the AöR. For the specialized ones, there is also a huge spread, with Verw and ZZP coming closest to the diagonal. However, we don’t think that these results mean anything other that there is simply not enough data available that would allow us to draw more substantive conclusions.</p>
+</section>
+</section>
+<section id="conclusion-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-future-work">5. Conclusion and future work</h2>
+<p>Our aim was to examine the coverage of German-language, more specifically, Germany-based law journals in the Web of Science, Scopus and OpenAlex bibliometric databases. In order to do that, we derived a list of law journals (our gold standard) from a study that had surveyed German law professors about which journals they considered most important in their field. We then queried the three data sources for the coverage of these journals.</p>
+<p>Looking at our results, it is clear that OpenAlex is the only of the bibliometric databases examined which currently has a minimal coverage of German law journals as far as our gold standard set is representative. It offers a limited, but steadily growing basis for bibliometric queries.</p>
+<p>Our analysis seems to confirm studies which have argued that WoS or Scopus are, as Tenant has expressed it, “structurally biased against […] non-English language research” <span class="citation" data-cites="tennant2020"><a href="#ref-tennant2020" role="doc-biblioref">[15, p. 1]</a></span>, although Tenant was specifically referring to research in “non-western countries.” The case of German law journals is certainly a bit different, not only because Germany is part of the “Western” hemisphere in terms of knowledge production.</p>
+<p>It is beyond the scope of this article to systematically analyze the reasons for the neglect of German law in the bibliometric databases. However, it is reasonable to assume that at least two factors are at play. The first concerns the non-universality of legal scholarship irrespective of language: as the law is specific to national jurisdictions, much of doctrinal legal scholarship is by nature not transferable to other jurisdiction. This makes all non-common law doctrinal knowledge uninteresting to database vendors focused on an Anglo-American audience. Also, the strict selection criteria of WoS and Scopus is premised on a particularly peer-review and publishing model which does not fit the way German legal scholarship is being produced, reviewed, and published.<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> These selection criteria would have to be changed in order to accurately reflect knowledge production in a wider array of scholarly domains.</p>
+<p>From our experiments, we draw a few conclusions for future research.</p>
+<p>First of all, the future of bibliometric analyses should not depend on commercial vendors who sell bibliometric metadata at high costs and with restrictive licenses. As we have shown, open suppliers such as OpenAlex already have a better, but still very limited coverage of the German legal domain. The strategy should be to improve open data repositories and make the data readily available to anyone who wants to do their own analyses.</p>
+<p>Second, as OpenAlex’s data repository is highly dynamic, it is necessary to continually follow its growth and internal refactoring. The queries from this study need to be repeated in order to document improvements of the coverage of the gold standard across database versions. We hope that publishers will continue to upgrade the quality of the data to CrossRef, from which OpenAlex mainly draws. This, we hope, will improve the bibliometric coverage of legal scholarship in German (and other languages) over time.</p>
+<p>Finally, relying solely on publishers to supply the necessary data will not suffice. In particular, it is improbable that the current near-complete absence of citation data will be resolved in the near future. On one hand, some publishers may have a vested interest in monetizing citation data themselves. However, even if others are open to sharing citation data in principle, such data does often not exist. In the academic realm of law, the humanities, or the social sciences, currently no machine-readable citation data is being gathered during the publication process in any systematic way.</p>
+<p>How can this situation be changed? Current tools for automated citation extraction <span class="citation" data-cites="cioffi2022"><a href="#ref-cioffi2022" role="doc-biblioref">[17]</a></span> are performing very badly when confronted with the citation practices in legal scholarship and other disciplines that make heavy use of footnotes. With the recent emergence of Large Language Models, which are able to interpret semantic structures based on the context, this is likely to change.<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> Once easy-to-use tools are available, we are confident that it will be possible to to create, in a decentralized and incremental process, Open Data datasets on that are necessary to study knowledge production in legal scholarship and beyond.</p>
+</section>
+<section id="references-1" class="level2">
+<h2 class="anchored" data-anchor-id="references-1">7. References</h2>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-vanRaan_2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. van Raan, <span>“Measuring science: Basic principles and application of advanced bibliometrics,”</span> in <em>Springer handbook of science and technology indicators</em>, W. Glänzel, H. F. Moed, U. Schmoch, and M. Thelwall, Eds., Cham: Springer International Publishing, 2019. doi: <a href="https://doi.org/10.1007/978-3-030-02511-3_10">10.1007/978-3-030-02511-3_10</a></div>
+</div>
+<div id="ref-germancouncilofscienceandhumanities2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">G. C. of Science and Humanities, <span>“Prospects of legal scholarship in germany. Current situation, analyses, recommendations,”</span> Köln, Sep. 2012. Available: <a href="https://www.wissenschaftsrat.de/download/archiv/2558-12_engl.pdf">https://www.wissenschaftsrat.de/download/archiv/2558-12_engl.pdf</a></div>
+</div>
+<div id="ref-gröls2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">M. Gröls and T. Gröls, <span>“Ein ranking juristischer fachzeitschriften,”</span> <em>JuristenZeitung</em>, vol. 64, no. 17, pp. 488–499, 2009.</div>
+</div>
+<div id="ref-wagner-döbler1993" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">R. Wagner-Döbler and L. Philipps, <span>“Argumentative leitbegriffe: Ein experiment in computergestützter analyse juristischer urteilstexte aus den jahren 1950 bis 1992,”</span> <em>Zeitschrift für Rechtssoziologie</em>, vol. 14, no. 2, p. 257279, 1993, doi: <a href="https://doi.org/10.1515/zfrs-1993-0206">10.1515/zfrs-1993-0206</a></div>
+</div>
+<div id="ref-coupette2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">C. Coupette, <em>Juristische Netzwerkforschung</em>. Tübingen: Mohr Siebeck, 2019.</div>
+</div>
+<div id="ref-tang2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">M.-C. Tang, Y. J. Cheng, and K. H. Chen, <span>“A longitudinal study of intellectual cohesion in digital humanities using bibliometric analyses,”</span> <em>Scientometrics</em>, vol. 113, no. 2, pp. 985–1008, 2017, doi: <a href="https://doi.org/10.1007/s11192-017-2496-6">10.1007/s11192-017-2496-6</a>. Available: <a href="http://link.springer.com/10.1007/s11192-017-2496-6">http://link.springer.com/10.1007/s11192-017-2496-6</a></div>
+</div>
+<div id="ref-liu2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">L. Liu, B. F. Jones, B. Uzzi, and D. Wang, <span>“Data, measurement and empirical methods in the science of science,”</span> <em>Nature Human Behaviour</em>, vol. 7, no. 7, pp. 1046–1058, Jul. 2023, doi: <a href="https://doi.org/10.1038/s41562-023-01562-4">10.1038/s41562-023-01562-4</a>. Available: <a href="https://www.nature.com/articles/s41562-023-01562-4">https://www.nature.com/articles/s41562-023-01562-4</a></div>
+</div>
+<div id="ref-hicks1999" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">D. Hicks, <span>“The difficulty of achieving full coverage of international social science literature and the bibliometric consequences,”</span> <em>Scientometrics</em>, vol. 44, no. 2, pp. 193–215, Feb. 1999, doi: <a href="https://doi.org/10.1007/BF02457380">10.1007/BF02457380</a>. Available: <a href="https://doi.org/10.1007/BF02457380">https://doi.org/10.1007/BF02457380</a></div>
+</div>
+<div id="ref-gläser2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">J. Gläser and J. Oltersdorf, <span>“Persistent Problems for a Bibliometrics of Social Sciences and Humanities and How to Overcome Them,”</span> G. Catalano, C. Daraio, M. Gregori, H. F. Moed, and G. Ruocco, Eds., Edizioni Efesto, 2019, pp. 1056–1567. Available: <a href="https://www.issi-society.org/publications/issi-conference-proceedings/proceedings-of-issi-2019">https://www.issi-society.org/publications/issi-conference-proceedings/proceedings-of-issi-2019</a></div>
+</div>
+<div id="ref-hammarfelt2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">B. Hammarfelt, <span>“Beyond Coverage: Toward a Bibliometrics for the Humanities,”</span> M. Ochsner, S. E. Hug, and H.-D. Daniel, Eds., Cham: Springer International Publishing, 2016, pp. 115–131. Available: <a href="https://doi.org/10.1007/978-3-319-29016-4_10">https://doi.org/10.1007/978-3-319-29016-4_10</a></div>
+</div>
+<div id="ref-schmidtEtAl2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">M. Schmidt <em>et al.</em>, <span>“The <span>Data Infrastructure</span> of the <span>German Kompetenznetzwerk Bibliometrie</span>: <span>An Enabling Intermediary</span> between <span>Raw Data</span> and <span>Analysis</span>.”</span> Zenodo, 2024. doi: <a href="https://doi.org/10.5281/zenodo.13932928">10.5281/zenodo.13932928</a></div>
+</div>
+<div id="ref-versi1992" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline">E. Versi, <span>“"<span>Gold</span> standard" is an appropriate term.”</span> <em>British Medical Journal</em>, vol. 305, no. 6846, pp. 187–187, Jul. 1992, doi: <a href="https://doi.org/10.1136/bmj.305.6846.187-b">10.1136/bmj.305.6846.187-b</a></div>
+</div>
+<div id="ref-garfield1999" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline">E. Garfield, <span>“Journal impact factor: a brief review,”</span> <em>CMAJ</em>, vol. 161, no. 8, pp. 979–980, Oct. 1999, Available: <a href="https://www.cmaj.ca/content/161/8/979">https://www.cmaj.ca/content/161/8/979</a></div>
+</div>
+<div id="ref-archambault2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline">É. Archambault and V. Larivière, <span>“History of the journal impact factor: Contingencies and consequences,”</span> <em>Scientometrics</em>, vol. 79, no. 3, pp. 635–649, Jun. 2009, doi: <a href="https://doi.org/10.1007/s11192-007-2036-x">10.1007/s11192-007-2036-x</a>. Available: <a href="https://doi.org/10.1007/s11192-007-2036-x">https://doi.org/10.1007/s11192-007-2036-x</a></div>
+</div>
+<div id="ref-tennant2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[15] </div><div class="csl-right-inline">J. Tennant, <span>“Web of science and scopus are not global databases of knowledge,”</span> Mar. 2020, doi: <a href="https://doi.org/10.31235/osf.io/qhvgr">10.31235/osf.io/qhvgr</a>. Available: <a href="https://osf.io/qhvgr">https://osf.io/qhvgr</a></div>
+</div>
+<div id="ref-gulden2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[16] </div><div class="csl-right-inline">A. Gulden, <span>“<span>Peer-Review-Verfahren in juristischen Zeitschriften</span>,”</span> <em>LTO-Karriere</em>. https://www.lto.de/karriere/im-job/stories/detail/peer-review-verfahren-in-juristischen-fachzeitschriften, Oct. 2023.</div>
+</div>
+<div id="ref-cioffi2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[17] </div><div class="csl-right-inline">A. Cioffi and S. Peroni, <span>“Structured references from PDF articles: Assessing the tools for bibliographic reference extraction and parsing,”</span> 2022, doi: <a href="https://doi.org/10.48550/ARXIV.2205.14677">10.48550/ARXIV.2205.14677</a></div>
+</div>
+</div>
+</section>
+
+
+
+<div id="quarto-appendix" class="default"><section id="acknowledgments" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">Acknowledgments</h2><div class="quarto-appendix-contents">
+
+<p>The Web of Science, Scopus and OpenAlex data used in this article were provided by the German Competence Network for Bibliometrics funded by the Federal Ministry of Education and Research (Grant: 16WIK2101A). We thank the publishers Mohr Siebeck, Duncker &amp; Humblot and Nomos for providing us with the metadata on journal articles used in section 4.</p>
+<p>The authors would like to acknowledge the use of Large Language Models for English language editing and correction, and for generating part of the code, in particular for the visualizations.</p>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>For this ad-hoc experiment, a dataset has been created on the (now defunct) platform constellate.org, consisting of metadata and fulltext of 45233 documents from the German law journals available on this platform: Archiv für Rechts- und Sozialphilosophie, Archiv des öffentlichen Rechts, Archiv für Rechts- und Sozialphilosophie, Archiv für Rechts- und Wirtschaftsphilosophie, Archiv für die civilistische Praxis, Der Staat, KritV, Kritische Justiz, Rabels Zeitschrift für ausländisches und internationales Privatrecht, Zeitschrift für Rechtspolitik, in the period 1900-2023. These journals are not in any way representative for German legal scholarship, but it is unlikely that this sample would contain significantly fewer hits than any other sample of the same size from a complete corpus. Unfortunately, for legal reasons, the data for this experiment cannot be shared.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://github.com/mpilhlt/bibliometrics-of-german-law-journals." class="uri">https://github.com/mpilhlt/bibliometrics-of-german-law-journals.</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The Research project “Kulturwandel in der Rechtswissenschaft (KidRewi)”, which, among other things, investigates the presence of monographic legal scholarship in bibliometric databases (https://openrewi.org/kidrewi/).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Up until recently, trying to query these bibliometric databases comparatively would have been a major challenge, since the raw data looks very different for WoS, Scopus and OpenAlex. WoS and Scopus raw data comes in XML and is item-centric, meaning meta data on, for example, journals, author and institutions is available, but only as part of the item xml files. In contrast, OpenAlex raw data is provided in JSONL files and organized in entities and relations between them. This means we would have had to write a different query for each data source. However, since the KB bibliometric database store the data in a common, normalized schema, it allows to use the same, or very similar queries to execute against the data sources (The normalized metadata schema cannot be 100% identical because the differences in the source data). It thus provides an extremely efficient infrastructure for comparisons between them.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>We used the classification system “ASCA (American School Counselor Association) traditional” for WoS and “ASJC (All Science Journal Classification)” for Scopus. OpenAlex comes with its own item-specific hierarchical classification system (from high to low: domain, field, subfield, topic; see https://docs.openalex.org/api-entities/topics). We used the subfield level.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>The query parameters were: Subject Category = ‘Law’, source type = ‘Journal’, item type = ‘Article’, language = ‘ger’<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Using the following query parameters: ASJC class = ‘Law’, source type = ‘Journal’, item type = ‘Article’, language = ‘ger’<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Plus, the “Lebensmittel-Umschau” (Food Review) also made it into the list.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>See https://mjl.clarivate.com/collection-list-downloads for the WoS.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>In this result set, in 8 cases journals with the same “display_name” attribute appear with 2 different source ids. Since we know that there are no two different journals having the same name, this might be a disambiguation failure or related to a publisher change.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>A possible candidate for determining relevance is the number of citations, however, as we will see later, almost no citation data exists for the journals in our list.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>The CSV data is available in the `../data/web_lists` directory in the article repository.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><a href="https://rsw.beck.de/zeitschriften/kjb" class="uri">https://rsw.beck.de/zeitschriften/kjb</a><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Archived at <a href="https://web.archive.org/web/20250219193315/https://www.bsb-muenchen.de/datenb/juris_zsliste.pdf" class="uri">https://web.archive.org/web/20250219193315/https://www.bsb-muenchen.de/datenb/juris_zsliste.pdf</a><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p><a href="https://openjur.de/s/fachzeitschriften.html" class="uri">https://openjur.de/s/fachzeitschriften.html</a><a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p><a href="https://de.wikipedia.org/w/index.php?title=Kategorie:Juristische_Fachzeitschrift_(Deutschland)" class="uri">https://de.wikipedia.org/w/index.php?title=Kategorie:Juristische_Fachzeitschrift_(Deutschland)</a><a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>A WikiData entity for this Wikipedia category exists <a href="https://www.wikidata.org/wiki/Q8979123">(Q8979123)</a> but as of the time of writing this paper, there were no linked entities.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>We used https://petscan.wmcloud.org to generate CSV data.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>The total number of journals is slightly higher in <a href="#fig-intersection-wikipedia" class="quarto-xref">Figure&nbsp;3</a> because in the source data multiple abbreviations for the same journal exists.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>By “simple” (sometimes also called “trivial” in the code) we mean a search that would be done by someone who knows how to query a bibliometric database but has no domain-specific knowledge about law journals.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>We define “recall” in our scenarioas as the share of gold standard journals found by the simple search divided by the total number of gold standard journals.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p><a href="https://github.com/mpilhlt/bibliometrics-of-german-law-journals/blob/main/notebooks/evaluations_rewi_create%20basic_tables.ipynb" class="uri">https://github.com/mpilhlt/bibliometrics-of-german-law-journals/blob/main/notebooks/evaluations_rewi_create%20basic_tables.ipynb</a><a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>CrossRef.org is one of the sources from which OpenAlex draws its data - which can be be seen by the fact that every item from the GS which is contained in CrossRef is also contained in OpenAlex.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>Examples for cases with uncleaned data show obvious data errors like e.g.&nbsp;‘gegen Brasilien gewonnen haben?’ (W4239815844) or affiliation strings like ‘studiert Rechtswissenschaft III Frankfurt am Main’ (W4249773843).<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>See <a href="https://docs.openalex.org/api-entities/topics/topic-object" class="uri">https://docs.openalex.org/api-entities/topics/topic-object</a> (Last accessed Mar 9 2025)<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p><a href="https://github.com/ourresearch/openalex-topic-classification" class="uri">https://github.com/ourresearch/openalex-topic-classification</a> (Last accessed Mar 9 2025)<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p>Wether German legal scholarship really can do without Peer Review because in “Jurisprudence knows no right or wrong” <span class="citation" data-cites="gulden2023"><a href="#ref-gulden2023" role="doc-biblioref">[16]</a></span> is another question.<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p>The reason is that they have been trained on data from the natural sciences,does which usually contain well-structured bibliographies. In contrast, references in German legal scholarship usually relies on literature contained in footnotes, which are very difficult to parse computationally. See current research by Boulanger, Carreto Fidalgo and Wagner on reference extraction, <a href="https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph" class="uri">https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph</a><a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
