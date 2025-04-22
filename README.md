@@ -1,6 +1,6 @@
 # Measuring Bibliometric Coverage of German Law Journals
 
-This repo contains code and data for the paper "Measuring Bibliometric Coverage of German Law Journals" by Boulanger/Fejzo/Rimmert. See the [current HTML version of the paper](docs/paper.html) for more details.
+This repo contains code and data for the paper "Measuring Bibliometric Coverage of German Law Journals" by Boulanger/Fejzo/Rimmert. See the [current HTML version of the paper](https://mpilhlt.github.io/bibliometrics-of-german-law-journals/paper.html) for more details.
 
 The Web of Science (WoS), Scopus and OpenAlex data used in this article were provided by the German Competence Network for Bibliometrics funded by the Federal Ministry of Education and Research (Grant: 16WIK2101A). We thank the publishers Mohr Siebeck, Duncker & Humblot and Nomos for providing us with the metadata on journal articles used in section 4.
 
