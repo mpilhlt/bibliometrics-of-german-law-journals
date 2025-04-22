@@ -24,7 +24,7 @@ author:
       city: Karlsruhe 
       country: Germany
       url: https://www.fiz-karlsruhe.de
-abstract: This paper systematically investigates how the German landscape of law journals is represented in databases used for bibliometric analyses, in particular the Web of Science, Scopus, and OpenAlex. ...
+abstract: "Bibliometric analyses are uncommon in German legal scholarship, often attributed to disciplinary skepticism. However, this paper posits that a more fundamental reason is the lack of adequate data coverage in standard bibliometric databases. We systematically investigate the representation of the German law journal landscape in Web of Science (WoS), Scopus, and OpenAlex. To achieve this, we first establish a gold standard list of 52 representative German law journals based on a 2009 expert survey. We then measure the coverage of these journals within the target databases and assess the quality of the available metadata, focusing particularly on OpenAlex due to its superior initial coverage. Our findings confirm the initial hypothesis: coverage in WoS and Scopus is minimal. While OpenAlex includes a larger proportion of the gold standard journals (32/52) and shows reasonable item-level completeness for a subset checked against publisher data, its metadata quality presents significant limitations. Crucially, affiliation data is sparse, and citation data is almost entirely absent, precluding meaningful citation analysis, impact assessment, or reliable institutional evaluation. We conclude that while coverage is improving, particularly through open platforms like OpenAlex, the current state of bibliometric data, especially the lack of citation information, severely restricts the application of standard bibliometric methods to German legal scholarship. We discuss potential reasons for this gap and suggest focusing on enhancing open data repositories and exploring new methods to generate currently unavailable citation data."
 lang: en
 date: 2025-02-19
 licence: "CC BY"
@@ -33,14 +33,18 @@ project:
   execute-dir: project
 execute: 
   cache: true
+  echo: false
 zotero: true
 funding: "The authors received no specific fundings for this work."
 bibliography: references.bib
 csl: ieee-with-url.csl
 format:
+  docx: 
+    toc: false
+    code-annotations: none
   pdf: 
     toc: true
-    code-annotations: false
+    code-annotations: none
   html:
     toc: true
     embed-resources: false
@@ -54,6 +58,7 @@ format:
 import sys; 
 sys.path.append('../')
 
+# not necessary if you use `uv`to manage the python version and project dependencies
 %pip install -r requirements.txt
 ```
 
@@ -61,19 +66,19 @@ sys.path.append('../')
 
 Bibliometric and scientometric analyses are common in many fields of research, being used for research assessment, i.e. the measurement of scholarly productivity and impact of institutions, journals, or individual scholars, or, alternatively, for science mapping, the empirical analysis of knowledge production in a particular field of scholarship [@vanRaan_2019]. However, this has not been the case for the field of German legal scholarship. One empirical indication of this state of affairs is that, when searching in the full texts of German law journal articles available on JSTOR for the expression "bibliometr\*", there are exactly two hits.[^1]
 
-[^1]: For this ad-hoc experiment, a dataset has been created on constellate.org, consisting of metadata and fulltext of 45233 documents from the German law journals available on this platform: Archiv für Rechts- und Sozialphilosophie, Archiv des öffentlichen Rechts, Archiv für Rechts- und Sozialphilosophie, Archiv für Rechts- und Wirtschaftsphilosophie, Archiv für die civilistische Praxis, Der Staat, KritV, Kritische Justiz, Rabels Zeitschrift für ausländisches und internationales Privatrecht, Zeitschrift für Rechtspolitik, in the period 1900-2023. These journals are not in any way representative for German legal scholarship, but it is unlikely that this sample would contain significantly fewer hits than any other sample of the same size from a complete corpus.
+[^1]: For this ad-hoc experiment, a dataset has been created on the (now defunct) platform constellate.org, consisting of metadata and fulltext of 45233 documents from the German law journals available on this platform: Archiv für Rechts- und Sozialphilosophie, Archiv des öffentlichen Rechts, Archiv für Rechts- und Sozialphilosophie, Archiv für Rechts- und Wirtschaftsphilosophie, Archiv für die civilistische Praxis, Der Staat, KritV, Kritische Justiz, Rabels Zeitschrift für ausländisches und internationales Privatrecht, Zeitschrift für Rechtspolitik, in the period 1900-2023. These journals are not in any way representative for German legal scholarship, but it is unlikely that this sample would contain significantly fewer hits than any other sample of the same size from a complete corpus. Unfortunately, for legal reasons, the data for this experiment cannot be shared.
 
 The reason for this could be attributed to the fact that lawyers treat bibliometric analyses with skepticism. As the 2012 Report on the State of German Legal Scholarship and Education states: „Bibliometric methods are not sufficiently capable of measuring research performance in legal scholarship.“ [@germancouncilofscienceandhumanities2012, p. 54]. However, our suspicion is that this situation is equally, if not more so, due to the fact that unlike in other fields of science, there just isn't enough data available on which bibliometric analyses could be based upon.
 
 The purpose of this paper is to empirically test this proposition. It systematically investigates how the German landscape of law journals is represented in the databases used for bibliometric analyses, in particular the Web of Science, Scopus, and OpenAlex.
 
-This research question is subdivided in three sub-questions, which are discussed in separate parts of this paper after shortly surveying previous work. The *first question* asks what exactly we are looking for: what set of publications represents the German law journal landscape? Here, were are not aiming at completeness, but rather at a a sample that is sufficiently large and representative enough to make our observations valid. Based on a previous study that surveyed German law professors to construct a ranking of law journals [@gröls2009], we propose a "gold standard" list of German law journals. Once the sample has been established, the *second question* how much data exists for this sample in our target databases. The *third question* is about data quality: it is not enough to observe the pure quantity of records found for our sample - we also have to investigate how complete and accurate this data is, and what questions can be answered based on it, and which cannot.
+This research question is subdivided in three sub-questions, which are discussed in separate parts of this paper after shortly surveying previous work. The *first question* asks what exactly we are looking for: what set of publications represents the German law journal landscape? Here, were are not aiming at completeness, but rather at a a sample that is sufficiently large (but not too large) and representative enough to make our observations valid. Based on a previous study that surveyed German law professors to construct a ranking of law journals [@gröls2009], we propose a "gold standard" list of German law journals. Once the sample has been established, the *second question* how much data exists for this sample in our target databases. The *third question* is about data quality: it is not enough to observe the pure quantity of records found for our sample - we also have to investigate how complete and accurate this data is, and what questions can be answered based on it, and which cannot.
 
 Not surprisingly, we conclude that is that the data bears out the initial hypothesis. While the bibliometric coverage of knowledge production in the German legal domain is getting better in recent years, mainly because of the appearance of new players in the market, it is generally still very limited. As most German law journal do not fit the selection criteria of the commercial vendors, the more open offerings such as OpenAlex are the only viable candidate. However, the available metadata is found wanting. In particular, we observe a general lack of citation data. The conclusion sketches some reasons for why this is so and proposes ways forward.
 
-This paper is a interdisciplinary collaboration between two domain specialists and a bibliometrician, and thus tries to combine different epistemic interests: on one hand, in those questions that require the data we are looking for, and on the other, the questions that the data poses itself. We document all queries and the code we used to produce the tables and graphs in the following sections in our GitHub repository.[^2]
+This paper is a interdisciplinary collaboration between two domain specialists (Boulanger, Fejzo) and a bibliometrician (Rimmert), and thus tries to combine different epistemic interests: on one hand, in those questions that require the data we are looking for, and on the other, the questions that the data poses itself. We document all queries and the code we used to produce the tables and graphs in the following sections in our GitHub repository.[^2]
 
-[^2]: https://github.com/mpilhlt/XXX.
+[^2]: <https://github.com/mpilhlt/bibliometrics-of-german-law-journals.>
 
 ## 2. Previous and related work
 
@@ -87,9 +92,9 @@ In addition, such studies point out that in the fields in SSH, a large part of t
 
 ## 3. Constructing a gold standard list of German law journals
 
-The first task in measuring the coverage of German law journals in bibliographic databases is to determine which of the journals to look for, i.e. to create a list of journals that represent the category "German law journals". In this endeavour, we do not aim for completeness. For the purpose of this study, it will suffice to have a sample which is sufficiently large to be representative of the field. At the same time, the selection must be small enough to be checked and enriched with additional metadata (for example, a persistent identifier such as the ISSN) with a reasonable amount of effort. This will allow us to define a list of journals for which, at a minimum, data has to exist in sufficient quality in order to make statements about knowledge production in German legal scholarship. This does not mean that journals that are not on the list are not important for the discipline. We make no statement on the difference of quality of those journals that make it on the list compared to those which do not. We are not interested in finding or providing a metric similar to the "journal impact factor" of German law journals. We are only interested in the quality of bibliometric data on a representative and relevant list of German law journals.
+The first task in measuring the coverage of German law journals in bibliographic databases is to determine which of the journals to look for, i.e. to create a list of journals that represent the category “German law journals”. In this endeavour, we do not aim for completeness. For the purpose of this study, it will suffice to have a sample which is sufficiently large to be representative of the field. At the same time, the selection must be small enough, so it is possible to check and enrich the dataset with additional metadata (for example, a persistent identifier such as the ISSN) with a reasonable amount of effort. This will allow us to define a list of journals for which, at a minimum, data has to exist in sufficient quality in order to make statements about knowledge production in German legal scholarship. This does not mean that journals that are not on the list are not important for the discipline. In fact, as it will become clear, our selection methodology forces us to omit any journal founded after 2009. We also make no statement on the difference of quality of those journals that make it on the list compared to those which do not. We are not interested in finding or providing a metric similar to the “journal impact factor” of German law journals. We are only interested in the quality of bibliometric data on a representative and relevant list of those journals.
 
-There are generally two ways in which such a list could be assembled. One approach requires no prior knowledge of the field and promises an "objective" way of generating a list. This *data-based* approach relies on the presence of databases which have sufficiently good metadata categories. It seems not unreasonable to assume that, given a database of journals which has labels for the subject matter "law" and the language attribute "German", one would be able derive a list of German law journals. This would include all journals with German language content, i.e., include journals from Germany, Austria, Switzerland and other legal publications in German. This list could then be filtered further down to journals that cover the Federal Republic of Germany or any other country or combinations of countries. However, as we will discuss below, even if this would work, such an approach will always have at least two problems: a) an additional metric would be needed that would allow to limit this list to the really relevant and representative journals and, even more important, b) the list might be affected by a selection bias in the data from which it was derived. We will therefore argue that we need an alternative approach wich is *based on domain expert knowledge* and which might be more reliable for our purposes.
+There are generally two ways in which such a list could be assembled. One approach requires no prior knowledge of the field and promises an "objective" way of generating a list. This *data-based* approach relies on the presence of databases which have sufficiently good metadata categories. It seems not unreasonable to assume that, given a database of journals which has labels for the subject matter "law" and the language attribute "German", one would be able derive a list of German law journals. This would include all journals with German language content, i.e., include journals from Germany, Austria, Switzerland and other legal publications in German. This list could then be filtered further down to journals that cover the Federal Republic of Germany or any other country or combinations of countries. However, as we will discuss below, even if this would work, such an approach will always have at least two problems: a) an additional metric would be needed that would allow to limit this list to the really relevant and representative journals and, even more important, b) the list might be affected by a selection bias in the data from which it was derived. We will therefore argue that we need an alternative approach which is *based on domain expert knowledge* and which might be more reliable for our purposes.
 
 ### Data-based selection
 
@@ -124,7 +129,7 @@ To narrow down this list further would require to find ways to decide, based on 
 
 #### Bibliometric Databases: Web of Science, Scopus, OpenAlex
 
-Instead, the next experiment was to probe the bibliometric databases themselves to see whether, based on the available metadata, we could generate a methodologically controlled list of journals. In theory, this could yield a better selection than what we retrieved from the ZDB, since the bibliometric databases aim to focus on research and are less likely to contain non-scholarly communications. The reason for this selection of these three databases (and the exclusion of others, such as Lens, Semantic Scholar or dimension.ai) is that they are available in a normalized schema, at the Kompetenznetzwerk Bibliometrie (Schmidt et al. 2024).[^4]
+Instead, the next experiment was to probe the bibliometric databases themselves to see whether, based on the available metadata, we could generate a methodologically controlled list of journals. In theory, this could yield a better selection than what we retrieved from the ZDB, since the bibliometric databases aim to focus on research and are less likely to contain non-scholarly communications. The reason for this selection of these three databases (and the exclusion of others, such as Lens, Semantic Scholar or dimension.ai) is that they are available in a normalized schema, at the Kompetenznetzwerk Bibliometrie [@schmidtEtAl2024].[^4]
 
 [^4]: Up until recently, trying to query these bibliometric databases comparatively would have been a major challenge, since the raw data looks very different for WoS, Scopus and OpenAlex. WoS and Scopus raw data comes in XML and is item-centric, meaning meta data on, for example, journals, author and institutions is available, but only as part of the item xml files. In contrast, OpenAlex raw data is provided in JSONL files and organized in entities and relations between them. This means we would have had to write a different query for each data source. However, since the KB bibliometric database store the data in a common, normalized schema, it allows to use the same, or very similar queries to execute against the data sources (The normalized metadata schema cannot be 100% identical because the differences in the source data). It thus provides an extremely efficient infrastructure for comparisons between them.
 
@@ -173,7 +178,7 @@ df
 
 **OpenAlex** is one of the new non-commercial competitors to the WoS and Scopus. In contrast to the very restricted inclusion criteria of those databases,[^9] the successor to "Microsoft Academic Graph" has a much more liberal approach to what to index. This is immediately visible in the result of our query, which returns 323 individual journals.[^10] When checked from the perspective of a domain specialist, the list seems to include quite a number of journals that seem relevant, although the top-20 list (ranked by the share of German law articles) contains both relevant journals as well as some that are very specialized (@tbl-openalex-ger-law).
 
-[^9]: See https://mjl.clarivate.com/collection-list-downloads for the WoS, and <mark>Scopus-inclusion criteria...</mark>
+[^9]: See https://mjl.clarivate.com/collection-list-downloads for the WoS.
 
 [^10]: In this result set, in 8 cases journals with the same "display_name" attribute appear with 2 different source ids. Since we know that there are no two different journals having the same name, this might be a disambiguation failure or related to a publisher change.
 
@@ -199,18 +204,18 @@ In sum, based on the number of results and a intuition backed by domain knowledg
 
 The alternative approach is not to start with the available data, but with the knowledge of domain experts. In this case, we need to know how legal scholars or other people with a similar knowledge of the domain (such as law librarians) would construct the set of journals that we are looking for. In contrast to the previous approach, this involves an element of human judgment. However, this seems to be adequate since such a list is not a "fact" comparable to a mathematical set. It is therefore not decisive for our purposes that such a list might be incomplete or that different people might have different opinions about what should be on that list, as long as we have a viable list that represents the "least common denominator" of expert opinions.
 
-In other words, for our purposes we need a "gold standard" list against which the results of our queries can be compared. The nature of a gold standard in evaluation research is that we do not have "ground truth" in the sense of empirically verifiable observations, but a yard stick, or "good enough" data (Versi 1992).
+In other words, for our purposes we need a "gold standard" list against which the results of our queries can be compared. The nature of a gold standard in evaluation research is that we do not have "ground truth" in the sense of empirically verifiable observations, but a yard stick, or "good enough" data [@versi1992].
 
 #### Curated lists of law journals available online
 
-The internet offers a number of lists of German law journals. They are curated in the sense as they have been assembled by (usually unnamed) domain experts of varying credentials for pedagogical or other reasons. For the purpose of this article, we scraped the contents of the following lists and converted them into csv data:[^12]
+The internet offers a number of lists of German law journals. They are curated in the sense as they have been assembled by (usually unnamed) domain experts of varying credentials for pedagogical or other reasons. For the purpose of this article, we scraped the contents of the following lists and converted them into CSV data:[^12]
 
 [^12]: The CSV data is available in the \`../data/web_lists\` directory in the article repository.
 
 -   "Karlsruher Juristische Bibliographie, Verzeichnis der für Periodika verwendeten Abkürzungen": a list of journals curated by the publisher Beck[^13], with 561 entries;
 -   juris: Verzeichnis der ausgewerteten juristischen Periodika (Aufsätze): This is the list of journals ingested by the commercial legal information platform "Juris" for their database on law journal articles. The Bayrische Staatsbibliothek has a PDF from 2002[^14] which we used to extract a list of 383 entries;
 -   OpenJur - Juristische Fachzeitschriften: openJur[^15] is a database for german jurisdiction and legislation operated by openJur gGmbH, a non-profit organization under german law. It provides a list of German law journals with 173 entries;
--   Jura Recherche: The internet page https://jura-recherche.de provides a research interface for law students. Its list has 252 entries.
+-   Jura Recherche: The internet page <https://jura-recherche.de> provides a research interface for law students. Its list has 252 entries.
 
 [^13]: <https://rsw.beck.de/zeitschriften/kjb>
 
@@ -242,7 +247,7 @@ for set_name, file_path in sets.items():
 venny4py(sets=abbrevs, out="tmp")
 ```
 
-The lists share a relatively small number of abbreviations (43). The number of found co-occurrences could probably be increased somewhat by matching the entries of the list with unique idenitifiers such as the ISSN, which would eliminate incorrect matchings, but probably not much.
+The lists share a relatively small number of abbreviations (43). The number of found co-occurrences could probably be increased somewhat by matching the entries of the list with unique identifiers such as the ISSN, which would eliminate incorrect matching, but probably not much.
 
 In any case, we did not pursue this approach further. While lists like the ones identified above are interesting data sources themselves, they do not provide a solid basis for our analysis, at least not in a straightforward way. On one hand, the intersection of all lists is hinges on accidental factors since we have no way of knowing what the selection criteria for any of the above lists are. On the other hand, a union of all lists could help avoid selection biases. However, it would have a size that would to large to be useful (\>900), and, as in our previous experiments, there would be no clear selection criteria by which to filter the list down to a more manageable size.
 
@@ -280,15 +285,15 @@ for set_name, file_path in sets.items():
 venny4py(sets=abbrevs, out="tmp")
 ```
 
-Be that as it may, for our purposes, this list has similar problems as the previous ones: as this list hinges on the accidental fact whether an entry exists on a journal or not, and relies on the self-categorization, its represenativeness cannot be guaranteed. And as before, the data itself does not provide any way of ranking the results to give us the most relevant titles.
+Be that as it may, for our purposes, this list has similar problems as the previous ones: as this list hinges on the accidental fact whether an entry exists on a journal or not, and relies on the self-categorization, its representativeness cannot be guaranteed. And as before, the data itself does not provide any way of ranking the results to give us the most relevant titles.
 
 #### Expert Ranking: Gröls/Gröls (2009)
 
 Instead, for generating our gold standard, we relied on a 2009 study by Marcel and Tanja Gröls [@gröls2009], who ranked law journals on the basis of a survey among law professors. Even though the study is more than 15 years old and has - as far as we can see - not yet been updated in later studies, it is still a useful source of data for our purposes, as we will explain below.
 
-As the authors point out (<mark>Seite?</mark>), previous attempts at ranking german law journals through empirical means remained scarce. Therefore, the authors decided on a methodological setup derived from similiar studies in economics and business administration. In short, their study consists of different rankings of german law journals generated by surveying the individual assessment of german law scholars. First, 1500 email addresses of german law professors, both current and former, as well as research associates were identified by reviewing the webpages of 45 german universities and academic institutions. Next, these individuals were contacted via email and asked to fill out the survey. 248 responses were received, marking a 16,5% response rate.
+As the authors point out, previous attempts at ranking German law journals through empirical means remained scarce (497). Therefore, the authors decided on a methodological setup derived from similar studies in economics and business administration (489). In short, their study consists of different rankings of German law journals generated by surveying the individual assessment of German law scholars. First, 1500 email addresses of German law professors, both current and former, as well as research associates were identified by reviewing the web pages of 45 German universities and academic institutions. Next, these individuals were contacted via email and asked to fill out the survey. 248 responses were received, marking a 16,5% response rate (490).
 
-The survey asked its participants to name their area of expertise, rank five journals of that area they perceived to be of the highest quality, and additionally, to name and rank five journals that are more general in scope and not bound to a specific subdiscipline, again according to perceived quality. Journals over a certain counting threshold were then assigned scores based on their place in the participants ranking as well as the participants academic status (professors were weighted stronger than research associates) and ‘expert factor’, thus creating two different kinds of rankings: one for journals considered general in nature and several others according to specific subdisciplines.
+The survey asked its participants to name their area of expertise, rank five journals of that area they perceived to be of the highest quality, and additionally, to name and rank five journals that are more general in scope and not bound to a specific subdiscipline, again according to perceived quality (490). Journals over a certain counting threshold were then assigned scores based on their place in the participant's ranking as well as the participant's academic status (professors were weighted stronger than research associates) and an ‘expert factor’ determined by the individuals amount of publications over the last three years, thus creating two different kinds of rankings: one for journals considered general in nature and several others according to specific subdisciplines (491-492).
 
 As this distinction is irrelevant to our purposes, we aggregated the different rankings into one list of 52 journals, thereby constituting our gold standard (@tbl-gold-standard).
 
@@ -303,9 +308,9 @@ df.columns = ['Abbreviation', 'Title']
 df
 ```
 
-As stated earlier, one possible objection against using the study by Gröls & Gröls for our gold standard is its age. Specifically, there could be the risk of missing relevant journals established after 2009 or not accounting for the fact that more recent rankings would vastly diverge from one fifteen years ago. In fact, for domain experts it seems an obvious problem that journals as e.g. Rechtswissenschaft (est. 2010) or Recht und Zugang (est. 2020), are necessarily not included in our Gold Standard set and thus are not part of our study.
+As stated earlier, one possible objection against using the study by Gröls & Gröls for our gold standard is its age. Specifically, there could be the risk of missing relevant journals established after 2009 or not accounting for the fact that more recent rankings would vastly diverge from one fifteen years ago. In fact, for domain experts it seems an obvious problem that journals as e.g. Rechtswissenschaft (est. 2010) or *Recht und Zugang* (est. 2020), are necessarily not included in our gold standard set and thus are not part of our study.
 
-However, we believe that the utility of using Gröls/Gröls data outweighs those objections for two reasons. First, similar to the situation described by Gröls/Gröls in 2009, there is simply not much alternative research to be found that would be more recent and at least equally suited for a gold standard. In other words, having the risk of incomplete data is more favorable than no data at all. Second, we assume the market for german law journals to be a fairly static one, thus deeming it highly likely that a more recent ranking would more or less include the same publications as fifteen years ago, with the exception of the above mentioned journals.
+However, we believe that the utility of using Gröls/Gröls data outweighs those objections for two reasons. First, similar to the situation described by Gröls/Gröls in 2009, there is simply not much alternative research to be found that would be more recent and at least equally suited for a gold standard. In other words, having the risk of incomplete data is more favorable than no data at all. Second, we assume the market for German law journals to be a fairly static one, thus deeming it highly likely that a more recent ranking would more or less include the same publications as fifteen years ago, with the exception of the above mentioned journals.
 
 #### Coverage of gold standard journals in other sources
 
@@ -323,7 +328,7 @@ If we compare the gold standard with the lists we created with a simple[^20] sea
 
 ```{python}
 #| label: tbl-gold-standard-coverage
-#| tbl-cap: 'Coverage of Gold Standard Journals in the bibliometric databases'
+#| tbl-cap: 'Coverage of gold standard Journals in the bibliometric databases'
 
 import pandas as pd
 gs_size = pd.read_csv("../data/gold/gold-groels-groels-2009.csv").shape[0]
@@ -337,19 +342,21 @@ df = pd.DataFrame(data, columns=['Database', 'Gold standard journals', 'Recall']
 df
 ```
 
-Expressed in a more formal metrics, the *recall* of our gold standard against the trivial search[^21] is 0 for WoS, 0.1 for Scopus and 0.6 for OpenAlex. We cannot really compute a *precision* here, which would require some sort way of determining journal relevance. Our search returned journals having the feature "law" and "German", but with no indication of their quality or impact. In contrast, our Gold Standard is based on their perceived 'relevance' among the population of legal scholars in the survey. In standard bibliometric analysis, the 'impact factor' would be derived by measuring the number of references to articles in that journal (citation count). As we show below, this is not really possible because of the lack of reliable citation data. However, at this point of the analysis, we do not take that information into account.
+Expressed in a more formal metrics, the *recall* of our gold standard against the trivial search[^21] is 0 for WoS, 0.1 for Scopus and 0.6 for OpenAlex. We cannot really compute a *precision* here, which would require some sort way of determining journal relevance. Our search returned journals having the feature "law" and "German", but with no indication of their quality or impact. In contrast, our gold standard is based on their perceived 'relevance' among the population of legal scholars in the survey. In standard bibliometric analysis, the 'impact factor' would be derived by measuring the number of references to articles in that journal (citation count). As we show below, this is not really possible because of the lack of reliable citation data. However, at this point of the analysis, we do not take that information into account.
 
 [^21]: We define "recall" in our scenarioas as the share of gold standard journals found by the simple search divided by the total number of gold standard journals.
 
-To find out whether the metadata of the 323 journals in OpenAlex enabled some other form of ranking that would allow to compare the OpenAlex list with our Gold Standard list, we used the following, very simple metrics of each journal in the OpenAlex list: *the number of articles* of indexed, the total *number of citations* of all articles, and the average *number of citations per paper*. We then compared the order of the journals ranked by these metrics with that of the gold standard, with mixed results. <mark>Das folgende braucht eine Tabelle und nochmal eine Überarbeitung</mark>When results show that the pure works count shows a max rank of 299 for a gold standard journal, bad (while the top 5 have ranks 1,2,3,7 and 8 which is good), also both citation based methods provide high ranks for many gold standard journals. Thus, these simple metrics show a stark difference to the ranking of our Gold Standard ranking.
+To find out whether the metadata of the 323 journals in OpenAlex enabled some other form of ranking that would allow to compare the OpenAlex list with our gold standard list, we used the following, very simple metrics of each journal in the OpenAlex list: *the number of articles* of indexed, the total *number of citations* of all articles, and the average *number of citations per paper*. We then compared the order of the journals ranked by these metrics with that of the gold standard, with mixed results. On one hand, the top 5 on our gold standard rank among the top ten in the number of articles, however, others are placed at the bottom. Some citation based methods provide high ranks for many, but not all gold standard journals. Thus, these simple metrics show a stark difference between conceivable ranking methods in OpenAlex and our gold standard ranking.[^22]
 
-Next, we measured how well the gold standard journals is covered in the bibliometric databases. This question is a somewhat different from the previous as the comparison does not depend on any selection based on metadata in those databases. While the first approach is concerned with the equivalence of common features ("law" , "German"), the second addresses the coverage of these recognized sources within the databases in question. Unsurprisingly, the results confirm our finding that OpenAlex is the only bibliometric database that is worth exploring further. @fig-gold-standard-coverage-visual shows the coverage of our Gold Standard in the Web of Science, Scopus, OpenAlex and CrossRef[^22] that visually makes this clear.
+[^22]: <https://github.com/mpilhlt/bibliometrics-of-german-law-journals/blob/main/notebooks/evaluations_rewi_create%20basic_tables.ipynb>
 
-[^22]: CrossRef.org is one of the sources from which OpenAlex draws its data - which can be be seen by the fact that every item from the GS which is contained in CrossRef is also contained in OpenAlex.
+Next, we measured how well the gold standard journals is covered in the bibliometric databases. This question is a somewhat different from the previous as the comparison does not depend on any selection based on metadata in those databases. While the first approach is concerned with the equivalence of common features ("law" , "German"), the second addresses the coverage of these recognized sources within the databases in question. Unsurprisingly, the results confirm our finding that OpenAlex is the only bibliometric database that is worth exploring further. @fig-gold-standard-coverage-visual shows the coverage of our gold standard in the Web of Science, Scopus, OpenAlex and CrossRef[^23] that visually makes this clear.
+
+[^23]: CrossRef.org is one of the sources from which OpenAlex draws its data - which can be be seen by the fact that every item from the GS which is contained in CrossRef is also contained in OpenAlex.
 
 ```{python}
 #| label: fig-gold-standard-coverage-visual
-#| fig-cap: 'Coverage of the Gold Standard in bibliometric databases'
+#| fig-cap: 'Coverage of the gold standard in bibliometric databases'
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -377,11 +384,11 @@ plt.show()
 
 ##### Internet lists
 
-For completeness, we also checked how well the Gold Standard aligned with the online lists: Matching again on the journal abbreviations (with all the associated problems) we can see the overlaps of the gold standard with those sources in @fig-inclusion-gold-standard-online-lists:
+For completeness, we also checked how well the gold standard aligned with the online lists: Matching again on the journal abbreviations (with all the associated problems) we can see the overlaps of the gold standard with those sources in @fig-inclusion-gold-standard-online-lists:
 
 ```{python}
 #| label: fig-inclusion-gold-standard-online-lists
-#| fig-cap: 'Intersections between the Gold Standard and online lists'
+#| fig-cap: 'Intersections between the gold standard and online lists'
 
 from lib.intersections import compute_csv_intersections, heatmap_inclusion_percentage
 data = {
@@ -397,23 +404,19 @@ matrix = compute_csv_intersections(paths, by='abbreviation', lowercase=True, sep
 heatmap_inclusion_percentage(matrix, labels=labels, cmap="Oranges", figsize=(6,5))
 ```
 
-While one would have expected close to 100% inclusion of our gold dataset in the various lists, this is not the case. The results vary from 61% (openjur.de) to 82% (jura-recherche.de)
-
-<mark>-\>DF: Nochmal nachschauen, was genau fehlt: https://gitlab.mpcdf.mpg.de/cboul/kb-bibliometry/-/tree/main/../data/comparisons</mark>
-
-<mark>Was schließen wir daraus?</mark>
+While one would have expected close to 100% inclusion of our gold dataset in the various lists, this is not the case. The results vary from 61% (openjur.de) to 82% (jura-recherche.de).
 
 ## 4. Coverage on item and metadata level and quality of metadata
 
-As stated above, only one of the three bibliometric databases taken into account seems to cover a sufficient amout of journals considered 'relevant' from experts in the field. For this reason, we concentrate on OpenAlex in the following.
+As stated above, only one of the three bibliometric databases taken into account seems to cover a sufficient amount of journals considered 'relevant' from experts in the field. For this reason, we concentrate on OpenAlex in the following.
 
-Up to this point, our analysis was restricted to the coverage on journal level, where we found that most of the journals from our gold standard set are covered by OpenAlex. For bibliometric analyses, this coverage on journal level is not sufficient. In addition to the pure existence of the journal in the database, the coverage quality is decicive, which is only given if \* all articles of the journal exist in the database (coverage on article level) \* metadata of articles should be available (coverage on metadata level) in a sufficient quality.
+Up to this point, our analysis was restricted to the coverage on journal level, where we found that most of the journals from our gold standard set are covered by OpenAlex. For bibliometric analyses, this coverage on journal level is not sufficient. In addition to the pure existence of the journal in the database, the coverage quality is decisive, which is only given if a) all articles of the journal exist in the database (coverage on article level), and b) metadata of articles should be available (coverage on metadata level) in a sufficient quality.
 
 As our journal gold standard set does not help in these respect, a further - item based - gold standard is needed. For this, we contacted a number of publishers of journals in the journal gold standard and asked for their original data. Three publishers provided data, for a total of seven journals:
 
--   **Mohr Siebeck**: JuristenZeitung, Archiv fur die civilistische Praxis, Rabels Zeitschrift fur ausländisches und internationales Recht, Archiv des öffentlichen Rechts
+-   **Mohr Siebeck**: JuristenZeitung; Archiv fur die civilistische Praxis; Rabels Zeitschrift für ausländisches und internationales Recht; Archiv des öffentlichen Rechts
 -   **Duncker & Humblot**: Der Staat
--   **Nomos**: Kritische Justiz, Kritische Vierteljahresschrift
+-   **Nomos**: Kritische Justiz; Kritische Vierteljahresschrift
 
 A subset of the available data, limited to publications up to and including the year 2023, was selected for the purpose of evaluating the coverage and metadata quality of the dataset at both the article and metadata levels. Due to incomplete data availability, in particular for older publication years, only the years for which data was available were included in the comparisons.
 
@@ -421,7 +424,7 @@ A subset of the available data, limited to publications up to and including the 
 
 #### a. Number of articles per journal (all years)
 
-In a first step we take a look at item level coverage and simply compare the number of publications in OpenAlex with the number of publications in the publisher data. This looks quite promising: numbers are nearly equal (@fig-compare-publisherdata-openalex-work-count).
+In a first step we take a look at item level coverage and simply compared the number of publications in OpenAlex with the number of publications in the publisher data. This looks quite promising: numbers are nearly equal (@fig-compare-publisherdata-openalex-work-count).
 
 ```{python}
 #| label: fig-compare-publisherdata-openalex-work-count
@@ -449,7 +452,7 @@ plt.show()
 
 #### b. Checking article completeness via DOI matching
 
-Simply having almost equal quantities of articles in either set isn't adequate. It is necessary to ensure that the identical elements exist in both. If this isn't done, some items may be absent in one set and others in another, leading to an equal article count but differing sets. Thus, as a subsequent step, we correlated the articles from OpenAlex against those from publisher data, utilizing the DOI available in both sources. @tbl-compare-publisherdata-openalex-doi shows the number of DOIs which are only found in OpenAlex when categorized by journal with the earliest and the most recent year of missing DOIs. When compared to the overall quantity of articles, these nunbers are neglegible, which means that in terms of the DOI coverage, the data quality in OpenAlex seems good.
+Simply having almost equal quantities of articles in either set isn't adequate. It is necessary to ensure that the identical elements exist in both. If this isn't done, some items may be absent in one set and others in another, leading to an equal article count but differing sets. Thus, as a subsequent step, we correlated the articles from OpenAlex against those from publisher data, utilizing the DOI available in both sources. @tbl-compare-publisherdata-openalex-doi shows the number of DOIs which are only found in OpenAlex when categorized by journal with the earliest and the most recent year of missing DOIs. When compared to the overall quantity of articles, these numbers are negligible, which means that in terms of the DOI coverage, the data quality in OpenAlex seems good.
 
 ```{python}
 #| label: tbl-compare-publisherdata-openalex-doi
@@ -478,7 +481,7 @@ Several factors contributed to the observed mismatch between the publisher data 
 
 -   Temporal discrepancies, where publications were recorded with different publication years in the two datasets (e.g., 2024 in the publisher data vs. 2023 in OpenAlex), leading to publications being excluded from our analysis because of the exclusions mentioned above.
 
--   Duplicate DOIs in OpenAlex, which appeared to correspond to the same publication, but were not present in the publisher data. This was observed in cases where a single publication had multiple DOIs, such as self-archived versions, corrections, or where one DOIs had been assigned to a whole for a whole journal section (i.e. "book reviews") 0rather than the individual components of a the section (i.e., the individual reviews).
+-   Duplicate DOIs in OpenAlex, which appeared to correspond to the same publication, but were not present in the publisher data. This was observed in cases where a single publication had multiple DOIs, such as self-archived versions, corrections, or where one DOIs had been assigned to a whole for a whole journal section (i.e. "book reviews") rather than the individual components of a the section (i.e., the individual reviews).
 
 Conversely, a total of 67 DOIs were found to be missing in OpenAlex, as presented in @tbl-openalex-missing-dois. Notably, the number of missing articles was relatively low. However, a closer examination revealed a striking pattern: the majority of missing articles (58 out of 67) were from the publication year 2022. This suggests a potential issue with the timing of data updates in OpenAlex. Specifically, we observed instances where a DOI or item was present in a more recent OpenAlex snapshot, but was missing from an earlier snapshot. For example, the DOI '10.1628/acp-2022-0013' was not present in the August 2024 snapshot, but was included in the November 2024 snapshot. This highlights the importance of considering the timing of data updates when analyzing bibliometric data.
 
@@ -507,7 +510,7 @@ As a last analysis concerning article coverage we tried to check how the journal
 
 ```{python}
 #| label: fig-oa-zdb-coverage-comparison
-#| fig-cap: 'Coverage of Gold Standard journals in OpenAlex compared to actual publication periods (simplified).'
+#| fig-cap: 'Coverage of gold standard journals in OpenAlex compared to actual publication periods (simplified).'
 
 import pandas as pd
 from lib.visualizations import compare_coverage_kb_zdb
@@ -536,8 +539,8 @@ eva_all_publisherdata = pd.read_csv(f'../data/kb_data/{version}/eva_all_publishe
 
 sqldf("""
 select 
-    journal_name as 'Jounal', 
-    pubyear-pubyear_openalex as 'Difference', 
+    journal_name as 'Journal', 
+    cast(pubyear-pubyear_openalex AS INTEGER) as 'Difference', 
     count(*) as 'Number of Articles'
 from eva_all_publisherdata  
 where openalex_id is not null
@@ -548,13 +551,13 @@ order by  journal_name, pubyear-pubyear_openalex
 
 As shown in Table @tbl-cmp-pubyears-oa-publisher, journals JZ, KJ, KritV, and RabelsZ exhibit discrepancies in publication years, whereas most other cases do not. For JZ and RabelsZ, these differences are rare and typically result from print versions being digitized later. In contrast, KritV shows a distinct pattern, with OpenAlex often reporting a publication year one year later than the publisher data. This phenomenon was previously observed for KritV's last issue across multiple years.
 
-In sum. the publication year metadata in OpenAlex seems to be usable for bibliometric analyses.
+In sum, the publication year metadata in OpenAlex seems to be usable for bibliometric analyses.
 
 #### b. Author count
 
 We then examined the number of authors for all articles in OpenAlex in journals in the gold standard, compared to those in the publisher data. Only 69% of the OA articles (3319 in total) have at least one author, which means that the coverage of author metadata is far from complete. In the publisher data we also have items without authors (3021 in total), but usually this is restricted to items such as the 'Inhaltsverzeichnis' (table of content), 'Redaktionelle Notiz' (editorial), 'Anzeigen' (advertising). It is to expected that such item types do not have authors, although the fact that they have been classified as 'article' in the publisher data as well as OpenAlex data raises some doubts. Equally, the practice of giving the review section one single DOI has to be criticized from a bibliometric perspective, regardless of whether publishers add the authors of the review articles or not. This practice should be given up in favor of registering each book review with its own DOI and separate author.
 
-The differences in the number of authors of the publications in OpenAlex vs in the publisher data gives a first impression about the correctness of this data. @fig-cmp-numauthors-oa-publisher shows how many articles with a specific difference in author numbers occur (where a positive difference means more authors in OpenAlex than publisher data while a negative difference means authors missing in OpenAlex). The x-axis corresponds to the difference, the y-axis the number of articles with this difference. So the ideal case would be all the journals having one only value at x=0, showing for all their articles there is an equal number of authors in OpenAlex and the publisher data. As figure 12 shows we do reach this ideal case but for most cases the number of authors is equal, differences appear only in rare cases (low y values for x values \<\> 0).
+The differences in the number of authors of the publications in OpenAlex vs in the publisher data gives a first impression about the correctness of this data. @fig-cmp-numauthors-oa-publisher shows how many articles with a specific difference in author numbers occur (where a positive difference means more authors in OpenAlex than publisher data while a negative difference means authors missing in OpenAlex). The x-axis corresponds to the difference, the y-axis the number of articles with this difference. So the ideal case would be all the journals having one only value at x=0, showing for all their articles there is an equal number of authors in OpenAlex and the publisher data. As @fig-cmp-numauthors-oa-publisher shows, we do reach this ideal case but for most cases the number of authors is equal, differences appear only in rare cases (low y values for x values \<\> 0).
 
 Concerning the rest, different cases show up: for the JZ and KJ we have a quite high amount of publications with a small difference (1), while for the KJ and KritV we have very few cases with differences but these differences can be quite high (author count difference of more than 20).
 
@@ -602,11 +605,11 @@ Among the cases where the numbered differed, a closer look showed that, for exam
 
 #### c. Institution/Affiliations
 
-For author affiliations, the publisher data did not provide affiliation information, making it impossible to compare OpenAlex data with publisher data in this regard. We could still perform statistical analyses on the OpenAlex data itself, focusing on articles from journals in the gold standard set. OpenAlex offers two types of affiliation data: the original raw affiliation string, as it appears on the publication, and an institutional ID assigned through OpenAlex's own disambiguation process. Additionally, OpenAlex provides an institution hierarchy, which could be leveraged for further analysis.
+For author affiliations, the publisher data did not provide affiliation information, making it impossible to compare OpenAlex data with publisher data in this regard. Thus we limited our analysis to statistical analyses on the OpenAlex data itself, focusing on articles from journals in the gold standard set.
 
-However, the fact that only 4% of the publications have at least one institution_id assigned (6% when excluding publications without authors). And even for these few entries, the affiliation data is most probably incomplete as only one affiliation entry is present, interestingly, most of the affiliations available are from an institution of the Max Planck society. There are a few cases in which a raw affiliation string exists, but no \`institution_id \` could be assigned by the disambiguation procedure.[^23] This situation precludes any bibliometric analysis based on affiliation data, effectively rendering evaluations at the institutional level, including comparisons and rankings of institutions, impossible.
+OpenAlex offers two types of affiliation data: the original raw affiliation string, as it appears on the publication, and an institutional ID assigned through OpenAlex's own disambiguation process. Additionally, OpenAlex provides an institution hierarchy, which could be leveraged for further analysis. However, the fact that only 4% of the publications have at least one \`institution_id\` assigned (6% when excluding publications without authors). And even for these few entries, the affiliation data is most probably incomplete as only one affiliation entry is present. Interestingly, most of the affiliations available are from an institution of the Max Planck society. There are a few cases in which a raw affiliation string exists, but no \`institution_id\` could be assigned by the disambiguation procedure.[^24] This situation precludes any bibliometric analysis based on affiliation data, effectively rendering evaluations at the institutional level, including comparisons and rankings of institutions, impossible.
 
-[^23]: Examples for cases with uncleaned data show obvious data errors like e.g. 'gegen Brasilien gewonnen haben?' (W4239815844) or affiliation strings like 'studiert Rechtswissenschaft III Frankfurt am Main' (W4249773843).
+[^24]: Examples for cases with uncleaned data show obvious data errors like e.g. 'gegen Brasilien gewonnen haben?' (W4239815844) or affiliation strings like 'studiert Rechtswissenschaft III Frankfurt am Main' (W4249773843).
 
 #### d. References and citations
 
@@ -664,7 +667,8 @@ with_ref = eva_all_openalex_items[eva_all_openalex_items['item_id'].isin(cited_i
 total = eva_all_openalex_items.groupby('abk').size().reset_index(name='total')
 
 # Merge with_ref and total on abk
-df = pd.merge(total, with_ref, on='abk', how='right').fillna(0)
+df = pd.merge(total, with_ref, on='abk', how='left').fillna(0)
+df = df.sort_values(by='abk', key=lambda x: x.str.lower())
 
 # Calculate share_with_ref
 df['share_with_ref'] = round(100 * df['with_ref'] / df['total'], 2)
@@ -679,17 +683,11 @@ plt.ylabel('Share of articles with at least one reference', fontsize=12)
 plt.show()
 ```
 
-::: callout-important
-The original plot from the notebook looks different, i.e. has more entries in a slightly different order and showings journals with zero citations
-:::
-
-![](https://pad.gwdg.de/uploads/ccb4017b-6cd9-4004-b587-2cfcd9fd5735.png)
-
-We also had a look at the reference situation with respect to the publication years to see if more actual publications do have a better coverage of references but this is not the case. @tbl-oa-references-statistics shows that 5,097 distinct articles appear as a reference in at least one article of our gold standard set, of which 41.55% are in the gold standard set of journals; 43.24% of them are publications in journals we found by trivial search (german, law) in OpenAlex. However, it must be kept in mind that these figures do not mean much because the reference data is simply to scarce for any kind of robust interpretation.
+We also had a look at the reference situation with respect to the publication years to see if more actual publications do have a better coverage of references but this is not the case. @tbl-oa-references-statistics shows that 5,097 distinct articles appear as a reference in at least one article of our gold standard set, of which 41.55% are in the gold standard set of journals; 43.24% of them are publications in journals we found by trivial search (German, law) in OpenAlex. However, it must be kept in mind that these figures do not mean much because the reference data is simply to scarce for any kind of robust interpretation.
 
 ```{python}
 #| label: tbl-oa-references-statistics
-#| tbl-cap: 'Statistics on OpenAlex reference data in the Gold Standard'
+#| tbl-cap: 'Statistics on OpenAlex reference data in the gold standard'
 
 import pandas as pd
 from pandasql import sqldf
@@ -704,7 +702,7 @@ data = []
 cited_items_with_refs = eva_refs_in_openalex[eva_refs_in_openalex['item_id_cited'].notnull()]['item_id'].nunique()
 total_items = eva_all_openalex_items['item_id'].nunique()
 percentage_items_with_refs = round(100 * cited_items_with_refs / total_items, 2)
-data.append(['Percentage of OpenAlex article items in Gold Standard habving at least one reference', percentage_items_with_refs])
+data.append(['Percentage of OpenAlex article items in gold standard habving at least one reference', percentage_items_with_refs])
 
 data.append(['Distinct publications cited', sqldf("""
   SELECT
@@ -713,7 +711,7 @@ data.append(['Distinct publications cited', sqldf("""
   WHERE item_id_cited IS NOT NULL
 """).iloc[0, 0]])
 
-data.append(['Cited publications in Gold Standard', sqldf("""
+data.append(['Cited publications in gold standard', sqldf("""
 SELECT
   ROUND(1000 *
     (SELECT COUNT(DISTINCT item_id_cited)
@@ -738,11 +736,7 @@ data.append(['Cited publications in law/German search', sqldf("""
 pd.DataFrame(data, columns=['Query', 'Result'])
 ```
 
-::: callout-important
-The following doesn't make any sense, since the text does not correspond with the code. And why does the type matter? Maybe we skip it for now.
-:::
-
-As German legal scholarship is a rather well-defined academic field, we expected that the set of articles in our Gold Standard would mostly cite each other. However, we also looked at references to articles outside the field, which led to the observation that many of those references where not journal articles, but to titles in book series or ebook platforms.
+It is also interesting to ask about the types of publications that would be cited in the gold standard set. Journals top the list, followed by 'book series' and 'e-book platforms' in second and third place. While articles in journals and books in book series are to be expected, publications in e-book platforms are not a typical citation target for German law journals. Instead, we see an artefact created by publications that cite e-books having citation metadata, while others that do not cite these digital publications have no metadata.
 
 ```{python}
 #| label: tbl-oa-references-type
@@ -763,20 +757,21 @@ openalex_citing_items_sources = pd.read_csv(f'../data/kb_data/{version}/openalex
 eva_citing_items_journals = pd.read_csv(f'../data/kb_data/{version}/eva_citing_items_journals_{version}.csv', low_memory=False)
 
 sqldf("""
-  select type, count(*) 
+  select type as "Type", count(*) as "Count"
   from openalex_citing_items_sources
   where display_name in (select journal_title from  eva_citing_items_journals) 
   group by type
+  order by count DESC
 """)
 ```
 
 ##### Citation data in OpenAlex
 
-In bibliometrics, citations (so the set of articles that cite a particular publication) are even of more interest than the reference lists themselves. As argued above, we do not have sufficient reference data and cannot derived any kind of conclusions that correspond to the reality of scholarly legal knowledge production. However, it is still interesting to analyze the citation data that does exist. Thus, we queried the OpenAlex data for article items that cite an article from the set of journals in the gold standard, i.e. they contain this article in their reference list. @tbl-oa-citation-statistics shows some general statistics on citations of our Gold Standard set of journals in OpenAlex.
+In bibliometrics, citations (so the set of articles that cite a particular publication) are even of more interest than the reference lists themselves. As argued above, we do not have sufficient reference data and cannot derived any kind of conclusions that correspond to the reality of scholarly legal knowledge production. However, it is still interesting to analyze the citation data that does exist. Thus, we queried the OpenAlex data for article items that cite an article from the set of journals in the gold standard, i.e. they contain this article in their reference list. @tbl-oa-citation-statistics shows some general statistics on citations of our gold standard set of journals in OpenAlex.
 
 ```{python}
 #| label: tbl-oa-citation-statistics
-#| tbl-cap: 'Statistics on OpenAlex reference data in the Gold Standard'
+#| tbl-cap: 'Statistics on OpenAlex reference data in the gold standard'
 
 import pandas as pd
 from pandasql import sqldf
@@ -788,7 +783,7 @@ eva_all_openalex_items = pd.read_csv(f'../data/kb_data/{version}/eva_all_openale
 
 data = []
 
-data.append(['Distinct publications cited', sqldf("""
+data.append(['Share of publications cited', sqldf("""
   select round(10000*
   (select count(distinct item_id) 
   from eva_all_openalex_items eaoi 
@@ -820,7 +815,7 @@ data.append(['Citing OA items in the trivial search', sqldf("""
 pd.DataFrame(data, columns=['Query', 'Result'])
 ```
 
-About 18% of the articles in the gold standard set have at least one citation in OpenAlex. This is a higher percentage than that of Gold Standard articles having at least one reference, which was below 3 percent. However, as is very unlikely that all the other articles were not cited at all, the coverage of the Gold Standard can be determined to be very poor in terms of citations.
+About 18% of the articles in the gold standard set have at least one citation in OpenAlex. This is a higher percentage than that of gold standard articles having at least one reference, which was below 3 percent. However, as is very unlikely that all the other articles were not cited at all, the coverage of the gold standard can be determined to be very poor in terms of citations.
 
 @fig-openalex-citations displays the absolute differences in citation counts between the journals, without accounting for the varying total number of articles per journal, which would be necessary for a normalized comparison.
 
@@ -864,7 +859,7 @@ plt.show()
 
 ```
 
-Only slightly over 6 percent of citing articles are from gold standard journals, and the share is just one percent higher when looking for articles published in journals found by trivial search. In our data, most of the references to articles in our Gold Standard come from outside the field. This is highly counter-intuitive. We know from experience that "in reality", most citations in law journals come from other law journals. However, the observation can be easily explained by the lack of reference data in German legal scholarship demonstrated above. In contrast, interdisciplinary scholarship that cites our Gold Standard journals has a much better coverage in OpenAlex.
+Only slightly over 6 percent of citing articles are from gold standard journals, and the share is just one percent higher when looking for articles published in journals found by searching articles categorized "Law" and "German". In our data, most of the references to articles in our gold standard come from outside the field. This is highly counter-intuitive. We know from experience that most citations in law journals come from other law journals. However, the observation can be easily explained by the lack of reference data in German legal scholarship demonstrated above. In contrast, interdisciplinary scholarship that cites our gold standard journals has a much better coverage in OpenAlex.
 
 ##### Scopus Footprint
 
@@ -874,7 +869,7 @@ As argued above, OpenAlex does not tell us much about citations pointing to arti
 
 ```{python}
 #| label: fig-jz-reference-fulltext-comparison
-#| fig-cap: 'Example JZ: Comparison of citations'
+#| fig-cap: 'Comparison of citation data for the JZ in OpenAlex and Scopus reference full text'
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -924,7 +919,7 @@ for i, (index, row) in enumerate(df.iterrows()):
         ax.axvspan(i-0.5, i+0.5, facecolor='grey', alpha=0.3, zorder=0)
 bars = df.plot.bar(x='citing_pubyear', y=['cits_openalex', 'cits_on_jz_scp'], 
                    color=[color_openalex, color_scopus], ax=ax, zorder=3)
-legend_labels = ['# citations in OpenAlex', '# scopus citations mentioning the JZ in the reference fulltext']
+legend_labels = ['# OpenAlex JZ citations', '# Scopus JZ citations (reference fulltext)']
 plt.legend(bars.containers, legend_labels, labelcolor=[color_openalex, color_scopus])
 plt.xlabel('Year of citation')
 plt.ylabel('Number of Citations')
@@ -933,21 +928,17 @@ plt.show()
 
 ```
 
-::: callout-important
--   Bitte mit der Originalgrafik vergleichen :: : ![](https://pad.gwdg.de/uploads/f45dd561-6542-4a11-85fa-79977d4b7c3b.png){width="540"}
-:::
-
-As noted, a lower bound for the number of citations to JZ's articles is established by the number of references mentioning JZ in the full-text reference string in Scopus. The chart indicates instances where the number of OpenAlex citations falls short of this lower bound (grey background), whereas green background denotes cases where OpenAlex citations exceed the lower bound. Notably, the analysis suggests that OpenAlex's coverage of JZ's citations improves significantly from around 2010/2013 onwards. In contrast, for earlier years, despite a relatively low number of Scopus references mentioning JZ, OpenAlex citations fail to reach the established lower bound.
+As noted, a lower bound for the number of citations to JZ's articles is established by the number of references mentioning JZ in the full-text reference string in Scopus. The chart indicates instances where the number of OpenAlex citations falls short of this lower bound by a grey background, whereas a green background denotes cases where OpenAlex citations exceed the lower bound. Notably, the analysis suggests that OpenAlex's coverage of JZ's citations improves significantly from around 2010/2013 onwards. In contrast, for earlier years, despite a relatively low number of Scopus references mentioning JZ, OpenAlex citations fail to reach the established lower bound.
 
 ### 4.3 Classification in Openalex
 
-OpenAlex provides a hierarchical classification (domain, field, subfield, topic)[^24]. For our trivial search, list we used the subfield level (with value 'law'). The fact that all journals from the gold standard were contained in the result list seems to suggest that the classification matches our expectations.
+OpenAlex provides a hierarchical classification (domain, field, subfield, topic)[^25]. For our simple search ("Law", "German"), we used the subfield level (with value 'law'). The fact that all journals from the gold standard were contained in the result list seems to suggest that the classification matches our expectations.
 
-[^24]: See <https://docs.openalex.org/api-entities/topics/topic-object> (Last accessed Mar 9 2025)
+[^25]: See <https://docs.openalex.org/api-entities/topics/topic-object> (Last accessed Mar 9 2025)
 
-To further investigate the classification scheme, we focused on the level below subfields, namely topics. For articles from journals in our gold standard set, we would expect to see subfields of law represented. Using an open classification algorithm,[^25] OpenAlex assigns multiple topics to each article, along with a likelihood score. The works object in OpenAlex contains a keyword attribute, which is populated with up to 5 keywords derived from the topics, taking into account a threshold for likelihood. In order to get a first glance of the topics used, we generated a word cloud of these keywords. The resulting cloud contains sensible and relevant topics for our set.
+To further investigate the classification scheme, we focused on the level below subfields, namely topics. For articles from journals in our gold standard set, we would expect to see subfields of law represented. Using an open classification algorithm,[^26] OpenAlex assigns multiple topics to each article, along with a likelihood score. The works object in OpenAlex contains a keyword attribute, which is populated with up to 5 keywords derived from the topics, taking into account a threshold for likelihood. In order to get a first glance of the topics used, we generated a word cloud of these keywords. The resulting cloud contains sensible and relevant topics for our set.
 
-[^25]: <https://github.com/ourresearch/openalex-topic-classification> (Last accessed Mar 9 2025)
+[^26]: <https://github.com/ourresearch/openalex-topic-classification> (Last accessed Mar 9 2025)
 
 ```{python}
 #| label: fig-wordcloud-oa-topics
@@ -968,11 +959,11 @@ plt.tight_layout(pad=0)
 plt.show()
 ```
 
-However, without a more thorough analysis, we cannot say whether the keywords actually fit the content of the articles. This would require a new gold standard on the article level and a reliable way of comparing human-curated (German) keyword with the ones generated by OpenAlex.
+However, without a more thorough analysis, we cannot say whether the keywords actually fit the content of the articles. This would require a new gold standard on the article level and a reliable way of comparing human-curated (German) keywords with the ones generated by OpenAlex.
 
 ### 4.4 The futility of ranking with OpenAlex
 
-The last metric we want to have a look at is a ranking of journals based on the available data in our gold standard. If we assume that the expert assessment is the best data we have, what can we draw on in OpenAlex that could be compared to it? The typical metric that is used in the traditional bibliometric databases is the Journal Impact Factor (JIF)[@garfield1999], which despite being heavily criticized [@archambault2009], is still widely used. Calculating the JIF for the gold standard journals in OpenAlex is problematic since we are lacking data for many years. Also the question is for what year to compare it - since the gold standard is from 2009, it would make sense to compare the JIF only for 2009. However, given that a) as we have argued before, the German legal landscape is very static and b) there is very little data to rely on, it made sense to calculate the JIF over all available data. Our aim is not an exact comparison but rather meant to give a sense of how much the OpenAlex ranking differs from the gold standard one.
+The last metric we want to have a look at is a ranking of journals based on the available data in our gold standard. If we assume that the expert assessment is the best data we have, what can we draw on in OpenAlex that it could be compared to? The typical metric that is used in the traditional bibliometric databases is the Journal Impact Factor (JIF)[@garfield1999], which despite being heavily criticized [@archambault2009], is still widely used. Calculating the JIF for the gold standard journals in OpenAlex is problematic since we are lacking data for many years. Also the question is for what year to compare it - since the gold standard is from 2009, it would make sense to compare the JIF only for 2009. However, given that a) as we have argued before, the German legal landscape is very static and b) there is very little data to rely on, it made sense to calculate the JIF over all available data. Our aim is not an exact comparison but rather meant to give a sense of how much the OpenAlex ranking differs from the gold standard one.
 
 We compared the Gröls/Gröls ranking with the JIF-based ranking from OpenAlex separatedly for the generalist journals (@fig-comp-groels-jif-general) and the specialized ones (@fig-comp-groels-jif-specialized). Looking at the results, the rankings differ considerably.
 
@@ -1051,41 +1042,31 @@ compare_rankings(sqldf(query), label_ranking_a='Ranking JIF OpenAlex', label_ran
 
 ```
 
-::: callout-important
-Die Beschreibung stimmt nicht mehr und das Ergebnis scheint auch leicht unterschiedlich zu sein - vielleicht unterschiedliche Version? -\> CB checken
-:::
+A complete alignment in ranking would have all journals be on the red diagonal line; the closer the dots are placed towards the diagonal, the more the rankings would resemble each other. However, as the figures show, there is large variation in the rankings. For the generalist journals, expert assessment and OpenAlex JIF most closely aligns only for the AöR. For the specialized ones, there is also a huge spread, with Verw and ZZP coming closest to the diagonal. However, we don't think that these results mean anything other that there is simply not enough data available that would allow us to draw more substantive conclusions.
 
-A complete alignment in ranking would have all journals be on the red diagonal line; the closer the dots are placed towards the diagonal, the more the rankings would resemble each other. However, as the figures show, there is large variation in the rankings. For the generalist journals, expert assessment and OpenAlex JIF most closely aligns for only three journals (AcP, AöR, ZZP). For the specialized ones, the spread is even more pronounced, with three journals (Staat, ZStW and ZFA) closest to the diagonal.
+## 5. Conclusion and future work
 
-We don't think that these results mean anything other that there is simply not enough data available that would allow us to draw substantive conclusions.
+Our aim was to examine the coverage of German-language, more specifically, Germany-based law journals in the Web of Science, Scopus and OpenAlex bibliometric databases. In order to do that, we derived a list of law journals (our gold standard) from a study that had surveyed German law professors about which journals they considered most important in their field. We then queried the three data sources for the coverage of these journals.
 
-## 5. Conclusion
+Looking at our results, it is clear that OpenAlex is the only of the bibliometric databases examined which currently has a minimal coverage of German law journals as far as our gold standard set is representative. It offers a limited, but steadily growing basis for bibliometric queries.
 
-Our aim was to examine the coverage of German-language, more specifically, Germany-based law journals in the Web of Science, Scopus and OpenAlex bibliometric databases. In order to do that, we derived a list of law journals (our gold standard) from a study that had surveyed German law professors about which journals they considered most important in their field. We then queried the three data sources for the coverage of these journals. A closer analysis of metadata quality in OpenAlex has shown that \[...\].
+Our analysis seems to confirm studies which have argued that WoS or Scopus are, as Tenant has expressed it, "structurally biased against \[...\] non-English language research" [@tennant2020, p.1], although Tenant was specifically referring to research in "non-western countries." The case of German law journals is certainly a bit different, not only because Germany is part of the "Western" hemisphere in terms of knowledge production.
 
-::: callout-important
-Daniel, kannst Du mit eigenen Worten die Ergebnisse zusammenfassen?
-:::
+It is beyond the scope of this article to systematically analyze the reasons for the neglect of German law in the bibliometric databases. However, it is reasonable to assume that at least two factors are at play. The first concerns the non-universality of legal scholarship irrespective of language: as the law is specific to national jurisdictions, much of doctrinal legal scholarship is by nature not transferable to other jurisdiction. This makes all non-common law doctrinal knowledge uninteresting to database vendors focused on an Anglo-American audience. Also, the strict selection criteria of WoS and Scopus is premised on a particularly peer-review and publishing model which does not fit the way German legal scholarship is being produced, reviewed, and published.[^27] These selection criteria would have to be changed in order to accurately reflect knowledge production in a wider array of scholarly domains.
 
-Looking at our results, it is clear that OpenAlex is the only of the bibliometric databases examined which currently has a minimal coverage of German law journals as far as our gold standard set is representative. It offers a limited, but steadily growing basis for bibliometric queries. Our analysis confirms studies which have argued that WoS or Scopus are, as Tenant has expressed it, "structurally biased against \[...\] non-English language research" [@tennant2020, p.1], although Tenant was specifically referring to research in "non-western countries." The case of German law journals is certainly a bit different, not only because Germany is part of the "Western" hemisphere in terms of knowledge production.
-
-It is beyond the scope of this article to systematically analyze the reasons for the neglect of German law in the bibliometric databases. However, it is reasonable to assume that at least two factors are at play. The first concerns the non-universality of legal scholarship irrespective of language: as the law is specific to national jurisdictions, much of doctrinal legal scholarship is by nature not transferable to other jurisdiction. This makes all non-common law doctrinal knowledge uninteresting to database vendors focused on an Anglo-American audience. Second, the strict selection criteria of WoS and Scopus is premised on a particularly peer-review and publishing model which does not fit the way German legal scholarship is being produced, reviewed, and published. These selection criteria would have to be changed in order to accurately reflect knowledge production in a wider array of scholarly domains.
-
-However, the future of bibliometric analyses should not be dependent on these vendors, who sell their metadata at high costs and with restrictive licenses. As we have shown, open suppliers such as OpenAlex already have a better, but still very limited coverage of the German legal domain.
-
-## 6. Future work
+[^27]: Wether German legal scholarship really can do without Peer Review because in "Jurisprudence knows no right or wrong" [@gulden2023] is another question.
 
 From our experiments, we draw a few conclusions for future research.
 
-First of all, as OpenAlex's data repository is highly dynamic, it is necessary to continually follow its growth and internal refactoring and repeat the queries from this study in order to document improvements of the coverage of the gold standard across database versions.
+First of all, the future of bibliometric analyses should not depend on commercial vendors who sell bibliometric metadata at high costs and with restrictive licenses. As we have shown, open suppliers such as OpenAlex already have a better, but still very limited coverage of the German legal domain. The strategy should be to improve open data repositories and make the data readily available to anyone who wants to do their own analyses.
 
-However, relying solely on publishers to supply the necessary data will not suffice. In particular, it is improbable that the current near-complete absence of citation data will be resolved in the near future. On one hand, some publishers may have a vested interest in monetizing citation data. However, even if they are open to sharing citation data in principle, such data often simply does not exist. This is especially true in the German academic realm, where no machine-readable citation data is being gathered or generated during the publication process.
+Second, as OpenAlex's data repository is highly dynamic, it is necessary to continually follow its growth and internal refactoring. The queries from this study need to be repeated in order to document improvements of the coverage of the gold standard across database versions. We hope that publishers will continue to upgrade the quality of the data to CrossRef, from which OpenAlex mainly draws. This, we hope, will improve the bibliometric coverage of legal scholarship in German (and other languages) over time.
 
-On the other hand, current tools for citation extraction [@cioffi2022] are performing very badly when confronted with citations in legal scholarship (and the humanities).[^26] The reason is that they have been trained on data from the natural sciences, which usually contain well-structured bibliographies. In contrast, references in German legal scholarship usually relies on literature contained in footnotes, which are very difficult to parse computationally. This is arguably also one of the main causes why such few citation data is available for this domain (and similar ones). However, with the recent emergence of Large Language Models, which are able to interpret semantic structures based on the context, this is likely to change.
+Finally, relying solely on publishers to supply the necessary data will not suffice. In particular, it is improbable that the current near-complete absence of citation data will be resolved in the near future. On one hand, some publishers may have a vested interest in monetizing citation data themselves. However, even if others are open to sharing citation data in principle, such data does often not exist. In the academic realm of law, the humanities, or the social sciences, currently no machine-readable citation data is being gathered during the publication process in any systematic way.
 
-[^26]: See a forthcoming paper by Boulanger/Carreto Fidalgo/Wagner.
+How can this situation be changed? Current tools for automated citation extraction [@cioffi2022] are performing very badly when confronted with the citation practices in legal scholarship and other disciplines that make heavy use of footnotes. With the recent emergence of Large Language Models, which are able to interpret semantic structures based on the context, this is likely to change.[^28] Once easy-to-use tools are available, we are confident that it will be possible to to create, in a decentralized and incremental process, Open Data datasets on that are necessary to study knowledge production in legal scholarship and beyond.
 
-The research community should therefore take the matter in its own hands and invest energy (and money) into developing the tools to do citation mining by themselves. Once easy-to-use tools are available, it is possible to to create, in a decentralized and incremental process, Open Data datasets that are necessary to study knowledge production in legal scholarship and beyond.
+[^28]: The reason is that they have been trained on data from the natural sciences,does which usually contain well-structured bibliographies. In contrast, references in German legal scholarship usually relies on literature contained in footnotes, which are very difficult to parse computationally. See current research by Boulanger, Carreto Fidalgo and Wagner on reference extraction, <https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph>
 
 ## 7. References
 
