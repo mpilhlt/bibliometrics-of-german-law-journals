@@ -2,5 +2,6 @@
 
 set -e
 
-quarto render docs/paper.qmd --to html --output-dir ../docs
-python scripts/patch-img-size.py docs/paper.html
+quarto render docs/paper.qmd --to html 
+quarto convert ./docs/paper.qmd -o ./notebooks/paper.ipynb
+#python scripts/patch-img-size.py docs/paper.html
