@@ -273,8 +273,7 @@ from venny4py.venny4py import venny4py
 sets = {
     'KJB': '../data/web_lists/karlsruher-juristische-bibliographie-2024-12-13.csv',
     'juris (2002)': '../data/web_lists/juris-ingested-journals-2002.csv',
-    'jura-recherche.de': '../data/web_lists/jura-recherche.de-2024-12-13.csv',
-    'openjur.de': '../data/web_lists/openjur.de-2024-12-13.csv'
+    'Wikipedia': '../data/wikipedia/category-law-journal-germany-with-issn.csv'
 }
 abbrevs = {}
 for set_name, file_path in sets.items():
