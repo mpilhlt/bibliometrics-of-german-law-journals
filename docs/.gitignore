@@ -2,9 +2,7 @@
 *.tex
 *.aux
 *.log
-*.pdf
 *.toc
-*.docx
 *.typ
 tmp
 .jupyter_cache

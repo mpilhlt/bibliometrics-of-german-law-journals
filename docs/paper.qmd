@@ -4,6 +4,7 @@ author:
 - name: Christian Boulanger
   orcid: 0000-0001-6928-3246
   email: boulanger@lhlt.mpg.de
+  corresponding: true
   affiliation:
   - name: Max Planck Institute for Legal History and Legal Theory
     city: Frankfurt
@@ -26,24 +27,29 @@ author:
       url: https://www.fiz-karlsruhe.de
 abstract: "Bibliometric analyses are uncommon in German legal scholarship, often attributed to disciplinary skepticism. However, this paper posits that a more fundamental reason is the lack of adequate data coverage in standard bibliometric databases. We systematically investigate the representation of the German law journal landscape in Web of Science (WoS), Scopus, and OpenAlex. To achieve this, we first establish a benchmark set of 52 representative German law journals based on a 2009 expert survey. We then measure the coverage of these journals within the target databases and assess the quality of the available metadata, focusing particularly on OpenAlex due to its superior initial coverage. Our findings confirm the initial hypothesis: coverage in WoS and Scopus is minimal. While OpenAlex includes a larger proportion of the journals from the benchmark set (32/52) and shows reasonable item-level completeness for a subset checked against publisher data, its metadata quality presents significant limitations. Crucially, affiliation data is sparse, and citation data is almost entirely absent, precluding meaningful citation analysis, impact assessment, or reliable institutional evaluation. We conclude that while coverage is improving, particularly through open platforms like OpenAlex, the current state of bibliometric data, especially the lack of citation information, severely restricts the application of standard bibliometric methods to German legal scholarship. We discuss potential reasons for this gap and suggest focusing on enhancing open data repositories and exploring new methods to generate currently unavailable citation data."
 lang: en
-date: 2025-04-22
+date: 2025-05-30
 licence: "CC BY"
 code-fold: true
+filters:
+  - ../_extensions/kapsner/authors-block/authors-block.lua
 project:
   execute-dir: project
 execute: 
   cache: true
-  echo: false
+  echo: true
 zotero: true
 funding: "The authors received no specific fundings for this work."
 bibliography: references.bib
-csl: ieee-with-url.csl
+csl: chicago-author-date.csl
 format:
   docx: 
     toc: false
+    echo: false
     code-annotations: none
+    reference-doc: custom-reference-doc.docx
   pdf: 
     toc: true
+    echo: false
     code-annotations: none
   html:
     toc: true
@@ -54,12 +60,9 @@ format:
 #| echo: false
 #| output: false
 
-# set root dir to project, should be set by `project: execute-dir: project` but it's not working
+# set root dir to project
 import sys; 
 sys.path.append('../')
-
-# not necessary if you use `uv`to manage the python version and project dependencies
-%pip install -r requirements.txt
 ```
 
 ## 1. Research question
@@ -92,7 +95,7 @@ In addition, such studies point out that in the fields in SSH, a large part of t
 
 ## 3. Constructing a benchmark set of German law journals
 
-The first task in measuring the coverage of German law journals in bibliographic databases is to determine which of the journals to look for, i.e. to create a list of journals that represent the category “German law journals”. In this endeavor, we do not aim for completeness. For the purpose of this study, it will suffice to have a sample which is sufficiently large to be representative of the field. At the same time, the selection must be small enough, so it is possible to check and enrich the dataset with additional metadata (for example, a persistent identifier such as the ISSN) with a reasonable amount of effort. This will allow us to define a set of journals for which, at a minimum, data has to exist in sufficient quality in order to make statements about knowledge production in German legal scholarship. This does not mean that journals that are not in this list are not important for the discipline. In fact, as it will become clear, our selection methodology forces us to omit any journal founded after 2009. We also make no statement on the difference of quality of those journals that make it on the list compared to those which do not. In particular, we are not interested in finding or providing a metric similar to the “journal impact factor” of German law journals. We are only interested in the quality of bibliometric data on a representative and relevant subset of those journals. Similarly to a "gold standard" dataset for evaluation purposes, our benchmark set serves as a yard stick for our observations. However, unlike a gold standard, the set does not make any claim to be "correct" in any sense other than being "good enough" data [@versi1992] for the given purpose of evaluation.[^4]
+The first task in measuring the coverage of German law journals in bibliographic databases is to determine which of the journals to look for, i.e. to create a list of journals that represent the category “German law journals”. In this endeavor, we do not aim for completeness. For the purpose of this study, it will suffice to have a sample which is sufficiently large to be representative of the field. At the same time, the selection must be small enough, so it is possible to check and enrich the dataset with additional metadata (for example, a persistent identifier such as the ISSN) with a reasonable amount of effort. This will allow us to define a set of journals for which, at a minimum, data has to exist in sufficient quality in order to make statements about knowledge production in German legal scholarship. This does not mean that journals that are not in this list are not important for the discipline. In fact, as it will become clear, our selection methodology forces us to omit any journal founded after 2009. We also make no statement on the difference of quality of those journals that make it on the list compared to those which do not. In particular, we are not interested in finding or providing a metric similar to the “journal impact factor” of German law journals. We are only interested in the quality of bibliometric data on a representative and relevant subset of those journals. Similarly to a "gold standard" dataset for evaluation purposes, our benchmark set serves as a yard stick for our observations. However, unlike a gold standard, the set does not make any claim to be "correct" in any sense other than being "good enough" data for the given purpose of evaluation.[^4]
 
 [^4]: In a previous version of this paper, we have called our benchmark set "gold standard", and the term is still used in the code in our GitHub repository. However, we have since then decided that "benchmark set" is the more appropriate term for our list of journals.
 
@@ -150,12 +153,15 @@ Using these criteria, we probed the **Web of Science Core Collection** (we did n
 ```{python}
 #| label: tbl-wos-ger-law
 #| tbl-cap: 'Articles in WoS Core Collection categorized "German" and "Law"'
+#| tbl-colwidths: [0,30,5,5,5]
 
 import pandas as pd
 version = "202408"
 df = pd.read_csv(f'../data/kb_data/{version}/eva_wos_de_law_journals_trivial_search_result_{version}.csv')
 df = df[['source_title', 'article_count', 'law_and_de', 'law_and_de_article_share']]
-df.columns = ['Journal', 'Number of Articles', 'Number of German Law Articles', 'Share of German Law Articles']
+df.columns = ['Journal', 'Num. Art.', 'Num. German+Law', '%']
+df.style.hide(axis='index')
+df.index = df.index + 1
 df
 ```
 
@@ -176,7 +182,9 @@ df = pd.read_csv(f'../data/kb_data/{version}/eva_scp_de_law_journals_trivial_sea
 df = df[['source_title', 'article_count', 'law_and_de', 'law_and_de_article_share']]
 df['source_title'] = df['source_title'].apply(lambda title: re.sub('[{}"]','',title))
 df = df.sort_values('law_and_de_article_share', ascending=False, ignore_index=True)
-df.columns = ['Journal', 'Number of Articles', 'Number of German Law Articles', 'Share of German Law Articles']
+df.columns = ['Journal', 'Num. Art.', 'Num. German+Law', '%']
+df.style.hide(axis='index')
+df.index = df.index + 1
 df
 ```
 
@@ -196,7 +204,9 @@ version = "202408"
 df = pd.read_csv(f'../data/kb_data/{version}/eva_openalex_de_law_journals_trivial_search_result_{version}.csv')
 df = df[['display_name', 'works_count', 'law_and_de', 'law_and_de_article_share']]
 df = df.sort_values('law_and_de_article_share', ascending=False, ignore_index=True)
-df.columns = ['Journal', 'Number of Articles', 'Number of German Law Articles', 'Share of German Law Articles']
+df.columns = ['Journal', 'Num. Art.', 'Num. German+Law', '%']
+df.style.hide(axis='index')
+df.index = df.index + 1
 df.head(20)
 ```
 
@@ -300,12 +310,15 @@ As this distinction is irrelevant to our purposes, we aggregated the different r
 
 ```{python}
 #| label: tbl-gold-standard
-#| tbl-cap: 'List of 52 most highly ranked law journals according to Gröls/Gröls (2009)'
+#| tbl-cap: 'List of 52 most highly ranked law journals according to Gröls/Gröls (2009), sorted by abbreviation'
 
 import pandas as pd
 df = pd.read_csv("../data/gold/gold-groels-groels-2009.csv")
 df = df[['abbreviation', 'title']]
 df.columns = ['Abbreviation', 'Title']
+df = df.sort_values(by='Abbreviation').reset_index(drop=True)
+df.style.hide()
+df.index = df.index + 1
 df
 ```
 
@@ -338,6 +351,7 @@ for db in ['wos', 'scp', 'openalex']:
     recall = round(hits/gs_size, 1)
     data.append([db, hits, recall])
 df = pd.DataFrame(data, columns=['Database', 'Benchmark set journals', 'Recall'])
+df.index = df.index + 1
 df
 ```
 
@@ -462,7 +476,7 @@ version = "202408"
 df_items = pd.read_csv(f'../data/kb_data/{version}/eva_all_openalex_items_{version}.csv', low_memory=False)
 df_pub = pd.read_csv(f'../data/kb_data/{version}/eva_all_publisherdata_{version}.csv', low_memory=False)
 
-sqldf("""
+df = sqldf("""
   SELECT abk as 'Journal', 
     COUNT(*) as 'Missing DOIs', 
     MIN(pubyear) as 'Min year',  
@@ -472,6 +486,8 @@ sqldf("""
   AND abk IN (SELECT journal_name FROM df_pub)
   GROUP BY abk;
 """)
+df.index = df.index + 1
+df
 ```
 
 Several factors contributed to the observed mismatch between the publisher data and OpenAlex. Not only did the publisher data lack coverage for certain years, but also some newer publications were only present in OpenAlex, highlighting a potential limitation of the publisher data. A closer examination of the discrepancies revealed several distinct cases, including:
@@ -492,13 +508,15 @@ version = "202408"
 
 df_pub = pd.read_csv(f'../data/kb_data/{version}/eva_all_publisherdata_{version}.csv', low_memory=False)
 
-sqldf("""
+df = sqldf("""
   select journal_name as 'Journal', 
     count(*) as 'Missing DOIs'   
   from df_pub
   where openalex_id is null 
   group by journal_name;
 """)
+df.index = df.index + 1
+df
 ```
 
 #### c. Publication years coverage
@@ -534,7 +552,7 @@ version = "202408"
 
 eva_all_publisherdata = pd.read_csv(f'../data/kb_data/{version}/eva_all_publisherdata_{version}.csv', low_memory=False)
 
-sqldf("""
+df = sqldf("""
 select 
     journal_name as 'Journal', 
     cast(pubyear-pubyear_openalex AS INTEGER) as 'Difference', 
@@ -544,6 +562,8 @@ where openalex_id is not null
 group by  journal_name, pubyear-pubyear_openalex
 order by  journal_name, pubyear-pubyear_openalex
 """)
+df.index = df.index + 1
+df
 ```
 
 As shown in Table @tbl-cmp-pubyears-oa-publisher, journals JZ, KJ, KritV, and RabelsZ exhibit discrepancies in publication years, whereas most other cases do not. For JZ and RabelsZ, these differences are rare and typically result from print versions being digitized later. In contrast, KritV shows a distinct pattern, with OpenAlex often reporting a publication year one year later than the publisher data. This phenomenon was previously observed for KritV's last issue across multiple years.
@@ -730,7 +750,9 @@ data.append(['Cited publications in the classification-based search', sqldf("""
   where item_id_cited is not null),2)/10
 """).iloc[0, 0]])
 
-pd.DataFrame(data, columns=['Query', 'Result'])
+df = pd.DataFrame(data, columns=['Query', 'Result'])
+df.index = df.index + 1
+df
 ```
 
 It is also interesting to ask about the types of publications that would be cited in the benchmark set. Journals top the list, followed by 'book series' and 'e-book platforms' in second and third place. While articles in journals and books in book series are to be expected, publications in e-book platforms are not a typical citation target for German law journals. Instead, we see an artifact created by publications that cite e-books having citation metadata, while others that do not cite these digital publications have no metadata.
@@ -753,13 +775,15 @@ version = "202408"
 openalex_citing_items_sources = pd.read_csv(f'../data/kb_data/{version}/openalex_citing_items_sources_{version}.csv', low_memory=False)
 eva_citing_items_journals = pd.read_csv(f'../data/kb_data/{version}/eva_citing_items_journals_{version}.csv', low_memory=False)
 
-sqldf("""
+df = sqldf("""
   select type as "Type", count(*) as "Count"
   from openalex_citing_items_sources
   where display_name in (select journal_title from  eva_citing_items_journals) 
   group by type
   order by count DESC
 """)
+df.index = df.index + 1
+df
 ```
 
 ##### Citation data in OpenAlex
@@ -809,7 +833,10 @@ data.append(['Citing OA items in the trivial search', sqldf("""
   where item_id_citing is not null),2)/100
 """).iloc[0, 0]])
 
-pd.DataFrame(data, columns=['Query', 'Result'])
+df = pd.DataFrame(data, columns=['Query', 'Result'])
+df.index = df.index + 1
+df.style.hide()
+df
 ```
 
 About 18% of the articles in the benchmark set have at least one citation in OpenAlex. This is a higher percentage than that of benchmark set articles having at least one reference, which was below 3 percent. However, as is very unlikely that all the other articles were not cited at all, the coverage of the benchmark set can be determined to be very poor in terms of citations.
