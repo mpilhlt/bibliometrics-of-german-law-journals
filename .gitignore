@@ -4,3 +4,5 @@
 journals.jsonl
 /.quarto/
 .DS_Store
+._*
+.~$*
