@@ -680,9 +680,7 @@ plt.ylabel('Share of articles with at least one reference', fontsize=12)
 plt.show()
 ```
 
-!!! Der nächste Absatz muss nochmal besser erklärt werden - ich verstehe ihn nicht mehr !!!
-
-We also had a look at the reference data with respect to the publication years to see if more recent publications do have a better coverage of references but this is not the case. @tbl-oa-references-statistics shows that 5,097 distinct articles appear as a reference in at least one article of our benchmark set, of which 41.55% are in the benchmark set; 43.24% of them are publications in journals we found by classification-based search (German, law) in OpenAlex. However, it must be kept in mind that these figures do not mean much because the reference data is simply to scarce for any kind of robust interpretation.
+ We also examined the characteristics of the publications cited by articles in our benchmark set (for the small subset of benchmark articles where OpenAlex contains outgoing references). Of the 5,097 distinct publications identified as being cited, 41.55% were themselves part of our benchmark set. Furthermore, 43.24% of these cited publications were found within the broader list of 'German law' journals identified through our earlier classification-based search in OpenAlex (See @tbl-oa-references-statistics). However, given the extreme scarcity of outgoing reference data for our benchmark set overall, these proportions offer limited insight into actual citation patterns within German legal scholarship.
 
 ```{python}
 #| label: tbl-oa-references-statistics
