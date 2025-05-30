@@ -1,0 +1,6 @@
+#! /bin/bash
+
+set -e
+
+quarto render docs/paper.qmd
+quarto convert ./docs/paper.qmd -o ./notebooks/paper.ipynb

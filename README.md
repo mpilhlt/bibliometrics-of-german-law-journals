@@ -24,4 +24,3 @@ Alternatively, use a containerized Jupyter server such as the following:
 docker pull jupyter/base-notebook
 docker run -p 8888:8888 -v <path_to_your_work_dir>:/home/jovyan/work jupyter/base-notebook
 ```
-
