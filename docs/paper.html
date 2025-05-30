@@ -261,57 +261,65 @@ Figure&nbsp;1: Number of active serial publications classified as DDC 340 (‘la
 <p>In order to achieve our goal of creating a list of German law articles, we have to define queries to execute on each data source. In terms of classification each source uses a different system: WoS and Scopus use journal-level classifications, assigned to the item in the XML files, whereas OpenAlex provides an item-specific classification.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Language is item-specific in all three databases.</p>
 <p>We wanted to find journals which have article items that belong to the “law” category in the respective classification system, and of which the majority of articles are flagged as being in German. The selection criteria we chose was that a journal would be considered part of our sample if at least 10 articles had a subject category: Law <strong>and</strong> if at least 10% were classified as “Law” and “German”. We chose to have both restrictions here because there are some exceptional cases of journals with a very low number of indexed articles, which points to gaps or errors in the data. We therefore did not want to include these exceptional cases where a very few German law articles would already fulfill the quota.</p>
 <p>Using these criteria, we probed the <strong>Web of Science Core Collection</strong> (we did not have access to WoS’ Emerging Sources Citation Index). We found 250 journals which contained articles classified as ‘Law’.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> However, as <a href="#tbl-wos-ger-law" class="quarto-xref">Table&nbsp;1</a> shows, only two of those met the threshold of 10%.</p>
-<div class="cell" data-tbl-colwidths="[0,30,5,5,5]" data-execution_count="3">
+<div class="cell" data-tbl-colwidths="[5,30,5,5,5]" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>version <span class="op">=</span> <span class="st">"202408"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/kb_data/</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">/eva_wos_de_law_journals_trivial_search_result_</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">.csv'</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">'source_title'</span>, <span class="st">'article_count'</span>, <span class="st">'law_and_de'</span>, <span class="st">'law_and_de_article_share'</span>]]</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Journal'</span>, <span class="st">'Num. Art.'</span>, <span class="st">'Num. German+Law'</span>, <span class="st">'%'</span>]</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> textwrap</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>version <span class="op">=</span> <span class="st">"202408"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/kb_data/</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">/eva_wos_de_law_journals_trivial_search_result_</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">.csv'</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">'source_title'</span>, <span class="st">'article_count'</span>, <span class="st">'law_and_de'</span>, <span class="st">'law_and_de_article_share'</span>]]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Journal'</span>, <span class="st">'Articles'</span>, <span class="st">'German+Law'</span>, <span class="st">'%'</span>]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Journal'</span>] <span class="op">=</span> df[<span class="st">'Journal'</span>].astype(<span class="bu">str</span>).<span class="bu">apply</span>(<span class="kw">lambda</span> text: textwrap.shorten(text, width<span class="op">=</span><span class="dv">50</span>, placeholder<span class="op">=</span><span class="st">"</span><span class="ch">\u2026</span><span class="st">"</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)<span class="op">\</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">0</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'left'</span>})<span class="op">\</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">1</span>,<span class="dv">2</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'center'</span>})<span class="op">\</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">3</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'right'</span>})<span class="op">\</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  .<span class="bu">format</span>({df.columns[<span class="dv">3</span>]: <span class="st">"</span><span class="sc">{:.0%}</span><span class="st">"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div id="tbl-wos-ger-law" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="3" data-tbl-colwidths="[0,30,5,5,5]">
+<div id="tbl-wos-ger-law" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[5,30,5,5,5]" data-execution_count="3">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wos-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Articles in WoS Core Collection categorized “German” and “Law”
 </figcaption>
 <div aria-describedby="tbl-wos-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="57">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="107">
+<style type="text/css">
+#T_59503_row0_col0, #T_59503_row1_col0 {
+  text-align: left;
+}
+#T_59503_row0_col1, #T_59503_row0_col2, #T_59503_row1_col1, #T_59503_row1_col2 {
+  text-align: center;
+}
+#T_59503_row0_col3, #T_59503_row1_col3 {
+  text-align: right;
+}
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_59503" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Journal</th>
-<th data-quarto-table-cell-role="th">Num. Art.</th>
-<th data-quarto-table-cell-role="th">Num. German+Law</th>
-<th data-quarto-table-cell-role="th">%</th>
+<th id="T_59503_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_59503_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
+<th id="T_59503_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
+<th id="T_59503_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>kriminologisches journal</td>
-<td>79</td>
-<td>74</td>
-<td>0.94</td>
+<td id="T_59503_row0_col0" class="data row0 col0">kriminologisches journal</td>
+<td id="T_59503_row0_col1" class="data row0 col1">79</td>
+<td id="T_59503_row0_col2" class="data row0 col2">74</td>
+<td id="T_59503_row0_col3" class="data row0 col3">94%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>tijdschrift voor rechtsgeschiedenis-revue d hi...</td>
-<td>279</td>
-<td>44</td>
-<td>0.16</td>
+<td id="T_59503_row1_col0" class="data row1 col0">tijdschrift voor rechtsgeschiedenis-revue d…</td>
+<td id="T_59503_row1_col1" class="data row1 col1">279</td>
+<td id="T_59503_row1_col2" class="data row1 col2">44</td>
+<td id="T_59503_row1_col3" class="data row1 col3">16%</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -323,15 +331,19 @@ Table&nbsp;1: Articles in WoS Core Collection categorized “German” and “La
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> regex <span class="im">as</span> re</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>version <span class="op">=</span> <span class="st">"202408"</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/kb_data/</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">/eva_scp_de_law_journals_trivial_search_result_</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">.csv'</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">'source_title'</span>, <span class="st">'article_count'</span>, <span class="st">'law_and_de'</span>, <span class="st">'law_and_de_article_share'</span>]]</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'source_title'</span>] <span class="op">=</span> df[<span class="st">'source_title'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> title: re.sub(<span class="st">'[</span><span class="sc">{}</span><span class="st">"]'</span>,<span class="st">''</span>,title))</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(<span class="st">'law_and_de_article_share'</span>, ascending<span class="op">=</span><span class="va">False</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Journal'</span>, <span class="st">'Num. Art.'</span>, <span class="st">'Num. German+Law'</span>, <span class="st">'%'</span>]</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> textwrap</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>version <span class="op">=</span> <span class="st">"202408"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/kb_data/</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">/eva_scp_de_law_journals_trivial_search_result_</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">.csv'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">'source_title'</span>, <span class="st">'article_count'</span>, <span class="st">'law_and_de'</span>, <span class="st">'law_and_de_article_share'</span>]]</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'source_title'</span>] <span class="op">=</span> df[<span class="st">'source_title'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> title: re.sub(<span class="st">'[</span><span class="sc">{}</span><span class="st">"]'</span>,<span class="st">''</span>,title))</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(<span class="st">'law_and_de_article_share'</span>, ascending<span class="op">=</span><span class="va">False</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Journal'</span>, <span class="st">'Articles'</span>, <span class="st">'German+Law'</span>, <span class="st">'%'</span>]</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Journal'</span>] <span class="op">=</span> df[<span class="st">'Journal'</span>].astype(<span class="bu">str</span>).<span class="bu">apply</span>(<span class="kw">lambda</span> text: textwrap.shorten(text, width<span class="op">=</span><span class="dv">50</span>, placeholder<span class="op">=</span><span class="st">"</span><span class="ch">\u2026</span><span class="st">"</span>))</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)<span class="op">\</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">0</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'left'</span>})<span class="op">\</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">1</span>,<span class="dv">2</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'center'</span>})<span class="op">\</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">3</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'right'</span>})<span class="op">\</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  .<span class="bu">format</span>({df.columns[<span class="dv">3</span>]: <span class="st">"</span><span class="sc">{:.0%}</span><span class="st">"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-scp-ger-law" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="4">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -339,186 +351,169 @@ Table&nbsp;1: Articles in WoS Core Collection categorized “German” and “La
 Table&nbsp;2: Articles in Scopus categorized “German” and “Law”, sorted by relative frequency
 </figcaption>
 <div aria-describedby="tbl-scp-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="58">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="108">
+<style type="text/css">
+#T_3e045_row0_col0, #T_3e045_row1_col0, #T_3e045_row2_col0, #T_3e045_row3_col0, #T_3e045_row4_col0, #T_3e045_row5_col0, #T_3e045_row6_col0, #T_3e045_row7_col0, #T_3e045_row8_col0, #T_3e045_row9_col0, #T_3e045_row10_col0, #T_3e045_row11_col0, #T_3e045_row12_col0, #T_3e045_row13_col0, #T_3e045_row14_col0, #T_3e045_row15_col0, #T_3e045_row16_col0, #T_3e045_row17_col0, #T_3e045_row18_col0, #T_3e045_row19_col0, #T_3e045_row20_col0, #T_3e045_row21_col0, #T_3e045_row22_col0 {
+  text-align: left;
+}
+#T_3e045_row0_col1, #T_3e045_row0_col2, #T_3e045_row1_col1, #T_3e045_row1_col2, #T_3e045_row2_col1, #T_3e045_row2_col2, #T_3e045_row3_col1, #T_3e045_row3_col2, #T_3e045_row4_col1, #T_3e045_row4_col2, #T_3e045_row5_col1, #T_3e045_row5_col2, #T_3e045_row6_col1, #T_3e045_row6_col2, #T_3e045_row7_col1, #T_3e045_row7_col2, #T_3e045_row8_col1, #T_3e045_row8_col2, #T_3e045_row9_col1, #T_3e045_row9_col2, #T_3e045_row10_col1, #T_3e045_row10_col2, #T_3e045_row11_col1, #T_3e045_row11_col2, #T_3e045_row12_col1, #T_3e045_row12_col2, #T_3e045_row13_col1, #T_3e045_row13_col2, #T_3e045_row14_col1, #T_3e045_row14_col2, #T_3e045_row15_col1, #T_3e045_row15_col2, #T_3e045_row16_col1, #T_3e045_row16_col2, #T_3e045_row17_col1, #T_3e045_row17_col2, #T_3e045_row18_col1, #T_3e045_row18_col2, #T_3e045_row19_col1, #T_3e045_row19_col2, #T_3e045_row20_col1, #T_3e045_row20_col2, #T_3e045_row21_col1, #T_3e045_row21_col2, #T_3e045_row22_col1, #T_3e045_row22_col2 {
+  text-align: center;
+}
+#T_3e045_row0_col3, #T_3e045_row1_col3, #T_3e045_row2_col3, #T_3e045_row3_col3, #T_3e045_row4_col3, #T_3e045_row5_col3, #T_3e045_row6_col3, #T_3e045_row7_col3, #T_3e045_row8_col3, #T_3e045_row9_col3, #T_3e045_row10_col3, #T_3e045_row11_col3, #T_3e045_row12_col3, #T_3e045_row13_col3, #T_3e045_row14_col3, #T_3e045_row15_col3, #T_3e045_row16_col3, #T_3e045_row17_col3, #T_3e045_row18_col3, #T_3e045_row19_col3, #T_3e045_row20_col3, #T_3e045_row21_col3, #T_3e045_row22_col3 {
+  text-align: right;
+}
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_3e045" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Journal</th>
-<th data-quarto-table-cell-role="th">Num. Art.</th>
-<th data-quarto-table-cell-role="th">Num. German+Law</th>
-<th data-quarto-table-cell-role="th">%</th>
+<th id="T_3e045_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_3e045_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
+<th id="T_3e045_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
+<th id="T_3e045_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Kriminalistik</td>
-<td>2601</td>
-<td>2599</td>
-<td>1.00</td>
+<td id="T_3e045_row0_col0" class="data row0 col0">Kriminalistik</td>
+<td id="T_3e045_row0_col1" class="data row0 col1">2601</td>
+<td id="T_3e045_row0_col2" class="data row0 col2">2599</td>
+<td id="T_3e045_row0_col3" class="data row0 col3">100%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Osterreichisches Archiv fur Recht und Religion</td>
-<td>168</td>
-<td>166</td>
-<td>0.99</td>
+<td id="T_3e045_row1_col0" class="data row1 col0">Osterreichisches Archiv fur Recht und Religion</td>
+<td id="T_3e045_row1_col1" class="data row1 col1">168</td>
+<td id="T_3e045_row1_col2" class="data row1 col2">166</td>
+<td id="T_3e045_row1_col3" class="data row1 col3">99%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Verwaltung</td>
-<td>115</td>
-<td>114</td>
-<td>0.99</td>
+<td id="T_3e045_row2_col0" class="data row2 col0">Verwaltung</td>
+<td id="T_3e045_row2_col1" class="data row2 col1">115</td>
+<td id="T_3e045_row2_col2" class="data row2 col2">114</td>
+<td id="T_3e045_row2_col3" class="data row2 col3">99%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>Forensische Psychiatrie, Psychologie, Kriminol...</td>
-<td>523</td>
-<td>513</td>
-<td>0.98</td>
+<td id="T_3e045_row3_col0" class="data row3 col0">Forensische Psychiatrie, Psychologie, Kriminologie</td>
+<td id="T_3e045_row3_col1" class="data row3 col1">523</td>
+<td id="T_3e045_row3_col2" class="data row3 col2">513</td>
+<td id="T_3e045_row3_col3" class="data row3 col3">98%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
-<td>398</td>
-<td>373</td>
-<td>0.94</td>
+<td id="T_3e045_row4_col0" class="data row4 col0">Zeitschrift der Savigny-Stiftung fur…</td>
+<td id="T_3e045_row4_col1" class="data row4 col1">398</td>
+<td id="T_3e045_row4_col2" class="data row4 col2">373</td>
+<td id="T_3e045_row4_col3" class="data row4 col3">94%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">6</td>
-<td>Kriminologisches Journal</td>
-<td>207</td>
-<td>184</td>
-<td>0.89</td>
+<td id="T_3e045_row5_col0" class="data row5 col0">Kriminologisches Journal</td>
+<td id="T_3e045_row5_col1" class="data row5 col1">207</td>
+<td id="T_3e045_row5_col2" class="data row5 col2">184</td>
+<td id="T_3e045_row5_col3" class="data row5 col3">89%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">7</td>
-<td>Monatsschrift fur Kriminologie und Strafrechts...</td>
-<td>323</td>
-<td>284</td>
-<td>0.88</td>
+<td id="T_3e045_row6_col0" class="data row6 col0">Monatsschrift fur Kriminologie und…</td>
+<td id="T_3e045_row6_col1" class="data row6 col1">323</td>
+<td id="T_3e045_row6_col2" class="data row6 col2">284</td>
+<td id="T_3e045_row6_col3" class="data row6 col3">88%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">8</td>
-<td>Deutsche Lebensmittel-Rundschau</td>
-<td>1739</td>
-<td>1478</td>
-<td>0.85</td>
+<td id="T_3e045_row7_col0" class="data row7 col0">Deutsche Lebensmittel-Rundschau</td>
+<td id="T_3e045_row7_col1" class="data row7 col1">1739</td>
+<td id="T_3e045_row7_col2" class="data row7 col2">1478</td>
+<td id="T_3e045_row7_col3" class="data row7 col3">85%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">9</td>
-<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
-<td>603</td>
-<td>500</td>
-<td>0.83</td>
+<td id="T_3e045_row8_col0" class="data row8 col0">Zeitschrift der Savigny-Stiftung fur…</td>
+<td id="T_3e045_row8_col1" class="data row8 col1">603</td>
+<td id="T_3e045_row8_col2" class="data row8 col2">500</td>
+<td id="T_3e045_row8_col3" class="data row8 col3">83%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">10</td>
-<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
-<td>120</td>
-<td>93</td>
-<td>0.78</td>
+<td id="T_3e045_row9_col0" class="data row9 col0">Zeitschrift der Savigny-Stiftung fur…</td>
+<td id="T_3e045_row9_col1" class="data row9 col1">120</td>
+<td id="T_3e045_row9_col2" class="data row9 col2">93</td>
+<td id="T_3e045_row9_col3" class="data row9 col3">78%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">11</td>
-<td>Recht und Psychiatrie</td>
-<td>369</td>
-<td>284</td>
-<td>0.77</td>
+<td id="T_3e045_row10_col0" class="data row10 col0">Recht und Psychiatrie</td>
+<td id="T_3e045_row10_col1" class="data row10 col1">369</td>
+<td id="T_3e045_row10_col2" class="data row10 col2">284</td>
+<td id="T_3e045_row10_col3" class="data row10 col3">77%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">12</td>
-<td>Zeitschrift fur Rechtssoziologie</td>
-<td>89</td>
-<td>63</td>
-<td>0.71</td>
+<td id="T_3e045_row11_col0" class="data row11 col0">Zeitschrift fur Rechtssoziologie</td>
+<td id="T_3e045_row11_col1" class="data row11 col1">89</td>
+<td id="T_3e045_row11_col2" class="data row11 col2">63</td>
+<td id="T_3e045_row11_col3" class="data row11 col3">71%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">13</td>
-<td>Kriminologie</td>
-<td>94</td>
-<td>66</td>
-<td>0.70</td>
+<td id="T_3e045_row12_col0" class="data row12 col0">Kriminologie</td>
+<td id="T_3e045_row12_col1" class="data row12 col1">94</td>
+<td id="T_3e045_row12_col2" class="data row12 col2">66</td>
+<td id="T_3e045_row12_col3" class="data row12 col3">70%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">14</td>
-<td>Jusletter IT</td>
-<td>708</td>
-<td>446</td>
-<td>0.63</td>
+<td id="T_3e045_row13_col0" class="data row13 col0">Jusletter IT</td>
+<td id="T_3e045_row13_col1" class="data row13 col1">708</td>
+<td id="T_3e045_row13_col2" class="data row13 col2">446</td>
+<td id="T_3e045_row13_col3" class="data row13 col3">63%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">15</td>
-<td>Archiv fur Rechts- und Sozialphilosophie</td>
-<td>273</td>
-<td>159</td>
-<td>0.58</td>
+<td id="T_3e045_row14_col0" class="data row14 col0">Archiv fur Rechts- und Sozialphilosophie</td>
+<td id="T_3e045_row14_col1" class="data row14 col1">273</td>
+<td id="T_3e045_row14_col2" class="data row14 col2">159</td>
+<td id="T_3e045_row14_col3" class="data row14 col3">58%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">16</td>
-<td>Rechtsgeschichte</td>
-<td>309</td>
-<td>174</td>
-<td>0.56</td>
+<td id="T_3e045_row15_col0" class="data row15 col0">Rechtsgeschichte</td>
+<td id="T_3e045_row15_col1" class="data row15 col1">309</td>
+<td id="T_3e045_row15_col2" class="data row15 col2">174</td>
+<td id="T_3e045_row15_col3" class="data row15 col3">56%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">17</td>
-<td>Zeitschrift fur Europarechtliche Studien</td>
-<td>107</td>
-<td>51</td>
-<td>0.48</td>
+<td id="T_3e045_row16_col0" class="data row16 col0">Zeitschrift fur Europarechtliche Studien</td>
+<td id="T_3e045_row16_col1" class="data row16 col1">107</td>
+<td id="T_3e045_row16_col2" class="data row16 col2">51</td>
+<td id="T_3e045_row16_col3" class="data row16 col3">48%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">18</td>
-<td>Zeitschrift fur Auslandisches Offentliches Rec...</td>
-<td>143</td>
-<td>49</td>
-<td>0.34</td>
+<td id="T_3e045_row17_col0" class="data row17 col0">Zeitschrift fur Auslandisches Offentliches Recht…</td>
+<td id="T_3e045_row17_col1" class="data row17 col1">143</td>
+<td id="T_3e045_row17_col2" class="data row17 col2">49</td>
+<td id="T_3e045_row17_col3" class="data row17 col3">34%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">19</td>
-<td>Legal History Review,Tijdschrift voor Rechtsge...</td>
-<td>265</td>
-<td>68</td>
-<td>0.26</td>
+<td id="T_3e045_row18_col0" class="data row18 col0">Legal History Review,Tijdschrift voor…</td>
+<td id="T_3e045_row18_col1" class="data row18 col1">265</td>
+<td id="T_3e045_row18_col2" class="data row18 col2">68</td>
+<td id="T_3e045_row18_col3" class="data row18 col3">26%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">20</td>
-<td>Journal on European History of Law</td>
-<td>283</td>
-<td>74</td>
-<td>0.26</td>
+<td id="T_3e045_row19_col0" class="data row19 col0">Journal on European History of Law</td>
+<td id="T_3e045_row19_col1" class="data row19 col1">283</td>
+<td id="T_3e045_row19_col2" class="data row19 col2">74</td>
+<td id="T_3e045_row19_col3" class="data row19 col3">26%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21</td>
-<td>Annales de la Faculte de Droit d'Istanbul</td>
-<td>74</td>
-<td>11</td>
-<td>0.15</td>
+<td id="T_3e045_row20_col0" class="data row20 col0">Annales de la Faculte de Droit d'Istanbul</td>
+<td id="T_3e045_row20_col1" class="data row20 col1">74</td>
+<td id="T_3e045_row20_col2" class="data row20 col2">11</td>
+<td id="T_3e045_row20_col3" class="data row20 col3">15%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">22</td>
-<td>Credit and Capital Markets</td>
-<td>164</td>
-<td>18</td>
-<td>0.11</td>
+<td id="T_3e045_row21_col0" class="data row21 col0">Credit and Capital Markets</td>
+<td id="T_3e045_row21_col1" class="data row21 col1">164</td>
+<td id="T_3e045_row21_col2" class="data row21 col2">18</td>
+<td id="T_3e045_row21_col3" class="data row21 col3">11%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">23</td>
-<td>Journal of Juristic Papyrology</td>
-<td>180</td>
-<td>18</td>
-<td>0.10</td>
+<td id="T_3e045_row22_col0" class="data row22 col0">Journal of Juristic Papyrology</td>
+<td id="T_3e045_row22_col1" class="data row22 col1">180</td>
+<td id="T_3e045_row22_col2" class="data row22 col2">18</td>
+<td id="T_3e045_row22_col3" class="data row22 col3">10%</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -533,11 +528,14 @@ Table&nbsp;2: Articles in Scopus categorized “German” and “Law”, sorted 
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>version <span class="op">=</span> <span class="st">"202408"</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/kb_data/</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">/eva_openalex_de_law_journals_trivial_search_result_</span><span class="sc">{</span>version<span class="sc">}</span><span class="ss">.csv'</span>)</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">'display_name'</span>, <span class="st">'works_count'</span>, <span class="st">'law_and_de'</span>, <span class="st">'law_and_de_article_share'</span>]]</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(<span class="st">'law_and_de_article_share'</span>, ascending<span class="op">=</span><span class="va">False</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Journal'</span>, <span class="st">'Num. Art.'</span>, <span class="st">'Num. German+Law'</span>, <span class="st">'%'</span>]</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(<span class="st">'law_and_de_article_share'</span>, ascending<span class="op">=</span><span class="va">False</span>, ignore_index<span class="op">=</span><span class="va">True</span>).head(<span class="dv">20</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Journal'</span>, <span class="st">'Articles'</span>, <span class="st">'German+Law'</span>, <span class="st">'%'</span>]</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Journal'</span>] <span class="op">=</span> df[<span class="st">'Journal'</span>].astype(<span class="bu">str</span>).<span class="bu">apply</span>(<span class="kw">lambda</span> text: textwrap.shorten(text, width<span class="op">=</span><span class="dv">50</span>, placeholder<span class="op">=</span><span class="st">"</span><span class="ch">\u2026</span><span class="st">"</span>))</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)<span class="op">\</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">0</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'left'</span>})<span class="op">\</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">1</span>,<span class="dv">2</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'center'</span>})<span class="op">\</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">3</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'right'</span>})<span class="op">\</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  .<span class="bu">format</span>({df.columns[<span class="dv">3</span>]: <span class="st">"</span><span class="sc">{:.0%}</span><span class="st">"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-openalex-ger-law" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="5">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -545,165 +543,151 @@ Table&nbsp;2: Articles in Scopus categorized “German” and “Law”, sorted 
 Table&nbsp;3: Articles in OpenAlex categorized “German” and “Law”, sorted by relative frequency, top 20
 </figcaption>
 <div aria-describedby="tbl-openalex-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="59">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="109">
+<style type="text/css">
+#T_d9c71_row0_col0, #T_d9c71_row1_col0, #T_d9c71_row2_col0, #T_d9c71_row3_col0, #T_d9c71_row4_col0, #T_d9c71_row5_col0, #T_d9c71_row6_col0, #T_d9c71_row7_col0, #T_d9c71_row8_col0, #T_d9c71_row9_col0, #T_d9c71_row10_col0, #T_d9c71_row11_col0, #T_d9c71_row12_col0, #T_d9c71_row13_col0, #T_d9c71_row14_col0, #T_d9c71_row15_col0, #T_d9c71_row16_col0, #T_d9c71_row17_col0, #T_d9c71_row18_col0, #T_d9c71_row19_col0 {
+  text-align: left;
+}
+#T_d9c71_row0_col1, #T_d9c71_row0_col2, #T_d9c71_row1_col1, #T_d9c71_row1_col2, #T_d9c71_row2_col1, #T_d9c71_row2_col2, #T_d9c71_row3_col1, #T_d9c71_row3_col2, #T_d9c71_row4_col1, #T_d9c71_row4_col2, #T_d9c71_row5_col1, #T_d9c71_row5_col2, #T_d9c71_row6_col1, #T_d9c71_row6_col2, #T_d9c71_row7_col1, #T_d9c71_row7_col2, #T_d9c71_row8_col1, #T_d9c71_row8_col2, #T_d9c71_row9_col1, #T_d9c71_row9_col2, #T_d9c71_row10_col1, #T_d9c71_row10_col2, #T_d9c71_row11_col1, #T_d9c71_row11_col2, #T_d9c71_row12_col1, #T_d9c71_row12_col2, #T_d9c71_row13_col1, #T_d9c71_row13_col2, #T_d9c71_row14_col1, #T_d9c71_row14_col2, #T_d9c71_row15_col1, #T_d9c71_row15_col2, #T_d9c71_row16_col1, #T_d9c71_row16_col2, #T_d9c71_row17_col1, #T_d9c71_row17_col2, #T_d9c71_row18_col1, #T_d9c71_row18_col2, #T_d9c71_row19_col1, #T_d9c71_row19_col2 {
+  text-align: center;
+}
+#T_d9c71_row0_col3, #T_d9c71_row1_col3, #T_d9c71_row2_col3, #T_d9c71_row3_col3, #T_d9c71_row4_col3, #T_d9c71_row5_col3, #T_d9c71_row6_col3, #T_d9c71_row7_col3, #T_d9c71_row8_col3, #T_d9c71_row9_col3, #T_d9c71_row10_col3, #T_d9c71_row11_col3, #T_d9c71_row12_col3, #T_d9c71_row13_col3, #T_d9c71_row14_col3, #T_d9c71_row15_col3, #T_d9c71_row16_col3, #T_d9c71_row17_col3, #T_d9c71_row18_col3, #T_d9c71_row19_col3 {
+  text-align: right;
+}
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_d9c71" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Journal</th>
-<th data-quarto-table-cell-role="th">Num. Art.</th>
-<th data-quarto-table-cell-role="th">Num. German+Law</th>
-<th data-quarto-table-cell-role="th">%</th>
+<th id="T_d9c71_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_d9c71_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
+<th id="T_d9c71_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
+<th id="T_d9c71_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Zeitschrift für Beihilfenrecht</td>
-<td>253</td>
-<td>191</td>
-<td>0.75</td>
+<td id="T_d9c71_row0_col0" class="data row0 col0">Zeitschrift für Beihilfenrecht</td>
+<td id="T_d9c71_row0_col1" class="data row0 col1">253</td>
+<td id="T_d9c71_row0_col2" class="data row0 col2">191</td>
+<td id="T_d9c71_row0_col3" class="data row0 col3">75%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Jura - Juristische Ausbildung</td>
-<td>24</td>
-<td>17</td>
-<td>0.71</td>
+<td id="T_d9c71_row1_col0" class="data row1 col0">Jura - Juristische Ausbildung</td>
+<td id="T_d9c71_row1_col1" class="data row1 col1">24</td>
+<td id="T_d9c71_row1_col2" class="data row1 col2">17</td>
+<td id="T_d9c71_row1_col3" class="data row1 col3">71%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Zeitschrift für Informationsrecht</td>
-<td>1963</td>
-<td>1403</td>
-<td>0.71</td>
+<td id="T_d9c71_row2_col0" class="data row2 col0">Zeitschrift für Informationsrecht</td>
+<td id="T_d9c71_row2_col1" class="data row2 col1">1963</td>
+<td id="T_d9c71_row2_col2" class="data row2 col2">1403</td>
+<td id="T_d9c71_row2_col3" class="data row2 col3">71%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>Europaische grundrechte zeitschrift</td>
-<td>334</td>
-<td>236</td>
-<td>0.71</td>
+<td id="T_d9c71_row3_col0" class="data row3 col0">Europaische grundrechte zeitschrift</td>
+<td id="T_d9c71_row3_col1" class="data row3 col1">334</td>
+<td id="T_d9c71_row3_col2" class="data row3 col2">236</td>
+<td id="T_d9c71_row3_col3" class="data row3 col3">71%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>Computer Und Recht: Forum für die Praxis des R...</td>
-<td>2332</td>
-<td>1664</td>
-<td>0.71</td>
+<td id="T_d9c71_row4_col0" class="data row4 col0">Computer Und Recht: Forum für die Praxis des…</td>
+<td id="T_d9c71_row4_col1" class="data row4 col1">2332</td>
+<td id="T_d9c71_row4_col2" class="data row4 col2">1664</td>
+<td id="T_d9c71_row4_col3" class="data row4 col3">71%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">6</td>
-<td>Datenschutz und Datensicherheit</td>
-<td>20</td>
-<td>14</td>
-<td>0.70</td>
+<td id="T_d9c71_row5_col0" class="data row5 col0">Datenschutz und Datensicherheit</td>
+<td id="T_d9c71_row5_col1" class="data row5 col1">20</td>
+<td id="T_d9c71_row5_col2" class="data row5 col2">14</td>
+<td id="T_d9c71_row5_col3" class="data row5 col3">70%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">7</td>
-<td>Jus: Juristische Schulung</td>
-<td>1487</td>
-<td>1030</td>
-<td>0.69</td>
+<td id="T_d9c71_row6_col0" class="data row6 col0">Jus: Juristische Schulung</td>
+<td id="T_d9c71_row6_col1" class="data row6 col1">1487</td>
+<td id="T_d9c71_row6_col2" class="data row6 col2">1030</td>
+<td id="T_d9c71_row6_col3" class="data row6 col3">69%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">8</td>
-<td>Europaisches wirtschafts und steuerrecht</td>
-<td>382</td>
-<td>260</td>
-<td>0.68</td>
+<td id="T_d9c71_row7_col0" class="data row7 col0">Europaisches wirtschafts und steuerrecht</td>
+<td id="T_d9c71_row7_col1" class="data row7 col1">382</td>
+<td id="T_d9c71_row7_col2" class="data row7 col2">260</td>
+<td id="T_d9c71_row7_col3" class="data row7 col3">68%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">9</td>
-<td>Schweizerisches Zentralblatt für Staats- und V...</td>
-<td>102</td>
-<td>69</td>
-<td>0.68</td>
+<td id="T_d9c71_row8_col0" class="data row8 col0">Schweizerisches Zentralblatt für Staats- und…</td>
+<td id="T_d9c71_row8_col1" class="data row8 col1">102</td>
+<td id="T_d9c71_row8_col2" class="data row8 col2">69</td>
+<td id="T_d9c71_row8_col3" class="data row8 col3">68%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">10</td>
-<td>WUW : Wirtschaft und wettbewerb = Concurrence ...</td>
-<td>767</td>
-<td>517</td>
-<td>0.67</td>
+<td id="T_d9c71_row9_col0" class="data row9 col0">WUW : Wirtschaft und wettbewerb = Concurrence et…</td>
+<td id="T_d9c71_row9_col1" class="data row9 col1">767</td>
+<td id="T_d9c71_row9_col2" class="data row9 col2">517</td>
+<td id="T_d9c71_row9_col3" class="data row9 col3">67%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">11</td>
-<td>Zeitschrift für Zivilprozess</td>
-<td>483</td>
-<td>325</td>
-<td>0.67</td>
+<td id="T_d9c71_row10_col0" class="data row10 col0">Zeitschrift für Zivilprozess</td>
+<td id="T_d9c71_row10_col1" class="data row10 col1">483</td>
+<td id="T_d9c71_row10_col2" class="data row10 col2">325</td>
+<td id="T_d9c71_row10_col3" class="data row10 col3">67%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">12</td>
-<td>Jahrbuch Eigentum und Urheberrecht in der Demo...</td>
-<td>21</td>
-<td>14</td>
-<td>0.67</td>
+<td id="T_d9c71_row11_col0" class="data row11 col0">Jahrbuch Eigentum und Urheberrecht in der…</td>
+<td id="T_d9c71_row11_col1" class="data row11 col1">21</td>
+<td id="T_d9c71_row11_col2" class="data row11 col2">14</td>
+<td id="T_d9c71_row11_col3" class="data row11 col3">67%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">13</td>
-<td>ZG : Zeitschrift für Gesetzgebung</td>
-<td>377</td>
-<td>254</td>
-<td>0.67</td>
+<td id="T_d9c71_row12_col0" class="data row12 col0">ZG : Zeitschrift für Gesetzgebung</td>
+<td id="T_d9c71_row12_col1" class="data row12 col1">377</td>
+<td id="T_d9c71_row12_col2" class="data row12 col2">254</td>
+<td id="T_d9c71_row12_col3" class="data row12 col3">67%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">14</td>
-<td>Österreichische Zeitschrift für Kartellrecht</td>
-<td>502</td>
-<td>337</td>
-<td>0.67</td>
+<td id="T_d9c71_row13_col0" class="data row13 col0">Österreichische Zeitschrift für Kartellrecht</td>
+<td id="T_d9c71_row13_col1" class="data row13 col1">502</td>
+<td id="T_d9c71_row13_col2" class="data row13 col2">337</td>
+<td id="T_d9c71_row13_col3" class="data row13 col3">67%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">15</td>
-<td>Göttinger Rechtszeitschrift</td>
-<td>167</td>
-<td>109</td>
-<td>0.65</td>
+<td id="T_d9c71_row14_col0" class="data row14 col0">Göttinger Rechtszeitschrift</td>
+<td id="T_d9c71_row14_col1" class="data row14 col1">167</td>
+<td id="T_d9c71_row14_col2" class="data row14 col2">109</td>
+<td id="T_d9c71_row14_col3" class="data row14 col3">65%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">16</td>
-<td>Zeitschrift der Verwaltungsgerichtsbarkeit</td>
-<td>1683</td>
-<td>1074</td>
-<td>0.64</td>
+<td id="T_d9c71_row15_col0" class="data row15 col0">Zeitschrift der Verwaltungsgerichtsbarkeit</td>
+<td id="T_d9c71_row15_col1" class="data row15 col1">1683</td>
+<td id="T_d9c71_row15_col2" class="data row15 col2">1074</td>
+<td id="T_d9c71_row15_col3" class="data row15 col3">64%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">17</td>
-<td>STRASSENVERKEHRSRECHT</td>
-<td>113</td>
-<td>72</td>
-<td>0.64</td>
+<td id="T_d9c71_row16_col0" class="data row16 col0">STRASSENVERKEHRSRECHT</td>
+<td id="T_d9c71_row16_col1" class="data row16 col1">113</td>
+<td id="T_d9c71_row16_col2" class="data row16 col2">72</td>
+<td id="T_d9c71_row16_col3" class="data row16 col3">64%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">18</td>
-<td>Europaische zeitschrift für wirtschatsrecht, EUZW</td>
-<td>863</td>
-<td>555</td>
-<td>0.64</td>
+<td id="T_d9c71_row17_col0" class="data row17 col0">Europaische zeitschrift für wirtschatsrecht, EUZW</td>
+<td id="T_d9c71_row17_col1" class="data row17 col1">863</td>
+<td id="T_d9c71_row17_col2" class="data row17 col2">555</td>
+<td id="T_d9c71_row17_col3" class="data row17 col3">64%</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">19</td>
-<td>Europarecht</td>
-<td>1246</td>
-<td>786</td>
-<td>0.63</td>
+<td id="T_d9c71_row18_col0" class="data row18 col0">Europarecht</td>
+<td id="T_d9c71_row18_col1" class="data row18 col1">1246</td>
+<td id="T_d9c71_row18_col2" class="data row18 col2">786</td>
+<td id="T_d9c71_row18_col3" class="data row18 col3">63%</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">20</td>
-<td>Frankfurt Law Review</td>
-<td>16</td>
-<td>10</td>
-<td>0.63</td>
+<td id="T_d9c71_row19_col0" class="data row19 col0">Frankfurt Law Review</td>
+<td id="T_d9c71_row19_col1" class="data row19 col1">16</td>
+<td id="T_d9c71_row19_col2" class="data row19 col2">10</td>
+<td id="T_d9c71_row19_col3" class="data row19 col3">63%</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -801,302 +785,247 @@ Figure&nbsp;3: Intersection (by abbreviation) between KJB, juris and Wikipedia e
 <p>Instead, for generating our benchmark set, we relied on a 2009 study by Marcel and Tanja Gröls <span class="citation" data-cites="gröls2009">(<a href="#ref-gröls2009" role="doc-biblioref">Gröls and Gröls 2009</a>)</span>, who ranked law journals on the basis of a survey among law professors. Even though the study is more than 15 years old and has - as far as we can see - not yet been updated in later studies, it is still a useful source of data for our purposes, as we will explain below.</p>
 <p>As the authors point out, previous attempts at ranking German law journals through empirical means remained scarce (497). Therefore, the authors decided on a methodological setup derived from similar studies in economics and business administration (489). In short, their study consists of different rankings of German law journals generated by surveying the individual assessment of German law scholars. First, 1500 email addresses of German law professors, both current and former, as well as research associates were identified by reviewing the web pages of 45 German universities and academic institutions. Next, these individuals were contacted via email and asked to fill out the survey. 248 responses were received, marking a 16,5% response rate (490).</p>
 <p>The survey asked its participants to name their area of expertise, rank five journals of that area they perceived to be of the highest quality, and additionally, to name and rank five journals that are more general in scope and not bound to a specific subdiscipline, again according to perceived quality (490). Journals over a certain counting threshold were then assigned scores based on their place in the participant’s ranking as well as the participant’s academic status (professors were weighted stronger than research associates) and an ‘expert factor’ determined by the individuals amount of publications over the last three years, thus creating two different kinds of rankings: one for journals considered general in nature and several others according to specific subdisciplines (491-492).</p>
-<p>As this distinction is irrelevant to our purposes, we aggregated the different rankings into one list of 52 journals, thereby constituting our benchmark set (<a href="#tbl-gold-standard" class="quarto-xref">Table&nbsp;4</a>).</p>
+<p>As this distinction is irrelevant to our purposes, we aggregated the different rankings into one list of 51 journals, thereby constituting our benchmark set (<a href="#tbl-benchmark-set" class="quarto-xref">Table&nbsp;4</a>).</p>
 <div class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"../data/gold/gold-groels-groels-2009.csv"</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">'abbreviation'</span>, <span class="st">'title'</span>]]</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Abbreviation'</span>, <span class="st">'Title'</span>]</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">'Abbreviation'</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>df.style.hide()</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> textwrap</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"../data/benchmark/list-groels-groels-2009.csv"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">'abbreviation'</span>, <span class="st">'title'</span>]]</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">'Abbreviation'</span>, <span class="st">'Title'</span>]</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">'Abbreviation'</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Title'</span>] <span class="op">=</span> df[<span class="st">'Title'</span>].astype(<span class="bu">str</span>).<span class="bu">apply</span>(<span class="kw">lambda</span> text: textwrap.shorten(text, width<span class="op">=</span><span class="dv">80</span>, placeholder<span class="op">=</span><span class="st">"</span><span class="ch">\u2026</span><span class="st">"</span>))</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)<span class="op">\</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">1</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'left'</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div id="tbl-gold-standard" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="8">
+<div id="tbl-benchmark-set" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="8">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gold-standard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4: List of 52 most highly ranked law journals according to Gröls/Gröls (2009), sorted by abbreviation
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-benchmark-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: List of 51 most highly ranked law journals according to Gröls/Gröls (2009), sorted by abbreviation
 </figcaption>
-<div aria-describedby="tbl-gold-standard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="62">
-<div>
+<div aria-describedby="tbl-benchmark-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="112">
+<style type="text/css">
+#T_bf24b_row0_col1, #T_bf24b_row1_col1, #T_bf24b_row2_col1, #T_bf24b_row3_col1, #T_bf24b_row4_col1, #T_bf24b_row5_col1, #T_bf24b_row6_col1, #T_bf24b_row7_col1, #T_bf24b_row8_col1, #T_bf24b_row9_col1, #T_bf24b_row10_col1, #T_bf24b_row11_col1, #T_bf24b_row12_col1, #T_bf24b_row13_col1, #T_bf24b_row14_col1, #T_bf24b_row15_col1, #T_bf24b_row16_col1, #T_bf24b_row17_col1, #T_bf24b_row18_col1, #T_bf24b_row19_col1, #T_bf24b_row20_col1, #T_bf24b_row21_col1, #T_bf24b_row22_col1, #T_bf24b_row23_col1, #T_bf24b_row24_col1, #T_bf24b_row25_col1, #T_bf24b_row26_col1, #T_bf24b_row27_col1, #T_bf24b_row28_col1, #T_bf24b_row29_col1, #T_bf24b_row30_col1, #T_bf24b_row31_col1, #T_bf24b_row32_col1, #T_bf24b_row33_col1, #T_bf24b_row34_col1, #T_bf24b_row35_col1, #T_bf24b_row36_col1, #T_bf24b_row37_col1, #T_bf24b_row38_col1, #T_bf24b_row39_col1, #T_bf24b_row40_col1, #T_bf24b_row41_col1, #T_bf24b_row42_col1, #T_bf24b_row43_col1, #T_bf24b_row44_col1, #T_bf24b_row45_col1, #T_bf24b_row46_col1, #T_bf24b_row47_col1, #T_bf24b_row48_col1, #T_bf24b_row49_col1, #T_bf24b_row50_col1 {
+  text-align: left;
+}
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_bf24b" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Abbreviation</th>
-<th data-quarto-table-cell-role="th">Title</th>
+<th id="T_bf24b_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Abbreviation</th>
+<th id="T_bf24b_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Title</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>AG</td>
-<td>Die Aktiengesellschaft</td>
+<td id="T_bf24b_row0_col0" class="data row0 col0">AG</td>
+<td id="T_bf24b_row0_col1" class="data row0 col1">Die Aktiengesellschaft</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>AVR</td>
-<td>Archiv des Volkerrechts</td>
+<td id="T_bf24b_row1_col0" class="data row1 col0">AVR</td>
+<td id="T_bf24b_row1_col1" class="data row1 col1">Archiv des Volkerrechts</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>AcP</td>
-<td>Archiv für die civilistische Praxis</td>
+<td id="T_bf24b_row2_col0" class="data row2 col0">AcP</td>
+<td id="T_bf24b_row2_col1" class="data row2 col1">Archiv für die civilistische Praxis</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>AuR</td>
-<td>Arbeit und Recht</td>
+<td id="T_bf24b_row3_col0" class="data row3 col0">AuR</td>
+<td id="T_bf24b_row3_col1" class="data row3 col1">Arbeit und Recht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>AöR</td>
-<td>Archiv des öffentlichen Rechts</td>
+<td id="T_bf24b_row4_col0" class="data row4 col0">AöR</td>
+<td id="T_bf24b_row4_col1" class="data row4 col1">Archiv des öffentlichen Rechts</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">6</td>
-<td>BB</td>
-<td>Betriebs-Berater</td>
+<td id="T_bf24b_row5_col0" class="data row5 col0">BB</td>
+<td id="T_bf24b_row5_col1" class="data row5 col1">Betriebs-Berater</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">7</td>
-<td>CR</td>
-<td>Computer und Recht</td>
+<td id="T_bf24b_row6_col0" class="data row6 col0">CR</td>
+<td id="T_bf24b_row6_col1" class="data row6 col1">Computer und Recht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">8</td>
-<td>DB</td>
-<td>DER BETRIEB</td>
+<td id="T_bf24b_row7_col0" class="data row7 col0">DB</td>
+<td id="T_bf24b_row7_col1" class="data row7 col1">DER BETRIEB</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">9</td>
-<td>DOV</td>
-<td>Die öffentliche Verwaltung</td>
+<td id="T_bf24b_row8_col0" class="data row8 col0">DOV</td>
+<td id="T_bf24b_row8_col1" class="data row8 col1">Die öffentliche Verwaltung</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">10</td>
-<td>DStR</td>
-<td>Deutsches Steuerrecht</td>
+<td id="T_bf24b_row9_col0" class="data row9 col0">DStR</td>
+<td id="T_bf24b_row9_col1" class="data row9 col1">Deutsches Steuerrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">11</td>
-<td>DVBI</td>
-<td>Deutsches Verwaltungsblatt</td>
+<td id="T_bf24b_row10_col0" class="data row10 col0">DVBI</td>
+<td id="T_bf24b_row10_col1" class="data row10 col1">Deutsches Verwaltungsblatt</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">12</td>
-<td>EuGRZ</td>
-<td>Europäische Grundrechtezeitschrift</td>
+<td id="T_bf24b_row11_col0" class="data row11 col0">EuGRZ</td>
+<td id="T_bf24b_row11_col1" class="data row11 col1">Europäische Grundrechtezeitschrift</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">13</td>
-<td>EuR</td>
-<td>Europarecht</td>
+<td id="T_bf24b_row12_col0" class="data row12 col0">EuR</td>
+<td id="T_bf24b_row12_col1" class="data row12 col1">Europarecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">14</td>
-<td>EuZW</td>
-<td>Europäische Zeitschrift für Wirtschaftsrecht</td>
+<td id="T_bf24b_row13_col0" class="data row13 col0">EuZW</td>
+<td id="T_bf24b_row13_col1" class="data row13 col1">Europäische Zeitschrift für Wirtschaftsrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">15</td>
-<td>FamRZ</td>
-<td>Zeitschrift für das gesamte Familienrecht</td>
+<td id="T_bf24b_row14_col0" class="data row14 col0">FamRZ</td>
+<td id="T_bf24b_row14_col1" class="data row14 col1">Zeitschrift für das gesamte Familienrecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">16</td>
-<td>GA</td>
-<td>Goltdammers Archiv für Strafrecht</td>
+<td id="T_bf24b_row15_col0" class="data row15 col0">GA</td>
+<td id="T_bf24b_row15_col1" class="data row15 col1">Goltdammers Archiv für Strafrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">17</td>
-<td>GmbHR</td>
-<td>GmbH-Rundschau</td>
+<td id="T_bf24b_row16_col0" class="data row16 col0">GmbHR</td>
+<td id="T_bf24b_row16_col1" class="data row16 col1">GmbH-Rundschau</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">18</td>
-<td>JA</td>
-<td>Juristische Arbeitsblätter</td>
+<td id="T_bf24b_row17_col0" class="data row17 col0">JA</td>
+<td id="T_bf24b_row17_col1" class="data row17 col1">Juristische Arbeitsblätter</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">19</td>
-<td>JR</td>
-<td>Juristische Rundschau</td>
+<td id="T_bf24b_row18_col0" class="data row18 col0">JR</td>
+<td id="T_bf24b_row18_col1" class="data row18 col1">Juristische Rundschau</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">20</td>
-<td>JURA</td>
-<td>Juristische Ausbildung</td>
+<td id="T_bf24b_row19_col0" class="data row19 col0">JURA</td>
+<td id="T_bf24b_row19_col1" class="data row19 col1">Juristische Ausbildung</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21</td>
-<td>JZ</td>
-<td>JuristenZeitung</td>
+<td id="T_bf24b_row20_col0" class="data row20 col0">JZ</td>
+<td id="T_bf24b_row20_col1" class="data row20 col1">JuristenZeitung</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">22</td>
-<td>JuS</td>
-<td>Juristische Schulung</td>
+<td id="T_bf24b_row21_col0" class="data row21 col0">JuS</td>
+<td id="T_bf24b_row21_col1" class="data row21 col1">Juristische Schulung</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">23</td>
-<td>KJ</td>
-<td>Kritische Justiz</td>
+<td id="T_bf24b_row22_col0" class="data row22 col0">KJ</td>
+<td id="T_bf24b_row22_col1" class="data row22 col1">Kritische Justiz</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">24</td>
-<td>KritV</td>
-<td>Kritische Vierteljahresschrift für Gesetzgebun...</td>
+<td id="T_bf24b_row23_col0" class="data row23 col0">KritV</td>
+<td id="T_bf24b_row23_col1" class="data row23 col1">Kritische Vierteljahresschrift für Gesetzgebung und Rechtswissenschaft</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">25</td>
-<td>MDR</td>
-<td>Monatsschrift für Deutsches Recht</td>
+<td id="T_bf24b_row24_col0" class="data row24 col0">MDR</td>
+<td id="T_bf24b_row24_col1" class="data row24 col1">Monatsschrift für Deutsches Recht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">26</td>
-<td>NJW</td>
-<td>Neue juristische Wochenschrift</td>
+<td id="T_bf24b_row25_col0" class="data row25 col0">NJW</td>
+<td id="T_bf24b_row25_col1" class="data row25 col1">Neue juristische Wochenschrift</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">27</td>
-<td>NStZ</td>
-<td>Neue Zeitschrift für Strafrecht</td>
+<td id="T_bf24b_row26_col0" class="data row26 col0">NStZ</td>
+<td id="T_bf24b_row26_col1" class="data row26 col1">Neue Zeitschrift für Strafrecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">28</td>
-<td>NVwZ</td>
-<td>Neue Zeitschrift für Verwaltungsrecht</td>
+<td id="T_bf24b_row27_col0" class="data row27 col0">NVwZ</td>
+<td id="T_bf24b_row27_col1" class="data row27 col1">Neue Zeitschrift für Verwaltungsrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">29</td>
-<td>NZA</td>
-<td>Neue Zeitschrift für Arbeitsrecht</td>
+<td id="T_bf24b_row28_col0" class="data row28 col0">NZA</td>
+<td id="T_bf24b_row28_col1" class="data row28 col1">Neue Zeitschrift für Arbeitsrecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">30</td>
-<td>NZG</td>
-<td>Neue Zeitschrift für Gesellschaftsrecht</td>
+<td id="T_bf24b_row29_col0" class="data row29 col0">NZG</td>
+<td id="T_bf24b_row29_col1" class="data row29 col1">Neue Zeitschrift für Gesellschaftsrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">31</td>
-<td>NZS</td>
-<td>Neue Zeitschrift for Sozialrecht</td>
+<td id="T_bf24b_row30_col0" class="data row30 col0">NZS</td>
+<td id="T_bf24b_row30_col1" class="data row30 col1">Neue Zeitschrift for Sozialrecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">32</td>
-<td>RabelsZ</td>
-<td>Rabels Zeitschrift für ausländisches und inter...</td>
+<td id="T_bf24b_row31_col0" class="data row31 col0">RabelsZ</td>
+<td id="T_bf24b_row31_col1" class="data row31 col1">Rabels Zeitschrift für ausländisches und internationales Privatrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">33</td>
-<td>RdA</td>
-<td>Recht der Arbeit</td>
+<td id="T_bf24b_row32_col0" class="data row32 col0">RdA</td>
+<td id="T_bf24b_row32_col1" class="data row32 col1">Recht der Arbeit</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">34</td>
-<td>StV</td>
-<td>Der Strafverteidiger</td>
+<td id="T_bf24b_row33_col0" class="data row33 col0">StV</td>
+<td id="T_bf24b_row33_col1" class="data row33 col1">Der Strafverteidiger</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">35</td>
-<td>Staat</td>
-<td>Der Staat</td>
+<td id="T_bf24b_row34_col0" class="data row34 col0">Staat</td>
+<td id="T_bf24b_row34_col1" class="data row34 col1">Der Staat</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">36</td>
-<td>StraFo</td>
-<td>Strafverteidigerforum</td>
+<td id="T_bf24b_row35_col0" class="data row35 col0">StraFo</td>
+<td id="T_bf24b_row35_col1" class="data row35 col1">Strafverteidigerforum</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">37</td>
-<td>Verw</td>
-<td>Die Verwaltung</td>
+<td id="T_bf24b_row36_col0" class="data row36 col0">Verw</td>
+<td id="T_bf24b_row36_col1" class="data row36 col1">Die Verwaltung</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">38</td>
-<td>VerwArch</td>
-<td>Verwaltungsarchiv</td>
+<td id="T_bf24b_row37_col0" class="data row37 col0">VerwArch</td>
+<td id="T_bf24b_row37_col1" class="data row37 col1">Verwaltungsarchiv</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">39</td>
-<td>WM</td>
-<td>Zeitschrift für Wirtschafts- und Bankrecht</td>
+<td id="T_bf24b_row38_col0" class="data row38 col0">WM</td>
+<td id="T_bf24b_row38_col1" class="data row38 col1">Zeitschrift für Wirtschafts- und Bankrecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">40</td>
-<td>ZEuP</td>
-<td>Zeitschrift für europäisches Privatrecht</td>
+<td id="T_bf24b_row39_col0" class="data row39 col0">ZFA</td>
+<td id="T_bf24b_row39_col1" class="data row39 col1">Zeitschrift für Arbeitsrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">41</td>
-<td>ZFA</td>
-<td>Zeitschrift für Arbeitsrecht</td>
+<td id="T_bf24b_row40_col0" class="data row40 col0">ZGR</td>
+<td id="T_bf24b_row40_col1" class="data row40 col1">Zeitschrift für Gesellschaftsrecht (Zeitschrift für Unternehmens- und…</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">42</td>
-<td>ZGR</td>
-<td>Zeitschrift für Gesellschaftsrecht (Zeitschrif...</td>
+<td id="T_bf24b_row41_col0" class="data row41 col0">ZHR</td>
+<td id="T_bf24b_row41_col1" class="data row41 col1">Zeitschrift für das gesamte Handels- und Wirtschaftsrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">43</td>
-<td>ZHR</td>
-<td>Zeitschrift für das gesamte Handels- und Wirts...</td>
+<td id="T_bf24b_row42_col0" class="data row42 col0">ZIP</td>
+<td id="T_bf24b_row42_col1" class="data row42 col1">Zeitschrift für Wirtschaftsrecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">44</td>
-<td>ZIP</td>
-<td>Zeitschrift für Wirtschaftsrecht</td>
+<td id="T_bf24b_row43_col0" class="data row43 col0">ZIS</td>
+<td id="T_bf24b_row43_col1" class="data row43 col1">Zeitschrift für Strafrechtsdogmatik</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">45</td>
-<td>ZIS</td>
-<td>Zeitschrift für Strafrechtsdogmatik</td>
+<td id="T_bf24b_row44_col0" class="data row44 col0">ZRG</td>
+<td id="T_bf24b_row44_col1" class="data row44 col1">Zeitschrift der Savigny-Stiftung fur Rechtsgeschichte</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">46</td>
-<td>ZRG</td>
-<td>Zeitschrift der Savigny-Stiftung fur Rechtsges...</td>
+<td id="T_bf24b_row45_col0" class="data row45 col0">ZRP</td>
+<td id="T_bf24b_row45_col1" class="data row45 col1">Zeitschrift für Rechtspolitik</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">47</td>
-<td>ZRP</td>
-<td>Zeitschrift für Rechtspolitik</td>
+<td id="T_bf24b_row46_col0" class="data row46 col0">ZStW</td>
+<td id="T_bf24b_row46_col1" class="data row46 col1">Zeitschrift für die gesamte Strafrechtswissenschaft</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">48</td>
-<td>ZStW</td>
-<td>Zeitschrift für die gesamte Strafrechtswissens...</td>
+<td id="T_bf24b_row47_col0" class="data row47 col0">ZZP</td>
+<td id="T_bf24b_row47_col1" class="data row47 col1">Zeitschrift für Zivilprozess</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">49</td>
-<td>ZZP</td>
-<td>Zeitschrift für Zivilprozess</td>
+<td id="T_bf24b_row48_col0" class="data row48 col0">ZaoRV</td>
+<td id="T_bf24b_row48_col1" class="data row48 col1">Zeitschrift für ausländisches offentliches Recht und Volkerrecht</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">50</td>
-<td>ZaoRV</td>
-<td>Zeitschrift für ausländisches offentliches Re...</td>
+<td id="T_bf24b_row49_col0" class="data row49 col0">ZeuP</td>
+<td id="T_bf24b_row49_col1" class="data row49 col1">Zeitschrift für europäisches Privatrecht</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">51</td>
-<td>ZeuP</td>
-<td>Zeitschrift für europäisches Privatrecht</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">52</td>
-<td>wistra</td>
-<td>Zeitschrift für Wirtschafts- und Steuerstrafrecht</td>
+<td id="T_bf24b_row50_col0" class="data row50 col0">wistra</td>
+<td id="T_bf24b_row50_col1" class="data row50 col1">Zeitschrift für Wirtschafts- und Steuerstrafrecht</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -1110,7 +1039,7 @@ Table&nbsp;4: List of 52 most highly ranked law journals according to Gröls/Gr�
 <p>How is the benchmark set derived from the study of Gröls/Gröls (2009) reflected in the other data sources we have surveyed so far?</p>
 <section id="bibliometric-databases" class="level5">
 <h5 class="anchored" data-anchor-id="bibliometric-databases">Bibliometric Databases</h5>
-<p>If we compare the benchmark set with the lists we created with a classification-based search in the databases Web of Science, Scopus and OpenAlex (<a href="#tbl-gold-standard-coverage" class="quarto-xref">Table&nbsp;5</a>), we can make the following observations:</p>
+<p>If we compare the benchmark set with the lists we created with a classification-based search in the databases Web of Science, Scopus and OpenAlex (<a href="#tbl-benchmark-set-coverage" class="quarto-xref">Table&nbsp;5</a>), we can make the following observations:</p>
 <ul>
 <li>None of the 2 journals we found in the Web of Science is in the Gröls/Gröls set.</li>
 <li>Among the 23 journals we found in Scopus, 5 are contained in the set.</li>
@@ -1120,7 +1049,7 @@ Table&nbsp;4: List of 52 most highly ranked law journals according to Gröls/Gr�
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>gs_size <span class="op">=</span> pd.read_csv(<span class="st">"../data/gold/gold-groels-groels-2009.csv"</span>).shape[<span class="dv">0</span>]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>gs_size <span class="op">=</span> pd.read_csv(<span class="st">"../data/benchmark/list-groels-groels-2009.csv"</span>).shape[<span class="dv">0</span>]</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> []</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> db <span class="kw">in</span> [<span class="st">'wos'</span>, <span class="st">'scp'</span>, <span class="st">'openalex'</span>]:</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(<span class="ss">f"../data/kb_data/202408/eva_</span><span class="sc">{</span>db<span class="sc">}</span><span class="ss">_de_law_journals_trivial_search_result_202408.csv"</span>)</span>
@@ -1129,58 +1058,52 @@ Table&nbsp;4: List of 52 most highly ranked law journals according to Gröls/Gr�
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    data.append([db, hits, recall])</span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data, columns<span class="op">=</span>[<span class="st">'Database'</span>, <span class="st">'Benchmark set journals'</span>, <span class="st">'Recall'</span>])</span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div id="tbl-gold-standard-coverage" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="9">
+<div id="tbl-benchmark-set-coverage" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="9">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gold-standard-coverage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-benchmark-set-coverage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;5: Coverage of benchmark set journals in the bibliometric databases
 </figcaption>
-<div aria-describedby="tbl-gold-standard-coverage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="63">
-<div>
+<div aria-describedby="tbl-benchmark-set-coverage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display" data-execution_count="113">
+<style type="text/css">
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_4c30d" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Database</th>
-<th data-quarto-table-cell-role="th">Benchmark set journals</th>
-<th data-quarto-table-cell-role="th">Recall</th>
+<th id="T_4c30d_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Database</th>
+<th id="T_4c30d_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Benchmark set journals</th>
+<th id="T_4c30d_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Recall</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>wos</td>
-<td>0</td>
-<td>0.0</td>
+<td id="T_4c30d_row0_col0" class="data row0 col0">wos</td>
+<td id="T_4c30d_row0_col1" class="data row0 col1">0</td>
+<td id="T_4c30d_row0_col2" class="data row0 col2">0.000000</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>scp</td>
-<td>5</td>
-<td>0.1</td>
+<td id="T_4c30d_row1_col0" class="data row1 col0">scp</td>
+<td id="T_4c30d_row1_col1" class="data row1 col1">5</td>
+<td id="T_4c30d_row1_col2" class="data row1 col2">0.100000</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>openalex</td>
-<td>32</td>
-<td>0.6</td>
+<td id="T_4c30d_row2_col0" class="data row2 col0">openalex</td>
+<td id="T_4c30d_row2_col1" class="data row2 col1">32</td>
+<td id="T_4c30d_row2_col2" class="data row2 col2">0.600000</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
 </div>
 </div>
 <p>Expressed in a more formal metrics, the <em>recall</em> of our benchmark set against the classification-based search<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> is 0 for WoS, 0.1 for Scopus and 0.6 for OpenAlex. We cannot really compute a <em>precision</em> here, which would require some sort way of determining journal relevance. Our search returned journals having the feature “law” and “German”, but with no indication of their quality or impact. In contrast, our benchmark set is based on their perceived ‘relevance’ among the population of legal scholars in the survey. In standard bibliometric analysis, the ‘impact factor’ would be derived by measuring the number of references to articles in that journal (citation count), but this is not really possible because of the lack of reliable citation data, as we show in section 4.2.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
-<p>Next, we measured how well the benchmark set journals is covered in the bibliometric databases. This question is a somewhat different from the previous as the comparison does not depend on any selection based on metadata in those databases. While the first approach is concerned with the equivalence of common features (“law” , “German”), the second addresses the coverage of these recognized sources within the databases in question. Unsurprisingly, the results confirm our finding that OpenAlex is the only bibliometric database that is worth exploring further. <a href="#fig-gold-standard-coverage-visual" class="quarto-xref">Figure&nbsp;4</a> shows the coverage of our benchmark set in the Web of Science, Scopus, OpenAlex and CrossRef<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> that visually makes this clear.</p>
-<div id="cell-fig-gold-standard-coverage-visual" class="cell" data-execution_count="10">
+<p>Next, we measured how well the benchmark set journals is covered in the bibliometric databases. This question is a somewhat different from the previous as the comparison does not depend on any selection based on metadata in those databases. While the first approach is concerned with the equivalence of common features (“law” , “German”), the second addresses the coverage of these recognized sources within the databases in question. Unsurprisingly, the results confirm our finding that OpenAlex is the only bibliometric database that is worth exploring further. <a href="#fig-benchmark-set-coverage-visual" class="quarto-xref">Figure&nbsp;4</a> shows the coverage of our benchmark set in the Web of Science, Scopus, OpenAlex and CrossRef<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> that visually makes this clear.</p>
+<div id="cell-fig-benchmark-set-coverage-visual" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -1196,7 +1119,7 @@ Table&nbsp;5: Coverage of benchmark set journals in the bibliometric databases
 <span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>df.rename(columns<span class="op">=</span>{<span class="st">'wos_emerging_sources_index'</span>: <span class="st">'wos-esci'</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>df.set_index(<span class="st">'abk'</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>df.fillna(<span class="st">""</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> np.where(df.values<span class="op">==</span><span class="st">'✓'</span>, <span class="st">'green'</span>, np.where(df.values<span class="op">==</span><span class="st">'✗'</span>, <span class="st">'red'</span>, <span class="st">'white'</span>))</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> np.where(df.values<span class="op">==</span><span class="st">'✓'</span>, <span class="st">'green'</span>, np.where(df.values<span class="op">==</span><span class="st">'✗'</span>, <span class="st">'white'</span>, <span class="st">'white'</span>))</span>
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>))</span>
 <span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>ax.axis(<span class="st">'off'</span>)</span>
 <span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>table <span class="op">=</span> plt.table(cellText<span class="op">=</span>df.values,</span>
@@ -1207,12 +1130,12 @@ Table&nbsp;5: Coverage of benchmark set journals in the bibliometric databases
 <span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<div id="fig-gold-standard-coverage-visual" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-benchmark-set-coverage-visual" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-gold-standard-coverage-visual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="paper_files/figure-html/fig-gold-standard-coverage-visual-output-1.png" class="img-fluid figure-img">
+<div aria-describedby="fig-benchmark-set-coverage-visual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-benchmark-set-coverage-visual-output-1.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gold-standard-coverage-visual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-benchmark-set-coverage-visual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: Coverage of the benchmark set in bibliometric databases
 </figcaption>
 </figure>
@@ -1222,13 +1145,13 @@ Figure&nbsp;4: Coverage of the benchmark set in bibliometric databases
 </section>
 <section id="internet-lists" class="level5">
 <h5 class="anchored" data-anchor-id="internet-lists">Internet lists</h5>
-<p>For completeness, we also checked how well the benchmark set aligned with the online lists: Matching again on the journal abbreviations (with all the associated problems) we can see the overlaps of the benchmark set with those sources in <a href="#fig-inclusion-gold-standard-online-lists" class="quarto-xref">Figure&nbsp;5</a>:</p>
-<div id="cell-fig-inclusion-gold-standard-online-lists" class="cell" data-execution_count="11">
+<p>For completeness, we also checked how well the benchmark set aligned with the online lists: Matching again on the journal abbreviations (with all the associated problems) we can see the overlaps of the benchmark set with those sources in <a href="#fig-inclusion-benchmark-set-online-lists" class="quarto-xref">Figure&nbsp;5</a>:</p>
+<div id="cell-fig-inclusion-benchmark-set-online-lists" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lib.intersections <span class="im">import</span> compute_csv_intersections, heatmap_inclusion_percentage</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'groels+groels (2009)'</span>: <span class="st">'../data/gold/gold-groels-groels-2009.csv'</span>, </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'groels+groels (2009)'</span>: <span class="st">'../data/benchmark/list-groels-groels-2009.csv'</span>, </span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'jura-recherche.de'</span>: <span class="st">'../data/web_lists/jura-recherche.de-2024-12-13.csv'</span>,</span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'juris (2002)'</span>: <span class="st">'../data/web_lists/juris-ingested-journals-2002.csv'</span>,</span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'openjur.de'</span>: <span class="st">'../data/web_lists/openjur.de-2024-12-13.csv'</span>,</span>
@@ -1240,12 +1163,12 @@ Figure&nbsp;4: Coverage of the benchmark set in bibliometric databases
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>heatmap_inclusion_percentage(matrix, labels<span class="op">=</span>labels, cmap<span class="op">=</span><span class="st">"Oranges"</span>, figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<div id="fig-inclusion-gold-standard-online-lists" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-inclusion-benchmark-set-online-lists" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-inclusion-gold-standard-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="paper_files/figure-html/fig-inclusion-gold-standard-online-lists-output-1.png" class="img-fluid figure-img">
+<div aria-describedby="fig-inclusion-benchmark-set-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="paper_files/figure-html/fig-inclusion-benchmark-set-online-lists-output-1.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inclusion-gold-standard-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inclusion-benchmark-set-online-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;5: Intersections between the benchmark set and online lists
 </figcaption>
 </figure>
@@ -1333,7 +1256,7 @@ Figure&nbsp;6: Comparison of article count between publisher data and OpenAlex
 <span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="st">  GROUP BY abk;</span></span>
 <span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span>)</span>
 <span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-compare-publisherdata-openalex-doi" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="13">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1341,74 +1264,64 @@ Figure&nbsp;6: Comparison of article count between publisher data and OpenAlex
 Table&nbsp;6: Comparison of DOIs between publisher data and OpenAlex
 </figcaption>
 <div aria-describedby="tbl-compare-publisherdata-openalex-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="67">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="117">
+<style type="text/css">
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_0d20b" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Journal</th>
-<th data-quarto-table-cell-role="th">Missing DOIs</th>
-<th data-quarto-table-cell-role="th">Min year</th>
-<th data-quarto-table-cell-role="th">Max Year</th>
+<th id="T_0d20b_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_0d20b_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Missing DOIs</th>
+<th id="T_0d20b_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Min year</th>
+<th id="T_0d20b_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">Max Year</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>AcP</td>
-<td>16</td>
-<td>1976</td>
-<td>2018</td>
+<td id="T_0d20b_row0_col0" class="data row0 col0">AcP</td>
+<td id="T_0d20b_row0_col1" class="data row0 col1">16</td>
+<td id="T_0d20b_row0_col2" class="data row0 col2">1976</td>
+<td id="T_0d20b_row0_col3" class="data row0 col3">2018</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>AöR</td>
-<td>2</td>
-<td>1993</td>
-<td>2008</td>
+<td id="T_0d20b_row1_col0" class="data row1 col0">AöR</td>
+<td id="T_0d20b_row1_col1" class="data row1 col1">2</td>
+<td id="T_0d20b_row1_col2" class="data row1 col2">1993</td>
+<td id="T_0d20b_row1_col3" class="data row1 col3">2008</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>JZ</td>
-<td>65</td>
-<td>1997</td>
-<td>2021</td>
+<td id="T_0d20b_row2_col0" class="data row2 col0">JZ</td>
+<td id="T_0d20b_row2_col1" class="data row2 col1">65</td>
+<td id="T_0d20b_row2_col2" class="data row2 col2">1997</td>
+<td id="T_0d20b_row2_col3" class="data row2 col3">2021</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>KJ</td>
-<td>13</td>
-<td>2018</td>
-<td>2023</td>
+<td id="T_0d20b_row3_col0" class="data row3 col0">KJ</td>
+<td id="T_0d20b_row3_col1" class="data row3 col1">13</td>
+<td id="T_0d20b_row3_col2" class="data row3 col2">2018</td>
+<td id="T_0d20b_row3_col3" class="data row3 col3">2023</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>KritV</td>
-<td>10</td>
-<td>2023</td>
-<td>2023</td>
+<td id="T_0d20b_row4_col0" class="data row4 col0">KritV</td>
+<td id="T_0d20b_row4_col1" class="data row4 col1">10</td>
+<td id="T_0d20b_row4_col2" class="data row4 col2">2023</td>
+<td id="T_0d20b_row4_col3" class="data row4 col3">2023</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">6</td>
-<td>RabelsZ</td>
-<td>12</td>
-<td>1977</td>
-<td>2023</td>
+<td id="T_0d20b_row5_col0" class="data row5 col0">RabelsZ</td>
+<td id="T_0d20b_row5_col1" class="data row5 col1">12</td>
+<td id="T_0d20b_row5_col2" class="data row5 col2">1977</td>
+<td id="T_0d20b_row5_col3" class="data row5 col3">2023</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">7</td>
-<td>Staat</td>
-<td>4</td>
-<td>1977</td>
-<td>2023</td>
+<td id="T_0d20b_row6_col0" class="data row6 col0">Staat</td>
+<td id="T_0d20b_row6_col1" class="data row6 col1">4</td>
+<td id="T_0d20b_row6_col2" class="data row6 col2">1977</td>
+<td id="T_0d20b_row6_col3" class="data row6 col3">2023</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -1437,7 +1350,7 @@ Table&nbsp;6: Comparison of DOIs between publisher data and OpenAlex
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="st">  group by journal_name;</span></span>
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span>)</span>
 <span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-openalex-missing-dois" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="14">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1445,53 +1358,44 @@ Table&nbsp;6: Comparison of DOIs between publisher data and OpenAlex
 Table&nbsp;7: Number of DOIs missing in OpenAlex
 </figcaption>
 <div aria-describedby="tbl-openalex-missing-dois-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="68">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="118">
+<style type="text/css">
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_140a1" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Journal</th>
-<th data-quarto-table-cell-role="th">Missing DOIs</th>
+<th id="T_140a1_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_140a1_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Missing DOIs</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>AcP</td>
-<td>7</td>
+<td id="T_140a1_row0_col0" class="data row0 col0">AcP</td>
+<td id="T_140a1_row0_col1" class="data row0 col1">7</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>AöR</td>
-<td>3</td>
+<td id="T_140a1_row1_col0" class="data row1 col0">AöR</td>
+<td id="T_140a1_row1_col1" class="data row1 col1">3</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>JZ</td>
-<td>44</td>
+<td id="T_140a1_row2_col0" class="data row2 col0">JZ</td>
+<td id="T_140a1_row2_col1" class="data row2 col1">44</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>KJ</td>
-<td>1</td>
+<td id="T_140a1_row3_col0" class="data row3 col0">KJ</td>
+<td id="T_140a1_row3_col1" class="data row3 col1">1</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>KritV</td>
-<td>10</td>
+<td id="T_140a1_row4_col0" class="data row4 col0">KritV</td>
+<td id="T_140a1_row4_col1" class="data row4 col1">10</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">6</td>
-<td>RabelsZ</td>
-<td>2</td>
+<td id="T_140a1_row5_col0" class="data row5 col0">RabelsZ</td>
+<td id="T_140a1_row5_col1" class="data row5 col1">2</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -1504,11 +1408,81 @@ Table&nbsp;7: Number of DOIs missing in OpenAlex
 <div id="cell-fig-oa-zdb-coverage-comparison" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lib.visualizations <span class="im">import</span> compare_coverage_kb_zdb</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>df_kb <span class="op">=</span> pd.read_csv(<span class="st">'../data/kb_data/unversioned/eva_all_journals.csv'</span>).sort_values(by<span class="op">=</span><span class="st">'abk'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>df_zdb <span class="op">=</span> pd.read_csv(<span class="st">'../data/zdb/journal_publication_periods.csv'</span>)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>compare_coverage_kb_zdb(df_kb, df_zdb, min_year<span class="op">=</span><span class="dv">1945</span>, max_year<span class="op">=</span><span class="dv">2023</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.patheffects <span class="im">as</span> path_effects</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.ticker <span class="im">as</span> ticker</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> compare_coverage_kb_zdb(df_kb, df_zdb, min_year, max_year):</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># todo: alle abkürzungen als kleinbuchstaben matchen</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Make sure we can match all the abbreviations</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    y_vals <span class="op">=</span> df_kb[<span class="st">'abk'</span>]</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> abk <span class="kw">in</span> y_vals:</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> df_zdb[df_zdb[<span class="st">'abbr'</span>] <span class="op">==</span> abk].empty:</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Getting the name of the abbreviation</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>            name <span class="op">=</span> df_kb[df_kb[<span class="st">'abk'</span>] <span class="op">==</span> abk][<span class="st">'zeitschrift'</span>].values[<span class="dv">0</span>]</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Checking if the name exists in the 'name' column of df_zdb</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="kw">not</span> df_zdb[df_zdb[<span class="st">'name'</span>] <span class="op">==</span> name].empty:</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>                <span class="co"># If so, we write the abbreviation into the 'abbr' column</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>                df_zdb.loc[df_zdb[<span class="st">'name'</span>] <span class="op">==</span> name, <span class="st">'abbr'</span>] <span class="op">=</span> abk</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># plot</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize <span class="op">=</span> (<span class="dv">10</span>, <span class="dv">15</span>))</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Generate and plot publication ranges </span></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> y <span class="kw">in</span> y_vals:</span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>        df_temp <span class="op">=</span> df_zdb[df_zdb[<span class="st">'abbr'</span>].<span class="bu">str</span>.lower()<span class="op">==</span>y.lower()]</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> _, row <span class="kw">in</span> df_temp.iterrows():</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>            x1 <span class="op">=</span> <span class="bu">int</span>(row[<span class="st">'year_start'</span>]) <span class="cf">if</span> <span class="kw">not</span> pd.isna(row[<span class="st">'year_start'</span>]) <span class="cf">else</span> min_year</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>            x2 <span class="op">=</span> <span class="bu">int</span>(row[<span class="st">'year_end'</span>]) <span class="cf">if</span> <span class="kw">not</span> pd.isna(row[<span class="st">'year_end'</span>]) <span class="cf">else</span> max_year</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> x1 <span class="op">&gt;</span> x2: <span class="cf">continue</span></span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a>            x1 <span class="op">=</span> <span class="bu">min</span>(max_year, <span class="bu">max</span>(min_year, x1))</span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a>            x2 <span class="op">=</span> <span class="bu">max</span>(min_year, <span class="bu">min</span>(max_year, x2))</span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>            ax.plot(</span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>              (x1, x2), (y, y), </span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>              color <span class="op">=</span> <span class="st">'w'</span>, </span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a>              linewidth <span class="op">=</span> <span class="dv">5</span>, </span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>              path_effects <span class="op">=</span> [</span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>                path_effects.Stroke(linewidth<span class="op">=</span><span class="dv">6</span>,foreground<span class="op">=</span><span class="st">'black'</span>),</span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a>                path_effects.Normal()</span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a>              ], </span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a>              label<span class="op">=</span><span class="st">"Publication period (source: ZDB)"</span></span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot available years</span></span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a>    x1_vals <span class="op">=</span> df_kb[<span class="st">'min_pubyear_in_openalex'</span>].clip(min_year, max_year)</span>
+<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a>    x2_vals <span class="op">=</span> df_kb[<span class="st">'max_pubyear_in_openalex'</span>].clip(min_year, max_year)</span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> y, x1, x2 <span class="kw">in</span> <span class="bu">zip</span>(y_vals, x1_vals, x2_vals):</span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pd.notna(x1) <span class="kw">and</span> pd.notna(x2):</span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a>            x1, x2 <span class="op">=</span> <span class="bu">int</span>(x1), <span class="bu">int</span>(x2)</span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a>            ax.plot((x1, x2), (y, y), color <span class="op">=</span> <span class="st">'g'</span>, linewidth <span class="op">=</span> <span class="dv">5</span>, label<span class="op">=</span><span class="st">"Available metadata in OpenAlex"</span>)</span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Setup xticks and labels</span></span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a>    x_ticks <span class="op">=</span> <span class="bu">range</span>(min_year, max_year <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a>    x_labels <span class="op">=</span> [year <span class="cf">if</span> year<span class="op">%</span><span class="dv">10</span><span class="op">==</span><span class="dv">0</span> <span class="cf">else</span> <span class="st">''</span> <span class="cf">for</span> year <span class="kw">in</span> x_ticks]</span>
+<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a>    ax.set_xticks(x_ticks)</span>
+<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a>    ax.set_xticklabels(x_labels)</span>
+<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-61"><a href="#cb14-61" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Labels</span></span>
+<span id="cb14-62"><a href="#cb14-62" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">'Year Range'</span>)</span>
+<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">'Journal'</span>)</span>
+<span id="cb14-64"><a href="#cb14-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-65"><a href="#cb14-65" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Ensure each label is only appeared once in the legend</span></span>
+<span id="cb14-66"><a href="#cb14-66" aria-hidden="true" tabindex="-1"></a>    handles, labels <span class="op">=</span> plt.gca().get_legend_handles_labels()</span>
+<span id="cb14-67"><a href="#cb14-67" aria-hidden="true" tabindex="-1"></a>    by_label <span class="op">=</span> <span class="bu">dict</span>(<span class="bu">zip</span>(labels, handles))</span>
+<span id="cb14-68"><a href="#cb14-68" aria-hidden="true" tabindex="-1"></a>    plt.legend(by_label.values(), by_label.keys())</span>
+<span id="cb14-69"><a href="#cb14-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-70"><a href="#cb14-70" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Display the plot</span></span>
+<span id="cb14-71"><a href="#cb14-71" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb14-72"><a href="#cb14-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-73"><a href="#cb14-73" aria-hidden="true" tabindex="-1"></a>df_kb <span class="op">=</span> pd.read_csv(<span class="st">'../data/kb_data/unversioned/eva_all_journals.csv'</span>).sort_values(by<span class="op">=</span><span class="st">'abk'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-74"><a href="#cb14-74" aria-hidden="true" tabindex="-1"></a>df_zdb <span class="op">=</span> pd.read_csv(<span class="st">'../data/zdb/journal_publication_periods.csv'</span>)</span>
+<span id="cb14-75"><a href="#cb14-75" aria-hidden="true" tabindex="-1"></a>compare_coverage_kb_zdb(df_kb, df_zdb, min_year<span class="op">=</span><span class="dv">1945</span>, max_year<span class="op">=</span><span class="dv">2023</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="fig-oa-zdb-coverage-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -1551,7 +1525,7 @@ Figure&nbsp;7: Coverage of benchmark set journals in OpenAlex compared to actual
 <span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="st">order by  journal_name, pubyear-pubyear_openalex</span></span>
 <span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span>)</span>
 <span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-cmp-pubyears-oa-publisher" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="16">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1559,102 +1533,86 @@ Figure&nbsp;7: Coverage of benchmark set journals in OpenAlex compared to actual
 Table&nbsp;8: Frequency of differences between publication years in OpenAlex and publisher data
 </figcaption>
 <div aria-describedby="tbl-cmp-pubyears-oa-publisher-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="70">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="120">
+<style type="text/css">
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_b0685" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Journal</th>
-<th data-quarto-table-cell-role="th">Difference</th>
-<th data-quarto-table-cell-role="th">Number of Articles</th>
+<th id="T_b0685_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_b0685_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Difference</th>
+<th id="T_b0685_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Number of Articles</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>AcP</td>
-<td>0</td>
-<td>729</td>
+<td id="T_b0685_row0_col0" class="data row0 col0">AcP</td>
+<td id="T_b0685_row0_col1" class="data row0 col1">0</td>
+<td id="T_b0685_row0_col2" class="data row0 col2">729</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>AöR</td>
-<td>0</td>
-<td>920</td>
+<td id="T_b0685_row1_col0" class="data row1 col0">AöR</td>
+<td id="T_b0685_row1_col1" class="data row1 col1">0</td>
+<td id="T_b0685_row1_col2" class="data row1 col2">920</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>JZ</td>
-<td>-5</td>
-<td>12</td>
+<td id="T_b0685_row2_col0" class="data row2 col0">JZ</td>
+<td id="T_b0685_row2_col1" class="data row2 col1">-5</td>
+<td id="T_b0685_row2_col2" class="data row2 col2">12</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>JZ</td>
-<td>0</td>
-<td>5650</td>
+<td id="T_b0685_row3_col0" class="data row3 col0">JZ</td>
+<td id="T_b0685_row3_col1" class="data row3 col1">0</td>
+<td id="T_b0685_row3_col2" class="data row3 col2">5650</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>KJ</td>
-<td>0</td>
-<td>2538</td>
+<td id="T_b0685_row4_col0" class="data row4 col0">KJ</td>
+<td id="T_b0685_row4_col1" class="data row4 col1">0</td>
+<td id="T_b0685_row4_col2" class="data row4 col2">2538</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">6</td>
-<td>KJ</td>
-<td>1</td>
-<td>33</td>
+<td id="T_b0685_row5_col0" class="data row5 col0">KJ</td>
+<td id="T_b0685_row5_col1" class="data row5 col1">1</td>
+<td id="T_b0685_row5_col2" class="data row5 col2">33</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">7</td>
-<td>KritV</td>
-<td>0</td>
-<td>400</td>
+<td id="T_b0685_row6_col0" class="data row6 col0">KritV</td>
+<td id="T_b0685_row6_col1" class="data row6 col1">0</td>
+<td id="T_b0685_row6_col2" class="data row6 col2">400</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">8</td>
-<td>KritV</td>
-<td>1</td>
-<td>180</td>
+<td id="T_b0685_row7_col0" class="data row7 col0">KritV</td>
+<td id="T_b0685_row7_col1" class="data row7 col1">1</td>
+<td id="T_b0685_row7_col2" class="data row7 col2">180</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">9</td>
-<td>RabelsZ</td>
-<td>-16</td>
-<td>21</td>
+<td id="T_b0685_row8_col0" class="data row8 col0">RabelsZ</td>
+<td id="T_b0685_row8_col1" class="data row8 col1">-16</td>
+<td id="T_b0685_row8_col2" class="data row8 col2">21</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">10</td>
-<td>RabelsZ</td>
-<td>-4</td>
-<td>22</td>
+<td id="T_b0685_row9_col0" class="data row9 col0">RabelsZ</td>
+<td id="T_b0685_row9_col1" class="data row9 col1">-4</td>
+<td id="T_b0685_row9_col2" class="data row9 col2">22</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">11</td>
-<td>RabelsZ</td>
-<td>-1</td>
-<td>43</td>
+<td id="T_b0685_row10_col0" class="data row10 col0">RabelsZ</td>
+<td id="T_b0685_row10_col1" class="data row10 col1">-1</td>
+<td id="T_b0685_row10_col2" class="data row10 col2">43</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">12</td>
-<td>RabelsZ</td>
-<td>0</td>
-<td>1300</td>
+<td id="T_b0685_row11_col0" class="data row11 col0">RabelsZ</td>
+<td id="T_b0685_row11_col1" class="data row11 col1">0</td>
+<td id="T_b0685_row11_col2" class="data row11 col2">1300</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">13</td>
-<td>Staat</td>
-<td>0</td>
-<td>464</td>
+<td id="T_b0685_row12_col0" class="data row12 col0">Staat</td>
+<td id="T_b0685_row12_col1" class="data row12 col1">0</td>
+<td id="T_b0685_row12_col2" class="data row12 col2">464</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -1796,7 +1754,7 @@ Figure&nbsp;9: Share of articles with at least one reference per journal in the 
 <span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>cited_items_with_refs <span class="op">=</span> eva_refs_in_openalex[eva_refs_in_openalex[<span class="st">'item_id_cited'</span>].notnull()][<span class="st">'item_id'</span>].nunique()</span>
 <span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>total_items <span class="op">=</span> eva_all_openalex_items[<span class="st">'item_id'</span>].nunique()</span>
 <span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>percentage_items_with_refs <span class="op">=</span> <span class="bu">round</span>(<span class="dv">100</span> <span class="op">*</span> cited_items_with_refs <span class="op">/</span> total_items, <span class="dv">2</span>)</span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>data.append([<span class="st">'Percentage of OpenAlex article items in benchmark set habving at least one reference'</span>, percentage_items_with_refs])</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>data.append([<span class="st">'Percentage of OpenAlex article items in benchmark set with at least one reference'</span>, percentage_items_with_refs])</span>
 <span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>data.append([<span class="st">'Distinct publications cited'</span>, sqldf(<span class="st">"""</span></span>
 <span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="st">  SELECT</span></span>
@@ -1828,8 +1786,10 @@ Figure&nbsp;9: Share of articles with at least one reference per journal in the 
 <span id="cb18-43"><a href="#cb18-43" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span>).iloc[<span class="dv">0</span>, <span class="dv">0</span>]])</span>
 <span id="cb18-44"><a href="#cb18-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-45"><a href="#cb18-45" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data, columns<span class="op">=</span>[<span class="st">'Query'</span>, <span class="st">'Result'</span>])</span>
-<span id="cb18-46"><a href="#cb18-46" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb18-47"><a href="#cb18-47" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-46"><a href="#cb18-46" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)<span class="op">\</span></span>
+<span id="cb18-47"><a href="#cb18-47" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">0</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'left'</span>})<span class="op">\</span></span>
+<span id="cb18-48"><a href="#cb18-48" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">1</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'right'</span>})<span class="op">\</span></span>
+<span id="cb18-49"><a href="#cb18-49" aria-hidden="true" tabindex="-1"></a>  .<span class="bu">format</span>({df.columns[<span class="dv">1</span>]: <span class="st">"</span><span class="sc">{:.6}</span><span class="st">"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-oa-references-statistics" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="20">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1837,43 +1797,42 @@ Figure&nbsp;9: Share of articles with at least one reference per journal in the 
 Table&nbsp;9: Statistics on OpenAlex reference data in the benchmark set
 </figcaption>
 <div aria-describedby="tbl-oa-references-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="74">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="124">
+<style type="text/css">
+#T_44f45_row0_col0, #T_44f45_row1_col0, #T_44f45_row2_col0, #T_44f45_row3_col0 {
+  text-align: left;
+}
+#T_44f45_row0_col1, #T_44f45_row1_col1, #T_44f45_row2_col1, #T_44f45_row3_col1 {
+  text-align: right;
+}
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_44f45" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Query</th>
-<th data-quarto-table-cell-role="th">Result</th>
+<th id="T_44f45_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Query</th>
+<th id="T_44f45_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Result</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Percentage of OpenAlex article items in benchm...</td>
-<td>2.72</td>
+<td id="T_44f45_row0_col0" class="data row0 col0">Percentage of OpenAlex article items in benchmark set with at least one reference</td>
+<td id="T_44f45_row0_col1" class="data row0 col1">2.72</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Distinct publications cited</td>
-<td>5097.00</td>
+<td id="T_44f45_row1_col0" class="data row1 col0">Distinct publications cited</td>
+<td id="T_44f45_row1_col1" class="data row1 col1">5097.0</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Cited publications in the benchmark set</td>
-<td>41.50</td>
+<td id="T_44f45_row2_col0" class="data row2 col0">Cited publications in the benchmark set</td>
+<td id="T_44f45_row2_col1" class="data row2 col1">41.5</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>Cited publications in the classification-based...</td>
-<td>43.20</td>
+<td id="T_44f45_row3_col0" class="data row3 col0">Cited publications in the classification-based search</td>
+<td id="T_44f45_row3_col1" class="data row3 col1">43.2</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -1904,8 +1863,9 @@ Table&nbsp;9: Statistics on OpenAlex reference data in the benchmark set
 <span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a><span class="st">  group by type</span></span>
 <span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a><span class="st">  order by count DESC</span></span>
 <span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span>)</span>
-<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)<span class="op">\</span></span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">0</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'left'</span>})<span class="op">\</span></span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">1</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'right'</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-oa-references-type" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="21">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1913,53 +1873,50 @@ Table&nbsp;9: Statistics on OpenAlex reference data in the benchmark set
 Table&nbsp;10: Types of cited references in the benchmark set
 </figcaption>
 <div aria-describedby="tbl-oa-references-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="75">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="125">
+<style type="text/css">
+#T_aa9d1_row0_col0, #T_aa9d1_row1_col0, #T_aa9d1_row2_col0, #T_aa9d1_row3_col0, #T_aa9d1_row4_col0, #T_aa9d1_row5_col0 {
+  text-align: left;
+}
+#T_aa9d1_row0_col1, #T_aa9d1_row1_col1, #T_aa9d1_row2_col1, #T_aa9d1_row3_col1, #T_aa9d1_row4_col1, #T_aa9d1_row5_col1 {
+  text-align: right;
+}
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_aa9d1" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Count</th>
+<th id="T_aa9d1_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Type</th>
+<th id="T_aa9d1_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>journal</td>
-<td>4147</td>
+<td id="T_aa9d1_row0_col0" class="data row0 col0">journal</td>
+<td id="T_aa9d1_row0_col1" class="data row0 col1">4147</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>book series</td>
-<td>501</td>
+<td id="T_aa9d1_row1_col0" class="data row1 col0">book series</td>
+<td id="T_aa9d1_row1_col1" class="data row1 col1">501</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>ebook platform</td>
-<td>166</td>
+<td id="T_aa9d1_row2_col0" class="data row2 col0">ebook platform</td>
+<td id="T_aa9d1_row2_col1" class="data row2 col1">166</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">4</td>
-<td>conference</td>
-<td>16</td>
+<td id="T_aa9d1_row3_col0" class="data row3 col0">conference</td>
+<td id="T_aa9d1_row3_col1" class="data row3 col1">16</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">5</td>
-<td>repository</td>
-<td>14</td>
+<td id="T_aa9d1_row4_col0" class="data row4 col0">repository</td>
+<td id="T_aa9d1_row4_col1" class="data row4 col1">14</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">6</td>
-<td>other</td>
-<td>2</td>
+<td id="T_aa9d1_row5_col0" class="data row5 col0">other</td>
+<td id="T_aa9d1_row5_col1" class="data row5 col1">2</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -2012,9 +1969,10 @@ Table&nbsp;10: Types of cited references in the benchmark set
 <span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span>).iloc[<span class="dv">0</span>, <span class="dv">0</span>]])</span>
 <span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-40"><a href="#cb20-40" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data, columns<span class="op">=</span>[<span class="st">'Query'</span>, <span class="st">'Result'</span>])</span>
-<span id="cb20-41"><a href="#cb20-41" aria-hidden="true" tabindex="-1"></a>df.index <span class="op">=</span> df.index <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb20-42"><a href="#cb20-42" aria-hidden="true" tabindex="-1"></a>df.style.hide()</span>
-<span id="cb20-43"><a href="#cb20-43" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-41"><a href="#cb20-41" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">'index'</span>)<span class="op">\</span></span>
+<span id="cb20-42"><a href="#cb20-42" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">0</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'left'</span>})<span class="op">\</span></span>
+<span id="cb20-43"><a href="#cb20-43" aria-hidden="true" tabindex="-1"></a>  .set_properties(subset<span class="op">=</span>df.columns[[<span class="dv">1</span>]], <span class="op">**</span>{<span class="st">'text-align'</span>: <span class="st">'right'</span>})<span class="op">\</span></span>
+<span id="cb20-44"><a href="#cb20-44" aria-hidden="true" tabindex="-1"></a>  .<span class="bu">format</span>({df.columns[<span class="dv">1</span>]: <span class="st">"</span><span class="sc">{:.4}</span><span class="st">"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-oa-citation-statistics" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="22">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -2022,38 +1980,38 @@ Table&nbsp;10: Types of cited references in the benchmark set
 Table&nbsp;11: Statistics on OpenAlex reference data in the benchmark set
 </figcaption>
 <div aria-describedby="tbl-oa-citation-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="76">
-<div>
+<div class="cell-output cell-output-display" data-execution_count="126">
+<style type="text/css">
+#T_dc772_row0_col0, #T_dc772_row1_col0, #T_dc772_row2_col0 {
+  text-align: left;
+}
+#T_dc772_row0_col1, #T_dc772_row1_col1, #T_dc772_row2_col1 {
+  text-align: right;
+}
+</style>
 
-
-<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<table id="T_dc772" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Query</th>
-<th data-quarto-table-cell-role="th">Result</th>
+<th id="T_dc772_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Query</th>
+<th id="T_dc772_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Result</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Share of publications cited</td>
-<td>18.15</td>
+<td id="T_dc772_row0_col0" class="data row0 col0">Share of publications cited</td>
+<td id="T_dc772_row0_col1" class="data row0 col1">18.15</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2</td>
-<td>Citing OA items in the benchmark set</td>
-<td>6.09</td>
+<td id="T_dc772_row1_col0" class="data row1 col0">Citing OA items in the benchmark set</td>
+<td id="T_dc772_row1_col1" class="data row1 col1">6.09</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Citing OA items in the trivial search</td>
-<td>7.20</td>
+<td id="T_dc772_row2_col0" class="data row2 col0">Citing OA items in the trivial search</td>
+<td id="T_dc772_row2_col1" class="data row2 col1">7.2</td>
 </tr>
 </tbody>
 </table>
-
-</div>
 </div>
 </div>
 </figure>
@@ -2291,7 +2249,7 @@ Figure&nbsp;12: Example JZ: Comparison of citations
 <span id="cb24-54"><a href="#cb24-54" aria-hidden="true" tabindex="-1"></a><span class="ss">'''</span></span>
 <span id="cb24-55"><a href="#cb24-55" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-56"><a href="#cb24-56" aria-hidden="true" tabindex="-1"></a><span class="co"># general journals</span></span>
-<span id="cb24-57"><a href="#cb24-57" aria-hidden="true" tabindex="-1"></a>jura_groels_tabelle <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/gold/jura_groels_tabelle1_allg_zeitschriften.csv'</span>, low_memory<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb24-57"><a href="#cb24-57" aria-hidden="true" tabindex="-1"></a>jura_groels_tabelle <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/benchmark/jura_groels_tabelle1_allg_zeitschriften.csv'</span>, low_memory<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb24-58"><a href="#cb24-58" aria-hidden="true" tabindex="-1"></a>compare_rankings(sqldf(query), label_ranking_a<span class="op">=</span><span class="st">'Ranking JIF OpenAlex'</span>, label_ranking_b<span class="op">=</span><span class="st">'Ranking Gröls/Gröls'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
@@ -2311,7 +2269,7 @@ Figure&nbsp;13: Comparison of Gröls/Gröls ranking with OpenAlex JIF for genera
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># specialized journals</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>jura_groels_tabelle <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/gold/jura_groels_tabelle2_fachspez_zeitschriften.csv'</span>, low_memory<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>jura_groels_tabelle <span class="op">=</span> pd.read_csv(<span class="ss">f'../data/benchmark/jura_groels_tabelle2_fachspez_zeitschriften.csv'</span>, low_memory<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>compare_rankings(sqldf(query), label_ranking_a<span class="op">=</span><span class="st">'Ranking JIF OpenAlex'</span>, label_ranking_b<span class="op">=</span><span class="st">'Ranking Gröls/Gröls'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
@@ -2335,12 +2293,12 @@ Figure&nbsp;14: Comparison of Gröls/Gröls ranking with OpenAlex JIF for specia
 <p>Our aim was to examine the coverage of German-language, more specifically, Germany-based law journals in the Web of Science, Scopus and OpenAlex bibliometric databases. In order to do that, we derived a list of law journals (our benchmark set) from a study that had surveyed German law professors about which journals they considered most important in their field. We then queried the three data sources for the coverage of these journals.</p>
 <p>Looking at our results, it is clear that OpenAlex is the only of the bibliometric databases examined which currently has a minimal coverage of German law journals as far as our benchmark set is representative. It offers a limited, but steadily growing basis for bibliometric queries.</p>
 <p>On first glance, our analysis seems to confirm studies which have argued that WoS or Scopus are, as Tenant has expressed it, “structurally biased against […] non-English language research” <span class="citation" data-cites="tennant2020">(<a href="#ref-tennant2020" role="doc-biblioref">Tennant 2020, 1</a>)</span>, although Tenant was specifically referring to research in “non-western countries.” The case of German law journals is certainly a bit different, not only because Germany is part of the “Western” hemisphere in terms of knowledge production.</p>
-<p>It is beyond the scope of this article to systematically analyze the reasons for the neglect of German law in the bibliometric databases. However, it is reasonable to assume that at least three factors are at play. The first concerns the non-universality of legal scholarship irrespective of language: as the law is specific to national jurisdictions, much of doctrinal legal scholarship is by nature not transferable to other jurisdiction. This makes all non-common law doctrinal knowledge uninteresting to database vendors focused on an Anglo-American audience. Also, the strict selection criteria of WoS and Scopus is premised on a particularly peer-review and publishing model which does not fit the way German legal scholarship is being produced, reviewed, and published.<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> These selection criteria would have to be changed in order to accurately reflect knowledge production in a wider array of scholarly domains. Finally, it cannot be ignored that many of the German law journals do not assign Digital Object Identifiers (DOI) to their articles, making them much more difficult to index.</p>
+<p>It is beyond the scope of this article to systematically analyze the reasons for the neglect of German law in the bibliometric databases. However, it is reasonable to assume that at least three factors are at play. The first concerns the non-universality of legal scholarship irrespective of language: as the law is specific to national jurisdictions, much of doctrinal legal scholarship is by nature not transferable to other jurisdiction. This makes all non-common law doctrinal knowledge uninteresting to database vendors focused on an Anglo-American audience. Also, the strict selection criteria of WoS and Scopus is premised on a particularly peer-review and publishing model which does not fit the way German legal scholarship is being produced, reviewed, and published.<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> These selection criteria would have to be changed in order to accurately reflect knowledge production in a wider array of scholarly domains. Finally, a major impediment to bibliometric coverage of German law journals is the fact that some publishers with a large market share in the legal domain do not assign Digital Object Identifiers (DOI) to journal articles, making them much more difficult to index.</p>
 <p>From our experiments, we draw a few conclusions for future research.</p>
 <p>First of all, there more research on knowledge production in the domain of legal scholarship is badly needed, both in terms of producing data and analyzing it. Regardless of one’s opinion of the worth of research evaluation metrics, it is important to be able to empirically observe research output. In particular, it can be very useful for systematically studying the reception history of legal ideas, or for quantitative analyses of the intellectual landscape of legal scholarship today. We also need more studies involving expert knowledge such as that of Gröls/Gröls. We hope for a follow-up study that will allow to update our data.</p>
-<p>Second, the future of bibliometric analyses should not have to depend on commercial vendors who sell bibliometric metadata at high costs and with restrictive licenses. As we have shown, open suppliers such as OpenAlex already have a better, but still very limited coverage of the German legal domain. The strategy should be to improve open data repositories and make the data readily available to anyone who wants to do their own analyses. As OpenAlex’s data repository is highly dynamic, it is necessary to continually follow its growth and internal refactoring. The queries from this study need to be repeated in order to document improvements of the coverage of the benchmark set across database versions. We hope that publishers will continue to upgrade the quality of the data to CrossRef, from which OpenAlex mainly draws. This, we hope, will improve the bibliometric coverage of legal scholarship in German (and other languages) over time.</p>
+<p>Second, the future of bibliometric analyses should not have to depend on commercial vendors who sell bibliometric metadata at high costs and with restrictive licenses. As we have shown, open suppliers such as OpenAlex already have a better, but still very limited coverage of the German legal domain. The strategy should be to improve open data repositories and make the data readily available to anyone who wants to do their own analyses. As OpenAlex’s data repository is highly dynamic, it is necessary to continually follow its growth and internal refactoring. The queries from this study need to be repeated in order to document improvements of the coverage of the benchmark set across database versions. We hope that publishers will continue to upgrade the quality of the data to CrossRef, from which OpenAlex mainly draws.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> This, we hope, will improve the bibliometric coverage of legal scholarship in German (and other languages) over time.</p>
 <p>Finally, relying solely on publishers to supply the necessary data will not suffice. In particular, it is improbable that the current near-complete absence of citation data will be resolved in the near future. On one hand, some publishers may have a vested interest in monetizing citation data themselves. However, even if others are open to sharing citation data in principle, such data does often not exist. In the academic realm of law, the humanities, or the social sciences, currently no machine-readable citation data is being gathered during the publication process in any systematic way.</p>
-<p>How can this situation be changed? Current tools for automated citation extraction <span class="citation" data-cites="cioffi2022">(<a href="#ref-cioffi2022" role="doc-biblioref">Cioffi and Peroni 2022</a>)</span> are performing very badly when confronted with the citation practices in legal scholarship and other disciplines that make heavy use of footnotes. With the recent emergence of Large Language Models, which are able to interpret semantic structures based on the context, this is likely to change.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> Once easy-to-use tools are available, we are confident that it will be possible to to create, in a decentralized and incremental process, Open Data datasets on that are necessary to study knowledge production in legal scholarship and beyond.</p>
+<p>How can this situation be changed? Current tools for automated citation extraction <span class="citation" data-cites="cioffi2022">(<a href="#ref-cioffi2022" role="doc-biblioref">Cioffi and Peroni 2022</a>)</span> are performing very badly when confronted with the citation practices in legal scholarship and other disciplines that make heavy use of footnotes. With the recent emergence of Large Language Models, which are able to interpret semantic structures based on the context, this is likely to change.<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a> Once easy-to-use tools are available, we are confident that it will be possible to to create, in a decentralized and incremental process, Open Data datasets on that are necessary to study knowledge production in legal scholarship and beyond.</p>
 </section>
 <section id="references-1" class="level2">
 <h2 class="anchored" data-anchor-id="references-1">7. References</h2>
@@ -2401,7 +2359,7 @@ Wagner-Döbler, Roland, and Lothar Philipps. 1993. <span>“Argumentative Leitbe
 <div id="quarto-appendix" class="default"><section id="acknowledgments" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">Acknowledgments</h2><div class="quarto-appendix-contents">
 
 <p>The Web of Science, Scopus and OpenAlex data used in this article were provided by the German Competence Network for Bibliometrics funded by the Federal Ministry of Education and Research (Grant: 16WIK2101A). We thank the publishers Mohr Siebeck, Duncker &amp; Humblot and Nomos for providing us with the metadata on journal articles used in section 4.</p>
-<p>The authors would like to thank Ivo Vogel and Christian Mathieu, both Staatsbibliothek Berlin, for valuable feedback. They acknowledge the use of Large Language Models for English language editing and correction, for conceptual refinement, and for generating part of the code, in particular for the visualizations.</p>
+<p>The authors would like to thank Ivo Vogel and Christian Mathieu, both Staatsbibliothek Berlin, and Stefan Vogenauer, mpilhlt, for valuable feedback. The authors also acknowledge the use of Large Language Models for English language editing, for conceptual refinement, and for generating part of the code, in particular for the visualizations.</p>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
@@ -2433,7 +2391,8 @@ Wagner-Döbler, Roland, and Lothar Philipps. 1993. <span>“Argumentative Leitbe
 <li id="fn26"><p>See <a href="https://docs.openalex.org/api-entities/topics/topic-object" class="uri">https://docs.openalex.org/api-entities/topics/topic-object</a> (Last accessed Mar 9 2025)<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn27"><p><a href="https://github.com/ourresearch/openalex-topic-classification" class="uri">https://github.com/ourresearch/openalex-topic-classification</a> (Last accessed Mar 9 2025)<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn28"><p>Wether German legal scholarship really can do without Peer Review because in “Jurisprudence knows no right or wrong” <span class="citation" data-cites="gulden2023">(<a href="#ref-gulden2023" role="doc-biblioref">Gulden 2023</a>)</span> is another question.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn29"><p>The reason is that they have been trained on data from the natural sciences,does which usually contain well-structured bibliographies. In contrast, references in German legal scholarship usually relies on literature contained in footnotes, which are very difficult to parse computationally. See current research by Boulanger, Carreto Fidalgo and Wagner on reference extraction, <a href="https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph" class="uri">https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph</a><a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>Specifically, as we have shown, they should s<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn30"><p>The reason is that they have been trained on data from the natural sciences,does which usually contain well-structured bibliographies. In contrast, references in German legal scholarship usually relies on literature contained in footnotes, which are very difficult to parse computationally. See current research by Boulanger, Carreto Fidalgo and Wagner on reference extraction, <a href="https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph" class="uri">https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph</a><a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
