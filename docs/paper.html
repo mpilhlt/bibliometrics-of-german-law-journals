@@ -186,7 +186,7 @@ div.csl-indent {
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    Bibliometric analyses are uncommon in German legal scholarship, often attributed to disciplinary skepticism. However, this paper posits that a more fundamental reason is the lack of adequate data coverage in standard bibliometric databases. We systematically investigate the representation of the German law journal landscape in Web of Science (WoS), Scopus, and OpenAlex. To achieve this, we first establish a benchmark set of 52 representative German law journals based on a 2009 expert survey. We then measure the coverage of these journals within the target databases and assess the quality of the available metadata, focusing particularly on OpenAlex due to its superior initial coverage. Our findings confirm the initial hypothesis: coverage in WoS and Scopus is minimal. While OpenAlex includes a larger proportion of the journals from the benchmark set (32/52) and shows reasonable item-level completeness for a subset checked against publisher data, its metadata quality presents significant limitations. Crucially, affiliation data is sparse, and citation data is almost entirely absent, precluding meaningful citation analysis, impact assessment, or reliable institutional evaluation. We conclude that while coverage is improving, particularly through open platforms like OpenAlex, the current state of bibliometric data, especially the lack of citation information, severely restricts the application of standard bibliometric methods to German legal scholarship. We discuss potential reasons for this gap and suggest focusing on enhancing open data repositories and exploring new methods to generate currently unavailable citation data.
+    Bibliometric analyses are uncommon in German legal scholarship, often attributed to disciplinary skepticism. However, this paper posits that a more fundamental reason is the lack of adequate data coverage in standard bibliometric databases. We systematically investigate the representation of the German law journal landscape in Web of Science (WoS), Scopus, and OpenAlex. To achieve this, we first establish a benchmark set of 51 representative German law journals based on a 2009 expert survey. We then measure the coverage of these journals within the target databases and assess the quality of the available metadata, focusing particularly on OpenAlex due to its superior initial coverage. Our findings confirm the initial hypothesis: coverage in WoS and Scopus is minimal. While OpenAlex includes a larger proportion of the journals from the benchmark set (32/51) and shows reasonable item-level completeness for a subset checked against publisher data, its metadata quality presents significant limitations. Crucially, affiliation data is sparse, and citation data is almost entirely absent, precluding meaningful citation analysis, impact assessment, or reliable institutional evaluation. We conclude that while coverage is improving, particularly through open platforms like OpenAlex, the current state of bibliometric data, especially the lack of citation information, severely restricts the application of standard bibliometric methods to German legal scholarship. We discuss potential reasons for this gap and suggest focusing on enhancing open data repositories and exploring new methods to generate currently unavailable citation data.
   </div>
 </div>
 
@@ -200,21 +200,21 @@ div.csl-indent {
 <section id="research-question" class="level2">
 <h2 class="anchored" data-anchor-id="research-question">1. Research question</h2>
 <p>Bibliometric and scientometric analyses are common in many fields of research, being used for research assessment, i.e.&nbsp;the measurement of scholarly productivity and impact of institutions, journals, or individual scholars, or, alternatively, for science mapping, the empirical analysis of knowledge production in a particular field of scholarship <span class="citation" data-cites="vanRaan_2019">(<a href="#ref-vanRaan_2019" role="doc-biblioref">Raan 2019</a>)</span>. However, this has not been the case for the field of German legal scholarship. One empirical indication of this state of affairs is that, when searching in the full texts of German law journal articles available on JSTOR for the expression “bibliometr*”, there are exactly two hits.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>The reason for this could be attributed to the fact that lawyers treat bibliometric analyses with skepticism. As the 2012 Report on the State of German Legal Scholarship and Education states: „Bibliometric methods are not sufficiently capable of measuring research performance in legal scholarship.“ <span class="citation" data-cites="germancouncilofscienceandhumanities2012">(<a href="#ref-germancouncilofscienceandhumanities2012" role="doc-biblioref">Science and Humanities 2012, 54</a>)</span>. However, our suspicion is that this situation is equally, if not more so, due to the fact that unlike in other fields of science, there just isn’t enough data available on which bibliometric analyses could be based upon.</p>
+<p>The reason for this could be attributed to the fact that lawyers treat bibliometric analyses with skepticism. As the 2012 Report on the State of German Legal Scholarship and Education states: „Bibliometric methods are not sufficiently capable of measuring research performance in legal scholarship.“ <span class="citation" data-cites="germancouncilofscienceandhumanities2012">(<a href="#ref-germancouncilofscienceandhumanities2012" role="doc-biblioref">Science and Humanities 2012, 54</a>)</span>. However, our suspicion is that this situation is equally, if not more so, due to the fact that unlike in other fields of science, there just isn’t enough data available on which to base bibliometric analyses.</p>
 <p>The purpose of this paper is to empirically test this proposition. It systematically investigates how the German landscape of law journals is represented in the databases used for bibliometric analyses, in particular the Web of Science, Scopus, and OpenAlex.</p>
-<p>This research question is subdivided in three sub-questions, which are discussed in separate parts of this paper after shortly surveying previous work. The <em>first question</em> asks what exactly we are looking for: what set of publications represents the German law journal landscape? Here, were are not aiming at completeness, but rather at a a sample that is sufficiently large (but not too large) and representative enough to make our observations valid. Based on a previous study that surveyed German law professors to construct a ranking of law journals <span class="citation" data-cites="gröls2009">(<a href="#ref-gröls2009" role="doc-biblioref">Gröls and Gröls 2009</a>)</span>, we propose what a benchmark set of German law journals. Once the set has been established, the <em>second question</em> how much data exists for this set in our target databases. The <em>third question</em> is about data quality: it is not enough to observe the pure quantity of records found for our set - we also have to investigate how complete and accurate this data is, and what questions can be answered based on it, and which cannot.</p>
-<p>Not surprisingly, we conclude that is that the data bears out the initial hypothesis. While the bibliometric coverage of knowledge production in the German legal domain is getting better in recent years, mainly because of the appearance of new players in the market, it is generally still very limited. As most German law journal do not fit the selection criteria of the commercial vendors, the more open offerings such as OpenAlex are the only viable candidate. However, the available metadata is found wanting. In particular, we observe a general lack of citation data. The conclusion sketches some reasons for why this is so and proposes ways forward.</p>
-<p>This paper is a interdisciplinary collaboration between two domain specialists (Boulanger, Fejzo) and a bibliometrician (Rimmert), and thus tries to combine different epistemic interests: on one hand, in those questions that require the data we are looking for, and on the other, the questions that the data poses itself. We document all queries and the code we used to produce the tables and graphs in the following sections in our GitHub repository.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>This research question is subdivided in three sub-questions, which are discussed in separate parts of this paper after shortly surveying previous work. The <em>first question</em> asks what exactly we are looking for: what set of publications represents the German law journal landscape? Here, we are not aiming at completeness, but rather at a a sample that is sufficiently large (but not too large) and representative enough to make our observations valid. Based on a previous study that surveyed German law professors to construct a ranking of law journals <span class="citation" data-cites="gröls2009">(<a href="#ref-gröls2009" role="doc-biblioref">Gröls and Gröls 2009</a>)</span>, we propose what a benchmark set of German law journals. Once the set has been established, the <em>second question</em> how much data exists for this set in our target databases. The <em>third question</em> is about data quality: it is not enough to observe the pure quantity of records found for our set - we also have to investigate how complete and accurate this data is, and what questions can be answered based on it, and which cannot.</p>
+<p>Not surprisingly, we conclude that the data bears out the initial hypothesis. While the bibliometric coverage of knowledge production in the German legal domain is getting better in recent years, mainly because of the appearance of new players in the market, it is generally still very limited. As most German law journal do not fit the selection criteria of the commercial vendors, the more open offerings such as OpenAlex are the only viable candidate. However, the available metadata is found wanting. In particular, we observe a general lack of citation data. The conclusion sketches some reasons for why this is so and proposes ways forward.</p>
+<p>This paper is an interdisciplinary collaboration between two domain specialists (Boulanger, Fejzo) and a bibliometrician (Rimmert), and thus tries to combine different epistemic interests: on one hand, in those questions that require the data we are looking for, and on the other, the questions that the data itself poses. We document all queries and the code we used to produce the tables and graphs in the following sections in our GitHub repository.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </section>
 <section id="previous-and-related-work" class="level2">
 <h2 class="anchored" data-anchor-id="previous-and-related-work">2. Previous and related work</h2>
-<p>As far as we can see, this is the first study of this kind. Earlier research had put its interest more in the way legal texts cite other legal material, such as the characteristics of references to legal provisions in judgments <span class="citation" data-cites="wagner-döbler1993">(<a href="#ref-wagner-döbler1993" role="doc-biblioref">Wagner-Döbler and Philipps 1993</a>)</span> or the networks that can constructed from references between legal texts <span class="citation" data-cites="coupette2019">(<a href="#ref-coupette2019" role="doc-biblioref">Coupette 2019</a>)</span>. For reasons that we will return to in the conclusion, the bibliometric analysis of legal scholarship itself has never become a subject of scholarly attention. In contrast, when looking outside the German legal domain, there have been numerous studies using bibliometric methods to analyze knowledge production of various disciplines, such as, for example of Digital Humanities <span class="citation" data-cites="tang2017">(<a href="#ref-tang2017" role="doc-biblioref">Tang, Cheng, and Chen 2017</a>)</span> or Scientometrics itself <span class="citation" data-cites="liu2023">(<a href="#ref-liu2023" role="doc-biblioref">Liu et al. 2023</a>)</span>.</p>
-<p>However, we have not been able to identify other studies - although they might exist - which measure the quality of the bibliometric data <em>on</em> a discipline, since, as we will see, this exercise requires data outside the traditional databases which be used as a benchmark with which query results can be compared. In most cases, the data quality of databases such as the Web of Science or Scopus is simply assumed - a trust that might not be warranted, in particular in scientific fields where the coverage of these databases is sketchy. This has been empirically shown for the Social Sciences and Humanities (SSH) <span class="citation" data-cites="hicks1999 gläser2019">(<a href="#ref-hicks1999" role="doc-biblioref">Hicks 1999</a>; <a href="#ref-gläser2019" role="doc-biblioref">Gläser and Oltersdorf 2019</a>)</span>.</p>
-<p>In addition, such studies point out that in the fields in SSH, a large part of the research is published as monographs or parts thereof. These publications are even less present in databases which focus on journals, the main form of scientific communication in the natural sciences <span class="citation" data-cites="hammarfelt2016">(<a href="#ref-hammarfelt2016" role="doc-biblioref">Hammarfelt 2016</a>)</span>. This is also true for German legal scholarship. However, this plays no role for the analyses in this paper, as our explicit focus is on law journals.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>As far as we can see, this is the first study of this kind. Earlier research had focused more on in the way legal texts cite other legal material, such as the characteristics of references to legal provisions in judgments <span class="citation" data-cites="wagner-döbler1993">(<a href="#ref-wagner-döbler1993" role="doc-biblioref">Wagner-Döbler and Philipps 1993</a>)</span> or the networks that can constructed from references between legal texts <span class="citation" data-cites="coupette2019">(<a href="#ref-coupette2019" role="doc-biblioref">Coupette 2019</a>)</span>. German legal scholarship has received remarkably little bibliometric attention, for reasons we discuss further in the conclusion. In contrast, the application of bibliometric methods, particularly concerning rankings, has sparked intense discussion within U.S. legal scholarship <span class="citation" data-cites="wallaceMeasuringScholarlyImpact2022">(<a href="#ref-wallaceMeasuringScholarlyImpact2022" role="doc-biblioref">Wallace and Lutkenhaus 2022</a>)</span>. Outside the legal domain, numerous studies have applied bibliometric methods to analyze knowledge production in various disciplines, such as Digital Humanities <span class="citation" data-cites="tang2017">(<a href="#ref-tang2017" role="doc-biblioref">Tang, Cheng, and Chen 2017</a>)</span> or even Scientometrics itself <span class="citation" data-cites="liu2023">(<a href="#ref-liu2023" role="doc-biblioref">Liu et al. 2023</a>)</span>.</p>
+<p>However, we have not been able to identify other studies - although they might exist - which measure the quality of the bibliometric data <em>on</em> a discipline, since, as we will see, this exercise requires data outside the traditional databases which be can used as a benchmark with which query results can be compared. In most cases, the data quality of databases such as the Web of Science or Scopus is simply assumed - a trust that might not be warranted, in particular in scientific fields where the coverage of these databases is sketchy. This has been empirically shown for the Social Sciences and Humanities (SSH) <span class="citation" data-cites="hicks1999 gläser2019">(<a href="#ref-hicks1999" role="doc-biblioref">Hicks 1999</a>; <a href="#ref-gläser2019" role="doc-biblioref">Gläser and Oltersdorf 2019</a>)</span>.</p>
+<p>In addition, such studies point out that in the SSH fields, a large part of the research is published as monographs or parts thereof. These publications are even less present in databases which focus on journals, the main form of scientific communication in the natural sciences <span class="citation" data-cites="hammarfelt2016">(<a href="#ref-hammarfelt2016" role="doc-biblioref">Hammarfelt 2016</a>)</span>. This is also true for German legal scholarship. However, this plays no role for the analyses in this paper, as our explicit focus is on law journals.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 </section>
 <section id="constructing-a-benchmark-set-of-german-law-journals" class="level2">
 <h2 class="anchored" data-anchor-id="constructing-a-benchmark-set-of-german-law-journals">3. Constructing a benchmark set of German law journals</h2>
-<p>The first task in measuring the coverage of German law journals in bibliographic databases is to determine which of the journals to look for, i.e.&nbsp;to create a list of journals that represent the category “German law journals”. In this endeavor, we do not aim for completeness. For the purpose of this study, it will suffice to have a sample which is sufficiently large to be representative of the field. At the same time, the selection must be small enough, so it is possible to check and enrich the dataset with additional metadata (for example, a persistent identifier such as the ISSN) with a reasonable amount of effort. This will allow us to define a set of journals for which, at a minimum, data has to exist in sufficient quality in order to make statements about knowledge production in German legal scholarship. This does not mean that journals that are not in this list are not important for the discipline. In fact, as it will become clear, our selection methodology forces us to omit any journal founded after 2009. We also make no statement on the difference of quality of those journals that make it on the list compared to those which do not. In particular, we are not interested in finding or providing a metric similar to the “journal impact factor” of German law journals. We are only interested in the quality of bibliometric data on a representative and relevant subset of those journals. Similarly to a “gold standard” dataset for evaluation purposes, our benchmark set serves as a yard stick for our observations. However, unlike a gold standard, the set does not make any claim to be “correct” in any sense other than being “good enough” data for the given purpose of evaluation.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>The first task in measuring the coverage of German law journals in bibliographic databases is to determine which of the journals to look for, i.e.&nbsp;to create a list of journals that represent the category “German law journals”. In this endeavor, we do not aim for completeness. For the purpose of this study, it will suffice to have a sample which is sufficiently large to be representative of the field. At the same time, the selection must be small enough, so it is possible to check and enrich the dataset with additional metadata (for example, a persistent identifier such as the ISSN) with a reasonable amount of effort. This will allow us to define a set of journals for which, at a minimum, data has to exist in sufficient quality in order to make statements about knowledge production in German legal scholarship. This does not mean that journals that are not in this list are not important for the discipline. In fact, as it will become clear, our selection methodology forces us to omit any journal founded after 2009. We also make no statement on the difference of quality of those journals that make it on the list compared to those which do not. In particular, we are not interested in finding or providing a metric similar to the “journal impact factor” of German law journals. We are only interested in the quality of bibliometric data on a representative and relevant subset of those journals. Similarly to a “gold standard” dataset for evaluation purposes, our benchmark set serves as a yardstick for our observations. However, unlike a gold standard, the set does not make any claim to be “correct” in any sense other than being “good enough” data for the given purpose of evaluation.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
 <p>We explore two ways in which such a set could be assembled. The <em>classification-based</em> approach requires no prior knowledge of the field and promises a data-driven way of generating such a set. Instead, it relies on the presence of databases which provide sufficiently fine-grained classifiers in the article metadata.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> It seems not unreasonable to assume that, given a database of journals which has labels for the subject matter “law” and the language attribute “German”, one would be able derive a list of German law journals. This would include all journals with German language content, i.e., include journals from Germany, Austria, Switzerland and other legal publications in German. This list could then be filtered further down to journals that cover the Federal Republic of Germany or any other country or combinations of countries. However, as we will discuss below, even if this would work, such an approach will always have at least two problems: a) an additional metric would be needed that would allow to limit this list to the really relevant and representative journals and, even more important, b) the list might be affected by a selection bias in the data from which it was derived. We will therefore argue that we need an alternative approach which is <em>based on domain expert knowledge</em> and which might be more reliable for our purposes.</p>
 <section id="classification-based-selection" class="level3">
 <h3 class="anchored" data-anchor-id="classification-based-selection">Classification-based selection</h3>
@@ -253,13 +253,13 @@ Figure&nbsp;1: Number of active serial publications classified as DDC 340 (‘la
 </div>
 </div>
 </div>
-<p>To narrow down this list further would require to find ways to decide, based on metadata, a), which journals are relevant for Germany, and b) which of those are “law journals”, i.e.&nbsp;contain legal scholarship rather than just administrative or legislative communications. As the lack of a suitable metadata category meant that we would have had to to identify and test proxy variables–a rather complex matter–, we did not pursue this approach further.</p>
+<p>To narrow down this list further would require to find ways to decide, based on metadata, a), which journals are relevant for Germany, and b) which of those are “law journals”, i.e.&nbsp;contain legal scholarship rather than just administrative or legislative communications. As the lack of a suitable metadata category meant that we would have had to identify and test proxy variables–a rather complex matter–, we did not pursue this approach further.</p>
 </section>
 <section id="bibliometric-databases-web-of-science-scopus-openalex" class="level4">
 <h4 class="anchored" data-anchor-id="bibliometric-databases-web-of-science-scopus-openalex">Bibliometric Databases: Web of Science, Scopus, OpenAlex</h4>
 <p>Instead, the next experiment was to probe the bibliometric databases themselves to see whether, based on the available metadata, we could generate a methodologically controlled list of journals. In theory, this could yield a better selection than what we retrieved from the ZDB, since the bibliometric databases aim to focus on research and are less likely to contain non-scholarly communications. The reason for this selection of these three databases (and the exclusion of others, such as Lens, Semantic Scholar or dimension.ai) is that they are available in a normalized schema, at the Kompetenznetzwerk Bibliometrie <span class="citation" data-cites="schmidtEtAl2024">(<a href="#ref-schmidtEtAl2024" role="doc-biblioref">Schmidt et al. 2024</a>)</span>.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
 <p>In order to achieve our goal of creating a list of German law articles, we have to define queries to execute on each data source. In terms of classification each source uses a different system: WoS and Scopus use journal-level classifications, assigned to the item in the XML files, whereas OpenAlex provides an item-specific classification.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Language is item-specific in all three databases.</p>
-<p>We wanted to find journals which have article items that belong to the “law” category in the respective classification system, and of which the majority of articles are flagged as being in German. The selection criteria we chose was that a journal would be considered part of our sample if at least 10 articles had a subject category: Law <strong>and</strong> if at least 10% were classified as “Law” and “German”. We chose to have both restrictions here because there are some exceptional cases of journals with a very low number of indexed articles, which points to gaps or errors in the data. We therefore did not want to include these exceptional cases where a very few German law articles would already fulfill the quota.</p>
+<p>We wanted to find journals which have article items that belong to the “law” category in the respective classification system, and of which the majority of articles are flagged as being in German. The selection criteria we chose was that a journal was included in our sample if it contained at least 10 articles with the subject category ‘Law’, and if at least 10% of its total indexed articles were classified as both ‘Law’ and ‘German’. We chose to have both restrictions here because there are some exceptional cases of journals with a very low number of indexed articles, which points to gaps or errors in the data. We therefore did not want to include these exceptional cases where a very few German law articles would already fulfill the quota.</p>
 <p>Using these criteria, we probed the <strong>Web of Science Core Collection</strong> (we did not have access to WoS’ Emerging Sources Citation Index). We found 250 journals which contained articles classified as ‘Law’.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> However, as <a href="#tbl-wos-ger-law" class="quarto-xref">Table&nbsp;1</a> shows, only two of those met the threshold of 10%.</p>
 <div class="cell" data-tbl-colwidths="[5,30,5,5,5]" data-execution_count="3">
 <details class="code-fold">
@@ -283,40 +283,40 @@ Figure&nbsp;1: Number of active serial publications classified as DDC 340 (‘la
 Table&nbsp;1: Articles in WoS Core Collection categorized “German” and “Law”
 </figcaption>
 <div aria-describedby="tbl-wos-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="107">
+<div class="cell-output cell-output-display" data-execution_count="57">
 <style type="text/css">
-#T_59503_row0_col0, #T_59503_row1_col0 {
+#T_c1cd1_row0_col0, #T_c1cd1_row1_col0 {
   text-align: left;
 }
-#T_59503_row0_col1, #T_59503_row0_col2, #T_59503_row1_col1, #T_59503_row1_col2 {
+#T_c1cd1_row0_col1, #T_c1cd1_row0_col2, #T_c1cd1_row1_col1, #T_c1cd1_row1_col2 {
   text-align: center;
 }
-#T_59503_row0_col3, #T_59503_row1_col3 {
+#T_c1cd1_row0_col3, #T_c1cd1_row1_col3 {
   text-align: right;
 }
 </style>
 
-<table id="T_59503" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_c1cd1" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_59503_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
-<th id="T_59503_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
-<th id="T_59503_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
-<th id="T_59503_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
+<th id="T_c1cd1_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_c1cd1_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
+<th id="T_c1cd1_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
+<th id="T_c1cd1_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_59503_row0_col0" class="data row0 col0">kriminologisches journal</td>
-<td id="T_59503_row0_col1" class="data row0 col1">79</td>
-<td id="T_59503_row0_col2" class="data row0 col2">74</td>
-<td id="T_59503_row0_col3" class="data row0 col3">94%</td>
+<td id="T_c1cd1_row0_col0" class="data row0 col0">kriminologisches journal</td>
+<td id="T_c1cd1_row0_col1" class="data row0 col1">79</td>
+<td id="T_c1cd1_row0_col2" class="data row0 col2">74</td>
+<td id="T_c1cd1_row0_col3" class="data row0 col3">94%</td>
 </tr>
 <tr class="even">
-<td id="T_59503_row1_col0" class="data row1 col0">tijdschrift voor rechtsgeschiedenis-revue d…</td>
-<td id="T_59503_row1_col1" class="data row1 col1">279</td>
-<td id="T_59503_row1_col2" class="data row1 col2">44</td>
-<td id="T_59503_row1_col3" class="data row1 col3">16%</td>
+<td id="T_c1cd1_row1_col0" class="data row1 col0">tijdschrift voor rechtsgeschiedenis-revue d…</td>
+<td id="T_c1cd1_row1_col1" class="data row1 col1">279</td>
+<td id="T_c1cd1_row1_col2" class="data row1 col2">44</td>
+<td id="T_c1cd1_row1_col3" class="data row1 col3">16%</td>
 </tr>
 </tbody>
 </table>
@@ -351,166 +351,166 @@ Table&nbsp;1: Articles in WoS Core Collection categorized “German” and “La
 Table&nbsp;2: Articles in Scopus categorized “German” and “Law”, sorted by relative frequency
 </figcaption>
 <div aria-describedby="tbl-scp-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="108">
+<div class="cell-output cell-output-display" data-execution_count="58">
 <style type="text/css">
-#T_3e045_row0_col0, #T_3e045_row1_col0, #T_3e045_row2_col0, #T_3e045_row3_col0, #T_3e045_row4_col0, #T_3e045_row5_col0, #T_3e045_row6_col0, #T_3e045_row7_col0, #T_3e045_row8_col0, #T_3e045_row9_col0, #T_3e045_row10_col0, #T_3e045_row11_col0, #T_3e045_row12_col0, #T_3e045_row13_col0, #T_3e045_row14_col0, #T_3e045_row15_col0, #T_3e045_row16_col0, #T_3e045_row17_col0, #T_3e045_row18_col0, #T_3e045_row19_col0, #T_3e045_row20_col0, #T_3e045_row21_col0, #T_3e045_row22_col0 {
+#T_1a287_row0_col0, #T_1a287_row1_col0, #T_1a287_row2_col0, #T_1a287_row3_col0, #T_1a287_row4_col0, #T_1a287_row5_col0, #T_1a287_row6_col0, #T_1a287_row7_col0, #T_1a287_row8_col0, #T_1a287_row9_col0, #T_1a287_row10_col0, #T_1a287_row11_col0, #T_1a287_row12_col0, #T_1a287_row13_col0, #T_1a287_row14_col0, #T_1a287_row15_col0, #T_1a287_row16_col0, #T_1a287_row17_col0, #T_1a287_row18_col0, #T_1a287_row19_col0, #T_1a287_row20_col0, #T_1a287_row21_col0, #T_1a287_row22_col0 {
   text-align: left;
 }
-#T_3e045_row0_col1, #T_3e045_row0_col2, #T_3e045_row1_col1, #T_3e045_row1_col2, #T_3e045_row2_col1, #T_3e045_row2_col2, #T_3e045_row3_col1, #T_3e045_row3_col2, #T_3e045_row4_col1, #T_3e045_row4_col2, #T_3e045_row5_col1, #T_3e045_row5_col2, #T_3e045_row6_col1, #T_3e045_row6_col2, #T_3e045_row7_col1, #T_3e045_row7_col2, #T_3e045_row8_col1, #T_3e045_row8_col2, #T_3e045_row9_col1, #T_3e045_row9_col2, #T_3e045_row10_col1, #T_3e045_row10_col2, #T_3e045_row11_col1, #T_3e045_row11_col2, #T_3e045_row12_col1, #T_3e045_row12_col2, #T_3e045_row13_col1, #T_3e045_row13_col2, #T_3e045_row14_col1, #T_3e045_row14_col2, #T_3e045_row15_col1, #T_3e045_row15_col2, #T_3e045_row16_col1, #T_3e045_row16_col2, #T_3e045_row17_col1, #T_3e045_row17_col2, #T_3e045_row18_col1, #T_3e045_row18_col2, #T_3e045_row19_col1, #T_3e045_row19_col2, #T_3e045_row20_col1, #T_3e045_row20_col2, #T_3e045_row21_col1, #T_3e045_row21_col2, #T_3e045_row22_col1, #T_3e045_row22_col2 {
+#T_1a287_row0_col1, #T_1a287_row0_col2, #T_1a287_row1_col1, #T_1a287_row1_col2, #T_1a287_row2_col1, #T_1a287_row2_col2, #T_1a287_row3_col1, #T_1a287_row3_col2, #T_1a287_row4_col1, #T_1a287_row4_col2, #T_1a287_row5_col1, #T_1a287_row5_col2, #T_1a287_row6_col1, #T_1a287_row6_col2, #T_1a287_row7_col1, #T_1a287_row7_col2, #T_1a287_row8_col1, #T_1a287_row8_col2, #T_1a287_row9_col1, #T_1a287_row9_col2, #T_1a287_row10_col1, #T_1a287_row10_col2, #T_1a287_row11_col1, #T_1a287_row11_col2, #T_1a287_row12_col1, #T_1a287_row12_col2, #T_1a287_row13_col1, #T_1a287_row13_col2, #T_1a287_row14_col1, #T_1a287_row14_col2, #T_1a287_row15_col1, #T_1a287_row15_col2, #T_1a287_row16_col1, #T_1a287_row16_col2, #T_1a287_row17_col1, #T_1a287_row17_col2, #T_1a287_row18_col1, #T_1a287_row18_col2, #T_1a287_row19_col1, #T_1a287_row19_col2, #T_1a287_row20_col1, #T_1a287_row20_col2, #T_1a287_row21_col1, #T_1a287_row21_col2, #T_1a287_row22_col1, #T_1a287_row22_col2 {
   text-align: center;
 }
-#T_3e045_row0_col3, #T_3e045_row1_col3, #T_3e045_row2_col3, #T_3e045_row3_col3, #T_3e045_row4_col3, #T_3e045_row5_col3, #T_3e045_row6_col3, #T_3e045_row7_col3, #T_3e045_row8_col3, #T_3e045_row9_col3, #T_3e045_row10_col3, #T_3e045_row11_col3, #T_3e045_row12_col3, #T_3e045_row13_col3, #T_3e045_row14_col3, #T_3e045_row15_col3, #T_3e045_row16_col3, #T_3e045_row17_col3, #T_3e045_row18_col3, #T_3e045_row19_col3, #T_3e045_row20_col3, #T_3e045_row21_col3, #T_3e045_row22_col3 {
+#T_1a287_row0_col3, #T_1a287_row1_col3, #T_1a287_row2_col3, #T_1a287_row3_col3, #T_1a287_row4_col3, #T_1a287_row5_col3, #T_1a287_row6_col3, #T_1a287_row7_col3, #T_1a287_row8_col3, #T_1a287_row9_col3, #T_1a287_row10_col3, #T_1a287_row11_col3, #T_1a287_row12_col3, #T_1a287_row13_col3, #T_1a287_row14_col3, #T_1a287_row15_col3, #T_1a287_row16_col3, #T_1a287_row17_col3, #T_1a287_row18_col3, #T_1a287_row19_col3, #T_1a287_row20_col3, #T_1a287_row21_col3, #T_1a287_row22_col3 {
   text-align: right;
 }
 </style>
 
-<table id="T_3e045" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_1a287" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_3e045_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
-<th id="T_3e045_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
-<th id="T_3e045_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
-<th id="T_3e045_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
+<th id="T_1a287_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_1a287_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
+<th id="T_1a287_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
+<th id="T_1a287_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_3e045_row0_col0" class="data row0 col0">Kriminalistik</td>
-<td id="T_3e045_row0_col1" class="data row0 col1">2601</td>
-<td id="T_3e045_row0_col2" class="data row0 col2">2599</td>
-<td id="T_3e045_row0_col3" class="data row0 col3">100%</td>
+<td id="T_1a287_row0_col0" class="data row0 col0">Kriminalistik</td>
+<td id="T_1a287_row0_col1" class="data row0 col1">2601</td>
+<td id="T_1a287_row0_col2" class="data row0 col2">2599</td>
+<td id="T_1a287_row0_col3" class="data row0 col3">100%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row1_col0" class="data row1 col0">Osterreichisches Archiv fur Recht und Religion</td>
-<td id="T_3e045_row1_col1" class="data row1 col1">168</td>
-<td id="T_3e045_row1_col2" class="data row1 col2">166</td>
-<td id="T_3e045_row1_col3" class="data row1 col3">99%</td>
+<td id="T_1a287_row1_col0" class="data row1 col0">Verwaltung</td>
+<td id="T_1a287_row1_col1" class="data row1 col1">115</td>
+<td id="T_1a287_row1_col2" class="data row1 col2">114</td>
+<td id="T_1a287_row1_col3" class="data row1 col3">99%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row2_col0" class="data row2 col0">Verwaltung</td>
-<td id="T_3e045_row2_col1" class="data row2 col1">115</td>
-<td id="T_3e045_row2_col2" class="data row2 col2">114</td>
-<td id="T_3e045_row2_col3" class="data row2 col3">99%</td>
+<td id="T_1a287_row2_col0" class="data row2 col0">Osterreichisches Archiv fur Recht und Religion</td>
+<td id="T_1a287_row2_col1" class="data row2 col1">168</td>
+<td id="T_1a287_row2_col2" class="data row2 col2">166</td>
+<td id="T_1a287_row2_col3" class="data row2 col3">99%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row3_col0" class="data row3 col0">Forensische Psychiatrie, Psychologie, Kriminologie</td>
-<td id="T_3e045_row3_col1" class="data row3 col1">523</td>
-<td id="T_3e045_row3_col2" class="data row3 col2">513</td>
-<td id="T_3e045_row3_col3" class="data row3 col3">98%</td>
+<td id="T_1a287_row3_col0" class="data row3 col0">Forensische Psychiatrie, Psychologie, Kriminologie</td>
+<td id="T_1a287_row3_col1" class="data row3 col1">523</td>
+<td id="T_1a287_row3_col2" class="data row3 col2">513</td>
+<td id="T_1a287_row3_col3" class="data row3 col3">98%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row4_col0" class="data row4 col0">Zeitschrift der Savigny-Stiftung fur…</td>
-<td id="T_3e045_row4_col1" class="data row4 col1">398</td>
-<td id="T_3e045_row4_col2" class="data row4 col2">373</td>
-<td id="T_3e045_row4_col3" class="data row4 col3">94%</td>
+<td id="T_1a287_row4_col0" class="data row4 col0">Zeitschrift der Savigny-Stiftung fur…</td>
+<td id="T_1a287_row4_col1" class="data row4 col1">398</td>
+<td id="T_1a287_row4_col2" class="data row4 col2">373</td>
+<td id="T_1a287_row4_col3" class="data row4 col3">94%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row5_col0" class="data row5 col0">Kriminologisches Journal</td>
-<td id="T_3e045_row5_col1" class="data row5 col1">207</td>
-<td id="T_3e045_row5_col2" class="data row5 col2">184</td>
-<td id="T_3e045_row5_col3" class="data row5 col3">89%</td>
+<td id="T_1a287_row5_col0" class="data row5 col0">Kriminologisches Journal</td>
+<td id="T_1a287_row5_col1" class="data row5 col1">207</td>
+<td id="T_1a287_row5_col2" class="data row5 col2">184</td>
+<td id="T_1a287_row5_col3" class="data row5 col3">89%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row6_col0" class="data row6 col0">Monatsschrift fur Kriminologie und…</td>
-<td id="T_3e045_row6_col1" class="data row6 col1">323</td>
-<td id="T_3e045_row6_col2" class="data row6 col2">284</td>
-<td id="T_3e045_row6_col3" class="data row6 col3">88%</td>
+<td id="T_1a287_row6_col0" class="data row6 col0">Monatsschrift fur Kriminologie und…</td>
+<td id="T_1a287_row6_col1" class="data row6 col1">323</td>
+<td id="T_1a287_row6_col2" class="data row6 col2">284</td>
+<td id="T_1a287_row6_col3" class="data row6 col3">88%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row7_col0" class="data row7 col0">Deutsche Lebensmittel-Rundschau</td>
-<td id="T_3e045_row7_col1" class="data row7 col1">1739</td>
-<td id="T_3e045_row7_col2" class="data row7 col2">1478</td>
-<td id="T_3e045_row7_col3" class="data row7 col3">85%</td>
+<td id="T_1a287_row7_col0" class="data row7 col0">Deutsche Lebensmittel-Rundschau</td>
+<td id="T_1a287_row7_col1" class="data row7 col1">1739</td>
+<td id="T_1a287_row7_col2" class="data row7 col2">1478</td>
+<td id="T_1a287_row7_col3" class="data row7 col3">85%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row8_col0" class="data row8 col0">Zeitschrift der Savigny-Stiftung fur…</td>
-<td id="T_3e045_row8_col1" class="data row8 col1">603</td>
-<td id="T_3e045_row8_col2" class="data row8 col2">500</td>
-<td id="T_3e045_row8_col3" class="data row8 col3">83%</td>
+<td id="T_1a287_row8_col0" class="data row8 col0">Zeitschrift der Savigny-Stiftung fur…</td>
+<td id="T_1a287_row8_col1" class="data row8 col1">603</td>
+<td id="T_1a287_row8_col2" class="data row8 col2">500</td>
+<td id="T_1a287_row8_col3" class="data row8 col3">83%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row9_col0" class="data row9 col0">Zeitschrift der Savigny-Stiftung fur…</td>
-<td id="T_3e045_row9_col1" class="data row9 col1">120</td>
-<td id="T_3e045_row9_col2" class="data row9 col2">93</td>
-<td id="T_3e045_row9_col3" class="data row9 col3">78%</td>
+<td id="T_1a287_row9_col0" class="data row9 col0">Zeitschrift der Savigny-Stiftung fur…</td>
+<td id="T_1a287_row9_col1" class="data row9 col1">120</td>
+<td id="T_1a287_row9_col2" class="data row9 col2">93</td>
+<td id="T_1a287_row9_col3" class="data row9 col3">78%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row10_col0" class="data row10 col0">Recht und Psychiatrie</td>
-<td id="T_3e045_row10_col1" class="data row10 col1">369</td>
-<td id="T_3e045_row10_col2" class="data row10 col2">284</td>
-<td id="T_3e045_row10_col3" class="data row10 col3">77%</td>
+<td id="T_1a287_row10_col0" class="data row10 col0">Recht und Psychiatrie</td>
+<td id="T_1a287_row10_col1" class="data row10 col1">369</td>
+<td id="T_1a287_row10_col2" class="data row10 col2">284</td>
+<td id="T_1a287_row10_col3" class="data row10 col3">77%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row11_col0" class="data row11 col0">Zeitschrift fur Rechtssoziologie</td>
-<td id="T_3e045_row11_col1" class="data row11 col1">89</td>
-<td id="T_3e045_row11_col2" class="data row11 col2">63</td>
-<td id="T_3e045_row11_col3" class="data row11 col3">71%</td>
+<td id="T_1a287_row11_col0" class="data row11 col0">Zeitschrift fur Rechtssoziologie</td>
+<td id="T_1a287_row11_col1" class="data row11 col1">89</td>
+<td id="T_1a287_row11_col2" class="data row11 col2">63</td>
+<td id="T_1a287_row11_col3" class="data row11 col3">71%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row12_col0" class="data row12 col0">Kriminologie</td>
-<td id="T_3e045_row12_col1" class="data row12 col1">94</td>
-<td id="T_3e045_row12_col2" class="data row12 col2">66</td>
-<td id="T_3e045_row12_col3" class="data row12 col3">70%</td>
+<td id="T_1a287_row12_col0" class="data row12 col0">Kriminologie</td>
+<td id="T_1a287_row12_col1" class="data row12 col1">94</td>
+<td id="T_1a287_row12_col2" class="data row12 col2">66</td>
+<td id="T_1a287_row12_col3" class="data row12 col3">70%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row13_col0" class="data row13 col0">Jusletter IT</td>
-<td id="T_3e045_row13_col1" class="data row13 col1">708</td>
-<td id="T_3e045_row13_col2" class="data row13 col2">446</td>
-<td id="T_3e045_row13_col3" class="data row13 col3">63%</td>
+<td id="T_1a287_row13_col0" class="data row13 col0">Jusletter IT</td>
+<td id="T_1a287_row13_col1" class="data row13 col1">708</td>
+<td id="T_1a287_row13_col2" class="data row13 col2">446</td>
+<td id="T_1a287_row13_col3" class="data row13 col3">63%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row14_col0" class="data row14 col0">Archiv fur Rechts- und Sozialphilosophie</td>
-<td id="T_3e045_row14_col1" class="data row14 col1">273</td>
-<td id="T_3e045_row14_col2" class="data row14 col2">159</td>
-<td id="T_3e045_row14_col3" class="data row14 col3">58%</td>
+<td id="T_1a287_row14_col0" class="data row14 col0">Archiv fur Rechts- und Sozialphilosophie</td>
+<td id="T_1a287_row14_col1" class="data row14 col1">273</td>
+<td id="T_1a287_row14_col2" class="data row14 col2">159</td>
+<td id="T_1a287_row14_col3" class="data row14 col3">58%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row15_col0" class="data row15 col0">Rechtsgeschichte</td>
-<td id="T_3e045_row15_col1" class="data row15 col1">309</td>
-<td id="T_3e045_row15_col2" class="data row15 col2">174</td>
-<td id="T_3e045_row15_col3" class="data row15 col3">56%</td>
+<td id="T_1a287_row15_col0" class="data row15 col0">Rechtsgeschichte</td>
+<td id="T_1a287_row15_col1" class="data row15 col1">309</td>
+<td id="T_1a287_row15_col2" class="data row15 col2">174</td>
+<td id="T_1a287_row15_col3" class="data row15 col3">56%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row16_col0" class="data row16 col0">Zeitschrift fur Europarechtliche Studien</td>
-<td id="T_3e045_row16_col1" class="data row16 col1">107</td>
-<td id="T_3e045_row16_col2" class="data row16 col2">51</td>
-<td id="T_3e045_row16_col3" class="data row16 col3">48%</td>
+<td id="T_1a287_row16_col0" class="data row16 col0">Zeitschrift fur Europarechtliche Studien</td>
+<td id="T_1a287_row16_col1" class="data row16 col1">107</td>
+<td id="T_1a287_row16_col2" class="data row16 col2">51</td>
+<td id="T_1a287_row16_col3" class="data row16 col3">48%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row17_col0" class="data row17 col0">Zeitschrift fur Auslandisches Offentliches Recht…</td>
-<td id="T_3e045_row17_col1" class="data row17 col1">143</td>
-<td id="T_3e045_row17_col2" class="data row17 col2">49</td>
-<td id="T_3e045_row17_col3" class="data row17 col3">34%</td>
+<td id="T_1a287_row17_col0" class="data row17 col0">Zeitschrift fur Auslandisches Offentliches Recht…</td>
+<td id="T_1a287_row17_col1" class="data row17 col1">143</td>
+<td id="T_1a287_row17_col2" class="data row17 col2">49</td>
+<td id="T_1a287_row17_col3" class="data row17 col3">34%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row18_col0" class="data row18 col0">Legal History Review,Tijdschrift voor…</td>
-<td id="T_3e045_row18_col1" class="data row18 col1">265</td>
-<td id="T_3e045_row18_col2" class="data row18 col2">68</td>
-<td id="T_3e045_row18_col3" class="data row18 col3">26%</td>
+<td id="T_1a287_row18_col0" class="data row18 col0">Legal History Review,Tijdschrift voor…</td>
+<td id="T_1a287_row18_col1" class="data row18 col1">265</td>
+<td id="T_1a287_row18_col2" class="data row18 col2">68</td>
+<td id="T_1a287_row18_col3" class="data row18 col3">26%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row19_col0" class="data row19 col0">Journal on European History of Law</td>
-<td id="T_3e045_row19_col1" class="data row19 col1">283</td>
-<td id="T_3e045_row19_col2" class="data row19 col2">74</td>
-<td id="T_3e045_row19_col3" class="data row19 col3">26%</td>
+<td id="T_1a287_row19_col0" class="data row19 col0">Journal on European History of Law</td>
+<td id="T_1a287_row19_col1" class="data row19 col1">283</td>
+<td id="T_1a287_row19_col2" class="data row19 col2">74</td>
+<td id="T_1a287_row19_col3" class="data row19 col3">26%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row20_col0" class="data row20 col0">Annales de la Faculte de Droit d'Istanbul</td>
-<td id="T_3e045_row20_col1" class="data row20 col1">74</td>
-<td id="T_3e045_row20_col2" class="data row20 col2">11</td>
-<td id="T_3e045_row20_col3" class="data row20 col3">15%</td>
+<td id="T_1a287_row20_col0" class="data row20 col0">Annales de la Faculte de Droit d'Istanbul</td>
+<td id="T_1a287_row20_col1" class="data row20 col1">74</td>
+<td id="T_1a287_row20_col2" class="data row20 col2">11</td>
+<td id="T_1a287_row20_col3" class="data row20 col3">15%</td>
 </tr>
 <tr class="even">
-<td id="T_3e045_row21_col0" class="data row21 col0">Credit and Capital Markets</td>
-<td id="T_3e045_row21_col1" class="data row21 col1">164</td>
-<td id="T_3e045_row21_col2" class="data row21 col2">18</td>
-<td id="T_3e045_row21_col3" class="data row21 col3">11%</td>
+<td id="T_1a287_row21_col0" class="data row21 col0">Credit and Capital Markets</td>
+<td id="T_1a287_row21_col1" class="data row21 col1">164</td>
+<td id="T_1a287_row21_col2" class="data row21 col2">18</td>
+<td id="T_1a287_row21_col3" class="data row21 col3">11%</td>
 </tr>
 <tr class="odd">
-<td id="T_3e045_row22_col0" class="data row22 col0">Journal of Juristic Papyrology</td>
-<td id="T_3e045_row22_col1" class="data row22 col1">180</td>
-<td id="T_3e045_row22_col2" class="data row22 col2">18</td>
-<td id="T_3e045_row22_col3" class="data row22 col3">10%</td>
+<td id="T_1a287_row22_col0" class="data row22 col0">Journal of Juristic Papyrology</td>
+<td id="T_1a287_row22_col1" class="data row22 col1">180</td>
+<td id="T_1a287_row22_col2" class="data row22 col2">18</td>
+<td id="T_1a287_row22_col3" class="data row22 col3">10%</td>
 </tr>
 </tbody>
 </table>
@@ -543,148 +543,148 @@ Table&nbsp;2: Articles in Scopus categorized “German” and “Law”, sorted 
 Table&nbsp;3: Articles in OpenAlex categorized “German” and “Law”, sorted by relative frequency, top 20
 </figcaption>
 <div aria-describedby="tbl-openalex-ger-law-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="109">
+<div class="cell-output cell-output-display" data-execution_count="59">
 <style type="text/css">
-#T_d9c71_row0_col0, #T_d9c71_row1_col0, #T_d9c71_row2_col0, #T_d9c71_row3_col0, #T_d9c71_row4_col0, #T_d9c71_row5_col0, #T_d9c71_row6_col0, #T_d9c71_row7_col0, #T_d9c71_row8_col0, #T_d9c71_row9_col0, #T_d9c71_row10_col0, #T_d9c71_row11_col0, #T_d9c71_row12_col0, #T_d9c71_row13_col0, #T_d9c71_row14_col0, #T_d9c71_row15_col0, #T_d9c71_row16_col0, #T_d9c71_row17_col0, #T_d9c71_row18_col0, #T_d9c71_row19_col0 {
+#T_7a51d_row0_col0, #T_7a51d_row1_col0, #T_7a51d_row2_col0, #T_7a51d_row3_col0, #T_7a51d_row4_col0, #T_7a51d_row5_col0, #T_7a51d_row6_col0, #T_7a51d_row7_col0, #T_7a51d_row8_col0, #T_7a51d_row9_col0, #T_7a51d_row10_col0, #T_7a51d_row11_col0, #T_7a51d_row12_col0, #T_7a51d_row13_col0, #T_7a51d_row14_col0, #T_7a51d_row15_col0, #T_7a51d_row16_col0, #T_7a51d_row17_col0, #T_7a51d_row18_col0, #T_7a51d_row19_col0 {
   text-align: left;
 }
-#T_d9c71_row0_col1, #T_d9c71_row0_col2, #T_d9c71_row1_col1, #T_d9c71_row1_col2, #T_d9c71_row2_col1, #T_d9c71_row2_col2, #T_d9c71_row3_col1, #T_d9c71_row3_col2, #T_d9c71_row4_col1, #T_d9c71_row4_col2, #T_d9c71_row5_col1, #T_d9c71_row5_col2, #T_d9c71_row6_col1, #T_d9c71_row6_col2, #T_d9c71_row7_col1, #T_d9c71_row7_col2, #T_d9c71_row8_col1, #T_d9c71_row8_col2, #T_d9c71_row9_col1, #T_d9c71_row9_col2, #T_d9c71_row10_col1, #T_d9c71_row10_col2, #T_d9c71_row11_col1, #T_d9c71_row11_col2, #T_d9c71_row12_col1, #T_d9c71_row12_col2, #T_d9c71_row13_col1, #T_d9c71_row13_col2, #T_d9c71_row14_col1, #T_d9c71_row14_col2, #T_d9c71_row15_col1, #T_d9c71_row15_col2, #T_d9c71_row16_col1, #T_d9c71_row16_col2, #T_d9c71_row17_col1, #T_d9c71_row17_col2, #T_d9c71_row18_col1, #T_d9c71_row18_col2, #T_d9c71_row19_col1, #T_d9c71_row19_col2 {
+#T_7a51d_row0_col1, #T_7a51d_row0_col2, #T_7a51d_row1_col1, #T_7a51d_row1_col2, #T_7a51d_row2_col1, #T_7a51d_row2_col2, #T_7a51d_row3_col1, #T_7a51d_row3_col2, #T_7a51d_row4_col1, #T_7a51d_row4_col2, #T_7a51d_row5_col1, #T_7a51d_row5_col2, #T_7a51d_row6_col1, #T_7a51d_row6_col2, #T_7a51d_row7_col1, #T_7a51d_row7_col2, #T_7a51d_row8_col1, #T_7a51d_row8_col2, #T_7a51d_row9_col1, #T_7a51d_row9_col2, #T_7a51d_row10_col1, #T_7a51d_row10_col2, #T_7a51d_row11_col1, #T_7a51d_row11_col2, #T_7a51d_row12_col1, #T_7a51d_row12_col2, #T_7a51d_row13_col1, #T_7a51d_row13_col2, #T_7a51d_row14_col1, #T_7a51d_row14_col2, #T_7a51d_row15_col1, #T_7a51d_row15_col2, #T_7a51d_row16_col1, #T_7a51d_row16_col2, #T_7a51d_row17_col1, #T_7a51d_row17_col2, #T_7a51d_row18_col1, #T_7a51d_row18_col2, #T_7a51d_row19_col1, #T_7a51d_row19_col2 {
   text-align: center;
 }
-#T_d9c71_row0_col3, #T_d9c71_row1_col3, #T_d9c71_row2_col3, #T_d9c71_row3_col3, #T_d9c71_row4_col3, #T_d9c71_row5_col3, #T_d9c71_row6_col3, #T_d9c71_row7_col3, #T_d9c71_row8_col3, #T_d9c71_row9_col3, #T_d9c71_row10_col3, #T_d9c71_row11_col3, #T_d9c71_row12_col3, #T_d9c71_row13_col3, #T_d9c71_row14_col3, #T_d9c71_row15_col3, #T_d9c71_row16_col3, #T_d9c71_row17_col3, #T_d9c71_row18_col3, #T_d9c71_row19_col3 {
+#T_7a51d_row0_col3, #T_7a51d_row1_col3, #T_7a51d_row2_col3, #T_7a51d_row3_col3, #T_7a51d_row4_col3, #T_7a51d_row5_col3, #T_7a51d_row6_col3, #T_7a51d_row7_col3, #T_7a51d_row8_col3, #T_7a51d_row9_col3, #T_7a51d_row10_col3, #T_7a51d_row11_col3, #T_7a51d_row12_col3, #T_7a51d_row13_col3, #T_7a51d_row14_col3, #T_7a51d_row15_col3, #T_7a51d_row16_col3, #T_7a51d_row17_col3, #T_7a51d_row18_col3, #T_7a51d_row19_col3 {
   text-align: right;
 }
 </style>
 
-<table id="T_d9c71" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_7a51d" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_d9c71_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
-<th id="T_d9c71_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
-<th id="T_d9c71_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
-<th id="T_d9c71_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
+<th id="T_7a51d_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_7a51d_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Articles</th>
+<th id="T_7a51d_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">German+Law</th>
+<th id="T_7a51d_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_d9c71_row0_col0" class="data row0 col0">Zeitschrift für Beihilfenrecht</td>
-<td id="T_d9c71_row0_col1" class="data row0 col1">253</td>
-<td id="T_d9c71_row0_col2" class="data row0 col2">191</td>
-<td id="T_d9c71_row0_col3" class="data row0 col3">75%</td>
+<td id="T_7a51d_row0_col0" class="data row0 col0">Zeitschrift für Beihilfenrecht</td>
+<td id="T_7a51d_row0_col1" class="data row0 col1">253</td>
+<td id="T_7a51d_row0_col2" class="data row0 col2">191</td>
+<td id="T_7a51d_row0_col3" class="data row0 col3">75%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row1_col0" class="data row1 col0">Jura - Juristische Ausbildung</td>
-<td id="T_d9c71_row1_col1" class="data row1 col1">24</td>
-<td id="T_d9c71_row1_col2" class="data row1 col2">17</td>
-<td id="T_d9c71_row1_col3" class="data row1 col3">71%</td>
+<td id="T_7a51d_row1_col0" class="data row1 col0">Computer Und Recht: Forum für die Praxis des…</td>
+<td id="T_7a51d_row1_col1" class="data row1 col1">2332</td>
+<td id="T_7a51d_row1_col2" class="data row1 col2">1664</td>
+<td id="T_7a51d_row1_col3" class="data row1 col3">71%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row2_col0" class="data row2 col0">Zeitschrift für Informationsrecht</td>
-<td id="T_d9c71_row2_col1" class="data row2 col1">1963</td>
-<td id="T_d9c71_row2_col2" class="data row2 col2">1403</td>
-<td id="T_d9c71_row2_col3" class="data row2 col3">71%</td>
+<td id="T_7a51d_row2_col0" class="data row2 col0">Europaische grundrechte zeitschrift</td>
+<td id="T_7a51d_row2_col1" class="data row2 col1">334</td>
+<td id="T_7a51d_row2_col2" class="data row2 col2">236</td>
+<td id="T_7a51d_row2_col3" class="data row2 col3">71%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row3_col0" class="data row3 col0">Europaische grundrechte zeitschrift</td>
-<td id="T_d9c71_row3_col1" class="data row3 col1">334</td>
-<td id="T_d9c71_row3_col2" class="data row3 col2">236</td>
-<td id="T_d9c71_row3_col3" class="data row3 col3">71%</td>
+<td id="T_7a51d_row3_col0" class="data row3 col0">Zeitschrift für Informationsrecht</td>
+<td id="T_7a51d_row3_col1" class="data row3 col1">1963</td>
+<td id="T_7a51d_row3_col2" class="data row3 col2">1403</td>
+<td id="T_7a51d_row3_col3" class="data row3 col3">71%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row4_col0" class="data row4 col0">Computer Und Recht: Forum für die Praxis des…</td>
-<td id="T_d9c71_row4_col1" class="data row4 col1">2332</td>
-<td id="T_d9c71_row4_col2" class="data row4 col2">1664</td>
-<td id="T_d9c71_row4_col3" class="data row4 col3">71%</td>
+<td id="T_7a51d_row4_col0" class="data row4 col0">Jura - Juristische Ausbildung</td>
+<td id="T_7a51d_row4_col1" class="data row4 col1">24</td>
+<td id="T_7a51d_row4_col2" class="data row4 col2">17</td>
+<td id="T_7a51d_row4_col3" class="data row4 col3">71%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row5_col0" class="data row5 col0">Datenschutz und Datensicherheit</td>
-<td id="T_d9c71_row5_col1" class="data row5 col1">20</td>
-<td id="T_d9c71_row5_col2" class="data row5 col2">14</td>
-<td id="T_d9c71_row5_col3" class="data row5 col3">70%</td>
+<td id="T_7a51d_row5_col0" class="data row5 col0">Datenschutz und Datensicherheit</td>
+<td id="T_7a51d_row5_col1" class="data row5 col1">20</td>
+<td id="T_7a51d_row5_col2" class="data row5 col2">14</td>
+<td id="T_7a51d_row5_col3" class="data row5 col3">70%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row6_col0" class="data row6 col0">Jus: Juristische Schulung</td>
-<td id="T_d9c71_row6_col1" class="data row6 col1">1487</td>
-<td id="T_d9c71_row6_col2" class="data row6 col2">1030</td>
-<td id="T_d9c71_row6_col3" class="data row6 col3">69%</td>
+<td id="T_7a51d_row6_col0" class="data row6 col0">Jus: Juristische Schulung</td>
+<td id="T_7a51d_row6_col1" class="data row6 col1">1487</td>
+<td id="T_7a51d_row6_col2" class="data row6 col2">1030</td>
+<td id="T_7a51d_row6_col3" class="data row6 col3">69%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row7_col0" class="data row7 col0">Europaisches wirtschafts und steuerrecht</td>
-<td id="T_d9c71_row7_col1" class="data row7 col1">382</td>
-<td id="T_d9c71_row7_col2" class="data row7 col2">260</td>
-<td id="T_d9c71_row7_col3" class="data row7 col3">68%</td>
+<td id="T_7a51d_row7_col0" class="data row7 col0">Europaisches wirtschafts und steuerrecht</td>
+<td id="T_7a51d_row7_col1" class="data row7 col1">382</td>
+<td id="T_7a51d_row7_col2" class="data row7 col2">260</td>
+<td id="T_7a51d_row7_col3" class="data row7 col3">68%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row8_col0" class="data row8 col0">Schweizerisches Zentralblatt für Staats- und…</td>
-<td id="T_d9c71_row8_col1" class="data row8 col1">102</td>
-<td id="T_d9c71_row8_col2" class="data row8 col2">69</td>
-<td id="T_d9c71_row8_col3" class="data row8 col3">68%</td>
+<td id="T_7a51d_row8_col0" class="data row8 col0">Schweizerisches Zentralblatt für Staats- und…</td>
+<td id="T_7a51d_row8_col1" class="data row8 col1">102</td>
+<td id="T_7a51d_row8_col2" class="data row8 col2">69</td>
+<td id="T_7a51d_row8_col3" class="data row8 col3">68%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row9_col0" class="data row9 col0">WUW : Wirtschaft und wettbewerb = Concurrence et…</td>
-<td id="T_d9c71_row9_col1" class="data row9 col1">767</td>
-<td id="T_d9c71_row9_col2" class="data row9 col2">517</td>
-<td id="T_d9c71_row9_col3" class="data row9 col3">67%</td>
+<td id="T_7a51d_row9_col0" class="data row9 col0">Österreichische Zeitschrift für Kartellrecht</td>
+<td id="T_7a51d_row9_col1" class="data row9 col1">502</td>
+<td id="T_7a51d_row9_col2" class="data row9 col2">337</td>
+<td id="T_7a51d_row9_col3" class="data row9 col3">67%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row10_col0" class="data row10 col0">Zeitschrift für Zivilprozess</td>
-<td id="T_d9c71_row10_col1" class="data row10 col1">483</td>
-<td id="T_d9c71_row10_col2" class="data row10 col2">325</td>
-<td id="T_d9c71_row10_col3" class="data row10 col3">67%</td>
+<td id="T_7a51d_row10_col0" class="data row10 col0">Jahrbuch Eigentum und Urheberrecht in der…</td>
+<td id="T_7a51d_row10_col1" class="data row10 col1">21</td>
+<td id="T_7a51d_row10_col2" class="data row10 col2">14</td>
+<td id="T_7a51d_row10_col3" class="data row10 col3">67%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row11_col0" class="data row11 col0">Jahrbuch Eigentum und Urheberrecht in der…</td>
-<td id="T_d9c71_row11_col1" class="data row11 col1">21</td>
-<td id="T_d9c71_row11_col2" class="data row11 col2">14</td>
-<td id="T_d9c71_row11_col3" class="data row11 col3">67%</td>
+<td id="T_7a51d_row11_col0" class="data row11 col0">ZG : Zeitschrift für Gesetzgebung</td>
+<td id="T_7a51d_row11_col1" class="data row11 col1">377</td>
+<td id="T_7a51d_row11_col2" class="data row11 col2">254</td>
+<td id="T_7a51d_row11_col3" class="data row11 col3">67%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row12_col0" class="data row12 col0">ZG : Zeitschrift für Gesetzgebung</td>
-<td id="T_d9c71_row12_col1" class="data row12 col1">377</td>
-<td id="T_d9c71_row12_col2" class="data row12 col2">254</td>
-<td id="T_d9c71_row12_col3" class="data row12 col3">67%</td>
+<td id="T_7a51d_row12_col0" class="data row12 col0">WUW : Wirtschaft und wettbewerb = Concurrence et…</td>
+<td id="T_7a51d_row12_col1" class="data row12 col1">767</td>
+<td id="T_7a51d_row12_col2" class="data row12 col2">517</td>
+<td id="T_7a51d_row12_col3" class="data row12 col3">67%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row13_col0" class="data row13 col0">Österreichische Zeitschrift für Kartellrecht</td>
-<td id="T_d9c71_row13_col1" class="data row13 col1">502</td>
-<td id="T_d9c71_row13_col2" class="data row13 col2">337</td>
-<td id="T_d9c71_row13_col3" class="data row13 col3">67%</td>
+<td id="T_7a51d_row13_col0" class="data row13 col0">Zeitschrift für Zivilprozess</td>
+<td id="T_7a51d_row13_col1" class="data row13 col1">483</td>
+<td id="T_7a51d_row13_col2" class="data row13 col2">325</td>
+<td id="T_7a51d_row13_col3" class="data row13 col3">67%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row14_col0" class="data row14 col0">Göttinger Rechtszeitschrift</td>
-<td id="T_d9c71_row14_col1" class="data row14 col1">167</td>
-<td id="T_d9c71_row14_col2" class="data row14 col2">109</td>
-<td id="T_d9c71_row14_col3" class="data row14 col3">65%</td>
+<td id="T_7a51d_row14_col0" class="data row14 col0">Göttinger Rechtszeitschrift</td>
+<td id="T_7a51d_row14_col1" class="data row14 col1">167</td>
+<td id="T_7a51d_row14_col2" class="data row14 col2">109</td>
+<td id="T_7a51d_row14_col3" class="data row14 col3">65%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row15_col0" class="data row15 col0">Zeitschrift der Verwaltungsgerichtsbarkeit</td>
-<td id="T_d9c71_row15_col1" class="data row15 col1">1683</td>
-<td id="T_d9c71_row15_col2" class="data row15 col2">1074</td>
-<td id="T_d9c71_row15_col3" class="data row15 col3">64%</td>
+<td id="T_7a51d_row15_col0" class="data row15 col0">Zeitschrift der Verwaltungsgerichtsbarkeit</td>
+<td id="T_7a51d_row15_col1" class="data row15 col1">1683</td>
+<td id="T_7a51d_row15_col2" class="data row15 col2">1074</td>
+<td id="T_7a51d_row15_col3" class="data row15 col3">64%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row16_col0" class="data row16 col0">STRASSENVERKEHRSRECHT</td>
-<td id="T_d9c71_row16_col1" class="data row16 col1">113</td>
-<td id="T_d9c71_row16_col2" class="data row16 col2">72</td>
-<td id="T_d9c71_row16_col3" class="data row16 col3">64%</td>
+<td id="T_7a51d_row16_col0" class="data row16 col0">STRASSENVERKEHRSRECHT</td>
+<td id="T_7a51d_row16_col1" class="data row16 col1">113</td>
+<td id="T_7a51d_row16_col2" class="data row16 col2">72</td>
+<td id="T_7a51d_row16_col3" class="data row16 col3">64%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row17_col0" class="data row17 col0">Europaische zeitschrift für wirtschatsrecht, EUZW</td>
-<td id="T_d9c71_row17_col1" class="data row17 col1">863</td>
-<td id="T_d9c71_row17_col2" class="data row17 col2">555</td>
-<td id="T_d9c71_row17_col3" class="data row17 col3">64%</td>
+<td id="T_7a51d_row17_col0" class="data row17 col0">Europaische zeitschrift für wirtschatsrecht, EUZW</td>
+<td id="T_7a51d_row17_col1" class="data row17 col1">863</td>
+<td id="T_7a51d_row17_col2" class="data row17 col2">555</td>
+<td id="T_7a51d_row17_col3" class="data row17 col3">64%</td>
 </tr>
 <tr class="odd">
-<td id="T_d9c71_row18_col0" class="data row18 col0">Europarecht</td>
-<td id="T_d9c71_row18_col1" class="data row18 col1">1246</td>
-<td id="T_d9c71_row18_col2" class="data row18 col2">786</td>
-<td id="T_d9c71_row18_col3" class="data row18 col3">63%</td>
+<td id="T_7a51d_row18_col0" class="data row18 col0">Europarecht</td>
+<td id="T_7a51d_row18_col1" class="data row18 col1">1246</td>
+<td id="T_7a51d_row18_col2" class="data row18 col2">786</td>
+<td id="T_7a51d_row18_col3" class="data row18 col3">63%</td>
 </tr>
 <tr class="even">
-<td id="T_d9c71_row19_col0" class="data row19 col0">Frankfurt Law Review</td>
-<td id="T_d9c71_row19_col1" class="data row19 col1">16</td>
-<td id="T_d9c71_row19_col2" class="data row19 col2">10</td>
-<td id="T_d9c71_row19_col3" class="data row19 col3">63%</td>
+<td id="T_7a51d_row19_col0" class="data row19 col0">Frankfurt Law Review</td>
+<td id="T_7a51d_row19_col1" class="data row19 col1">16</td>
+<td id="T_7a51d_row19_col2" class="data row19 col2">10</td>
+<td id="T_7a51d_row19_col3" class="data row19 col3">63%</td>
 </tr>
 </tbody>
 </table>
@@ -693,7 +693,7 @@ Table&nbsp;3: Articles in OpenAlex categorized “German” and “Law”, sorte
 </figure>
 </div>
 </div>
-<p>In sum, based on the number of results and a intuition backed by domain knowledge, OpenAlex seems to provide a more promising dataset for our purposes. However, the how can we know we are not missing important journals which, for random reasons, have not been indexed in OpenAlex? And even if we knew that all relevant journals were present, we would not know how to create our sample because OpenAlex does not provide a reliable way of determining which journals out of the 300+ journals found are relevant and/or representative.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
+<p>In sum, based on the number of results and a intuition backed by domain knowledge, OpenAlex seems to provide a more promising dataset for our purposes. However, the how can we know that we are not missing important journals which, for random reasons, have not been indexed in OpenAlex? And even if we knew that all relevant journals were present, we would not know how to create our sample because OpenAlex does not provide a reliable way of determining which journals out of the 300+ journals found are relevant and/or representative.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
 </section>
 </section>
 <section id="constructing-a-benchmark-set-based-on-domain-expertise" class="level3">
@@ -701,7 +701,7 @@ Table&nbsp;3: Articles in OpenAlex categorized “German” and “Law”, sorte
 <p>The alternative approach is to rely on expert knowledge. In this case, we need to know how legal scholars or other people with a similar expertise of the domain (such as law librarians) would construct the set of journals that we are looking for. In contrast to the previous approach, this involves an element of human judgment. However, this seems to be adequate since such a list is not a “fact” comparable to a mathematical set. It is therefore not decisive for our purposes that such a set might be incomplete or that different people might have different opinions about what should be in that set, as long as we have a viable list of journals that represents something like the “least common denominator” of expert opinions, generated in a methodologically valid way.</p>
 <section id="curated-lists-of-law-journals-available-online" class="level4">
 <h4 class="anchored" data-anchor-id="curated-lists-of-law-journals-available-online">Curated lists of law journals available online</h4>
-<p>The internet offers a number of lists of German law journals. They are curated in the sense as they have been assembled by (usually unnamed) domain experts of varying credentials for pedagogical or other reasons. For the purpose of this article, we scraped the contents of the following lists and converted them into CSV data:<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+<p>The internet offers a number of lists of German law journals. They are curated in the sense that they have been assembled by (usually unnamed) domain experts of varying credentials for pedagogical or other reasons. For the purpose of this article, we scraped the contents of the following lists and converted them into CSV data:<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
 <ul>
 <li>“Karlsruher Juristische Bibliographie, Verzeichnis der für Periodika verwendeten Abkürzungen”: a list of journals curated by the publisher Beck<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>, with 561 entries;</li>
 <li>juris: Verzeichnis der ausgewerteten juristischen Periodika (Aufsätze): This is the list of journals ingested by the commercial legal information platform “Juris” for their database on law journal articles. The Bayrische Staatsbibliothek has a PDF from 2002<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> which we used to extract a list of 383 entries;</li>
@@ -743,8 +743,8 @@ Figure&nbsp;2: Intersection (by abbreviation) of online journal lists
 </div>
 </div>
 <p>The lists share a relatively small number of abbreviations (43). The number of found co-occurrences could probably be increased somewhat by matching the entries of the list with unique identifiers such as the ISSN, which would eliminate incorrect matching, but probably not much.</p>
-<p>In any case, we did not pursue this approach further. While lists like the ones identified above are interesting data sources themselves, they do not provide a solid basis for our analysis, at least not in a straightforward way. On one hand, the intersection of all lists is hinges on accidental factors since we have no way of knowing what the selection criteria for any of the above lists are. On the other hand, a union of all lists could help avoid selection biases. However, it would have a size that would to large to be useful (&gt;900), and, as in our previous experiments, there would be no clear selection criteria by which to filter the list down to a more manageable size.</p>
-<p>Another option is to check open data sources such as Wikipedia and Wikidata to see if they provide structured metadata. In fact, Wikipedia has a category called “Juristische Fachzeitschrift (Deutschland)” (Journal specialized on legal matters (Germany)<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>, which assembles all Wikipedia pages that self-categorize as a law journal.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>. When exporting the category,<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a>, the result set contains 286 entries. As this data contains Wikidata QIDs, ISSN matching can be done automatically, which results in a list of 147 journals having an ISSN.</p>
+<p>In any case, we did not pursue this approach further. While lists like the ones identified above are interesting data sources themselves, they do not provide a solid basis for our analysis, at least not in a straightforward way. On one hand, the intersection of all lists is hinges on accidental factors since we have no way of knowing what the selection criteria for any of the above lists are. On the other hand, a union of all lists could help avoid selection biases. However, it would have a size that would too large to be useful (&gt;900), and, as in our previous experiments, there would be no clear selection criteria by which to filter the list down to a more manageable size.</p>
+<p>Another option is to check open data sources such as Wikipedia and Wikidata to see if they provide structured metadata. In fact, Wikipedia has a category called “Juristische Fachzeitschrift (Deutschland)” (Journal specialized on legal matters (Germany)<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>, which assembles all Wikipedia pages that self-categorize as a law journal.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>. When exporting the category,<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> the result set contains 286 entries. As this data contains Wikidata QIDs, ISSN matching can be done automatically, which results in a list of 147 journals having an ISSN.</p>
 <p>When comparing this list with the KJB and <em>juris</em> lists by abbreviation (<a href="#fig-intersection-wikipedia" class="quarto-xref">Figure&nbsp;3</a>), we again find a relatively small intersection (68 abbreviations) that cannot be caused solely by data errors.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a></p>
 <div id="cell-fig-intersection-wikipedia" class="cell" data-execution_count="7">
 <details class="code-fold">
@@ -783,7 +783,7 @@ Figure&nbsp;3: Intersection (by abbreviation) between KJB, juris and Wikipedia e
 <section id="expert-ranking-grölsgröls-2009" class="level4">
 <h4 class="anchored" data-anchor-id="expert-ranking-grölsgröls-2009">Expert Ranking: Gröls/Gröls (2009)</h4>
 <p>Instead, for generating our benchmark set, we relied on a 2009 study by Marcel and Tanja Gröls <span class="citation" data-cites="gröls2009">(<a href="#ref-gröls2009" role="doc-biblioref">Gröls and Gröls 2009</a>)</span>, who ranked law journals on the basis of a survey among law professors. Even though the study is more than 15 years old and has - as far as we can see - not yet been updated in later studies, it is still a useful source of data for our purposes, as we will explain below.</p>
-<p>As the authors point out, previous attempts at ranking German law journals through empirical means remained scarce (497). Therefore, the authors decided on a methodological setup derived from similar studies in economics and business administration (489). In short, their study consists of different rankings of German law journals generated by surveying the individual assessment of German law scholars. First, 1500 email addresses of German law professors, both current and former, as well as research associates were identified by reviewing the web pages of 45 German universities and academic institutions. Next, these individuals were contacted via email and asked to fill out the survey. 248 responses were received, marking a 16,5% response rate (490).</p>
+<p>As the authors point out, previous attempts at ranking German law journals through empirical means remained scarce (497). Therefore, the authors decided on a methodological setup derived from similar studies in economics and business administration (489). In short, their study consists of different rankings of German law journals generated by surveying the individual assessment of German law scholars. First, 1500 email addresses of German law professors, both current and former, as well as research associates were identified by reviewing the web pages of 45 German universities and academic institutions. Next, these individuals were contacted via email and asked to fill out the survey. 248 responses were received, marking a 16.5% response rate (490).</p>
 <p>The survey asked its participants to name their area of expertise, rank five journals of that area they perceived to be of the highest quality, and additionally, to name and rank five journals that are more general in scope and not bound to a specific subdiscipline, again according to perceived quality (490). Journals over a certain counting threshold were then assigned scores based on their place in the participant’s ranking as well as the participant’s academic status (professors were weighted stronger than research associates) and an ‘expert factor’ determined by the individuals amount of publications over the last three years, thus creating two different kinds of rankings: one for journals considered general in nature and several others according to specific subdisciplines (491-492).</p>
 <p>As this distinction is irrelevant to our purposes, we aggregated the different rankings into one list of 51 journals, thereby constituting our benchmark set (<a href="#tbl-benchmark-set" class="quarto-xref">Table&nbsp;4</a>).</p>
 <div class="cell" data-execution_count="8">
@@ -805,224 +805,224 @@ Figure&nbsp;3: Intersection (by abbreviation) between KJB, juris and Wikipedia e
 Table&nbsp;4: List of 51 most highly ranked law journals according to Gröls/Gröls (2009), sorted by abbreviation
 </figcaption>
 <div aria-describedby="tbl-benchmark-set-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="112">
+<div class="cell-output cell-output-display" data-execution_count="62">
 <style type="text/css">
-#T_bf24b_row0_col1, #T_bf24b_row1_col1, #T_bf24b_row2_col1, #T_bf24b_row3_col1, #T_bf24b_row4_col1, #T_bf24b_row5_col1, #T_bf24b_row6_col1, #T_bf24b_row7_col1, #T_bf24b_row8_col1, #T_bf24b_row9_col1, #T_bf24b_row10_col1, #T_bf24b_row11_col1, #T_bf24b_row12_col1, #T_bf24b_row13_col1, #T_bf24b_row14_col1, #T_bf24b_row15_col1, #T_bf24b_row16_col1, #T_bf24b_row17_col1, #T_bf24b_row18_col1, #T_bf24b_row19_col1, #T_bf24b_row20_col1, #T_bf24b_row21_col1, #T_bf24b_row22_col1, #T_bf24b_row23_col1, #T_bf24b_row24_col1, #T_bf24b_row25_col1, #T_bf24b_row26_col1, #T_bf24b_row27_col1, #T_bf24b_row28_col1, #T_bf24b_row29_col1, #T_bf24b_row30_col1, #T_bf24b_row31_col1, #T_bf24b_row32_col1, #T_bf24b_row33_col1, #T_bf24b_row34_col1, #T_bf24b_row35_col1, #T_bf24b_row36_col1, #T_bf24b_row37_col1, #T_bf24b_row38_col1, #T_bf24b_row39_col1, #T_bf24b_row40_col1, #T_bf24b_row41_col1, #T_bf24b_row42_col1, #T_bf24b_row43_col1, #T_bf24b_row44_col1, #T_bf24b_row45_col1, #T_bf24b_row46_col1, #T_bf24b_row47_col1, #T_bf24b_row48_col1, #T_bf24b_row49_col1, #T_bf24b_row50_col1 {
+#T_fec1a_row0_col1, #T_fec1a_row1_col1, #T_fec1a_row2_col1, #T_fec1a_row3_col1, #T_fec1a_row4_col1, #T_fec1a_row5_col1, #T_fec1a_row6_col1, #T_fec1a_row7_col1, #T_fec1a_row8_col1, #T_fec1a_row9_col1, #T_fec1a_row10_col1, #T_fec1a_row11_col1, #T_fec1a_row12_col1, #T_fec1a_row13_col1, #T_fec1a_row14_col1, #T_fec1a_row15_col1, #T_fec1a_row16_col1, #T_fec1a_row17_col1, #T_fec1a_row18_col1, #T_fec1a_row19_col1, #T_fec1a_row20_col1, #T_fec1a_row21_col1, #T_fec1a_row22_col1, #T_fec1a_row23_col1, #T_fec1a_row24_col1, #T_fec1a_row25_col1, #T_fec1a_row26_col1, #T_fec1a_row27_col1, #T_fec1a_row28_col1, #T_fec1a_row29_col1, #T_fec1a_row30_col1, #T_fec1a_row31_col1, #T_fec1a_row32_col1, #T_fec1a_row33_col1, #T_fec1a_row34_col1, #T_fec1a_row35_col1, #T_fec1a_row36_col1, #T_fec1a_row37_col1, #T_fec1a_row38_col1, #T_fec1a_row39_col1, #T_fec1a_row40_col1, #T_fec1a_row41_col1, #T_fec1a_row42_col1, #T_fec1a_row43_col1, #T_fec1a_row44_col1, #T_fec1a_row45_col1, #T_fec1a_row46_col1, #T_fec1a_row47_col1, #T_fec1a_row48_col1, #T_fec1a_row49_col1, #T_fec1a_row50_col1 {
   text-align: left;
 }
 </style>
 
-<table id="T_bf24b" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_fec1a" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_bf24b_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Abbreviation</th>
-<th id="T_bf24b_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Title</th>
+<th id="T_fec1a_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Abbreviation</th>
+<th id="T_fec1a_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Title</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_bf24b_row0_col0" class="data row0 col0">AG</td>
-<td id="T_bf24b_row0_col1" class="data row0 col1">Die Aktiengesellschaft</td>
+<td id="T_fec1a_row0_col0" class="data row0 col0">AG</td>
+<td id="T_fec1a_row0_col1" class="data row0 col1">Die Aktiengesellschaft</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row1_col0" class="data row1 col0">AVR</td>
-<td id="T_bf24b_row1_col1" class="data row1 col1">Archiv des Volkerrechts</td>
+<td id="T_fec1a_row1_col0" class="data row1 col0">AVR</td>
+<td id="T_fec1a_row1_col1" class="data row1 col1">Archiv des Volkerrechts</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row2_col0" class="data row2 col0">AcP</td>
-<td id="T_bf24b_row2_col1" class="data row2 col1">Archiv für die civilistische Praxis</td>
+<td id="T_fec1a_row2_col0" class="data row2 col0">AcP</td>
+<td id="T_fec1a_row2_col1" class="data row2 col1">Archiv für die civilistische Praxis</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row3_col0" class="data row3 col0">AuR</td>
-<td id="T_bf24b_row3_col1" class="data row3 col1">Arbeit und Recht</td>
+<td id="T_fec1a_row3_col0" class="data row3 col0">AuR</td>
+<td id="T_fec1a_row3_col1" class="data row3 col1">Arbeit und Recht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row4_col0" class="data row4 col0">AöR</td>
-<td id="T_bf24b_row4_col1" class="data row4 col1">Archiv des öffentlichen Rechts</td>
+<td id="T_fec1a_row4_col0" class="data row4 col0">AöR</td>
+<td id="T_fec1a_row4_col1" class="data row4 col1">Archiv des öffentlichen Rechts</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row5_col0" class="data row5 col0">BB</td>
-<td id="T_bf24b_row5_col1" class="data row5 col1">Betriebs-Berater</td>
+<td id="T_fec1a_row5_col0" class="data row5 col0">BB</td>
+<td id="T_fec1a_row5_col1" class="data row5 col1">Betriebs-Berater</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row6_col0" class="data row6 col0">CR</td>
-<td id="T_bf24b_row6_col1" class="data row6 col1">Computer und Recht</td>
+<td id="T_fec1a_row6_col0" class="data row6 col0">CR</td>
+<td id="T_fec1a_row6_col1" class="data row6 col1">Computer und Recht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row7_col0" class="data row7 col0">DB</td>
-<td id="T_bf24b_row7_col1" class="data row7 col1">DER BETRIEB</td>
+<td id="T_fec1a_row7_col0" class="data row7 col0">DB</td>
+<td id="T_fec1a_row7_col1" class="data row7 col1">DER BETRIEB</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row8_col0" class="data row8 col0">DOV</td>
-<td id="T_bf24b_row8_col1" class="data row8 col1">Die öffentliche Verwaltung</td>
+<td id="T_fec1a_row8_col0" class="data row8 col0">DOV</td>
+<td id="T_fec1a_row8_col1" class="data row8 col1">Die öffentliche Verwaltung</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row9_col0" class="data row9 col0">DStR</td>
-<td id="T_bf24b_row9_col1" class="data row9 col1">Deutsches Steuerrecht</td>
+<td id="T_fec1a_row9_col0" class="data row9 col0">DStR</td>
+<td id="T_fec1a_row9_col1" class="data row9 col1">Deutsches Steuerrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row10_col0" class="data row10 col0">DVBI</td>
-<td id="T_bf24b_row10_col1" class="data row10 col1">Deutsches Verwaltungsblatt</td>
+<td id="T_fec1a_row10_col0" class="data row10 col0">DVBI</td>
+<td id="T_fec1a_row10_col1" class="data row10 col1">Deutsches Verwaltungsblatt</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row11_col0" class="data row11 col0">EuGRZ</td>
-<td id="T_bf24b_row11_col1" class="data row11 col1">Europäische Grundrechtezeitschrift</td>
+<td id="T_fec1a_row11_col0" class="data row11 col0">EuGRZ</td>
+<td id="T_fec1a_row11_col1" class="data row11 col1">Europäische Grundrechtezeitschrift</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row12_col0" class="data row12 col0">EuR</td>
-<td id="T_bf24b_row12_col1" class="data row12 col1">Europarecht</td>
+<td id="T_fec1a_row12_col0" class="data row12 col0">EuR</td>
+<td id="T_fec1a_row12_col1" class="data row12 col1">Europarecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row13_col0" class="data row13 col0">EuZW</td>
-<td id="T_bf24b_row13_col1" class="data row13 col1">Europäische Zeitschrift für Wirtschaftsrecht</td>
+<td id="T_fec1a_row13_col0" class="data row13 col0">EuZW</td>
+<td id="T_fec1a_row13_col1" class="data row13 col1">Europäische Zeitschrift für Wirtschaftsrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row14_col0" class="data row14 col0">FamRZ</td>
-<td id="T_bf24b_row14_col1" class="data row14 col1">Zeitschrift für das gesamte Familienrecht</td>
+<td id="T_fec1a_row14_col0" class="data row14 col0">FamRZ</td>
+<td id="T_fec1a_row14_col1" class="data row14 col1">Zeitschrift für das gesamte Familienrecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row15_col0" class="data row15 col0">GA</td>
-<td id="T_bf24b_row15_col1" class="data row15 col1">Goltdammers Archiv für Strafrecht</td>
+<td id="T_fec1a_row15_col0" class="data row15 col0">GA</td>
+<td id="T_fec1a_row15_col1" class="data row15 col1">Goltdammers Archiv für Strafrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row16_col0" class="data row16 col0">GmbHR</td>
-<td id="T_bf24b_row16_col1" class="data row16 col1">GmbH-Rundschau</td>
+<td id="T_fec1a_row16_col0" class="data row16 col0">GmbHR</td>
+<td id="T_fec1a_row16_col1" class="data row16 col1">GmbH-Rundschau</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row17_col0" class="data row17 col0">JA</td>
-<td id="T_bf24b_row17_col1" class="data row17 col1">Juristische Arbeitsblätter</td>
+<td id="T_fec1a_row17_col0" class="data row17 col0">JA</td>
+<td id="T_fec1a_row17_col1" class="data row17 col1">Juristische Arbeitsblätter</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row18_col0" class="data row18 col0">JR</td>
-<td id="T_bf24b_row18_col1" class="data row18 col1">Juristische Rundschau</td>
+<td id="T_fec1a_row18_col0" class="data row18 col0">JR</td>
+<td id="T_fec1a_row18_col1" class="data row18 col1">Juristische Rundschau</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row19_col0" class="data row19 col0">JURA</td>
-<td id="T_bf24b_row19_col1" class="data row19 col1">Juristische Ausbildung</td>
+<td id="T_fec1a_row19_col0" class="data row19 col0">JURA</td>
+<td id="T_fec1a_row19_col1" class="data row19 col1">Juristische Ausbildung</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row20_col0" class="data row20 col0">JZ</td>
-<td id="T_bf24b_row20_col1" class="data row20 col1">JuristenZeitung</td>
+<td id="T_fec1a_row20_col0" class="data row20 col0">JZ</td>
+<td id="T_fec1a_row20_col1" class="data row20 col1">JuristenZeitung</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row21_col0" class="data row21 col0">JuS</td>
-<td id="T_bf24b_row21_col1" class="data row21 col1">Juristische Schulung</td>
+<td id="T_fec1a_row21_col0" class="data row21 col0">JuS</td>
+<td id="T_fec1a_row21_col1" class="data row21 col1">Juristische Schulung</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row22_col0" class="data row22 col0">KJ</td>
-<td id="T_bf24b_row22_col1" class="data row22 col1">Kritische Justiz</td>
+<td id="T_fec1a_row22_col0" class="data row22 col0">KJ</td>
+<td id="T_fec1a_row22_col1" class="data row22 col1">Kritische Justiz</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row23_col0" class="data row23 col0">KritV</td>
-<td id="T_bf24b_row23_col1" class="data row23 col1">Kritische Vierteljahresschrift für Gesetzgebung und Rechtswissenschaft</td>
+<td id="T_fec1a_row23_col0" class="data row23 col0">KritV</td>
+<td id="T_fec1a_row23_col1" class="data row23 col1">Kritische Vierteljahresschrift für Gesetzgebung und Rechtswissenschaft</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row24_col0" class="data row24 col0">MDR</td>
-<td id="T_bf24b_row24_col1" class="data row24 col1">Monatsschrift für Deutsches Recht</td>
+<td id="T_fec1a_row24_col0" class="data row24 col0">MDR</td>
+<td id="T_fec1a_row24_col1" class="data row24 col1">Monatsschrift für Deutsches Recht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row25_col0" class="data row25 col0">NJW</td>
-<td id="T_bf24b_row25_col1" class="data row25 col1">Neue juristische Wochenschrift</td>
+<td id="T_fec1a_row25_col0" class="data row25 col0">NJW</td>
+<td id="T_fec1a_row25_col1" class="data row25 col1">Neue juristische Wochenschrift</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row26_col0" class="data row26 col0">NStZ</td>
-<td id="T_bf24b_row26_col1" class="data row26 col1">Neue Zeitschrift für Strafrecht</td>
+<td id="T_fec1a_row26_col0" class="data row26 col0">NStZ</td>
+<td id="T_fec1a_row26_col1" class="data row26 col1">Neue Zeitschrift für Strafrecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row27_col0" class="data row27 col0">NVwZ</td>
-<td id="T_bf24b_row27_col1" class="data row27 col1">Neue Zeitschrift für Verwaltungsrecht</td>
+<td id="T_fec1a_row27_col0" class="data row27 col0">NVwZ</td>
+<td id="T_fec1a_row27_col1" class="data row27 col1">Neue Zeitschrift für Verwaltungsrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row28_col0" class="data row28 col0">NZA</td>
-<td id="T_bf24b_row28_col1" class="data row28 col1">Neue Zeitschrift für Arbeitsrecht</td>
+<td id="T_fec1a_row28_col0" class="data row28 col0">NZA</td>
+<td id="T_fec1a_row28_col1" class="data row28 col1">Neue Zeitschrift für Arbeitsrecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row29_col0" class="data row29 col0">NZG</td>
-<td id="T_bf24b_row29_col1" class="data row29 col1">Neue Zeitschrift für Gesellschaftsrecht</td>
+<td id="T_fec1a_row29_col0" class="data row29 col0">NZG</td>
+<td id="T_fec1a_row29_col1" class="data row29 col1">Neue Zeitschrift für Gesellschaftsrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row30_col0" class="data row30 col0">NZS</td>
-<td id="T_bf24b_row30_col1" class="data row30 col1">Neue Zeitschrift for Sozialrecht</td>
+<td id="T_fec1a_row30_col0" class="data row30 col0">NZS</td>
+<td id="T_fec1a_row30_col1" class="data row30 col1">Neue Zeitschrift for Sozialrecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row31_col0" class="data row31 col0">RabelsZ</td>
-<td id="T_bf24b_row31_col1" class="data row31 col1">Rabels Zeitschrift für ausländisches und internationales Privatrecht</td>
+<td id="T_fec1a_row31_col0" class="data row31 col0">RabelsZ</td>
+<td id="T_fec1a_row31_col1" class="data row31 col1">Rabels Zeitschrift für ausländisches und internationales Privatrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row32_col0" class="data row32 col0">RdA</td>
-<td id="T_bf24b_row32_col1" class="data row32 col1">Recht der Arbeit</td>
+<td id="T_fec1a_row32_col0" class="data row32 col0">RdA</td>
+<td id="T_fec1a_row32_col1" class="data row32 col1">Recht der Arbeit</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row33_col0" class="data row33 col0">StV</td>
-<td id="T_bf24b_row33_col1" class="data row33 col1">Der Strafverteidiger</td>
+<td id="T_fec1a_row33_col0" class="data row33 col0">StV</td>
+<td id="T_fec1a_row33_col1" class="data row33 col1">Der Strafverteidiger</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row34_col0" class="data row34 col0">Staat</td>
-<td id="T_bf24b_row34_col1" class="data row34 col1">Der Staat</td>
+<td id="T_fec1a_row34_col0" class="data row34 col0">Staat</td>
+<td id="T_fec1a_row34_col1" class="data row34 col1">Der Staat</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row35_col0" class="data row35 col0">StraFo</td>
-<td id="T_bf24b_row35_col1" class="data row35 col1">Strafverteidigerforum</td>
+<td id="T_fec1a_row35_col0" class="data row35 col0">StraFo</td>
+<td id="T_fec1a_row35_col1" class="data row35 col1">Strafverteidigerforum</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row36_col0" class="data row36 col0">Verw</td>
-<td id="T_bf24b_row36_col1" class="data row36 col1">Die Verwaltung</td>
+<td id="T_fec1a_row36_col0" class="data row36 col0">Verw</td>
+<td id="T_fec1a_row36_col1" class="data row36 col1">Die Verwaltung</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row37_col0" class="data row37 col0">VerwArch</td>
-<td id="T_bf24b_row37_col1" class="data row37 col1">Verwaltungsarchiv</td>
+<td id="T_fec1a_row37_col0" class="data row37 col0">VerwArch</td>
+<td id="T_fec1a_row37_col1" class="data row37 col1">Verwaltungsarchiv</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row38_col0" class="data row38 col0">WM</td>
-<td id="T_bf24b_row38_col1" class="data row38 col1">Zeitschrift für Wirtschafts- und Bankrecht</td>
+<td id="T_fec1a_row38_col0" class="data row38 col0">WM</td>
+<td id="T_fec1a_row38_col1" class="data row38 col1">Zeitschrift für Wirtschafts- und Bankrecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row39_col0" class="data row39 col0">ZFA</td>
-<td id="T_bf24b_row39_col1" class="data row39 col1">Zeitschrift für Arbeitsrecht</td>
+<td id="T_fec1a_row39_col0" class="data row39 col0">ZFA</td>
+<td id="T_fec1a_row39_col1" class="data row39 col1">Zeitschrift für Arbeitsrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row40_col0" class="data row40 col0">ZGR</td>
-<td id="T_bf24b_row40_col1" class="data row40 col1">Zeitschrift für Gesellschaftsrecht (Zeitschrift für Unternehmens- und…</td>
+<td id="T_fec1a_row40_col0" class="data row40 col0">ZGR</td>
+<td id="T_fec1a_row40_col1" class="data row40 col1">Zeitschrift für Gesellschaftsrecht (Zeitschrift für Unternehmens- und…</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row41_col0" class="data row41 col0">ZHR</td>
-<td id="T_bf24b_row41_col1" class="data row41 col1">Zeitschrift für das gesamte Handels- und Wirtschaftsrecht</td>
+<td id="T_fec1a_row41_col0" class="data row41 col0">ZHR</td>
+<td id="T_fec1a_row41_col1" class="data row41 col1">Zeitschrift für das gesamte Handels- und Wirtschaftsrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row42_col0" class="data row42 col0">ZIP</td>
-<td id="T_bf24b_row42_col1" class="data row42 col1">Zeitschrift für Wirtschaftsrecht</td>
+<td id="T_fec1a_row42_col0" class="data row42 col0">ZIP</td>
+<td id="T_fec1a_row42_col1" class="data row42 col1">Zeitschrift für Wirtschaftsrecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row43_col0" class="data row43 col0">ZIS</td>
-<td id="T_bf24b_row43_col1" class="data row43 col1">Zeitschrift für Strafrechtsdogmatik</td>
+<td id="T_fec1a_row43_col0" class="data row43 col0">ZIS</td>
+<td id="T_fec1a_row43_col1" class="data row43 col1">Zeitschrift für Strafrechtsdogmatik</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row44_col0" class="data row44 col0">ZRG</td>
-<td id="T_bf24b_row44_col1" class="data row44 col1">Zeitschrift der Savigny-Stiftung fur Rechtsgeschichte</td>
+<td id="T_fec1a_row44_col0" class="data row44 col0">ZRG</td>
+<td id="T_fec1a_row44_col1" class="data row44 col1">Zeitschrift der Savigny-Stiftung fur Rechtsgeschichte</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row45_col0" class="data row45 col0">ZRP</td>
-<td id="T_bf24b_row45_col1" class="data row45 col1">Zeitschrift für Rechtspolitik</td>
+<td id="T_fec1a_row45_col0" class="data row45 col0">ZRP</td>
+<td id="T_fec1a_row45_col1" class="data row45 col1">Zeitschrift für Rechtspolitik</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row46_col0" class="data row46 col0">ZStW</td>
-<td id="T_bf24b_row46_col1" class="data row46 col1">Zeitschrift für die gesamte Strafrechtswissenschaft</td>
+<td id="T_fec1a_row46_col0" class="data row46 col0">ZStW</td>
+<td id="T_fec1a_row46_col1" class="data row46 col1">Zeitschrift für die gesamte Strafrechtswissenschaft</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row47_col0" class="data row47 col0">ZZP</td>
-<td id="T_bf24b_row47_col1" class="data row47 col1">Zeitschrift für Zivilprozess</td>
+<td id="T_fec1a_row47_col0" class="data row47 col0">ZZP</td>
+<td id="T_fec1a_row47_col1" class="data row47 col1">Zeitschrift für Zivilprozess</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row48_col0" class="data row48 col0">ZaoRV</td>
-<td id="T_bf24b_row48_col1" class="data row48 col1">Zeitschrift für ausländisches offentliches Recht und Volkerrecht</td>
+<td id="T_fec1a_row48_col0" class="data row48 col0">ZaoRV</td>
+<td id="T_fec1a_row48_col1" class="data row48 col1">Zeitschrift für ausländisches offentliches Recht und Volkerrecht</td>
 </tr>
 <tr class="even">
-<td id="T_bf24b_row49_col0" class="data row49 col0">ZeuP</td>
-<td id="T_bf24b_row49_col1" class="data row49 col1">Zeitschrift für europäisches Privatrecht</td>
+<td id="T_fec1a_row49_col0" class="data row49 col0">ZeuP</td>
+<td id="T_fec1a_row49_col1" class="data row49 col1">Zeitschrift für europäisches Privatrecht</td>
 </tr>
 <tr class="odd">
-<td id="T_bf24b_row50_col0" class="data row50 col0">wistra</td>
-<td id="T_bf24b_row50_col1" class="data row50 col1">Zeitschrift für Wirtschafts- und Steuerstrafrecht</td>
+<td id="T_fec1a_row50_col0" class="data row50 col0">wistra</td>
+<td id="T_fec1a_row50_col1" class="data row50 col1">Zeitschrift für Wirtschafts- und Steuerstrafrecht</td>
 </tr>
 </tbody>
 </table>
@@ -1031,7 +1031,7 @@ Table&nbsp;4: List of 51 most highly ranked law journals according to Gröls/Gr�
 </figure>
 </div>
 </div>
-<p>As stated earlier, one possible objection against using the study by Gröls &amp; Gröls for our benchmark set is its age. Specifically, there could be the risk of missing relevant journals established after 2009 or not accounting for the fact that more recent rankings would vastly diverge from one fifteen years ago. In fact, for domain experts it seems an obvious problem that journals as e.g.&nbsp;<em>Rechtswissenschaft</em> (est. 2010) or <em>Recht und Zugang</em> (est. 2020), are necessarily not included in our gold standard and thus are not part of our study.</p>
+<p>As stated earlier, one possible objection to using the study by Gröls &amp; Gröls for our benchmark set is its age. Specifically, there could be the risk of missing relevant journals established after 2009 or not accounting for the fact that more recent rankings would vastly diverge from one fifteen years ago. In fact, for domain experts it seems an obvious problem that journals such as <em>Rechtswissenschaft</em> (est. 2010) or <em>Recht und Zugang</em> (est. 2020), are necessarily not included in our gold standard and thus are not part of our study.</p>
 <p>However, we believe that the utility of using Gröls/Gröls data outweighs those objections for two reasons. First, similar to the situation described by Gröls/Gröls in 2009, there is simply not much alternative research to be found that would be more recent and at least equally suited for generating our set. In other words, having the risk of incomplete data is more favorable than no data at all. Second, we assume the market for German law journals to be a fairly static one, thus deeming it highly likely that a more recent ranking would more or less include the same publications as fifteen years ago, with the exception of the above mentioned journals.</p>
 </section>
 <section id="coverage-of-benchmark-set-journals-in-other-sources" class="level4">
@@ -1066,33 +1066,33 @@ Table&nbsp;4: List of 51 most highly ranked law journals according to Gröls/Gr�
 Table&nbsp;5: Coverage of benchmark set journals in the bibliometric databases
 </figcaption>
 <div aria-describedby="tbl-benchmark-set-coverage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="113">
+<div class="cell-output cell-output-display" data-execution_count="63">
 <style type="text/css">
 </style>
 
-<table id="T_4c30d" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_61638" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_4c30d_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Database</th>
-<th id="T_4c30d_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Benchmark set journals</th>
-<th id="T_4c30d_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Recall</th>
+<th id="T_61638_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Database</th>
+<th id="T_61638_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Benchmark set journals</th>
+<th id="T_61638_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Recall</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_4c30d_row0_col0" class="data row0 col0">wos</td>
-<td id="T_4c30d_row0_col1" class="data row0 col1">0</td>
-<td id="T_4c30d_row0_col2" class="data row0 col2">0.000000</td>
+<td id="T_61638_row0_col0" class="data row0 col0">wos</td>
+<td id="T_61638_row0_col1" class="data row0 col1">0</td>
+<td id="T_61638_row0_col2" class="data row0 col2">0.000000</td>
 </tr>
 <tr class="even">
-<td id="T_4c30d_row1_col0" class="data row1 col0">scp</td>
-<td id="T_4c30d_row1_col1" class="data row1 col1">5</td>
-<td id="T_4c30d_row1_col2" class="data row1 col2">0.100000</td>
+<td id="T_61638_row1_col0" class="data row1 col0">scp</td>
+<td id="T_61638_row1_col1" class="data row1 col1">5</td>
+<td id="T_61638_row1_col2" class="data row1 col2">0.100000</td>
 </tr>
 <tr class="odd">
-<td id="T_4c30d_row2_col0" class="data row2 col0">openalex</td>
-<td id="T_4c30d_row2_col1" class="data row2 col1">32</td>
-<td id="T_4c30d_row2_col2" class="data row2 col2">0.600000</td>
+<td id="T_61638_row2_col0" class="data row2 col0">openalex</td>
+<td id="T_61638_row2_col1" class="data row2 col1">32</td>
+<td id="T_61638_row2_col2" class="data row2 col2">0.600000</td>
 </tr>
 </tbody>
 </table>
@@ -1101,7 +1101,7 @@ Table&nbsp;5: Coverage of benchmark set journals in the bibliometric databases
 </figure>
 </div>
 </div>
-<p>Expressed in a more formal metrics, the <em>recall</em> of our benchmark set against the classification-based search<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> is 0 for WoS, 0.1 for Scopus and 0.6 for OpenAlex. We cannot really compute a <em>precision</em> here, which would require some sort way of determining journal relevance. Our search returned journals having the feature “law” and “German”, but with no indication of their quality or impact. In contrast, our benchmark set is based on their perceived ‘relevance’ among the population of legal scholars in the survey. In standard bibliometric analysis, the ‘impact factor’ would be derived by measuring the number of references to articles in that journal (citation count), but this is not really possible because of the lack of reliable citation data, as we show in section 4.2.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
+<p>Expressed in a more formal metrics, the <em>recall</em> of our benchmark set against the classification-based search<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> is 0 for WoS, 0.1 for Scopus and 0.6 for OpenAlex. We cannot really compute a <em>precision</em> here, which would require some way of determining journal relevance. Our search returned journals having the feature “law” and “German”, but with no indication of their quality or impact. In contrast, our benchmark set is based on their perceived ‘relevance’ among the population of legal scholars in the survey. In standard bibliometric analysis, the ‘impact factor’ would be derived by measuring the number of references to articles in that journal (citation count), but this is not really possible because of the lack of reliable citation data, as we show in section 4.2.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
 <p>Next, we measured how well the benchmark set journals is covered in the bibliometric databases. This question is a somewhat different from the previous as the comparison does not depend on any selection based on metadata in those databases. While the first approach is concerned with the equivalence of common features (“law” , “German”), the second addresses the coverage of these recognized sources within the databases in question. Unsurprisingly, the results confirm our finding that OpenAlex is the only bibliometric database that is worth exploring further. <a href="#fig-benchmark-set-coverage-visual" class="quarto-xref">Figure&nbsp;4</a> shows the coverage of our benchmark set in the Web of Science, Scopus, OpenAlex and CrossRef<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> that visually makes this clear.</p>
 <div id="cell-fig-benchmark-set-coverage-visual" class="cell" data-execution_count="10">
 <details class="code-fold">
@@ -1184,7 +1184,7 @@ Figure&nbsp;5: Intersections between the benchmark set and online lists
 <h2 class="anchored" data-anchor-id="coverage-on-item-and-metadata-level-and-quality-of-metadata">4. Coverage on item and metadata level and quality of metadata</h2>
 <p>As stated above, only one of the three bibliometric databases taken into account seems to cover a sufficient amount of journals considered ‘relevant’ from experts in the field. For this reason, we concentrate on OpenAlex in the following.</p>
 <p>Up to this point, our analysis was restricted to the coverage on journal level, where we found that most of the journals from our benchmark set are covered by OpenAlex. For bibliometric analyses, this coverage on journal level is not sufficient. In addition to the pure existence of the journal in the database, the coverage quality is decisive, which is only given if a) all articles of the journal exist in the database (coverage on article level), and b) metadata of articles should be available (coverage on metadata level) in a sufficient quality.</p>
-<p>As our journal benchmark set does not help in these respect, a further - item based - benchmark set is needed. For this, we contacted a number of publishers of journals in the journal benchmark set and asked for their original data. Three publishers provided data, for a total of seven journals:</p>
+<p>As our journal benchmark set does not help in this respect, a further - item based - benchmark set is needed. For this, we contacted a number of publishers of journals in the journal benchmark set and asked for their original data. Three publishers provided data, for a total of seven journals:</p>
 <ul>
 <li><strong>Mohr Siebeck</strong>: JuristenZeitung; Archiv fur die civilistische Praxis; Rabels Zeitschrift für ausländisches und internationales Recht; Archiv des öffentlichen Rechts</li>
 <li><strong>Duncker &amp; Humblot</strong>: Der Staat</li>
@@ -1234,7 +1234,7 @@ Figure&nbsp;6: Comparison of article count between publisher data and OpenAlex
 </section>
 <section id="b.-checking-article-completeness-via-doi-matching" class="level4">
 <h4 class="anchored" data-anchor-id="b.-checking-article-completeness-via-doi-matching">b. Checking article completeness via DOI matching</h4>
-<p>Simply having almost equal quantities of articles in either set isn’t adequate. It is necessary to ensure that the identical elements exist in both. If this isn’t done, some items may be absent in one set and others in another, leading to an equal article count but differing sets. Thus, as a subsequent step, we correlated the articles from OpenAlex against those from publisher data, utilizing the DOI available in both sources. <a href="#tbl-compare-publisherdata-openalex-doi" class="quarto-xref">Table&nbsp;6</a> shows the number of DOIs which are only found in OpenAlex when categorized by journal with the earliest and the most recent year of missing DOIs. When compared to the overall quantity of articles, these numbers are negligible, which means that in terms of the DOI coverage, the data quality in OpenAlex seems good.</p>
+<p>Simply having almost equal quantities of articles in either set isn’t adequate. It is necessary to ensure that the identical elements exist in both. If this isn’t done, some items may be absent in one set and others in another, leading to an equal article count but differing sets. Thus, as a subsequent step, we correlated the articles from OpenAlex against those from publisher data, utilizing the DOIs available in both sources. <a href="#tbl-compare-publisherdata-openalex-doi" class="quarto-xref">Table&nbsp;6</a> shows the number of DOIs which are only found in OpenAlex when categorized by journal with the earliest and the most recent year of DOIs missing from the pubisher data. When compared to the overall quantity of articles, these numbers are negligible, which means that in terms of the DOI coverage, the data quality in OpenAlex seems good.</p>
 <div class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1264,61 +1264,61 @@ Figure&nbsp;6: Comparison of article count between publisher data and OpenAlex
 Table&nbsp;6: Comparison of DOIs between publisher data and OpenAlex
 </figcaption>
 <div aria-describedby="tbl-compare-publisherdata-openalex-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="117">
+<div class="cell-output cell-output-display" data-execution_count="67">
 <style type="text/css">
 </style>
 
-<table id="T_0d20b" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_d5a03" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_0d20b_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
-<th id="T_0d20b_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Missing DOIs</th>
-<th id="T_0d20b_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Min year</th>
-<th id="T_0d20b_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">Max Year</th>
+<th id="T_d5a03_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_d5a03_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Missing DOIs</th>
+<th id="T_d5a03_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Min year</th>
+<th id="T_d5a03_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">Max Year</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_0d20b_row0_col0" class="data row0 col0">AcP</td>
-<td id="T_0d20b_row0_col1" class="data row0 col1">16</td>
-<td id="T_0d20b_row0_col2" class="data row0 col2">1976</td>
-<td id="T_0d20b_row0_col3" class="data row0 col3">2018</td>
+<td id="T_d5a03_row0_col0" class="data row0 col0">AcP</td>
+<td id="T_d5a03_row0_col1" class="data row0 col1">16</td>
+<td id="T_d5a03_row0_col2" class="data row0 col2">1976</td>
+<td id="T_d5a03_row0_col3" class="data row0 col3">2018</td>
 </tr>
 <tr class="even">
-<td id="T_0d20b_row1_col0" class="data row1 col0">AöR</td>
-<td id="T_0d20b_row1_col1" class="data row1 col1">2</td>
-<td id="T_0d20b_row1_col2" class="data row1 col2">1993</td>
-<td id="T_0d20b_row1_col3" class="data row1 col3">2008</td>
+<td id="T_d5a03_row1_col0" class="data row1 col0">AöR</td>
+<td id="T_d5a03_row1_col1" class="data row1 col1">2</td>
+<td id="T_d5a03_row1_col2" class="data row1 col2">1993</td>
+<td id="T_d5a03_row1_col3" class="data row1 col3">2008</td>
 </tr>
 <tr class="odd">
-<td id="T_0d20b_row2_col0" class="data row2 col0">JZ</td>
-<td id="T_0d20b_row2_col1" class="data row2 col1">65</td>
-<td id="T_0d20b_row2_col2" class="data row2 col2">1997</td>
-<td id="T_0d20b_row2_col3" class="data row2 col3">2021</td>
+<td id="T_d5a03_row2_col0" class="data row2 col0">JZ</td>
+<td id="T_d5a03_row2_col1" class="data row2 col1">65</td>
+<td id="T_d5a03_row2_col2" class="data row2 col2">1997</td>
+<td id="T_d5a03_row2_col3" class="data row2 col3">2021</td>
 </tr>
 <tr class="even">
-<td id="T_0d20b_row3_col0" class="data row3 col0">KJ</td>
-<td id="T_0d20b_row3_col1" class="data row3 col1">13</td>
-<td id="T_0d20b_row3_col2" class="data row3 col2">2018</td>
-<td id="T_0d20b_row3_col3" class="data row3 col3">2023</td>
+<td id="T_d5a03_row3_col0" class="data row3 col0">KJ</td>
+<td id="T_d5a03_row3_col1" class="data row3 col1">13</td>
+<td id="T_d5a03_row3_col2" class="data row3 col2">2018</td>
+<td id="T_d5a03_row3_col3" class="data row3 col3">2023</td>
 </tr>
 <tr class="odd">
-<td id="T_0d20b_row4_col0" class="data row4 col0">KritV</td>
-<td id="T_0d20b_row4_col1" class="data row4 col1">10</td>
-<td id="T_0d20b_row4_col2" class="data row4 col2">2023</td>
-<td id="T_0d20b_row4_col3" class="data row4 col3">2023</td>
+<td id="T_d5a03_row4_col0" class="data row4 col0">KritV</td>
+<td id="T_d5a03_row4_col1" class="data row4 col1">10</td>
+<td id="T_d5a03_row4_col2" class="data row4 col2">2023</td>
+<td id="T_d5a03_row4_col3" class="data row4 col3">2023</td>
 </tr>
 <tr class="even">
-<td id="T_0d20b_row5_col0" class="data row5 col0">RabelsZ</td>
-<td id="T_0d20b_row5_col1" class="data row5 col1">12</td>
-<td id="T_0d20b_row5_col2" class="data row5 col2">1977</td>
-<td id="T_0d20b_row5_col3" class="data row5 col3">2023</td>
+<td id="T_d5a03_row5_col0" class="data row5 col0">RabelsZ</td>
+<td id="T_d5a03_row5_col1" class="data row5 col1">12</td>
+<td id="T_d5a03_row5_col2" class="data row5 col2">1977</td>
+<td id="T_d5a03_row5_col3" class="data row5 col3">2023</td>
 </tr>
 <tr class="odd">
-<td id="T_0d20b_row6_col0" class="data row6 col0">Staat</td>
-<td id="T_0d20b_row6_col1" class="data row6 col1">4</td>
-<td id="T_0d20b_row6_col2" class="data row6 col2">1977</td>
-<td id="T_0d20b_row6_col3" class="data row6 col3">2023</td>
+<td id="T_d5a03_row6_col0" class="data row6 col0">Staat</td>
+<td id="T_d5a03_row6_col1" class="data row6 col1">4</td>
+<td id="T_d5a03_row6_col2" class="data row6 col2">1977</td>
+<td id="T_d5a03_row6_col3" class="data row6 col3">2023</td>
 </tr>
 </tbody>
 </table>
@@ -1330,7 +1330,7 @@ Table&nbsp;6: Comparison of DOIs between publisher data and OpenAlex
 <p>Several factors contributed to the observed mismatch between the publisher data and OpenAlex. Not only did the publisher data lack coverage for certain years, but also some newer publications were only present in OpenAlex, highlighting a potential limitation of the publisher data. A closer examination of the discrepancies revealed several distinct cases, including:</p>
 <ul>
 <li><p>Temporal discrepancies, where publications were recorded with different publication years in the two datasets (e.g., 2024 in the publisher data vs.&nbsp;2023 in OpenAlex), leading to publications being excluded from our analysis because of the exclusions mentioned above.</p></li>
-<li><p>Duplicate DOIs in OpenAlex, which appeared to correspond to the same publication, but were not present in the publisher data. This was observed in cases where a single publication had multiple DOIs, such as self-archived versions, corrections, or where one DOIs had been assigned to a whole for a whole journal section (i.e.&nbsp;“book reviews”) rather than the individual components of a the section (i.e., the individual reviews).</p></li>
+<li><p>Duplicate DOIs in OpenAlex, which appeared to correspond to the same publication, but were not present in the publisher data. This was observed in cases where a single publication had multiple DOIs, such as self-archived versions, corrections, or where one DOIs had been assigned to an entire journal section (i.e.&nbsp;“book reviews”) rather than the individual components of the section (i.e., the individual reviews).</p></li>
 </ul>
 <p>Conversely, a total of 67 DOIs were found to be missing in OpenAlex, as presented in <a href="#tbl-openalex-missing-dois" class="quarto-xref">Table&nbsp;7</a>. Notably, the number of missing articles was relatively low. However, a closer examination revealed a striking pattern: the majority of missing articles (58 out of 67) were from the publication year 2022. This suggests a potential issue with the timing of data updates in OpenAlex. Specifically, we observed instances where a DOI or item was present in a more recent OpenAlex snapshot, but was missing from an earlier snapshot. For example, the DOI ‘10.1628/acp-2022-0013’ was not present in the August 2024 snapshot, but was included in the November 2024 snapshot. This highlights the importance of considering the timing of data updates when analyzing bibliometric data.</p>
 <div class="cell" data-execution_count="14">
@@ -1358,41 +1358,41 @@ Table&nbsp;6: Comparison of DOIs between publisher data and OpenAlex
 Table&nbsp;7: Number of DOIs missing in OpenAlex
 </figcaption>
 <div aria-describedby="tbl-openalex-missing-dois-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="118">
+<div class="cell-output cell-output-display" data-execution_count="68">
 <style type="text/css">
 </style>
 
-<table id="T_140a1" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_c199a" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_140a1_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
-<th id="T_140a1_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Missing DOIs</th>
+<th id="T_c199a_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_c199a_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Missing DOIs</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_140a1_row0_col0" class="data row0 col0">AcP</td>
-<td id="T_140a1_row0_col1" class="data row0 col1">7</td>
+<td id="T_c199a_row0_col0" class="data row0 col0">AcP</td>
+<td id="T_c199a_row0_col1" class="data row0 col1">7</td>
 </tr>
 <tr class="even">
-<td id="T_140a1_row1_col0" class="data row1 col0">AöR</td>
-<td id="T_140a1_row1_col1" class="data row1 col1">3</td>
+<td id="T_c199a_row1_col0" class="data row1 col0">AöR</td>
+<td id="T_c199a_row1_col1" class="data row1 col1">3</td>
 </tr>
 <tr class="odd">
-<td id="T_140a1_row2_col0" class="data row2 col0">JZ</td>
-<td id="T_140a1_row2_col1" class="data row2 col1">44</td>
+<td id="T_c199a_row2_col0" class="data row2 col0">JZ</td>
+<td id="T_c199a_row2_col1" class="data row2 col1">44</td>
 </tr>
 <tr class="even">
-<td id="T_140a1_row3_col0" class="data row3 col0">KJ</td>
-<td id="T_140a1_row3_col1" class="data row3 col1">1</td>
+<td id="T_c199a_row3_col0" class="data row3 col0">KJ</td>
+<td id="T_c199a_row3_col1" class="data row3 col1">1</td>
 </tr>
 <tr class="odd">
-<td id="T_140a1_row4_col0" class="data row4 col0">KritV</td>
-<td id="T_140a1_row4_col1" class="data row4 col1">10</td>
+<td id="T_c199a_row4_col0" class="data row4 col0">KritV</td>
+<td id="T_c199a_row4_col1" class="data row4 col1">10</td>
 </tr>
 <tr class="even">
-<td id="T_140a1_row5_col0" class="data row5 col0">RabelsZ</td>
-<td id="T_140a1_row5_col1" class="data row5 col1">2</td>
+<td id="T_c199a_row5_col0" class="data row5 col0">RabelsZ</td>
+<td id="T_c199a_row5_col1" class="data row5 col1">2</td>
 </tr>
 </tbody>
 </table>
@@ -1404,7 +1404,7 @@ Table&nbsp;7: Number of DOIs missing in OpenAlex
 </section>
 <section id="c.-publication-years-coverage" class="level4">
 <h4 class="anchored" data-anchor-id="c.-publication-years-coverage">c.&nbsp;Publication years coverage</h4>
-<p>As a last analysis concerning article coverage we tried to check how the journal coverage compared to the whole lifetime of a journal. <a href="#fig-oa-zdb-coverage-comparison" class="quarto-xref">Figure&nbsp;7</a> plots the period of the first and last occurrence of OpenAlex data against the period between from the first and last publication year of the journal as stored in the ZDB. Both lines cannot be taken at face value as for simplicity, we have not plotted gaps in publication years or coverage; the graph also does not visualize how much data exists for a journal in a particular year. However, <a href="#fig-oa-zdb-coverage-comparison" class="quarto-xref">Figure&nbsp;7</a> shows very well that only in very few cases, the data in OpenAlex covers the whole lifetime of a journal, and even where there is coverage, it shouldn’t be assumed to be complete.</p>
+<p>As a last analysis concerning article coverage we tried to check how the journal coverage compared to the whole lifetime of a journal. <a href="#fig-oa-zdb-coverage-comparison" class="quarto-xref">Figure&nbsp;7</a> plots the period of the first and last occurrence of OpenAlex data against the period between the first and the last publication year of the journal as stored in the ZDB. Both lines cannot be taken at face value as for simplicity, we have not plotted gaps in publication years or coverage; the graph also does not visualize how much data exists for a journal in a particular year. However, <a href="#fig-oa-zdb-coverage-comparison" class="quarto-xref">Figure&nbsp;7</a> shows very well that only in very few cases, the data in OpenAlex covers the whole lifetime of a journal, and even where there is coverage, it shouldn’t be assumed to be complete.</p>
 <div id="cell-fig-oa-zdb-coverage-comparison" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1533,83 +1533,83 @@ Figure&nbsp;7: Coverage of benchmark set journals in OpenAlex compared to actual
 Table&nbsp;8: Frequency of differences between publication years in OpenAlex and publisher data
 </figcaption>
 <div aria-describedby="tbl-cmp-pubyears-oa-publisher-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="120">
+<div class="cell-output cell-output-display" data-execution_count="70">
 <style type="text/css">
 </style>
 
-<table id="T_b0685" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_37254" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_b0685_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
-<th id="T_b0685_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Difference</th>
-<th id="T_b0685_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Number of Articles</th>
+<th id="T_37254_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Journal</th>
+<th id="T_37254_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Difference</th>
+<th id="T_37254_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Number of Articles</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_b0685_row0_col0" class="data row0 col0">AcP</td>
-<td id="T_b0685_row0_col1" class="data row0 col1">0</td>
-<td id="T_b0685_row0_col2" class="data row0 col2">729</td>
+<td id="T_37254_row0_col0" class="data row0 col0">AcP</td>
+<td id="T_37254_row0_col1" class="data row0 col1">0</td>
+<td id="T_37254_row0_col2" class="data row0 col2">729</td>
 </tr>
 <tr class="even">
-<td id="T_b0685_row1_col0" class="data row1 col0">AöR</td>
-<td id="T_b0685_row1_col1" class="data row1 col1">0</td>
-<td id="T_b0685_row1_col2" class="data row1 col2">920</td>
+<td id="T_37254_row1_col0" class="data row1 col0">AöR</td>
+<td id="T_37254_row1_col1" class="data row1 col1">0</td>
+<td id="T_37254_row1_col2" class="data row1 col2">920</td>
 </tr>
 <tr class="odd">
-<td id="T_b0685_row2_col0" class="data row2 col0">JZ</td>
-<td id="T_b0685_row2_col1" class="data row2 col1">-5</td>
-<td id="T_b0685_row2_col2" class="data row2 col2">12</td>
+<td id="T_37254_row2_col0" class="data row2 col0">JZ</td>
+<td id="T_37254_row2_col1" class="data row2 col1">-5</td>
+<td id="T_37254_row2_col2" class="data row2 col2">12</td>
 </tr>
 <tr class="even">
-<td id="T_b0685_row3_col0" class="data row3 col0">JZ</td>
-<td id="T_b0685_row3_col1" class="data row3 col1">0</td>
-<td id="T_b0685_row3_col2" class="data row3 col2">5650</td>
+<td id="T_37254_row3_col0" class="data row3 col0">JZ</td>
+<td id="T_37254_row3_col1" class="data row3 col1">0</td>
+<td id="T_37254_row3_col2" class="data row3 col2">5650</td>
 </tr>
 <tr class="odd">
-<td id="T_b0685_row4_col0" class="data row4 col0">KJ</td>
-<td id="T_b0685_row4_col1" class="data row4 col1">0</td>
-<td id="T_b0685_row4_col2" class="data row4 col2">2538</td>
+<td id="T_37254_row4_col0" class="data row4 col0">KJ</td>
+<td id="T_37254_row4_col1" class="data row4 col1">0</td>
+<td id="T_37254_row4_col2" class="data row4 col2">2538</td>
 </tr>
 <tr class="even">
-<td id="T_b0685_row5_col0" class="data row5 col0">KJ</td>
-<td id="T_b0685_row5_col1" class="data row5 col1">1</td>
-<td id="T_b0685_row5_col2" class="data row5 col2">33</td>
+<td id="T_37254_row5_col0" class="data row5 col0">KJ</td>
+<td id="T_37254_row5_col1" class="data row5 col1">1</td>
+<td id="T_37254_row5_col2" class="data row5 col2">33</td>
 </tr>
 <tr class="odd">
-<td id="T_b0685_row6_col0" class="data row6 col0">KritV</td>
-<td id="T_b0685_row6_col1" class="data row6 col1">0</td>
-<td id="T_b0685_row6_col2" class="data row6 col2">400</td>
+<td id="T_37254_row6_col0" class="data row6 col0">KritV</td>
+<td id="T_37254_row6_col1" class="data row6 col1">0</td>
+<td id="T_37254_row6_col2" class="data row6 col2">400</td>
 </tr>
 <tr class="even">
-<td id="T_b0685_row7_col0" class="data row7 col0">KritV</td>
-<td id="T_b0685_row7_col1" class="data row7 col1">1</td>
-<td id="T_b0685_row7_col2" class="data row7 col2">180</td>
+<td id="T_37254_row7_col0" class="data row7 col0">KritV</td>
+<td id="T_37254_row7_col1" class="data row7 col1">1</td>
+<td id="T_37254_row7_col2" class="data row7 col2">180</td>
 </tr>
 <tr class="odd">
-<td id="T_b0685_row8_col0" class="data row8 col0">RabelsZ</td>
-<td id="T_b0685_row8_col1" class="data row8 col1">-16</td>
-<td id="T_b0685_row8_col2" class="data row8 col2">21</td>
+<td id="T_37254_row8_col0" class="data row8 col0">RabelsZ</td>
+<td id="T_37254_row8_col1" class="data row8 col1">-16</td>
+<td id="T_37254_row8_col2" class="data row8 col2">21</td>
 </tr>
 <tr class="even">
-<td id="T_b0685_row9_col0" class="data row9 col0">RabelsZ</td>
-<td id="T_b0685_row9_col1" class="data row9 col1">-4</td>
-<td id="T_b0685_row9_col2" class="data row9 col2">22</td>
+<td id="T_37254_row9_col0" class="data row9 col0">RabelsZ</td>
+<td id="T_37254_row9_col1" class="data row9 col1">-4</td>
+<td id="T_37254_row9_col2" class="data row9 col2">22</td>
 </tr>
 <tr class="odd">
-<td id="T_b0685_row10_col0" class="data row10 col0">RabelsZ</td>
-<td id="T_b0685_row10_col1" class="data row10 col1">-1</td>
-<td id="T_b0685_row10_col2" class="data row10 col2">43</td>
+<td id="T_37254_row10_col0" class="data row10 col0">RabelsZ</td>
+<td id="T_37254_row10_col1" class="data row10 col1">-1</td>
+<td id="T_37254_row10_col2" class="data row10 col2">43</td>
 </tr>
 <tr class="even">
-<td id="T_b0685_row11_col0" class="data row11 col0">RabelsZ</td>
-<td id="T_b0685_row11_col1" class="data row11 col1">0</td>
-<td id="T_b0685_row11_col2" class="data row11 col2">1300</td>
+<td id="T_37254_row11_col0" class="data row11 col0">RabelsZ</td>
+<td id="T_37254_row11_col1" class="data row11 col1">0</td>
+<td id="T_37254_row11_col2" class="data row11 col2">1300</td>
 </tr>
 <tr class="odd">
-<td id="T_b0685_row12_col0" class="data row12 col0">Staat</td>
-<td id="T_b0685_row12_col1" class="data row12 col1">0</td>
-<td id="T_b0685_row12_col2" class="data row12 col2">464</td>
+<td id="T_37254_row12_col0" class="data row12 col0">Staat</td>
+<td id="T_37254_row12_col1" class="data row12 col1">0</td>
+<td id="T_37254_row12_col2" class="data row12 col2">464</td>
 </tr>
 </tbody>
 </table>
@@ -1623,7 +1623,7 @@ Table&nbsp;8: Frequency of differences between publication years in OpenAlex and
 </section>
 <section id="b.-author-count" class="level4">
 <h4 class="anchored" data-anchor-id="b.-author-count">b. Author count</h4>
-<p>We then examined the number of authors for all articles in OpenAlex in journals in the benchmark set, compared to those in the publisher data. Only 69% of the OA articles (3319 in total) have at least one author, which means that the coverage of author metadata is far from complete. In the publisher data we also have items without authors (3021 in total), but usually this is restricted to items such as the ‘Inhaltsverzeichnis’ (table of content), ‘Redaktionelle Notiz’ (editorial), ‘Anzeigen’ (advertising). It is to expected that such item types do not have authors, although the fact that they have been classified as ‘article’ in the publisher data as well as OpenAlex data raises some doubts. Equally, the practice of giving the review section one single DOI has to be criticized from a bibliometric perspective, regardless of whether publishers add the authors of the review articles or not. This practice should be given up in favor of registering each book review with its own DOI and separate author.</p>
+<p>We then examined the number of authors for all articles in OpenAlex in journals in the benchmark set, compared to those in the publisher data. Only 69% of the OA articles (3319 in total) have at least one author, which means that the coverage of author metadata is far from complete. In the publisher data we also have items without authors (3021 in total), but usually this is restricted to items such as the ‘Inhaltsverzeichnis’ (table of content), ‘Redaktionelle Notiz’ (editorial), ‘Anzeigen’ (advertising). It is to be expected that such item types do not have authors, although the fact that they have been classified as ‘article’ in the publisher data as well as OpenAlex data raises some doubts. Equally, the practice of giving the review section one single DOI should be criticized from a bibliometric perspective, regardless of whether publishers add the authors of the review articles or not. This practice should be given up in favor of registering each book review with its own DOI and separate author.</p>
 <p>The differences in the number of authors of the publications in OpenAlex vs in the publisher data gives a first impression about the correctness of this data. <a href="#fig-cmp-numauthors-oa-publisher" class="quarto-xref">Figure&nbsp;8</a> shows how many articles with a specific difference in author numbers occur (where a positive difference means more authors in OpenAlex than publisher data while a negative difference means authors missing in OpenAlex). The x-axis corresponds to the difference, the y-axis the number of articles with this difference. So the ideal case would be all the journals having one only value at x=0, showing for all their articles there is an equal number of authors in OpenAlex and the publisher data. As <a href="#fig-cmp-numauthors-oa-publisher" class="quarto-xref">Figure&nbsp;8</a> shows, we do reach this ideal case but for most cases the number of authors is equal, differences appear only in rare cases (low y values for x values &lt;&gt; 0).</p>
 <p>Concerning the rest, different cases show up: for the JZ and KJ we have a quite high amount of publications with a small difference (1), while for the KJ and KritV we have very few cases with differences but these differences can be quite high (author count difference of more than 20).</p>
 <div id="cell-fig-cmp-numauthors-oa-publisher" class="cell" data-execution_count="17">
@@ -1668,7 +1668,7 @@ Figure&nbsp;8: Frequency of differences between the number of authors on the pub
 </div>
 </div>
 </div>
-<p>Among the cases where the numbered differed, a closer look showed that, for example,</p>
+<p>Among the cases where the number differed, a closer look showed that, for example,</p>
 <ul>
 <li><p>in publications with more than one author, authors were missing in OpenAlex as well as in CrossRef;</p></li>
 <li><p>the entry contained author duplicates in OpenAlex and in CrossRef;</p></li>
@@ -1678,7 +1678,7 @@ Figure&nbsp;8: Frequency of differences between the number of authors on the pub
 </section>
 <section id="c.-institutionaffiliations" class="level4">
 <h4 class="anchored" data-anchor-id="c.-institutionaffiliations">c.&nbsp;Institution/Affiliations</h4>
-<p>For author affiliations, the publisher data did not provide affiliation information, making it impossible to compare OpenAlex data with publisher data in this regard. Thus we limited our analysis to statistical analyses on the OpenAlex data itself, focusing on articles from journals in the benchmark set set.</p>
+<p>For author affiliations, the publisher data did not provide affiliation information, making it impossible to compare OpenAlex data with publisher data in this regard. Thus we limited our analysis to statistical analyses on the OpenAlex data itself, focusing on articles from journals in the benchmark set.</p>
 <p>OpenAlex offers two types of affiliation data: the original raw affiliation string, as it appears on the publication, and an institutional ID assigned through OpenAlex’s own disambiguation process. Additionally, OpenAlex provides an institution hierarchy, which could be leveraged for further analysis. However, the fact that only 4% of the publications have at least one `institution_id` assigned (6% when excluding publications without authors). And even for these few entries, the affiliation data is most probably incomplete as only one affiliation entry is present. Interestingly, most of the affiliations available are from an institution of the Max Planck society. There are a few cases in which a raw affiliation string exists, but no `institution_id` could be assigned by the disambiguation procedure.<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> This situation precludes any bibliometric analysis based on affiliation data, effectively rendering evaluations at the institutional level, including comparisons and rankings of institutions, impossible.</p>
 </section>
 <section id="d.-references-and-citations" class="level4">
@@ -1686,7 +1686,7 @@ Figure&nbsp;8: Frequency of differences between the number of authors on the pub
 <p>For references and citations, we face a similar limitation as before: the publisher data does not provide this information, preventing a comparison with the benchmark set. Consequently, we can only examine statistical trends within the OpenAlex data itself.</p>
 <section id="references" class="level5">
 <h5 class="anchored" data-anchor-id="references">References</h5>
-<p>References are the bibliographic data on the literature cited in a publication. Unfortunately, we observe that only 2.72% of all articles item in OpenAlex that belong to journals in our benchmark set contain data that indicates that they have (at least one) reference. As it is very unlikely that all other articles do not have references at all, the coverage of reference data seems to be extremely low.</p>
+<p>References are the bibliographic data on the literature cited in a publication. Unfortunately, we observe that only 2.72% of all article items in OpenAlex that belong to journals in our benchmark set contain data that indicates that they have (at least one) reference. As it is very unlikely that all other articles do not have references at all, the coverage of reference data seems to be extremely low.</p>
 <p><a href="#fig-openalex-refs" class="quarto-xref">Figure&nbsp;9</a> shows the huge differences between journals:</p>
 <div id="cell-fig-openalex-refs" class="cell" data-execution_count="19">
 <details class="code-fold">
@@ -1797,39 +1797,39 @@ Figure&nbsp;9: Share of articles with at least one reference per journal in the 
 Table&nbsp;9: Statistics on OpenAlex reference data in the benchmark set
 </figcaption>
 <div aria-describedby="tbl-oa-references-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="124">
+<div class="cell-output cell-output-display" data-execution_count="74">
 <style type="text/css">
-#T_44f45_row0_col0, #T_44f45_row1_col0, #T_44f45_row2_col0, #T_44f45_row3_col0 {
+#T_ed1c6_row0_col0, #T_ed1c6_row1_col0, #T_ed1c6_row2_col0, #T_ed1c6_row3_col0 {
   text-align: left;
 }
-#T_44f45_row0_col1, #T_44f45_row1_col1, #T_44f45_row2_col1, #T_44f45_row3_col1 {
+#T_ed1c6_row0_col1, #T_ed1c6_row1_col1, #T_ed1c6_row2_col1, #T_ed1c6_row3_col1 {
   text-align: right;
 }
 </style>
 
-<table id="T_44f45" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_ed1c6" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_44f45_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Query</th>
-<th id="T_44f45_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Result</th>
+<th id="T_ed1c6_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Query</th>
+<th id="T_ed1c6_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Result</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_44f45_row0_col0" class="data row0 col0">Percentage of OpenAlex article items in benchmark set with at least one reference</td>
-<td id="T_44f45_row0_col1" class="data row0 col1">2.72</td>
+<td id="T_ed1c6_row0_col0" class="data row0 col0">Percentage of OpenAlex article items in benchmark set with at least one reference</td>
+<td id="T_ed1c6_row0_col1" class="data row0 col1">2.72</td>
 </tr>
 <tr class="even">
-<td id="T_44f45_row1_col0" class="data row1 col0">Distinct publications cited</td>
-<td id="T_44f45_row1_col1" class="data row1 col1">5097.0</td>
+<td id="T_ed1c6_row1_col0" class="data row1 col0">Distinct publications cited</td>
+<td id="T_ed1c6_row1_col1" class="data row1 col1">5097.0</td>
 </tr>
 <tr class="odd">
-<td id="T_44f45_row2_col0" class="data row2 col0">Cited publications in the benchmark set</td>
-<td id="T_44f45_row2_col1" class="data row2 col1">41.5</td>
+<td id="T_ed1c6_row2_col0" class="data row2 col0">Cited publications in the benchmark set</td>
+<td id="T_ed1c6_row2_col1" class="data row2 col1">41.5</td>
 </tr>
 <tr class="even">
-<td id="T_44f45_row3_col0" class="data row3 col0">Cited publications in the classification-based search</td>
-<td id="T_44f45_row3_col1" class="data row3 col1">43.2</td>
+<td id="T_ed1c6_row3_col0" class="data row3 col0">Cited publications in the classification-based search</td>
+<td id="T_ed1c6_row3_col1" class="data row3 col1">43.2</td>
 </tr>
 </tbody>
 </table>
@@ -1873,47 +1873,47 @@ Table&nbsp;9: Statistics on OpenAlex reference data in the benchmark set
 Table&nbsp;10: Types of cited references in the benchmark set
 </figcaption>
 <div aria-describedby="tbl-oa-references-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="125">
+<div class="cell-output cell-output-display" data-execution_count="75">
 <style type="text/css">
-#T_aa9d1_row0_col0, #T_aa9d1_row1_col0, #T_aa9d1_row2_col0, #T_aa9d1_row3_col0, #T_aa9d1_row4_col0, #T_aa9d1_row5_col0 {
+#T_47ca7_row0_col0, #T_47ca7_row1_col0, #T_47ca7_row2_col0, #T_47ca7_row3_col0, #T_47ca7_row4_col0, #T_47ca7_row5_col0 {
   text-align: left;
 }
-#T_aa9d1_row0_col1, #T_aa9d1_row1_col1, #T_aa9d1_row2_col1, #T_aa9d1_row3_col1, #T_aa9d1_row4_col1, #T_aa9d1_row5_col1 {
+#T_47ca7_row0_col1, #T_47ca7_row1_col1, #T_47ca7_row2_col1, #T_47ca7_row3_col1, #T_47ca7_row4_col1, #T_47ca7_row5_col1 {
   text-align: right;
 }
 </style>
 
-<table id="T_aa9d1" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_47ca7" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_aa9d1_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Type</th>
-<th id="T_aa9d1_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Count</th>
+<th id="T_47ca7_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Type</th>
+<th id="T_47ca7_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_aa9d1_row0_col0" class="data row0 col0">journal</td>
-<td id="T_aa9d1_row0_col1" class="data row0 col1">4147</td>
+<td id="T_47ca7_row0_col0" class="data row0 col0">journal</td>
+<td id="T_47ca7_row0_col1" class="data row0 col1">4147</td>
 </tr>
 <tr class="even">
-<td id="T_aa9d1_row1_col0" class="data row1 col0">book series</td>
-<td id="T_aa9d1_row1_col1" class="data row1 col1">501</td>
+<td id="T_47ca7_row1_col0" class="data row1 col0">book series</td>
+<td id="T_47ca7_row1_col1" class="data row1 col1">501</td>
 </tr>
 <tr class="odd">
-<td id="T_aa9d1_row2_col0" class="data row2 col0">ebook platform</td>
-<td id="T_aa9d1_row2_col1" class="data row2 col1">166</td>
+<td id="T_47ca7_row2_col0" class="data row2 col0">ebook platform</td>
+<td id="T_47ca7_row2_col1" class="data row2 col1">166</td>
 </tr>
 <tr class="even">
-<td id="T_aa9d1_row3_col0" class="data row3 col0">conference</td>
-<td id="T_aa9d1_row3_col1" class="data row3 col1">16</td>
+<td id="T_47ca7_row3_col0" class="data row3 col0">conference</td>
+<td id="T_47ca7_row3_col1" class="data row3 col1">16</td>
 </tr>
 <tr class="odd">
-<td id="T_aa9d1_row4_col0" class="data row4 col0">repository</td>
-<td id="T_aa9d1_row4_col1" class="data row4 col1">14</td>
+<td id="T_47ca7_row4_col0" class="data row4 col0">repository</td>
+<td id="T_47ca7_row4_col1" class="data row4 col1">14</td>
 </tr>
 <tr class="even">
-<td id="T_aa9d1_row5_col0" class="data row5 col0">other</td>
-<td id="T_aa9d1_row5_col1" class="data row5 col1">2</td>
+<td id="T_47ca7_row5_col0" class="data row5 col0">other</td>
+<td id="T_47ca7_row5_col1" class="data row5 col1">2</td>
 </tr>
 </tbody>
 </table>
@@ -1925,7 +1925,7 @@ Table&nbsp;10: Types of cited references in the benchmark set
 </section>
 <section id="citation-data-in-openalex" class="level5">
 <h5 class="anchored" data-anchor-id="citation-data-in-openalex">Citation data in OpenAlex</h5>
-<p>In bibliometrics, citations (so the set of articles that cite a particular publication) are even of more interest than the reference lists themselves. As argued above, we do not have sufficient reference data and cannot derived any kind of conclusions that correspond to the reality of scholarly legal knowledge production. However, it is still interesting to analyze the citation data that does exist. Thus, we queried the OpenAlex data for article items that cite an article from the set of journals in the benchmark set, i.e.&nbsp;they contain this article in their reference list. <a href="#tbl-oa-citation-statistics" class="quarto-xref">Table&nbsp;11</a> shows some general statistics on citations of our benchmark set of journals in OpenAlex.</p>
+<p>In bibliometrics, citations (i.e., the set of articles that cite a particular publication) are even of more interest than the reference lists themselves. As argued above, we do not have sufficient reference data and cannot derive any kind of conclusions that correspond to the reality of scholarly legal knowledge production. However, it is still interesting to analyze the citation data that does exist. Thus, we queried the OpenAlex data for article items that cite an article from the set of journals in the benchmark set, i.e.&nbsp;they contain this article in their reference list. <a href="#tbl-oa-citation-statistics" class="quarto-xref">Table&nbsp;11</a> shows some general statistics on citations of our benchmark set of journals in OpenAlex.</p>
 <div class="cell" data-execution_count="22">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1980,35 +1980,35 @@ Table&nbsp;10: Types of cited references in the benchmark set
 Table&nbsp;11: Statistics on OpenAlex reference data in the benchmark set
 </figcaption>
 <div aria-describedby="tbl-oa-citation-statistics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="126">
+<div class="cell-output cell-output-display" data-execution_count="76">
 <style type="text/css">
-#T_dc772_row0_col0, #T_dc772_row1_col0, #T_dc772_row2_col0 {
+#T_c5955_row0_col0, #T_c5955_row1_col0, #T_c5955_row2_col0 {
   text-align: left;
 }
-#T_dc772_row0_col1, #T_dc772_row1_col1, #T_dc772_row2_col1 {
+#T_c5955_row0_col1, #T_c5955_row1_col1, #T_c5955_row2_col1 {
   text-align: right;
 }
 </style>
 
-<table id="T_dc772" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<table id="T_c5955" class="do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th id="T_dc772_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Query</th>
-<th id="T_dc772_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Result</th>
+<th id="T_c5955_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Query</th>
+<th id="T_c5955_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Result</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_dc772_row0_col0" class="data row0 col0">Share of publications cited</td>
-<td id="T_dc772_row0_col1" class="data row0 col1">18.15</td>
+<td id="T_c5955_row0_col0" class="data row0 col0">Share of publications cited</td>
+<td id="T_c5955_row0_col1" class="data row0 col1">18.15</td>
 </tr>
 <tr class="even">
-<td id="T_dc772_row1_col0" class="data row1 col0">Citing OA items in the benchmark set</td>
-<td id="T_dc772_row1_col1" class="data row1 col1">6.09</td>
+<td id="T_c5955_row1_col0" class="data row1 col0">Citing OA items in the benchmark set</td>
+<td id="T_c5955_row1_col1" class="data row1 col1">6.09</td>
 </tr>
 <tr class="odd">
-<td id="T_dc772_row2_col0" class="data row2 col0">Citing OA items in the trivial search</td>
-<td id="T_dc772_row2_col1" class="data row2 col1">7.2</td>
+<td id="T_c5955_row2_col0" class="data row2 col0">Citing OA items in the trivial search</td>
+<td id="T_c5955_row2_col1" class="data row2 col1">7.2</td>
 </tr>
 </tbody>
 </table>
@@ -2073,7 +2073,7 @@ Figure&nbsp;10: Share of articles with at least one citation per journal in the 
 </section>
 <section id="scopus-footprint" class="level5">
 <h5 class="anchored" data-anchor-id="scopus-footprint">Scopus Footprint</h5>
-<p>As argued above, OpenAlex does not tell us much about citations pointing to articles in our benchmark set. Although Scopus was not a good source of <strong>article</strong> data in our domain, the database does have a feature that we can use to find some more citations. The Scopus article data contains a column with the full text of the reference, from which we can extract a journal name, even if there is no structured journal name field for this reference. As an experiment, we used the Juristenzeitung (JZ) and searched for its occurrence in the Scopus reference full text using regular expressions. While such citations must be considered unrepresentative and random, they are part of all “really existing” citations and can be considered as a lower bound. In other words, we don’t know how many citations actually exist, but we know from this data that at least those exist and can be used for comparison.</p>
+<p>As argued above, OpenAlex does not tell us much about citations pointing to articles in our benchmark set. Although Scopus was not a good source of <strong>article</strong> data in our domain, the database does have a feature that we can use to find some more citations. The Scopus article data contains a column with the full text of the reference, from which we can extract a journal name, even if there is no structured journal name field for this reference. As an experiment, we used the Juristenzeitung (JZ) and searched for its occurrence in the Scopus reference full text using regular expressions. While such citations must be considered unrepresentative and random, they are part of all “really existing” citations and can be considered a lower bound. In other words, we don’t know how many citations actually exist, but we know from this data that at least those exist and can be used for comparison.</p>
 <p><a href="#fig-jz-reference-fulltext-comparison" class="quarto-xref">Figure&nbsp;11</a> shows a comparison between OpenAlex and Scopus in terms of citations to the “Juristenzeitung”.</p>
 <div id="cell-fig-jz-reference-fulltext-comparison" class="cell" data-execution_count="24">
 <details class="code-fold">
@@ -2146,7 +2146,7 @@ Figure&nbsp;11: Comparison of citation data for the JZ in OpenAlex and Scopus re
 </div>
 </div>
 </div>
-<p>As noted, a lower bound for the number of citations to JZ’s articles is established by the number of references mentioning JZ in the full-text reference string in Scopus. The chart indicates instances where the number of OpenAlex citations falls short of this lower bound by a grey background, whereas a green background denotes cases where OpenAlex citations exceed the lower bound. Notably, the analysis suggests that OpenAlex’s coverage of JZ’s citations improves significantly from around 2010/2013 onwards. In contrast, for earlier years, despite a relatively low number of Scopus references mentioning JZ, OpenAlex citations fail to reach the established lower bound.</p>
+<p>As noted, a lower bound for the number of citations to JZ’s articles is established by the number of references mentioning JZ in the full-text reference string in Scopus. The chart indicates instances where the number of OpenAlex citations falls short of this lower bound is indicated by a grey background, whereas a green background denotes cases where OpenAlex citations exceed the lower bound. Notably, the analysis suggests that OpenAlex’s coverage of JZ’s citations improves significantly from around 2010/2013 onwards. In contrast, for earlier years, despite a relatively low number of Scopus references mentioning JZ, OpenAlex citations fail to reach the established lower bound.</p>
 </section>
 </section>
 </section>
@@ -2189,7 +2189,7 @@ Figure&nbsp;12: Example JZ: Comparison of citations
 <section id="the-futility-of-ranking-with-openalex" class="level3">
 <h3 class="anchored" data-anchor-id="the-futility-of-ranking-with-openalex">4.4 The futility of ranking with OpenAlex</h3>
 <p>The last metric we want to have a look at is a ranking of journals based on the available data in our benchmark set. If we assume that the expert assessment is the best data we have, what can we draw on in OpenAlex that it could be compared to? The typical metric that is used in the traditional bibliometric databases is the Journal Impact Factor (JIF)<span class="citation" data-cites="garfield1999">(<a href="#ref-garfield1999" role="doc-biblioref">Garfield 1999</a>)</span>, which despite being heavily criticized <span class="citation" data-cites="archambault2009">(<a href="#ref-archambault2009" role="doc-biblioref">Archambault and Larivière 2009</a>)</span>, is still widely used. Calculating the JIF for the benchmark set journals in OpenAlex is problematic since we are lacking data for many years. Also the question is for what year to compare it - since the benchmark set is from 2009, it would make sense to compare the JIF only for 2009. However, given that a) as we have argued before, the German legal landscape is very static and b) there is very little data to rely on, it made sense to calculate the JIF over all available data. Our aim is not an exact comparison but rather meant to give a sense of how much the OpenAlex ranking differs from the benchmark set one.</p>
-<p>We compared the Gröls/Gröls ranking with the JIF-based ranking from OpenAlex separatedly for the generalist journals (<a href="#fig-comp-groels-jif-general" class="quarto-xref">Figure&nbsp;13</a>) and the specialized ones (<a href="#fig-comp-groels-jif-specialized" class="quarto-xref">Figure&nbsp;14</a>). Looking at the results, the rankings differ considerably.</p>
+<p>We compared the Gröls/Gröls ranking with the JIF-based ranking from OpenAlex separately for the generalist journals (<a href="#fig-comp-groels-jif-general" class="quarto-xref">Figure&nbsp;13</a>) and the specialized ones (<a href="#fig-comp-groels-jif-specialized" class="quarto-xref">Figure&nbsp;14</a>). Looking at the results, the rankings differ considerably.</p>
 <div id="cell-fig-comp-groels-jif-general" class="cell" data-execution_count="26">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2285,20 +2285,20 @@ Figure&nbsp;14: Comparison of Gröls/Gröls ranking with OpenAlex JIF for specia
 </div>
 </div>
 </div>
-<p>A complete alignment in ranking would have all journals be on the red diagonal line; the closer the dots are placed towards the diagonal, the more the rankings would resemble each other. However, as the figures show, there is large variation in the rankings. For the generalist journals, expert assessment and OpenAlex JIF most closely aligns only for the AöR. For the specialized ones, there is also a huge spread, with Verw and ZZP coming closest to the diagonal. However, we don’t think that these results mean anything other that there is simply not enough data available that would allow us to draw more substantive conclusions.</p>
+<p>In a completely aligned ranking, all journals would be on the red diagonal line; the closer the dots are placed towards the diagonal, the more the rankings would resemble each other. However, as the figures show, there is large variation in the rankings. For the generalist journals, expert assessment and OpenAlex JIF most closely aligns only for the AöR. For the specialized ones, there is also a huge spread, with Verw and ZZP coming closest to the diagonal. However, we don’t think that these results mean anything other that there is simply not enough data available that would allow us to draw more substantive conclusions.</p>
 </section>
 </section>
 <section id="conclusion-and-future-work" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion-and-future-work">5. Conclusion and future work</h2>
 <p>Our aim was to examine the coverage of German-language, more specifically, Germany-based law journals in the Web of Science, Scopus and OpenAlex bibliometric databases. In order to do that, we derived a list of law journals (our benchmark set) from a study that had surveyed German law professors about which journals they considered most important in their field. We then queried the three data sources for the coverage of these journals.</p>
-<p>Looking at our results, it is clear that OpenAlex is the only of the bibliometric databases examined which currently has a minimal coverage of German law journals as far as our benchmark set is representative. It offers a limited, but steadily growing basis for bibliometric queries.</p>
+<p>Looking at our results, it is clear that OpenAlex is the only one of the bibliometric databases examined which currently has a minimal coverage of German law journals as far as our benchmark set is representative. It offers a limited, but steadily growing basis for bibliometric queries.</p>
 <p>On first glance, our analysis seems to confirm studies which have argued that WoS or Scopus are, as Tenant has expressed it, “structurally biased against […] non-English language research” <span class="citation" data-cites="tennant2020">(<a href="#ref-tennant2020" role="doc-biblioref">Tennant 2020, 1</a>)</span>, although Tenant was specifically referring to research in “non-western countries.” The case of German law journals is certainly a bit different, not only because Germany is part of the “Western” hemisphere in terms of knowledge production.</p>
 <p>It is beyond the scope of this article to systematically analyze the reasons for the neglect of German law in the bibliometric databases. However, it is reasonable to assume that at least three factors are at play. The first concerns the non-universality of legal scholarship irrespective of language: as the law is specific to national jurisdictions, much of doctrinal legal scholarship is by nature not transferable to other jurisdiction. This makes all non-common law doctrinal knowledge uninteresting to database vendors focused on an Anglo-American audience. Also, the strict selection criteria of WoS and Scopus is premised on a particularly peer-review and publishing model which does not fit the way German legal scholarship is being produced, reviewed, and published.<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> These selection criteria would have to be changed in order to accurately reflect knowledge production in a wider array of scholarly domains. Finally, a major impediment to bibliometric coverage of German law journals is the fact that some publishers with a large market share in the legal domain do not assign Digital Object Identifiers (DOI) to journal articles, making them much more difficult to index.</p>
 <p>From our experiments, we draw a few conclusions for future research.</p>
-<p>First of all, there more research on knowledge production in the domain of legal scholarship is badly needed, both in terms of producing data and analyzing it. Regardless of one’s opinion of the worth of research evaluation metrics, it is important to be able to empirically observe research output. In particular, it can be very useful for systematically studying the reception history of legal ideas, or for quantitative analyses of the intellectual landscape of legal scholarship today. We also need more studies involving expert knowledge such as that of Gröls/Gröls. We hope for a follow-up study that will allow to update our data.</p>
-<p>Second, the future of bibliometric analyses should not have to depend on commercial vendors who sell bibliometric metadata at high costs and with restrictive licenses. As we have shown, open suppliers such as OpenAlex already have a better, but still very limited coverage of the German legal domain. The strategy should be to improve open data repositories and make the data readily available to anyone who wants to do their own analyses. As OpenAlex’s data repository is highly dynamic, it is necessary to continually follow its growth and internal refactoring. The queries from this study need to be repeated in order to document improvements of the coverage of the benchmark set across database versions. We hope that publishers will continue to upgrade the quality of the data to CrossRef, from which OpenAlex mainly draws.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> This, we hope, will improve the bibliometric coverage of legal scholarship in German (and other languages) over time.</p>
-<p>Finally, relying solely on publishers to supply the necessary data will not suffice. In particular, it is improbable that the current near-complete absence of citation data will be resolved in the near future. On one hand, some publishers may have a vested interest in monetizing citation data themselves. However, even if others are open to sharing citation data in principle, such data does often not exist. In the academic realm of law, the humanities, or the social sciences, currently no machine-readable citation data is being gathered during the publication process in any systematic way.</p>
-<p>How can this situation be changed? Current tools for automated citation extraction <span class="citation" data-cites="cioffi2022">(<a href="#ref-cioffi2022" role="doc-biblioref">Cioffi and Peroni 2022</a>)</span> are performing very badly when confronted with the citation practices in legal scholarship and other disciplines that make heavy use of footnotes. With the recent emergence of Large Language Models, which are able to interpret semantic structures based on the context, this is likely to change.<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a> Once easy-to-use tools are available, we are confident that it will be possible to to create, in a decentralized and incremental process, Open Data datasets on that are necessary to study knowledge production in legal scholarship and beyond.</p>
+<p>First of all, more research on knowledge production in the domain of legal scholarship is badly needed, both in terms of producing data and analyzing it. Regardless of one’s opinion of the worth of research evaluation metrics, it is important to be able to empirically observe research output. In particular, it can be very useful for systematically studying the reception history of legal ideas, or for quantitative analyses of the intellectual landscape of legal scholarship today. We also need more studies involving expert knowledge such as that of Gröls/Gröls. We hope for a follow-up study that will allow us to update our data.</p>
+<p>Second, the future of bibliometric analyses should not have to depend on commercial vendors who sell bibliometric metadata at high costs and with restrictive licenses. As we have shown, open suppliers such as OpenAlex already have a better, but still very limited coverage of the German legal domain. The strategy should be to improve open data repositories and make the data readily available to anyone who wants to do their own analyses. As OpenAlex’s data repository is highly dynamic, it is necessary to continually follow its growth and internal refactoring. The queries from this study need to be repeated in order to document improvements of the coverage of the benchmark set across database versions. We hope that publishers will continue to upgrade the quality of the data they submit to CrossRef, from which OpenAlex mainly draws. This, we hope, will improve the bibliometric coverage of legal scholarship in German (and other languages) over time.</p>
+<p>Finally, relying solely on publishers to supply the necessary data will not suffice. In particular, it is improbable that the current near-complete absence of citation data will be resolved in the near future. On one hand, some publishers may have a vested interest in monetizing citation data themselves. However, even if others are open to sharing citation data in principle, such data often does not exist. In the academic realm of law, the humanities, or the social sciences, currently no machine-readable citation data is being gathered during the publication process in any systematic way.</p>
+<p>How can this situation be changed? Current tools for automated citation extraction <span class="citation" data-cites="cioffi2022">(<a href="#ref-cioffi2022" role="doc-biblioref">Cioffi and Peroni 2022</a>)</span> are performing very badly when confronted with the citation practices in legal scholarship and other disciplines that make heavy use of footnotes. With the recent emergence of Large Language Models, which are able to interpret semantic structures based on the context, this is likely to change.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> Once easy-to-use tools are available, we are confident that it will be possible to create, in a decentralized and incremental process, Open Data datasets that are necessary to study knowledge production in legal scholarship and beyond.</p>
 </section>
 <section id="references-1" class="level2">
 <h2 class="anchored" data-anchor-id="references-1">7. References</h2>
@@ -2351,6 +2351,9 @@ Tennant, Jonathan. 2020. <span>“Web of Science and Scopus Are Not Global Datab
 <div id="ref-wagner-döbler1993" class="csl-entry" role="listitem">
 Wagner-Döbler, Roland, and Lothar Philipps. 1993. <span>“Argumentative Leitbegriffe: Ein Experiment in computergestützter Analyse juristischer Urteilstexte aus den Jahren 1950 bis 1992.”</span> <em>Zeitschrift für Rechtssoziologie</em> 14 (2): 257279. <a href="https://doi.org/10.1515/zfrs-1993-0206">https://doi.org/10.1515/zfrs-1993-0206</a>.
 </div>
+<div id="ref-wallaceMeasuringScholarlyImpact2022" class="csl-entry" role="listitem">
+Wallace, Karen L., and Rebecca Lutkenhaus. 2022. <span>“Measuring <span>Scholarly Impact</span> in <span>Law</span>.”</span> <em>Widener Law Review</em> 28 (2): 145–86. <a href="https://ssrn.com/abstract=3938998">https://ssrn.com/abstract=3938998</a>.
+</div>
 </div>
 </section>
 
@@ -2368,7 +2371,7 @@ Wagner-Döbler, Roland, and Lothar Philipps. 1993. <span>“Argumentative Leitbe
 <li id="fn3"><p>The Research project “Kulturwandel in der Rechtswissenschaft (KidRewi)”, which, among other things, investigates the presence of monographic legal scholarship in bibliometric databases (https://openrewi.org/kidrewi/).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>In a previous version of this paper, we have called our benchmark set “gold standard”, and the term is still used in the code in our GitHub repository. However, we have since then decided that “benchmark set” is the more appropriate term for our list of journals.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>In the GitHub repository code, the classification-based approach is called “trivial” or “simple” in the sense that it does not require domain-specific knowledge.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Up until recently, trying to query these bibliometric databases comparatively would have been a major challenge, since the raw data looks very different for WoS, Scopus and OpenAlex. WoS and Scopus raw data comes in XML and is item-centric, meaning meta data on, for example, journals, author and institutions is available, but only as part of the item xml files. In contrast, OpenAlex raw data is provided in JSONL files and organized in entities and relations between them. This means we would have had to write a different query for each data source. However, since the KB bibliometric database store the data in a common, normalized schema, it allows to use the same, or very similar queries to execute against the data sources (The normalized metadata schema cannot be 100% identical because the differences in the source data). It thus provides an extremely efficient infrastructure for comparisons between them.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Up until recently, trying to query these bibliometric databases comparatively would have been a major challenge, since the raw data looks very different for WoS, Scopus and OpenAlex. WoS and Scopus raw data comes in XML and is item-centric, meaning meta data on, for example, journals, author and institutions is available, but only as part of the item xml files. In contrast, OpenAlex raw data is provided in JSONL files and organized in entities and relations between them. This means we would have had to write a different query for each data source. However, since the KB bibliometric database store the data in a common, normalized schema, it allows using the same, or very similar queries to execute against the data sources (The normalized metadata schema cannot be 100% identical because of the differences in the source data). It thus provides an extremely efficient infrastructure for comparisons between them.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>We used the classification system “ASCA (American School Counselor Association) traditional” for WoS and “ASJC (All Science Journal Classification)” for Scopus. OpenAlex comes with its own item-specific hierarchical classification system (from high to low: domain, field, subfield, topic; see https://docs.openalex.org/api-entities/topics). We used the subfield level.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn8"><p>The query parameters were: Subject Category = ‘Law’, source type = ‘Journal’, item type = ‘Article’, language = ‘ger’<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9"><p>Using the following query parameters: ASJC class = ‘Law’, source type = ‘Journal’, item type = ‘Article’, language = ‘ger’<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -2385,14 +2388,13 @@ Wagner-Döbler, Roland, and Lothar Philipps. 1993. <span>“Argumentative Leitbe
 <li id="fn20"><p>We used https://petscan.wmcloud.org to generate CSV data.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn21"><p>The total number of journals is slightly higher in <a href="#fig-intersection-wikipedia" class="quarto-xref">Figure&nbsp;3</a> because in the source data multiple abbreviations for the same journal exists.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn22"><p>We define “recall” in our scenarioas as the share of benchmark set journals found by the simple search divided by the total number of benchmark set journals.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn23"><p>As an experiment, we explored what the data would show if one ignored this fact. To find out whether the metadata of the 323 journals in OpenAlex enabled some other form of ranking that would allow to compare the OpenAlex list with our benchmark set, we used the following, very simple metrics of each journal in the OpenAlex list: <em>the number of articles</em> of indexed, the total <em>number of citations</em> of all articles, and the average <em>number of citations per paper</em>. We then compared the order of the journals ranked by these metrics with that of the benchmark set, with mixed results. On one hand, the top 5 on our benchmark set rank among the top ten in the number of articles, however, others are placed at the bottom. Some citation based methods provide high ranks for many, but not all benchmark set journals. Thus, these simple metrics show a stark difference between conceivable ranking methods in OpenAlex and our benchmark set ranking. <a href="https://github.com/mpilhlt/bibliometrics-of-german-law-journals/blob/main/notebooks/evaluations_rewi_create%20basic_tables.ipynb" class="uri">https://github.com/mpilhlt/bibliometrics-of-german-law-journals/blob/main/notebooks/evaluations_rewi_create%20basic_tables.ipynb</a><a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn24"><p>CrossRef.org is one of the sources from which OpenAlex draws its data - which can be be seen by the fact that every item from the GS which is contained in CrossRef is also contained in OpenAlex.<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>As an experiment, we explored what the data would show if one ignored this fact. To find out whether the metadata of the 323 journals in OpenAlex enabled some other form of ranking that would allow to compare the OpenAlex list with our benchmark set, we used the following, very simple metrics of each journal in the OpenAlex list: <em>the number of articles</em> indexed, the total <em>number of citations</em> of all articles, and the average <em>number of citations per paper</em>. We then compared the order of the journals ranked by these metrics with that of the benchmark set, with mixed results. On one hand, the top 5 on our benchmark set rank among the top ten in the number of articles, however, others are placed at the bottom. Some citation based methods provide high ranks for many, but not all benchmark set journals. Thus, these simple metrics show a stark difference between conceivable ranking methods in OpenAlex and our benchmark set ranking. <a href="https://github.com/mpilhlt/bibliometrics-of-german-law-journals/blob/main/notebooks/evaluations_rewi_create%20basic_tables.ipynb" class="uri">https://github.com/mpilhlt/bibliometrics-of-german-law-journals/blob/main/notebooks/evaluations_rewi_create%20basic_tables.ipynb</a><a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>CrossRef.org is one of the sources from which OpenAlex draws its data - which can be seen by the fact that every item from the GS which is contained in CrossRef is also contained in OpenAlex.<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn25"><p>Examples for cases with uncleaned data show obvious data errors like e.g.&nbsp;‘gegen Brasilien gewonnen haben?’ (W4239815844) or affiliation strings like ‘studiert Rechtswissenschaft III Frankfurt am Main’ (W4249773843).<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn26"><p>See <a href="https://docs.openalex.org/api-entities/topics/topic-object" class="uri">https://docs.openalex.org/api-entities/topics/topic-object</a> (Last accessed Mar 9 2025)<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn27"><p><a href="https://github.com/ourresearch/openalex-topic-classification" class="uri">https://github.com/ourresearch/openalex-topic-classification</a> (Last accessed Mar 9 2025)<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn28"><p>Wether German legal scholarship really can do without Peer Review because in “Jurisprudence knows no right or wrong” <span class="citation" data-cites="gulden2023">(<a href="#ref-gulden2023" role="doc-biblioref">Gulden 2023</a>)</span> is another question.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn29"><p>Specifically, as we have shown, they should s<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn30"><p>The reason is that they have been trained on data from the natural sciences,does which usually contain well-structured bibliographies. In contrast, references in German legal scholarship usually relies on literature contained in footnotes, which are very difficult to parse computationally. See current research by Boulanger, Carreto Fidalgo and Wagner on reference extraction, <a href="https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph" class="uri">https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph</a><a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p>Whether German legal scholarship really can do without Peer Review because in “Jurisprudence knows no right or wrong” <span class="citation" data-cites="gulden2023">(<a href="#ref-gulden2023" role="doc-biblioref">Gulden 2023</a>)</span> is another question.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>The reason is that they have been trained on data from the natural sciences, which usually contain well-structured bibliographies. In contrast, references in German legal scholarship usually relies on literature contained in footnotes, which are very difficult to parse computationally. See current research by Boulanger, Carreto Fidalgo and Wagner on reference extraction, <a href="https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph" class="uri">https://www.lhlt.mpg.de/2514927/03-boulanger-legal-theory-graph</a><a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->

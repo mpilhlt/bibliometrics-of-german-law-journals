@@ -1,5 +1,5 @@
 ---
-title: Measuring Bibliometric Coverage of German Law Journals
+title: Law Doesn't Count? Measuring Bibliometric Coverage of German Law Journals
 author:
 - name: Christian Boulanger
   orcid: 0000-0001-6928-3246
@@ -25,9 +25,9 @@ author:
       city: Karlsruhe 
       country: Germany
       url: https://www.fiz-karlsruhe.de
-abstract: "Bibliometric analyses are uncommon in German legal scholarship, often attributed to disciplinary skepticism. However, this paper posits that a more fundamental reason is the lack of adequate data coverage in standard bibliometric databases. We systematically investigate the representation of the German law journal landscape in Web of Science (WoS), Scopus, and OpenAlex. To achieve this, we first establish a benchmark set of 51 representative German law journals based on a 2009 expert survey. We then measure the coverage of these journals within the target databases and assess the quality of the available metadata, focusing particularly on OpenAlex due to its superior initial coverage. Our findings confirm the initial hypothesis: coverage in WoS and Scopus is minimal. While OpenAlex includes a larger proportion of the journals from the benchmark set (32/51) and shows reasonable item-level completeness for a subset checked against publisher data, its metadata quality presents significant limitations. Crucially, affiliation data is sparse, and citation data is almost entirely absent, precluding meaningful citation analysis, impact assessment, or reliable institutional evaluation. We conclude that while coverage is improving, particularly through open platforms like OpenAlex, the current state of bibliometric data, especially the lack of citation information, severely restricts the application of standard bibliometric methods to German legal scholarship. We discuss potential reasons for this gap and suggest focusing on enhancing open data repositories and exploring new methods to generate currently unavailable citation data."
+abstract: "Bibliometric analyses are uncommon in German legal scholarship, a fact often attributed to disciplinary skepticism. However, this paper posits that a more fundamental reason is the lack of adequate data coverage in standard bibliometric databases. We systematically investigate the representation of the German law journal landscape in Web of Science (WoS), Scopus, and OpenAlex. To achieve this, we first establish a benchmark set of 51 representative German law journals based on a 2009 expert survey. We then measure the coverage of these journals within the target databases and assess the quality of the available metadata, focusing particularly on OpenAlex due to its superior initial coverage. Our findings confirm the initial hypothesis: coverage in WoS and Scopus is minimal. While OpenAlex includes a larger proportion of the journals from the benchmark set (32/51) and shows reasonable item-level completeness for a subset checked against publisher data, its metadata quality presents significant limitations. Crucially, affiliation data is sparse, and citation data is almost entirely absent, precluding meaningful citation analysis, impact assessment, or reliable institutional evaluation. We conclude that while coverage is improving, particularly through open platforms like OpenAlex, the current state of bibliometric data, especially the lack of citation information, severely restricts the application of standard bibliometric methods to German legal scholarship. We discuss potential reasons for this gap and suggest focusing on enhancing open data repositories and exploring new methods to generate currently unavailable citation data."
 lang: en
-date: 2025-05-30
+date: 2025-06-01
 licence: "CC BY"
 code-fold: true
 filters:
@@ -85,7 +85,7 @@ This paper is an interdisciplinary collaboration between two domain specialists 
 
 ## 2. Previous and related work
 
-As far as we can see, this is the first study of this kind. Earlier research had focused more on in the way legal texts cite other legal material, such as the characteristics of references to legal provisions in judgments [@wagner-döbler1993] or the networks that can constructed from references between legal texts [@coupette2019]. For reasons that we will return to in the conclusion, the bibliometric analysis of legal scholarship itself has never become a subject of scholarly attention. In contrast, when looking outside the German legal domain, there have been numerous studies using bibliometric methods to analyze knowledge production of various disciplines, such as, for example of Digital Humanities [@tang2017] or Scientometrics itself [@liu2023].
+As far as we can see, this is the first study of this kind. Earlier research had focused more on in the way legal texts cite other legal material, such as the characteristics of references to legal provisions in judgments [@wagner-döbler1993] or the networks that can constructed from references between legal texts [@coupette2019]. German legal scholarship has received remarkably little bibliometric attention, for reasons we discuss further in the conclusion. In contrast, the application of bibliometric methods, particularly concerning rankings, has sparked intense discussion within U.S. legal scholarship [@wallaceMeasuringScholarlyImpact2022]. Outside the legal domain, numerous studies have applied bibliometric methods to analyze knowledge production in various disciplines, such as Digital Humanities [@tang2017] or even Scientometrics itself [@liu2023].
 
 However, we have not been able to identify other studies - although they might exist - which measure the quality of the bibliometric data *on* a discipline, since, as we will see, this exercise requires data outside the traditional databases which be can used as a benchmark with which query results can be compared. In most cases, the data quality of databases such as the Web of Science or Scopus is simply assumed - a trust that might not be warranted, in particular in scientific fields where the coverage of these databases is sketchy. This has been empirically shown for the Social Sciences and Humanities (SSH) [@hicks1999; @gläser2019].
 
@@ -889,7 +889,7 @@ eva_all_openalex_items = pd.read_csv(f'../data/kb_data/{version}/eva_all_openale
 
 data = []
 
-data.append(['Share of publications cited', sqldf("""
+data.append(['Share of benchmark set articles cited in OpenAlex', sqldf("""
   select round(10000*
   (select count(distinct item_id) 
   from eva_all_openalex_items eaoi 
@@ -898,7 +898,7 @@ data.append(['Share of publications cited', sqldf("""
   (select count(distinct item_id) from eva_all_openalex_items),2)/100
 """).iloc[0, 0]])
 
-data.append(['Citing OA items in the benchmark set', sqldf("""
+data.append(['Share of citing OpenAlex articles in benchmark set', sqldf("""
   select round(10000*
   (select count(distinct item_id_citing) 
   from eva_citations_in_openalex
@@ -908,7 +908,7 @@ data.append(['Citing OA items in the benchmark set', sqldf("""
   where item_id_citing is not null),2)/100
 """).iloc[0, 0]])
 
-data.append(['Citing OA items in the trivial search', sqldf("""
+data.append(['Share of citing OpenAlex articles in the classification-based search', sqldf("""
   select round(10000*
   (select count(distinct item_id_citing) 
   from eva_citations_in_openalex
