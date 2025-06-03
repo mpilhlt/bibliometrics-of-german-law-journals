@@ -188,7 +188,7 @@ df = df[['source_title', 'article_count', 'law_and_de', 'law_and_de_article_shar
 df['source_title'] = df['source_title'].apply(lambda title: re.sub('[{}"]','',title))
 df = df.sort_values('law_and_de_article_share', ascending=False, ignore_index=True)
 df.columns = ['Journal', 'Articles', 'German+Law', '%']
-df['Journal'] = df['Journal'].astype(str).apply(lambda text: textwrap.shorten(text, width=50, placeholder="\u2026"))
+df['Journal'] = df['Journal'].astype(str).apply(lambda text: textwrap.shorten(text, width=90, placeholder="\u2026"))
 df.style.hide(axis='index')\
   .set_properties(subset=df.columns[[0]], **{'text-align': 'left'})\
   .set_properties(subset=df.columns[[1,2]], **{'text-align': 'center'})\
@@ -208,6 +208,7 @@ df.style.hide(axis='index')\
 
 import pandas as pd
 import regex as re
+import textwrap
 version = "202408"
 df = pd.read_csv(f'../data/kb_data/{version}/eva_openalex_de_law_journals_trivial_search_result_{version}.csv')
 df = df[['display_name', 'works_count', 'law_and_de', 'law_and_de_article_share']]
