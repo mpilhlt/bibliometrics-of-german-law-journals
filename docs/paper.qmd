@@ -1093,10 +1093,11 @@ To further investigate the classification scheme, we focused on the level below 
 
 ```{python}
 #| label: fig-wordcloud-oa-topics
-#| fig-cap: 'Example JZ: Comparison of citations'
+#| fig-cap: 'Word cloud of OpenAlex keywords in the benchmark set articles'
 
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+import pandas as pd
 
 version = "202408"
 
