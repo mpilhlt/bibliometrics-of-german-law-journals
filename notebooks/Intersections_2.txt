@@ -1,0 +1,7 @@
+Benchmark Set
+(Gröls & Gröls 2009): 41, ['AG', 'AVR', 'AuR', 'CR', 'DB', 'DOV', 'DStR', 'DVBI', 'EuGRZ', 'EuR', 'EuZW', 'FamRZ', 'GA', 'GmbHR', 'JR', 'JURA', 'JZ', 'JuS', 'KritV', 'MDR', 'NStZ', 'NVwZ', 'NZA', 'NZG', 'NZS', 'RabelsZ', 'StV', 'Staat', 'StraFo', 'Verw', 'WM', 'ZFA', 'ZGR', 'ZIP', 'ZIS', 'ZRP', 'ZStW', 'ZZP', 'ZaoRV', 'ZeuP', 'wistra']
+Top 52 by
+Library Holdings: 40, ['ARSP', 'Arbeitsschutz', 'BASS', 'BBaubl', 'DStZ', 'DVBL', 'Das Parlament', 'Der Städtetag', 'DÖD', 'EUR', 'Forensische psychiatrie', 'GRUR', 'Gewissen und Freiheit', 'IT-Guide', 'Jus', 'JöR', 'KJB', 'KrimJ', 'Landkreis', 'MdR', 'Osteuropa', 'RIW', 'RdW', 'Schmollers Jahrbuch für Gesetzgebung', 'SteuerStud', 'StuW', 'UR', 'Vereinte Nationen', 'Verfassung und Verfassungswirklichkeit', 'Verfassungsschutzbericht', 'WISTA', 'WP-Handbuch', 'WPg', 'WuW', 'ZIP-Report', 'ZSR', 'Zeitschrift für die gesamte Versicherungswissenschaft', 'Zentralblatt für die gesamte Unterrichtsverwaltung in Preußen', 'ZfJ', 'ZfSH/SGB']
+Benchmark Set
+(Gröls & Gröls 2009) and Top 52 by
+Library Holdings: 11, ['AcP', 'AöR', 'BB', 'JA', 'KJ', 'NJW', 'RdA', 'VerwArch', 'ZHR', 'ZRG GA', 'ZRG KA']
