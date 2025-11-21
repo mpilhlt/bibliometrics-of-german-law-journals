@@ -1,0 +1,998 @@
+{
+  "DE-385": {
+    "id": "http://lobid.org/organisations/DE-385#!",
+    "label": "Universitätsbibliothek Trier"
+  },
+  "DE-Bo102": {
+    "id": "http://lobid.org/organisations/DE-Bo102#!",
+    "label": "Bundesministerium für Arbeit und Soziales, Bibliothek"
+  },
+  "DE-5": {
+    "id": "http://lobid.org/organisations/DE-5#!",
+    "label": "Universitäts- und Landesbibliothek Bonn"
+  },
+  "DE-5-34": {
+    "id": "http://lobid.org/organisations/DE-5-34#!",
+    "label": "Universität Bonn, Juristisches Seminar, Bibliothek"
+  },
+  "DE-361": {
+    "id": "http://lobid.org/organisations/DE-361#!",
+    "label": "Universitätsbibliothek Bielefeld"
+  },
+  "DE-294-39": {
+    "id": "http://lobid.org/organisations/DE-294-39#!",
+    "label": "Ruhr-Universität Bochum, Zentrales Rechtswissenschaftliches Seminar, Bibliothek"
+  },
+  "DE-465": {
+    "id": "http://lobid.org/organisations/DE-465#!",
+    "label": "Universitätsbibliothek Duisburg-Essen"
+  },
+  "DE-38": {
+    "id": "http://lobid.org/organisations/DE-38#!",
+    "label": "Universitäts- und Stadtbibliothek Köln, Hauptabteilung"
+  },
+  "DE-38-213": {
+    "id": "http://lobid.org/organisations/DE-38-213#!",
+    "label": "Institut für Öffentliches Recht und Verwaltungslehre, Bibliothek"
+  },
+  "DE-38-201": {
+    "id": "http://lobid.org/organisations/DE-38-201#!",
+    "label": "Fachbibliothek Rechtswissenschaft, Rechtswissenschaftliches Seminar"
+  },
+  "DE-6-016": {
+    "id": "http://lobid.org/organisations/DE-6-016#!",
+    "label": "Universität Münster, Rechtswissenschaftliches Seminar, Bibliothek"
+  },
+  "DE-467": {
+    "id": "http://lobid.org/organisations/DE-467#!",
+    "label": "Universitätsbibliothek Siegen"
+  },
+  "DE-468": {
+    "id": "http://lobid.org/organisations/DE-468#!",
+    "label": "Universitätsbibliothek Wuppertal"
+  },
+  "DE-5-187": {
+    "id": "http://lobid.org/organisations/DE-5-187#!",
+    "label": "Universität Bonn, Institut für Strafrecht, Bibliothek"
+  },
+  "DE-38-223": {
+    "id": "http://lobid.org/organisations/DE-38-223#!",
+    "label": "Universität Köln, Institut für Kriminologie, Bibliothek"
+  },
+  "DE-832": {
+    "id": "http://lobid.org/organisations/DE-832#!",
+    "label": "Technische Hochschule Köln, Hochschulbibliothek"
+  },
+  "DE-987": {
+    "id": "http://lobid.org/organisations/DE-987#!",
+    "label": "Hochschule Koblenz, Bibliothek RheinMoselCampus"
+  },
+  "DE-Bm3": {
+    "id": "http://lobid.org/organisations/DE-Bm3#!",
+    "label": "Bibliothek des Ruhrgebiets"
+  },
+  "DE-708": {
+    "id": "http://lobid.org/organisations/DE-708#!",
+    "label": "Universitätsbibliothek der Fernuniversität"
+  },
+  "DE-82-615": {
+    "id": "http://lobid.org/organisations/DE-82-615#!",
+    "label": "Fakultätsbibliothek Wirtschaftswissenschaften"
+  },
+  "DE-5-186": {
+    "id": "http://lobid.org/organisations/DE-5-186#!",
+    "label": "Universität Bonn, Institut für Steuerrecht, Bibliothek"
+  },
+  "DE-61": {
+    "id": "http://lobid.org/organisations/DE-61#!",
+    "label": "Universitäts- und Landesbibliothek Düsseldorf"
+  },
+  "DE-38-210": {
+    "id": "http://lobid.org/organisations/DE-38-210#!",
+    "label": "Universität Köln, Institut für Steuerrecht, Bibliothek"
+  },
+  "DE-6-017": {
+    "id": "http://lobid.org/organisations/DE-6-017#!",
+    "label": "Universität Münster, Fachbereichsbibliothek Wirtschaftswissenschaften, Forum Oeconomicum"
+  },
+  "DE-466": {
+    "id": "http://lobid.org/organisations/DE-466#!",
+    "label": "Universitätsbibliothek Paderborn"
+  },
+  "DE-Hag4": {
+    "id": "http://lobid.org/organisations/DE-Hag4#!",
+    "label": "Fachhochschule Südwestfalen, Fachbibliothek Hagen, Zentralbibliothek"
+  },
+  "DE-Kn195": {
+    "id": "http://lobid.org/organisations/DE-Kn195#!",
+    "label": "Oberlandesgericht Köln, Bibliothek"
+  },
+  "DE-Kn28": {
+    "id": "http://lobid.org/organisations/DE-Kn28#!",
+    "label": "Erzbischöfliche Diözesan- und Dombibliothek"
+  },
+  "DE-Walb1": {
+    "id": "http://lobid.org/organisations/DE-Walb1#!",
+    "label": "Bibliothek St. Albert"
+  },
+  "DE-Tr2": {
+    "id": "http://lobid.org/organisations/DE-Tr2#!",
+    "label": "Bibliothek des Bischöflichen Priesterseminars Trier"
+  },
+  "DE-929": {
+    "id": "http://lobid.org/organisations/DE-929#!",
+    "label": "Landesbibliothekszentrum Rheinland-Pfalz / Rheinische Landesbibliothek"
+  },
+  "DE-107": {
+    "id": "http://lobid.org/organisations/DE-107#!",
+    "label": "Landesbibliothekszentrum Rheinland-Pfalz / Pfälzische Landesbibliothek"
+  },
+  "DE-121": {
+    "id": "http://lobid.org/organisations/DE-121#!",
+    "label": "Wissenschaftliche Bibliothek der Stadt Trier"
+  },
+  "DE-5-184": {
+    "id": "http://lobid.org/organisations/DE-5-184#!",
+    "label": "Universität Bonn, Institut für Römisches Recht und Vergleichende Rechtsgeschichte, Bibliothek"
+  },
+  "DE-5-95": {
+    "id": "http://lobid.org/organisations/DE-5-95#!",
+    "label": "Universität Bonn, Institut für deutsche und rheinische Rechtsgeschichte, Bibliothek"
+  },
+  "DE-38-205": {
+    "id": "http://lobid.org/organisations/DE-38-205#!",
+    "label": "Institut für Strafrecht und Strafprozessrecht, Bibliothek"
+  },
+  "DE-38-209": {
+    "id": "http://lobid.org/organisations/DE-38-209#!",
+    "label": "Institut für Kirchenrecht und rheinische Kirchenrechtsgeschichte, Bibliothek"
+  },
+  "DE-38-216": {
+    "id": "http://lobid.org/organisations/DE-38-216#!",
+    "label": "Institut für Neuere Privatrechtsgeschichte, Deutsche und Rheinische Rechtsgeschichte, Bibliothek"
+  },
+  "DE-6": {
+    "id": "http://lobid.org/organisations/DE-6#!",
+    "label": "Universitäts- und Landesbibliothek Münster, Zentralbibliothek"
+  },
+  "DE-6-125": {
+    "id": "http://lobid.org/organisations/DE-6-125#!",
+    "label": "Universität Münster, Rechtshistorische Bibliothek"
+  },
+  "DE-386": {
+    "id": "http://lobid.org/organisations/DE-386#!",
+    "label": "Universitätsbibliothek der RPTU in Kaiserslautern"
+  },
+  "DE-5-26": {
+    "id": "http://lobid.org/organisations/DE-5-26#!",
+    "label": "Universität Bonn, Institut für Völkerrecht, Bibliothek"
+  },
+  "DE-38-211": {
+    "id": "http://lobid.org/organisations/DE-38-211#!",
+    "label": "Seminar für Staatsphilosophie und Rechtspolitik, Bibliothek"
+  },
+  "DE-38-450": {
+    "id": "http://lobid.org/organisations/DE-38-450#!",
+    "label": "Gemeinsame Fachbibliothek Asien / China"
+  },
+  "DE-38-208": {
+    "id": "http://lobid.org/organisations/DE-38-208#!",
+    "label": "Gemeinschaftsbibliothek Internationales Recht"
+  },
+  "DE-6-193": {
+    "id": "http://lobid.org/organisations/DE-6-193#!",
+    "label": "Universität Münster, Institut für Ethnologie, Bibliothek"
+  },
+  "DE-6-115": {
+    "id": "http://lobid.org/organisations/DE-6-115#!",
+    "label": "Universität Münster, Kommunalwissenschaftliches Institut, Bibliothek"
+  },
+  "DE-51": {
+    "id": "http://lobid.org/organisations/DE-51#!",
+    "label": "Lippische Landesbibliothek - Theologische Bibliothek und Mediothek"
+  },
+  "DE-38-204": {
+    "id": "http://lobid.org/organisations/DE-38-204#!",
+    "label": "Institut für Arbeits- und Wirtschaftsrecht, Bibliothek"
+  },
+  "DE-5-181": {
+    "id": "http://lobid.org/organisations/DE-5-181#!",
+    "label": "Universität Bonn, Institut für Arbeitsrecht und Recht der Sozialen Sicherheit, Bibliothek"
+  },
+  "DE-294": {
+    "id": "http://lobid.org/organisations/DE-294#!",
+    "label": "Ruhr-Universität Bochum, Universitätsbibliothek"
+  },
+  "DE-294-48": {
+    "id": "http://lobid.org/organisations/DE-294-48#!",
+    "label": "Ruhr-Universität Bochum, Institut für Berg- und Energierecht, Bibliothek"
+  },
+  "DE-38-101": {
+    "id": "http://lobid.org/organisations/DE-38-101#!",
+    "label": "Volkswirtschaftliche Bibliothek der Universität zu Köln"
+  },
+  "DE-6-326": {
+    "id": "http://lobid.org/organisations/DE-6-326#!",
+    "label": "Universität Münster, Institut für Informations-, Telekommunikations- und Medienrecht (ITM), Bibliothek"
+  },
+  "DE-6-A": {
+    "id": "http://lobid.org/organisations/DE-6-A#!",
+    "label": "Universitäts- und Landesbibliothek Münster, Zweigbibliothek Sozialwissenschaften"
+  },
+  "DE-98": {
+    "id": "http://lobid.org/organisations/DE-98#!",
+    "label": "ZB MED - Informationszentrum Lebenswissenschaften, Bonn"
+  },
+  "DE-82": {
+    "id": "http://lobid.org/organisations/DE-82#!",
+    "label": "Universitätsbibliothek der RWTH Aachen"
+  },
+  "DE-5-90": {
+    "id": "http://lobid.org/organisations/DE-5-90#!",
+    "label": "Universität Bonn, Institut für Philosophie, Bibliothek"
+  },
+  "DE-5-185": {
+    "id": "http://lobid.org/organisations/DE-5-185#!",
+    "label": "Universität Bonn, Rechtsphilosophisches Seminar, Bibliothek"
+  },
+  "DE-5-76": {
+    "id": "http://lobid.org/organisations/DE-5-76#!",
+    "label": "Universität Bonn, Staatswissenschaftliches Seminar,  Fachbereichsbibliothek"
+  },
+  "DE-294-28": {
+    "id": "http://lobid.org/organisations/DE-294-28#!",
+    "label": "Ruhr-Universität Bochum, Institut für Philosophie, Bibliothek"
+  },
+  "DE-294-38": {
+    "id": "http://lobid.org/organisations/DE-294-38#!",
+    "label": "Ruhr-Universität Bochum, Zentrales katholisch-theologisches Seminar, Bibliothek"
+  },
+  "DE-6-069": {
+    "id": "http://lobid.org/organisations/DE-6-069#!",
+    "label": "Universität Münster, Gemeinschaftsbibliothek der Katholischen-Theologischen Fakultät, Abteilung Hüfferstr."
+  },
+  "DE-Sie5": {
+    "id": "http://lobid.org/organisations/DE-Sie5#!",
+    "label": "Wissenschaftliche Bibliothek des Rhein-Sieg-Kreises"
+  },
+  "DE-Sol1": {
+    "id": "http://lobid.org/organisations/DE-Sol1#!",
+    "label": "Stadtarchiv Solingen, Bibliothek"
+  },
+  "DE-294-11": {
+    "id": "http://lobid.org/organisations/DE-294-11#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Geschichtswissenschaft, Historische Bibliothek"
+  },
+  "DE-6-311": {
+    "id": "http://lobid.org/organisations/DE-6-311#!",
+    "label": "Universität Münster, Universitätsarchiv, Bibliothek"
+  },
+  "DE-6-177": {
+    "id": "http://lobid.org/organisations/DE-6-177#!",
+    "label": "Universität Münster, Gemeinsame Bibliothek der Zivilrechtlichen Institute"
+  },
+  "DE-294-17": {
+    "id": "http://lobid.org/organisations/DE-294-17#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Sozialwissenschaft, Bibliothek"
+  },
+  "DE-38M": {
+    "id": "http://lobid.org/organisations/DE-38M#!",
+    "label": "ZB MED - Informationszentrum Lebenswissenschaften, Köln"
+  },
+  "DE-5-35": {
+    "id": "http://lobid.org/organisations/DE-5-35#!",
+    "label": "Universität Bonn, Institut für Handels- und Wirtschaftsrecht, Bibliothek"
+  },
+  "DE-38-222": {
+    "id": "http://lobid.org/organisations/DE-38-222#!",
+    "label": "Institut für Medienrecht und Kommunikationsrecht, Bibliothek"
+  },
+  "DE-5-20": {
+    "id": "http://lobid.org/organisations/DE-5-20#!",
+    "label": "Universität Bonn, Institut für Geschichtswissenschaft, Bibliothek"
+  },
+  "DE-294-15": {
+    "id": "http://lobid.org/organisations/DE-294-15#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Ostasienwissenschaften, Bibliothek"
+  },
+  "DE-38-420": {
+    "id": "http://lobid.org/organisations/DE-38-420#!",
+    "label": "Historisches Institut, Abteilung für Mittlere und Neuere Geschichte mit Abteilung für Nationalismusforschung, Bibliothek"
+  },
+  "DE-6-248": {
+    "id": "http://lobid.org/organisations/DE-6-248#!",
+    "label": "Universität Münster, Bibliotheken im Fürstenberghaus"
+  },
+  "DE-Bi10": {
+    "id": "http://lobid.org/organisations/DE-Bi10#!",
+    "label": "Hochschule Bielefeld – University of Applied Sciences and Arts, Hochschulbibliothek"
+  },
+  "DE-385-823": {
+    "id": "http://lobid.org/organisations/DE-385-823#!",
+    "label": "Institut für Recht und Digitalisierung Trier (IRDT), Bibliothek"
+  },
+  "DE-5-142": {
+    "id": "http://lobid.org/organisations/DE-5-142#!",
+    "label": "Universität Bonn, Institut für Internationales Privatrecht und Rechtsvergleichung, Bibliothek"
+  },
+  "DE-38-218": {
+    "id": "http://lobid.org/organisations/DE-38-218#!",
+    "label": "Institut für Versicherungsrecht, Institut für Versicherungswissenschaft mit Abt. für Versicherungswirtschaft, Versicherungsrecht, Versicherungsmathematik, Seminar für Allgemeine Betriebswirtschaftslehre, Risikomanagement und Versicherungslehre, Gemeinsame Bibliothek"
+  },
+  "DE-Kn41": {
+    "id": "http://lobid.org/organisations/DE-Kn41#!",
+    "label": "Zentralbibliothek der Sportwissenschaften der Deutschen Sporthochschule Köln"
+  },
+  "DE-290": {
+    "id": "http://lobid.org/organisations/DE-290#!",
+    "label": "Universitätsbibliothek Dortmund"
+  },
+  "DE-Lan1": {
+    "id": "http://lobid.org/organisations/DE-Lan1#!",
+    "label": "Universitätsbibliothek der RPTU in Landau"
+  },
+  "DE-5-74": {
+    "id": "http://lobid.org/organisations/DE-5-74#!",
+    "label": "Universität Bonn, Institut für Geschichtswissenschaft, Abteilung Alte Geschichte, Bibliothek"
+  },
+  "DE-38-404": {
+    "id": "http://lobid.org/organisations/DE-38-404#!",
+    "label": "Institut für Altertumskunde, Abteilung Klassische Philologie, Alte Geschichte, Bibliothek"
+  },
+  "DE-1010": {
+    "id": "http://lobid.org/organisations/DE-1010#!",
+    "label": "Westfälische Hochschule Gelsenkirchen Bocholt Recklinghausen, Hochschulbibliothek"
+  },
+  "DE-836": {
+    "id": "http://lobid.org/organisations/DE-836#!",
+    "label": "FH Münster, Hochschulbibliothek"
+  },
+  "DE-Kn3": {
+    "id": "http://lobid.org/organisations/DE-Kn3#!",
+    "label": "Kunst- und Museumsbibliothek der Stadt Köln"
+  },
+  "DE-Dm13": {
+    "id": "http://lobid.org/organisations/DE-Dm13#!",
+    "label": "Fachhochschule Dortmund, Hochschulbibliothek"
+  },
+  "DE-6-Z": {
+    "id": "http://lobid.org/organisations/DE-6-Z#!",
+    "label": "Universitäts- und Landesbibliothek Münster, Zeitungs- und Pressearchiv"
+  },
+  "DE-829": {
+    "id": "http://lobid.org/organisations/DE-829#!",
+    "label": "Hochschule Niederrhein, Bibliothek"
+  },
+  "DE-5-190": {
+    "id": "http://lobid.org/organisations/DE-5-190#!",
+    "label": "Universität Bonn, Institut für Deutsches und Internationales Zivilprozeßrecht sowie Konfliktmanagement, Bibliothek"
+  },
+  "DE-38-226": {
+    "id": "http://lobid.org/organisations/DE-38-226#!",
+    "label": "Institut für Anwaltsrecht, Bibliothek"
+  },
+  "DE-1042": {
+    "id": "http://lobid.org/organisations/DE-1042#!",
+    "label": "Hochschule Trier, Umwelt-Campus Birkenfeld, Bibliothek"
+  },
+  "DE-82-423": {
+    "id": "http://lobid.org/organisations/DE-82-423#!",
+    "label": "Lehr- und Forschungsgebiet Berg- und Umweltrecht, Bibliothek"
+  },
+  "DE-5-183": {
+    "id": "http://lobid.org/organisations/DE-5-183#!",
+    "label": "Universität Bonn, Institut für Öffentliches Recht, Bibliothek"
+  },
+  "DE-38-228": {
+    "id": "http://lobid.org/organisations/DE-38-228#!",
+    "label": "Lehrstuhl für Staats- und Verwaltungsrecht, Bibliothek"
+  },
+  "DE-6-194": {
+    "id": "http://lobid.org/organisations/DE-6-194#!",
+    "label": "Universität Münster, Zentralinstitut für Raumplanung, Bibliothek"
+  },
+  "DE-1018": {
+    "id": "http://lobid.org/organisations/DE-1018#!",
+    "label": "Universitätsbibliothek Witten / Herdecke"
+  },
+  "DE-743": {
+    "id": "http://lobid.org/organisations/DE-743#!",
+    "label": "Technische Hochschule Ostwestfalen-Lippe, Service Kommunikation Information Medien"
+  },
+  "DE-5-82": {
+    "id": "http://lobid.org/organisations/DE-5-82#!",
+    "label": "Universität Bonn, Institut für Geodäsie und Geoinformation / Städtebau, Bodenordnung, Bibliothek"
+  },
+  "DE-1105": {
+    "id": "http://lobid.org/organisations/DE-1105#!",
+    "label": "Hochschule Koblenz, RheinAhrCampus, Bibliothek"
+  },
+  "DE-294-27": {
+    "id": "http://lobid.org/organisations/DE-294-27#!",
+    "label": "Ruhr-Universität Bochum, Institut für Erziehungswissenschaft, Bibliothek"
+  },
+  "DE-6-119": {
+    "id": "http://lobid.org/organisations/DE-6-119#!",
+    "label": "Universität Münster, Institutum Judaicum Delitzschianum, Bibliothek"
+  },
+  "DE-6-182": {
+    "id": "http://lobid.org/organisations/DE-6-182#!",
+    "label": "Universität Münster, Institut für Neutestamentliche Textforschung, Bibliothek"
+  },
+  "DE-5-79": {
+    "id": "http://lobid.org/organisations/DE-5-79#!",
+    "label": "Universität Bonn, Kirchenrechtliches Institut, Bibliothek"
+  },
+  "DE-A96": {
+    "id": "http://lobid.org/organisations/DE-A96#!",
+    "label": "Hochschulbibliothek der Fachhochschule Aachen"
+  },
+  "DE-294-70": {
+    "id": "http://lobid.org/organisations/DE-294-70#!",
+    "label": "IPA, Institut für Prävention und Arbeitsmedizin der Deutschen Gesetzlichen Unfallversicherung, Institut der Ruhr-Universität Bochum, Bibliothek"
+  },
+  "DE-294-47": {
+    "id": "http://lobid.org/organisations/DE-294-47#!",
+    "label": "Ruhr-Universität Bochum, Institut für Medizinische Ethik und Geschichte der Medizin, Bibliothek"
+  },
+  "DE-5-11": {
+    "id": "http://lobid.org/organisations/DE-5-11#!",
+    "label": "Universität Bonn, Geographisches Institut, Bibliothek"
+  },
+  "DE-6-007": {
+    "id": "http://lobid.org/organisations/DE-6-007#!",
+    "label": "Universität Münster, Bibliothek Geowissenschaften I"
+  },
+  "DE-6-210": {
+    "id": "http://lobid.org/organisations/DE-6-210#!",
+    "label": "Universität Münster, Institut für Vergleichende Städtegeschichte, Bibliothek"
+  },
+  "DE-38-217": {
+    "id": "http://lobid.org/organisations/DE-38-217#!",
+    "label": "Lehrstuhl für Bürgerliches Recht, Deutsches und Internationales Handels-, Wirtschafts- und Bankrecht, Internationales Privatrecht und Rechtsvergleichung, Institut für Bankwirtschaft und Bankrecht, Abt. Bankrecht, Center for Transnational Law (CENTRAL), Gemeinsame Bibliothek"
+  },
+  "DE-38-203": {
+    "id": "http://lobid.org/organisations/DE-38-203#!",
+    "label": "Forschungsinstitut für Deutsches und Europäisches Sozialrecht, Bibliothek"
+  },
+  "DE-Due62": {
+    "id": "http://lobid.org/organisations/DE-Due62#!",
+    "label": "Hochschulbibliothek der Hochschule Düsseldorf"
+  },
+  "DE-5-108": {
+    "id": "http://lobid.org/organisations/DE-5-108#!",
+    "label": "Universität Bonn, Fachbibliothek der Evangelischen und Katholischen Theologie"
+  },
+  "DE-38-007": {
+    "id": "http://lobid.org/organisations/DE-38-007#!",
+    "label": "Bibliothek GeStiK - Gender Studies in Köln"
+  },
+  "DE-1871": {
+    "id": "http://lobid.org/organisations/DE-1871#!",
+    "label": "Hochschule Hamm-Lippstadt, Bibliothek Hamm"
+  },
+  "DE-38-221": {
+    "id": "http://lobid.org/organisations/DE-38-221#!",
+    "label": "Institut für Verfahrensrecht und Insolvenzrecht, Bibliothek"
+  },
+  "DE-1866": {
+    "id": "http://lobid.org/organisations/DE-1866#!",
+    "label": "Hochschule für Gesundheit, Hochschulbibliothek"
+  },
+  "DE-Kob7": {
+    "id": "http://lobid.org/organisations/DE-Kob7#!",
+    "label": "Universitätsbibliothek Koblenz"
+  },
+  "DE-Bm3-3": {
+    "id": "http://lobid.org/organisations/DE-Bm3-3#!",
+    "label": "Bibliothek des Ruhrgebiets, Bestandsabteilung Bergbau-Bücherei und Ruhrgebiet"
+  },
+  "DE-82-608": {
+    "id": "http://lobid.org/organisations/DE-82-608#!",
+    "label": "Rheinisch-Westfälische TH, Geographisches Institut, Bibliothek"
+  },
+  "DE-38-234": {
+    "id": "http://lobid.org/organisations/DE-38-234#!",
+    "label": "Lehrstuhl für Bürgerliches Recht und Rechtstheorie, Bibliothek"
+  },
+  "DE-82-215": {
+    "id": "http://lobid.org/organisations/DE-82-215#!",
+    "label": "Institut für Baumaschinen und Baubetrieb, Bibliothek"
+  },
+  "DE-38-214": {
+    "id": "http://lobid.org/organisations/DE-38-214#!",
+    "label": "Institut für Römisches Recht, Bibliothek"
+  },
+  "DE-38-231": {
+    "id": "http://lobid.org/organisations/DE-38-231#!",
+    "label": "Lehrstuhl für Bürgerliches Recht, Bilanz- und Steuerrecht, Bibliothek"
+  },
+  "DE-1044": {
+    "id": "http://lobid.org/organisations/DE-1044#!",
+    "label": "Hochschul- und Kreisbibliothek Bonn-Rhein-Sieg"
+  },
+  "DE-5-225": {
+    "id": "http://lobid.org/organisations/DE-5-225#!",
+    "label": "Universität Bonn, Zentrum für Europäische Integrationsforschung / Zentrum für Entwicklungsforschung, Gemeinsame Bibliothek"
+  },
+  "DE-38-230": {
+    "id": "http://lobid.org/organisations/DE-38-230#!",
+    "label": "Institut für Gewerblichen Rechtsschutz und Urheberrecht, Bibliothek"
+  },
+  "DE-5-161": {
+    "id": "http://lobid.org/organisations/DE-5-161#!",
+    "label": "Universität Bonn, Institut für Geschichtswissenschaft, Abteilung Osteuropäische Geschichte, Bibliothek"
+  },
+  "DE-38-219": {
+    "id": "http://lobid.org/organisations/DE-38-219#!",
+    "label": "Akademie für europäischen Menschenrechtsschutz, Bibliothek"
+  },
+  "DE-5-162": {
+    "id": "http://lobid.org/organisations/DE-5-162#!",
+    "label": "Universität Bonn, Institut für Politische Wissenschaft und Soziologie, Bibliothek"
+  },
+  "DE-Bo404": {
+    "id": "http://lobid.org/organisations/DE-Bo404#!",
+    "label": "Deutsches Referenzzentrum für Ethik in den Biowissenschaften, Bibliothek/Dokumentation"
+  },
+  "DE-Tr5": {
+    "id": "http://lobid.org/organisations/DE-Tr5#!",
+    "label": "Hochschulbibliothek Trier"
+  },
+  "DE-294-18": {
+    "id": "http://lobid.org/organisations/DE-294-18#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Wirtschaftswissenschaft, Bibliothek"
+  },
+  "DE-38-006": {
+    "id": "http://lobid.org/organisations/DE-38-006#!",
+    "label": "Bibliothek für Informatik und Wirtschaftsinformatik und Bibliothek des Regionalen Rechenzentrums (RRZK)"
+  },
+  "DE-6-282": {
+    "id": "http://lobid.org/organisations/DE-6-282#!",
+    "label": "Universität Münster, Institut für Wirtschaftsinformatik, Bibliothek"
+  },
+  "DE-1393": {
+    "id": "http://lobid.org/organisations/DE-1393#!",
+    "label": "Hochschule Ruhr West, Hochschulbibliothek"
+  },
+  "DE-82-719": {
+    "id": "http://lobid.org/organisations/DE-82-719#!",
+    "label": "IT-Direktion, Bibliothek"
+  },
+  "DE-Hag4-2": {
+    "id": "http://lobid.org/organisations/DE-Hag4-2#!",
+    "label": "Fachhochschule Südwestfalen, Fachbibliothek Iserlohn"
+  },
+  "DE-82-103": {
+    "id": "http://lobid.org/organisations/DE-82-103#!",
+    "label": "Fachbibliothek Informatik"
+  },
+  "DE-110": {
+    "id": "http://lobid.org/organisations/DE-110#!",
+    "label": "Fürstliche Bibliothek Corvey"
+  },
+  "DE-B23": {
+    "id": "http://lobid.org/organisations/DE-B23#!",
+    "label": "Deutscher Wetterdienst, Deutsche Meteorologische Bibliothek"
+  },
+  "DE-82-713": {
+    "id": "http://lobid.org/organisations/DE-82-713#!",
+    "label": "Verwaltung des Universitätsklinikums, Bibliothek"
+  },
+  "DE-Zw1": {
+    "id": "http://lobid.org/organisations/DE-Zw1#!",
+    "label": "Landesbibliothekszentrum Rheinland-Pfalz / Bibliotheca Bipontina"
+  },
+  "DE-38-421": {
+    "id": "http://lobid.org/organisations/DE-38-421#!",
+    "label": "Historisches Institut, Arbeitsstelle für Geschichte der Publizistik, Bibliothek"
+  },
+  "DE-6-123": {
+    "id": "http://lobid.org/organisations/DE-6-123#!",
+    "label": "Universität Münster, Bibliothek für Erziehungswissenschaft und Kommunikationswissenschaft"
+  },
+  "DE-1116-DLR": {
+    "id": "http://lobid.org/organisations/DE-1116-DLR#!",
+    "label": "Dienstleistungszentrum Ländlicher Raum, Bibliothek"
+  },
+  "DE-5N": {
+    "id": "http://lobid.org/organisations/DE-5N#!",
+    "label": "Universitäts- und Landesbibliothek Bonn, Abteilungsbibliothek Medizin, Naturwissenschaften und Landbau"
+  },
+  "DE-1032": {
+    "id": "http://lobid.org/organisations/DE-1032#!",
+    "label": "Katholische Hochschule Nordrhein-Westfalen (katho), Hochschulbibliothek"
+  },
+  "DE-1116": {
+    "id": "http://lobid.org/organisations/DE-1116#!",
+    "label": "Hochschule für Wirtschaft und Gesellschaft Ludwigshafen, Bibliothek"
+  },
+  "DE-5-180": {
+    "id": "http://lobid.org/organisations/DE-5-180#!",
+    "label": "Universität Bonn, Institut für Deutsches, Europäisches und Internationales Familienrecht, Bibliothek"
+  },
+  "DE-82-208": {
+    "id": "http://lobid.org/organisations/DE-82-208#!",
+    "label": "Lehrstuhl für Landschaftsarchitektur, Bibliothek"
+  },
+  "DE-1383": {
+    "id": "http://lobid.org/organisations/DE-1383#!",
+    "label": "Hochschule Rhein-Waal, Bibliothek"
+  },
+  "DE-1383a": {
+    "id": "http://lobid.org/organisations/DE-1383a#!",
+    "label": "Hochschule Rhein-Waal, Zweigbibliothek Kamp-Lintfort"
+  },
+  "DE-38-448": {
+    "id": "http://lobid.org/organisations/DE-38-448#!",
+    "label": "Gemeinsame Fachbibliothek Medienkultur und Theater, Institutsbibliothek Medienkultur und Theater"
+  },
+  "DE-1156": {
+    "id": "http://lobid.org/organisations/DE-1156#!",
+    "label": "Folkwang Universität der Künste | Bibliothek"
+  },
+  "DE-575": {
+    "id": "http://lobid.org/organisations/DE-575#!",
+    "label": "Hochschule für Musik Detmold, Bibliothek"
+  },
+  "DE-1972": {
+    "id": "http://lobid.org/organisations/DE-1972#!",
+    "label": "Robert Schumann Hochschule, Hochschulbibliothek"
+  },
+  "DE-38-430": {
+    "id": "http://lobid.org/organisations/DE-38-430#!",
+    "label": "Musikwissenschaftliches Institut, Abteilung Historische Musikwissenschaft, Systematische Musikwissenschaft, Musikethnologie,, Collgium musicum, Bibliothek"
+  },
+  "DE-Kn38": {
+    "id": "http://lobid.org/organisations/DE-Kn38#!",
+    "label": "Hochschule für Musik und Tanz Köln, Bibliothek"
+  },
+  "DE-38-123": {
+    "id": "http://lobid.org/organisations/DE-38-123#!",
+    "label": "FBV Fachbibliothek Versicherungswissenschaft am Seminar für Allgemeine Betriebswirtschaftslehre, Risikomanagement und Versicherungslehre ; Institut für Versicherungswissenschaft, Abt. Versicherungswirtschaft, Abt. Versicherungsmathematik"
+  },
+  "DE-82-602": {
+    "id": "http://lobid.org/organisations/DE-82-602#!",
+    "label": "Lehrstuhl und Institut für Psychologie, Bibliothek"
+  },
+  "DE-294-51": {
+    "id": "http://lobid.org/organisations/DE-294-51#!",
+    "label": "Ruhr-Universität Bochum, Verbundbibliothek IC BU/MB"
+  },
+  "DE-1117": {
+    "id": "http://lobid.org/organisations/DE-1117#!",
+    "label": "Hochschule Worms, Hochschulbibliothek"
+  },
+  "DE-956": {
+    "id": "http://lobid.org/organisations/DE-956#!",
+    "label": "Evangelische Hochschule Rheinland-Westfalen-Lippe, Bibliothek"
+  },
+  "DE-Hag4-3": {
+    "id": "http://lobid.org/organisations/DE-Hag4-3#!",
+    "label": "Fachhochschule Südwestfalen, Fachbibliothek Meschede"
+  },
+  "DE-38-307": {
+    "id": "http://lobid.org/organisations/DE-38-307#!",
+    "label": "Humanwissenschaftliche Bibliothek: Gemeinsame Bibliothek der Humanwissenschaftlichen Fakultät und der USB"
+  },
+  "DE-6-164": {
+    "id": "http://lobid.org/organisations/DE-6-164#!",
+    "label": "Universität Münster, Institut für Ethik, Geschichte und Theorie der Medizin, Bibliothek"
+  },
+  "DE-38-212": {
+    "id": "http://lobid.org/organisations/DE-38-212#!",
+    "label": "Institut für Luft- und Weltraumrecht und Cyberrecht, Lehrstuhl für Völkerrecht, Europarecht, Europäisches und Internationales Wirtschaftsrecht, Gemeinsame Bibliothek"
+  },
+  "DE-5-39": {
+    "id": "http://lobid.org/organisations/DE-5-39#!",
+    "label": "Universität Bonn, Institut für Geschichtswissenschaft, Abteilung für Geschichte der Frühen Neuzeit und Rheinische Landesgeschichte, Bibliothek"
+  },
+  "DE-294-60": {
+    "id": "http://lobid.org/organisations/DE-294-60#!",
+    "label": "Ruhr-Universität Bochum, Institut für Arbeitswissenschaft, Bibliothek"
+  },
+  "DE-6-255": {
+    "id": "http://lobid.org/organisations/DE-6-255#!",
+    "label": "Universität Münster, Bibliotheken Romanisches Seminar und Institut für Slavistik"
+  },
+  "DE-82-613": {
+    "id": "http://lobid.org/organisations/DE-82-613#!",
+    "label": "Lehrstuhl und Institut für Politische Wissenschaft, Bibliothek"
+  },
+  "DE-294-36": {
+    "id": "http://lobid.org/organisations/DE-294-36#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Philologie, Seminar für Slavistik, Bibliothek"
+  },
+  "DE-38-425": {
+    "id": "http://lobid.org/organisations/DE-38-425#!",
+    "label": "Historisches Institut, Abteilung für Osteuropäische Geschichte, Bibliothek"
+  },
+  "DE-294-56": {
+    "id": "http://lobid.org/organisations/DE-294-56#!",
+    "label": "Ruhr-Universität Bochum, Institut für Deutschlandforschung, Bibliothek"
+  },
+  "DE-5-169": {
+    "id": "http://lobid.org/organisations/DE-5-169#!",
+    "label": "Universität Bonn, Altkatholisches Seminar, Bibliothek"
+  },
+  "DE-294-30": {
+    "id": "http://lobid.org/organisations/DE-294-30#!",
+    "label": "Ruhr-Universität Bochum, Kunstgeschichtliches Institut, Bibliothek"
+  },
+  "DE-Bm40": {
+    "id": "http://lobid.org/organisations/DE-Bm40#!",
+    "label": "Hochschule Bochum, Hochschulbibliothek"
+  },
+  "DE-368": {
+    "id": "http://lobid.org/organisations/DE-368#!",
+    "label": "Stadtbibliothek Hattingen"
+  },
+  "DE-38-305": {
+    "id": "http://lobid.org/organisations/DE-38-305#!",
+    "label": "Universität Köln, Department Psychologie, Bibliothek"
+  },
+  "DE-6-M": {
+    "id": "http://lobid.org/organisations/DE-6-M#!",
+    "label": "Universitäts- und Landesbibliothek Münster, Zweigbibliothek Medizin"
+  },
+  "DE-5-205": {
+    "id": "http://lobid.org/organisations/DE-5-205#!",
+    "label": "Universität Bonn, Archiv der Universität, Bibliothek"
+  },
+  "DE-38-225": {
+    "id": "http://lobid.org/organisations/DE-38-225#!",
+    "label": "Institut für Staatsrecht, Bibliothek"
+  },
+  "DE-38-125": {
+    "id": "http://lobid.org/organisations/DE-38-125#!",
+    "label": "Forschungsinstitut für Politische Wissenschaft und Europäische Fragen, Seminar für Politische Wissenschaft, Gemeinsame Bibliothek"
+  },
+  "DE-6-011": {
+    "id": "http://lobid.org/organisations/DE-6-011#!",
+    "label": "Universität Münster, Gemeinschaftsbibliothek der Katholisch-Theologischen Fakultät, Abteilung Johannisstr."
+  },
+  "DE-38-005": {
+    "id": "http://lobid.org/organisations/DE-38-005#!",
+    "label": "Universität Köln, Universitätsarchiv"
+  },
+  "DE-82-759": {
+    "id": "http://lobid.org/organisations/DE-82-759#!",
+    "label": "Personalrat Universitätsklinikum Aachen, Bibliothek"
+  },
+  "DE-294-22": {
+    "id": "http://lobid.org/organisations/DE-294-22#!",
+    "label": "Ruhr-Universität Bochum, Verbundbibliothek IB Fachbibliothek für Geographie, Geologie, Mathematik, Psychologie"
+  },
+  "DE-6-006": {
+    "id": "http://lobid.org/organisations/DE-6-006#!",
+    "label": "Universität Münster, Evangelisch-Theologische Fakultät, Bibliothek"
+  },
+  "DE-82-612": {
+    "id": "http://lobid.org/organisations/DE-82-612#!",
+    "label": "Lehrstuhl und Institut für Soziologie, Bibliothek"
+  },
+  "DE-6-023": {
+    "id": "http://lobid.org/organisations/DE-6-023#!",
+    "label": "Universität Münster, Bibliothek des Fachbereichs Physik"
+  },
+  "DE-294-21": {
+    "id": "http://lobid.org/organisations/DE-294-21#!",
+    "label": "Ruhr-Universität Bochum, Evangelisch-theologisches Seminar, Bibliothek"
+  },
+  "DE-6-015": {
+    "id": "http://lobid.org/organisations/DE-6-015#!",
+    "label": "Universität Münster, Philosophisches Seminar, Bibliothek"
+  },
+  "DE-294-26": {
+    "id": "http://lobid.org/organisations/DE-294-26#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Sportwissenschaft, Bibliothek"
+  },
+  "DE-6-058": {
+    "id": "http://lobid.org/organisations/DE-6-058#!",
+    "label": "Universität Münster, Fachbereich 7, Psychologie und Sportwissenschaft, Bibliothek Sportwissenschaft"
+  },
+  "DE-294-57": {
+    "id": "http://lobid.org/organisations/DE-294-57#!",
+    "label": "Ruhr-Universität Bochum, Institut für Friedenssicherungsrecht und Humanitäres Völkerrecht, Bibliothek"
+  },
+  "DE-38-132": {
+    "id": "http://lobid.org/organisations/DE-38-132#!",
+    "label": "Gemeinsame Fachbibliothek Soziologie"
+  },
+  "DE-38-422": {
+    "id": "http://lobid.org/organisations/DE-38-422#!",
+    "label": "Historisches Institut, Abteilung für Nordamerikanische Geschichte, Bibliothek"
+  },
+  "DE-38-401": {
+    "id": "http://lobid.org/organisations/DE-38-401#!",
+    "label": "Universität Köln, Philosophisches Seminar, Bibliothek"
+  },
+  "DE-6-156": {
+    "id": "http://lobid.org/organisations/DE-6-156#!",
+    "label": "Universität Münster, Institut für Sinologie und Ostasienkunde, Bibliothek"
+  },
+  "DE-38-106": {
+    "id": "http://lobid.org/organisations/DE-38-106#!",
+    "label": "Betriebswirtschaftliche Bibliothek der Universität zu Köln"
+  },
+  "DE-294-63": {
+    "id": "http://lobid.org/organisations/DE-294-63#!",
+    "label": "Berufsgenossenschaftliche Kliniken Bergmannsheil Bochum, Universitätsklinik, Medizinische Zentralbibliothek"
+  },
+  "DE-38-237": {
+    "id": "http://lobid.org/organisations/DE-38-237#!",
+    "label": "Institute for International Peace and Security Law, Library"
+  },
+  "DE-6-339": {
+    "id": "http://lobid.org/organisations/DE-6-339#!",
+    "label": "Universität Münster, Gemeinsame Bibliothek des Centrums für Religionsbezogene Studien (CRS) und des Zentrums für Islamische Theologie (ZIT)"
+  },
+  "DE-6-154": {
+    "id": "http://lobid.org/organisations/DE-6-154#!",
+    "label": "Universität Münster, Institut für Arabistik und Islamwissenschaft, Bibliothek"
+  },
+  "DE-1926": {
+    "id": "http://lobid.org/organisations/DE-1926#!",
+    "label": "Hochschule Hamm-Lippstadt, Bibliothek Lippstadt"
+  },
+  "DE-38-431": {
+    "id": "http://lobid.org/organisations/DE-38-431#!",
+    "label": "Universität Köln, Institut für Ethnologie, Bibliothek"
+  },
+  "DE-6-328": {
+    "id": "http://lobid.org/organisations/DE-6-328#!",
+    "label": "Universität Münster, Arbeitsstelle Griechenland, Bibliothek"
+  },
+  "DE-6-258": {
+    "id": "http://lobid.org/organisations/DE-6-258#!",
+    "label": "Universität Münster, Institut für Sprachwissenschaft, Bibliothek"
+  },
+  "DE-82-757": {
+    "id": "http://lobid.org/organisations/DE-82-757#!",
+    "label": "Personalvertretung der Wissenschaftlichen Mitarbeiter und Ärzte, Medizinische Einrichtungen, Bibliothek"
+  },
+  "DE-Bo127": {
+    "id": "http://lobid.org/organisations/DE-Bo127#!",
+    "label": "Zoologisches Forschungsmuseum Alexander Koenig, Bibliothek"
+  },
+  "DE-5-61": {
+    "id": "http://lobid.org/organisations/DE-5-61#!",
+    "label": "Universität Bonn, Institut für Lebensmittel- und Ressourcenökonomik (ILR), Bibliothek"
+  },
+  "DE-6-139a": {
+    "id": "http://lobid.org/organisations/DE-6-139a#!",
+    "label": "Kommission Alltagskulturforschung für Westfalen (KAF), Bibliothek"
+  },
+  "DE-5-7": {
+    "id": "http://lobid.org/organisations/DE-5-7#!",
+    "label": "Universität Bonn, Kunsthistorisches Institut, Bibliothek"
+  },
+  "DE-2187": {
+    "id": "http://lobid.org/organisations/DE-2187#!",
+    "label": "Bischöfliches Diözesanarchiv Aachen"
+  },
+  "DE-82-604": {
+    "id": "http://lobid.org/organisations/DE-82-604#!",
+    "label": "Historisches Institut, Bibliothek"
+  },
+  "DE-294-23": {
+    "id": "http://lobid.org/organisations/DE-294-23#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Philologie, Germanistisches Institut, Bibliothek"
+  },
+  "DE-38-405": {
+    "id": "http://lobid.org/organisations/DE-38-405#!",
+    "label": "Institut für Deutsche Sprache und Literatur mit Volkskundlicher Abteilung, Bibliothek"
+  },
+  "DE-6-246": {
+    "id": "http://lobid.org/organisations/DE-6-246#!",
+    "label": "Universität Münster, Germanistisches Institut, Bibliothek"
+  },
+  "DE-82-769": {
+    "id": "http://lobid.org/organisations/DE-82-769#!",
+    "label": "Institut für Arbeitsmedizin und Sozialmedizin, Bibliothek"
+  },
+  "DE-294-20": {
+    "id": "http://lobid.org/organisations/DE-294-20#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Philologie, Englisches Seminar, Bibliothek"
+  },
+  "DE-62": {
+    "id": "http://lobid.org/organisations/DE-62#!",
+    "label": "Stadtbibliothek Wuppertal"
+  },
+  "DE-82-218": {
+    "id": "http://lobid.org/organisations/DE-82-218#!",
+    "label": "Lehrstuhl für Schienenbahnwesen und Verkehrswirtschaft und Verkehrswissenschaftliches Institut, Bibliothek"
+  },
+  "DE-294-14": {
+    "id": "http://lobid.org/organisations/DE-294-14#!",
+    "label": "Ruhr-Universität Bochum, Medizinische Fakultät, Bibliothek"
+  },
+  "DE-82-401": {
+    "id": "http://lobid.org/organisations/DE-82-401#!",
+    "label": "Institute of Mineral Resources Engineering, Bibliothek"
+  },
+  "DE-Hag4-4": {
+    "id": "http://lobid.org/organisations/DE-Hag4-4#!",
+    "label": "Fachhochschule Südwestfalen, Fachbibliothek Soest"
+  },
+  "DE-82-603": {
+    "id": "http://lobid.org/organisations/DE-82-603#!",
+    "label": "Lehr- und Forschungsgebiet Erziehungswissenschaft mit dem Schwerpunkt Schulpädagogik, Bibliothek"
+  },
+  "DE-6-295": {
+    "id": "http://lobid.org/organisations/DE-6-295#!",
+    "label": "Universität Münster, Seminar für Didaktik des Sachunterrichts, Bibliothek"
+  },
+  "DE-6-298": {
+    "id": "http://lobid.org/organisations/DE-6-298#!",
+    "label": "Universität Münster, Zentrum für Didaktik der Biologie (ZDB) Bibliothek"
+  },
+  "DE-Bm3-2": {
+    "id": "http://lobid.org/organisations/DE-Bm3-2#!",
+    "label": "Bibliothek des Ruhrgebiets, Bestandsabteilung Institut für soziale Bewegungen"
+  },
+  "DE-294-9": {
+    "id": "http://lobid.org/organisations/DE-294-9#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Elektrotechnik und Informationstechnik, Bibliothek"
+  },
+  "DE-5-51": {
+    "id": "http://lobid.org/organisations/DE-5-51#!",
+    "label": "Universität Bonn, Institut für Psychologie, Bibliothek"
+  },
+  "DE-6-052": {
+    "id": "http://lobid.org/organisations/DE-6-052#!",
+    "label": "Universität Münster, Institut für Musikwissenschaft, Bibliothek"
+  },
+  "DE-82-220": {
+    "id": "http://lobid.org/organisations/DE-82-220#!",
+    "label": "Institut für Straßenwesen, Bibliothek"
+  },
+  "DE-38-468": {
+    "id": "http://lobid.org/organisations/DE-38-468#!",
+    "label": "Europäische Rechtslinguistik, Bibliothek"
+  },
+  "DE-Bo131": {
+    "id": "http://lobid.org/organisations/DE-Bo131#!",
+    "label": "Sanitätsakademie der Bundeswehr, Fachinformationsstelle und Virtuelle Bibliothek"
+  },
+  "DE-60": {
+    "id": "http://lobid.org/organisations/DE-60#!",
+    "label": "Stadt- und Landesbibliothek Dortmund"
+  },
+  "DE-Kn166": {
+    "id": "http://lobid.org/organisations/DE-Kn166#!",
+    "label": "Institut der deutschen Wirtschaft Köln, Bibliothek"
+  },
+  "DE-82-201": {
+    "id": "http://lobid.org/organisations/DE-82-201#!",
+    "label": "Lehrstuhl für Tragkonstruktionen, Bibliothek"
+  },
+  "DE-6-049": {
+    "id": "http://lobid.org/organisations/DE-6-049#!",
+    "label": "Universität Münster, Fachbereich 7, Psychologie und Sportwissenschaft, Bibliothek für Psychologie"
+  },
+  "DE-Kn39": {
+    "id": "http://lobid.org/organisations/DE-Kn39#!",
+    "label": "Kölnisches Stadtmuseum, Bibliothek"
+  },
+  "DE-82-323": {
+    "id": "http://lobid.org/organisations/DE-82-323#!",
+    "label": "Lehrstuhl und Institut für Schienenfahrzeuge und Transportsysteme"
+  },
+  "DE-5-97": {
+    "id": "http://lobid.org/organisations/DE-5-97#!",
+    "label": "Universität Bonn, Institut für Archäologie und Kulturanthropologie / Abt. Altamerikanistik, Bibliothek"
+  },
+  "DE-Bo405": {
+    "id": "http://lobid.org/organisations/DE-Bo405#!",
+    "label": "Deutsches Archäologisches Institut (DAI), Kommission für Archäologie Außereuropäischer Kulturen (KAAK), Bibliothek"
+  },
+  "DE-294-35": {
+    "id": "http://lobid.org/organisations/DE-294-35#!",
+    "label": "Ruhr-Universität Bochum, Fakultät für Philologie, Institut für Arabistik und Islamwissenschaft, Bibliothek"
+  },
+  "DE-6-097": {
+    "id": "http://lobid.org/organisations/DE-6-097#!",
+    "label": "Universität Münster, Institut für Kulturanthropologie/Europäische Ethnologie, Bibliothek"
+  }
+}
